@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useAppStore } from '../../store';
 
@@ -7,16 +6,6 @@ export function SettingsGeneral() {
   const settings = useAppStore((s) => s.settings);
   const updateSettings = useAppStore((s) => s.updateSettings);
   const currentLang = i18n.language.startsWith('zh') ? 'zh' : 'en';
-  const [appVer, setAppVer] = useState('');
-  useEffect(() => {
-    try {
-      const v = window.electronAPI?.getVersion?.();
-      if (v instanceof Promise) v.then(setAppVer);
-      else if (v) setAppVer(v);
-    } catch {
-      /* ignore */
-    }
-  }, []);
 
   const languages = [
     { code: 'en', nativeName: 'English' },
@@ -70,13 +59,6 @@ export function SettingsGeneral() {
           ))}
         </div>
       </div>
-
-      {/* About */}
-      {appVer && (
-        <div className="pt-4 border-t border-border">
-          <p className="text-xs text-text-muted">Open Cowork v{appVer}</p>
-        </div>
-      )}
     </div>
   );
 }

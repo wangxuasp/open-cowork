@@ -1,7 +1,7 @@
 {
-  "name": "open-cowork",
+  "name": "omni-worker",
   "version": "3.3.1",
-  "description": "Open-source AI agent desktop app for Windows & macOS — one-click install Claude Code, MCP tools, and Skills with sandbox isolation and multi-model support",
+  "description": "Omni Worker AI agent desktop app for Windows & macOS — one-click install Claude Code, MCP tools, and Skills with sandbox isolation and multi-model support",
   "keywords": [
     "ai-agent",
     "claude",
@@ -133,7 +133,7 @@
     "fast-xml-parser": "^5.5.6",
     "tar": "^7.5.11"
   },
-  "author": "Open Cowork Team",
+  "author": "Shanghai Disst Technology Co., Ltd.",
   "license": "MIT",
   "lint-staged": {
     "*.{ts,tsx}": [

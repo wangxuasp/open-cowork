@@ -30,6 +30,25 @@ function normalizeShellPath(shellPath: string): string {
   return quoted ? quoted[1] : trimmed;
 }
 
+function withCmdUtf8CodePage(command: string): string {
+  return `chcp 65001 >NUL && ${command}`;
+}
+
+function withPowerShellUtf8Output(command: string): string {
+  return `[Console]::OutputEncoding = [System.Text.Encoding]::UTF8; $OutputEncoding = [System.Text.Encoding]::UTF8; ${command}`;
+}
+
+function normalizeNullDeviceRedirection(
+  command: string,
+  target: 'cmd' | 'powershell' | 'posix'
+): string {
+  const replacement = target === 'cmd' ? 'NUL' : target === 'powershell' ? '$null' : '/dev/null';
+
+  return command.replace(/(\d?>)\s*(?:nul|\/dev\/null)\b/gi, (_match, redirect: string) => {
+    return `${redirect}${replacement}`;
+  });
+}
+
 function defaultShellResolver(cwd: string): string {
   try {
     const configuredShell = PiSettingsManager.create(cwd).getShellPath();
@@ -47,7 +66,10 @@ export function buildWindowsShellInvocation(
   const shellName = path.win32.basename(shell).toLowerCase();
 
   if (shellName === 'cmd' || shellName === 'cmd.exe') {
-    return { shell, args: ['/d', '/s', '/c', command] };
+    return {
+      shell,
+      args: ['/d', '/s', '/c', withCmdUtf8CodePage(normalizeNullDeviceRedirection(command, 'cmd'))],
+    };
   }
 
   if (
@@ -65,12 +87,12 @@ export function buildWindowsShellInvocation(
         '-ExecutionPolicy',
         'Bypass',
         '-Command',
-        command,
+        withPowerShellUtf8Output(normalizeNullDeviceRedirection(command, 'powershell')),
       ],
     };
   }
 
-  return { shell, args: ['-c', command] };
+  return { shell, args: ['-c', normalizeNullDeviceRedirection(command, 'posix')] };
 }
 
 function createSpawnProcess(): SpawnProcess {

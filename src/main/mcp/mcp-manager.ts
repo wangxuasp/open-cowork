@@ -118,6 +118,17 @@ export function formatMcpToolName(baseName: string, suffix: string | null): stri
   return `${truncatedBase}${suffixPart}`;
 }
 
+export function isChromeMcpServerConfig(config: Pick<MCPServerConfig, 'name' | 'args'>): boolean {
+  const name = config.name.toLowerCase();
+  const args = config.args || [];
+
+  return (
+    name.includes('chrome') ||
+    args.some((arg) => arg.toLowerCase().includes('chrome-devtools-mcp')) ||
+    args.some((arg) => arg.toLowerCase().startsWith('--browser-url'))
+  );
+}
+
 function createUniqueMcpToolName(baseName: string, usedNames: Set<string>): string {
   const firstCandidate = formatMcpToolName(baseName, null);
   if (!usedNames.has(firstCandidate)) {
@@ -152,7 +163,6 @@ async function raceWithTimeout<T>(
     clearTimeout(timeoutId!);
   }
 }
-
 
 function getTrustedWindowsNpxDirectories(
   env: Record<string, string | undefined> = process.env
@@ -815,6 +825,8 @@ export class MCPManager {
         }
       }
 
+      await this.ensureChromeDebugPortBeforeConnect({ ...config, args });
+
       // Get environment variables before resolving npx so Windows can prefer a
       // real system npx.cmd later in PATH over the prepended bundled runtime.
       const env = await this.getEnhancedEnv(config.env || {});
@@ -1093,9 +1105,13 @@ export class MCPManager {
     log(`[MCPManager] Connected to ${config.name}`);
 
     // Special handling for Chrome DevTools MCP Server
-    if (config.name.toLowerCase().includes('chrome')) {
+    if (isChromeMcpServerConfig(config)) {
       await this.ensureChromeReady(config.id, config.name, client);
     }
+  }
+
+  private getChromeDebugVersionUrl(): string {
+    return 'http://127.0.0.1:9222/json/version';
   }
 
   /**
@@ -1103,8 +1119,9 @@ export class MCPManager {
    */
   private async isChromeDebugPortReady(): Promise<boolean> {
     try {
-      log(`[MCPManager] Checking Chrome debug port: http://localhost:9222/json/version`);
-      const response = await fetch('http://localhost:9222/json/version', {
+      const versionUrl = this.getChromeDebugVersionUrl();
+      log(`[MCPManager] Checking Chrome debug port: ${versionUrl}`);
+      const response = await fetch(versionUrl, {
         signal: AbortSignal.timeout(2000),
       });
 
@@ -1121,6 +1138,31 @@ export class MCPManager {
         `[MCPManager] Chrome debug port check failed: ${error instanceof Error ? error.message : String(error)}`
       );
       return false;
+    }
+  }
+
+  /**
+   * chrome-devtools-mcp with --browser-url exits during MCP initialization when
+   * the target debugging port is unavailable. Start Chrome before connecting so
+   * packaged builds do not fail with "Connection closed".
+   */
+  private async ensureChromeDebugPortBeforeConnect(config: MCPServerConfig): Promise<void> {
+    if (!isChromeMcpServerConfig(config)) {
+      return;
+    }
+
+    log(`[MCPManager] Preflight: ensuring Chrome debug port before MCP connect`);
+    const portReady = await this.isChromeDebugPortReady();
+    if (portReady) {
+      log(`[MCPManager] Preflight: Chrome debug port already available`);
+      return;
+    }
+
+    log(`[MCPManager] Preflight: Chrome debug port unavailable, starting Chrome`);
+    await this.startChromeWithDebugging();
+    const portBecameReady = await this.waitForChromeDebugPort(15, 1000);
+    if (!portBecameReady) {
+      throw new Error('Chrome 浏览器未就绪，无法执行此操作: debug port did not become ready');
     }
   }
 
@@ -1455,9 +1497,7 @@ export class MCPManager {
           const usedToolNames = new Set<string>();
           const tools = sortedTools.map((tool) => {
             const originalToolName =
-              typeof tool.name === 'string' && tool.name.trim().length > 0
-                ? tool.name
-                : 'tool';
+              typeof tool.name === 'string' && tool.name.trim().length > 0 ? tool.name : 'tool';
             const sanitizedToolName = sanitizeMcpToolSegment(originalToolName, 'tool');
             const prefixedName = createUniqueMcpToolName(
               `mcp__${serverKey}__${sanitizedToolName}`,

@@ -1,7 +1,8 @@
-import { useState, useCallback, useMemo, useEffect } from 'react';
+import { useState, useCallback, useMemo, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useAppStore } from '../store';
 import { useIPC } from '../hooks/useIPC';
+import { switchToSession } from '../utils/session-switch';
 import {
   ChevronLeft,
   ChevronRight,
@@ -17,7 +18,7 @@ import {
 } from 'lucide-react';
 import type { Session } from '../types';
 
-import sidebarLogoSrc from '../assets/logo.png';
+import sidebarLogoSrc from '../../../resources/omni-worker-logo.png';
 
 type SessionGroup = {
   key: string;
@@ -50,6 +51,7 @@ export function Sidebar() {
   const [isSelectMode, setIsSelectMode] = useState(false);
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
+  const sessionSelectionRequestRef = useRef(0);
 
   const normalizedQuery = useMemo(() => searchQuery.trim().toLowerCase(), [searchQuery]);
   const filteredSessions = useMemo(() => {
@@ -148,41 +150,24 @@ export function Sidebar() {
 
   const handleSessionClick = useCallback(
     async (sessionId: string) => {
-      setShowSettings(false);
-
-      if (activeSessionId === sessionId) return;
-
-      setActiveSession(sessionId);
-
-      // Read sessionStates at call-time from the store rather than closing over
-      // the selector value. The selector returns a new object reference every
-      // time any session's state changes (patchSession spreads the whole map),
-      // so including it in deps would rebuild this callback on every streaming
-      // tick and cause a React #185 "Maximum update depth exceeded" loop when
-      // rapidly switching sessions on slow renderers (e.g. Windows).
-      const currentSessionStates = useAppStore.getState().sessionStates;
-
-      const existingMessages = currentSessionStates[sessionId]?.messages;
-      if ((!existingMessages || existingMessages.length === 0) && isElectron) {
-        try {
-          const messages = await getSessionMessages(sessionId);
-          if (messages && messages.length > 0) {
-            setMessages(sessionId, messages);
-          }
-        } catch (error) {
-          console.error('[Sidebar] Failed to load messages:', error);
-        }
-      }
-
-      const existingSteps = currentSessionStates[sessionId]?.traceSteps;
-      if ((!existingSteps || existingSteps.length === 0) && isElectron) {
-        try {
-          const steps = await getSessionTraceSteps(sessionId);
-          setTraceSteps(sessionId, steps || []);
-        } catch (error) {
-          console.error('[Sidebar] Failed to load trace steps:', error);
-        }
-      }
+      const requestId = ++sessionSelectionRequestRef.current;
+      await switchToSession({
+        activeSessionId,
+        sessionId,
+        isElectron,
+        shouldActivate: () => requestId === sessionSelectionRequestRef.current,
+        // Read at call-time so sessionStates updates do not rebuild this callback on every tick.
+        getSessionStates: () => useAppStore.getState().sessionStates,
+        setShowSettings,
+        setActiveSession,
+        setMessages,
+        setTraceSteps,
+        getSessionMessages,
+        getSessionTraceSteps,
+        onError: (scope, error) => {
+          console.error(`[Sidebar] Failed to load ${scope}:`, error);
+        },
+      });
     },
     [
       activeSessionId,
@@ -286,7 +271,7 @@ export function Sidebar() {
             />
             <div className="min-w-0">
               <h1 className="text-[1.34rem] leading-none font-semibold tracking-[-0.035em] text-text-primary">
-                Open Cowork
+                Omni Worker
               </h1>
             </div>
           </div>

@@ -120,7 +120,14 @@ export function useIPC() {
       const isInitialConfigStatus = !store.hasSeenInitialConfigStatus;
       store.setIsConfigured(isConfigured);
       store.setAppConfig(config);
-      store.setSettings({ theme: config.theme || 'light' });
+      store.setSettings({
+        theme: config.theme || 'light',
+        teamcenterWebTierUrl: config.teamcenterWebTierUrl || '',
+        teamcenterRichClientMicroserviceUrl: config.teamcenterRichClientMicroserviceUrl || '',
+        teamcenterAccount: config.teamcenterAccount || '',
+        teamcenterPassword: config.teamcenterPassword || '',
+        knowledgeBaseHttpUrl: config.knowledgeBaseHttpUrl || '',
+      });
       if (isInitialConfigStatus) {
         store.markInitialConfigStatusSeen();
       }

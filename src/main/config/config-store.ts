@@ -124,6 +124,15 @@ export interface AppConfig {
   // Enable thinking mode (show thinking steps)
   enableThinking: boolean;
 
+  // Teamcenter credentials
+  teamcenterWebTierUrl: string;
+  teamcenterRichClientMicroserviceUrl: string;
+  teamcenterAccount: string;
+  teamcenterPassword: string;
+
+  // Knowledge Base endpoint
+  knowledgeBaseHttpUrl: string;
+
   // First run flag
   isConfigured: boolean;
 }
@@ -170,6 +179,11 @@ const DIRECT_READ_KEYS = new Set<keyof AppConfig>([
   'sandboxEnabled',
   'memoryEnabled',
   'enableThinking',
+  'teamcenterWebTierUrl',
+  'teamcenterRichClientMicroserviceUrl',
+  'teamcenterAccount',
+  'teamcenterPassword',
+  'knowledgeBaseHttpUrl',
   'isConfigured',
 ]);
 
@@ -275,6 +289,11 @@ const defaultConfig: AppConfig = {
     promptIterationRounds: 2,
   },
   enableThinking: false,
+  teamcenterWebTierUrl: '',
+  teamcenterRichClientMicroserviceUrl: '',
+  teamcenterAccount: '',
+  teamcenterPassword: '',
+  knowledgeBaseHttpUrl: '',
   isConfigured: false,
 };
 
@@ -978,6 +997,26 @@ export class ConfigStore {
       memoryEnabled: toBoolean(raw.memoryEnabled, defaultConfig.memoryEnabled),
       memoryRuntime: normalizeMemoryRuntimeConfig(raw.memoryRuntime),
       enableThinking: projected.enableThinking,
+      teamcenterWebTierUrl:
+        typeof raw.teamcenterWebTierUrl === 'string'
+          ? raw.teamcenterWebTierUrl
+          : defaultConfig.teamcenterWebTierUrl,
+      teamcenterRichClientMicroserviceUrl:
+        typeof raw.teamcenterRichClientMicroserviceUrl === 'string'
+          ? raw.teamcenterRichClientMicroserviceUrl
+          : defaultConfig.teamcenterRichClientMicroserviceUrl,
+      teamcenterAccount:
+        typeof raw.teamcenterAccount === 'string'
+          ? raw.teamcenterAccount
+          : defaultConfig.teamcenterAccount,
+      teamcenterPassword:
+        typeof raw.teamcenterPassword === 'string'
+          ? raw.teamcenterPassword
+          : defaultConfig.teamcenterPassword,
+      knowledgeBaseHttpUrl:
+        typeof raw.knowledgeBaseHttpUrl === 'string'
+          ? raw.knowledgeBaseHttpUrl
+          : defaultConfig.knowledgeBaseHttpUrl,
       isConfigured: toBoolean(raw.isConfigured, defaultConfig.isConfigured),
     };
     this.normalizeModelIds(result);
@@ -1396,6 +1435,26 @@ export class ConfigStore {
         updates.memoryRuntime !== undefined
           ? normalizeMemoryRuntimeConfig(updates.memoryRuntime)
           : current.memoryRuntime,
+      teamcenterWebTierUrl:
+        updates.teamcenterWebTierUrl !== undefined
+          ? updates.teamcenterWebTierUrl
+          : current.teamcenterWebTierUrl,
+      teamcenterRichClientMicroserviceUrl:
+        updates.teamcenterRichClientMicroserviceUrl !== undefined
+          ? updates.teamcenterRichClientMicroserviceUrl
+          : current.teamcenterRichClientMicroserviceUrl,
+      teamcenterAccount:
+        updates.teamcenterAccount !== undefined
+          ? updates.teamcenterAccount
+          : current.teamcenterAccount,
+      teamcenterPassword:
+        updates.teamcenterPassword !== undefined
+          ? updates.teamcenterPassword
+          : current.teamcenterPassword,
+      knowledgeBaseHttpUrl:
+        updates.knowledgeBaseHttpUrl !== undefined
+          ? updates.knowledgeBaseHttpUrl
+          : current.knowledgeBaseHttpUrl,
       isConfigured:
         updates.isConfigured !== undefined ? updates.isConfigured : current.isConfigured,
     });

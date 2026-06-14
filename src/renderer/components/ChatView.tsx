@@ -634,9 +634,7 @@ export function ChatView() {
         ref={headerRef}
         className="relative h-12 border-b border-border-muted grid grid-cols-[1fr_auto_1fr] items-center px-4 lg:px-8 bg-background/88 backdrop-blur-md"
       >
-        <div className="text-[11px] font-medium tracking-[0.08em] uppercase text-text-muted">
-          Open Cowork
-        </div>
+        <div aria-hidden="true" />
         <h2
           ref={titleRef}
           className="text-[15px] font-medium text-text-primary text-center truncate max-w-[40vw] lg:max-w-[32rem]"
@@ -677,9 +675,6 @@ export function ChatView() {
         >
           {displayedMessages.length === 0 ? (
             <div className="flex flex-col items-center justify-center py-28 text-text-muted space-y-3 text-center">
-              <p className="text-[11px] uppercase tracking-[0.16em] text-text-muted/80">
-                Open Cowork
-              </p>
               <p className="text-base text-text-secondary">{t('chat.startConversation')}</p>
             </div>
           ) : (
@@ -848,10 +843,6 @@ export function ChatView() {
                 </button>
               </div>
             </div>
-
-            <p className="text-[11px] text-text-muted/60 text-center mt-2.5">
-              {t('chat.disclaimer')}
-            </p>
           </form>
         </div>
       </div>

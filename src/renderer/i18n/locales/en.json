@@ -62,13 +62,19 @@
     "memoryDesc": "Manage long-term memory and workspace experience",
     "schedule": "Schedules",
     "scheduleDesc": "Alarm-style prompt automation",
+    "teamcenter": "Teamcenter",
+    "teamcenterDesc": "Configure Teamcenter Web-Tier credentials",
+    "knowledgeBase": "Knowledge Base",
+    "knowledgeBaseDesc": "Configure the Knowledge Base HTTP endpoint",
     "remote": "Remote Control",
-    "remoteDesc": "Use Open Cowork from Feishu and other channels",
+    "remoteDesc": "Remote control from Feishu and other channels",
     "logs": "Logs",
     "logsDesc": "View and export application logs",
     "panelDesc": "Configure your workspace, tools, and account behavior.",
     "general": "General",
-    "generalDesc": "Appearance, language & preferences"
+    "generalDesc": "Appearance, language & preferences",
+    "about": "About",
+    "aboutDesc": "Product information and copyright"
   },
   "general": {
     "appearance": "Appearance",
@@ -77,6 +83,43 @@
     "themeDark": "Dark",
     "themeSystem": "System",
     "language": "Language"
+  },
+  "about": {
+    "productName": "Omni Worker",
+    "logoAlt": "Disst logo",
+    "copyright": "Copyright © 2026 Shanghai Disst Technology Co., Ltd. All rights reserved."
+  },
+  "teamcenter": {
+    "title": "Teamcenter Connection",
+    "description": "Save the Teamcenter Web-Tier address and login credentials for later automation workflows.",
+    "webTierGroupTitle": "Teamcenter Web-Tier",
+    "webTierGroupDesc": "Configure the Teamcenter Web-Tier address and login credentials.",
+    "webTierUrl": "Teamcenter Web-Tier URL",
+    "webTierUrlPlaceholder": "Example: https://teamcenter.example.com/tc",
+    "richClientMicroserviceGroupTitle": "Teamcenter Rich Client MicroService",
+    "richClientMicroserviceGroupDesc": "Configure the Rich Client MicroService address used by runtime skills.",
+    "richClientMicroserviceUrl": "Teamcenter Rich Client MicroService URL",
+    "richClientMicroserviceUrlPlaceholder": "Example: http://127.0.0.1:8080",
+    "account": "Account",
+    "accountPlaceholder": "Enter Teamcenter account",
+    "password": "Password",
+    "passwordPlaceholder": "Enter Teamcenter password",
+    "saveHint": "Saved values will be used by later Teamcenter automation workflows.",
+    "saveSuccess": "Teamcenter configuration saved",
+    "saveError": "Failed to save Teamcenter configuration. Please try again.",
+    "saveConfig": "Save configuration"
+  },
+  "knowledgeBase": {
+    "title": "Knowledge Base",
+    "description": "Save the Knowledge Base HTTP endpoint used by knowledge chat skills at runtime.",
+    "httpGroupTitle": "HTTP Endpoint",
+    "httpGroupDesc": "Configure the full HTTP URL for the Knowledge Base service.",
+    "httpUrl": "Knowledge Base HTTP URL",
+    "httpUrlPlaceholder": "Example: http://localhost:8099/api/qdrant/chat",
+    "saveHint": "Saved values will be used by later Knowledge Base chat skills.",
+    "saveSuccess": "Knowledge Base configuration saved",
+    "saveError": "Failed to save Knowledge Base configuration. Please try again.",
+    "saveConfig": "Save configuration"
   },
   "memory": {
     "title": "Memory",
@@ -485,7 +528,7 @@
     "command": "Command",
     "commandPlaceholder": "npx",
     "arguments": "Arguments",
-    "argumentsPlaceholder": "-y chrome-devtools-mcp@latest --browser-url http://localhost:9222",
+    "argumentsPlaceholder": "-y chrome-devtools-mcp@latest --browser-url=http://127.0.0.1:9222",
     "spaceSeparated": "Space-separated arguments",
     "url": "URL",
     "enableConnector": "Enable this connector",
@@ -620,7 +663,6 @@
     "loadingConversation": "Loading conversation...",
     "startConversation": "Start the conversation",
     "startFailed": "Failed to start session. Please try again.",
-    "disclaimer": "Open Cowork is AI-powered and may make mistakes. Please double-check responses.",
     "noModel": "No model",
     "connectorCount_one": "{{count}} connector",
     "connectorCount_other": "{{count}} connectors"

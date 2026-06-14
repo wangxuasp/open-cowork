@@ -2772,31 +2772,55 @@ async function handleClientEvent(event: ClientEvent): Promise<unknown> {
     }
 
     case 'settings.update':
-      if (
-        event.payload.theme === 'dark' ||
-        event.payload.theme === 'light' ||
-        event.payload.theme === 'system'
-      ) {
-        const nextTheme = event.payload.theme as AppTheme;
-        configStore.update({ theme: nextTheme });
-        applyNativeThemePreference(nextTheme);
-        if (mainWindow && !mainWindow.isDestroyed()) {
-          const effectiveTheme = resolveEffectiveTheme(nextTheme);
-          mainWindow.setBackgroundColor(effectiveTheme === 'dark' ? DARK_BG : LIGHT_BG);
-        }
-        sendToRenderer({
-          type: 'config.status',
-          payload: {
-            isConfigured: configStore.isConfigured(),
-            config: configStore.getAll(),
-          },
-        });
-      }
+      {
+        const configUpdates: Partial<AppConfig> = {};
+        let shouldNotifyConfig = false;
 
-      if (Array.isArray((event.payload as { permissionRules?: unknown }).permissionRules)) {
-        setPermissionRules(
-          (event.payload as { permissionRules: PermissionRule[] }).permissionRules
-        );
+        for (const key of [
+          'teamcenterWebTierUrl',
+          'teamcenterRichClientMicroserviceUrl',
+          'teamcenterAccount',
+          'teamcenterPassword',
+          'knowledgeBaseHttpUrl',
+        ] as const) {
+          const value = event.payload[key];
+          if (typeof value === 'string') {
+            configUpdates[key] = value;
+            shouldNotifyConfig = true;
+          }
+        }
+
+        if (
+          event.payload.theme === 'dark' ||
+          event.payload.theme === 'light' ||
+          event.payload.theme === 'system'
+        ) {
+          const nextTheme = event.payload.theme as AppTheme;
+          configUpdates.theme = nextTheme;
+          shouldNotifyConfig = true;
+          applyNativeThemePreference(nextTheme);
+          if (mainWindow && !mainWindow.isDestroyed()) {
+            const effectiveTheme = resolveEffectiveTheme(nextTheme);
+            mainWindow.setBackgroundColor(effectiveTheme === 'dark' ? DARK_BG : LIGHT_BG);
+          }
+        }
+
+        if (shouldNotifyConfig) {
+          configStore.update(configUpdates);
+          sendToRenderer({
+            type: 'config.status',
+            payload: {
+              isConfigured: configStore.isConfigured(),
+              config: configStore.getAll(),
+            },
+          });
+        }
+
+        if (Array.isArray((event.payload as { permissionRules?: unknown }).permissionRules)) {
+          setPermissionRules(
+            (event.payload as { permissionRules: PermissionRule[] }).permissionRules
+          );
+        }
       }
       return null;
 

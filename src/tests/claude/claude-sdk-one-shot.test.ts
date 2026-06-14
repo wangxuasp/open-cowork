@@ -61,6 +61,11 @@ function makeConfig(): AppConfig {
       promptIterationRounds: 2,
     },
     enableThinking: false,
+    teamcenterWebTierUrl: '',
+    teamcenterRichClientMicroserviceUrl: '',
+    teamcenterAccount: '',
+    teamcenterPassword: '',
+    knowledgeBaseHttpUrl: '',
     isConfigured: true,
   };
 }

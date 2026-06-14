@@ -37,7 +37,7 @@ describe('windows bash operations', () => {
   it('uses platform-correct shell arguments for common Windows shells', () => {
     expect(buildWindowsShellInvocation('dir', 'C:\\Windows\\System32\\cmd.exe')).toEqual({
       shell: 'C:\\Windows\\System32\\cmd.exe',
-      args: ['/d', '/s', '/c', 'dir'],
+      args: ['/d', '/s', '/c', 'chcp 65001 >NUL && dir'],
     });
 
     expect(buildWindowsShellInvocation('Write-Output hi', 'pwsh.exe')).toEqual({
@@ -49,7 +49,7 @@ describe('windows bash operations', () => {
         '-ExecutionPolicy',
         'Bypass',
         '-Command',
-        'Write-Output hi',
+        '[Console]::OutputEncoding = [System.Text.Encoding]::UTF8; $OutputEncoding = [System.Text.Encoding]::UTF8; Write-Output hi',
       ],
     });
 
@@ -59,6 +59,33 @@ describe('windows bash operations', () => {
         args: ['-c', 'echo hi'],
       }
     );
+  });
+
+  it('normalizes null-device redirection for the selected Windows shell', () => {
+    expect(buildWindowsShellInvocation('echo hi > /dev/null 2> /dev/null', 'cmd.exe')).toEqual({
+      shell: 'cmd.exe',
+      args: ['/d', '/s', '/c', 'chcp 65001 >NUL && echo hi >NUL 2>NUL'],
+    });
+
+    expect(buildWindowsShellInvocation('echo hi >nul 2>nul', 'powershell.exe')).toEqual({
+      shell: 'powershell.exe',
+      args: [
+        '-NoLogo',
+        '-NoProfile',
+        '-NonInteractive',
+        '-ExecutionPolicy',
+        'Bypass',
+        '-Command',
+        '[Console]::OutputEncoding = [System.Text.Encoding]::UTF8; $OutputEncoding = [System.Text.Encoding]::UTF8; echo hi >$null 2>$null',
+      ],
+    });
+
+    expect(
+      buildWindowsShellInvocation('echo hi >nul', 'C:\\Program Files\\Git\\bin\\bash.exe')
+    ).toEqual({
+      shell: 'C:\\Program Files\\Git\\bin\\bash.exe',
+      args: ['-c', 'echo hi >/dev/null'],
+    });
   });
 
   it('spawns Windows shell commands without detaching the child process', async () => {
@@ -82,7 +109,7 @@ describe('windows bash operations', () => {
     expect(onData).toHaveBeenCalledWith(output);
     expect(spawnProcess).toHaveBeenCalledWith(
       'C:\\Windows\\System32\\cmd.exe',
-      ['/d', '/s', '/c', 'echo hello'],
+      ['/d', '/s', '/c', 'chcp 65001 >NUL && echo hello'],
       expect.objectContaining({
         cwd: process.cwd(),
         detached: false,

@@ -62,13 +62,19 @@
     "memoryDesc": "管理长期记忆与工作区经验",
     "schedule": "定时任务",
     "scheduleDesc": "闹钟式自动执行 Prompt",
+    "teamcenter": "Teamcenter",
+    "teamcenterDesc": "配置 Teamcenter Web-Tier 账号",
+    "knowledgeBase": "知识库",
+    "knowledgeBaseDesc": "配置知识库 HTTP 接口",
     "remote": "远程控制",
-    "remoteDesc": "通过飞书等渠道远程使用 Open Cowork",
+    "remoteDesc": "通过飞书等渠道进行远程控制",
     "logs": "日志",
     "logsDesc": "查看和导出应用日志",
     "panelDesc": "配置工作区、工具以及账号相关行为。",
     "general": "通用",
-    "generalDesc": "外观、语言等通用偏好"
+    "generalDesc": "外观、语言等通用偏好",
+    "about": "关于",
+    "aboutDesc": "产品信息与版权"
   },
   "general": {
     "appearance": "外观",
@@ -77,6 +83,43 @@
     "themeDark": "深色",
     "themeSystem": "跟随系统",
     "language": "语言"
+  },
+  "about": {
+    "productName": "Omni Worker",
+    "logoAlt": "迪斯特标志",
+    "copyright": "上海迪斯特科技有限公司 版权所有 2026"
+  },
+  "teamcenter": {
+    "title": "Teamcenter 连接",
+    "description": "保存 Teamcenter Web-Tier 地址和登录凭证，供后续自动化流程使用。",
+    "webTierGroupTitle": "Teamcenter Web-Tier",
+    "webTierGroupDesc": "配置 Teamcenter Web-Tier 访问地址和登录凭证。",
+    "webTierUrl": "Teamcenter Web-Tier URL",
+    "webTierUrlPlaceholder": "例如：https://teamcenter.example.com/tc",
+    "richClientMicroserviceGroupTitle": "Teamcenter Rich Client MicroService",
+    "richClientMicroserviceGroupDesc": "配置 Rich Client MicroService 访问地址，供技能运行时调用。",
+    "richClientMicroserviceUrl": "Teamcenter Rich Client MicroService URL",
+    "richClientMicroserviceUrlPlaceholder": "例如：http://127.0.0.1:8080",
+    "account": "账号",
+    "accountPlaceholder": "输入 Teamcenter 账号",
+    "password": "密码",
+    "passwordPlaceholder": "输入 Teamcenter 密码",
+    "saveHint": "保存后将用于后续 Teamcenter 自动化流程。",
+    "saveSuccess": "Teamcenter 配置已保存",
+    "saveError": "Teamcenter 配置保存失败，请重试",
+    "saveConfig": "保存配置"
+  },
+  "knowledgeBase": {
+    "title": "知识库",
+    "description": "保存知识库 HTTP 接口地址，供知识库问答技能运行时调用。",
+    "httpGroupTitle": "HTTP 接口",
+    "httpGroupDesc": "配置知识库服务的完整 HTTP URL。",
+    "httpUrl": "知识库 HTTP URL",
+    "httpUrlPlaceholder": "例如：http://localhost:8099/api/qdrant/chat",
+    "saveHint": "保存后将用于后续知识库问答技能。",
+    "saveSuccess": "知识库配置已保存",
+    "saveError": "知识库配置保存失败，请重试",
+    "saveConfig": "保存配置"
   },
   "memory": {
     "title": "Memory 机制",
@@ -485,7 +528,7 @@
     "command": "命令",
     "commandPlaceholder": "npx",
     "arguments": "参数",
-    "argumentsPlaceholder": "-y chrome-devtools-mcp@latest --browser-url http://localhost:9222",
+    "argumentsPlaceholder": "-y chrome-devtools-mcp@latest --browser-url=http://127.0.0.1:9222",
     "spaceSeparated": "空格分隔的参数",
     "url": "URL",
     "enableConnector": "启用此连接器",
@@ -620,7 +663,6 @@
     "loadingConversation": "加载对话中...",
     "startConversation": "开始对话",
     "startFailed": "启动会话失败，请稍后重试。",
-    "disclaimer": "Open Cowork 由 AI 驱动，可能会出错，请务必自行复核结果。",
     "noModel": "无模型",
     "connectorCount_one": "{{count}} 个连接器",
     "connectorCount_other": "{{count}} 个连接器"

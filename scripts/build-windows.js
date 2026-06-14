@@ -21,16 +21,44 @@ const DIRS = {
 };
 const LOCAL_ELECTRON_DIST = path.join(PROJECT_ROOT, 'node_modules', 'electron', 'dist');
 const RELEASE_DIR = path.join(PROJECT_ROOT, 'release');
+const DEFAULT_ELECTRON_BUILDER_BINARIES_MIRROR =
+  'https://npmmirror.com/mirrors/electron-builder-binaries/';
 
 function ensureDir(dir) {
   fs.mkdirSync(dir, { recursive: true });
 }
 
-function resolveNpmCommand() {
+function resolveNpmInvocation() {
   if (process.platform === 'win32') {
-    return 'npm.cmd';
+    const npmExecPath = process.env.npm_execpath;
+    if (npmExecPath && fs.existsSync(npmExecPath) && !/\.cmd$/i.test(npmExecPath)) {
+      return { command: process.execPath, args: [npmExecPath] };
+    }
+
+    const bundledNpmCli = path.join(
+      path.dirname(process.execPath),
+      'node_modules',
+      'npm',
+      'bin',
+      'npm-cli.js'
+    );
+    if (fs.existsSync(bundledNpmCli)) {
+      return { command: process.execPath, args: [bundledNpmCli] };
+    }
+
+    throw new Error('Unable to locate npm CLI entrypoint for Windows build');
   }
-  return 'npm';
+  return { command: 'npm', args: [] };
+}
+
+function resolveElectronBuilderBinariesMirror() {
+  return (
+    process.env.NPM_CONFIG_ELECTRON_BUILDER_BINARIES_MIRROR ||
+    process.env.npm_config_electron_builder_binaries_mirror ||
+    process.env.npm_package_config_electron_builder_binaries_mirror ||
+    process.env.ELECTRON_BUILDER_BINARIES_MIRROR ||
+    DEFAULT_ELECTRON_BUILDER_BINARIES_MIRROR
+  );
 }
 
 function toPowerShellLiteral(value) {
@@ -91,6 +119,7 @@ function main() {
 
   const forwardedArgs = process.argv.slice(2);
   const builderArgs = forwardedArgs.length > 0 ? [...forwardedArgs] : ['--win', 'nsis'];
+  const electronBuilderBinariesMirror = resolveElectronBuilderBinariesMirror();
   const env = {
     ...process.env,
     APPDATA: DIRS.appDataRoaming,
@@ -101,6 +130,9 @@ function main() {
     ELECTRON_BUILDER_CACHE: DIRS.electronBuilderCache,
     NPM_CONFIG_CACHE: DIRS.npmCache,
     npm_config_cache: DIRS.npmCache,
+    ELECTRON_BUILDER_BINARIES_MIRROR: electronBuilderBinariesMirror,
+    NPM_CONFIG_ELECTRON_BUILDER_BINARIES_MIRROR: electronBuilderBinariesMirror,
+    npm_config_electron_builder_binaries_mirror: electronBuilderBinariesMirror,
   };
 
   delete env.ELECTRON_RUN_AS_NODE;
@@ -108,7 +140,7 @@ function main() {
 
   const hasElectronDistOverride = builderArgs.some((arg) => arg.includes('electronDist'));
   if (!hasElectronDistOverride && fs.existsSync(LOCAL_ELECTRON_DIST)) {
-    builderArgs.push(`--config.electronDist=${LOCAL_ELECTRON_DIST}`);
+    builderArgs.push('--config.electronDist', LOCAL_ELECTRON_DIST);
   }
 
   console.log('[build:win] Using cache root:', DIRS.root);
@@ -117,17 +149,19 @@ function main() {
   console.log('[build:win] LOCALAPPDATA:', DIRS.appDataLocal);
   console.log('[build:win] ELECTRON_CACHE:', DIRS.electronCache);
   console.log('[build:win] ELECTRON_BUILDER_CACHE:', DIRS.electronBuilderCache);
+  console.log('[build:win] ELECTRON_BUILDER_BINARIES_MIRROR:', electronBuilderBinariesMirror);
   console.log('[build:win] NPM_CONFIG_CACHE:', DIRS.npmCache);
   if (builderArgs.some((arg) => arg.includes('electronDist'))) {
     console.log('[build:win] electronDist:', LOCAL_ELECTRON_DIST);
   }
   console.log('[build:win] Running build with args:', builderArgs.join(' '));
 
-  const child = spawn(resolveNpmCommand(), ['run', 'build', '--', ...builderArgs], {
+  const npmInvocation = resolveNpmInvocation();
+  const child = spawn(npmInvocation.command, [...npmInvocation.args, 'run', 'build', '--', ...builderArgs], {
     cwd: PROJECT_ROOT,
     env,
     stdio: 'inherit',
-    shell: process.platform === 'win32',
+    shell: false,
   });
 
   child.on('exit', (code, signal) => {

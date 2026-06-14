@@ -32,6 +32,23 @@ describe('logger fallback behavior', () => {
     logger.closeLogFile();
   });
 
+  it('writes Omni Worker in the log file header', async () => {
+    vi.doMock('electron', () => ({
+      app: {},
+    }));
+
+    const logger = await import('../src/main/utils/logger');
+    logger.log('init');
+    const logFilePath = logger.getLogFilePath();
+    expect(logFilePath).toBeTruthy();
+    logger.closeLogFile();
+    await new Promise((resolve) => setTimeout(resolve, 20));
+
+    const content = fs.readFileSync(logFilePath!, 'utf8');
+    expect(content).toContain('Omni Worker Application Log');
+    expect(content).not.toContain('Open Cowork Application Log');
+  });
+
   it('recovers when active log file is removed unexpectedly', async () => {
     vi.doMock('electron', () => ({
       app: {},
@@ -112,5 +129,4 @@ describe('logger fallback behavior', () => {
     consoleSpy.mockRestore();
     logger.closeLogFile();
   });
-
 });

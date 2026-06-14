@@ -215,6 +215,11 @@ const defaultSettings: Settings = {
   globalSkillsPath: '',
   memoryStrategy: 'auto',
   maxContextTokens: 180000,
+  teamcenterWebTierUrl: '',
+  teamcenterRichClientMicroserviceUrl: '',
+  teamcenterAccount: '',
+  teamcenterPassword: '',
+  knowledgeBaseHttpUrl: '',
 };
 
 export const useAppStore = create<AppState>((set) => ({

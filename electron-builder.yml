@@ -1,12 +1,12 @@
-appId: com.opencowork.app
-productName: Open Cowork
-copyright: Copyright © 2026 Open Cowork Team
+appId: cn.disst.omniworker
+productName: Omni Worker
+copyright: Copyright © 2026 Shanghai Disst
 
 directories:
   output: release
   buildResources: resources
 
-npmRebuild: true
+npmRebuild: false
 afterPack: ./scripts/after-pack.js
 afterAllArtifactBuild: ./scripts/compress-dmg.js
 
@@ -62,12 +62,13 @@ asarUnpack:
 
 win:
   icon: resources/icon.ico
+  executableName: Omni Worker
   target:
     - target: nsis
       arch:
         - x64
-  artifactName: ${productName}-${version}-win-${arch}.${ext}
-  signAndEditExecutable: false
+  artifactName: Omni-Worker-${version}-win-${arch}.${ext}
+  signAndEditExecutable: true
   extraResources:
     - from: .bundle-resources/mcp
       to: mcp
@@ -137,6 +138,8 @@ nsis:
   oneClick: false
   perMachine: false
   allowToChangeInstallationDirectory: true
+  shortcutName: Omni Worker
+  uninstallDisplayName: Omni Worker
   include: installer.nsh
   warningsAsErrors: false
   # Preserve user config/history by default; offer explicit cleanup tooling instead of destructive uninstall.
@@ -153,7 +156,7 @@ dmg:
   contents:
     - x: 150
       y: 220
-      name: 'Open Cowork.app'
+      name: 'Omni Worker.app'
     - x: 450
       y: 220
       type: link

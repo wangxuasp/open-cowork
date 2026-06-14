@@ -51,6 +51,10 @@ import { extractArtifactsFromText, buildArtifactTraceSteps } from '../utils/arti
 import { getDefaultShell } from '../utils/shell-resolver';
 import { PluginRuntimeService } from '../skills/plugin-runtime-service';
 import type { SkillsAdapter } from '../skills/skills-adapter';
+import {
+  applyTeamcenterBaseUrlToSkillDescriptions,
+  TEAMCENTER_SKILL_TEMPLATE_FILENAME,
+} from '../skills/teamcenter-skill-runtime';
 import { AgentRuntimeExtensionManager } from '../extensions/agent-runtime-extension-manager';
 import { configStore } from '../config/config-store';
 import { normalizeOpenAICompatibleBaseUrl } from '../config/auth-utils';
@@ -655,10 +659,15 @@ ${hints.join('\n')}
     return paths;
   }
 
-  private async resolveSkillPaths(sessionId?: string): Promise<string[]> {
-    const basePaths = this._skillsAdapter
-      ? this._skillsAdapter.getSkillPaths()
-      : this.legacySkillPaths();
+  private async resolveSkillPaths(
+    sessionId?: string,
+    runtimeSkillsDir?: string
+  ): Promise<string[]> {
+    const basePaths = runtimeSkillsDir
+      ? [runtimeSkillsDir]
+      : this._skillsAdapter
+        ? this._skillsAdapter.getSkillPaths()
+        : this.legacySkillPaths();
     const mergedPaths = new Set(
       basePaths.filter((item): item is string => Boolean(item && fs.existsSync(item)))
     );
@@ -691,6 +700,38 @@ ${hints.join('\n')}
     }
 
     return Array.from(mergedPaths);
+  }
+
+  private computeRuntimeSkillsContentSignature(runtimeSkillsDir: string): string {
+    if (!fs.existsSync(runtimeSkillsDir) || !fs.statSync(runtimeSkillsDir).isDirectory()) {
+      return '';
+    }
+
+    const entries: string[] = [];
+    const visit = (currentDir: string): void => {
+      for (const entry of fs.readdirSync(currentDir, { withFileTypes: true })) {
+        if (entry.name.startsWith('.') || entry.name === 'node_modules') {
+          continue;
+        }
+        const entryPath = path.join(currentDir, entry.name);
+        const isDirectory =
+          entry.isDirectory() || (entry.isSymbolicLink() && fs.statSync(entryPath).isDirectory());
+        if (isDirectory) {
+          visit(entryPath);
+          continue;
+        }
+        if (entry.name !== 'SKILL.md') {
+          continue;
+        }
+        const stat = fs.statSync(entryPath);
+        entries.push(
+          `${path.relative(runtimeSkillsDir, entryPath)}:${stat.size}:${Math.floor(stat.mtimeMs)}`
+        );
+      }
+    };
+
+    visit(runtimeSkillsDir);
+    return entries.sort().join('|');
   }
 
   /**
@@ -782,6 +823,83 @@ ${hints.join('\n')}
     return path.join(app.getPath('home'), '.claude', 'skills');
   }
 
+  private shouldRefreshRuntimeSkill(targetPath: string): boolean {
+    if (!fs.existsSync(targetPath)) {
+      return true;
+    }
+
+    try {
+      const stat = fs.lstatSync(targetPath);
+      if (stat.isSymbolicLink()) {
+        return /\.asar[/\\]/.test(fs.readlinkSync(targetPath));
+      }
+      return fs.existsSync(path.join(targetPath, TEAMCENTER_SKILL_TEMPLATE_FILENAME));
+    } catch {
+      return false;
+    }
+  }
+
+  private removePathEntryIfPresent(targetPath: string): void {
+    try {
+      const stat = fs.lstatSync(targetPath);
+      if (stat.isSymbolicLink()) {
+        fs.unlinkSync(targetPath);
+      } else {
+        fs.rmSync(targetPath, { recursive: true, force: true });
+      }
+    } catch (error) {
+      const code = (error as { code?: string }).code;
+      if (code !== 'ENOENT') {
+        throw error;
+      }
+    }
+  }
+
+  private syncBuiltinSkillsToRuntimeDir(appSkillsDir: string): void {
+    const builtinSkillsPath = this.getBuiltinSkillsPath();
+    if (!builtinSkillsPath || !fs.existsSync(builtinSkillsPath)) {
+      return;
+    }
+
+    // Symlinks into .asar archives don't work at the OS level (ENOTDIR),
+    // so always copy when the source is inside an asar archive.
+    // Use regex to match .asar/ but NOT .asar.unpacked/ (which is a real directory).
+    const sourceInsideAsar = /\.asar[/\\]/.test(builtinSkillsPath);
+    const builtinSkills = fs.readdirSync(builtinSkillsPath);
+    for (const skillName of builtinSkills) {
+      const builtinSkillPath = path.join(builtinSkillsPath, skillName);
+      const runtimeSkillPath = path.join(appSkillsDir, skillName);
+      if (!fs.statSync(builtinSkillPath).isDirectory()) {
+        continue;
+      }
+      if (!this.shouldRefreshRuntimeSkill(runtimeSkillPath)) {
+        continue;
+      }
+
+      try {
+        this.removePathEntryIfPresent(runtimeSkillPath);
+      } catch (err) {
+        logWarn('[ClaudeAgentRunner] Failed to refresh runtime skill:', skillName, err);
+        continue;
+      }
+
+      if (sourceInsideAsar) {
+        this.copyDirectorySync(builtinSkillPath, runtimeSkillPath);
+        log(`[ClaudeAgentRunner] Copied built-in skill from asar: ${skillName}`);
+        continue;
+      }
+
+      try {
+        fs.symlinkSync(builtinSkillPath, runtimeSkillPath, 'dir');
+        log(`[ClaudeAgentRunner] Linked built-in skill: ${skillName}`);
+      } catch (err) {
+        logWarn(`[ClaudeAgentRunner] Failed to symlink ${skillName}, copying instead:`, err);
+        this.removePathEntryIfPresent(runtimeSkillPath);
+        this.copyDirectorySync(builtinSkillPath, runtimeSkillPath);
+      }
+    }
+  }
+
   private syncUserSkillsToAppDir(appSkillsDir: string): void {
     const userSkillsDir = this.getUserClaudeSkillsDir();
     if (!fs.existsSync(userSkillsDir)) {
@@ -810,6 +928,7 @@ ${hints.join('\n')}
         fs.symlinkSync(sourcePath, targetPath, 'dir');
       } catch (err) {
         try {
+          this.removePathEntryIfPresent(targetPath);
           this.copyDirectorySync(sourcePath, targetPath);
         } catch (copyErr) {
           logWarn('[ClaudeAgentRunner] Failed to import user skill:', entry.name, copyErr);
@@ -845,6 +964,7 @@ ${hints.join('\n')}
         fs.symlinkSync(sourcePath, targetPath, 'dir');
       } catch (err) {
         try {
+          this.removePathEntryIfPresent(targetPath);
           this.copyDirectorySync(sourcePath, targetPath);
         } catch (copyErr) {
           logWarn('[ClaudeAgentRunner] Failed to sync configured skill:', entry.name, copyErr);
@@ -855,6 +975,17 @@ ${hints.join('\n')}
 
   private copyDirectorySync(source: string, target: string): void {
     if (!fs.existsSync(target)) {
+      try {
+        const stat = fs.lstatSync(target);
+        if (stat.isSymbolicLink()) {
+          fs.unlinkSync(target);
+        }
+      } catch (error) {
+        const code = (error as { code?: string }).code;
+        if (code !== 'ENOENT') {
+          throw error;
+        }
+      }
       fs.mkdirSync(target, { recursive: true });
     }
 
@@ -1710,11 +1841,11 @@ ${hints.join('\n')}
       // Use app-specific Claude config directory to avoid conflicts with user settings
       // SDK uses CLAUDE_CONFIG_DIR to locate skills
       const userClaudeDir = this.getAppClaudeDir();
+      const appSkillsDir = this.getRuntimeSkillsDir();
 
-      // Skills directory setup: only run on the first query per runner instance.
-      // Symlinks and directories are stable across queries; re-running every time
-      // wastes ~10-30 syscalls per query for no benefit. Call invalidateSkillsSetup()
-      // to force a re-run after the user installs or removes a skill.
+      // Skills directory setup: ensure base directories once. Skill source links
+      // are refreshed below before Teamcenter URL substitution so edited source
+      // skills are not hidden behind materialized runtime templates.
       if (!this._skillsSetupDone) {
         // Set flag at start to prevent re-entrant calls from concurrent queries
         this._skillsSetupDone = true;
@@ -1725,62 +1856,30 @@ ${hints.join('\n')}
         }
 
         // Ensure app Claude skills directory exists
-        const appSkillsDir = this.getRuntimeSkillsDir();
         if (!fs.existsSync(appSkillsDir)) {
           fs.mkdirSync(appSkillsDir, { recursive: true });
         }
+      }
 
-        // Copy built-in skills to app Claude skills directory if they don't exist
-        const builtinSkillsPath = this.getBuiltinSkillsPath();
-        if (builtinSkillsPath && fs.existsSync(builtinSkillsPath)) {
-          // Symlinks into .asar archives don't work at the OS level (ENOTDIR),
-          // so always copy when the source is inside an asar archive.
-          // Use regex to match .asar/ but NOT .asar.unpacked/ (which is a real directory).
-          const sourceInsideAsar = /\.asar[/\\]/.test(builtinSkillsPath);
-          const builtinSkills = fs.readdirSync(builtinSkillsPath);
-          for (const skillName of builtinSkills) {
-            const builtinSkillPath = path.join(builtinSkillsPath, skillName);
-            const userSkillPath = path.join(appSkillsDir, skillName);
+      this.syncBuiltinSkillsToRuntimeDir(appSkillsDir);
+      this.syncUserSkillsToAppDir(appSkillsDir);
+      this.syncConfiguredSkillsToRuntimeDir(appSkillsDir);
 
-            // Clean up broken symlinks pointing into .asar from previous versions
-            try {
-              const lstat = fs.lstatSync(userSkillPath);
-              if (lstat.isSymbolicLink()) {
-                const linkTarget = fs.readlinkSync(userSkillPath);
-                if (/\.asar[/\\]/.test(linkTarget)) {
-                  fs.unlinkSync(userSkillPath);
-                  log(`[ClaudeAgentRunner] Removed broken asar symlink: ${userSkillPath}`);
-                }
-              }
-            } catch {
-              // Path doesn't exist — fine, we'll create it below
-            }
-
-            // Only set up if it's a directory and doesn't exist in app directory
-            if (fs.statSync(builtinSkillPath).isDirectory() && !fs.existsSync(userSkillPath)) {
-              if (sourceInsideAsar) {
-                // Source is inside .asar — must copy (symlinks to asar paths fail at OS level)
-                this.copyDirectorySync(builtinSkillPath, userSkillPath);
-                log(`[ClaudeAgentRunner] Copied built-in skill from asar: ${skillName}`);
-              } else {
-                // Source is a real directory — symlink for space efficiency
-                try {
-                  fs.symlinkSync(builtinSkillPath, userSkillPath, 'dir');
-                  log(`[ClaudeAgentRunner] Linked built-in skill: ${skillName}`);
-                } catch (err) {
-                  logWarn(
-                    `[ClaudeAgentRunner] Failed to symlink ${skillName}, copying instead:`,
-                    err
-                  );
-                  this.copyDirectorySync(builtinSkillPath, userSkillPath);
-                }
-              }
-            }
-          }
-        }
-
-        this.syncUserSkillsToAppDir(appSkillsDir);
-        this.syncConfiguredSkillsToRuntimeDir(appSkillsDir);
+      const teamcenterRichClientMicroserviceUrl = (
+        runtimeConfig.teamcenterRichClientMicroserviceUrl || ''
+      ).trim();
+      const teamcenterWebTierUrl = (runtimeConfig.teamcenterWebTierUrl || '').trim();
+      const knowledgeBaseHttpUrl = (runtimeConfig.knowledgeBaseHttpUrl || '').trim();
+      const teamcenterSkillUpdate = applyTeamcenterBaseUrlToSkillDescriptions(appSkillsDir, {
+        richClientMicroserviceUrl: teamcenterRichClientMicroserviceUrl,
+        webTierUrl: teamcenterWebTierUrl,
+        knowledgeBaseHttpUrl,
+      });
+      if (teamcenterSkillUpdate.updatedCount > 0) {
+        log(
+          '[ClaudeAgentRunner] Applied Teamcenter URL placeholders to runtime skills:',
+          teamcenterSkillUpdate.updatedCount
+        );
       }
 
       // Build available skills section dynamically — now handled by pi's DefaultResourceLoader
@@ -1808,8 +1907,15 @@ ${hints.join('\n')}
         effectiveCwd,
         apiKey,
       });
-      const skillPaths = await this.resolveSkillPaths(session.id);
-      const skillsSignature = JSON.stringify(skillPaths);
+      const skillPaths = await this.resolveSkillPaths(session.id, appSkillsDir);
+      const runtimeSkillsContentSignature = this.computeRuntimeSkillsContentSignature(appSkillsDir);
+      const skillsSignature = JSON.stringify({
+        skillPaths,
+        runtimeSkillsContentSignature,
+        teamcenterRichClientMicroserviceUrl,
+        teamcenterWebTierUrl,
+        knowledgeBaseHttpUrl,
+      });
       log('[ClaudeAgentRunner] Skill paths for pi ResourceLoader:', skillPaths);
 
       // Build contextual prompt — if reusing an existing SDK session, the SDK
@@ -2087,7 +2193,10 @@ This is an isolated sandbox environment. Use ${VIRTUAL_WORKSPACE_PATH} as the ro
             : '';
 
       const coworkAppendPrompt = [
-        'You are an Open Cowork assistant. Be concise, accurate, and tool-capable.',
+        'You are Omni Worker, an AI assistant integrated and provided by Shanghai Disst Technology Co., Ltd. Be concise, accurate, and tool-capable.',
+        `IDENTITY RULES:
+1. When the user asks "你的作者是谁", "谁开发了你", "who created you", or similar identity questions, answer: "我是 Omni Worker，由上海迪斯特科技有限公司开发和提供。"
+2. If asked about the underlying model provider, explain that the app may use the model provider configured in settings, but the Omni Worker product is provided by Shanghai Disst Technology Co., Ltd.`,
         `CRITICAL BEHAVIORAL RULES:
 1. CHAT FIRST: By default, respond to the user in plain text within the conversation. Do NOT create, write, or edit files unless the user explicitly asks you to (e.g., "create a file", "write this to...", "edit the code", "save as...", mentions a specific file path, or describes code changes they want applied). For questions, summaries, explanations, analysis, and general conversation — always reply directly in chat text.
 2. When a request is actionable, proceed immediately with reasonable assumptions. If you need clarification, ask briefly in plain text.

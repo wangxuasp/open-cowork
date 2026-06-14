@@ -71,6 +71,61 @@ describe('ClaudeAgentRunner Open Cowork SDK integration', () => {
     expect(agentRunnerContent).not.toContain('systemPromptOverride');
   });
 
+  it('applies Teamcenter BASE_URL substitution before loading runtime skills', () => {
+    expect(agentRunnerContent).toContain(
+      "import {\n  applyTeamcenterBaseUrlToSkillDescriptions,\n  TEAMCENTER_SKILL_TEMPLATE_FILENAME,\n} from '../skills/teamcenter-skill-runtime'"
+    );
+    expect(agentRunnerContent).toContain('applyTeamcenterBaseUrlToSkillDescriptions(');
+    expect(agentRunnerContent).toContain('teamcenterRichClientMicroserviceUrl');
+    expect(agentRunnerContent).toContain('teamcenterWebTierUrl');
+    expect(agentRunnerContent).toContain('knowledgeBaseHttpUrl');
+    expect(agentRunnerContent).toContain(
+      'richClientMicroserviceUrl: teamcenterRichClientMicroserviceUrl'
+    );
+    expect(agentRunnerContent).toContain('webTierUrl: teamcenterWebTierUrl');
+    expect(agentRunnerContent).toContain('knowledgeBaseHttpUrl,');
+    expect(agentRunnerContent).toContain(
+      'const skillPaths = await this.resolveSkillPaths(session.id, appSkillsDir);'
+    );
+    expect(agentRunnerContent).toContain(
+      'const runtimeSkillsContentSignature = this.computeRuntimeSkillsContentSignature(appSkillsDir);'
+    );
+    expect(agentRunnerContent).toContain('const skillsSignature = JSON.stringify({');
+    expect(agentRunnerContent).toContain('skillPaths,');
+    expect(agentRunnerContent).toContain('runtimeSkillsContentSignature,');
+    expect(agentRunnerContent).toContain('teamcenterRichClientMicroserviceUrl,');
+    expect(agentRunnerContent).toContain('teamcenterWebTierUrl,');
+    expect(agentRunnerContent).toContain('knowledgeBaseHttpUrl,');
+  });
+
+  it('refreshes materialized runtime skills before Teamcenter URL substitution', () => {
+    expect(agentRunnerContent).toContain('private shouldRefreshRuntimeSkill');
+    expect(agentRunnerContent).toContain('TEAMCENTER_SKILL_TEMPLATE_FILENAME');
+    expect(agentRunnerContent).toContain('this.syncBuiltinSkillsToRuntimeDir(appSkillsDir);');
+    expect(agentRunnerContent).toContain('this.syncUserSkillsToAppDir(appSkillsDir);');
+    expect(agentRunnerContent).toContain('this.syncConfiguredSkillsToRuntimeDir(appSkillsDir);');
+    expect(agentRunnerContent).toContain(
+      'const teamcenterSkillUpdate = applyTeamcenterBaseUrlToSkillDescriptions'
+    );
+  });
+
+  it('loads replaced runtime skills instead of unreplaced source skill paths', () => {
+    expect(agentRunnerContent).toContain(
+      'private async resolveSkillPaths(sessionId?: string, runtimeSkillsDir?: string)'
+    );
+    expect(agentRunnerContent).toContain('const basePaths = runtimeSkillsDir');
+    expect(agentRunnerContent).toContain('? [runtimeSkillsDir]');
+    expect(agentRunnerContent).toContain('private computeRuntimeSkillsContentSignature');
+  });
+
+  it('cleans failed Windows symlink remnants before copying runtime skills', () => {
+    expect(agentRunnerContent).toContain('private removePathEntryIfPresent(targetPath: string)');
+    expect(agentRunnerContent).toContain('this.removePathEntryIfPresent(runtimeSkillPath);');
+    expect(agentRunnerContent).toContain('this.removePathEntryIfPresent(targetPath);');
+    expect(agentRunnerContent).toContain('lstatSync(targetPath)');
+    expect(agentRunnerContent).toContain('fs.unlinkSync(targetPath)');
+  });
+
   it('recreates cached pi sessions when the runtime signature changes', () => {
     expect(agentRunnerContent).toContain(
       "import { buildPiSessionRuntimeSignature } from './pi-session-runtime'"
@@ -129,5 +184,13 @@ describe('ClaudeAgentRunner Open Cowork SDK integration', () => {
       'Do NOT create, write, or edit files unless the user explicitly asks'
     );
     expect(agentRunnerContent).toContain('START DOING IT');
+  });
+
+  it('uses Omni Worker identity for author questions', () => {
+    expect(agentRunnerContent).toContain('You are Omni Worker');
+    expect(agentRunnerContent).toContain('上海迪斯特科技有限公司');
+    expect(agentRunnerContent).toContain('你的作者是谁');
+    expect(agentRunnerContent).toContain('我是 Omni Worker，由上海迪斯特科技有限公司开发和提供。');
+    expect(agentRunnerContent).not.toContain('You are an Open Cowork assistant');
   });
 });

@@ -11,6 +11,9 @@ import {
   Globe,
   ChevronRight,
   BrainCircuit,
+  Building2,
+  BookOpen,
+  Info,
 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useWindowSize } from '../hooks/useWindowSize';
@@ -24,6 +27,9 @@ import { SettingsSchedule } from './settings/SettingsSchedule';
 import { SettingsGeneral } from './settings/SettingsGeneral';
 import { SettingsLogs } from './settings/SettingsLogs';
 import { SettingsMemory } from './settings/SettingsMemory';
+import { SettingsTeamcenter } from './settings/SettingsTeamcenter';
+import { SettingsKnowledgeBase } from './settings/SettingsKnowledgeBase';
+import { SettingsAbout } from './settings/SettingsAbout';
 
 interface SettingsPanelProps {
   onClose: () => void;
@@ -33,10 +39,13 @@ interface SettingsPanelProps {
     | 'connectors'
     | 'skills'
     | 'memory'
+    | 'teamcenter'
+    | 'knowledgeBase'
     | 'schedule'
     | 'remote'
     | 'logs'
-    | 'general';
+    | 'general'
+    | 'about';
 }
 
 type TabId =
@@ -45,10 +54,13 @@ type TabId =
   | 'connectors'
   | 'skills'
   | 'memory'
+  | 'teamcenter'
+  | 'knowledgeBase'
   | 'schedule'
   | 'remote'
   | 'logs'
-  | 'general';
+  | 'general'
+  | 'about';
 
 const VALID_TABS = new Set<TabId>([
   'api',
@@ -56,10 +68,13 @@ const VALID_TABS = new Set<TabId>([
   'connectors',
   'skills',
   'memory',
+  'teamcenter',
+  'knowledgeBase',
   'schedule',
   'remote',
   'logs',
   'general',
+  'about',
 ]);
 
 export function SettingsPanel({ onClose, initialTab = 'api' }: SettingsPanelProps) {
@@ -134,6 +149,18 @@ export function SettingsPanel({ onClose, initialTab = 'api' }: SettingsPanelProp
       description: t('settings.memoryDesc'),
     },
     {
+      id: 'teamcenter' as TabId,
+      label: t('settings.teamcenter'),
+      icon: Building2,
+      description: t('settings.teamcenterDesc'),
+    },
+    {
+      id: 'knowledgeBase' as TabId,
+      label: t('settings.knowledgeBase'),
+      icon: BookOpen,
+      description: t('settings.knowledgeBaseDesc'),
+    },
+    {
       id: 'schedule' as TabId,
       label: t('settings.schedule'),
       icon: Clock3,
@@ -157,6 +184,12 @@ export function SettingsPanel({ onClose, initialTab = 'api' }: SettingsPanelProp
       icon: Globe,
       description: t('settings.generalDesc'),
     },
+    {
+      id: 'about' as TabId,
+      label: t('settings.about'),
+      icon: Info,
+      description: t('settings.aboutDesc'),
+    },
   ];
   const activeTabMeta = tabs.find((tab) => tab.id === activeTab);
 
@@ -171,9 +204,6 @@ export function SettingsPanel({ onClose, initialTab = 'api' }: SettingsPanelProp
             <p className="text-[11px] uppercase tracking-[0.16em] text-text-muted">
               {t('settings.title')}
             </p>
-            <h2 className="mt-1 text-[1.24rem] font-semibold tracking-[-0.03em] text-text-primary">
-              Open Cowork
-            </h2>
             <p className="mt-1 text-[11px] leading-4 text-text-muted">{t('settings.panelDesc')}</p>
           </div>
         )}
@@ -267,6 +297,12 @@ export function SettingsPanel({ onClose, initialTab = 'api' }: SettingsPanelProp
               <div className={activeTab === 'memory' ? '' : 'hidden'}>
                 {viewedTabs.has('memory') && <SettingsMemory />}
               </div>
+              <div className={activeTab === 'teamcenter' ? '' : 'hidden'}>
+                {viewedTabs.has('teamcenter') && <SettingsTeamcenter />}
+              </div>
+              <div className={activeTab === 'knowledgeBase' ? '' : 'hidden'}>
+                {viewedTabs.has('knowledgeBase') && <SettingsKnowledgeBase />}
+              </div>
               <div className={activeTab === 'schedule' ? '' : 'hidden'}>
                 {viewedTabs.has('schedule') && (
                   <SettingsSchedule isActive={activeTab === 'schedule'} />
@@ -282,6 +318,9 @@ export function SettingsPanel({ onClose, initialTab = 'api' }: SettingsPanelProp
               </div>
               <div className={activeTab === 'general' ? '' : 'hidden'}>
                 {viewedTabs.has('general') && <SettingsGeneral />}
+              </div>
+              <div className={activeTab === 'about' ? '' : 'hidden'}>
+                {viewedTabs.has('about') && <SettingsAbout />}
               </div>
             </div>
           </div>
