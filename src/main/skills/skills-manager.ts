@@ -18,6 +18,7 @@ import chokidar, { type FSWatcher } from 'chokidar';
 import type { Skill, PluginInstallResult } from '../../renderer/types';
 import type { DatabaseInstance } from '../db/database';
 import { log, logError, logWarn } from '../utils/logger';
+import { safeReaddirSync } from '../utils/safe-fs';
 import { isPathWithinRoot } from '../tools/path-containment';
 
 /**
@@ -294,12 +295,21 @@ export class SkillsManager {
     this.globalSkillsLoaded = false;
   }
 
+  private logInaccessibleEntry(entryPath: string, error: unknown): void {
+    const code = (error as NodeJS.ErrnoException | undefined)?.code;
+    if (code === 'EPERM' || code === 'EACCES') {
+      logWarn(`[Skills] Skipping inaccessible entry: ${entryPath} (${code})`);
+    }
+  }
+
   private computeStorageSignature(storagePath: string): string {
     try {
       if (!fs.existsSync(storagePath) || !fs.statSync(storagePath).isDirectory()) {
         return '';
       }
-      const entries = fs.readdirSync(storagePath, { withFileTypes: true });
+      const entries = safeReaddirSync(storagePath, (entryPath, error) =>
+        this.logInaccessibleEntry(entryPath, error)
+      );
       const parts = entries
         .filter((entry) => entry.isDirectory())
         .map((entry) => {
@@ -352,6 +362,7 @@ export class SkillsManager {
     try {
       this.storageWatcher = chokidar.watch(storagePath, {
         ignoreInitial: true,
+        ignorePermissionErrors: true,
         depth: 3,
         awaitWriteFinish: {
           stabilityThreshold: 200,
@@ -419,10 +430,12 @@ export class SkillsManager {
       return;
     }
 
-    const entries = fs.readdirSync(userSkillsPath, { withFileTypes: true });
+    const entries = safeReaddirSync(userSkillsPath, (entryPath, error) =>
+      this.logInaccessibleEntry(entryPath, error)
+    );
     for (const entry of entries) {
       // Dirent.isDirectory() returns false for symlinks; check symlinks separately
-      const sourcePath = path.join(userSkillsPath, entry.name);
+      const sourcePath = entry.entryPath;
       if (entry.isSymbolicLink()) {
         if (isDanglingSymlink(sourcePath)) {
           logWarn(`[Skills] Skipping dangling symlink in user skills: ${sourcePath}`);
@@ -532,7 +545,9 @@ export class SkillsManager {
     let migratedCount = 0;
     let skippedCount = 0;
     if (migrate && sourcePath !== targetPath && fs.existsSync(sourcePath)) {
-      const entries = fs.readdirSync(sourcePath, { withFileTypes: true });
+      const entries = safeReaddirSync(sourcePath, (entryPath, error) =>
+        this.logInaccessibleEntry(entryPath, error)
+      );
       for (const entry of entries) {
         if (!entry.isDirectory()) {
           continue;
@@ -542,7 +557,7 @@ export class SkillsManager {
           logWarn(`[Skills] Skipping migration of entry with unsafe name: ${entry.name}`);
           continue;
         }
-        const sourceEntryPath = path.join(sourcePath, entry.name);
+        const sourceEntryPath = entry.entryPath;
         const targetEntryPath = path.join(targetPath, entry.name);
         if (fs.existsSync(targetEntryPath)) {
           skippedCount += 1;
@@ -1085,7 +1100,9 @@ export class SkillsManager {
       return { valid: false, errors };
     }
 
-    const entries = fs.readdirSync(skillsRootPath, { withFileTypes: true });
+    const entries = safeReaddirSync(skillsRootPath, (entryPath, error) =>
+      this.logInaccessibleEntry(entryPath, error)
+    );
     const hasInstallableSkill = entries.some((entry) => {
       if (!entry.isDirectory()) return false;
       const skillMdPath = path.join(skillsRootPath, entry.name, 'SKILL.md');
@@ -1119,7 +1136,9 @@ export class SkillsManager {
       throw new Error('Plugin has no installable skills');
     }
 
-    const entries = fs.readdirSync(skillsRootPath, { withFileTypes: true });
+    const entries = safeReaddirSync(skillsRootPath, (entryPath, error) =>
+      this.logInaccessibleEntry(entryPath, error)
+    );
     const skillDirs = entries.filter((entry) => entry.isDirectory());
     if (skillDirs.length === 0) {
       throw new Error('Plugin has no installable skills');

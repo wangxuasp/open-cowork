@@ -49,6 +49,7 @@ import { pathConverter } from '../sandbox/wsl-bridge';
 import { SandboxSync } from '../sandbox/sandbox-sync';
 import { extractArtifactsFromText, buildArtifactTraceSteps } from '../utils/artifact-parser';
 import { getDefaultShell } from '../utils/shell-resolver';
+import { safeReaddirSync } from '../utils/safe-fs';
 import { PluginRuntimeService } from '../skills/plugin-runtime-service';
 import type { SkillsAdapter } from '../skills/skills-adapter';
 import {
@@ -709,11 +710,16 @@ ${hints.join('\n')}
 
     const entries: string[] = [];
     const visit = (currentDir: string): void => {
-      for (const entry of fs.readdirSync(currentDir, { withFileTypes: true })) {
+      for (const entry of safeReaddirSync(currentDir, (entryPath, error) => {
+        const code = (error as NodeJS.ErrnoException | undefined)?.code;
+        if (code === 'EPERM' || code === 'EACCES') {
+          logWarn('[ClaudeAgentRunner] Skipping inaccessible runtime skill entry:', entryPath);
+        }
+      })) {
         if (entry.name.startsWith('.') || entry.name === 'node_modules') {
           continue;
         }
-        const entryPath = path.join(currentDir, entry.name);
+        const entryPath = entry.entryPath;
         const isDirectory =
           entry.isDirectory() || (entry.isSymbolicLink() && fs.statSync(entryPath).isDirectory());
         if (isDirectory) {
@@ -906,10 +912,15 @@ ${hints.join('\n')}
       return;
     }
 
-    const entries = fs.readdirSync(userSkillsDir, { withFileTypes: true });
+    const entries = safeReaddirSync(userSkillsDir, (entryPath, error) => {
+      const code = (error as NodeJS.ErrnoException | undefined)?.code;
+      if (code === 'EPERM' || code === 'EACCES') {
+        logWarn('[ClaudeAgentRunner] Skipping inaccessible user skill entry:', entryPath);
+      }
+    });
     for (const entry of entries) {
       if (!entry.isDirectory()) continue;
-      const sourcePath = path.join(userSkillsDir, entry.name);
+      const sourcePath = entry.entryPath;
       const targetPath = path.join(appSkillsDir, entry.name);
 
       if (fs.existsSync(targetPath)) {
@@ -946,10 +957,15 @@ ${hints.join('\n')}
       return;
     }
 
-    const entries = fs.readdirSync(configuredSkillsDir, { withFileTypes: true });
+    const entries = safeReaddirSync(configuredSkillsDir, (entryPath, error) => {
+      const code = (error as NodeJS.ErrnoException | undefined)?.code;
+      if (code === 'EPERM' || code === 'EACCES') {
+        logWarn('[ClaudeAgentRunner] Skipping inaccessible configured skill entry:', entryPath);
+      }
+    });
     for (const entry of entries) {
       if (!entry.isDirectory()) continue;
-      const sourcePath = path.join(configuredSkillsDir, entry.name);
+      const sourcePath = entry.entryPath;
       const targetPath = path.join(runtimeSkillsDir, entry.name);
       try {
         if (fs.existsSync(targetPath)) {

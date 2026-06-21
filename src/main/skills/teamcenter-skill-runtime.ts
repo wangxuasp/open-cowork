@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { safeReaddirSync } from '../utils/safe-fs';
 
 export const TEAMCENTER_BASE_URL_PLACEHOLDER = '{BASE_URL}';
 export const TEAMCENTER_RICH_CLIENT_MICROSERVICE_URL_PLACEHOLDER =
@@ -79,7 +80,12 @@ function copyDirectorySync(source: string, target: string): void {
 }
 
 function materializeSkillDirectoryIfNeeded(skillDir: string): void {
-  const stat = fs.lstatSync(skillDir);
+  let stat: fs.Stats;
+  try {
+    stat = fs.lstatSync(skillDir);
+  } catch {
+    return;
+  }
   if (!stat.isSymbolicLink()) {
     return;
   }
@@ -102,11 +108,11 @@ function findSkillFiles(rootDir: string): string[] {
       return;
     }
 
-    for (const entry of fs.readdirSync(currentDir, { withFileTypes: true })) {
+    for (const entry of safeReaddirSync(currentDir)) {
       if (entry.name.startsWith('.') || entry.name === 'node_modules') {
         continue;
       }
-      const entryPath = path.join(currentDir, entry.name);
+      const entryPath = entry.entryPath;
       const isDirectory = entry.isDirectory() || entry.isSymbolicLink();
       if (isDirectory) {
         try {
