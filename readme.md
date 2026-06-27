@@ -307,6 +307,16 @@ Open Cowork offers multi-level protection: basic path-based restrictions on all 
 **What are Skills and how do I create custom ones?**
 Skills are built-in workflows for specific tasks like generating PPTX, DOCX, PDF, or XLSX files. Open Cowork ships with default skills under `.claude/skills/` and includes a `skill-creator` tool to help you build your own custom skills.
 
+Skill directories follow these roles:
+
+| Location                                        | Purpose                                                           |
+| ----------------------------------------------- | ----------------------------------------------------------------- |
+| `.claude/skills/` (project)                     | Source skills bundled into the installer as `resources/skills`    |
+| `~/.claude/skills/` or a configured global path | User-managed custom skills                                        |
+| `%AppData%/omni-worker/claude/skills` (runtime) | Managed working copy used by the Agent SDK — do not edit manually |
+
+Place custom skills in the project or user/global paths above; the runtime directory is refreshed automatically at session start.
+
 **What is MCP and how does it work?**
 MCP (Model Context Protocol) lets AI connect to external tools and services. Open Cowork supports MCP connectors for browsers, Notion, and other desktop apps — extending the AI's capabilities beyond just file management and code.
 

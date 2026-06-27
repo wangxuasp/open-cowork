@@ -73,7 +73,7 @@ describe('ClaudeAgentRunner Open Cowork SDK integration', () => {
 
   it('applies Teamcenter BASE_URL substitution before loading runtime skills', () => {
     expect(agentRunnerContent).toContain(
-      "import {\n  applyTeamcenterBaseUrlToSkillDescriptions,\n  TEAMCENTER_SKILL_TEMPLATE_FILENAME,\n} from '../skills/teamcenter-skill-runtime'"
+      "import { applyTeamcenterBaseUrlToSkillDescriptions } from '../skills/teamcenter-skill-runtime'"
     );
     expect(agentRunnerContent).toContain('applyTeamcenterBaseUrlToSkillDescriptions(');
     expect(agentRunnerContent).toContain('teamcenterRichClientMicroserviceUrl');
@@ -98,9 +98,11 @@ describe('ClaudeAgentRunner Open Cowork SDK integration', () => {
     expect(agentRunnerContent).toContain('knowledgeBaseHttpUrl,');
   });
 
-  it('refreshes materialized runtime skills before Teamcenter URL substitution', () => {
-    expect(agentRunnerContent).toContain('private shouldRefreshRuntimeSkill');
-    expect(agentRunnerContent).toContain('TEAMCENTER_SKILL_TEMPLATE_FILENAME');
+  it('refreshes runtime skills incrementally before Teamcenter URL substitution', () => {
+    expect(agentRunnerContent).toContain("from '../skills/runtime-skills-sync'");
+    expect(agentRunnerContent).toContain('shouldRefreshRuntimeSkillEntry');
+    expect(agentRunnerContent).toContain('runtimeSkillEntryMatchesSource');
+    expect(agentRunnerContent).toContain('cleanDanglingSymlinksInDir(appSkillsDir)');
     expect(agentRunnerContent).toContain('this.syncBuiltinSkillsToRuntimeDir(appSkillsDir);');
     expect(agentRunnerContent).toContain('this.syncUserSkillsToAppDir(appSkillsDir);');
     expect(agentRunnerContent).toContain('this.syncConfiguredSkillsToRuntimeDir(appSkillsDir);');
@@ -110,9 +112,8 @@ describe('ClaudeAgentRunner Open Cowork SDK integration', () => {
   });
 
   it('loads replaced runtime skills instead of unreplaced source skill paths', () => {
-    expect(agentRunnerContent).toContain(
-      'private async resolveSkillPaths(sessionId?: string, runtimeSkillsDir?: string)'
-    );
+    expect(agentRunnerContent).toContain('private async resolveSkillPaths(');
+    expect(agentRunnerContent).toContain('runtimeSkillsDir?: string');
     expect(agentRunnerContent).toContain('const basePaths = runtimeSkillsDir');
     expect(agentRunnerContent).toContain('? [runtimeSkillsDir]');
     expect(agentRunnerContent).toContain('private computeRuntimeSkillsContentSignature');

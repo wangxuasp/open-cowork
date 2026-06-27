@@ -139,18 +139,20 @@ export function applyTeamcenterBaseUrlToSkillDescriptions(
 
   for (const skillFile of findSkillFiles(runtimeSkillsDir)) {
     const skillDir = path.dirname(skillFile);
-    const currentContent = fs.readFileSync(skillFile, 'utf8');
     const templatePath = path.join(skillDir, TEAMCENTER_SKILL_TEMPLATE_FILENAME);
     const existingTemplate = fs.existsSync(templatePath)
       ? fs.readFileSync(templatePath, 'utf8')
       : null;
+
+    materializeSkillDirectoryIfNeeded(skillDir);
+
+    const materializedSkillFile = path.join(skillDir, 'SKILL.md');
+    const currentContent = fs.readFileSync(materializedSkillFile, 'utf8');
     const templateContent = existingTemplate ?? currentContent;
 
     if (!TEAMCENTER_URL_PLACEHOLDERS.some((placeholder) => templateContent.includes(placeholder))) {
       continue;
     }
-
-    materializeSkillDirectoryIfNeeded(skillDir);
 
     if (!existingTemplate) {
       fs.writeFileSync(templatePath, templateContent, 'utf8');
@@ -178,7 +180,6 @@ export function applyTeamcenterBaseUrlToSkillDescriptions(
       normalizedUrls.knowledgeBaseHttpUrl
     );
 
-    const materializedSkillFile = path.join(skillDir, 'SKILL.md');
     if (fs.readFileSync(materializedSkillFile, 'utf8') !== nextContent) {
       fs.writeFileSync(materializedSkillFile, nextContent, 'utf8');
       updatedCount += 1;

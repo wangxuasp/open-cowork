@@ -52,10 +52,12 @@ import { getDefaultShell } from '../utils/shell-resolver';
 import { safeReaddirSync } from '../utils/safe-fs';
 import { PluginRuntimeService } from '../skills/plugin-runtime-service';
 import type { SkillsAdapter } from '../skills/skills-adapter';
+import { applyTeamcenterBaseUrlToSkillDescriptions } from '../skills/teamcenter-skill-runtime';
 import {
-  applyTeamcenterBaseUrlToSkillDescriptions,
-  TEAMCENTER_SKILL_TEMPLATE_FILENAME,
-} from '../skills/teamcenter-skill-runtime';
+  cleanDanglingSymlinksInDir,
+  runtimeSkillEntryMatchesSource,
+  shouldRefreshRuntimeSkillEntry,
+} from '../skills/runtime-skills-sync';
 import { AgentRuntimeExtensionManager } from '../extensions/agent-runtime-extension-manager';
 import { configStore } from '../config/config-store';
 import { normalizeOpenAICompatibleBaseUrl } from '../config/auth-utils';
@@ -829,22 +831,6 @@ ${hints.join('\n')}
     return path.join(app.getPath('home'), '.claude', 'skills');
   }
 
-  private shouldRefreshRuntimeSkill(targetPath: string): boolean {
-    if (!fs.existsSync(targetPath)) {
-      return true;
-    }
-
-    try {
-      const stat = fs.lstatSync(targetPath);
-      if (stat.isSymbolicLink()) {
-        return /\.asar[/\\]/.test(fs.readlinkSync(targetPath));
-      }
-      return fs.existsSync(path.join(targetPath, TEAMCENTER_SKILL_TEMPLATE_FILENAME));
-    } catch {
-      return false;
-    }
-  }
-
   private removePathEntryIfPresent(targetPath: string): void {
     try {
       const stat = fs.lstatSync(targetPath);
@@ -878,7 +864,7 @@ ${hints.join('\n')}
       if (!fs.statSync(builtinSkillPath).isDirectory()) {
         continue;
       }
-      if (!this.shouldRefreshRuntimeSkill(runtimeSkillPath)) {
+      if (!shouldRefreshRuntimeSkillEntry(builtinSkillPath, runtimeSkillPath)) {
         continue;
       }
 
@@ -923,16 +909,14 @@ ${hints.join('\n')}
       const sourcePath = entry.entryPath;
       const targetPath = path.join(appSkillsDir, entry.name);
 
-      if (fs.existsSync(targetPath)) {
-        try {
-          const stat = fs.lstatSync(targetPath);
-          if (!stat.isSymbolicLink()) {
-            continue;
-          }
-          fs.unlinkSync(targetPath);
-        } catch {
-          continue;
-        }
+      if (runtimeSkillEntryMatchesSource(sourcePath, targetPath)) {
+        continue;
+      }
+
+      try {
+        this.removePathEntryIfPresent(targetPath);
+      } catch {
+        continue;
       }
 
       try {
@@ -967,16 +951,13 @@ ${hints.join('\n')}
       if (!entry.isDirectory()) continue;
       const sourcePath = entry.entryPath;
       const targetPath = path.join(runtimeSkillsDir, entry.name);
+
+      if (runtimeSkillEntryMatchesSource(sourcePath, targetPath)) {
+        continue;
+      }
+
       try {
-        if (fs.existsSync(targetPath)) {
-          // Use lstatSync so we don't follow symlinks — check the entry itself
-          const stat = fs.lstatSync(targetPath);
-          if (stat.isSymbolicLink()) {
-            fs.unlinkSync(targetPath);
-          } else {
-            fs.rmSync(targetPath, { recursive: true, force: true });
-          }
-        }
+        this.removePathEntryIfPresent(targetPath);
         fs.symlinkSync(sourcePath, targetPath, 'dir');
       } catch (err) {
         try {
@@ -1877,6 +1858,7 @@ ${hints.join('\n')}
         }
       }
 
+      cleanDanglingSymlinksInDir(appSkillsDir);
       this.syncBuiltinSkillsToRuntimeDir(appSkillsDir);
       this.syncUserSkillsToAppDir(appSkillsDir);
       this.syncConfiguredSkillsToRuntimeDir(appSkillsDir);
