@@ -1,0 +1,6675 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/main/remote/channels/channel-base.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 232,
+      "nonEmptyLines": 201,
+      "functions": [
+        {
+          "name": "withRetry",
+          "startLine": 190,
+          "endLine": 232,
+          "params": ["operation", "options"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "withRetry",
+          "line": 190,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "emitMessage",
+          "callee": "log",
+          "lineNumber": 64
+        },
+        {
+          "caller": "emitMessage",
+          "callee": "this.messageHandler",
+          "lineNumber": 75
+        },
+        {
+          "caller": "emitMessage",
+          "callee": "logError",
+          "lineNumber": 77
+        },
+        {
+          "caller": "emitMessage",
+          "callee": "this.emitError",
+          "lineNumber": 78
+        },
+        {
+          "caller": "emitMessage",
+          "callee": "String",
+          "lineNumber": 78
+        },
+        {
+          "caller": "emitError",
+          "callee": "logError",
+          "lineNumber": 87
+        },
+        {
+          "caller": "emitError",
+          "callee": "this.errorHandler",
+          "lineNumber": 90
+        },
+        {
+          "caller": "emitError",
+          "callee": "this.emit",
+          "lineNumber": 93
+        },
+        {
+          "caller": "logStatus",
+          "callee": "log",
+          "lineNumber": 100
+        },
+        {
+          "caller": "formatContentForLog",
+          "callee": "content.text.substring",
+          "lineNumber": 109
+        },
+        {
+          "caller": "formatContentForLog",
+          "callee": "content.markdown.substring",
+          "lineNumber": 115
+        },
+        {
+          "caller": "splitMessage",
+          "callee": "chunks.push",
+          "lineNumber": 145
+        },
+        {
+          "caller": "splitMessage",
+          "callee": "remaining.lastIndexOf",
+          "lineNumber": 153
+        },
+        {
+          "caller": "splitMessage",
+          "callee": "remaining.lastIndexOf",
+          "lineNumber": 158
+        },
+        {
+          "caller": "splitMessage",
+          "callee": "remaining.lastIndexOf",
+          "lineNumber": 163
+        },
+        {
+          "caller": "splitMessage",
+          "callee": "remaining.lastIndexOf",
+          "lineNumber": 164
+        },
+        {
+          "caller": "splitMessage",
+          "callee": "Math.max",
+          "lineNumber": 165
+        },
+        {
+          "caller": "splitMessage",
+          "callee": "chunks.push",
+          "lineNumber": 172
+        },
+        {
+          "caller": "splitMessage",
+          "callee": "remaining.substring",
+          "lineNumber": 172
+        },
+        {
+          "caller": "splitMessage",
+          "callee": "remaining.substring",
+          "lineNumber": 173
+        },
+        {
+          "caller": "generateMessageId",
+          "callee": "Date.now",
+          "lineNumber": 183
+        },
+        {
+          "caller": "generateMessageId",
+          "callee": "crypto.randomUUID",
+          "lineNumber": 183
+        },
+        {
+          "caller": "withRetry",
+          "callee": "operation",
+          "lineNumber": 213
+        },
+        {
+          "caller": "withRetry",
+          "callee": "String",
+          "lineNumber": 215
+        },
+        {
+          "caller": "withRetry",
+          "callee": "shouldRetry",
+          "lineNumber": 217
+        },
+        {
+          "caller": "withRetry",
+          "callee": "onRetry",
+          "lineNumber": 222
+        },
+        {
+          "caller": "withRetry",
+          "callee": "logWarn",
+          "lineNumber": 225
+        },
+        {
+          "caller": "withRetry",
+          "callee": "setTimeout",
+          "lineNumber": 226
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/remote/channels/feishu/feishu-api.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 450,
+      "nonEmptyLines": 368,
+      "classes": [
+        {
+          "name": "FeishuAPI",
+          "startLine": 37,
+          "endLine": 450,
+          "methods": [
+            "constructor",
+            "refreshToken",
+            "getBotInfo",
+            "sendMessage",
+            "replyMessage",
+            "uploadImage",
+            "uploadFile",
+            "downloadImage",
+            "downloadFile",
+            "getChatInfo",
+            "getUserInfo",
+            "sendTypingIndicator",
+            "createCard"
+          ],
+          "properties": ["appId", "appSecret", "accessToken", "tokenExpireAt", "refreshPromise"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "FeishuAPI",
+          "line": 37,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "refreshToken",
+          "callee": "Date.now",
+          "lineNumber": 54
+        },
+        {
+          "caller": "refreshToken",
+          "callee": "(async () => {\n      try {\n        log('[FeishuAPI] Refreshing access token...');\n\n        const response = await fetch(`${FEISHU_API_BASE}/auth/v3/tenant_access_token/internal`, {\n          method: 'POST',\n          headers: {\n            'Content-Type': 'application/json; charset=utf-8',\n          },\n          body: JSON.stringify({\n            app_id: this.appId,\n            app_secret: this.appSecret,\n          }),\n        });\n\n        if (!response.ok) {\n          throw new Error(`HTTP ${response.status}: ${response.statusText}`);\n        }\n\n        const data: TokenResponse = await response.json();\n\n        if (data.code !== 0 || !data.tenant_access_token) {\n          throw new Error(`Failed to get access token: ${data.msg}`);\n        }\n\n        this.accessToken = data.tenant_access_token;\n        this.tokenExpireAt = Date.now() + data.expire * 1000;\n\n        log('[FeishuAPI] Access token refreshed, expires in', data.expire, 'seconds');\n\n        return this.accessToken;\n      } finally {\n        this.refreshPromise = undefined;\n      }\n    })",
+          "lineNumber": 63
+        },
+        {
+          "caller": "refreshToken",
+          "callee": "log",
+          "lineNumber": 65
+        },
+        {
+          "caller": "refreshToken",
+          "callee": "fetch",
+          "lineNumber": 67
+        },
+        {
+          "caller": "refreshToken",
+          "callee": "JSON.stringify",
+          "lineNumber": 72
+        },
+        {
+          "caller": "refreshToken",
+          "callee": "response.json",
+          "lineNumber": 82
+        },
+        {
+          "caller": "refreshToken",
+          "callee": "Date.now",
+          "lineNumber": 89
+        },
+        {
+          "caller": "refreshToken",
+          "callee": "log",
+          "lineNumber": 91
+        },
+        {
+          "caller": "getBotInfo",
+          "callee": "this.refreshToken",
+          "lineNumber": 106
+        },
+        {
+          "caller": "getBotInfo",
+          "callee": "fetch",
+          "lineNumber": 108
+        },
+        {
+          "caller": "getBotInfo",
+          "callee": "response.json",
+          "lineNumber": 119
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "this.replyMessage",
+          "lineNumber": 143
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "this.refreshToken",
+          "lineNumber": 146
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "JSON.stringify",
+          "lineNumber": 148
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "log",
+          "lineNumber": 155
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "fetch",
+          "lineNumber": 161
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "JSON.stringify",
+          "lineNumber": 167
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "response.json",
+          "lineNumber": 174
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "logError",
+          "lineNumber": 177
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "log",
+          "lineNumber": 181
+        },
+        {
+          "caller": "replyMessage",
+          "callee": "this.refreshToken",
+          "lineNumber": 194
+        },
+        {
+          "caller": "replyMessage",
+          "callee": "JSON.stringify",
+          "lineNumber": 198
+        },
+        {
+          "caller": "replyMessage",
+          "callee": "log",
+          "lineNumber": 201
+        },
+        {
+          "caller": "replyMessage",
+          "callee": "fetch",
+          "lineNumber": 203
+        },
+        {
+          "caller": "replyMessage",
+          "callee": "JSON.stringify",
+          "lineNumber": 209
+        },
+        {
+          "caller": "replyMessage",
+          "callee": "response.json",
+          "lineNumber": 216
+        },
+        {
+          "caller": "replyMessage",
+          "callee": "logError",
+          "lineNumber": 219
+        },
+        {
+          "caller": "uploadImage",
+          "callee": "this.refreshToken",
+          "lineNumber": 230
+        },
+        {
+          "caller": "uploadImage",
+          "callee": "formData.append",
+          "lineNumber": 234
+        },
+        {
+          "caller": "uploadImage",
+          "callee": "formData.append",
+          "lineNumber": 235
+        },
+        {
+          "caller": "uploadImage",
+          "callee": "fetch",
+          "lineNumber": 237
+        },
+        {
+          "caller": "uploadImage",
+          "callee": "response.json",
+          "lineNumber": 249
+        },
+        {
+          "caller": "uploadFile",
+          "callee": "this.refreshToken",
+          "lineNumber": 262
+        },
+        {
+          "caller": "uploadFile",
+          "callee": "formData.append",
+          "lineNumber": 265
+        },
+        {
+          "caller": "uploadFile",
+          "callee": "formData.append",
+          "lineNumber": 266
+        },
+        {
+          "caller": "uploadFile",
+          "callee": "formData.append",
+          "lineNumber": 267
+        },
+        {
+          "caller": "uploadFile",
+          "callee": "fetch",
+          "lineNumber": 269
+        },
+        {
+          "caller": "uploadFile",
+          "callee": "response.json",
+          "lineNumber": 281
+        },
+        {
+          "caller": "downloadImage",
+          "callee": "this.refreshToken",
+          "lineNumber": 294
+        },
+        {
+          "caller": "downloadImage",
+          "callee": "fetch",
+          "lineNumber": 296
+        },
+        {
+          "caller": "downloadImage",
+          "callee": "response.arrayBuffer",
+          "lineNumber": 307
+        },
+        {
+          "caller": "downloadImage",
+          "callee": "Buffer.from",
+          "lineNumber": 308
+        },
+        {
+          "caller": "downloadFile",
+          "callee": "this.refreshToken",
+          "lineNumber": 315
+        },
+        {
+          "caller": "downloadFile",
+          "callee": "fetch",
+          "lineNumber": 317
+        },
+        {
+          "caller": "downloadFile",
+          "callee": "response.arrayBuffer",
+          "lineNumber": 328
+        },
+        {
+          "caller": "downloadFile",
+          "callee": "Buffer.from",
+          "lineNumber": 329
+        },
+        {
+          "caller": "getChatInfo",
+          "callee": "this.refreshToken",
+          "lineNumber": 336
+        },
+        {
+          "caller": "getChatInfo",
+          "callee": "fetch",
+          "lineNumber": 338
+        },
+        {
+          "caller": "getChatInfo",
+          "callee": "response.json",
+          "lineNumber": 349
+        },
+        {
+          "caller": "getUserInfo",
+          "callee": "this.refreshToken",
+          "lineNumber": 365
+        },
+        {
+          "caller": "getUserInfo",
+          "callee": "fetch",
+          "lineNumber": 367
+        },
+        {
+          "caller": "getUserInfo",
+          "callee": "response.json",
+          "lineNumber": 381
+        },
+        {
+          "caller": "createCard",
+          "callee": "elements.push",
+          "lineNumber": 418
+        },
+        {
+          "caller": "createCard",
+          "callee": "options.buttons.map",
+          "lineNumber": 420
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/remote/channels/feishu/feishu-channel.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 704,
+      "nonEmptyLines": 617,
+      "classes": [
+        {
+          "name": "FeishuChannel",
+          "startLine": 21,
+          "endLine": 704,
+          "methods": [
+            "constructor",
+            "start",
+            "stop",
+            "send",
+            "verifyWebhookSignature",
+            "handleWebhook",
+            "startWebSocketMode",
+            "handleMessageEvent",
+            "stripBotMentionFromText",
+            "parseMessageContent",
+            "extractTextFromPost",
+            "checkMentioned",
+            "sendMessage",
+            "markdownToCard",
+            "sanitizeMarkdownForFeishu",
+            "uploadImage"
+          ],
+          "properties": ["type", "config", "api", "wsClient", "botOpenId", "botName"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "FeishuChannel",
+          "line": 21,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "constructor",
+          "callee": "super",
+          "lineNumber": 33
+        },
+        {
+          "caller": "start",
+          "callee": "logWarn",
+          "lineNumber": 43
+        },
+        {
+          "caller": "start",
+          "callee": "this.logStatus",
+          "lineNumber": 47
+        },
+        {
+          "caller": "start",
+          "callee": "this.api.refreshToken",
+          "lineNumber": 51
+        },
+        {
+          "caller": "start",
+          "callee": "this.api.getBotInfo",
+          "lineNumber": 54
+        },
+        {
+          "caller": "start",
+          "callee": "log",
+          "lineNumber": 58
+        },
+        {
+          "caller": "start",
+          "callee": "this.startWebSocketMode",
+          "lineNumber": 62
+        },
+        {
+          "caller": "start",
+          "callee": "this.logStatus",
+          "lineNumber": 64
+        },
+        {
+          "caller": "start",
+          "callee": "this.logStatus",
+          "lineNumber": 68
+        },
+        {
+          "caller": "start",
+          "callee": "logError",
+          "lineNumber": 70
+        },
+        {
+          "caller": "stop",
+          "callee": "this.logStatus",
+          "lineNumber": 84
+        },
+        {
+          "caller": "stop",
+          "callee": "this.wsClient.removeAllListeners",
+          "lineNumber": 90
+        },
+        {
+          "caller": "stop",
+          "callee": "this.wsClient.stop",
+          "lineNumber": 91
+        },
+        {
+          "caller": "stop",
+          "callee": "this.logStatus",
+          "lineNumber": 99
+        },
+        {
+          "caller": "send",
+          "callee": "log",
+          "lineNumber": 112
+        },
+        {
+          "caller": "send",
+          "callee": "withRetry",
+          "lineNumber": 119
+        },
+        {
+          "caller": "send",
+          "callee": "this.sendMessage",
+          "lineNumber": 121
+        },
+        {
+          "caller": "send",
+          "callee": "logWarn",
+          "lineNumber": 127
+        },
+        {
+          "caller": "send",
+          "callee": "log",
+          "lineNumber": 132
+        },
+        {
+          "caller": "send",
+          "callee": "logError",
+          "lineNumber": 134
+        },
+        {
+          "caller": "verifyWebhookSignature",
+          "callee": "crypto\n        .createHmac('sha256', verificationToken)\n        .update(content)\n        .digest",
+          "lineNumber": 153
+        },
+        {
+          "caller": "verifyWebhookSignature",
+          "callee": "crypto\n        .createHmac('sha256', verificationToken)\n        .update",
+          "lineNumber": 153
+        },
+        {
+          "caller": "verifyWebhookSignature",
+          "callee": "crypto\n        .createHmac",
+          "lineNumber": 153
+        },
+        {
+          "caller": "verifyWebhookSignature",
+          "callee": "Buffer.from",
+          "lineNumber": 157
+        },
+        {
+          "caller": "verifyWebhookSignature",
+          "callee": "Buffer.from",
+          "lineNumber": 158
+        },
+        {
+          "caller": "verifyWebhookSignature",
+          "callee": "crypto.timingSafeEqual",
+          "lineNumber": 160
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "log",
+          "lineNumber": 173
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "logWarn",
+          "lineNumber": 180
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "this.verifyWebhookSignature",
+          "lineNumber": 183
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "logWarn",
+          "lineNumber": 184
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "JSON.parse",
+          "lineNumber": 189
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "log",
+          "lineNumber": 190
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "JSON.stringify",
+          "lineNumber": 190
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "log",
+          "lineNumber": 194
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "log",
+          "lineNumber": 203
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "log",
+          "lineNumber": 205
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "this.handleMessageEvent",
+          "lineNumber": 208
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "log",
+          "lineNumber": 216
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "log",
+          "lineNumber": 218
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "this.handleMessageEvent",
+          "lineNumber": 221
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "log",
+          "lineNumber": 229
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "log",
+          "lineNumber": 234
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "logError",
+          "lineNumber": 237
+        },
+        {
+          "caller": "startWebSocketMode",
+          "callee": "log",
+          "lineNumber": 246
+        },
+        {
+          "caller": "startWebSocketMode",
+          "callee": "log",
+          "lineNumber": 256
+        },
+        {
+          "caller": "startWebSocketMode",
+          "callee": "this.wsClient.on",
+          "lineNumber": 257
+        },
+        {
+          "caller": "startWebSocketMode",
+          "callee": "log",
+          "lineNumber": 259
+        },
+        {
+          "caller": "startWebSocketMode",
+          "callee": "String",
+          "lineNumber": 268
+        },
+        {
+          "caller": "startWebSocketMode",
+          "callee": "this.stripBotMentionFromText",
+          "lineNumber": 270
+        },
+        {
+          "caller": "startWebSocketMode",
+          "callee": "Array.isArray",
+          "lineNumber": 271
+        },
+        {
+          "caller": "startWebSocketMode",
+          "callee": "String",
+          "lineNumber": 274
+        },
+        {
+          "caller": "startWebSocketMode",
+          "callee": "String",
+          "lineNumber": 276
+        },
+        {
+          "caller": "startWebSocketMode",
+          "callee": "String",
+          "lineNumber": 278
+        },
+        {
+          "caller": "startWebSocketMode",
+          "callee": "parseInt",
+          "lineNumber": 286
+        },
+        {
+          "caller": "startWebSocketMode",
+          "callee": "String",
+          "lineNumber": 286
+        },
+        {
+          "caller": "startWebSocketMode",
+          "callee": "Date.now",
+          "lineNumber": 286
+        },
+        {
+          "caller": "startWebSocketMode",
+          "callee": "Array.isArray",
+          "lineNumber": 289
+        },
+        {
+          "caller": "startWebSocketMode",
+          "callee": "data.mentions.some",
+          "lineNumber": 290
+        },
+        {
+          "caller": "startWebSocketMode",
+          "callee": "this.emitMessage",
+          "lineNumber": 305
+        },
+        {
+          "caller": "startWebSocketMode",
+          "callee": "logError",
+          "lineNumber": 307
+        },
+        {
+          "caller": "startWebSocketMode",
+          "callee": "this.wsClient.on",
+          "lineNumber": 312
+        },
+        {
+          "caller": "startWebSocketMode",
+          "callee": "log",
+          "lineNumber": 313
+        },
+        {
+          "caller": "startWebSocketMode",
+          "callee": "this.wsClient.on",
+          "lineNumber": 317
+        },
+        {
+          "caller": "startWebSocketMode",
+          "callee": "logWarn",
+          "lineNumber": 318
+        },
+        {
+          "caller": "startWebSocketMode",
+          "callee": "this.wsClient.on",
+          "lineNumber": 322
+        },
+        {
+          "caller": "startWebSocketMode",
+          "callee": "logError",
+          "lineNumber": 323
+        },
+        {
+          "caller": "startWebSocketMode",
+          "callee": "this.wsClient.start",
+          "lineNumber": 327
+        },
+        {
+          "caller": "handleMessageEvent",
+          "callee": "this.parseMessageContent",
+          "lineNumber": 345
+        },
+        {
+          "caller": "handleMessageEvent",
+          "callee": "logWarn",
+          "lineNumber": 347
+        },
+        {
+          "caller": "handleMessageEvent",
+          "callee": "this.stripBotMentionFromText",
+          "lineNumber": 353
+        },
+        {
+          "caller": "handleMessageEvent",
+          "callee": "this.checkMentioned",
+          "lineNumber": 357
+        },
+        {
+          "caller": "handleMessageEvent",
+          "callee": "String",
+          "lineNumber": 361
+        },
+        {
+          "caller": "handleMessageEvent",
+          "callee": "String",
+          "lineNumber": 363
+        },
+        {
+          "caller": "handleMessageEvent",
+          "callee": "String",
+          "lineNumber": 365
+        },
+        {
+          "caller": "handleMessageEvent",
+          "callee": "parseInt",
+          "lineNumber": 370
+        },
+        {
+          "caller": "handleMessageEvent",
+          "callee": "String",
+          "lineNumber": 370
+        },
+        {
+          "caller": "handleMessageEvent",
+          "callee": "Date.now",
+          "lineNumber": 370
+        },
+        {
+          "caller": "handleMessageEvent",
+          "callee": "this.emitMessage",
+          "lineNumber": 377
+        },
+        {
+          "caller": "handleMessageEvent",
+          "callee": "logError",
+          "lineNumber": 379
+        },
+        {
+          "caller": "stripBotMentionFromText",
+          "callee": "Array.isArray",
+          "lineNumber": 389
+        },
+        {
+          "caller": "stripBotMentionFromText",
+          "callee": "result.replace",
+          "lineNumber": 397
+        },
+        {
+          "caller": "stripBotMentionFromText",
+          "callee": "m.key.replace",
+          "lineNumber": 398
+        },
+        {
+          "caller": "stripBotMentionFromText",
+          "callee": "result.trim",
+          "lineNumber": 403
+        },
+        {
+          "caller": "parseMessageContent",
+          "callee": "JSON.parse",
+          "lineNumber": 413
+        },
+        {
+          "caller": "parseMessageContent",
+          "callee": "this.extractTextFromPost",
+          "lineNumber": 451
+        },
+        {
+          "caller": "parseMessageContent",
+          "callee": "log",
+          "lineNumber": 462
+        },
+        {
+          "caller": "parseMessageContent",
+          "callee": "logError",
+          "lineNumber": 469
+        },
+        {
+          "caller": "extractTextFromPost",
+          "callee": "Array.isArray",
+          "lineNumber": 484
+        },
+        {
+          "caller": "extractTextFromPost",
+          "callee": "texts.push",
+          "lineNumber": 490
+        },
+        {
+          "caller": "extractTextFromPost",
+          "callee": "String",
+          "lineNumber": 490
+        },
+        {
+          "caller": "extractTextFromPost",
+          "callee": "texts.push",
+          "lineNumber": 492
+        },
+        {
+          "caller": "extractTextFromPost",
+          "callee": "texts.push",
+          "lineNumber": 495
+        },
+        {
+          "caller": "extractTextFromPost",
+          "callee": "logError",
+          "lineNumber": 498
+        },
+        {
+          "caller": "extractTextFromPost",
+          "callee": "texts.join('').trim",
+          "lineNumber": 501
+        },
+        {
+          "caller": "extractTextFromPost",
+          "callee": "texts.join",
+          "lineNumber": 501
+        },
+        {
+          "caller": "checkMentioned",
+          "callee": "Array.isArray",
+          "lineNumber": 513
+        },
+        {
+          "caller": "checkMentioned",
+          "callee": "message.mentions.some",
+          "lineNumber": 514
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "this.markdownToCard",
+          "lineNumber": 541
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "this.uploadImage",
+          "lineNumber": 550
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "String",
+          "lineNumber": 566
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "this.wsClient.replyMessage",
+          "lineNumber": 575
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "JSON.stringify",
+          "lineNumber": 575
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "this.wsClient.sendMessage",
+          "lineNumber": 577
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "this.splitMessage",
+          "lineNumber": 586
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "this.wsClient.replyMessage",
+          "lineNumber": 589
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "this.wsClient.sendMessage",
+          "lineNumber": 591
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "setTimeout",
+          "lineNumber": 593
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "this.wsClient.replyMessage",
+          "lineNumber": 597
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "this.wsClient.sendMessage",
+          "lineNumber": 599
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "this.splitMessage",
+          "lineNumber": 608
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "this.api.sendMessage",
+          "lineNumber": 610
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "setTimeout",
+          "lineNumber": 612
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "this.api.sendMessage",
+          "lineNumber": 615
+        },
+        {
+          "caller": "markdownToCard",
+          "callee": "this.sanitizeMarkdownForFeishu",
+          "lineNumber": 634
+        },
+        {
+          "caller": "sanitizeMarkdownForFeishu",
+          "callee": "sanitized.substring",
+          "lineNumber": 656
+        },
+        {
+          "caller": "uploadImage",
+          "callee": "promisify",
+          "lineNumber": 674
+        },
+        {
+          "caller": "uploadImage",
+          "callee": "lookup",
+          "lineNumber": 677
+        },
+        {
+          "caller": "isPrivateIp",
+          "callee": "/^(127\\.|10\\.|172\\.(1[6-9]|2[0-9]|3[01])\\.|192\\.168\\.|169\\.254\\.|0\\.)/.test",
+          "lineNumber": 684
+        },
+        {
+          "caller": "isPrivateIp",
+          "callee": "/^::1$/.test",
+          "lineNumber": 685
+        },
+        {
+          "caller": "isPrivateIp",
+          "callee": "/^[fF][cCdD][0-9a-fA-F]{2}:/.test",
+          "lineNumber": 686
+        },
+        {
+          "caller": "isPrivateIp",
+          "callee": "/^::ffff:(127\\.|10\\.|172\\.(1[6-9]|2[0-9]|3[01])\\.|192\\.168\\.|169\\.254\\.|0\\.)/.test",
+          "lineNumber": 688
+        },
+        {
+          "caller": "uploadImage",
+          "callee": "isPrivateIp",
+          "lineNumber": 690
+        },
+        {
+          "caller": "uploadImage",
+          "callee": "fetch",
+          "lineNumber": 694
+        },
+        {
+          "caller": "uploadImage",
+          "callee": "response.arrayBuffer",
+          "lineNumber": 695
+        },
+        {
+          "caller": "uploadImage",
+          "callee": "this.api.uploadImage",
+          "lineNumber": 696
+        },
+        {
+          "caller": "uploadImage",
+          "callee": "Buffer.from",
+          "lineNumber": 696
+        },
+        {
+          "caller": "uploadImage",
+          "callee": "Buffer.from",
+          "lineNumber": 698
+        },
+        {
+          "caller": "uploadImage",
+          "callee": "this.api.uploadImage",
+          "lineNumber": 699
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/remote/channels/feishu/feishu-ws-client.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 384,
+      "nonEmptyLines": 333,
+      "classes": [
+        {
+          "name": "FeishuWSClient",
+          "startLine": 31,
+          "endLine": 384,
+          "methods": [
+            "constructor",
+            "start",
+            "stop",
+            "closeWSClient",
+            "isConnected",
+            "sendMessage",
+            "replyMessage",
+            "handleMessageReceive",
+            "scheduleReconnect",
+            "getLoggerLevel"
+          ],
+          "properties": [
+            "config",
+            "client",
+            "wsClient",
+            "connected",
+            "stopped",
+            "starting",
+            "reconnectAttempts",
+            "maxReconnectAttempts",
+            "reconnectTimer"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "FeishuWSClient",
+          "line": 31,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "constructor",
+          "callee": "super",
+          "lineNumber": 43
+        },
+        {
+          "caller": "start",
+          "callee": "logWarn",
+          "lineNumber": 52
+        },
+        {
+          "caller": "start",
+          "callee": "log",
+          "lineNumber": 66
+        },
+        {
+          "caller": "start",
+          "callee": "this.closeWSClient",
+          "lineNumber": 70
+        },
+        {
+          "caller": "start",
+          "callee": "this.getLoggerLevel",
+          "lineNumber": 78
+        },
+        {
+          "caller": "start",
+          "callee": "this.closeWSClient",
+          "lineNumber": 88
+        },
+        {
+          "caller": "start",
+          "callee": "this.wsClient.start",
+          "lineNumber": 94
+        },
+        {
+          "caller": "start",
+          "callee": "new Lark.EventDispatcher({}).register",
+          "lineNumber": 95
+        },
+        {
+          "caller": "start",
+          "callee": "this.handleMessageReceive",
+          "lineNumber": 98
+        },
+        {
+          "caller": "start",
+          "callee": "logError",
+          "lineNumber": 100
+        },
+        {
+          "caller": "start",
+          "callee": "this.closeWSClient",
+          "lineNumber": 108
+        },
+        {
+          "caller": "start",
+          "callee": "log",
+          "lineNumber": 117
+        },
+        {
+          "caller": "start",
+          "callee": "this.emit",
+          "lineNumber": 118
+        },
+        {
+          "caller": "start",
+          "callee": "logError",
+          "lineNumber": 121
+        },
+        {
+          "caller": "start",
+          "callee": "this.emit",
+          "lineNumber": 123
+        },
+        {
+          "caller": "start",
+          "callee": "this.scheduleReconnect",
+          "lineNumber": 125
+        },
+        {
+          "caller": "stop",
+          "callee": "log",
+          "lineNumber": 133
+        },
+        {
+          "caller": "stop",
+          "callee": "clearTimeout",
+          "lineNumber": 138
+        },
+        {
+          "caller": "stop",
+          "callee": "this.closeWSClient",
+          "lineNumber": 142
+        },
+        {
+          "caller": "stop",
+          "callee": "this.emit",
+          "lineNumber": 146
+        },
+        {
+          "caller": "stop",
+          "callee": "log",
+          "lineNumber": 147
+        },
+        {
+          "caller": "closeWSClient",
+          "callee": "this.wsClient.close",
+          "lineNumber": 156
+        },
+        {
+          "caller": "closeWSClient",
+          "callee": "logWarn",
+          "lineNumber": 158
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "logError",
+          "lineNumber": 182
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "JSON.stringify",
+          "lineNumber": 191
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "JSON.stringify",
+          "lineNumber": 194
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "JSON.stringify",
+          "lineNumber": 196
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "String",
+          "lineNumber": 196
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "log",
+          "lineNumber": 199
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "this.client.im.v1.message.create",
+          "lineNumber": 201
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "log",
+          "lineNumber": 213
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "logError",
+          "lineNumber": 216
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "logError",
+          "lineNumber": 220
+        },
+        {
+          "caller": "replyMessage",
+          "callee": "logError",
+          "lineNumber": 235
+        },
+        {
+          "caller": "replyMessage",
+          "callee": "JSON.stringify",
+          "lineNumber": 243
+        },
+        {
+          "caller": "replyMessage",
+          "callee": "JSON.stringify",
+          "lineNumber": 248
+        },
+        {
+          "caller": "replyMessage",
+          "callee": "log",
+          "lineNumber": 251
+        },
+        {
+          "caller": "replyMessage",
+          "callee": "this.client.im.v1.message.reply",
+          "lineNumber": 253
+        },
+        {
+          "caller": "replyMessage",
+          "callee": "log",
+          "lineNumber": 264
+        },
+        {
+          "caller": "replyMessage",
+          "callee": "logError",
+          "lineNumber": 267
+        },
+        {
+          "caller": "replyMessage",
+          "callee": "logError",
+          "lineNumber": 271
+        },
+        {
+          "caller": "handleMessageReceive",
+          "callee": "log",
+          "lineNumber": 282
+        },
+        {
+          "caller": "handleMessageReceive",
+          "callee": "log",
+          "lineNumber": 286
+        },
+        {
+          "caller": "handleMessageReceive",
+          "callee": "JSON.stringify",
+          "lineNumber": 286
+        },
+        {
+          "caller": "handleMessageReceive",
+          "callee": "logWarn",
+          "lineNumber": 290
+        },
+        {
+          "caller": "handleMessageReceive",
+          "callee": "String",
+          "lineNumber": 299
+        },
+        {
+          "caller": "handleMessageReceive",
+          "callee": "String",
+          "lineNumber": 300
+        },
+        {
+          "caller": "handleMessageReceive",
+          "callee": "String",
+          "lineNumber": 302
+        },
+        {
+          "caller": "handleMessageReceive",
+          "callee": "String",
+          "lineNumber": 304
+        },
+        {
+          "caller": "handleMessageReceive",
+          "callee": "String",
+          "lineNumber": 305
+        },
+        {
+          "caller": "handleMessageReceive",
+          "callee": "String",
+          "lineNumber": 306
+        },
+        {
+          "caller": "handleMessageReceive",
+          "callee": "JSON.parse",
+          "lineNumber": 313
+        },
+        {
+          "caller": "handleMessageReceive",
+          "callee": "String",
+          "lineNumber": 313
+        },
+        {
+          "caller": "handleMessageReceive",
+          "callee": "String",
+          "lineNumber": 314
+        },
+        {
+          "caller": "handleMessageReceive",
+          "callee": "String",
+          "lineNumber": 317
+        },
+        {
+          "caller": "handleMessageReceive",
+          "callee": "String",
+          "lineNumber": 320
+        },
+        {
+          "caller": "handleMessageReceive",
+          "callee": "log",
+          "lineNumber": 323
+        },
+        {
+          "caller": "handleMessageReceive",
+          "callee": "this.listenerCount",
+          "lineNumber": 330
+        },
+        {
+          "caller": "handleMessageReceive",
+          "callee": "log",
+          "lineNumber": 331
+        },
+        {
+          "caller": "handleMessageReceive",
+          "callee": "this.emit",
+          "lineNumber": 332
+        },
+        {
+          "caller": "handleMessageReceive",
+          "callee": "log",
+          "lineNumber": 336
+        },
+        {
+          "caller": "scheduleReconnect",
+          "callee": "log",
+          "lineNumber": 344
+        },
+        {
+          "caller": "scheduleReconnect",
+          "callee": "logError",
+          "lineNumber": 348
+        },
+        {
+          "caller": "scheduleReconnect",
+          "callee": "this.emit",
+          "lineNumber": 349
+        },
+        {
+          "caller": "scheduleReconnect",
+          "callee": "Math.min",
+          "lineNumber": 354
+        },
+        {
+          "caller": "scheduleReconnect",
+          "callee": "Math.pow",
+          "lineNumber": 354
+        },
+        {
+          "caller": "scheduleReconnect",
+          "callee": "log",
+          "lineNumber": 356
+        },
+        {
+          "caller": "scheduleReconnect",
+          "callee": "setTimeout",
+          "lineNumber": 358
+        },
+        {
+          "caller": "scheduleReconnect",
+          "callee": "this.start().catch",
+          "lineNumber": 361
+        },
+        {
+          "caller": "scheduleReconnect",
+          "callee": "this.start",
+          "lineNumber": 361
+        },
+        {
+          "caller": "scheduleReconnect",
+          "callee": "logError",
+          "lineNumber": 362
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/remote/channels/feishu/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "exports": [
+        {
+          "name": "FeishuChannel",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "FeishuAPI",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/remote/channels/slack/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "exports": [
+        {
+          "name": "SlackChannel",
+          "line": 1,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/remote/channels/slack/slack-channel.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 251,
+      "nonEmptyLines": 210,
+      "classes": [
+        {
+          "name": "SlackChannel",
+          "startLine": 20,
+          "endLine": 251,
+          "methods": [
+            "constructor",
+            "start",
+            "stop",
+            "send",
+            "handleWebhook",
+            "verifySlackSignature",
+            "sendMessage"
+          ],
+          "properties": ["type", "config", "app", "client", "botUserId"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SlackChannel",
+          "line": 20,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "constructor",
+          "callee": "super",
+          "lineNumber": 29
+        },
+        {
+          "caller": "start",
+          "callee": "logWarn",
+          "lineNumber": 35
+        },
+        {
+          "caller": "start",
+          "callee": "this.logStatus",
+          "lineNumber": 39
+        },
+        {
+          "caller": "start",
+          "callee": "import",
+          "lineNumber": 42
+        },
+        {
+          "caller": "start",
+          "callee": "import",
+          "lineNumber": 43
+        },
+        {
+          "caller": "start",
+          "callee": "this.client.auth.test",
+          "lineNumber": 62
+        },
+        {
+          "caller": "start",
+          "callee": "log",
+          "lineNumber": 64
+        },
+        {
+          "caller": "start",
+          "callee": "this.app.message",
+          "lineNumber": 67
+        },
+        {
+          "caller": "start",
+          "callee": "String",
+          "lineNumber": 75
+        },
+        {
+          "caller": "start",
+          "callee": "String",
+          "lineNumber": 76
+        },
+        {
+          "caller": "start",
+          "callee": "String",
+          "lineNumber": 77
+        },
+        {
+          "caller": "start",
+          "callee": "String",
+          "lineNumber": 78
+        },
+        {
+          "caller": "start",
+          "callee": "channelId.startsWith",
+          "lineNumber": 80
+        },
+        {
+          "caller": "start",
+          "callee": "text.includes",
+          "lineNumber": 83
+        },
+        {
+          "caller": "start",
+          "callee": "text.replace(new RegExp(`<@${this.botUserId}>\\\\s*`, 'g'), '').trim",
+          "lineNumber": 87
+        },
+        {
+          "caller": "start",
+          "callee": "text.replace",
+          "lineNumber": 87
+        },
+        {
+          "caller": "start",
+          "callee": "Math.floor",
+          "lineNumber": 102
+        },
+        {
+          "caller": "start",
+          "callee": "parseFloat",
+          "lineNumber": 102
+        },
+        {
+          "caller": "start",
+          "callee": "this.emitMessage",
+          "lineNumber": 108
+        },
+        {
+          "caller": "start",
+          "callee": "logError",
+          "lineNumber": 110
+        },
+        {
+          "caller": "start",
+          "callee": "this.app.start",
+          "lineNumber": 115
+        },
+        {
+          "caller": "start",
+          "callee": "log",
+          "lineNumber": 116
+        },
+        {
+          "caller": "start",
+          "callee": "this.app.start",
+          "lineNumber": 119
+        },
+        {
+          "caller": "start",
+          "callee": "log",
+          "lineNumber": 120
+        },
+        {
+          "caller": "start",
+          "callee": "this.logStatus",
+          "lineNumber": 124
+        },
+        {
+          "caller": "start",
+          "callee": "logError",
+          "lineNumber": 126
+        },
+        {
+          "caller": "stop",
+          "callee": "this.logStatus",
+          "lineNumber": 135
+        },
+        {
+          "caller": "stop",
+          "callee": "this.app?.stop",
+          "lineNumber": 138
+        },
+        {
+          "caller": "stop",
+          "callee": "this.logStatus",
+          "lineNumber": 146
+        },
+        {
+          "caller": "send",
+          "callee": "withRetry",
+          "lineNumber": 156
+        },
+        {
+          "caller": "send",
+          "callee": "this.sendMessage",
+          "lineNumber": 158
+        },
+        {
+          "caller": "send",
+          "callee": "logWarn",
+          "lineNumber": 164
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "this.verifySlackSignature",
+          "lineNumber": 178
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "logWarn",
+          "lineNumber": 179
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "JSON.parse",
+          "lineNumber": 184
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "logError",
+          "lineNumber": 193
+        },
+        {
+          "caller": "verifySlackSignature",
+          "callee": "Math.floor",
+          "lineNumber": 207
+        },
+        {
+          "caller": "verifySlackSignature",
+          "callee": "Date.now",
+          "lineNumber": 207
+        },
+        {
+          "caller": "verifySlackSignature",
+          "callee": "Math.abs",
+          "lineNumber": 208
+        },
+        {
+          "caller": "verifySlackSignature",
+          "callee": "parseInt",
+          "lineNumber": 208
+        },
+        {
+          "caller": "verifySlackSignature",
+          "callee": "crypto.createHmac('sha256', signingSecret).update(sigBase).digest",
+          "lineNumber": 211
+        },
+        {
+          "caller": "verifySlackSignature",
+          "callee": "crypto.createHmac('sha256', signingSecret).update",
+          "lineNumber": 211
+        },
+        {
+          "caller": "verifySlackSignature",
+          "callee": "crypto.createHmac",
+          "lineNumber": 211
+        },
+        {
+          "caller": "verifySlackSignature",
+          "callee": "Buffer.from",
+          "lineNumber": 213
+        },
+        {
+          "caller": "verifySlackSignature",
+          "callee": "Buffer.from",
+          "lineNumber": 214
+        },
+        {
+          "caller": "verifySlackSignature",
+          "callee": "crypto.timingSafeEqual",
+          "lineNumber": 216
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "channelId.split",
+          "lineNumber": 223
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "String",
+          "lineNumber": 234
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "this.splitMessage",
+          "lineNumber": 238
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "this.client.chat.postMessage",
+          "lineNumber": 240
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "setTimeout",
+          "lineNumber": 247
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/remote/gateway.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 863,
+      "nonEmptyLines": 745,
+      "classes": [
+        {
+          "name": "RemoteGateway",
+          "startLine": 41,
+          "endLine": 863,
+          "methods": [
+            "constructor",
+            "running",
+            "start",
+            "stop",
+            "registerChannel",
+            "unregisterChannel",
+            "getStatus",
+            "setMessageInterceptor",
+            "handleChannelMessage",
+            "handleAgentResponse",
+            "sendResponse",
+            "sendToChannel",
+            "checkAuthorization",
+            "shouldProcessGroupMessage",
+            "handlePairingRequest",
+            "approvePairing",
+            "rejectPairing",
+            "revokePairing",
+            "getPairedUsers",
+            "restorePairedUser",
+            "getPendingPairings",
+            "generatePairingCode",
+            "handleHttpRequest",
+            "handleWebhook",
+            "handleWSConnection",
+            "handleWSMessage",
+            "checkAuthRateLimit",
+            "handleWSAuth",
+            "handleWSClientMessage",
+            "sendWSMessage",
+            "broadcastWS",
+            "generateClientId",
+            "generateMessageId",
+            "emitEvent"
+          ],
+          "properties": [
+            "config",
+            "httpServer",
+            "wss",
+            "channels",
+            "wsClients",
+            "messageRouter",
+            "pairingRequests",
+            "pairedUsers",
+            "_running",
+            "authAttempts",
+            "messageInterceptor"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RemoteGateway",
+          "line": 41,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "constructor",
+          "callee": "super",
+          "lineNumber": 59
+        },
+        {
+          "caller": "constructor",
+          "callee": "this.messageRouter.onResponse",
+          "lineNumber": 64
+        },
+        {
+          "caller": "constructor",
+          "callee": "this.handleAgentResponse.bind",
+          "lineNumber": 64
+        },
+        {
+          "caller": "start",
+          "callee": "logWarn",
+          "lineNumber": 76
+        },
+        {
+          "caller": "start",
+          "callee": "log",
+          "lineNumber": 80
+        },
+        {
+          "caller": "start",
+          "callee": "createServer",
+          "lineNumber": 84
+        },
+        {
+          "caller": "start",
+          "callee": "this.handleHttpRequest.bind",
+          "lineNumber": 84
+        },
+        {
+          "caller": "start",
+          "callee": "this.wss.on",
+          "lineNumber": 92
+        },
+        {
+          "caller": "start",
+          "callee": "this.handleWSConnection.bind",
+          "lineNumber": 92
+        },
+        {
+          "caller": "start",
+          "callee": "this.wss.on",
+          "lineNumber": 93
+        },
+        {
+          "caller": "start",
+          "callee": "logError",
+          "lineNumber": 94
+        },
+        {
+          "caller": "start",
+          "callee": "this.emitEvent",
+          "lineNumber": 95
+        },
+        {
+          "caller": "start",
+          "callee": "this.httpServer!.listen",
+          "lineNumber": 100
+        },
+        {
+          "caller": "start",
+          "callee": "log",
+          "lineNumber": 101
+        },
+        {
+          "caller": "start",
+          "callee": "resolve",
+          "lineNumber": 102
+        },
+        {
+          "caller": "start",
+          "callee": "this.httpServer!.on",
+          "lineNumber": 105
+        },
+        {
+          "caller": "start",
+          "callee": "logError",
+          "lineNumber": 106
+        },
+        {
+          "caller": "start",
+          "callee": "reject",
+          "lineNumber": 107
+        },
+        {
+          "caller": "start",
+          "callee": "channel.start",
+          "lineNumber": 114
+        },
+        {
+          "caller": "start",
+          "callee": "log",
+          "lineNumber": 115
+        },
+        {
+          "caller": "start",
+          "callee": "logError",
+          "lineNumber": 117
+        },
+        {
+          "caller": "start",
+          "callee": "this.emitEvent",
+          "lineNumber": 122
+        },
+        {
+          "caller": "start",
+          "callee": "log",
+          "lineNumber": 123
+        },
+        {
+          "caller": "start",
+          "callee": "logError",
+          "lineNumber": 125
+        },
+        {
+          "caller": "stop",
+          "callee": "log",
+          "lineNumber": 138
+        },
+        {
+          "caller": "stop",
+          "callee": "channel.stop",
+          "lineNumber": 143
+        },
+        {
+          "caller": "stop",
+          "callee": "log",
+          "lineNumber": 144
+        },
+        {
+          "caller": "stop",
+          "callee": "logError",
+          "lineNumber": 146
+        },
+        {
+          "caller": "stop",
+          "callee": "this.wsClients.values",
+          "lineNumber": 151
+        },
+        {
+          "caller": "stop",
+          "callee": "client.ws.close",
+          "lineNumber": 153
+        },
+        {
+          "caller": "stop",
+          "callee": "this.wsClients.clear",
+          "lineNumber": 158
+        },
+        {
+          "caller": "stop",
+          "callee": "this.wss.close",
+          "lineNumber": 162
+        },
+        {
+          "caller": "stop",
+          "callee": "this.httpServer!.close",
+          "lineNumber": 169
+        },
+        {
+          "caller": "stop",
+          "callee": "resolve",
+          "lineNumber": 169
+        },
+        {
+          "caller": "stop",
+          "callee": "this.emitEvent",
+          "lineNumber": 175
+        },
+        {
+          "caller": "stop",
+          "callee": "log",
+          "lineNumber": 176
+        },
+        {
+          "caller": "registerChannel",
+          "callee": "this.channels.has",
+          "lineNumber": 183
+        },
+        {
+          "caller": "registerChannel",
+          "callee": "logWarn",
+          "lineNumber": 184
+        },
+        {
+          "caller": "registerChannel",
+          "callee": "channel.onMessage",
+          "lineNumber": 188
+        },
+        {
+          "caller": "registerChannel",
+          "callee": "this.handleChannelMessage.bind",
+          "lineNumber": 188
+        },
+        {
+          "caller": "registerChannel",
+          "callee": "channel.onError",
+          "lineNumber": 189
+        },
+        {
+          "caller": "registerChannel",
+          "callee": "logError",
+          "lineNumber": 190
+        },
+        {
+          "caller": "registerChannel",
+          "callee": "this.emitEvent",
+          "lineNumber": 191
+        },
+        {
+          "caller": "registerChannel",
+          "callee": "this.channels.set",
+          "lineNumber": 194
+        },
+        {
+          "caller": "registerChannel",
+          "callee": "log",
+          "lineNumber": 195
+        },
+        {
+          "caller": "registerChannel",
+          "callee": "channel.start().catch",
+          "lineNumber": 199
+        },
+        {
+          "caller": "registerChannel",
+          "callee": "channel.start",
+          "lineNumber": 199
+        },
+        {
+          "caller": "registerChannel",
+          "callee": "logError",
+          "lineNumber": 200
+        },
+        {
+          "caller": "unregisterChannel",
+          "callee": "this.channels.get",
+          "lineNumber": 209
+        },
+        {
+          "caller": "unregisterChannel",
+          "callee": "channel.stop",
+          "lineNumber": 211
+        },
+        {
+          "caller": "unregisterChannel",
+          "callee": "this.channels.delete",
+          "lineNumber": 212
+        },
+        {
+          "caller": "unregisterChannel",
+          "callee": "log",
+          "lineNumber": 213
+        },
+        {
+          "caller": "getStatus",
+          "callee": "Array.from(this.channels.entries()).map",
+          "lineNumber": 221
+        },
+        {
+          "caller": "getStatus",
+          "callee": "Array.from",
+          "lineNumber": 221
+        },
+        {
+          "caller": "getStatus",
+          "callee": "this.channels.entries",
+          "lineNumber": 221
+        },
+        {
+          "caller": "getStatus",
+          "callee": "this.messageRouter.getActiveSessionCount",
+          "lineNumber": 231
+        },
+        {
+          "caller": "handleChannelMessage",
+          "callee": "log",
+          "lineNumber": 251
+        },
+        {
+          "caller": "handleChannelMessage",
+          "callee": "this.checkAuthorization",
+          "lineNumber": 258
+        },
+        {
+          "caller": "handleChannelMessage",
+          "callee": "log",
+          "lineNumber": 260
+        },
+        {
+          "caller": "handleChannelMessage",
+          "callee": "this.handlePairingRequest",
+          "lineNumber": 264
+        },
+        {
+          "caller": "handleChannelMessage",
+          "callee": "this.sendToChannel",
+          "lineNumber": 267
+        },
+        {
+          "caller": "handleChannelMessage",
+          "callee": "this.messageInterceptor",
+          "lineNumber": 282
+        },
+        {
+          "caller": "handleChannelMessage",
+          "callee": "log",
+          "lineNumber": 284
+        },
+        {
+          "caller": "handleChannelMessage",
+          "callee": "this.shouldProcessGroupMessage",
+          "lineNumber": 291
+        },
+        {
+          "caller": "handleChannelMessage",
+          "callee": "log",
+          "lineNumber": 293
+        },
+        {
+          "caller": "handleChannelMessage",
+          "callee": "this.emitEvent",
+          "lineNumber": 299
+        },
+        {
+          "caller": "handleChannelMessage",
+          "callee": "this.messageRouter.routeMessage",
+          "lineNumber": 300
+        },
+        {
+          "caller": "handleAgentResponse",
+          "callee": "this.sendToChannel",
+          "lineNumber": 307
+        },
+        {
+          "caller": "sendResponse",
+          "callee": "this.sendToChannel",
+          "lineNumber": 314
+        },
+        {
+          "caller": "sendToChannel",
+          "callee": "this.channels.get",
+          "lineNumber": 321
+        },
+        {
+          "caller": "sendToChannel",
+          "callee": "logError",
+          "lineNumber": 323
+        },
+        {
+          "caller": "sendToChannel",
+          "callee": "channel.send",
+          "lineNumber": 328
+        },
+        {
+          "caller": "sendToChannel",
+          "callee": "this.emitEvent",
+          "lineNumber": 329
+        },
+        {
+          "caller": "sendToChannel",
+          "callee": "logError",
+          "lineNumber": 331
+        },
+        {
+          "caller": "checkAuthorization",
+          "callee": "allowlist.includes",
+          "lineNumber": 352
+        },
+        {
+          "caller": "checkAuthorization",
+          "callee": "allowlist.includes",
+          "lineNumber": 353
+        },
+        {
+          "caller": "checkAuthorization",
+          "callee": "this.pairedUsers.has",
+          "lineNumber": 359
+        },
+        {
+          "caller": "handlePairingRequest",
+          "callee": "this.pairingRequests.has",
+          "lineNumber": 391
+        },
+        {
+          "caller": "handlePairingRequest",
+          "callee": "this.pairingRequests.get",
+          "lineNumber": 392
+        },
+        {
+          "caller": "handlePairingRequest",
+          "callee": "message.content.text?.trim",
+          "lineNumber": 395
+        },
+        {
+          "caller": "handlePairingRequest",
+          "callee": "this.pairedUsers.set",
+          "lineNumber": 398
+        },
+        {
+          "caller": "handlePairingRequest",
+          "callee": "Date.now",
+          "lineNumber": 402
+        },
+        {
+          "caller": "handlePairingRequest",
+          "callee": "Date.now",
+          "lineNumber": 403
+        },
+        {
+          "caller": "handlePairingRequest",
+          "callee": "this.pairingRequests.delete",
+          "lineNumber": 406
+        },
+        {
+          "caller": "handlePairingRequest",
+          "callee": "this.sendToChannel",
+          "lineNumber": 408
+        },
+        {
+          "caller": "handlePairingRequest",
+          "callee": "log",
+          "lineNumber": 418
+        },
+        {
+          "caller": "handlePairingRequest",
+          "callee": "Date.now",
+          "lineNumber": 423
+        },
+        {
+          "caller": "handlePairingRequest",
+          "callee": "this.pairingRequests.delete",
+          "lineNumber": 424
+        },
+        {
+          "caller": "handlePairingRequest",
+          "callee": "this.sendToChannel",
+          "lineNumber": 427
+        },
+        {
+          "caller": "handlePairingRequest",
+          "callee": "this.generatePairingCode",
+          "lineNumber": 441
+        },
+        {
+          "caller": "handlePairingRequest",
+          "callee": "Date.now",
+          "lineNumber": 447
+        },
+        {
+          "caller": "handlePairingRequest",
+          "callee": "Date.now",
+          "lineNumber": 448
+        },
+        {
+          "caller": "handlePairingRequest",
+          "callee": "this.pairingRequests.set",
+          "lineNumber": 451
+        },
+        {
+          "caller": "handlePairingRequest",
+          "callee": "this.sendToChannel",
+          "lineNumber": 453
+        },
+        {
+          "caller": "handlePairingRequest",
+          "callee": "log",
+          "lineNumber": 463
+        },
+        {
+          "caller": "handlePairingRequest",
+          "callee": "this.emitEvent",
+          "lineNumber": 466
+        },
+        {
+          "caller": "approvePairing",
+          "callee": "this.pairingRequests.get",
+          "lineNumber": 479
+        },
+        {
+          "caller": "approvePairing",
+          "callee": "logWarn",
+          "lineNumber": 482
+        },
+        {
+          "caller": "approvePairing",
+          "callee": "Date.now",
+          "lineNumber": 486
+        },
+        {
+          "caller": "approvePairing",
+          "callee": "this.pairingRequests.delete",
+          "lineNumber": 487
+        },
+        {
+          "caller": "approvePairing",
+          "callee": "logWarn",
+          "lineNumber": 488
+        },
+        {
+          "caller": "approvePairing",
+          "callee": "this.pairedUsers.set",
+          "lineNumber": 492
+        },
+        {
+          "caller": "approvePairing",
+          "callee": "Date.now",
+          "lineNumber": 496
+        },
+        {
+          "caller": "approvePairing",
+          "callee": "Date.now",
+          "lineNumber": 497
+        },
+        {
+          "caller": "approvePairing",
+          "callee": "this.pairingRequests.delete",
+          "lineNumber": 500
+        },
+        {
+          "caller": "approvePairing",
+          "callee": "log",
+          "lineNumber": 501
+        },
+        {
+          "caller": "rejectPairing",
+          "callee": "this.pairingRequests.get",
+          "lineNumber": 510
+        },
+        {
+          "caller": "rejectPairing",
+          "callee": "logWarn",
+          "lineNumber": 513
+        },
+        {
+          "caller": "rejectPairing",
+          "callee": "this.pairingRequests.delete",
+          "lineNumber": 517
+        },
+        {
+          "caller": "rejectPairing",
+          "callee": "log",
+          "lineNumber": 518
+        },
+        {
+          "caller": "revokePairing",
+          "callee": "this.pairedUsers.has",
+          "lineNumber": 527
+        },
+        {
+          "caller": "revokePairing",
+          "callee": "this.pairedUsers.delete",
+          "lineNumber": 528
+        },
+        {
+          "caller": "revokePairing",
+          "callee": "log",
+          "lineNumber": 529
+        },
+        {
+          "caller": "getPairedUsers",
+          "callee": "Array.from",
+          "lineNumber": 539
+        },
+        {
+          "caller": "getPairedUsers",
+          "callee": "this.pairedUsers.values",
+          "lineNumber": 539
+        },
+        {
+          "caller": "restorePairedUser",
+          "callee": "this.pairedUsers.has",
+          "lineNumber": 548
+        },
+        {
+          "caller": "restorePairedUser",
+          "callee": "this.pairedUsers.set",
+          "lineNumber": 549
+        },
+        {
+          "caller": "restorePairedUser",
+          "callee": "log",
+          "lineNumber": 550
+        },
+        {
+          "caller": "getPendingPairings",
+          "callee": "Date.now",
+          "lineNumber": 559
+        },
+        {
+          "caller": "getPendingPairings",
+          "callee": "this.pairingRequests.delete",
+          "lineNumber": 562
+        },
+        {
+          "caller": "getPendingPairings",
+          "callee": "Array.from",
+          "lineNumber": 565
+        },
+        {
+          "caller": "getPendingPairings",
+          "callee": "this.pairingRequests.values",
+          "lineNumber": 565
+        },
+        {
+          "caller": "generatePairingCode",
+          "callee": "crypto.randomInt(100000, 999999).toString",
+          "lineNumber": 572
+        },
+        {
+          "caller": "generatePairingCode",
+          "callee": "crypto.randomInt",
+          "lineNumber": 572
+        },
+        {
+          "caller": "handleHttpRequest",
+          "callee": "res.writeHead",
+          "lineNumber": 584
+        },
+        {
+          "caller": "handleHttpRequest",
+          "callee": "res.end",
+          "lineNumber": 585
+        },
+        {
+          "caller": "handleHttpRequest",
+          "callee": "JSON.stringify",
+          "lineNumber": 585
+        },
+        {
+          "caller": "handleHttpRequest",
+          "callee": "Date.now",
+          "lineNumber": 585
+        },
+        {
+          "caller": "handleHttpRequest",
+          "callee": "res.writeHead",
+          "lineNumber": 591
+        },
+        {
+          "caller": "handleHttpRequest",
+          "callee": "res.end",
+          "lineNumber": 592
+        },
+        {
+          "caller": "handleHttpRequest",
+          "callee": "JSON.stringify",
+          "lineNumber": 592
+        },
+        {
+          "caller": "handleHttpRequest",
+          "callee": "this.getStatus",
+          "lineNumber": 592
+        },
+        {
+          "caller": "handleHttpRequest",
+          "callee": "url.startsWith",
+          "lineNumber": 597
+        },
+        {
+          "caller": "handleHttpRequest",
+          "callee": "this.handleWebhook",
+          "lineNumber": 598
+        },
+        {
+          "caller": "handleHttpRequest",
+          "callee": "res.writeHead",
+          "lineNumber": 603
+        },
+        {
+          "caller": "handleHttpRequest",
+          "callee": "res.end",
+          "lineNumber": 604
+        },
+        {
+          "caller": "handleHttpRequest",
+          "callee": "JSON.stringify",
+          "lineNumber": 604
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "url.split",
+          "lineNumber": 609
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "log",
+          "lineNumber": 611
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "this.channels.has",
+          "lineNumber": 613
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "log",
+          "lineNumber": 614
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "res.writeHead",
+          "lineNumber": 615
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "res.end",
+          "lineNumber": 616
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "JSON.stringify",
+          "lineNumber": 616
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "req.on",
+          "lineNumber": 624
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "chunk.toString",
+          "lineNumber": 626
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "res.writeHead",
+          "lineNumber": 629
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "res.end",
+          "lineNumber": 630
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "JSON.stringify",
+          "lineNumber": 630
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "req.destroy",
+          "lineNumber": 631
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "req.on",
+          "lineNumber": 635
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "log",
+          "lineNumber": 638
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "this.listenerCount",
+          "lineNumber": 641
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "log",
+          "lineNumber": 642
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "log",
+          "lineNumber": 645
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "res.writeHead",
+          "lineNumber": 646
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "res.end",
+          "lineNumber": 647
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "JSON.stringify",
+          "lineNumber": 647
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "this.emit",
+          "lineNumber": 652
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "log",
+          "lineNumber": 656
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "res.writeHead",
+          "lineNumber": 657
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "res.end",
+          "lineNumber": 658
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "JSON.stringify",
+          "lineNumber": 658
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "logError",
+          "lineNumber": 662
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "res.writeHead",
+          "lineNumber": 663
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "res.end",
+          "lineNumber": 664
+        },
+        {
+          "caller": "handleWebhook",
+          "callee": "JSON.stringify",
+          "lineNumber": 664
+        },
+        {
+          "caller": "handleWSConnection",
+          "callee": "this.generateClientId",
+          "lineNumber": 674
+        },
+        {
+          "caller": "handleWSConnection",
+          "callee": "Date.now",
+          "lineNumber": 681
+        },
+        {
+          "caller": "handleWSConnection",
+          "callee": "this.wsClients.set",
+          "lineNumber": 685
+        },
+        {
+          "caller": "handleWSConnection",
+          "callee": "log",
+          "lineNumber": 686
+        },
+        {
+          "caller": "handleWSConnection",
+          "callee": "ws.on",
+          "lineNumber": 688
+        },
+        {
+          "caller": "handleWSConnection",
+          "callee": "this.handleWSMessage",
+          "lineNumber": 690
+        },
+        {
+          "caller": "handleWSConnection",
+          "callee": "logError",
+          "lineNumber": 692
+        },
+        {
+          "caller": "handleWSConnection",
+          "callee": "ws.on",
+          "lineNumber": 696
+        },
+        {
+          "caller": "handleWSConnection",
+          "callee": "this.wsClients.delete",
+          "lineNumber": 697
+        },
+        {
+          "caller": "handleWSConnection",
+          "callee": "log",
+          "lineNumber": 698
+        },
+        {
+          "caller": "handleWSConnection",
+          "callee": "ws.on",
+          "lineNumber": 701
+        },
+        {
+          "caller": "handleWSConnection",
+          "callee": "logError",
+          "lineNumber": 702
+        },
+        {
+          "caller": "handleWSConnection",
+          "callee": "this.sendWSMessage",
+          "lineNumber": 706
+        },
+        {
+          "caller": "handleWSMessage",
+          "callee": "JSON.parse",
+          "lineNumber": 714
+        },
+        {
+          "caller": "handleWSMessage",
+          "callee": "data.toString",
+          "lineNumber": 714
+        },
+        {
+          "caller": "handleWSMessage",
+          "callee": "this.handleWSAuth",
+          "lineNumber": 718
+        },
+        {
+          "caller": "handleWSMessage",
+          "callee": "this.handleWSClientMessage(client, message).catch",
+          "lineNumber": 722
+        },
+        {
+          "caller": "handleWSMessage",
+          "callee": "this.handleWSClientMessage",
+          "lineNumber": 722
+        },
+        {
+          "caller": "handleWSMessage",
+          "callee": "logError",
+          "lineNumber": 723
+        },
+        {
+          "caller": "handleWSMessage",
+          "callee": "this.sendWSMessage",
+          "lineNumber": 728
+        },
+        {
+          "caller": "handleWSMessage",
+          "callee": "log",
+          "lineNumber": 732
+        },
+        {
+          "caller": "handleWSMessage",
+          "callee": "logError",
+          "lineNumber": 735
+        },
+        {
+          "caller": "checkAuthRateLimit",
+          "callee": "Date.now",
+          "lineNumber": 740
+        },
+        {
+          "caller": "checkAuthRateLimit",
+          "callee": "this.authAttempts.get",
+          "lineNumber": 741
+        },
+        {
+          "caller": "checkAuthRateLimit",
+          "callee": "this.authAttempts.set",
+          "lineNumber": 743
+        },
+        {
+          "caller": "handleWSAuth",
+          "callee": "this.checkAuthRateLimit",
+          "lineNumber": 752
+        },
+        {
+          "caller": "handleWSAuth",
+          "callee": "this.sendWSMessage",
+          "lineNumber": 753
+        },
+        {
+          "caller": "handleWSAuth",
+          "callee": "this.sendWSMessage",
+          "lineNumber": 766
+        },
+        {
+          "caller": "handleWSAuth",
+          "callee": "log",
+          "lineNumber": 771
+        },
+        {
+          "caller": "handleWSAuth",
+          "callee": "this.sendWSMessage",
+          "lineNumber": 773
+        },
+        {
+          "caller": "handleWSAuth",
+          "callee": "this.sendWSMessage",
+          "lineNumber": 782
+        },
+        {
+          "caller": "handleWSClientMessage",
+          "callee": "this.sendWSMessage",
+          "lineNumber": 793
+        },
+        {
+          "caller": "handleWSClientMessage",
+          "callee": "this.generateMessageId",
+          "lineNumber": 805
+        },
+        {
+          "caller": "handleWSClientMessage",
+          "callee": "Date.now",
+          "lineNumber": 816
+        },
+        {
+          "caller": "handleWSClientMessage",
+          "callee": "this.messageRouter.routeMessage",
+          "lineNumber": 822
+        },
+        {
+          "caller": "handleWSClientMessage",
+          "callee": "logError",
+          "lineNumber": 824
+        },
+        {
+          "caller": "sendWSMessage",
+          "callee": "ws.send",
+          "lineNumber": 830
+        },
+        {
+          "caller": "sendWSMessage",
+          "callee": "JSON.stringify",
+          "lineNumber": 830
+        },
+        {
+          "caller": "broadcastWS",
+          "callee": "this.wsClients.values",
+          "lineNumber": 838
+        },
+        {
+          "caller": "broadcastWS",
+          "callee": "this.sendWSMessage",
+          "lineNumber": 840
+        },
+        {
+          "caller": "generateClientId",
+          "callee": "Date.now",
+          "lineNumber": 846
+        },
+        {
+          "caller": "generateClientId",
+          "callee": "crypto.randomUUID",
+          "lineNumber": 846
+        },
+        {
+          "caller": "generateMessageId",
+          "callee": "Date.now",
+          "lineNumber": 850
+        },
+        {
+          "caller": "generateMessageId",
+          "callee": "crypto.randomUUID",
+          "lineNumber": 850
+        },
+        {
+          "caller": "emitEvent",
+          "callee": "Date.now",
+          "lineNumber": 857
+        },
+        {
+          "caller": "emitEvent",
+          "callee": "this.emit",
+          "lineNumber": 860
+        },
+        {
+          "caller": "emitEvent",
+          "callee": "this.emit",
+          "lineNumber": 861
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/remote/message-router.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 626,
+      "nonEmptyLines": 534,
+      "classes": [
+        {
+          "name": "MessageRouter",
+          "startLine": 43,
+          "endLine": 626,
+          "methods": [
+            "constructor",
+            "startPeriodicCleanup",
+            "stopPeriodicCleanup",
+            "setDefaultWorkingDirectory",
+            "onResponse",
+            "setAgentCallback",
+            "setWorkingDirectoryValidator",
+            "routeMessage",
+            "getSessionKey",
+            "createSessionMapping",
+            "ensureSessionMapping",
+            "resolveWorkingDirectory",
+            "generateSessionId",
+            "addToQueue",
+            "processQueue",
+            "processMessage",
+            "sendCwdChangeResponse",
+            "convertToContentBlocks",
+            "extractPromptAndCwd",
+            "handleAgentMessage",
+            "handlePartialResponse",
+            "sendFinalResponse",
+            "sendErrorResponse",
+            "getActiveSessionCount",
+            "getSessionMapping",
+            "getAllSessionMappings",
+            "clearSession",
+            "clearAllSessions",
+            "cleanupStaleSessions"
+          ],
+          "properties": [
+            "sessionMappings",
+            "messageQueues",
+            "processingSession",
+            "responseCallback",
+            "agentCallback",
+            "workingDirectoryValidator",
+            "responseBuffers",
+            "sessionIdCounter",
+            "defaultWorkingDirectory",
+            "cleanupInterval"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "MessageRouter",
+          "line": 43,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "constructor",
+          "callee": "this.startPeriodicCleanup",
+          "lineNumber": 71
+        },
+        {
+          "caller": "startPeriodicCleanup",
+          "callee": "setInterval",
+          "lineNumber": 75
+        },
+        {
+          "caller": "startPeriodicCleanup",
+          "callee": "this.cleanupStaleSessions",
+          "lineNumber": 76
+        },
+        {
+          "caller": "stopPeriodicCleanup",
+          "callee": "clearInterval",
+          "lineNumber": 82
+        },
+        {
+          "caller": "setDefaultWorkingDirectory",
+          "callee": "log",
+          "lineNumber": 92
+        },
+        {
+          "caller": "routeMessage",
+          "callee": "this.getSessionKey",
+          "lineNumber": 117
+        },
+        {
+          "caller": "routeMessage",
+          "callee": "log",
+          "lineNumber": 119
+        },
+        {
+          "caller": "routeMessage",
+          "callee": "this.sessionMappings.get",
+          "lineNumber": 126
+        },
+        {
+          "caller": "routeMessage",
+          "callee": "this.createSessionMapping",
+          "lineNumber": 128
+        },
+        {
+          "caller": "routeMessage",
+          "callee": "this.sessionMappings.set",
+          "lineNumber": 129
+        },
+        {
+          "caller": "routeMessage",
+          "callee": "log",
+          "lineNumber": 130
+        },
+        {
+          "caller": "routeMessage",
+          "callee": "Date.now",
+          "lineNumber": 134
+        },
+        {
+          "caller": "routeMessage",
+          "callee": "this.addToQueue",
+          "lineNumber": 137
+        },
+        {
+          "caller": "routeMessage",
+          "callee": "this.processQueue",
+          "lineNumber": 140
+        },
+        {
+          "caller": "createSessionMapping",
+          "callee": "this.generateSessionId",
+          "lineNumber": 160
+        },
+        {
+          "caller": "createSessionMapping",
+          "callee": "Date.now",
+          "lineNumber": 167
+        },
+        {
+          "caller": "createSessionMapping",
+          "callee": "Date.now",
+          "lineNumber": 168
+        },
+        {
+          "caller": "ensureSessionMapping",
+          "callee": "this.sessionMappings.get",
+          "lineNumber": 177
+        },
+        {
+          "caller": "ensureSessionMapping",
+          "callee": "this.createSessionMapping",
+          "lineNumber": 183
+        },
+        {
+          "caller": "ensureSessionMapping",
+          "callee": "this.sessionMappings.set",
+          "lineNumber": 186
+        },
+        {
+          "caller": "resolveWorkingDirectory",
+          "callee": "path.isAbsolute",
+          "lineNumber": 197
+        },
+        {
+          "caller": "resolveWorkingDirectory",
+          "callee": "isWindowsDrivePath",
+          "lineNumber": 197
+        },
+        {
+          "caller": "resolveWorkingDirectory",
+          "callee": "isUncPath",
+          "lineNumber": 197
+        },
+        {
+          "caller": "resolveWorkingDirectory",
+          "callee": "resolvePathAgainstWorkspace",
+          "lineNumber": 200
+        },
+        {
+          "caller": "generateSessionId",
+          "callee": "Date.now",
+          "lineNumber": 208
+        },
+        {
+          "caller": "addToQueue",
+          "callee": "this.messageQueues.has",
+          "lineNumber": 215
+        },
+        {
+          "caller": "addToQueue",
+          "callee": "this.messageQueues.set",
+          "lineNumber": 216
+        },
+        {
+          "caller": "addToQueue",
+          "callee": "this.messageQueues.get(sessionId)!.push",
+          "lineNumber": 219
+        },
+        {
+          "caller": "addToQueue",
+          "callee": "this.messageQueues.get",
+          "lineNumber": 219
+        },
+        {
+          "caller": "addToQueue",
+          "callee": "Date.now",
+          "lineNumber": 221
+        },
+        {
+          "caller": "addToQueue",
+          "callee": "log",
+          "lineNumber": 224
+        },
+        {
+          "caller": "addToQueue",
+          "callee": "this.messageQueues.get",
+          "lineNumber": 226
+        },
+        {
+          "caller": "processQueue",
+          "callee": "this.processingSession.has",
+          "lineNumber": 235
+        },
+        {
+          "caller": "processQueue",
+          "callee": "log",
+          "lineNumber": 236
+        },
+        {
+          "caller": "processQueue",
+          "callee": "this.messageQueues.get",
+          "lineNumber": 240
+        },
+        {
+          "caller": "processQueue",
+          "callee": "this.processingSession.add",
+          "lineNumber": 246
+        },
+        {
+          "caller": "processQueue",
+          "callee": "queue.shift",
+          "lineNumber": 250
+        },
+        {
+          "caller": "processQueue",
+          "callee": "this.processMessage",
+          "lineNumber": 251
+        },
+        {
+          "caller": "processQueue",
+          "callee": "this.processingSession.delete",
+          "lineNumber": 254
+        },
+        {
+          "caller": "processMessage",
+          "callee": "logError",
+          "lineNumber": 263
+        },
+        {
+          "caller": "processMessage",
+          "callee": "log",
+          "lineNumber": 267
+        },
+        {
+          "caller": "processMessage",
+          "callee": "this.convertToContentBlocks",
+          "lineNumber": 273
+        },
+        {
+          "caller": "processMessage",
+          "callee": "this.extractPromptAndCwd",
+          "lineNumber": 274
+        },
+        {
+          "caller": "processMessage",
+          "callee": "this.getSessionKey",
+          "lineNumber": 277
+        },
+        {
+          "caller": "processMessage",
+          "callee": "this.sessionMappings.get",
+          "lineNumber": 278
+        },
+        {
+          "caller": "processMessage",
+          "callee": "this.resolveWorkingDirectory",
+          "lineNumber": 280
+        },
+        {
+          "caller": "processMessage",
+          "callee": "this.sendErrorResponse",
+          "lineNumber": 283
+        },
+        {
+          "caller": "processMessage",
+          "callee": "this.workingDirectoryValidator",
+          "lineNumber": 291
+        },
+        {
+          "caller": "processMessage",
+          "callee": "this.sendErrorResponse",
+          "lineNumber": 293
+        },
+        {
+          "caller": "processMessage",
+          "callee": "this.ensureSessionMapping",
+          "lineNumber": 300
+        },
+        {
+          "caller": "processMessage",
+          "callee": "log",
+          "lineNumber": 302
+        },
+        {
+          "caller": "processMessage",
+          "callee": "this.sendCwdChangeResponse",
+          "lineNumber": 304
+        },
+        {
+          "caller": "processMessage",
+          "callee": "log",
+          "lineNumber": 318
+        },
+        {
+          "caller": "processMessage",
+          "callee": "this.responseBuffers.set",
+          "lineNumber": 321
+        },
+        {
+          "caller": "processMessage",
+          "callee": "this.agentCallback",
+          "lineNumber": 325
+        },
+        {
+          "caller": "processMessage",
+          "callee": "this.handleAgentMessage",
+          "lineNumber": 335
+        },
+        {
+          "caller": "processMessage",
+          "callee": "this.handlePartialResponse",
+          "lineNumber": 339
+        },
+        {
+          "caller": "processMessage",
+          "callee": "this.ensureSessionMapping",
+          "lineNumber": 344
+        },
+        {
+          "caller": "processMessage",
+          "callee": "this.sendFinalResponse",
+          "lineNumber": 349
+        },
+        {
+          "caller": "processMessage",
+          "callee": "logError",
+          "lineNumber": 352
+        },
+        {
+          "caller": "processMessage",
+          "callee": "this.sendErrorResponse",
+          "lineNumber": 355
+        },
+        {
+          "caller": "processMessage",
+          "callee": "this.responseBuffers.delete",
+          "lineNumber": 357
+        },
+        {
+          "caller": "sendCwdChangeResponse",
+          "callee": "this.responseCallback",
+          "lineNumber": 379
+        },
+        {
+          "caller": "convertToContentBlocks",
+          "callee": "blocks.push",
+          "lineNumber": 391
+        },
+        {
+          "caller": "convertToContentBlocks",
+          "callee": "blocks.push",
+          "lineNumber": 402
+        },
+        {
+          "caller": "convertToContentBlocks",
+          "callee": "blocks.push",
+          "lineNumber": 411
+        },
+        {
+          "caller": "convertToContentBlocks",
+          "callee": "blocks.push",
+          "lineNumber": 420
+        },
+        {
+          "caller": "convertToContentBlocks",
+          "callee": "blocks.push",
+          "lineNumber": 427
+        },
+        {
+          "caller": "extractPromptAndCwd",
+          "callee": "text.replace(/@_user_\\w+\\s*/g, '').trim",
+          "lineNumber": 448
+        },
+        {
+          "caller": "extractPromptAndCwd",
+          "callee": "text.replace",
+          "lineNumber": 448
+        },
+        {
+          "caller": "extractPromptAndCwd",
+          "callee": "text.match",
+          "lineNumber": 452
+        },
+        {
+          "caller": "extractPromptAndCwd",
+          "callee": "cwdMatch[1].trim",
+          "lineNumber": 454
+        },
+        {
+          "caller": "extractPromptAndCwd",
+          "callee": "text.slice(cwdMatch[0].length).trim",
+          "lineNumber": 455
+        },
+        {
+          "caller": "extractPromptAndCwd",
+          "callee": "text.slice",
+          "lineNumber": 455
+        },
+        {
+          "caller": "extractPromptAndCwd",
+          "callee": "log",
+          "lineNumber": 456
+        },
+        {
+          "caller": "extractPromptAndCwd",
+          "callee": "text.match",
+          "lineNumber": 460
+        },
+        {
+          "caller": "extractPromptAndCwd",
+          "callee": "cdMatch[1].trim",
+          "lineNumber": 462
+        },
+        {
+          "caller": "handleAgentMessage",
+          "callee": "agentMessage.content.find",
+          "lineNumber": 477
+        },
+        {
+          "caller": "handleAgentMessage",
+          "callee": "this.responseBuffers.get",
+          "lineNumber": 481
+        },
+        {
+          "caller": "handleAgentMessage",
+          "callee": "this.responseBuffers.set",
+          "lineNumber": 482
+        },
+        {
+          "caller": "handleAgentMessage",
+          "callee": "log",
+          "lineNumber": 485
+        },
+        {
+          "caller": "handleAgentMessage",
+          "callee": "agentMessage.content.map",
+          "lineNumber": 488
+        },
+        {
+          "caller": "handlePartialResponse",
+          "callee": "this.responseBuffers.get",
+          "lineNumber": 497
+        },
+        {
+          "caller": "handlePartialResponse",
+          "callee": "this.responseBuffers.set",
+          "lineNumber": 498
+        },
+        {
+          "caller": "sendFinalResponse",
+          "callee": "this.responseBuffers.get",
+          "lineNumber": 505
+        },
+        {
+          "caller": "sendFinalResponse",
+          "callee": "log",
+          "lineNumber": 511
+        },
+        {
+          "caller": "sendFinalResponse",
+          "callee": "this.responseCallback",
+          "lineNumber": 526
+        },
+        {
+          "caller": "sendErrorResponse",
+          "callee": "logError",
+          "lineNumber": 538
+        },
+        {
+          "caller": "sendErrorResponse",
+          "callee": "this.responseCallback",
+          "lineNumber": 550
+        },
+        {
+          "caller": "getSessionMapping",
+          "callee": "this.sessionMappings.get",
+          "lineNumber": 567
+        },
+        {
+          "caller": "getAllSessionMappings",
+          "callee": "Array.from",
+          "lineNumber": 574
+        },
+        {
+          "caller": "getAllSessionMappings",
+          "callee": "this.sessionMappings.values",
+          "lineNumber": 574
+        },
+        {
+          "caller": "clearSession",
+          "callee": "this.sessionMappings.delete",
+          "lineNumber": 583
+        },
+        {
+          "caller": "clearSession",
+          "callee": "this.messageQueues.delete",
+          "lineNumber": 584
+        },
+        {
+          "caller": "clearSession",
+          "callee": "this.responseBuffers.delete",
+          "lineNumber": 585
+        },
+        {
+          "caller": "clearSession",
+          "callee": "this.processingSession.delete",
+          "lineNumber": 586
+        },
+        {
+          "caller": "clearSession",
+          "callee": "log",
+          "lineNumber": 587
+        },
+        {
+          "caller": "clearAllSessions",
+          "callee": "this.sessionMappings.clear",
+          "lineNumber": 598
+        },
+        {
+          "caller": "clearAllSessions",
+          "callee": "this.messageQueues.clear",
+          "lineNumber": 599
+        },
+        {
+          "caller": "clearAllSessions",
+          "callee": "this.responseBuffers.clear",
+          "lineNumber": 600
+        },
+        {
+          "caller": "clearAllSessions",
+          "callee": "this.processingSession.clear",
+          "lineNumber": 601
+        },
+        {
+          "caller": "clearAllSessions",
+          "callee": "log",
+          "lineNumber": 602
+        },
+        {
+          "caller": "cleanupStaleSessions",
+          "callee": "Date.now",
+          "lineNumber": 609
+        },
+        {
+          "caller": "cleanupStaleSessions",
+          "callee": "this.sessionMappings.delete",
+          "lineNumber": 614
+        },
+        {
+          "caller": "cleanupStaleSessions",
+          "callee": "this.messageQueues.delete",
+          "lineNumber": 615
+        },
+        {
+          "caller": "cleanupStaleSessions",
+          "callee": "log",
+          "lineNumber": 621
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/remote/remote-config-store.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 328,
+      "nonEmptyLines": 289,
+      "classes": [
+        {
+          "name": "RemoteConfigStore",
+          "startLine": 24,
+          "endLine": 325,
+          "methods": [
+            "constructor",
+            "migrateAuthMode",
+            "migrateFeishuDmPolicySync",
+            "getAll",
+            "getGatewayConfig",
+            "filterProtoPollution",
+            "setGatewayConfig",
+            "getFeishuConfig",
+            "setFeishuConfig",
+            "getWechatConfig",
+            "setWechatConfig",
+            "getTelegramConfig",
+            "setTelegramConfig",
+            "getDingtalkConfig",
+            "setDingtalkConfig",
+            "getWebSocketConfig",
+            "setWebSocketConfig",
+            "isEnabled",
+            "setEnabled",
+            "getPairedUsers",
+            "addPairedUser",
+            "removePairedUser",
+            "syncAllowlist",
+            "isPaired",
+            "getPath",
+            "reset"
+          ],
+          "properties": ["store"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "remoteConfigStore",
+          "line": 328,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "constructor",
+          "callee": "createEncryptedStoreWithKeyRotation",
+          "lineNumber": 34
+        },
+        {
+          "caller": "constructor",
+          "callee": "getLegacyDerivedKeyHexes",
+          "lineNumber": 38
+        },
+        {
+          "caller": "constructor",
+          "callee": "this.migrateAuthMode",
+          "lineNumber": 59
+        },
+        {
+          "caller": "constructor",
+          "callee": "this.migrateFeishuDmPolicySync",
+          "lineNumber": 62
+        },
+        {
+          "caller": "migrateAuthMode",
+          "callee": "this.store.get",
+          "lineNumber": 69
+        },
+        {
+          "caller": "migrateAuthMode",
+          "callee": "this.store.get",
+          "lineNumber": 73
+        },
+        {
+          "caller": "migrateAuthMode",
+          "callee": "pairedUsers.map",
+          "lineNumber": 74
+        },
+        {
+          "caller": "migrateAuthMode",
+          "callee": "log",
+          "lineNumber": 76
+        },
+        {
+          "caller": "migrateAuthMode",
+          "callee": "this.store.set",
+          "lineNumber": 81
+        },
+        {
+          "caller": "migrateFeishuDmPolicySync",
+          "callee": "this.store.get",
+          "lineNumber": 98
+        },
+        {
+          "caller": "migrateFeishuDmPolicySync",
+          "callee": "this.store.get",
+          "lineNumber": 102
+        },
+        {
+          "caller": "migrateFeishuDmPolicySync",
+          "callee": "this.getPairedUsers().map",
+          "lineNumber": 106
+        },
+        {
+          "caller": "migrateFeishuDmPolicySync",
+          "callee": "this.getPairedUsers",
+          "lineNumber": 106
+        },
+        {
+          "caller": "migrateFeishuDmPolicySync",
+          "callee": "allowlist.every",
+          "lineNumber": 108
+        },
+        {
+          "caller": "migrateFeishuDmPolicySync",
+          "callee": "pairedEntries.has",
+          "lineNumber": 108
+        },
+        {
+          "caller": "migrateFeishuDmPolicySync",
+          "callee": "log",
+          "lineNumber": 111
+        },
+        {
+          "caller": "migrateFeishuDmPolicySync",
+          "callee": "this.store.set",
+          "lineNumber": 112
+        },
+        {
+          "caller": "getAll",
+          "callee": "this.store.get",
+          "lineNumber": 121
+        },
+        {
+          "caller": "getAll",
+          "callee": "this.store.get",
+          "lineNumber": 122
+        },
+        {
+          "caller": "getGatewayConfig",
+          "callee": "this.store.get",
+          "lineNumber": 130
+        },
+        {
+          "caller": "setGatewayConfig",
+          "callee": "this.getGatewayConfig",
+          "lineNumber": 148
+        },
+        {
+          "caller": "setGatewayConfig",
+          "callee": "this.store.set",
+          "lineNumber": 149
+        },
+        {
+          "caller": "setGatewayConfig",
+          "callee": "this.filterProtoPollution",
+          "lineNumber": 151
+        },
+        {
+          "caller": "setGatewayConfig",
+          "callee": "log",
+          "lineNumber": 153
+        },
+        {
+          "caller": "getFeishuConfig",
+          "callee": "this.store.get",
+          "lineNumber": 160
+        },
+        {
+          "caller": "setFeishuConfig",
+          "callee": "this.store.set",
+          "lineNumber": 167
+        },
+        {
+          "caller": "setFeishuConfig",
+          "callee": "log",
+          "lineNumber": 168
+        },
+        {
+          "caller": "getWechatConfig",
+          "callee": "this.store.get",
+          "lineNumber": 175
+        },
+        {
+          "caller": "setWechatConfig",
+          "callee": "this.store.set",
+          "lineNumber": 182
+        },
+        {
+          "caller": "setWechatConfig",
+          "callee": "log",
+          "lineNumber": 183
+        },
+        {
+          "caller": "getTelegramConfig",
+          "callee": "this.store.get",
+          "lineNumber": 190
+        },
+        {
+          "caller": "setTelegramConfig",
+          "callee": "this.store.set",
+          "lineNumber": 197
+        },
+        {
+          "caller": "setTelegramConfig",
+          "callee": "log",
+          "lineNumber": 198
+        },
+        {
+          "caller": "getDingtalkConfig",
+          "callee": "this.store.get",
+          "lineNumber": 205
+        },
+        {
+          "caller": "setDingtalkConfig",
+          "callee": "this.store.set",
+          "lineNumber": 212
+        },
+        {
+          "caller": "setDingtalkConfig",
+          "callee": "log",
+          "lineNumber": 213
+        },
+        {
+          "caller": "getWebSocketConfig",
+          "callee": "this.store.get",
+          "lineNumber": 220
+        },
+        {
+          "caller": "setWebSocketConfig",
+          "callee": "this.store.set",
+          "lineNumber": 227
+        },
+        {
+          "caller": "setWebSocketConfig",
+          "callee": "log",
+          "lineNumber": 228
+        },
+        {
+          "caller": "isEnabled",
+          "callee": "this.store.get",
+          "lineNumber": 235
+        },
+        {
+          "caller": "setEnabled",
+          "callee": "this.store.set",
+          "lineNumber": 242
+        },
+        {
+          "caller": "setEnabled",
+          "callee": "log",
+          "lineNumber": 243
+        },
+        {
+          "caller": "getPairedUsers",
+          "callee": "this.store.get",
+          "lineNumber": 250
+        },
+        {
+          "caller": "addPairedUser",
+          "callee": "this.getPairedUsers",
+          "lineNumber": 257
+        },
+        {
+          "caller": "addPairedUser",
+          "callee": "users.findIndex",
+          "lineNumber": 258
+        },
+        {
+          "caller": "addPairedUser",
+          "callee": "users.push",
+          "lineNumber": 265
+        },
+        {
+          "caller": "addPairedUser",
+          "callee": "this.store.set",
+          "lineNumber": 268
+        },
+        {
+          "caller": "addPairedUser",
+          "callee": "this.syncAllowlist",
+          "lineNumber": 269
+        },
+        {
+          "caller": "addPairedUser",
+          "callee": "log",
+          "lineNumber": 270
+        },
+        {
+          "caller": "removePairedUser",
+          "callee": "this.getPairedUsers",
+          "lineNumber": 277
+        },
+        {
+          "caller": "removePairedUser",
+          "callee": "users.filter",
+          "lineNumber": 278
+        },
+        {
+          "caller": "removePairedUser",
+          "callee": "this.store.set",
+          "lineNumber": 281
+        },
+        {
+          "caller": "removePairedUser",
+          "callee": "this.syncAllowlist",
+          "lineNumber": 282
+        },
+        {
+          "caller": "removePairedUser",
+          "callee": "log",
+          "lineNumber": 283
+        },
+        {
+          "caller": "syncAllowlist",
+          "callee": "this.store.get",
+          "lineNumber": 294
+        },
+        {
+          "caller": "syncAllowlist",
+          "callee": "this.store.set",
+          "lineNumber": 296
+        },
+        {
+          "caller": "syncAllowlist",
+          "callee": "users.map",
+          "lineNumber": 298
+        },
+        {
+          "caller": "isPaired",
+          "callee": "this.getPairedUsers",
+          "lineNumber": 307
+        },
+        {
+          "caller": "isPaired",
+          "callee": "users.some",
+          "lineNumber": 308
+        },
+        {
+          "caller": "reset",
+          "callee": "this.store.clear",
+          "lineNumber": 322
+        },
+        {
+          "caller": "reset",
+          "callee": "log",
+          "lineNumber": 323
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/remote/remote-manager.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1313,
+      "nonEmptyLines": 1143,
+      "classes": [
+        {
+          "name": "RemoteManager",
+          "startLine": 61,
+          "endLine": 1310,
+          "methods": [
+            "constructor",
+            "setAgentExecutor",
+            "setDefaultWorkingDirectory",
+            "setRendererCallback",
+            "start",
+            "stop",
+            "restart",
+            "getStatus",
+            "getTunnelStatus",
+            "getFeishuWebhookUrl",
+            "updateGatewayConfig",
+            "updateFeishuConfig",
+            "approvePairing",
+            "rejectPairing",
+            "revokePairing",
+            "getPairedUsers",
+            "getPendingPairings",
+            "getRemoteSessions",
+            "clearRemoteSession",
+            "isRemoteSession",
+            "getRemoteSessionId",
+            "handleQuestionRequest",
+            "handlePermissionRequest",
+            "withInteractionLock",
+            "handlePotentialInteractionResponse",
+            "parseQuestionResponse",
+            "getPendingInteractionsCount",
+            "sendResponseToChannel",
+            "flushResponseBuffer",
+            "doSendToChannel",
+            "hashText",
+            "sendToolProgress",
+            "clearSessionBuffer",
+            "setupGatewayEvents",
+            "registerChannels",
+            "loadPairedUsers",
+            "executeAgent",
+            "emitStatusUpdate",
+            "emitToRenderer",
+            "emitRemoteUserMessage"
+          ],
+          "properties": [
+            "gateway",
+            "messageRouter",
+            "agentExecutor",
+            "sendToRenderer",
+            "remoteSessionIds",
+            "sessionIdMapping",
+            "reverseSessionIdMapping",
+            "sessionChannelMapping",
+            "sessionOwnerMapping",
+            "pendingInteractions",
+            "interactionResolvers",
+            "responseBuffers",
+            "sentMessageHashes",
+            "sendTimers",
+            "lockChain",
+            "defaultWorkingDirectory"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RemoteManager",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "remoteManager",
+          "line": 1313,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "constructor",
+          "callee": "super",
+          "lineNumber": 106
+        },
+        {
+          "caller": "setAgentExecutor",
+          "callee": "this.messageRouter.setAgentCallback",
+          "lineNumber": 117
+        },
+        {
+          "caller": "setAgentExecutor",
+          "callee": "this.executeAgent",
+          "lineNumber": 129
+        },
+        {
+          "caller": "setAgentExecutor",
+          "callee": "this.messageRouter.setWorkingDirectoryValidator",
+          "lineNumber": 144
+        },
+        {
+          "caller": "setAgentExecutor",
+          "callee": "log",
+          "lineNumber": 147
+        },
+        {
+          "caller": "setDefaultWorkingDirectory",
+          "callee": "this.messageRouter.setDefaultWorkingDirectory",
+          "lineNumber": 155
+        },
+        {
+          "caller": "setDefaultWorkingDirectory",
+          "callee": "log",
+          "lineNumber": 156
+        },
+        {
+          "caller": "start",
+          "callee": "remoteConfigStore.getAll",
+          "lineNumber": 170
+        },
+        {
+          "caller": "start",
+          "callee": "log",
+          "lineNumber": 173
+        },
+        {
+          "caller": "start",
+          "callee": "log",
+          "lineNumber": 177
+        },
+        {
+          "caller": "start",
+          "callee": "this.setDefaultWorkingDirectory",
+          "lineNumber": 187
+        },
+        {
+          "caller": "start",
+          "callee": "this.setupGatewayEvents",
+          "lineNumber": 191
+        },
+        {
+          "caller": "start",
+          "callee": "this.gateway.setMessageInterceptor",
+          "lineNumber": 194
+        },
+        {
+          "caller": "start",
+          "callee": "this.handlePotentialInteractionResponse",
+          "lineNumber": 195
+        },
+        {
+          "caller": "start",
+          "callee": "this.registerChannels",
+          "lineNumber": 204
+        },
+        {
+          "caller": "start",
+          "callee": "this.loadPairedUsers",
+          "lineNumber": 207
+        },
+        {
+          "caller": "start",
+          "callee": "this.gateway.start",
+          "lineNumber": 210
+        },
+        {
+          "caller": "start",
+          "callee": "tunnelManager.start",
+          "lineNumber": 213
+        },
+        {
+          "caller": "start",
+          "callee": "log",
+          "lineNumber": 215
+        },
+        {
+          "caller": "start",
+          "callee": "log",
+          "lineNumber": 216
+        },
+        {
+          "caller": "start",
+          "callee": "log",
+          "lineNumber": 219
+        },
+        {
+          "caller": "start",
+          "callee": "this.emitStatusUpdate",
+          "lineNumber": 220
+        },
+        {
+          "caller": "start",
+          "callee": "logWarn",
+          "lineNumber": 223
+        },
+        {
+          "caller": "start",
+          "callee": "this.gateway?.stop",
+          "lineNumber": 226
+        },
+        {
+          "caller": "start",
+          "callee": "this.emitStatusUpdate",
+          "lineNumber": 228
+        },
+        {
+          "caller": "start",
+          "callee": "logError",
+          "lineNumber": 232
+        },
+        {
+          "caller": "stop",
+          "callee": "log",
+          "lineNumber": 245
+        },
+        {
+          "caller": "stop",
+          "callee": "this.sendTimers.values",
+          "lineNumber": 248
+        },
+        {
+          "caller": "stop",
+          "callee": "clearTimeout",
+          "lineNumber": 249
+        },
+        {
+          "caller": "stop",
+          "callee": "this.sendTimers.clear",
+          "lineNumber": 251
+        },
+        {
+          "caller": "stop",
+          "callee": "tunnelManager.stop",
+          "lineNumber": 254
+        },
+        {
+          "caller": "stop",
+          "callee": "this.gateway.stop",
+          "lineNumber": 257
+        },
+        {
+          "caller": "stop",
+          "callee": "log",
+          "lineNumber": 260
+        },
+        {
+          "caller": "stop",
+          "callee": "this.emitStatusUpdate",
+          "lineNumber": 261
+        },
+        {
+          "caller": "stop",
+          "callee": "logError",
+          "lineNumber": 263
+        },
+        {
+          "caller": "restart",
+          "callee": "this.stop",
+          "lineNumber": 271
+        },
+        {
+          "caller": "restart",
+          "callee": "this.start",
+          "lineNumber": 272
+        },
+        {
+          "caller": "getStatus",
+          "callee": "this.gateway.getStatus",
+          "lineNumber": 289
+        },
+        {
+          "caller": "getStatus",
+          "callee": "tunnelManager.getStatus",
+          "lineNumber": 290
+        },
+        {
+          "caller": "getTunnelStatus",
+          "callee": "tunnelManager.getStatus",
+          "lineNumber": 298
+        },
+        {
+          "caller": "getFeishuWebhookUrl",
+          "callee": "tunnelManager.getWebhookUrl",
+          "lineNumber": 305
+        },
+        {
+          "caller": "updateGatewayConfig",
+          "callee": "remoteConfigStore.setGatewayConfig",
+          "lineNumber": 312
+        },
+        {
+          "caller": "updateGatewayConfig",
+          "callee": "this.restart",
+          "lineNumber": 316
+        },
+        {
+          "caller": "updateFeishuConfig",
+          "callee": "remoteConfigStore.setFeishuConfig",
+          "lineNumber": 324
+        },
+        {
+          "caller": "updateFeishuConfig",
+          "callee": "remoteConfigStore.getGatewayConfig",
+          "lineNumber": 332
+        },
+        {
+          "caller": "updateFeishuConfig",
+          "callee": "log",
+          "lineNumber": 336
+        },
+        {
+          "caller": "updateFeishuConfig",
+          "callee": "remoteConfigStore.setGatewayConfig",
+          "lineNumber": 342
+        },
+        {
+          "caller": "updateFeishuConfig",
+          "callee": "remoteConfigStore.setGatewayConfig",
+          "lineNumber": 347
+        },
+        {
+          "caller": "updateFeishuConfig",
+          "callee": "(config.dm.allowFrom ?? []).map",
+          "lineNumber": 353
+        },
+        {
+          "caller": "updateFeishuConfig",
+          "callee": "(currentAuth.allowlist ?? []).filter",
+          "lineNumber": 354
+        },
+        {
+          "caller": "updateFeishuConfig",
+          "callee": "entry.startsWith",
+          "lineNumber": 355
+        },
+        {
+          "caller": "updateFeishuConfig",
+          "callee": "remoteConfigStore\n              .getPairedUsers()\n              .filter((u) => u.channelType === 'feishu')\n              .map",
+          "lineNumber": 359
+        },
+        {
+          "caller": "updateFeishuConfig",
+          "callee": "remoteConfigStore\n              .getPairedUsers()\n              .filter",
+          "lineNumber": 359
+        },
+        {
+          "caller": "updateFeishuConfig",
+          "callee": "remoteConfigStore\n              .getPairedUsers",
+          "lineNumber": 359
+        },
+        {
+          "caller": "updateFeishuConfig",
+          "callee": "remoteConfigStore.setGatewayConfig",
+          "lineNumber": 363
+        },
+        {
+          "caller": "updateFeishuConfig",
+          "callee": "this.restart",
+          "lineNumber": 380
+        },
+        {
+          "caller": "approvePairing",
+          "callee": "this.gateway.approvePairing",
+          "lineNumber": 392
+        },
+        {
+          "caller": "approvePairing",
+          "callee": "remoteConfigStore.addPairedUser",
+          "lineNumber": 396
+        },
+        {
+          "caller": "approvePairing",
+          "callee": "Date.now",
+          "lineNumber": 399
+        },
+        {
+          "caller": "approvePairing",
+          "callee": "Date.now",
+          "lineNumber": 400
+        },
+        {
+          "caller": "approvePairing",
+          "callee": "this.emitStatusUpdate",
+          "lineNumber": 403
+        },
+        {
+          "caller": "rejectPairing",
+          "callee": "this.gateway.rejectPairing",
+          "lineNumber": 417
+        },
+        {
+          "caller": "rejectPairing",
+          "callee": "this.emitStatusUpdate",
+          "lineNumber": 420
+        },
+        {
+          "caller": "revokePairing",
+          "callee": "this.gateway.revokePairing",
+          "lineNumber": 434
+        },
+        {
+          "caller": "revokePairing",
+          "callee": "remoteConfigStore.removePairedUser",
+          "lineNumber": 437
+        },
+        {
+          "caller": "revokePairing",
+          "callee": "this.emitStatusUpdate",
+          "lineNumber": 438
+        },
+        {
+          "caller": "getPairedUsers",
+          "callee": "remoteConfigStore.getPairedUsers",
+          "lineNumber": 448
+        },
+        {
+          "caller": "getPendingPairings",
+          "callee": "this.gateway?.getPendingPairings",
+          "lineNumber": 455
+        },
+        {
+          "caller": "getRemoteSessions",
+          "callee": "this.messageRouter.getAllSessionMappings",
+          "lineNumber": 462
+        },
+        {
+          "caller": "clearRemoteSession",
+          "callee": "this.messageRouter.clearSession",
+          "lineNumber": 469
+        },
+        {
+          "caller": "isRemoteSession",
+          "callee": "this.sessionIdMapping.has",
+          "lineNumber": 476
+        },
+        {
+          "caller": "getRemoteSessionId",
+          "callee": "this.sessionIdMapping.get",
+          "lineNumber": 483
+        },
+        {
+          "caller": "handleQuestionRequest",
+          "callee": "this.sessionIdMapping.get",
+          "lineNumber": 500
+        },
+        {
+          "caller": "handleQuestionRequest",
+          "callee": "this.sessionChannelMapping.get",
+          "lineNumber": 505
+        },
+        {
+          "caller": "handleQuestionRequest",
+          "callee": "log",
+          "lineNumber": 510
+        },
+        {
+          "caller": "handleQuestionRequest",
+          "callee": "questions.forEach",
+          "lineNumber": 515
+        },
+        {
+          "caller": "handleQuestionRequest",
+          "callee": "q.options.forEach",
+          "lineNumber": 522
+        },
+        {
+          "caller": "handleQuestionRequest",
+          "callee": "this.sessionOwnerMapping.get",
+          "lineNumber": 547
+        },
+        {
+          "caller": "handleQuestionRequest",
+          "callee": "Date.now",
+          "lineNumber": 550
+        },
+        {
+          "caller": "handleQuestionRequest",
+          "callee": "Date.now",
+          "lineNumber": 551
+        },
+        {
+          "caller": "handleQuestionRequest",
+          "callee": "this.withInteractionLock",
+          "lineNumber": 553
+        },
+        {
+          "caller": "handleQuestionRequest",
+          "callee": "this.pendingInteractions.set",
+          "lineNumber": 554
+        },
+        {
+          "caller": "handleQuestionRequest",
+          "callee": "this.gateway.sendResponse",
+          "lineNumber": 559
+        },
+        {
+          "caller": "handleQuestionRequest",
+          "callee": "logError",
+          "lineNumber": 568
+        },
+        {
+          "caller": "handleQuestionRequest",
+          "callee": "this.withInteractionLock",
+          "lineNumber": 569
+        },
+        {
+          "caller": "handleQuestionRequest",
+          "callee": "this.pendingInteractions.delete",
+          "lineNumber": 570
+        },
+        {
+          "caller": "handleQuestionRequest",
+          "callee": "this.interactionResolvers.set",
+          "lineNumber": 577
+        },
+        {
+          "caller": "handleQuestionRequest",
+          "callee": "setTimeout",
+          "lineNumber": 580
+        },
+        {
+          "caller": "handleQuestionRequest",
+          "callee": "this.withInteractionLock(async () => {\n            if (this.pendingInteractions.has(questionId)) {\n              log('[RemoteManager] Question timeout:', questionId);\n              this.pendingInteractions.delete(questionId);\n              this.interactionResolvers.delete(questionId);\n              resolve('{}'); // Return empty answer on timeout\n            }\n          }).catch",
+          "lineNumber": 582
+        },
+        {
+          "caller": "handleQuestionRequest",
+          "callee": "this.withInteractionLock",
+          "lineNumber": 582
+        },
+        {
+          "caller": "handleQuestionRequest",
+          "callee": "this.pendingInteractions.has",
+          "lineNumber": 583
+        },
+        {
+          "caller": "handleQuestionRequest",
+          "callee": "log",
+          "lineNumber": 584
+        },
+        {
+          "caller": "handleQuestionRequest",
+          "callee": "this.pendingInteractions.delete",
+          "lineNumber": 585
+        },
+        {
+          "caller": "handleQuestionRequest",
+          "callee": "this.interactionResolvers.delete",
+          "lineNumber": 586
+        },
+        {
+          "caller": "handleQuestionRequest",
+          "callee": "resolve",
+          "lineNumber": 587
+        },
+        {
+          "caller": "handleQuestionRequest",
+          "callee": "logError",
+          "lineNumber": 589
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "this.sessionIdMapping.get",
+          "lineNumber": 606
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "this.sessionChannelMapping.get",
+          "lineNumber": 611
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "log",
+          "lineNumber": 616
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "remoteConfigStore.getAll",
+          "lineNumber": 619
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "safeTools.includes",
+          "lineNumber": 650
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "log",
+          "lineNumber": 651
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "this.doSendToChannel",
+          "lineNumber": 653
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "JSON.stringify",
+          "lineNumber": 661
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "this.sessionOwnerMapping.get",
+          "lineNumber": 672
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "Date.now",
+          "lineNumber": 676
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "Date.now",
+          "lineNumber": 677
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "this.withInteractionLock",
+          "lineNumber": 679
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "this.pendingInteractions.set",
+          "lineNumber": 680
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "this.gateway.sendResponse",
+          "lineNumber": 685
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "logError",
+          "lineNumber": 694
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "this.withInteractionLock",
+          "lineNumber": 695
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "this.pendingInteractions.delete",
+          "lineNumber": 696
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "this.interactionResolvers.set",
+          "lineNumber": 703
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "response.toLowerCase().trim",
+          "lineNumber": 704
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "response.toLowerCase",
+          "lineNumber": 704
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "resolve",
+          "lineNumber": 711
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "resolve",
+          "lineNumber": 713
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "resolve",
+          "lineNumber": 715
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "setTimeout",
+          "lineNumber": 720
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "this.withInteractionLock(async () => {\n            if (this.pendingInteractions.has(toolUseId)) {\n              log('[RemoteManager] Permission timeout:', toolUseId);\n              this.pendingInteractions.delete(toolUseId);\n              this.interactionResolvers.delete(toolUseId);\n              resolve({ allow: false }); // Deny on timeout\n            }\n          }).catch",
+          "lineNumber": 722
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "this.withInteractionLock",
+          "lineNumber": 722
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "this.pendingInteractions.has",
+          "lineNumber": 723
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "log",
+          "lineNumber": 724
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "this.pendingInteractions.delete",
+          "lineNumber": 725
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "this.interactionResolvers.delete",
+          "lineNumber": 726
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "resolve",
+          "lineNumber": 727
+        },
+        {
+          "caller": "handlePermissionRequest",
+          "callee": "logError",
+          "lineNumber": 729
+        },
+        {
+          "caller": "withInteractionLock",
+          "callee": "fn",
+          "lineNumber": 745
+        },
+        {
+          "caller": "withInteractionLock",
+          "callee": "release",
+          "lineNumber": 747
+        },
+        {
+          "caller": "handlePotentialInteractionResponse",
+          "callee": "this.withInteractionLock",
+          "lineNumber": 761
+        },
+        {
+          "caller": "handlePotentialInteractionResponse",
+          "callee": "this.sessionChannelMapping.get",
+          "lineNumber": 765
+        },
+        {
+          "caller": "handlePotentialInteractionResponse",
+          "callee": "log",
+          "lineNumber": 771
+        },
+        {
+          "caller": "handlePotentialInteractionResponse",
+          "callee": "log",
+          "lineNumber": 775
+        },
+        {
+          "caller": "handlePotentialInteractionResponse",
+          "callee": "this.pendingInteractions.delete",
+          "lineNumber": 778
+        },
+        {
+          "caller": "handlePotentialInteractionResponse",
+          "callee": "this.interactionResolvers.get",
+          "lineNumber": 781
+        },
+        {
+          "caller": "handlePotentialInteractionResponse",
+          "callee": "this.interactionResolvers.delete",
+          "lineNumber": 783
+        },
+        {
+          "caller": "handlePotentialInteractionResponse",
+          "callee": "this.parseQuestionResponse",
+          "lineNumber": 787
+        },
+        {
+          "caller": "handlePotentialInteractionResponse",
+          "callee": "resolver",
+          "lineNumber": 788
+        },
+        {
+          "caller": "handlePotentialInteractionResponse",
+          "callee": "resolver",
+          "lineNumber": 791
+        },
+        {
+          "caller": "parseQuestionResponse",
+          "callee": "messageText.toLowerCase().trim",
+          "lineNumber": 819
+        },
+        {
+          "caller": "parseQuestionResponse",
+          "callee": "messageText.toLowerCase",
+          "lineNumber": 819
+        },
+        {
+          "caller": "parseQuestionResponse",
+          "callee": "messageText.toLowerCase().trim",
+          "lineNumber": 820
+        },
+        {
+          "caller": "parseQuestionResponse",
+          "callee": "messageText.toLowerCase",
+          "lineNumber": 820
+        },
+        {
+          "caller": "parseQuestionResponse",
+          "callee": "questions.forEach",
+          "lineNumber": 826
+        },
+        {
+          "caller": "parseQuestionResponse",
+          "callee": "messageText.match",
+          "lineNumber": 829
+        },
+        {
+          "caller": "parseQuestionResponse",
+          "callee": "numbers\n            .map((n) => parseInt(n) - 1) // Convert to 0-indexed\n            .filter((idx) => idx >= 0 && idx < q.options!.length)\n            .map",
+          "lineNumber": 831
+        },
+        {
+          "caller": "parseQuestionResponse",
+          "callee": "numbers\n            .map((n) => parseInt(n) - 1) // Convert to 0-indexed\n            .filter",
+          "lineNumber": 831
+        },
+        {
+          "caller": "parseQuestionResponse",
+          "callee": "numbers\n            .map",
+          "lineNumber": 831
+        },
+        {
+          "caller": "parseQuestionResponse",
+          "callee": "parseInt",
+          "lineNumber": 832
+        },
+        {
+          "caller": "parseQuestionResponse",
+          "callee": "messageText.trim",
+          "lineNumber": 842
+        },
+        {
+          "caller": "parseQuestionResponse",
+          "callee": "JSON.stringify",
+          "lineNumber": 846
+        },
+        {
+          "caller": "sendResponseToChannel",
+          "callee": "this.sessionIdMapping.get",
+          "lineNumber": 864
+        },
+        {
+          "caller": "sendResponseToChannel",
+          "callee": "log",
+          "lineNumber": 866
+        },
+        {
+          "caller": "sendResponseToChannel",
+          "callee": "this.sessionChannelMapping.get",
+          "lineNumber": 870
+        },
+        {
+          "caller": "sendResponseToChannel",
+          "callee": "logError",
+          "lineNumber": 872
+        },
+        {
+          "caller": "sendResponseToChannel",
+          "callee": "this.hashText",
+          "lineNumber": 877
+        },
+        {
+          "caller": "sendResponseToChannel",
+          "callee": "this.sentMessageHashes.has",
+          "lineNumber": 878
+        },
+        {
+          "caller": "sendResponseToChannel",
+          "callee": "this.sentMessageHashes.set",
+          "lineNumber": 879
+        },
+        {
+          "caller": "sendResponseToChannel",
+          "callee": "this.sentMessageHashes.get",
+          "lineNumber": 881
+        },
+        {
+          "caller": "sendResponseToChannel",
+          "callee": "sentHashes.has",
+          "lineNumber": 882
+        },
+        {
+          "caller": "sendResponseToChannel",
+          "callee": "log",
+          "lineNumber": 883
+        },
+        {
+          "caller": "sendResponseToChannel",
+          "callee": "sentHashes.clear",
+          "lineNumber": 888
+        },
+        {
+          "caller": "sendResponseToChannel",
+          "callee": "sentHashes.add",
+          "lineNumber": 890
+        },
+        {
+          "caller": "sendResponseToChannel",
+          "callee": "this.doSendToChannel",
+          "lineNumber": 894
+        },
+        {
+          "caller": "sendResponseToChannel",
+          "callee": "this.responseBuffers.has",
+          "lineNumber": 899
+        },
+        {
+          "caller": "sendResponseToChannel",
+          "callee": "this.responseBuffers.set",
+          "lineNumber": 900
+        },
+        {
+          "caller": "sendResponseToChannel",
+          "callee": "this.responseBuffers.get",
+          "lineNumber": 902
+        },
+        {
+          "caller": "sendResponseToChannel",
+          "callee": "buffer.texts.push",
+          "lineNumber": 903
+        },
+        {
+          "caller": "sendResponseToChannel",
+          "callee": "this.sendTimers.get",
+          "lineNumber": 906
+        },
+        {
+          "caller": "sendResponseToChannel",
+          "callee": "clearTimeout",
+          "lineNumber": 908
+        },
+        {
+          "caller": "sendResponseToChannel",
+          "callee": "setTimeout",
+          "lineNumber": 912
+        },
+        {
+          "caller": "sendResponseToChannel",
+          "callee": "this.flushResponseBuffer(actualSessionId).catch",
+          "lineNumber": 913
+        },
+        {
+          "caller": "sendResponseToChannel",
+          "callee": "this.flushResponseBuffer",
+          "lineNumber": 913
+        },
+        {
+          "caller": "sendResponseToChannel",
+          "callee": "logError",
+          "lineNumber": 914
+        },
+        {
+          "caller": "sendResponseToChannel",
+          "callee": "this.sendTimers.set",
+          "lineNumber": 917
+        },
+        {
+          "caller": "flushResponseBuffer",
+          "callee": "this.responseBuffers.get",
+          "lineNumber": 924
+        },
+        {
+          "caller": "flushResponseBuffer",
+          "callee": "this.sessionIdMapping.get",
+          "lineNumber": 927
+        },
+        {
+          "caller": "flushResponseBuffer",
+          "callee": "this.sessionChannelMapping.get",
+          "lineNumber": 930
+        },
+        {
+          "caller": "flushResponseBuffer",
+          "callee": "buffer.texts.join",
+          "lineNumber": 934
+        },
+        {
+          "caller": "flushResponseBuffer",
+          "callee": "Date.now",
+          "lineNumber": 936
+        },
+        {
+          "caller": "flushResponseBuffer",
+          "callee": "this.sendTimers.get",
+          "lineNumber": 939
+        },
+        {
+          "caller": "flushResponseBuffer",
+          "callee": "clearTimeout",
+          "lineNumber": 941
+        },
+        {
+          "caller": "flushResponseBuffer",
+          "callee": "this.sendTimers.delete",
+          "lineNumber": 942
+        },
+        {
+          "caller": "flushResponseBuffer",
+          "callee": "this.doSendToChannel",
+          "lineNumber": 945
+        },
+        {
+          "caller": "doSendToChannel",
+          "callee": "log",
+          "lineNumber": 955
+        },
+        {
+          "caller": "doSendToChannel",
+          "callee": "this.gateway!.sendResponse",
+          "lineNumber": 961
+        },
+        {
+          "caller": "doSendToChannel",
+          "callee": "logError",
+          "lineNumber": 970
+        },
+        {
+          "caller": "hashText",
+          "callee": "text.charCodeAt",
+          "lineNumber": 980
+        },
+        {
+          "caller": "hashText",
+          "callee": "hash.toString",
+          "lineNumber": 984
+        },
+        {
+          "caller": "sendToolProgress",
+          "callee": "this.sessionIdMapping.get",
+          "lineNumber": 996
+        },
+        {
+          "caller": "sendToolProgress",
+          "callee": "this.sessionChannelMapping.get",
+          "lineNumber": 999
+        },
+        {
+          "caller": "sendToolProgress",
+          "callee": "notifyTools.some",
+          "lineNumber": 1004
+        },
+        {
+          "caller": "sendToolProgress",
+          "callee": "toolName.includes",
+          "lineNumber": 1004
+        },
+        {
+          "caller": "sendToolProgress",
+          "callee": "output.substring",
+          "lineNumber": 1027
+        },
+        {
+          "caller": "sendToolProgress",
+          "callee": "this.responseBuffers.has",
+          "lineNumber": 1035
+        },
+        {
+          "caller": "sendToolProgress",
+          "callee": "this.responseBuffers.set",
+          "lineNumber": 1036
+        },
+        {
+          "caller": "sendToolProgress",
+          "callee": "this.responseBuffers.get(actualSessionId)!.toolSteps.push",
+          "lineNumber": 1038
+        },
+        {
+          "caller": "sendToolProgress",
+          "callee": "this.responseBuffers.get",
+          "lineNumber": 1038
+        },
+        {
+          "caller": "sendToolProgress",
+          "callee": "toolName.includes",
+          "lineNumber": 1043
+        },
+        {
+          "caller": "sendToolProgress",
+          "callee": "this.doSendToChannel",
+          "lineNumber": 1045
+        },
+        {
+          "caller": "clearSessionBuffer",
+          "callee": "this.flushResponseBuffer",
+          "lineNumber": 1055
+        },
+        {
+          "caller": "clearSessionBuffer",
+          "callee": "this.responseBuffers.delete",
+          "lineNumber": 1058
+        },
+        {
+          "caller": "clearSessionBuffer",
+          "callee": "this.sentMessageHashes.delete",
+          "lineNumber": 1059
+        },
+        {
+          "caller": "clearSessionBuffer",
+          "callee": "this.sendTimers.get",
+          "lineNumber": 1060
+        },
+        {
+          "caller": "clearSessionBuffer",
+          "callee": "clearTimeout",
+          "lineNumber": 1062
+        },
+        {
+          "caller": "clearSessionBuffer",
+          "callee": "this.sendTimers.delete",
+          "lineNumber": 1063
+        },
+        {
+          "caller": "clearSessionBuffer",
+          "callee": "this.sessionIdMapping.get",
+          "lineNumber": 1067
+        },
+        {
+          "caller": "clearSessionBuffer",
+          "callee": "this.sessionIdMapping.delete",
+          "lineNumber": 1068
+        },
+        {
+          "caller": "clearSessionBuffer",
+          "callee": "this.reverseSessionIdMapping.delete",
+          "lineNumber": 1072
+        },
+        {
+          "caller": "clearSessionBuffer",
+          "callee": "this.sessionChannelMapping.delete",
+          "lineNumber": 1076
+        },
+        {
+          "caller": "clearSessionBuffer",
+          "callee": "this.sessionOwnerMapping.delete",
+          "lineNumber": 1077
+        },
+        {
+          "caller": "setupGatewayEvents",
+          "callee": "this.gateway.on",
+          "lineNumber": 1091
+        },
+        {
+          "caller": "setupGatewayEvents",
+          "callee": "this.emit",
+          "lineNumber": 1092
+        },
+        {
+          "caller": "setupGatewayEvents",
+          "callee": "this.gateway.on",
+          "lineNumber": 1095
+        },
+        {
+          "caller": "setupGatewayEvents",
+          "callee": "log",
+          "lineNumber": 1096
+        },
+        {
+          "caller": "setupGatewayEvents",
+          "callee": "this.emitToRenderer",
+          "lineNumber": 1097
+        },
+        {
+          "caller": "setupGatewayEvents",
+          "callee": "this.gateway.on",
+          "lineNumber": 1104
+        },
+        {
+          "caller": "setupGatewayEvents",
+          "callee": "this.emitStatusUpdate",
+          "lineNumber": 1105
+        },
+        {
+          "caller": "setupGatewayEvents",
+          "callee": "this.gateway.on",
+          "lineNumber": 1108
+        },
+        {
+          "caller": "setupGatewayEvents",
+          "callee": "this.emitStatusUpdate",
+          "lineNumber": 1109
+        },
+        {
+          "caller": "registerChannels",
+          "callee": "this.gateway.registerChannel",
+          "lineNumber": 1123
+        },
+        {
+          "caller": "registerChannels",
+          "callee": "this.gateway.on",
+          "lineNumber": 1126
+        },
+        {
+          "caller": "registerChannels",
+          "callee": "feishuChannel.handleWebhook",
+          "lineNumber": 1133
+        },
+        {
+          "caller": "registerChannels",
+          "callee": "data.respond",
+          "lineNumber": 1134
+        },
+        {
+          "caller": "registerChannels",
+          "callee": "log",
+          "lineNumber": 1138
+        },
+        {
+          "caller": "registerChannels",
+          "callee": "this.gateway.registerChannel",
+          "lineNumber": 1145
+        },
+        {
+          "caller": "registerChannels",
+          "callee": "this.gateway.on",
+          "lineNumber": 1148
+        },
+        {
+          "caller": "registerChannels",
+          "callee": "slackChannel.handleWebhook",
+          "lineNumber": 1155
+        },
+        {
+          "caller": "registerChannels",
+          "callee": "data.respond",
+          "lineNumber": 1156
+        },
+        {
+          "caller": "registerChannels",
+          "callee": "log",
+          "lineNumber": 1160
+        },
+        {
+          "caller": "loadPairedUsers",
+          "callee": "remoteConfigStore.getPairedUsers",
+          "lineNumber": 1171
+        },
+        {
+          "caller": "loadPairedUsers",
+          "callee": "this.gateway.restorePairedUser",
+          "lineNumber": 1174
+        },
+        {
+          "caller": "loadPairedUsers",
+          "callee": "log",
+          "lineNumber": 1175
+        },
+        {
+          "caller": "executeAgent",
+          "callee": "log",
+          "lineNumber": 1197
+        },
+        {
+          "caller": "executeAgent",
+          "callee": "log",
+          "lineNumber": 1198
+        },
+        {
+          "caller": "executeAgent",
+          "callee": "this.remoteSessionIds.has",
+          "lineNumber": 1201
+        },
+        {
+          "caller": "executeAgent",
+          "callee": "this.agentExecutor.startSession",
+          "lineNumber": 1205
+        },
+        {
+          "caller": "executeAgent",
+          "callee": "buildRemoteSessionTitle",
+          "lineNumber": 1206
+        },
+        {
+          "caller": "executeAgent",
+          "callee": "this.remoteSessionIds.add",
+          "lineNumber": 1212
+        },
+        {
+          "caller": "executeAgent",
+          "callee": "this.sessionIdMapping.set",
+          "lineNumber": 1215
+        },
+        {
+          "caller": "executeAgent",
+          "callee": "this.reverseSessionIdMapping.set",
+          "lineNumber": 1216
+        },
+        {
+          "caller": "executeAgent",
+          "callee": "this.sessionChannelMapping.set",
+          "lineNumber": 1219
+        },
+        {
+          "caller": "executeAgent",
+          "callee": "this.sessionOwnerMapping.set",
+          "lineNumber": 1222
+        },
+        {
+          "caller": "executeAgent",
+          "callee": "log",
+          "lineNumber": 1224
+        },
+        {
+          "caller": "executeAgent",
+          "callee": "log",
+          "lineNumber": 1232
+        },
+        {
+          "caller": "executeAgent",
+          "callee": "log",
+          "lineNumber": 1233
+        },
+        {
+          "caller": "executeAgent",
+          "callee": "this.emitToRenderer",
+          "lineNumber": 1235
+        },
+        {
+          "caller": "executeAgent",
+          "callee": "this.emitRemoteUserMessage",
+          "lineNumber": 1240
+        },
+        {
+          "caller": "executeAgent",
+          "callee": "this.reverseSessionIdMapping.get",
+          "lineNumber": 1243
+        },
+        {
+          "caller": "executeAgent",
+          "callee": "log",
+          "lineNumber": 1247
+        },
+        {
+          "caller": "executeAgent",
+          "callee": "this.emitRemoteUserMessage",
+          "lineNumber": 1248
+        },
+        {
+          "caller": "executeAgent",
+          "callee": "this.agentExecutor.continueSession",
+          "lineNumber": 1249
+        },
+        {
+          "caller": "emitStatusUpdate",
+          "callee": "this.emitToRenderer",
+          "lineNumber": 1265
+        },
+        {
+          "caller": "emitStatusUpdate",
+          "callee": "this.getStatus",
+          "lineNumber": 1269
+        },
+        {
+          "caller": "emitToRenderer",
+          "callee": "this.sendToRenderer",
+          "lineNumber": 1279
+        },
+        {
+          "caller": "emitToRenderer",
+          "callee": "this.emit",
+          "lineNumber": 1281
+        },
+        {
+          "caller": "emitRemoteUserMessage",
+          "callee": "uuidv4",
+          "lineNumber": 1298
+        },
+        {
+          "caller": "emitRemoteUserMessage",
+          "callee": "Date.now",
+          "lineNumber": 1302
+        },
+        {
+          "caller": "emitRemoteUserMessage",
+          "callee": "this.sendToRenderer",
+          "lineNumber": 1305
+        }
+      ],
+      "metrics": {
+        "importCount": 10,
+        "exportCount": 2,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/remote/remote-title.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 27,
+      "functions": [
+        {
+          "name": "buildRemoteSessionTitle",
+          "startLine": 11,
+          "endLine": 31,
+          "params": ["prompt"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "buildRemoteSessionTitle",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "buildRemoteSessionTitle",
+          "callee": "prompt\n    .trim()\n    .replace(/\\s+/g, ' ')  // Normalize whitespace\n    .replace",
+          "lineNumber": 13
+        },
+        {
+          "caller": "buildRemoteSessionTitle",
+          "callee": "prompt\n    .trim()\n    .replace",
+          "lineNumber": 13
+        },
+        {
+          "caller": "buildRemoteSessionTitle",
+          "callee": "prompt\n    .trim",
+          "lineNumber": 13
+        },
+        {
+          "caller": "buildRemoteSessionTitle",
+          "callee": "cleaned.match",
+          "lineNumber": 24
+        },
+        {
+          "caller": "buildRemoteSessionTitle",
+          "callee": "cleaned.substring",
+          "lineNumber": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/remote/tunnel-manager.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 171,
+      "nonEmptyLines": 146,
+      "classes": [
+        {
+          "name": "TunnelManager",
+          "startLine": 19,
+          "endLine": 169,
+          "methods": [
+            "constructor",
+            "getInstance",
+            "setStatusCallback",
+            "start",
+            "startNgrok",
+            "stop",
+            "getStatus",
+            "getWebhookUrl",
+            "emitStatus"
+          ],
+          "properties": ["instance", "currentUrl", "isConnected", "provider", "statusCallback"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "TunnelConfig",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "tunnelManager",
+          "line": 171,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "start",
+          "callee": "remoteConfigStore.getAll",
+          "lineNumber": 46
+        },
+        {
+          "caller": "start",
+          "callee": "log",
+          "lineNumber": 50
+        },
+        {
+          "caller": "start",
+          "callee": "this.startNgrok",
+          "lineNumber": 58
+        },
+        {
+          "caller": "start",
+          "callee": "logError",
+          "lineNumber": 61
+        },
+        {
+          "caller": "start",
+          "callee": "logError",
+          "lineNumber": 65
+        },
+        {
+          "caller": "start",
+          "callee": "this.emitStatus",
+          "lineNumber": 66
+        },
+        {
+          "caller": "start",
+          "callee": "String",
+          "lineNumber": 66
+        },
+        {
+          "caller": "startNgrok",
+          "callee": "log",
+          "lineNumber": 84
+        },
+        {
+          "caller": "startNgrok",
+          "callee": "ngrok.authtoken",
+          "lineNumber": 88
+        },
+        {
+          "caller": "startNgrok",
+          "callee": "ngrok.connect",
+          "lineNumber": 91
+        },
+        {
+          "caller": "startNgrok",
+          "callee": "log",
+          "lineNumber": 95
+        },
+        {
+          "caller": "startNgrok",
+          "callee": "this.emitStatus",
+          "lineNumber": 99
+        },
+        {
+          "caller": "startNgrok",
+          "callee": "log",
+          "lineNumber": 107
+        },
+        {
+          "caller": "startNgrok",
+          "callee": "this.emitStatus",
+          "lineNumber": 108
+        },
+        {
+          "caller": "startNgrok",
+          "callee": "logError",
+          "lineNumber": 112
+        },
+        {
+          "caller": "stop",
+          "callee": "log",
+          "lineNumber": 122
+        },
+        {
+          "caller": "stop",
+          "callee": "ngrok.disconnect",
+          "lineNumber": 124
+        },
+        {
+          "caller": "stop",
+          "callee": "ngrok.kill",
+          "lineNumber": 125
+        },
+        {
+          "caller": "stop",
+          "callee": "logError",
+          "lineNumber": 127
+        },
+        {
+          "caller": "stop",
+          "callee": "this.emitStatus",
+          "lineNumber": 134
+        },
+        {
+          "caller": "emitStatus",
+          "callee": "this.statusCallback",
+          "lineNumber": 161
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/remote/types.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 575,
+      "nonEmptyLines": 441,
+      "exports": [
+        {
+          "name": "DEFAULT_REMOTE_CONFIG",
+          "line": 563,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/utils/store-encryption.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 235,
+      "nonEmptyLines": 200,
+      "functions": [
+        {
+          "name": "uniqueValues",
+          "startLine": 26,
+          "endLine": 28,
+          "params": ["values"]
+        },
+        {
+          "name": "buildLegacyDirCandidates",
+          "startLine": 30,
+          "endLine": 38,
+          "params": ["moduleDirname"]
+        },
+        {
+          "name": "createScryptOptions",
+          "startLine": 43,
+          "endLine": 50,
+          "params": ["N", "r", "p"]
+        },
+        {
+          "name": "deriveKeyBuffer",
+          "startLine": 57,
+          "endLine": 63,
+          "params": ["seed", "salt", "options"]
+        },
+        {
+          "name": "deriveKeyHex",
+          "startLine": 65,
+          "endLine": 67,
+          "params": ["seed", "salt", "options"]
+        },
+        {
+          "name": "isLikelyKeyMismatch",
+          "startLine": 69,
+          "endLine": 72,
+          "params": ["error"]
+        },
+        {
+          "name": "buildBackupPath",
+          "startLine": 74,
+          "endLine": 77,
+          "params": ["storePath", "reason"]
+        },
+        {
+          "name": "resolveStoreName",
+          "startLine": 79,
+          "endLine": 85,
+          "params": ["storeOptions"]
+        },
+        {
+          "name": "resolveStorePath",
+          "startLine": 87,
+          "endLine": 109,
+          "params": ["storeOptions"]
+        },
+        {
+          "name": "moveUnreadableStoreToBackup",
+          "startLine": 111,
+          "endLine": 122,
+          "params": ["storePath"]
+        },
+        {
+          "name": "getLegacyDerivedKeyHexes",
+          "startLine": 124,
+          "endLine": 132,
+          "params": ["options"]
+        },
+        {
+          "name": "getStableDerivedKeyBuffer",
+          "startLine": 134,
+          "endLine": 136,
+          "params": ["options"]
+        },
+        {
+          "name": "getLegacyDerivedKeyBuffers",
+          "startLine": 138,
+          "endLine": 146,
+          "params": ["options"]
+        },
+        {
+          "name": "createEncryptedStoreWithKeyRotation",
+          "startLine": 148,
+          "endLine": 235,
+          "params": ["options"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SECURE_SCRYPT_OPTIONS",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "LEGACY_SCRYPT_OPTIONS",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "getLegacyDerivedKeyHexes",
+          "line": 124,
+          "isDefault": false
+        },
+        {
+          "name": "getStableDerivedKeyBuffer",
+          "line": 134,
+          "isDefault": false
+        },
+        {
+          "name": "getLegacyDerivedKeyBuffers",
+          "line": 138,
+          "isDefault": false
+        },
+        {
+          "name": "createEncryptedStoreWithKeyRotation",
+          "line": 148,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "uniqueValues",
+          "callee": "values.filter",
+          "lineNumber": 27
+        },
+        {
+          "caller": "buildLegacyDirCandidates",
+          "callee": "path.resolve",
+          "lineNumber": 31
+        },
+        {
+          "caller": "buildLegacyDirCandidates",
+          "callee": "process.cwd",
+          "lineNumber": 31
+        },
+        {
+          "caller": "buildLegacyDirCandidates",
+          "callee": "candidates.push",
+          "lineNumber": 34
+        },
+        {
+          "caller": "buildLegacyDirCandidates",
+          "callee": "path.join",
+          "lineNumber": 34
+        },
+        {
+          "caller": "buildLegacyDirCandidates",
+          "callee": "uniqueValues",
+          "lineNumber": 37
+        },
+        {
+          "caller": "deriveKeyBuffer",
+          "callee": "crypto.scryptSync",
+          "lineNumber": 62
+        },
+        {
+          "caller": "deriveKeyHex",
+          "callee": "deriveKeyBuffer(seed, salt, options).toString",
+          "lineNumber": 66
+        },
+        {
+          "caller": "deriveKeyHex",
+          "callee": "deriveKeyBuffer",
+          "lineNumber": 66
+        },
+        {
+          "caller": "isLikelyKeyMismatch",
+          "callee": "String",
+          "lineNumber": 70
+        },
+        {
+          "caller": "isLikelyKeyMismatch",
+          "callee": "/\\bUnexpected token\\b|\\bvalid JSON\\b|\\bbad decrypt\\b|\\bdecrypt\\b|\\bJSON\\b/i.test",
+          "lineNumber": 71
+        },
+        {
+          "caller": "buildBackupPath",
+          "callee": "new Date().toISOString().replace",
+          "lineNumber": 75
+        },
+        {
+          "caller": "buildBackupPath",
+          "callee": "new Date().toISOString",
+          "lineNumber": 75
+        },
+        {
+          "caller": "resolveStoreName",
+          "callee": "storeOptions.name.trim",
+          "lineNumber": 82
+        },
+        {
+          "caller": "resolveStoreName",
+          "callee": "storeOptions.name.trim",
+          "lineNumber": 83
+        },
+        {
+          "caller": "resolveStorePath",
+          "callee": "resolveStoreName",
+          "lineNumber": 90
+        },
+        {
+          "caller": "resolveStorePath",
+          "callee": "explicitCwd.trim",
+          "lineNumber": 93
+        },
+        {
+          "caller": "resolveStorePath",
+          "callee": "path.join",
+          "lineNumber": 94
+        },
+        {
+          "caller": "resolveStorePath",
+          "callee": "path.resolve",
+          "lineNumber": 94
+        },
+        {
+          "caller": "resolveStorePath",
+          "callee": "app.getPath",
+          "lineNumber": 99
+        },
+        {
+          "caller": "resolveStorePath",
+          "callee": "userDataPath?.trim",
+          "lineNumber": 100
+        },
+        {
+          "caller": "resolveStorePath",
+          "callee": "path.join",
+          "lineNumber": 101
+        },
+        {
+          "caller": "moveUnreadableStoreToBackup",
+          "callee": "buildBackupPath",
+          "lineNumber": 112
+        },
+        {
+          "caller": "moveUnreadableStoreToBackup",
+          "callee": "fs.renameSync",
+          "lineNumber": 115
+        },
+        {
+          "caller": "moveUnreadableStoreToBackup",
+          "callee": "fs.copyFileSync",
+          "lineNumber": 118
+        },
+        {
+          "caller": "moveUnreadableStoreToBackup",
+          "callee": "fs.unlinkSync",
+          "lineNumber": 119
+        },
+        {
+          "caller": "getLegacyDerivedKeyHexes",
+          "callee": "buildLegacyDirCandidates(options.moduleDirname).map",
+          "lineNumber": 125
+        },
+        {
+          "caller": "getLegacyDerivedKeyHexes",
+          "callee": "buildLegacyDirCandidates",
+          "lineNumber": 125
+        },
+        {
+          "caller": "getLegacyDerivedKeyHexes",
+          "callee": "deriveKeyHex",
+          "lineNumber": 126
+        },
+        {
+          "caller": "getLegacyDerivedKeyHexes",
+          "callee": "os.hostname",
+          "lineNumber": 127
+        },
+        {
+          "caller": "getStableDerivedKeyBuffer",
+          "callee": "deriveKeyBuffer",
+          "lineNumber": 135
+        },
+        {
+          "caller": "getLegacyDerivedKeyBuffers",
+          "callee": "buildLegacyDirCandidates(options.moduleDirname).map",
+          "lineNumber": 139
+        },
+        {
+          "caller": "getLegacyDerivedKeyBuffers",
+          "callee": "buildLegacyDirCandidates",
+          "lineNumber": 139
+        },
+        {
+          "caller": "getLegacyDerivedKeyBuffers",
+          "callee": "deriveKeyBuffer",
+          "lineNumber": 140
+        },
+        {
+          "caller": "getLegacyDerivedKeyBuffers",
+          "callee": "os.hostname",
+          "lineNumber": 141
+        },
+        {
+          "caller": "createEncryptedStoreWithKeyRotation",
+          "callee": "uniqueValues",
+          "lineNumber": 152
+        },
+        {
+          "caller": "createEncryptedStoreWithKeyRotation",
+          "callee": "isLikelyKeyMismatch",
+          "lineNumber": 160
+        },
+        {
+          "caller": "createEncryptedStoreWithKeyRotation",
+          "callee": "String",
+          "lineNumber": 165
+        },
+        {
+          "caller": "createEncryptedStoreWithKeyRotation",
+          "callee": "fs.existsSync",
+          "lineNumber": 189
+        },
+        {
+          "caller": "createEncryptedStoreWithKeyRotation",
+          "callee": "buildBackupPath",
+          "lineNumber": 190
+        },
+        {
+          "caller": "createEncryptedStoreWithKeyRotation",
+          "callee": "fs.renameSync",
+          "lineNumber": 192
+        },
+        {
+          "caller": "createEncryptedStoreWithKeyRotation",
+          "callee": "fs.copyFileSync",
+          "lineNumber": 195
+        },
+        {
+          "caller": "createEncryptedStoreWithKeyRotation",
+          "callee": "fs.unlinkSync",
+          "lineNumber": 196
+        },
+        {
+          "caller": "createEncryptedStoreWithKeyRotation",
+          "callee": "options.log",
+          "lineNumber": 198
+        },
+        {
+          "caller": "createEncryptedStoreWithKeyRotation",
+          "callee": "isLikelyKeyMismatch",
+          "lineNumber": 206
+        },
+        {
+          "caller": "createEncryptedStoreWithKeyRotation",
+          "callee": "failedAttempts.push",
+          "lineNumber": 209
+        },
+        {
+          "caller": "createEncryptedStoreWithKeyRotation",
+          "callee": "String",
+          "lineNumber": 210
+        },
+        {
+          "caller": "createEncryptedStoreWithKeyRotation",
+          "callee": "resolveStorePath",
+          "lineNumber": 215
+        },
+        {
+          "caller": "createEncryptedStoreWithKeyRotation",
+          "callee": "fs.existsSync",
+          "lineNumber": 216
+        },
+        {
+          "caller": "createEncryptedStoreWithKeyRotation",
+          "callee": "moveUnreadableStoreToBackup",
+          "lineNumber": 217
+        },
+        {
+          "caller": "createEncryptedStoreWithKeyRotation",
+          "callee": "options.warn",
+          "lineNumber": 218
+        },
+        {
+          "caller": "createEncryptedStoreWithKeyRotation",
+          "callee": "failedAttempts.join",
+          "lineNumber": 229
+        },
+        {
+          "caller": "createEncryptedStoreWithKeyRotation",
+          "callee": "options.warn",
+          "lineNumber": 230
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 14,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/renderer/utils/artifact-path.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "functions": [
+        {
+          "name": "resolveArtifactPath",
+          "startLine": 3,
+          "endLine": 5,
+          "params": ["pathValue", "cwd"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "resolveArtifactPath",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "resolveArtifactPath",
+          "callee": "resolvePathAgainstWorkspace",
+          "lineNumber": 4
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/renderer/utils/markdown-local-link.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 116,
+      "nonEmptyLines": 92,
+      "functions": [
+        {
+          "name": "normalizePathCandidate",
+          "startLine": 15,
+          "endLine": 17,
+          "params": ["value"]
+        },
+        {
+          "name": "encodeFilePath",
+          "startLine": 19,
+          "endLine": 21,
+          "params": ["pathValue"]
+        },
+        {
+          "name": "toFileUrl",
+          "startLine": 23,
+          "endLine": 48,
+          "params": ["pathValue"]
+        },
+        {
+          "name": "escapeMarkdown",
+          "startLine": 51,
+          "endLine": 53,
+          "params": ["text"]
+        },
+        {
+          "name": "normalizeLocalFileMarkdownLinks",
+          "startLine": 55,
+          "endLine": 73,
+          "params": ["markdown"]
+        },
+        {
+          "name": "extractLocalFilePathFromHref",
+          "startLine": 75,
+          "endLine": 94,
+          "params": ["href"]
+        },
+        {
+          "name": "resolveLocalFilePathFromHref",
+          "startLine": 96,
+          "endLine": 116,
+          "params": ["href", "cwd"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "normalizeLocalFileMarkdownLinks",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "extractLocalFilePathFromHref",
+          "line": 75,
+          "isDefault": false
+        },
+        {
+          "name": "resolveLocalFilePathFromHref",
+          "line": 96,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "normalizePathCandidate",
+          "callee": "value.replace(/\\r/g, '').replace(/\\n+/g, '').trim",
+          "lineNumber": 16
+        },
+        {
+          "caller": "normalizePathCandidate",
+          "callee": "value.replace(/\\r/g, '').replace",
+          "lineNumber": 16
+        },
+        {
+          "caller": "normalizePathCandidate",
+          "callee": "value.replace",
+          "lineNumber": 16
+        },
+        {
+          "caller": "encodeFilePath",
+          "callee": "encodeURI(pathValue).replace(/#/g, '%23').replace",
+          "lineNumber": 20
+        },
+        {
+          "caller": "encodeFilePath",
+          "callee": "encodeURI(pathValue).replace",
+          "lineNumber": 20
+        },
+        {
+          "caller": "encodeFilePath",
+          "callee": "encodeURI",
+          "lineNumber": 20
+        },
+        {
+          "caller": "toFileUrl",
+          "callee": "normalizePathCandidate",
+          "lineNumber": 24
+        },
+        {
+          "caller": "toFileUrl",
+          "callee": "webLikeUrlPattern.test",
+          "lineNumber": 29
+        },
+        {
+          "caller": "toFileUrl",
+          "callee": "unixAbsolutePathPattern.test",
+          "lineNumber": 33
+        },
+        {
+          "caller": "toFileUrl",
+          "callee": "encodeFilePath",
+          "lineNumber": 34
+        },
+        {
+          "caller": "toFileUrl",
+          "callee": "isWindowsDrivePath",
+          "lineNumber": 37
+        },
+        {
+          "caller": "toFileUrl",
+          "callee": "normalizedPathValue.replace",
+          "lineNumber": 38
+        },
+        {
+          "caller": "toFileUrl",
+          "callee": "encodeFilePath",
+          "lineNumber": 39
+        },
+        {
+          "caller": "toFileUrl",
+          "callee": "isUncPath",
+          "lineNumber": 42
+        },
+        {
+          "caller": "toFileUrl",
+          "callee": "normalizedPathValue.replace(/^\\\\\\\\+/, '').replace",
+          "lineNumber": 43
+        },
+        {
+          "caller": "toFileUrl",
+          "callee": "normalizedPathValue.replace",
+          "lineNumber": 43
+        },
+        {
+          "caller": "toFileUrl",
+          "callee": "encodeFilePath",
+          "lineNumber": 44
+        },
+        {
+          "caller": "escapeMarkdown",
+          "callee": "text.replace",
+          "lineNumber": 52
+        },
+        {
+          "caller": "normalizeLocalFileMarkdownLinks",
+          "callee": "markdown.replace",
+          "lineNumber": 60
+        },
+        {
+          "caller": "normalizeLocalFileMarkdownLinks",
+          "callee": "rawHref.trim",
+          "lineNumber": 61
+        },
+        {
+          "caller": "normalizeLocalFileMarkdownLinks",
+          "callee": "toFileUrl",
+          "lineNumber": 66
+        },
+        {
+          "caller": "normalizeLocalFileMarkdownLinks",
+          "callee": "escapeMarkdown",
+          "lineNumber": 71
+        },
+        {
+          "caller": "extractLocalFilePathFromHref",
+          "callee": "normalizePathCandidate",
+          "lineNumber": 80
+        },
+        {
+          "caller": "extractLocalFilePathFromHref",
+          "callee": "httpLikeUrlPattern.test",
+          "lineNumber": 81
+        },
+        {
+          "caller": "extractLocalFilePathFromHref",
+          "callee": "trimmed.startsWith",
+          "lineNumber": 85
+        },
+        {
+          "caller": "extractLocalFilePathFromHref",
+          "callee": "localPathFromFileUrl",
+          "lineNumber": 86
+        },
+        {
+          "caller": "extractLocalFilePathFromHref",
+          "callee": "unixAbsolutePathPattern.test",
+          "lineNumber": 89
+        },
+        {
+          "caller": "extractLocalFilePathFromHref",
+          "callee": "isWindowsDrivePath",
+          "lineNumber": 89
+        },
+        {
+          "caller": "extractLocalFilePathFromHref",
+          "callee": "isUncPath",
+          "lineNumber": 89
+        },
+        {
+          "caller": "extractLocalFilePathFromHref",
+          "callee": "decodePathSafely",
+          "lineNumber": 90
+        },
+        {
+          "caller": "resolveLocalFilePathFromHref",
+          "callee": "normalizePathCandidate",
+          "lineNumber": 101
+        },
+        {
+          "caller": "resolveLocalFilePathFromHref",
+          "callee": "httpLikeUrlPattern.test",
+          "lineNumber": 102
+        },
+        {
+          "caller": "resolveLocalFilePathFromHref",
+          "callee": "extractLocalFilePathFromHref",
+          "lineNumber": 106
+        },
+        {
+          "caller": "resolveLocalFilePathFromHref",
+          "callee": "resolveArtifactPath",
+          "lineNumber": 108
+        },
+        {
+          "caller": "resolveLocalFilePathFromHref",
+          "callee": "explicitUrlSchemePattern.test",
+          "lineNumber": 111
+        },
+        {
+          "caller": "resolveLocalFilePathFromHref",
+          "callee": "resolveArtifactPath",
+          "lineNumber": 115
+        },
+        {
+          "caller": "resolveLocalFilePathFromHref",
+          "callee": "decodePathSafely",
+          "lineNumber": 115
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 3,
+        "functionCount": 7,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/shared/workspace-path.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 82,
+      "nonEmptyLines": 70,
+      "functions": [
+        {
+          "name": "resolvePathAgainstWorkspace",
+          "startLine": 3,
+          "endLine": 29,
+          "params": ["pathValue", "workspacePath"]
+        },
+        {
+          "name": "joinRelativePath",
+          "startLine": 35,
+          "endLine": 82,
+          "params": ["basePath", "relativePath"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "resolvePathAgainstWorkspace",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "resolvePathAgainstWorkspace",
+          "callee": "isWindowsDrivePath",
+          "lineNumber": 11
+        },
+        {
+          "caller": "resolvePathAgainstWorkspace",
+          "callee": "isUncPath",
+          "lineNumber": 11
+        },
+        {
+          "caller": "resolvePathAgainstWorkspace",
+          "callee": "pathValue.startsWith",
+          "lineNumber": 11
+        },
+        {
+          "caller": "resolvePathAgainstWorkspace",
+          "callee": "pathValue.startsWith",
+          "lineNumber": 12
+        },
+        {
+          "caller": "resolvePathAgainstWorkspace",
+          "callee": "joinRelativePath",
+          "lineNumber": 14
+        },
+        {
+          "caller": "resolvePathAgainstWorkspace",
+          "callee": "pathValue.slice",
+          "lineNumber": 14
+        },
+        {
+          "caller": "resolvePathAgainstWorkspace",
+          "callee": "/^[A-Za-z]:[/\\\\]workspace[/\\\\]/i.test",
+          "lineNumber": 17
+        },
+        {
+          "caller": "resolvePathAgainstWorkspace",
+          "callee": "pathValue.replace",
+          "lineNumber": 18
+        },
+        {
+          "caller": "resolvePathAgainstWorkspace",
+          "callee": "joinRelativePath",
+          "lineNumber": 19
+        },
+        {
+          "caller": "resolvePathAgainstWorkspace",
+          "callee": "joinRelativePath",
+          "lineNumber": 28
+        },
+        {
+          "caller": "joinRelativePath",
+          "callee": "isWindowsDrivePath",
+          "lineNumber": 36
+        },
+        {
+          "caller": "joinRelativePath",
+          "callee": "isUncPath",
+          "lineNumber": 36
+        },
+        {
+          "caller": "joinRelativePath",
+          "callee": "basePath.replace",
+          "lineNumber": 39
+        },
+        {
+          "caller": "joinRelativePath",
+          "callee": "relativePath.replace",
+          "lineNumber": 40
+        },
+        {
+          "caller": "joinRelativePath",
+          "callee": "joined.replace",
+          "lineNumber": 44
+        },
+        {
+          "caller": "joinRelativePath",
+          "callee": "normalized.split",
+          "lineNumber": 45
+        },
+        {
+          "caller": "joinRelativePath",
+          "callee": "isUncPath",
+          "lineNumber": 56
+        },
+        {
+          "caller": "joinRelativePath",
+          "callee": "resolved.pop",
+          "lineNumber": 61
+        },
+        {
+          "caller": "joinRelativePath",
+          "callee": "resolved.push",
+          "lineNumber": 63
+        },
+        {
+          "caller": "joinRelativePath",
+          "callee": "resolved.join",
+          "lineNumber": 67
+        },
+        {
+          "caller": "joinRelativePath",
+          "callee": "isUncPath",
+          "lineNumber": 71
+        },
+        {
+          "caller": "joinRelativePath",
+          "callee": "parts.slice(0, 4).join",
+          "lineNumber": 72
+        },
+        {
+          "caller": "joinRelativePath",
+          "callee": "parts.slice",
+          "lineNumber": 72
+        },
+        {
+          "caller": "joinRelativePath",
+          "callee": "isWindowsDrivePath",
+          "lineNumber": 73
+        },
+        {
+          "caller": "joinRelativePath",
+          "callee": "result.startsWith",
+          "lineNumber": 76
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/tests/workspace-path.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 61,
+      "nonEmptyLines": 50,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/artifact-path.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 28,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/markdown-local-link.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 85,
+      "nonEmptyLines": 73,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/remote-cwd-propagation.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 51,
+      "nonEmptyLines": 44,
+      "functions": [
+        {
+          "name": "buildMessage",
+          "startLine": 14,
+          "endLine": 25,
+          "params": ["text"]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "buildMessage",
+          "callee": "Math.random",
+          "lineNumber": 16
+        },
+        {
+          "caller": "buildMessage",
+          "callee": "Date.now",
+          "lineNumber": 21
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/remote-cwd-state.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 171,
+      "nonEmptyLines": 144,
+      "functions": [
+        {
+          "name": "buildMessage",
+          "startLine": 14,
+          "endLine": 25,
+          "params": ["text"]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "buildMessage",
+          "callee": "Math.random",
+          "lineNumber": 16
+        },
+        {
+          "caller": "buildMessage",
+          "callee": "Date.now",
+          "lineNumber": 21
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/remote-default-workdir.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 53,
+      "nonEmptyLines": 44,
+      "functions": [
+        {
+          "name": "buildMessage",
+          "startLine": 20,
+          "endLine": 29,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "buildMessage",
+          "callee": "Date.now",
+          "lineNumber": 26
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/remote-user-message-ui.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 52,
+      "nonEmptyLines": 43,
+      "functions": [
+        {
+          "name": "buildMessage",
+          "startLine": 15,
+          "endLine": 24,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "buildMessage",
+          "callee": "Date.now",
+          "lineNumber": 21
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

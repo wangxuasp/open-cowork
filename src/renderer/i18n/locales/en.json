@@ -949,6 +949,9 @@
     "execute": "Execute",
     "warning": "Your password will only be used for this command and will not be stored."
   },
+  "trial": {
+    "expired": "Trial version expired on {{date}}. Please contact your administrator for a full license."
+  },
   "errorBoundary": {
     "title": "Something went wrong",
     "description": "An unexpected error occurred in the application. You can try to recover by clicking the button below.",

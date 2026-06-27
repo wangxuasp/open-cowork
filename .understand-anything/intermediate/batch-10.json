@@ -1,0 +1,1282 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/renderer/components/RemoteControlPanel.tsx",
+      "type": "file",
+      "name": "RemoteControlPanel.tsx",
+      "filePath": "src/renderer/components/RemoteControlPanel.tsx",
+      "summary": "源码模块 src/renderer/components/RemoteControlPanel.tsx，包含 1 个函数，约 331 行有效代码。",
+      "tags": ["component", "ui"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "type": "function",
+      "name": "RemoteControlPanel",
+      "filePath": "src/renderer/components/RemoteControlPanel.tsx",
+      "summary": "函数 RemoteControlPanel，位于 src/renderer/components/RemoteControlPanel.tsx 第 30-360 行。",
+      "tags": ["component", "ui"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/renderer/components/remote/AdvancedConfigStep.tsx",
+      "type": "file",
+      "name": "AdvancedConfigStep.tsx",
+      "filePath": "src/renderer/components/remote/AdvancedConfigStep.tsx",
+      "summary": "源码模块 src/renderer/components/remote/AdvancedConfigStep.tsx，包含 1 个函数，约 81 行有效代码。",
+      "tags": ["component", "ui", "configuration"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:AdvancedConfigStep",
+      "type": "function",
+      "name": "AdvancedConfigStep",
+      "filePath": "src/renderer/components/remote/AdvancedConfigStep.tsx",
+      "summary": "函数 AdvancedConfigStep，位于 src/renderer/components/remote/AdvancedConfigStep.tsx 第 16-88 行。",
+      "tags": ["component", "ui", "configuration"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/renderer/components/remote/AuthorizedUsersSection.tsx",
+      "type": "file",
+      "name": "AuthorizedUsersSection.tsx",
+      "filePath": "src/renderer/components/remote/AuthorizedUsersSection.tsx",
+      "summary": "源码模块 src/renderer/components/remote/AuthorizedUsersSection.tsx，包含 1 个函数，约 50 行有效代码。",
+      "tags": ["component", "ui"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/components/remote/AuthorizedUsersSection.tsx:AuthorizedUsersSection",
+      "type": "function",
+      "name": "AuthorizedUsersSection",
+      "filePath": "src/renderer/components/remote/AuthorizedUsersSection.tsx",
+      "summary": "函数 AuthorizedUsersSection，位于 src/renderer/components/remote/AuthorizedUsersSection.tsx 第 15-55 行。",
+      "tags": ["component", "ui"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/renderer/components/remote/ConfigStepNav.tsx",
+      "type": "file",
+      "name": "ConfigStepNav.tsx",
+      "filePath": "src/renderer/components/remote/ConfigStepNav.tsx",
+      "summary": "源码模块 src/renderer/components/remote/ConfigStepNav.tsx，包含 1 个函数，约 62 行有效代码。",
+      "tags": ["component", "ui", "configuration"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/components/remote/ConfigStepNav.tsx:ConfigStepNav",
+      "type": "function",
+      "name": "ConfigStepNav",
+      "filePath": "src/renderer/components/remote/ConfigStepNav.tsx",
+      "summary": "函数 ConfigStepNav，位于 src/renderer/components/remote/ConfigStepNav.tsx 第 16-67 行。",
+      "tags": ["component", "ui", "configuration"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/renderer/components/remote/ConnectionConfigStep.tsx",
+      "type": "file",
+      "name": "ConnectionConfigStep.tsx",
+      "filePath": "src/renderer/components/remote/ConnectionConfigStep.tsx",
+      "summary": "源码模块 src/renderer/components/remote/ConnectionConfigStep.tsx，包含 1 个函数，约 206 行有效代码。",
+      "tags": ["component", "ui", "configuration"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:ConnectionConfigStep",
+      "type": "function",
+      "name": "ConnectionConfigStep",
+      "filePath": "src/renderer/components/remote/ConnectionConfigStep.tsx",
+      "summary": "函数 ConnectionConfigStep，位于 src/renderer/components/remote/ConnectionConfigStep.tsx 第 23-217 行。",
+      "tags": ["component", "ui", "configuration"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/renderer/components/remote/FeishuConfigStep.tsx",
+      "type": "file",
+      "name": "FeishuConfigStep.tsx",
+      "filePath": "src/renderer/components/remote/FeishuConfigStep.tsx",
+      "summary": "源码模块 src/renderer/components/remote/FeishuConfigStep.tsx，包含 1 个函数，约 100 行有效代码。",
+      "tags": ["component", "ui", "configuration"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/components/remote/FeishuConfigStep.tsx:FeishuConfigStep",
+      "type": "function",
+      "name": "FeishuConfigStep",
+      "filePath": "src/renderer/components/remote/FeishuConfigStep.tsx",
+      "summary": "函数 FeishuConfigStep，位于 src/renderer/components/remote/FeishuConfigStep.tsx 第 17-109 行。",
+      "tags": ["component", "ui", "configuration"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/renderer/components/remote/GatewayControlCard.tsx",
+      "type": "file",
+      "name": "GatewayControlCard.tsx",
+      "filePath": "src/renderer/components/remote/GatewayControlCard.tsx",
+      "summary": "源码模块 src/renderer/components/remote/GatewayControlCard.tsx，包含 1 个函数，约 81 行有效代码。",
+      "tags": ["component", "ui"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/components/remote/GatewayControlCard.tsx:GatewayControlCard",
+      "type": "function",
+      "name": "GatewayControlCard",
+      "filePath": "src/renderer/components/remote/GatewayControlCard.tsx",
+      "summary": "函数 GatewayControlCard，位于 src/renderer/components/remote/GatewayControlCard.tsx 第 18-87 行。",
+      "tags": ["component", "ui"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/renderer/components/remote/PairingGuideCard.tsx",
+      "type": "file",
+      "name": "PairingGuideCard.tsx",
+      "filePath": "src/renderer/components/remote/PairingGuideCard.tsx",
+      "summary": "源码模块 src/renderer/components/remote/PairingGuideCard.tsx，包含 1 个函数，约 49 行有效代码。",
+      "tags": ["component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/components/remote/PairingGuideCard.tsx:PairingGuideCard",
+      "type": "function",
+      "name": "PairingGuideCard",
+      "filePath": "src/renderer/components/remote/PairingGuideCard.tsx",
+      "summary": "函数 PairingGuideCard，位于 src/renderer/components/remote/PairingGuideCard.tsx 第 13-57 行。",
+      "tags": ["component", "ui"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/renderer/components/remote/PairingRequestsSection.tsx",
+      "type": "file",
+      "name": "PairingRequestsSection.tsx",
+      "filePath": "src/renderer/components/remote/PairingRequestsSection.tsx",
+      "summary": "源码模块 src/renderer/components/remote/PairingRequestsSection.tsx，包含 2 个函数，约 100 行有效代码。",
+      "tags": ["component", "ui"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/components/remote/PairingRequestsSection.tsx:Countdown",
+      "type": "function",
+      "name": "Countdown",
+      "filePath": "src/renderer/components/remote/PairingRequestsSection.tsx",
+      "summary": "函数 Countdown，位于 src/renderer/components/remote/PairingRequestsSection.tsx 第 17-42 行。",
+      "tags": ["component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/components/remote/PairingRequestsSection.tsx:PairingRequestsSection",
+      "type": "function",
+      "name": "PairingRequestsSection",
+      "filePath": "src/renderer/components/remote/PairingRequestsSection.tsx",
+      "summary": "函数 PairingRequestsSection，位于 src/renderer/components/remote/PairingRequestsSection.tsx 第 44-110 行。",
+      "tags": ["component", "ui"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/renderer/components/remote/QuickStartGuide.tsx",
+      "type": "file",
+      "name": "QuickStartGuide.tsx",
+      "filePath": "src/renderer/components/remote/QuickStartGuide.tsx",
+      "summary": "源码模块 src/renderer/components/remote/QuickStartGuide.tsx，包含 1 个函数，约 56 行有效代码。",
+      "tags": ["component", "ui"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/components/remote/QuickStartGuide.tsx:QuickStartGuide",
+      "type": "function",
+      "name": "QuickStartGuide",
+      "filePath": "src/renderer/components/remote/QuickStartGuide.tsx",
+      "summary": "函数 QuickStartGuide，位于 src/renderer/components/remote/QuickStartGuide.tsx 第 12-61 行。",
+      "tags": ["component", "ui"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/renderer/components/remote/types.ts",
+      "type": "file",
+      "name": "types.ts",
+      "filePath": "src/renderer/components/remote/types.ts",
+      "summary": "源码模块 src/renderer/components/remote/types.ts，体量 74 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["component", "ui"],
+      "complexity": "moderate",
+      "language": "typescript"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/renderer/components/RemoteControlPanel.tsx",
+      "target": "file:src/renderer/components/remote/AdvancedConfigStep.tsx",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/components/RemoteControlPanel.tsx",
+      "target": "file:src/renderer/components/remote/AuthorizedUsersSection.tsx",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/components/RemoteControlPanel.tsx",
+      "target": "file:src/renderer/components/remote/ConfigStepNav.tsx",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/components/RemoteControlPanel.tsx",
+      "target": "file:src/renderer/components/remote/ConnectionConfigStep.tsx",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/components/RemoteControlPanel.tsx",
+      "target": "file:src/renderer/components/remote/FeishuConfigStep.tsx",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/components/RemoteControlPanel.tsx",
+      "target": "file:src/renderer/components/remote/GatewayControlCard.tsx",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/components/RemoteControlPanel.tsx",
+      "target": "file:src/renderer/components/remote/PairingGuideCard.tsx",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/components/RemoteControlPanel.tsx",
+      "target": "file:src/renderer/components/remote/PairingRequestsSection.tsx",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/components/RemoteControlPanel.tsx",
+      "target": "file:src/renderer/components/remote/QuickStartGuide.tsx",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/components/RemoteControlPanel.tsx",
+      "target": "file:src/renderer/components/remote/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/components/RemoteControlPanel.tsx",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:useTranslation",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:useState",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:useState",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:useState",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:useState",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:useState",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:useState",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:useState",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:useState",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:useState",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:useState",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:useState",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:useState",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:useState",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:useState",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:useState",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:useState",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:useState",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:useState",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:useState",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:useState",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:useState",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:useEffect",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:loadData",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:setInterval",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:clearInterval",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:i18n.language.startsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/RemoteControlPanel.tsx:RemoteControlPanel",
+      "target": "function:src/renderer/components/RemoteControlPanel.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/components/remote/AdvancedConfigStep.tsx",
+      "target": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:AdvancedConfigStep",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:AdvancedConfigStep",
+      "target": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:useTranslation",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:AdvancedConfigStep",
+      "target": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:AdvancedConfigStep",
+      "target": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:AdvancedConfigStep",
+      "target": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:AdvancedConfigStep",
+      "target": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:onWorkingDirectoryChange",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:AdvancedConfigStep",
+      "target": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:AdvancedConfigStep",
+      "target": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:AdvancedConfigStep",
+      "target": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:AdvancedConfigStep",
+      "target": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:onGatewayPortChange",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:AdvancedConfigStep",
+      "target": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:parseInt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:AdvancedConfigStep",
+      "target": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:AdvancedConfigStep",
+      "target": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:AdvancedConfigStep",
+      "target": "function:src/renderer/components/remote/AdvancedConfigStep.tsx:onAutoApproveChange",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/components/remote/AuthorizedUsersSection.tsx",
+      "target": "file:src/renderer/components/remote/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/components/remote/AuthorizedUsersSection.tsx",
+      "target": "file:src/renderer/utils/i18n-format.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/components/remote/AuthorizedUsersSection.tsx",
+      "target": "function:src/renderer/components/remote/AuthorizedUsersSection.tsx:AuthorizedUsersSection",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/renderer/components/remote/AuthorizedUsersSection.tsx:AuthorizedUsersSection",
+      "target": "function:src/renderer/components/remote/AuthorizedUsersSection.tsx:useTranslation",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/AuthorizedUsersSection.tsx:AuthorizedUsersSection",
+      "target": "function:src/renderer/components/remote/AuthorizedUsersSection.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/AuthorizedUsersSection.tsx:AuthorizedUsersSection",
+      "target": "function:src/renderer/components/remote/AuthorizedUsersSection.tsx:pairedUsers.map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/AuthorizedUsersSection.tsx:AuthorizedUsersSection",
+      "target": "function:src/renderer/components/remote/AuthorizedUsersSection.tsx:user.userId.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/AuthorizedUsersSection.tsx:AuthorizedUsersSection",
+      "target": "function:src/renderer/components/remote/AuthorizedUsersSection.tsx:formatAppDate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/AuthorizedUsersSection.tsx:AuthorizedUsersSection",
+      "target": "function:src/renderer/components/remote/AuthorizedUsersSection.tsx:onRevoke",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/AuthorizedUsersSection.tsx:AuthorizedUsersSection",
+      "target": "function:src/renderer/components/remote/AuthorizedUsersSection.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/components/remote/ConfigStepNav.tsx",
+      "target": "file:src/renderer/components/remote/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/components/remote/ConfigStepNav.tsx",
+      "target": "function:src/renderer/components/remote/ConfigStepNav.tsx:ConfigStepNav",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConfigStepNav.tsx:ConfigStepNav",
+      "target": "function:src/renderer/components/remote/ConfigStepNav.tsx:useTranslation",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConfigStepNav.tsx:ConfigStepNav",
+      "target": "function:src/renderer/components/remote/ConfigStepNav.tsx:steps.map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConfigStepNav.tsx:ConfigStepNav",
+      "target": "function:src/renderer/components/remote/ConfigStepNav.tsx:onStepChange",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConfigStepNav.tsx:ConfigStepNav",
+      "target": "function:src/renderer/components/remote/ConfigStepNav.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/components/remote/ConnectionConfigStep.tsx",
+      "target": "file:src/renderer/components/remote/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/components/remote/ConnectionConfigStep.tsx",
+      "target": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:ConnectionConfigStep",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:ConnectionConfigStep",
+      "target": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:useTranslation",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:ConnectionConfigStep",
+      "target": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:ConnectionConfigStep",
+      "target": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:ConnectionConfigStep",
+      "target": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:onLongConnectionChange",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:ConnectionConfigStep",
+      "target": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:ConnectionConfigStep",
+      "target": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:ConnectionConfigStep",
+      "target": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:ConnectionConfigStep",
+      "target": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:ConnectionConfigStep",
+      "target": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:ConnectionConfigStep",
+      "target": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:ConnectionConfigStep",
+      "target": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:onLongConnectionChange",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:ConnectionConfigStep",
+      "target": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:ConnectionConfigStep",
+      "target": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:ConnectionConfigStep",
+      "target": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:ConnectionConfigStep",
+      "target": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:e.stopPropagation",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:ConnectionConfigStep",
+      "target": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:onCopy",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:ConnectionConfigStep",
+      "target": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:ConnectionConfigStep",
+      "target": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:e.stopPropagation",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:ConnectionConfigStep",
+      "target": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:onTunnelEnabledChange",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:ConnectionConfigStep",
+      "target": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:onNgrokAuthTokenChange",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:ConnectionConfigStep",
+      "target": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:e.stopPropagation",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:ConnectionConfigStep",
+      "target": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:ConnectionConfigStep",
+      "target": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:ConnectionConfigStep",
+      "target": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:ConnectionConfigStep",
+      "target": "function:src/renderer/components/remote/ConnectionConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/components/remote/FeishuConfigStep.tsx",
+      "target": "function:src/renderer/components/remote/FeishuConfigStep.tsx:FeishuConfigStep",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/renderer/components/remote/FeishuConfigStep.tsx:FeishuConfigStep",
+      "target": "function:src/renderer/components/remote/FeishuConfigStep.tsx:useTranslation",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/FeishuConfigStep.tsx:FeishuConfigStep",
+      "target": "function:src/renderer/components/remote/FeishuConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/FeishuConfigStep.tsx:FeishuConfigStep",
+      "target": "function:src/renderer/components/remote/FeishuConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/FeishuConfigStep.tsx:FeishuConfigStep",
+      "target": "function:src/renderer/components/remote/FeishuConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/FeishuConfigStep.tsx:FeishuConfigStep",
+      "target": "function:src/renderer/components/remote/FeishuConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/FeishuConfigStep.tsx:FeishuConfigStep",
+      "target": "function:src/renderer/components/remote/FeishuConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/FeishuConfigStep.tsx:FeishuConfigStep",
+      "target": "function:src/renderer/components/remote/FeishuConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/FeishuConfigStep.tsx:FeishuConfigStep",
+      "target": "function:src/renderer/components/remote/FeishuConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/FeishuConfigStep.tsx:FeishuConfigStep",
+      "target": "function:src/renderer/components/remote/FeishuConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/FeishuConfigStep.tsx:FeishuConfigStep",
+      "target": "function:src/renderer/components/remote/FeishuConfigStep.tsx:onAppIdChange",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/FeishuConfigStep.tsx:FeishuConfigStep",
+      "target": "function:src/renderer/components/remote/FeishuConfigStep.tsx:onAppSecretChange",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/FeishuConfigStep.tsx:FeishuConfigStep",
+      "target": "function:src/renderer/components/remote/FeishuConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/FeishuConfigStep.tsx:FeishuConfigStep",
+      "target": "function:src/renderer/components/remote/FeishuConfigStep.tsx:dmPolicies.map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/FeishuConfigStep.tsx:FeishuConfigStep",
+      "target": "function:src/renderer/components/remote/FeishuConfigStep.tsx:onDmPolicyChange",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/FeishuConfigStep.tsx:FeishuConfigStep",
+      "target": "function:src/renderer/components/remote/FeishuConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/components/remote/GatewayControlCard.tsx",
+      "target": "file:src/renderer/components/remote/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/components/remote/GatewayControlCard.tsx",
+      "target": "function:src/renderer/components/remote/GatewayControlCard.tsx:GatewayControlCard",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/renderer/components/remote/GatewayControlCard.tsx:GatewayControlCard",
+      "target": "function:src/renderer/components/remote/GatewayControlCard.tsx:useTranslation",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/GatewayControlCard.tsx:GatewayControlCard",
+      "target": "function:src/renderer/components/remote/GatewayControlCard.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/GatewayControlCard.tsx:GatewayControlCard",
+      "target": "function:src/renderer/components/remote/GatewayControlCard.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/GatewayControlCard.tsx:GatewayControlCard",
+      "target": "function:src/renderer/components/remote/GatewayControlCard.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/GatewayControlCard.tsx:GatewayControlCard",
+      "target": "function:src/renderer/components/remote/GatewayControlCard.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/GatewayControlCard.tsx:GatewayControlCard",
+      "target": "function:src/renderer/components/remote/GatewayControlCard.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/GatewayControlCard.tsx:GatewayControlCard",
+      "target": "function:src/renderer/components/remote/GatewayControlCard.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/GatewayControlCard.tsx:GatewayControlCard",
+      "target": "function:src/renderer/components/remote/GatewayControlCard.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/GatewayControlCard.tsx:GatewayControlCard",
+      "target": "function:src/renderer/components/remote/GatewayControlCard.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/components/remote/PairingGuideCard.tsx",
+      "target": "function:src/renderer/components/remote/PairingGuideCard.tsx:PairingGuideCard",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingGuideCard.tsx:PairingGuideCard",
+      "target": "function:src/renderer/components/remote/PairingGuideCard.tsx:useTranslation",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingGuideCard.tsx:PairingGuideCard",
+      "target": "function:src/renderer/components/remote/PairingGuideCard.tsx:useState",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingGuideCard.tsx:PairingGuideCard",
+      "target": "function:src/renderer/components/remote/PairingGuideCard.tsx:localStorage.getItem",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingGuideCard.tsx:PairingGuideCard",
+      "target": "function:src/renderer/components/remote/PairingGuideCard.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingGuideCard.tsx:PairingGuideCard",
+      "target": "function:src/renderer/components/remote/PairingGuideCard.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingGuideCard.tsx:PairingGuideCard",
+      "target": "function:src/renderer/components/remote/PairingGuideCard.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingGuideCard.tsx:PairingGuideCard",
+      "target": "function:src/renderer/components/remote/PairingGuideCard.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingGuideCard.tsx:PairingGuideCard",
+      "target": "function:src/renderer/components/remote/PairingGuideCard.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingGuideCard.tsx:PairingGuideCard",
+      "target": "function:src/renderer/components/remote/PairingGuideCard.tsx:steps.map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/components/remote/PairingRequestsSection.tsx",
+      "target": "file:src/renderer/components/remote/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/components/remote/PairingRequestsSection.tsx",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:Countdown",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/components/remote/PairingRequestsSection.tsx",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:PairingRequestsSection",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingRequestsSection.tsx:Countdown",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:useTranslation",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingRequestsSection.tsx:Countdown",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:useState",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingRequestsSection.tsx:Countdown",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:Math.max",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingRequestsSection.tsx:Countdown",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:Date.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingRequestsSection.tsx:Countdown",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:useEffect",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingRequestsSection.tsx:Countdown",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:setInterval",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingRequestsSection.tsx:Countdown",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:Math.max",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingRequestsSection.tsx:Countdown",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:Date.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingRequestsSection.tsx:Countdown",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:setRemaining",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingRequestsSection.tsx:Countdown",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:clearInterval",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingRequestsSection.tsx:Countdown",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:clearInterval",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingRequestsSection.tsx:Countdown",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:Math.floor",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingRequestsSection.tsx:Countdown",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:Math.floor",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingRequestsSection.tsx:Countdown",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:String(seconds).padStart",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingRequestsSection.tsx:Countdown",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:String",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingRequestsSection.tsx:Countdown",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingRequestsSection.tsx:PairingRequestsSection",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:useTranslation",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingRequestsSection.tsx:PairingRequestsSection",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingRequestsSection.tsx:PairingRequestsSection",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingRequestsSection.tsx:PairingRequestsSection",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:pendingPairings.map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingRequestsSection.tsx:PairingRequestsSection",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingRequestsSection.tsx:PairingRequestsSection",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingRequestsSection.tsx:PairingRequestsSection",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:onReject",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingRequestsSection.tsx:PairingRequestsSection",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingRequestsSection.tsx:PairingRequestsSection",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:onApprove",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/PairingRequestsSection.tsx:PairingRequestsSection",
+      "target": "function:src/renderer/components/remote/PairingRequestsSection.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/components/remote/QuickStartGuide.tsx",
+      "target": "function:src/renderer/components/remote/QuickStartGuide.tsx:QuickStartGuide",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/renderer/components/remote/QuickStartGuide.tsx:QuickStartGuide",
+      "target": "function:src/renderer/components/remote/QuickStartGuide.tsx:useTranslation",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/QuickStartGuide.tsx:QuickStartGuide",
+      "target": "function:src/renderer/components/remote/QuickStartGuide.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/QuickStartGuide.tsx:QuickStartGuide",
+      "target": "function:src/renderer/components/remote/QuickStartGuide.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/QuickStartGuide.tsx:QuickStartGuide",
+      "target": "function:src/renderer/components/remote/QuickStartGuide.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/QuickStartGuide.tsx:QuickStartGuide",
+      "target": "function:src/renderer/components/remote/QuickStartGuide.tsx:permissionScopes.map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/QuickStartGuide.tsx:QuickStartGuide",
+      "target": "function:src/renderer/components/remote/QuickStartGuide.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/QuickStartGuide.tsx:QuickStartGuide",
+      "target": "function:src/renderer/components/remote/QuickStartGuide.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/QuickStartGuide.tsx:QuickStartGuide",
+      "target": "function:src/renderer/components/remote/QuickStartGuide.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/QuickStartGuide.tsx:QuickStartGuide",
+      "target": "function:src/renderer/components/remote/QuickStartGuide.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/QuickStartGuide.tsx:QuickStartGuide",
+      "target": "function:src/renderer/components/remote/QuickStartGuide.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/QuickStartGuide.tsx:QuickStartGuide",
+      "target": "function:src/renderer/components/remote/QuickStartGuide.tsx:steps.map",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ]
+}

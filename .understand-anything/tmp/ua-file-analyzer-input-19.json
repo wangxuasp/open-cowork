@@ -1,0 +1,56 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "language": "yaml",
+      "sizeLines": 54,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".github/workflows/codex-pr-review.yml",
+      "language": "yaml",
+      "sizeLines": 178,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".github/workflows/deploy-website.yml",
+      "language": "yaml",
+      "sizeLines": 53,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".github/workflows/issue-auto-assign.yml",
+      "language": "yaml",
+      "sizeLines": 62,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".github/workflows/issue-auto-response.yml",
+      "language": "yaml",
+      "sizeLines": 132,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "language": "yaml",
+      "sizeLines": 274,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".github/workflows/update-homebrew.yml",
+      "language": "yaml",
+      "sizeLines": 49,
+      "fileCategory": "infra"
+    }
+  ],
+  "batchImportData": {
+    ".github/workflows/ci.yml": [],
+    ".github/workflows/codex-pr-review.yml": [],
+    ".github/workflows/deploy-website.yml": [],
+    ".github/workflows/issue-auto-assign.yml": [],
+    ".github/workflows/issue-auto-response.yml": [],
+    ".github/workflows/release.yml": [],
+    ".github/workflows/update-homebrew.yml": []
+  }
+}

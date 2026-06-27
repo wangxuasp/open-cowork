@@ -1,0 +1,438 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "scripts/build-windows-artifacts.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 28,
+      "functions": [
+        {
+          "name": "ensureDir",
+          "startLine": 15,
+          "endLine": 17,
+          "params": ["dir"]
+        },
+        {
+          "name": "writeLegacyCleanupArtifacts",
+          "startLine": 19,
+          "endLine": 28,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ensureDir",
+          "callee": "fs.mkdirSync",
+          "lineNumber": 16
+        },
+        {
+          "caller": "writeLegacyCleanupArtifacts",
+          "callee": "ensureDir",
+          "lineNumber": 20
+        },
+        {
+          "caller": "writeLegacyCleanupArtifacts",
+          "callee": "LEGACY_CLEANUP_ARTIFACTS.map",
+          "lineNumber": 22
+        },
+        {
+          "caller": "writeLegacyCleanupArtifacts",
+          "callee": "path.join",
+          "lineNumber": 23
+        },
+        {
+          "caller": "writeLegacyCleanupArtifacts",
+          "callee": "path.join",
+          "lineNumber": 24
+        },
+        {
+          "caller": "writeLegacyCleanupArtifacts",
+          "callee": "fs.copyFileSync",
+          "lineNumber": 25
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/build-windows.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 195,
+      "nonEmptyLines": 169,
+      "functions": [
+        {
+          "name": "ensureDir",
+          "startLine": 27,
+          "endLine": 29,
+          "params": ["dir"]
+        },
+        {
+          "name": "resolveNpmInvocation",
+          "startLine": 31,
+          "endLine": 52,
+          "params": []
+        },
+        {
+          "name": "resolveElectronBuilderBinariesMirror",
+          "startLine": 54,
+          "endLine": 62,
+          "params": []
+        },
+        {
+          "name": "toPowerShellLiteral",
+          "startLine": 64,
+          "endLine": 66,
+          "params": ["value"]
+        },
+        {
+          "name": "isValidZipArchive",
+          "startLine": 68,
+          "endLine": 90,
+          "params": ["zipPath", "requiredEntry"]
+        },
+        {
+          "name": "cleanInvalidElectronCache",
+          "startLine": 92,
+          "endLine": 110,
+          "params": ["electronCacheDir"]
+        },
+        {
+          "name": "main",
+          "startLine": 112,
+          "endLine": 193,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ensureDir",
+          "callee": "fs.mkdirSync",
+          "lineNumber": 28
+        },
+        {
+          "caller": "resolveNpmInvocation",
+          "callee": "fs.existsSync",
+          "lineNumber": 34
+        },
+        {
+          "caller": "resolveNpmInvocation",
+          "callee": "/\\.cmd$/i.test",
+          "lineNumber": 34
+        },
+        {
+          "caller": "resolveNpmInvocation",
+          "callee": "path.join",
+          "lineNumber": 38
+        },
+        {
+          "caller": "resolveNpmInvocation",
+          "callee": "path.dirname",
+          "lineNumber": 39
+        },
+        {
+          "caller": "resolveNpmInvocation",
+          "callee": "fs.existsSync",
+          "lineNumber": 45
+        },
+        {
+          "caller": "toPowerShellLiteral",
+          "callee": "String(value).replace",
+          "lineNumber": 65
+        },
+        {
+          "caller": "toPowerShellLiteral",
+          "callee": "String",
+          "lineNumber": 65
+        },
+        {
+          "caller": "isValidZipArchive",
+          "callee": "[\n    '$ErrorActionPreference = \"Stop\"',\n    'Add-Type -AssemblyName System.IO.Compression.FileSystem',\n    `$zip = ${toPowerShellLiteral(zipPath)}`,\n    `$requiredEntry = ${toPowerShellLiteral(requiredEntry)}`,\n    '$archive = [System.IO.Compression.ZipFile]::OpenRead($zip)',\n    'try {',\n    '  if ($archive.Entries.Count -le 0) { exit 2 }',\n    '  $match = $archive.Entries | Where-Object { $_.FullName -eq $requiredEntry } | Select-Object -First 1',\n    '  if (-not $match) { exit 3 }',\n    '} finally {',\n    '  $archive.Dispose()',\n    '}',\n  ].join",
+          "lineNumber": 69
+        },
+        {
+          "caller": "isValidZipArchive",
+          "callee": "toPowerShellLiteral",
+          "lineNumber": 72
+        },
+        {
+          "caller": "isValidZipArchive",
+          "callee": "toPowerShellLiteral",
+          "lineNumber": 73
+        },
+        {
+          "caller": "isValidZipArchive",
+          "callee": "spawnSync",
+          "lineNumber": 84
+        },
+        {
+          "caller": "cleanInvalidElectronCache",
+          "callee": "fs.existsSync",
+          "lineNumber": 93
+        },
+        {
+          "caller": "cleanInvalidElectronCache",
+          "callee": "fs.readdirSync(electronCacheDir)\n    .filter((name) => /^electron-v.+-win32-.+\\.zip$/i.test(name))\n    .map",
+          "lineNumber": 97
+        },
+        {
+          "caller": "cleanInvalidElectronCache",
+          "callee": "fs.readdirSync(electronCacheDir)\n    .filter",
+          "lineNumber": 97
+        },
+        {
+          "caller": "cleanInvalidElectronCache",
+          "callee": "fs.readdirSync",
+          "lineNumber": 97
+        },
+        {
+          "caller": "cleanInvalidElectronCache",
+          "callee": "/^electron-v.+-win32-.+\\.zip$/i.test",
+          "lineNumber": 98
+        },
+        {
+          "caller": "cleanInvalidElectronCache",
+          "callee": "path.join",
+          "lineNumber": 99
+        },
+        {
+          "caller": "cleanInvalidElectronCache",
+          "callee": "isValidZipArchive",
+          "lineNumber": 102
+        },
+        {
+          "caller": "cleanInvalidElectronCache",
+          "callee": "console.log",
+          "lineNumber": 103
+        },
+        {
+          "caller": "cleanInvalidElectronCache",
+          "callee": "console.warn",
+          "lineNumber": 107
+        },
+        {
+          "caller": "cleanInvalidElectronCache",
+          "callee": "fs.rmSync",
+          "lineNumber": 108
+        },
+        {
+          "caller": "main",
+          "callee": "console.warn",
+          "lineNumber": 114
+        },
+        {
+          "caller": "main",
+          "callee": "process.exit",
+          "lineNumber": 115
+        },
+        {
+          "caller": "main",
+          "callee": "Object.values(DIRS).forEach",
+          "lineNumber": 118
+        },
+        {
+          "caller": "main",
+          "callee": "Object.values",
+          "lineNumber": 118
+        },
+        {
+          "caller": "main",
+          "callee": "process.argv.slice",
+          "lineNumber": 120
+        },
+        {
+          "caller": "main",
+          "callee": "resolveElectronBuilderBinariesMirror",
+          "lineNumber": 122
+        },
+        {
+          "caller": "main",
+          "callee": "cleanInvalidElectronCache",
+          "lineNumber": 139
+        },
+        {
+          "caller": "main",
+          "callee": "builderArgs.some",
+          "lineNumber": 141
+        },
+        {
+          "caller": "main",
+          "callee": "arg.includes",
+          "lineNumber": 141
+        },
+        {
+          "caller": "main",
+          "callee": "fs.existsSync",
+          "lineNumber": 142
+        },
+        {
+          "caller": "main",
+          "callee": "builderArgs.push",
+          "lineNumber": 143
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 146
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 147
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 148
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 149
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 150
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 151
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 152
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 153
+        },
+        {
+          "caller": "main",
+          "callee": "builderArgs.some",
+          "lineNumber": 154
+        },
+        {
+          "caller": "main",
+          "callee": "arg.includes",
+          "lineNumber": 154
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 155
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 157
+        },
+        {
+          "caller": "main",
+          "callee": "builderArgs.join",
+          "lineNumber": 157
+        },
+        {
+          "caller": "main",
+          "callee": "resolveNpmInvocation",
+          "lineNumber": 159
+        },
+        {
+          "caller": "main",
+          "callee": "spawn",
+          "lineNumber": 160
+        },
+        {
+          "caller": "main",
+          "callee": "child.on",
+          "lineNumber": 167
+        },
+        {
+          "caller": "main",
+          "callee": "console.error",
+          "lineNumber": 169
+        },
+        {
+          "caller": "main",
+          "callee": "process.exit",
+          "lineNumber": 170
+        },
+        {
+          "caller": "main",
+          "callee": "writeLegacyCleanupArtifacts",
+          "lineNumber": 174
+        },
+        {
+          "caller": "main",
+          "callee": "copiedPaths.forEach",
+          "lineNumber": 178
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 179
+        },
+        {
+          "caller": "main",
+          "callee": "console.error",
+          "lineNumber": 182
+        },
+        {
+          "caller": "main",
+          "callee": "process.exit",
+          "lineNumber": 183
+        },
+        {
+          "caller": "main",
+          "callee": "process.exit",
+          "lineNumber": 186
+        },
+        {
+          "caller": "main",
+          "callee": "child.on",
+          "lineNumber": 189
+        },
+        {
+          "caller": "main",
+          "callee": "console.error",
+          "lineNumber": 190
+        },
+        {
+          "caller": "main",
+          "callee": "process.exit",
+          "lineNumber": 191
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 7,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/build-windows-artifacts.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 28,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

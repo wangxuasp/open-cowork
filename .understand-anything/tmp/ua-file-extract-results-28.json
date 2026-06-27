@@ -1,0 +1,63 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 7,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/vml-main.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 570,
+      "nonEmptyLines": 570,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 509,
+      "nonEmptyLines": 509,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 12,
+      "nonEmptyLines": 12,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 108,
+      "nonEmptyLines": 108,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 96,
+      "nonEmptyLines": 96,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/wml.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 3646,
+      "nonEmptyLines": 3646,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/xml.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 116,
+      "nonEmptyLines": 97,
+      "metrics": {}
+    }
+  ]
+}

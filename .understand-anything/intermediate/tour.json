@@ -1,0 +1,47 @@
+[
+  {
+    "order": 1,
+    "title": "项目概览",
+    "description": "从 README 了解 Omni Worker（Open Cowork）的定位：开源 AI Agent 桌面应用。",
+    "nodeIds": ["document:README_zh.md"]
+  },
+  {
+    "order": 2,
+    "title": "应用入口",
+    "description": "Electron 主进程入口与窗口生命周期。",
+    "nodeIds": ["file:src/main/index.ts"]
+  },
+  {
+    "order": 3,
+    "title": "Agent 执行核心",
+    "description": "ClaudeAgentRunner：模型解析、Pi SDK 会话、上下文压缩与工具调用。",
+    "nodeIds": ["file:src/main/claude/agent-runner.ts"],
+    "languageLesson": "长对话时 auto-compaction 由 Pi SDK 触发；UI 显示的 token 占用可能低于真实 payload。"
+  },
+  {
+    "order": 4,
+    "title": "前端聊天界面",
+    "description": "React 渲染进程：ChatView、ContextPanel 与 IPC 通信。",
+    "nodeIds": [
+      "file:src/renderer/components/ChatView.tsx",
+      "file:src/renderer/components/ContextPanel.tsx",
+      "file:src/renderer/hooks/useIPC.ts"
+    ]
+  },
+  {
+    "order": 5,
+    "title": "记忆与上下文",
+    "description": "MemoryService 渐进检索与 MemoryExtension 在运行前注入记忆前缀。",
+    "nodeIds": [
+      "file:src/main/memory/memory-service.ts",
+      "file:src/main/memory/memory-extension.ts",
+      "file:src/main/memory/memory-manager.ts"
+    ]
+  },
+  {
+    "order": 6,
+    "title": "MCP 与沙箱",
+    "description": "外部工具连接与 VM 级隔离执行环境。",
+    "nodeIds": ["file:src/main/mcp/mcp-manager.ts"]
+  }
+]

@@ -1,0 +1,75 @@
+{
+  "nodes": [
+    {
+      "id": "document:.claude/skills/visio/references/full-scene-regeneration-prompt.md",
+      "type": "document",
+      "name": "full-scene-regeneration-prompt.md",
+      "filePath": ".claude/skills/visio/references/full-scene-regeneration-prompt.md",
+      "summary": "文档文件 full-scene-regeneration-prompt.md，共约 62 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "moderate",
+      "language": "markdown"
+    },
+    {
+      "id": "config:.claude/skills/visio/references/renderer-effective-fields.json",
+      "type": "config",
+      "name": "renderer-effective-fields.json",
+      "filePath": ".claude/skills/visio/references/renderer-effective-fields.json",
+      "summary": "配置文件 renderer-effective-fields.json，定义项目或运行时的关键参数与依赖。",
+      "tags": ["component", "ui", "configuration"],
+      "complexity": "complex",
+      "language": "json"
+    },
+    {
+      "id": "document:.claude/skills/visio/references/review-contract.md",
+      "type": "document",
+      "name": "review-contract.md",
+      "filePath": ".claude/skills/visio/references/review-contract.md",
+      "summary": "文档文件 review-contract.md，共约 181 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "moderate",
+      "language": "markdown"
+    },
+    {
+      "id": "document:.claude/skills/visio/references/reviewer-two-image-prompt.md",
+      "type": "document",
+      "name": "reviewer-two-image-prompt.md",
+      "filePath": ".claude/skills/visio/references/reviewer-two-image-prompt.md",
+      "summary": "文档文件 reviewer-two-image-prompt.md，共约 90 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "moderate",
+      "language": "markdown"
+    },
+    {
+      "id": "document:.claude/skills/visio/references/scene-schema.md",
+      "type": "document",
+      "name": "scene-schema.md",
+      "filePath": ".claude/skills/visio/references/scene-schema.md",
+      "summary": "文档文件 scene-schema.md，共约 1533 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "complex",
+      "language": "markdown"
+    },
+    {
+      "id": "document:.claude/skills/visio/references/visio-component-map.md",
+      "type": "document",
+      "name": "visio-component-map.md",
+      "filePath": ".claude/skills/visio/references/visio-component-map.md",
+      "summary": "文档文件 visio-component-map.md，共约 152 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "moderate",
+      "language": "markdown"
+    },
+    {
+      "id": "document:.claude/skills/visio/references/visio-export-flow.md",
+      "type": "document",
+      "name": "visio-export-flow.md",
+      "filePath": ".claude/skills/visio/references/visio-export-flow.md",
+      "summary": "文档文件 visio-export-flow.md，共约 37 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "simple",
+      "language": "markdown"
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,23 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "language": "markdown",
+      "sizeLines": 32,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "language": "yaml",
+      "sizeLines": 52,
+      "fileCategory": "config"
+    },
+    { "path": ".github/release.yml", "language": "yaml", "sizeLines": 35, "fileCategory": "config" }
+  ],
+  "batchImportData": {
+    ".github/PULL_REQUEST_TEMPLATE.md": [],
+    ".github/dependabot.yml": [],
+    ".github/release.yml": []
+  }
+}

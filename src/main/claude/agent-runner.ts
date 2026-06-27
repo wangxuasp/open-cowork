@@ -1954,6 +1954,17 @@ ${hints.join('\n')}
           })
         : { promptPrefix: undefined, customTools: [] };
 
+      if (extensionResult.blocked) {
+        const blockReason = extensionResult.blockReason?.trim() || 'Agent session blocked';
+        this.sendToRenderer({
+          type: 'error',
+          payload: { message: blockReason },
+        });
+        const blockedError = new Error(blockReason);
+        (blockedError as Error & { alreadyReportedToUser?: boolean }).alreadyReportedToUser = true;
+        throw blockedError;
+      }
+
       let contextualPrompt = prompt;
       if (!cachedSession) {
         // Cold start: inject recent history into prompt if available

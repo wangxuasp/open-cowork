@@ -949,6 +949,9 @@
     "execute": "确认执行",
     "warning": "密码仅用于本次命令执行，不会被保存。"
   },
+  "trial": {
+    "expired": "试用版已于 {{date}} 到期，请联系管理员获取正式版。"
+  },
   "errorBoundary": {
     "title": "出现了一个错误",
     "description": "应用遇到了意外错误。你可以点击下方按钮尝试恢复。",

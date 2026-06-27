@@ -1,0 +1,35 @@
+{
+  "nodes": [
+    {
+      "id": "document:.github/PULL_REQUEST_TEMPLATE.md",
+      "type": "document",
+      "name": "PULL_REQUEST_TEMPLATE.md",
+      "filePath": ".github/PULL_REQUEST_TEMPLATE.md",
+      "summary": "文档文件 PULL_REQUEST_TEMPLATE.md，共约 23 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "simple",
+      "language": "markdown"
+    },
+    {
+      "id": "config:.github/dependabot.yml",
+      "type": "config",
+      "name": "dependabot.yml",
+      "filePath": ".github/dependabot.yml",
+      "summary": "配置文件 dependabot.yml，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "moderate",
+      "language": "yaml"
+    },
+    {
+      "id": "config:.github/release.yml",
+      "type": "config",
+      "name": "release.yml",
+      "filePath": ".github/release.yml",
+      "summary": "配置文件 release.yml，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "yaml"
+    }
+  ],
+  "edges": []
+}

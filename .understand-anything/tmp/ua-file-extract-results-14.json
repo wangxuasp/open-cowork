@@ -1,0 +1,393 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/main/claude/agent-runner-message-end.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 132,
+      "nonEmptyLines": 121,
+      "functions": [
+        {
+          "name": "toUserFacingErrorText",
+          "startLine": 20,
+          "endLine": 73,
+          "params": ["errorText"]
+        },
+        {
+          "name": "resolveMessageEndPayload",
+          "startLine": 75,
+          "endLine": 132,
+          "params": ["options"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "toUserFacingErrorText",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "resolveMessageEndPayload",
+          "line": 75,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "toUserFacingErrorText",
+          "callee": "errorText.toLowerCase",
+          "lineNumber": 21
+        },
+        {
+          "caller": "toUserFacingErrorText",
+          "callee": "lower.includes",
+          "lineNumber": 22
+        },
+        {
+          "caller": "toUserFacingErrorText",
+          "callee": "lower.includes",
+          "lineNumber": 25
+        },
+        {
+          "caller": "toUserFacingErrorText",
+          "callee": "/\\b400\\b/.test",
+          "lineNumber": 29
+        },
+        {
+          "caller": "toUserFacingErrorText",
+          "callee": "lower.includes",
+          "lineNumber": 30
+        },
+        {
+          "caller": "toUserFacingErrorText",
+          "callee": "lower.includes",
+          "lineNumber": 31
+        },
+        {
+          "caller": "toUserFacingErrorText",
+          "callee": "/\\b(401|403)\\b/.test",
+          "lineNumber": 36
+        },
+        {
+          "caller": "toUserFacingErrorText",
+          "callee": "lower.includes",
+          "lineNumber": 37
+        },
+        {
+          "caller": "toUserFacingErrorText",
+          "callee": "lower.includes",
+          "lineNumber": 38
+        },
+        {
+          "caller": "toUserFacingErrorText",
+          "callee": "/\\b429\\b/.test",
+          "lineNumber": 43
+        },
+        {
+          "caller": "toUserFacingErrorText",
+          "callee": "lower.includes",
+          "lineNumber": 44
+        },
+        {
+          "caller": "toUserFacingErrorText",
+          "callee": "lower.includes",
+          "lineNumber": 45
+        },
+        {
+          "caller": "toUserFacingErrorText",
+          "callee": "/\\b(5\\d{2})\\b/.test",
+          "lineNumber": 50
+        },
+        {
+          "caller": "toUserFacingErrorText",
+          "callee": "lower.includes",
+          "lineNumber": 51
+        },
+        {
+          "caller": "toUserFacingErrorText",
+          "callee": "lower.includes",
+          "lineNumber": 52
+        },
+        {
+          "caller": "toUserFacingErrorText",
+          "callee": "lower.includes",
+          "lineNumber": 53
+        },
+        {
+          "caller": "toUserFacingErrorText",
+          "callee": "lower.includes",
+          "lineNumber": 54
+        },
+        {
+          "caller": "toUserFacingErrorText",
+          "callee": "lower.includes",
+          "lineNumber": 59
+        },
+        {
+          "caller": "toUserFacingErrorText",
+          "callee": "lower.includes",
+          "lineNumber": 60
+        },
+        {
+          "caller": "toUserFacingErrorText",
+          "callee": "lower.includes",
+          "lineNumber": 61
+        },
+        {
+          "caller": "toUserFacingErrorText",
+          "callee": "lower.includes",
+          "lineNumber": 62
+        },
+        {
+          "caller": "toUserFacingErrorText",
+          "callee": "lower.includes",
+          "lineNumber": 63
+        },
+        {
+          "caller": "toUserFacingErrorText",
+          "callee": "lower.includes",
+          "lineNumber": 64
+        },
+        {
+          "caller": "toUserFacingErrorText",
+          "callee": "lower.includes",
+          "lineNumber": 65
+        },
+        {
+          "caller": "toUserFacingErrorText",
+          "callee": "lower.includes",
+          "lineNumber": 66
+        },
+        {
+          "caller": "toUserFacingErrorText",
+          "callee": "lower.includes",
+          "lineNumber": 67
+        },
+        {
+          "caller": "toUserFacingErrorText",
+          "callee": "lower.includes",
+          "lineNumber": 68
+        },
+        {
+          "caller": "resolveMessageEndPayload",
+          "callee": "toUserFacingErrorText",
+          "lineNumber": 84
+        },
+        {
+          "caller": "resolveMessageEndPayload",
+          "callee": "Array.isArray",
+          "lineNumber": 91
+        },
+        {
+          "caller": "resolveMessageEndPayload",
+          "callee": "toUserFacingErrorText",
+          "lineNumber": 100
+        },
+        {
+          "caller": "resolveMessageEndPayload",
+          "callee": "splitThinkTagBlocks",
+          "lineNumber": 111
+        },
+        {
+          "caller": "resolveMessageEndPayload",
+          "callee": "effectiveContent.push",
+          "lineNumber": 114
+        },
+        {
+          "caller": "resolveMessageEndPayload",
+          "callee": "effectiveContent.push",
+          "lineNumber": 119
+        },
+        {
+          "caller": "resolveMessageEndPayload",
+          "callee": "effectiveContent.push",
+          "lineNumber": 123
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/claude/think-tag-parser.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 165,
+      "nonEmptyLines": 145,
+      "functions": [
+        {
+          "name": "splitThinkTagBlocks",
+          "startLine": 137,
+          "endLine": 165,
+          "params": ["input"]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ThinkTagStreamParser",
+          "startLine": 26,
+          "endLine": 131,
+          "methods": ["push", "flush"],
+          "properties": ["state", "buffer"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ThinkTagStreamParser",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "splitThinkTagBlocks",
+          "line": 137,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "push",
+          "callee": "OPEN_TAG.startsWith",
+          "lineNumber": 50
+        },
+        {
+          "caller": "push",
+          "callee": "CLOSE_TAG.startsWith",
+          "lineNumber": 81
+        },
+        {
+          "caller": "splitThinkTagBlocks",
+          "callee": "input.indexOf",
+          "lineNumber": 142
+        },
+        {
+          "caller": "splitThinkTagBlocks",
+          "callee": "input.slice",
+          "lineNumber": 144
+        },
+        {
+          "caller": "splitThinkTagBlocks",
+          "callee": "blocks.push",
+          "lineNumber": 145
+        },
+        {
+          "caller": "splitThinkTagBlocks",
+          "callee": "input.slice",
+          "lineNumber": 149
+        },
+        {
+          "caller": "splitThinkTagBlocks",
+          "callee": "blocks.push",
+          "lineNumber": 150
+        },
+        {
+          "caller": "splitThinkTagBlocks",
+          "callee": "input.indexOf",
+          "lineNumber": 152
+        },
+        {
+          "caller": "splitThinkTagBlocks",
+          "callee": "input.slice",
+          "lineNumber": 154
+        },
+        {
+          "caller": "splitThinkTagBlocks",
+          "callee": "blocks.push",
+          "lineNumber": 155
+        },
+        {
+          "caller": "splitThinkTagBlocks",
+          "callee": "input.slice",
+          "lineNumber": 159
+        },
+        {
+          "caller": "splitThinkTagBlocks",
+          "callee": "blocks.push",
+          "lineNumber": 160
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "tests/agent-runner-message-end.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 144,
+      "nonEmptyLines": 122,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/think-tag-parser.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 211,
+      "nonEmptyLines": 176,
+      "functions": [
+        {
+          "name": "extractThinkTags",
+          "startLine": 128,
+          "endLine": 140,
+          "params": ["input"]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "extractThinkTags",
+          "callee": "splitThinkTagBlocks",
+          "lineNumber": 129
+        },
+        {
+          "caller": "extractThinkTags",
+          "callee": "blocks\n      .filter((b): b is Extract<typeof b, { type: 'thinking' }> => b.type === 'thinking')\n      .map((b) => b.thinking)\n      .join",
+          "lineNumber": 131
+        },
+        {
+          "caller": "extractThinkTags",
+          "callee": "blocks\n      .filter((b): b is Extract<typeof b, { type: 'thinking' }> => b.type === 'thinking')\n      .map",
+          "lineNumber": 131
+        },
+        {
+          "caller": "extractThinkTags",
+          "callee": "blocks\n      .filter",
+          "lineNumber": 131
+        },
+        {
+          "caller": "extractThinkTags",
+          "callee": "blocks\n      .filter((b): b is Extract<typeof b, { type: 'text' }> => b.type === 'text')\n      .map((b) => b.text)\n      .join",
+          "lineNumber": 135
+        },
+        {
+          "caller": "extractThinkTags",
+          "callee": "blocks\n      .filter((b): b is Extract<typeof b, { type: 'text' }> => b.type === 'text')\n      .map",
+          "lineNumber": 135
+        },
+        {
+          "caller": "extractThinkTags",
+          "callee": "blocks\n      .filter",
+          "lineNumber": 135
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

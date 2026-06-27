@@ -1,0 +1,28 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": ".claude/skills/pptx/scripts/inventory.py",
+      "language": "python",
+      "sizeLines": 1020,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/pptx/scripts/replace.py",
+      "language": "python",
+      "sizeLines": 388,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/pptx/scripts/thumbnail.py",
+      "language": "python",
+      "sizeLines": 453,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    ".claude/skills/pptx/scripts/inventory.py": [],
+    ".claude/skills/pptx/scripts/replace.py": [".claude/skills/pptx/scripts/inventory.py"],
+    ".claude/skills/pptx/scripts/thumbnail.py": [".claude/skills/pptx/scripts/inventory.py"]
+  }
+}

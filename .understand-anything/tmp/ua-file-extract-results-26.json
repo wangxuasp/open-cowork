@@ -1,0 +1,859 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 5,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".claude/skills/pptx/LICENSE.txt",
+      "language": "txt",
+      "fileCategory": "docs",
+      "totalLines": 30,
+      "nonEmptyLines": 25,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 474,
+      "nonEmptyLines": 372,
+      "sections": [
+        {
+          "heading": "PPTX creation, editing, and analysis",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "Overview",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "CRITICAL: Read All Documentation First",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Reading and analyzing content",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Text extraction",
+          "level": 3,
+          "line": 25
+        },
+        {
+          "heading": "Raw XML access",
+          "level": 3,
+          "line": 34
+        },
+        {
+          "heading": "Unpacking a file",
+          "level": 4,
+          "line": 38
+        },
+        {
+          "heading": "Key file structures",
+          "level": 4,
+          "line": 42
+        },
+        {
+          "heading": "Typography and color extraction",
+          "level": 4,
+          "line": 53
+        },
+        {
+          "heading": "Creating a new PowerPoint presentation **without a template**",
+          "level": 2,
+          "line": 61
+        },
+        {
+          "heading": "Workflow",
+          "level": 3,
+          "line": 65
+        },
+        {
+          "heading": "Editing an existing PowerPoint presentation",
+          "level": 2,
+          "line": 133
+        },
+        {
+          "heading": "Workflow",
+          "level": 3,
+          "line": 137
+        },
+        {
+          "heading": "Creating a new PowerPoint presentation **using a template**",
+          "level": 2,
+          "line": 145
+        },
+        {
+          "heading": "Workflow",
+          "level": 3,
+          "line": 149
+        },
+        {
+          "heading": "Creating Thumbnail Grids",
+          "level": 2,
+          "line": 389
+        },
+        {
+          "heading": "Converting Slides to Images",
+          "level": 2,
+          "line": 424
+        },
+        {
+          "heading": "Code Style Guidelines",
+          "level": 2,
+          "line": 454
+        },
+        {
+          "heading": "Dependencies",
+          "level": 2,
+          "line": 462
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 19
+      }
+    },
+    {
+      "path": ".claude/skills/pptx/css.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 337,
+      "nonEmptyLines": 243,
+      "sections": [
+        {
+          "heading": "Global CSS Framework Reference",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "⚠️ No Import Necessary",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Overview",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Design System Variables",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Typography Variables",
+          "level": 3,
+          "line": 27
+        },
+        {
+          "heading": "Color Palette",
+          "level": 3,
+          "line": 41
+        },
+        {
+          "heading": "Surface Colors",
+          "level": 4,
+          "line": 43
+        },
+        {
+          "heading": "Primary Colors",
+          "level": 4,
+          "line": 48
+        },
+        {
+          "heading": "Secondary Colors",
+          "level": 4,
+          "line": 55
+        },
+        {
+          "heading": "Utility Colors",
+          "level": 4,
+          "line": 60
+        },
+        {
+          "heading": "Color Utility Classes",
+          "level": 3,
+          "line": 68
+        },
+        {
+          "heading": "Spacing & Layout",
+          "level": 3,
+          "line": 74
+        },
+        {
+          "heading": "Slide Structure",
+          "level": 2,
+          "line": 81
+        },
+        {
+          "heading": "Fixed Dimensions",
+          "level": 3,
+          "line": 83
+        },
+        {
+          "heading": "Layout System",
+          "level": 2,
+          "line": 93
+        },
+        {
+          "heading": "Container Classes",
+          "level": 3,
+          "line": 95
+        },
+        {
+          "heading": "`.row` - Horizontal Layout",
+          "level": 4,
+          "line": 97
+        },
+        {
+          "heading": "`.col` - Vertical Layout",
+          "level": 4,
+          "line": 105
+        },
+        {
+          "heading": "Flex Item Behavior",
+          "level": 3,
+          "line": 113
+        },
+        {
+          "heading": "`.fill-width` and `.fill-height` - Expandable Elements",
+          "level": 4,
+          "line": 115
+        },
+        {
+          "heading": "`.items-fill-width` and `.items-fill-height` - Auto-Expanding Children",
+          "level": 4,
+          "line": 123
+        },
+        {
+          "heading": "`.fit`, `.fit-width`, and `.fit-height` - Fixed-Size Elements",
+          "level": 4,
+          "line": 131
+        },
+        {
+          "heading": "`.center` - Center Content",
+          "level": 4,
+          "line": 140
+        },
+        {
+          "heading": "Example Layout Structure",
+          "level": 3,
+          "line": 144
+        },
+        {
+          "heading": "Typography Scale",
+          "level": 2,
+          "line": 157
+        },
+        {
+          "heading": "Text Sizes",
+          "level": 3,
+          "line": 159
+        },
+        {
+          "heading": "Utility Classes",
+          "level": 2,
+          "line": 174
+        },
+        {
+          "heading": "Alignment Classes",
+          "level": 3,
+          "line": 176
+        },
+        {
+          "heading": "Spacing",
+          "level": 3,
+          "line": 183
+        },
+        {
+          "heading": "Gap Classes",
+          "level": 4,
+          "line": 185
+        },
+        {
+          "heading": "Spacing Classes (Padding & Margin)",
+          "level": 4,
+          "line": 193
+        },
+        {
+          "heading": "Color Utilities",
+          "level": 3,
+          "line": 201
+        },
+        {
+          "heading": "Visual Utilities",
+          "level": 3,
+          "line": 203
+        },
+        {
+          "heading": "Opacity",
+          "level": 4,
+          "line": 205
+        },
+        {
+          "heading": "Border Radius",
+          "level": 4,
+          "line": 209
+        },
+        {
+          "heading": "Width/Height Classes",
+          "level": 4,
+          "line": 214
+        },
+        {
+          "heading": "Aspect Ratio Classes",
+          "level": 4,
+          "line": 219
+        },
+        {
+          "heading": "Components",
+          "level": 2,
+          "line": 226
+        },
+        {
+          "heading": "Badge Component",
+          "level": 3,
+          "line": 228
+        },
+        {
+          "heading": "Placeholder Component",
+          "level": 3,
+          "line": 234
+        },
+        {
+          "heading": "Usage Examples",
+          "level": 2,
+          "line": 247
+        },
+        {
+          "heading": "Title Slide",
+          "level": 3,
+          "line": 249
+        },
+        {
+          "heading": "Content Slide with Sidebar",
+          "level": 3,
+          "line": 259
+        },
+        {
+          "heading": "Two-Column Layout",
+          "level": 3,
+          "line": 278
+        },
+        {
+          "heading": "Centered Content with List",
+          "level": 3,
+          "line": 296
+        },
+        {
+          "heading": "Best Practices",
+          "level": 2,
+          "line": 309
+        },
+        {
+          "heading": "Layout Structure",
+          "level": 3,
+          "line": 311
+        },
+        {
+          "heading": "Spacing and Visual Hierarchy",
+          "level": 3,
+          "line": 317
+        },
+        {
+          "heading": "Responsive Considerations",
+          "level": 3,
+          "line": 326
+        },
+        {
+          "heading": "Performance Tips",
+          "level": 3,
+          "line": 333
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 50
+      }
+    },
+    {
+      "path": ".claude/skills/pptx/html2pptx.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 1210,
+      "nonEmptyLines": 959,
+      "sections": [
+        {
+          "heading": "HTML to PowerPoint Guide",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Table of Contents",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "⚠️ Prerequisites Check",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Design Philosophy",
+          "level": 3,
+          "line": 27
+        },
+        {
+          "heading": "Think First: Purpose and Differentiation",
+          "level": 4,
+          "line": 33
+        },
+        {
+          "heading": "Taking Aesthetic Risks",
+          "level": 4,
+          "line": 48
+        },
+        {
+          "heading": "Spacing, Sizing, and Information Density",
+          "level": 4,
+          "line": 73
+        },
+        {
+          "heading": "The 4px Base Unit System",
+          "level": 5,
+          "line": 77
+        },
+        {
+          "heading": "Font Size Hierarchy for Dense Slides",
+          "level": 5,
+          "line": 88
+        },
+        {
+          "heading": "Container Padding Rules",
+          "level": 5,
+          "line": 101
+        },
+        {
+          "heading": "Gap vs Padding Decision Tree",
+          "level": 5,
+          "line": 118
+        },
+        {
+          "heading": "Responsive-ish Widths",
+          "level": 5,
+          "line": 137
+        },
+        {
+          "heading": "Common Spacing Mistakes",
+          "level": 5,
+          "line": 153
+        },
+        {
+          "heading": "Typography and Content Design",
+          "level": 4,
+          "line": 169
+        },
+        {
+          "heading": "Color & Theme",
+          "level": 4,
+          "line": 255
+        },
+        {
+          "heading": "Maintaining Visual Interest",
+          "level": 4,
+          "line": 278
+        },
+        {
+          "heading": "Visual Elements: Icons, Diagrams, and Illustrations",
+          "level": 4,
+          "line": 289
+        },
+        {
+          "heading": "When to Use Visuals",
+          "level": 5,
+          "line": 293
+        },
+        {
+          "heading": "Icon Usage Patterns",
+          "level": 5,
+          "line": 315
+        },
+        {
+          "heading": "Diagram Design Principles",
+          "level": 5,
+          "line": 333
+        },
+        {
+          "heading": "Building Diagrams in HTML",
+          "level": 5,
+          "line": 382
+        },
+        {
+          "heading": "Anti-Patterns: What NEVER to Do",
+          "level": 4,
+          "line": 447
+        },
+        {
+          "heading": "Layout Tips",
+          "level": 3,
+          "line": 476
+        },
+        {
+          "heading": "Creating HTML Slides",
+          "level": 2,
+          "line": 484
+        },
+        {
+          "heading": "How to write CSS",
+          "level": 3,
+          "line": 492
+        },
+        {
+          "heading": "Supported Elements",
+          "level": 3,
+          "line": 501
+        },
+        {
+          "heading": "Block Elements",
+          "level": 4,
+          "line": 503
+        },
+        {
+          "heading": "Text Elements",
+          "level": 4,
+          "line": 507
+        },
+        {
+          "heading": "Lists",
+          "level": 4,
+          "line": 512
+        },
+        {
+          "heading": "Inline Formatting",
+          "level": 4,
+          "line": 516
+        },
+        {
+          "heading": "Media",
+          "level": 4,
+          "line": 523
+        },
+        {
+          "heading": "Special Features",
+          "level": 4,
+          "line": 527
+        },
+        {
+          "heading": "Critical Text Rules",
+          "level": 3,
+          "line": 535
+        },
+        {
+          "heading": "Shape Styling (block elements only)",
+          "level": 3,
+          "line": 564
+        },
+        {
+          "heading": "Icons",
+          "level": 3,
+          "line": 585
+        },
+        {
+          "heading": "How to use react-icons",
+          "level": 4,
+          "line": 589
+        },
+        {
+          "heading": "Example Slide HTML",
+          "level": 3,
+          "line": 610
+        },
+        {
+          "heading": "Using the html2pptx Library",
+          "level": 2,
+          "line": 637
+        },
+        {
+          "heading": "Installation & Setup",
+          "level": 3,
+          "line": 639
+        },
+        {
+          "heading": "Dependencies",
+          "level": 3,
+          "line": 649
+        },
+        {
+          "heading": "⚠️ IMPORTANT: How To Use html2pptx",
+          "level": 3,
+          "line": 656
+        },
+        {
+          "heading": "API Reference",
+          "level": 3,
+          "line": 688
+        },
+        {
+          "heading": "Function Signature",
+          "level": 4,
+          "line": 690
+        },
+        {
+          "heading": "Parameters",
+          "level": 4,
+          "line": 696
+        },
+        {
+          "heading": "Returns",
+          "level": 4,
+          "line": 703
+        },
+        {
+          "heading": "Validation",
+          "level": 3,
+          "line": 715
+        },
+        {
+          "heading": "Working with Placeholders",
+          "level": 3,
+          "line": 725
+        },
+        {
+          "heading": "Complete Example",
+          "level": 3,
+          "line": 738
+        },
+        {
+          "heading": "Using PptxGenJS",
+          "level": 2,
+          "line": 791
+        },
+        {
+          "heading": "⚠️ Critical Rules",
+          "level": 3,
+          "line": 795
+        },
+        {
+          "heading": "Colors",
+          "level": 4,
+          "line": 797
+        },
+        {
+          "heading": "Adding Images",
+          "level": 3,
+          "line": 803
+        },
+        {
+          "heading": "Adding Text",
+          "level": 3,
+          "line": 820
+        },
+        {
+          "heading": "Adding Shapes",
+          "level": 3,
+          "line": 839
+        },
+        {
+          "heading": "Adding Charts",
+          "level": 3,
+          "line": 872
+        },
+        {
+          "heading": "Scatter Chart",
+          "level": 4,
+          "line": 926
+        },
+        {
+          "heading": "Line Chart",
+          "level": 4,
+          "line": 968
+        },
+        {
+          "heading": "Pie Chart (No Axis Labels Required)",
+          "level": 4,
+          "line": 1003
+        },
+        {
+          "heading": "Multiple Data Series",
+          "level": 4,
+          "line": 1030
+        },
+        {
+          "heading": "Chart Colors",
+          "level": 3,
+          "line": 1060
+        },
+        {
+          "heading": "Adding Tables",
+          "level": 3,
+          "line": 1105
+        },
+        {
+          "heading": "Basic Table",
+          "level": 4,
+          "line": 1109
+        },
+        {
+          "heading": "Table with Custom Formatting",
+          "level": 4,
+          "line": 1129
+        },
+        {
+          "heading": "Table with Merged Cells",
+          "level": 4,
+          "line": 1168
+        },
+        {
+          "heading": "Table Options",
+          "level": 3,
+          "line": 1198
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 65
+      }
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 427,
+      "nonEmptyLines": 380,
+      "sections": [
+        {
+          "heading": "Office Open XML Technical Reference for PowerPoint",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Technical Guidelines",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Schema Compliance",
+          "level": 3,
+          "line": 7
+        },
+        {
+          "heading": "Presentation Structure",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Basic Slide Structure",
+          "level": 3,
+          "line": 17
+        },
+        {
+          "heading": "Text Box / Shape with Text",
+          "level": 3,
+          "line": 31
+        },
+        {
+          "heading": "Text Formatting",
+          "level": 3,
+          "line": 61
+        },
+        {
+          "heading": "Lists",
+          "level": 3,
+          "line": 112
+        },
+        {
+          "heading": "Shapes",
+          "level": 3,
+          "line": 145
+        },
+        {
+          "heading": "Images",
+          "level": 3,
+          "line": 192
+        },
+        {
+          "heading": "Tables",
+          "level": 3,
+          "line": 222
+        },
+        {
+          "heading": "Slide Layouts",
+          "level": 3,
+          "line": 273
+        },
+        {
+          "heading": "File Updates",
+          "level": 2,
+          "line": 315
+        },
+        {
+          "heading": "Slide Operations",
+          "level": 2,
+          "line": 353
+        },
+        {
+          "heading": "Adding a New Slide",
+          "level": 3,
+          "line": 355
+        },
+        {
+          "heading": "Duplicating a Slide",
+          "level": 3,
+          "line": 365
+        },
+        {
+          "heading": "Reordering Slides",
+          "level": 3,
+          "line": 372
+        },
+        {
+          "heading": "Deleting a Slide",
+          "level": 3,
+          "line": 394
+        },
+        {
+          "heading": "Common Errors to Avoid",
+          "level": 2,
+          "line": 405
+        },
+        {
+          "heading": "Validation Checklist for Template-Based Presentations",
+          "level": 2,
+          "line": 413
+        },
+        {
+          "heading": "Before Packing, Always:",
+          "level": 3,
+          "line": 415
+        },
+        {
+          "heading": "Common Template Duplication Pitfalls:",
+          "level": 3,
+          "line": 422
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 22
+      }
+    }
+  ]
+}

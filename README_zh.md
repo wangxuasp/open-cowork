@@ -121,6 +121,30 @@ npm run dev
 
 构建安装包：`npm run build`
 
+如需构建带试用期限的版本，在编译前设定期限（格式 `YYYY-MM-DD` 或 `2026-6-26` 均可；到期日当天仍可使用）：
+
+```powershell
+# Windows PowerShell — npm 配置参数（推荐）
+npm run build:win -- --trial-expiration=2026-6-26
+
+# Windows PowerShell — 进程环境变量
+$env:AGENT_TRIAL_EXPIRATION='2026-6-26'; npm run build:win
+
+# Windows CMD
+set AGENT_TRIAL_EXPIRATION=2026-06-26 && npm run build:win
+
+# 直接调用脚本（绕过 npm）
+node scripts/build-windows.js --trial-expiration=2026-6-26
+```
+
+**两种 PowerShell 写法有何区别？** 在 Windows 上，`npm run ... -- --trial-expiration=...` **不会**把参数传给脚本的 `process.argv`，而是被 npm 当成自己的配置项，写入 `npm_config_trial_expiration`。构建脚本会读取该值；而 `$env:AGENT_TRIAL_EXPIRATION=...` 则是直接设置进程环境变量，从 `process.env.AGENT_TRIAL_EXPIRATION` 读取。
+
+> **注意：** 在 PowerShell 中，`set VAR=value` **不会**设置环境变量，请使用 `$env:VAR='value'` 或 `--trial-expiration=...`。
+
+构建时应看到 `[build:win] AGENT_TRIAL_EXPIRATION: 2026-06-26`。安装后应用日志会显示 `[Trial] Expiration date: 2026-06-26 (active|expired)`。
+
+不设置 `AGENT_TRIAL_EXPIRATION` 则不限期（适用于开发与正式版）。
+
 ### 安全配置：🔒 沙盒支持
 
 Open Cowork 提供**多级沙盒保护**，确保系统安全：

@@ -1,0 +1,35 @@
+{
+  "nodes": [
+    {
+      "id": "config:.claude/skills/visio/templates/examples/paper_figures/attention_mechanism.scene.json",
+      "type": "config",
+      "name": "attention_mechanism.scene.json",
+      "filePath": ".claude/skills/visio/templates/examples/paper_figures/attention_mechanism.scene.json",
+      "summary": "配置文件 attention_mechanism.scene.json，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "complex",
+      "language": "json"
+    },
+    {
+      "id": "config:.claude/skills/visio/templates/examples/paper_figures/cross_fused_features.scene.json",
+      "type": "config",
+      "name": "cross_fused_features.scene.json",
+      "filePath": ".claude/skills/visio/templates/examples/paper_figures/cross_fused_features.scene.json",
+      "summary": "配置文件 cross_fused_features.scene.json，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "complex",
+      "language": "json"
+    },
+    {
+      "id": "config:.claude/skills/visio/templates/examples/paper_figures/mask_res_block.scene.json",
+      "type": "config",
+      "name": "mask_res_block.scene.json",
+      "filePath": ".claude/skills/visio/templates/examples/paper_figures/mask_res_block.scene.json",
+      "summary": "配置文件 mask_res_block.scene.json，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "complex",
+      "language": "json"
+    }
+  ],
+  "edges": []
+}

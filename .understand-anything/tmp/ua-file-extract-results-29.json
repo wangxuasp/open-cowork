@@ -1,0 +1,39 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 42,
+      "nonEmptyLines": 36,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 50,
+      "nonEmptyLines": 44,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ecma/fouth-edition/opc-digSig.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 49,
+      "nonEmptyLines": 43,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ecma/fouth-edition/opc-relationships.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 33,
+      "nonEmptyLines": 29,
+      "metrics": {}
+    }
+  ]
+}

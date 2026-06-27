@@ -1,0 +1,75 @@
+{
+  "nodes": [
+    {
+      "id": "pipeline:.github/workflows/ci.yml",
+      "type": "pipeline",
+      "name": "ci.yml",
+      "filePath": ".github/workflows/ci.yml",
+      "summary": "基础设施定义 ci.yml，描述部署、容器或 CI/CD 相关设置。",
+      "tags": ["infrastructure"],
+      "complexity": "simple",
+      "language": "yaml"
+    },
+    {
+      "id": "pipeline:.github/workflows/codex-pr-review.yml",
+      "type": "pipeline",
+      "name": "codex-pr-review.yml",
+      "filePath": ".github/workflows/codex-pr-review.yml",
+      "summary": "基础设施定义 codex-pr-review.yml，描述部署、容器或 CI/CD 相关设置。",
+      "tags": ["infrastructure"],
+      "complexity": "moderate",
+      "language": "yaml"
+    },
+    {
+      "id": "pipeline:.github/workflows/deploy-website.yml",
+      "type": "pipeline",
+      "name": "deploy-website.yml",
+      "filePath": ".github/workflows/deploy-website.yml",
+      "summary": "基础设施定义 deploy-website.yml，描述部署、容器或 CI/CD 相关设置。",
+      "tags": ["infrastructure"],
+      "complexity": "simple",
+      "language": "yaml"
+    },
+    {
+      "id": "pipeline:.github/workflows/issue-auto-assign.yml",
+      "type": "pipeline",
+      "name": "issue-auto-assign.yml",
+      "filePath": ".github/workflows/issue-auto-assign.yml",
+      "summary": "基础设施定义 issue-auto-assign.yml，描述部署、容器或 CI/CD 相关设置。",
+      "tags": ["infrastructure"],
+      "complexity": "moderate",
+      "language": "yaml"
+    },
+    {
+      "id": "pipeline:.github/workflows/issue-auto-response.yml",
+      "type": "pipeline",
+      "name": "issue-auto-response.yml",
+      "filePath": ".github/workflows/issue-auto-response.yml",
+      "summary": "基础设施定义 issue-auto-response.yml，描述部署、容器或 CI/CD 相关设置。",
+      "tags": ["infrastructure"],
+      "complexity": "moderate",
+      "language": "yaml"
+    },
+    {
+      "id": "pipeline:.github/workflows/release.yml",
+      "type": "pipeline",
+      "name": "release.yml",
+      "filePath": ".github/workflows/release.yml",
+      "summary": "基础设施定义 release.yml，描述部署、容器或 CI/CD 相关设置。",
+      "tags": ["infrastructure"],
+      "complexity": "complex",
+      "language": "yaml"
+    },
+    {
+      "id": "pipeline:.github/workflows/update-homebrew.yml",
+      "type": "pipeline",
+      "name": "update-homebrew.yml",
+      "filePath": ".github/workflows/update-homebrew.yml",
+      "summary": "基础设施定义 update-homebrew.yml，描述部署、容器或 CI/CD 相关设置。",
+      "tags": ["infrastructure"],
+      "complexity": "simple",
+      "language": "yaml"
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,1476 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 11,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/renderer/components/RemoteControlPanel.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 360,
+      "nonEmptyLines": 331,
+      "functions": [
+        {
+          "name": "RemoteControlPanel",
+          "startLine": 30,
+          "endLine": 360,
+          "params": ["{ isActive }"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RemoteControlPanel",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "useTranslation",
+          "lineNumber": 31
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "useState",
+          "lineNumber": 34
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "useState",
+          "lineNumber": 35
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "useState",
+          "lineNumber": 36
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "useState",
+          "lineNumber": 37
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "useState",
+          "lineNumber": 38
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "useState",
+          "lineNumber": 39
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "useState",
+          "lineNumber": 40
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "useState",
+          "lineNumber": 41
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "useState",
+          "lineNumber": 42
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "useState",
+          "lineNumber": 45
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "useState",
+          "lineNumber": 46
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "useState",
+          "lineNumber": 47
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "useState",
+          "lineNumber": 48
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "useState",
+          "lineNumber": 49
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "useState",
+          "lineNumber": 50
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "useState",
+          "lineNumber": 51
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "useState",
+          "lineNumber": 52
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "useState",
+          "lineNumber": 53
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "useState",
+          "lineNumber": 54
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "useState",
+          "lineNumber": 55
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "useState",
+          "lineNumber": 56
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "useEffect",
+          "lineNumber": 58
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "loadData",
+          "lineNumber": 60
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "setInterval",
+          "lineNumber": 61
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "clearInterval",
+          "lineNumber": 62
+        },
+        {
+          "caller": "loadData",
+          "callee": "setIsLoading",
+          "lineNumber": 67
+        },
+        {
+          "caller": "loadData",
+          "callee": "Promise.all",
+          "lineNumber": 76
+        },
+        {
+          "caller": "loadData",
+          "callee": "window.electronAPI.remote.getConfig",
+          "lineNumber": 77
+        },
+        {
+          "caller": "loadData",
+          "callee": "window.electronAPI.remote.getStatus",
+          "lineNumber": 78
+        },
+        {
+          "caller": "loadData",
+          "callee": "window.electronAPI.remote.getPairedUsers",
+          "lineNumber": 79
+        },
+        {
+          "caller": "loadData",
+          "callee": "window.electronAPI.remote.getPendingPairings",
+          "lineNumber": 80
+        },
+        {
+          "caller": "loadData",
+          "callee": "window.electronAPI.remote.getTunnelStatus",
+          "lineNumber": 81
+        },
+        {
+          "caller": "loadData",
+          "callee": "window.electronAPI.remote.getWebhookUrl",
+          "lineNumber": 82
+        },
+        {
+          "caller": "loadData",
+          "callee": "setConfig",
+          "lineNumber": 85
+        },
+        {
+          "caller": "loadData",
+          "callee": "setStatus",
+          "lineNumber": 86
+        },
+        {
+          "caller": "loadData",
+          "callee": "setPairedUsers",
+          "lineNumber": 87
+        },
+        {
+          "caller": "loadData",
+          "callee": "setPendingPairings",
+          "lineNumber": 88
+        },
+        {
+          "caller": "loadData",
+          "callee": "setTunnelStatus",
+          "lineNumber": 89
+        },
+        {
+          "caller": "loadData",
+          "callee": "setWebhookUrl",
+          "lineNumber": 90
+        },
+        {
+          "caller": "loadData",
+          "callee": "setGatewayPort",
+          "lineNumber": 93
+        },
+        {
+          "caller": "loadData",
+          "callee": "setDefaultWorkingDirectory",
+          "lineNumber": 94
+        },
+        {
+          "caller": "loadData",
+          "callee": "setAutoApproveSafeTools",
+          "lineNumber": 95
+        },
+        {
+          "caller": "loadData",
+          "callee": "setTunnelEnabled",
+          "lineNumber": 96
+        },
+        {
+          "caller": "loadData",
+          "callee": "setNgrokAuthToken",
+          "lineNumber": 97
+        },
+        {
+          "caller": "loadData",
+          "callee": "setFeishuAppId",
+          "lineNumber": 99
+        },
+        {
+          "caller": "loadData",
+          "callee": "setFeishuAppSecret",
+          "lineNumber": 100
+        },
+        {
+          "caller": "loadData",
+          "callee": "setFeishuDmPolicy",
+          "lineNumber": 101
+        },
+        {
+          "caller": "loadData",
+          "callee": "setUseLongConnection",
+          "lineNumber": 102
+        },
+        {
+          "caller": "loadData",
+          "callee": "console.error",
+          "lineNumber": 106
+        },
+        {
+          "caller": "loadData",
+          "callee": "setIsLoading",
+          "lineNumber": 108
+        },
+        {
+          "caller": "refreshStatus",
+          "callee": "Promise.all",
+          "lineNumber": 116
+        },
+        {
+          "caller": "refreshStatus",
+          "callee": "window.electronAPI.remote.getStatus",
+          "lineNumber": 117
+        },
+        {
+          "caller": "refreshStatus",
+          "callee": "window.electronAPI.remote.getPendingPairings",
+          "lineNumber": 118
+        },
+        {
+          "caller": "refreshStatus",
+          "callee": "window.electronAPI.remote.getTunnelStatus",
+          "lineNumber": 119
+        },
+        {
+          "caller": "refreshStatus",
+          "callee": "window.electronAPI.remote.getWebhookUrl",
+          "lineNumber": 120
+        },
+        {
+          "caller": "refreshStatus",
+          "callee": "setStatus",
+          "lineNumber": 122
+        },
+        {
+          "caller": "refreshStatus",
+          "callee": "setPendingPairings",
+          "lineNumber": 123
+        },
+        {
+          "caller": "refreshStatus",
+          "callee": "setTunnelStatus",
+          "lineNumber": 124
+        },
+        {
+          "caller": "refreshStatus",
+          "callee": "setWebhookUrl",
+          "lineNumber": 125
+        },
+        {
+          "caller": "refreshStatus",
+          "callee": "console.error",
+          "lineNumber": 127
+        },
+        {
+          "caller": "toggleGateway",
+          "callee": "setIsTogglingGateway",
+          "lineNumber": 133
+        },
+        {
+          "caller": "toggleGateway",
+          "callee": "setError",
+          "lineNumber": 134
+        },
+        {
+          "caller": "toggleGateway",
+          "callee": "window.electronAPI.remote.setEnabled",
+          "lineNumber": 137
+        },
+        {
+          "caller": "toggleGateway",
+          "callee": "refreshStatus",
+          "lineNumber": 138
+        },
+        {
+          "caller": "toggleGateway",
+          "callee": "setSuccess",
+          "lineNumber": 139
+        },
+        {
+          "caller": "toggleGateway",
+          "callee": "setTimeout",
+          "lineNumber": 140
+        },
+        {
+          "caller": "toggleGateway",
+          "callee": "setSuccess",
+          "lineNumber": 140
+        },
+        {
+          "caller": "toggleGateway",
+          "callee": "setError",
+          "lineNumber": 142
+        },
+        {
+          "caller": "toggleGateway",
+          "callee": "setIsTogglingGateway",
+          "lineNumber": 144
+        },
+        {
+          "caller": "saveConfig",
+          "callee": "setIsSaving",
+          "lineNumber": 150
+        },
+        {
+          "caller": "saveConfig",
+          "callee": "setError",
+          "lineNumber": 151
+        },
+        {
+          "caller": "saveConfig",
+          "callee": "window.electronAPI.remote.updateGatewayConfig",
+          "lineNumber": 153
+        },
+        {
+          "caller": "saveConfig",
+          "callee": "window.electronAPI.remote.updateFeishuConfig",
+          "lineNumber": 168
+        },
+        {
+          "caller": "saveConfig",
+          "callee": "setSuccess",
+          "lineNumber": 177
+        },
+        {
+          "caller": "saveConfig",
+          "callee": "setTimeout",
+          "lineNumber": 178
+        },
+        {
+          "caller": "saveConfig",
+          "callee": "setSuccess",
+          "lineNumber": 178
+        },
+        {
+          "caller": "saveConfig",
+          "callee": "loadData",
+          "lineNumber": 179
+        },
+        {
+          "caller": "saveConfig",
+          "callee": "setError",
+          "lineNumber": 181
+        },
+        {
+          "caller": "saveConfig",
+          "callee": "setIsSaving",
+          "lineNumber": 183
+        },
+        {
+          "caller": "approvePairing",
+          "callee": "window.electronAPI.remote.approvePairing",
+          "lineNumber": 190
+        },
+        {
+          "caller": "approvePairing",
+          "callee": "setSuccess",
+          "lineNumber": 191
+        },
+        {
+          "caller": "approvePairing",
+          "callee": "setTimeout",
+          "lineNumber": 192
+        },
+        {
+          "caller": "approvePairing",
+          "callee": "setSuccess",
+          "lineNumber": 192
+        },
+        {
+          "caller": "approvePairing",
+          "callee": "loadData",
+          "lineNumber": 193
+        },
+        {
+          "caller": "approvePairing",
+          "callee": "setError",
+          "lineNumber": 195
+        },
+        {
+          "caller": "rejectPairing",
+          "callee": "window.electronAPI.remote.rejectPairing",
+          "lineNumber": 202
+        },
+        {
+          "caller": "rejectPairing",
+          "callee": "setError",
+          "lineNumber": 207
+        },
+        {
+          "caller": "rejectPairing",
+          "callee": "setSuccess",
+          "lineNumber": 210
+        },
+        {
+          "caller": "rejectPairing",
+          "callee": "setTimeout",
+          "lineNumber": 211
+        },
+        {
+          "caller": "rejectPairing",
+          "callee": "setSuccess",
+          "lineNumber": 211
+        },
+        {
+          "caller": "rejectPairing",
+          "callee": "loadData",
+          "lineNumber": 212
+        },
+        {
+          "caller": "rejectPairing",
+          "callee": "setError",
+          "lineNumber": 214
+        },
+        {
+          "caller": "revokePairing",
+          "callee": "window.electronAPI.remote.revokePairing",
+          "lineNumber": 221
+        },
+        {
+          "caller": "revokePairing",
+          "callee": "setSuccess",
+          "lineNumber": 222
+        },
+        {
+          "caller": "revokePairing",
+          "callee": "setTimeout",
+          "lineNumber": 223
+        },
+        {
+          "caller": "revokePairing",
+          "callee": "setSuccess",
+          "lineNumber": 223
+        },
+        {
+          "caller": "revokePairing",
+          "callee": "loadData",
+          "lineNumber": 224
+        },
+        {
+          "caller": "revokePairing",
+          "callee": "setError",
+          "lineNumber": 226
+        },
+        {
+          "caller": "copyToClipboard",
+          "callee": "navigator.clipboard.writeText",
+          "lineNumber": 231
+        },
+        {
+          "caller": "copyToClipboard",
+          "callee": "setSuccess",
+          "lineNumber": 232
+        },
+        {
+          "caller": "copyToClipboard",
+          "callee": "setTimeout",
+          "lineNumber": 233
+        },
+        {
+          "caller": "copyToClipboard",
+          "callee": "setSuccess",
+          "lineNumber": 233
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "i18n.language.startsWith",
+          "lineNumber": 239
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "t",
+          "lineNumber": 263
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "t",
+          "lineNumber": 269
+        },
+        {
+          "caller": "RemoteControlPanel",
+          "callee": "t",
+          "lineNumber": 347
+        }
+      ],
+      "metrics": {
+        "importCount": 10,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/renderer/components/remote/AdvancedConfigStep.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 88,
+      "nonEmptyLines": 81,
+      "functions": [
+        {
+          "name": "AdvancedConfigStep",
+          "startLine": 16,
+          "endLine": 88,
+          "params": [
+            "{\n  defaultWorkingDirectory,\n  gatewayPort,\n  autoApproveSafeTools,\n  onWorkingDirectoryChange,\n  onGatewayPortChange,\n  onAutoApproveChange,\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AdvancedConfigStep",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AdvancedConfigStep",
+          "callee": "useTranslation",
+          "lineNumber": 24
+        },
+        {
+          "caller": "AdvancedConfigStep",
+          "callee": "t",
+          "lineNumber": 29
+        },
+        {
+          "caller": "AdvancedConfigStep",
+          "callee": "t",
+          "lineNumber": 30
+        },
+        {
+          "caller": "AdvancedConfigStep",
+          "callee": "t",
+          "lineNumber": 36
+        },
+        {
+          "caller": "AdvancedConfigStep",
+          "callee": "onWorkingDirectoryChange",
+          "lineNumber": 41
+        },
+        {
+          "caller": "AdvancedConfigStep",
+          "callee": "t",
+          "lineNumber": 43
+        },
+        {
+          "caller": "AdvancedConfigStep",
+          "callee": "t",
+          "lineNumber": 46
+        },
+        {
+          "caller": "AdvancedConfigStep",
+          "callee": "t",
+          "lineNumber": 52
+        },
+        {
+          "caller": "AdvancedConfigStep",
+          "callee": "onGatewayPortChange",
+          "lineNumber": 57
+        },
+        {
+          "caller": "AdvancedConfigStep",
+          "callee": "parseInt",
+          "lineNumber": 57
+        },
+        {
+          "caller": "AdvancedConfigStep",
+          "callee": "t",
+          "lineNumber": 66
+        },
+        {
+          "caller": "AdvancedConfigStep",
+          "callee": "t",
+          "lineNumber": 69
+        },
+        {
+          "caller": "AdvancedConfigStep",
+          "callee": "onAutoApproveChange",
+          "lineNumber": 73
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/renderer/components/remote/AuthorizedUsersSection.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 55,
+      "nonEmptyLines": 50,
+      "functions": [
+        {
+          "name": "AuthorizedUsersSection",
+          "startLine": 15,
+          "endLine": 55,
+          "params": ["{ pairedUsers, onRevoke }"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AuthorizedUsersSection",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AuthorizedUsersSection",
+          "callee": "useTranslation",
+          "lineNumber": 16
+        },
+        {
+          "caller": "AuthorizedUsersSection",
+          "callee": "t",
+          "lineNumber": 24
+        },
+        {
+          "caller": "AuthorizedUsersSection",
+          "callee": "pairedUsers.map",
+          "lineNumber": 27
+        },
+        {
+          "caller": "AuthorizedUsersSection",
+          "callee": "user.userId.slice",
+          "lineNumber": 38
+        },
+        {
+          "caller": "AuthorizedUsersSection",
+          "callee": "formatAppDate",
+          "lineNumber": 40
+        },
+        {
+          "caller": "AuthorizedUsersSection",
+          "callee": "onRevoke",
+          "lineNumber": 44
+        },
+        {
+          "caller": "AuthorizedUsersSection",
+          "callee": "t",
+          "lineNumber": 46
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/renderer/components/remote/ConfigStepNav.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 67,
+      "nonEmptyLines": 62,
+      "functions": [
+        {
+          "name": "ConfigStepNav",
+          "startLine": 16,
+          "endLine": 67,
+          "params": [
+            "{\n  activeStep,\n  isFeishuConfigured,\n  isConnectionConfigured,\n  onStepChange,\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ConfigStepNav",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ConfigStepNav",
+          "callee": "useTranslation",
+          "lineNumber": 22
+        },
+        {
+          "caller": "ConfigStepNav",
+          "callee": "steps.map",
+          "lineNumber": 47
+        },
+        {
+          "caller": "ConfigStepNav",
+          "callee": "onStepChange",
+          "lineNumber": 50
+        },
+        {
+          "caller": "ConfigStepNav",
+          "callee": "t",
+          "lineNumber": 62
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/renderer/components/remote/ConnectionConfigStep.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 217,
+      "nonEmptyLines": 206,
+      "functions": [
+        {
+          "name": "ConnectionConfigStep",
+          "startLine": 23,
+          "endLine": 217,
+          "params": [
+            "{\n  useLongConnection,\n  tunnelEnabled,\n  ngrokAuthToken,\n  gatewayPort,\n  tunnelStatus,\n  webhookUrl,\n  onLongConnectionChange,\n  onTunnelEnabledChange,\n  onNgrokAuthTokenChange,\n  onCopy,\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ConnectionConfigStep",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ConnectionConfigStep",
+          "callee": "useTranslation",
+          "lineNumber": 35
+        },
+        {
+          "caller": "ConnectionConfigStep",
+          "callee": "t",
+          "lineNumber": 41
+        },
+        {
+          "caller": "ConnectionConfigStep",
+          "callee": "t",
+          "lineNumber": 43
+        },
+        {
+          "caller": "ConnectionConfigStep",
+          "callee": "onLongConnectionChange",
+          "lineNumber": 48
+        },
+        {
+          "caller": "ConnectionConfigStep",
+          "callee": "t",
+          "lineNumber": 65
+        },
+        {
+          "caller": "ConnectionConfigStep",
+          "callee": "t",
+          "lineNumber": 67
+        },
+        {
+          "caller": "ConnectionConfigStep",
+          "callee": "t",
+          "lineNumber": 70
+        },
+        {
+          "caller": "ConnectionConfigStep",
+          "callee": "t",
+          "lineNumber": 74
+        },
+        {
+          "caller": "ConnectionConfigStep",
+          "callee": "t",
+          "lineNumber": 77
+        },
+        {
+          "caller": "ConnectionConfigStep",
+          "callee": "t",
+          "lineNumber": 81
+        },
+        {
+          "caller": "ConnectionConfigStep",
+          "callee": "onLongConnectionChange",
+          "lineNumber": 97
+        },
+        {
+          "caller": "ConnectionConfigStep",
+          "callee": "t",
+          "lineNumber": 111
+        },
+        {
+          "caller": "ConnectionConfigStep",
+          "callee": "t",
+          "lineNumber": 112
+        },
+        {
+          "caller": "ConnectionConfigStep",
+          "callee": "t",
+          "lineNumber": 128
+        },
+        {
+          "caller": "ConnectionConfigStep",
+          "callee": "e.stopPropagation",
+          "lineNumber": 136
+        },
+        {
+          "caller": "ConnectionConfigStep",
+          "callee": "onCopy",
+          "lineNumber": 137
+        },
+        {
+          "caller": "ConnectionConfigStep",
+          "callee": "t",
+          "lineNumber": 150
+        },
+        {
+          "caller": "ConnectionConfigStep",
+          "callee": "e.stopPropagation",
+          "lineNumber": 154
+        },
+        {
+          "caller": "ConnectionConfigStep",
+          "callee": "onTunnelEnabledChange",
+          "lineNumber": 155
+        },
+        {
+          "caller": "ConnectionConfigStep",
+          "callee": "onNgrokAuthTokenChange",
+          "lineNumber": 174
+        },
+        {
+          "caller": "ConnectionConfigStep",
+          "callee": "e.stopPropagation",
+          "lineNumber": 175
+        },
+        {
+          "caller": "ConnectionConfigStep",
+          "callee": "t",
+          "lineNumber": 180
+        },
+        {
+          "caller": "ConnectionConfigStep",
+          "callee": "t",
+          "lineNumber": 189
+        },
+        {
+          "caller": "ConnectionConfigStep",
+          "callee": "t",
+          "lineNumber": 198
+        },
+        {
+          "caller": "ConnectionConfigStep",
+          "callee": "t",
+          "lineNumber": 212
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/renderer/components/remote/FeishuConfigStep.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 109,
+      "nonEmptyLines": 100,
+      "functions": [
+        {
+          "name": "FeishuConfigStep",
+          "startLine": 17,
+          "endLine": 109,
+          "params": [
+            "{\n  feishuAppId,\n  feishuAppSecret,\n  feishuDmPolicy,\n  onAppIdChange,\n  onAppSecretChange,\n  onDmPolicyChange,\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "FeishuConfigStep",
+          "line": 17,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "FeishuConfigStep",
+          "callee": "useTranslation",
+          "lineNumber": 25
+        },
+        {
+          "caller": "FeishuConfigStep",
+          "callee": "t",
+          "lineNumber": 30
+        },
+        {
+          "caller": "FeishuConfigStep",
+          "callee": "t",
+          "lineNumber": 31
+        },
+        {
+          "caller": "FeishuConfigStep",
+          "callee": "t",
+          "lineNumber": 35
+        },
+        {
+          "caller": "FeishuConfigStep",
+          "callee": "t",
+          "lineNumber": 36
+        },
+        {
+          "caller": "FeishuConfigStep",
+          "callee": "t",
+          "lineNumber": 40
+        },
+        {
+          "caller": "FeishuConfigStep",
+          "callee": "t",
+          "lineNumber": 41
+        },
+        {
+          "caller": "FeishuConfigStep",
+          "callee": "t",
+          "lineNumber": 48
+        },
+        {
+          "caller": "FeishuConfigStep",
+          "callee": "t",
+          "lineNumber": 49
+        },
+        {
+          "caller": "FeishuConfigStep",
+          "callee": "onAppIdChange",
+          "lineNumber": 58
+        },
+        {
+          "caller": "FeishuConfigStep",
+          "callee": "onAppSecretChange",
+          "lineNumber": 69
+        },
+        {
+          "caller": "FeishuConfigStep",
+          "callee": "t",
+          "lineNumber": 77
+        },
+        {
+          "caller": "FeishuConfigStep",
+          "callee": "dmPolicies.map",
+          "lineNumber": 80
+        },
+        {
+          "caller": "FeishuConfigStep",
+          "callee": "onDmPolicyChange",
+          "lineNumber": 83
+        },
+        {
+          "caller": "FeishuConfigStep",
+          "callee": "t",
+          "lineNumber": 105
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/renderer/components/remote/GatewayControlCard.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 87,
+      "nonEmptyLines": 81,
+      "functions": [
+        {
+          "name": "GatewayControlCard",
+          "startLine": 18,
+          "endLine": 87,
+          "params": [
+            "{\n  status,\n  pairedUsers,\n  pendingPairings,\n  isTogglingGateway,\n  isFeishuConfigured,\n  onToggle,\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "GatewayControlCard",
+          "line": 18,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GatewayControlCard",
+          "callee": "useTranslation",
+          "lineNumber": 26
+        },
+        {
+          "caller": "GatewayControlCard",
+          "callee": "t",
+          "lineNumber": 42
+        },
+        {
+          "caller": "GatewayControlCard",
+          "callee": "t",
+          "lineNumber": 44
+        },
+        {
+          "caller": "GatewayControlCard",
+          "callee": "t",
+          "lineNumber": 44
+        },
+        {
+          "caller": "GatewayControlCard",
+          "callee": "t",
+          "lineNumber": 63
+        },
+        {
+          "caller": "GatewayControlCard",
+          "callee": "t",
+          "lineNumber": 63
+        },
+        {
+          "caller": "GatewayControlCard",
+          "callee": "t",
+          "lineNumber": 72
+        },
+        {
+          "caller": "GatewayControlCard",
+          "callee": "t",
+          "lineNumber": 76
+        },
+        {
+          "caller": "GatewayControlCard",
+          "callee": "t",
+          "lineNumber": 80
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/renderer/components/remote/PairingGuideCard.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 57,
+      "nonEmptyLines": 49,
+      "functions": [
+        {
+          "name": "PairingGuideCard",
+          "startLine": 13,
+          "endLine": 57,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "PairingGuideCard",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "PairingGuideCard",
+          "callee": "useTranslation",
+          "lineNumber": 14
+        },
+        {
+          "caller": "PairingGuideCard",
+          "callee": "useState",
+          "lineNumber": 15
+        },
+        {
+          "caller": "PairingGuideCard",
+          "callee": "localStorage.getItem",
+          "lineNumber": 16
+        },
+        {
+          "caller": "PairingGuideCard",
+          "callee": "t",
+          "lineNumber": 22
+        },
+        {
+          "caller": "PairingGuideCard",
+          "callee": "t",
+          "lineNumber": 23
+        },
+        {
+          "caller": "PairingGuideCard",
+          "callee": "t",
+          "lineNumber": 24
+        },
+        {
+          "caller": "PairingGuideCard",
+          "callee": "t",
+          "lineNumber": 25
+        },
+        {
+          "caller": "handleDismiss",
+          "callee": "setDismissed",
+          "lineNumber": 29
+        },
+        {
+          "caller": "handleDismiss",
+          "callee": "localStorage.setItem",
+          "lineNumber": 30
+        },
+        {
+          "caller": "PairingGuideCard",
+          "callee": "t",
+          "lineNumber": 43
+        },
+        {
+          "caller": "PairingGuideCard",
+          "callee": "steps.map",
+          "lineNumber": 46
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/renderer/components/remote/PairingRequestsSection.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 110,
+      "nonEmptyLines": 100,
+      "functions": [
+        {
+          "name": "Countdown",
+          "startLine": 17,
+          "endLine": 42,
+          "params": ["{ expiresAt }"]
+        },
+        {
+          "name": "PairingRequestsSection",
+          "startLine": 44,
+          "endLine": 110,
+          "params": ["{\n  pendingPairings,\n  showEmpty = false,\n  onApprove,\n  onReject,\n}"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PairingRequestsSection",
+          "line": 44,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Countdown",
+          "callee": "useTranslation",
+          "lineNumber": 18
+        },
+        {
+          "caller": "Countdown",
+          "callee": "useState",
+          "lineNumber": 19
+        },
+        {
+          "caller": "Countdown",
+          "callee": "Math.max",
+          "lineNumber": 19
+        },
+        {
+          "caller": "Countdown",
+          "callee": "Date.now",
+          "lineNumber": 19
+        },
+        {
+          "caller": "Countdown",
+          "callee": "useEffect",
+          "lineNumber": 21
+        },
+        {
+          "caller": "Countdown",
+          "callee": "setInterval",
+          "lineNumber": 22
+        },
+        {
+          "caller": "Countdown",
+          "callee": "Math.max",
+          "lineNumber": 23
+        },
+        {
+          "caller": "Countdown",
+          "callee": "Date.now",
+          "lineNumber": 23
+        },
+        {
+          "caller": "Countdown",
+          "callee": "setRemaining",
+          "lineNumber": 24
+        },
+        {
+          "caller": "Countdown",
+          "callee": "clearInterval",
+          "lineNumber": 25
+        },
+        {
+          "caller": "Countdown",
+          "callee": "clearInterval",
+          "lineNumber": 27
+        },
+        {
+          "caller": "Countdown",
+          "callee": "Math.floor",
+          "lineNumber": 32
+        },
+        {
+          "caller": "Countdown",
+          "callee": "Math.floor",
+          "lineNumber": 33
+        },
+        {
+          "caller": "Countdown",
+          "callee": "String(seconds).padStart",
+          "lineNumber": 34
+        },
+        {
+          "caller": "Countdown",
+          "callee": "String",
+          "lineNumber": 34
+        },
+        {
+          "caller": "Countdown",
+          "callee": "t",
+          "lineNumber": 39
+        },
+        {
+          "caller": "PairingRequestsSection",
+          "callee": "useTranslation",
+          "lineNumber": 50
+        },
+        {
+          "caller": "PairingRequestsSection",
+          "callee": "t",
+          "lineNumber": 58
+        },
+        {
+          "caller": "PairingRequestsSection",
+          "callee": "t",
+          "lineNumber": 62
+        },
+        {
+          "caller": "PairingRequestsSection",
+          "callee": "pendingPairings.map",
+          "lineNumber": 66
+        },
+        {
+          "caller": "PairingRequestsSection",
+          "callee": "t",
+          "lineNumber": 74
+        },
+        {
+          "caller": "PairingRequestsSection",
+          "callee": "t",
+          "lineNumber": 82
+        },
+        {
+          "caller": "PairingRequestsSection",
+          "callee": "onReject",
+          "lineNumber": 90
+        },
+        {
+          "caller": "PairingRequestsSection",
+          "callee": "t",
+          "lineNumber": 92
+        },
+        {
+          "caller": "PairingRequestsSection",
+          "callee": "onApprove",
+          "lineNumber": 97
+        },
+        {
+          "caller": "PairingRequestsSection",
+          "callee": "t",
+          "lineNumber": 99
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/renderer/components/remote/QuickStartGuide.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 61,
+      "nonEmptyLines": 56,
+      "functions": [
+        {
+          "name": "QuickStartGuide",
+          "startLine": 12,
+          "endLine": 61,
+          "params": ["{ permissionScopes, permissionSeparator }"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "QuickStartGuide",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "QuickStartGuide",
+          "callee": "useTranslation",
+          "lineNumber": 13
+        },
+        {
+          "caller": "QuickStartGuide",
+          "callee": "t",
+          "lineNumber": 16
+        },
+        {
+          "caller": "QuickStartGuide",
+          "callee": "t",
+          "lineNumber": 17
+        },
+        {
+          "caller": "QuickStartGuide",
+          "callee": "t",
+          "lineNumber": 22
+        },
+        {
+          "caller": "QuickStartGuide",
+          "callee": "permissionScopes.map",
+          "lineNumber": 23
+        },
+        {
+          "caller": "QuickStartGuide",
+          "callee": "t",
+          "lineNumber": 32
+        },
+        {
+          "caller": "QuickStartGuide",
+          "callee": "t",
+          "lineNumber": 37
+        },
+        {
+          "caller": "QuickStartGuide",
+          "callee": "t",
+          "lineNumber": 39
+        },
+        {
+          "caller": "QuickStartGuide",
+          "callee": "t",
+          "lineNumber": 43
+        },
+        {
+          "caller": "QuickStartGuide",
+          "callee": "t",
+          "lineNumber": 48
+        },
+        {
+          "caller": "QuickStartGuide",
+          "callee": "steps.map",
+          "lineNumber": 50
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/renderer/components/remote/types.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 81,
+      "nonEmptyLines": 74,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": "tests/dark-theme-palette.test.ts",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/database-path-recovery.test.ts",
+      "language": "typescript",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/deepseek-common.test.ts",
+      "language": "typescript",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/deepseek-thinking-serialization.test.ts",
+      "language": "typescript",
+      "sizeLines": 292,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/dev-script-guard.test.ts",
+      "language": "typescript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/electron-builder-branding.test.ts",
+      "language": "typescript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/electron-builder-native-rebuild.test.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/index-config-window-behavior.test.ts",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/index-file-navigation-handling.test.ts",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/logger-context.test.ts",
+      "language": "typescript",
+      "sizeLines": 268,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/logger-fallback.test.ts",
+      "language": "typescript",
+      "sizeLines": 132,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/message-card-ask-user-question-state.test.ts",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/message-card-citation-link-normalization.test.ts",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/message-card-claude-layout.test.ts",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/message-card-file-attachment-layout.test.ts",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/message-card-link-handling.test.ts",
+      "language": "typescript",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/message-markdown-katex.test.ts",
+      "language": "typescript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/mocks/electron.ts",
+      "language": "typescript",
+      "sizeLines": 141,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/nav-server-session-id-validation.test.ts",
+      "language": "typescript",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/omni-worker-logo-entry.test.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/plugin-runtime-service.test.ts",
+      "language": "typescript",
+      "sizeLines": 412,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/prose-chat-list-style.test.ts",
+      "language": "typescript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/provider-guidance-ui.test.ts",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/remote-control-panel-claude-layout.test.ts",
+      "language": "typescript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/remote-control-panel-imports.test.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "tests/dark-theme-palette.test.ts": [],
+    "tests/database-path-recovery.test.ts": [],
+    "tests/deepseek-common.test.ts": [],
+    "tests/deepseek-thinking-serialization.test.ts": [],
+    "tests/dev-script-guard.test.ts": [],
+    "tests/electron-builder-branding.test.ts": [],
+    "tests/electron-builder-native-rebuild.test.ts": [],
+    "tests/index-config-window-behavior.test.ts": [],
+    "tests/index-file-navigation-handling.test.ts": [],
+    "tests/logger-context.test.ts": [],
+    "tests/logger-fallback.test.ts": [],
+    "tests/message-card-ask-user-question-state.test.ts": [],
+    "tests/message-card-citation-link-normalization.test.ts": [],
+    "tests/message-card-claude-layout.test.ts": [],
+    "tests/message-card-file-attachment-layout.test.ts": [],
+    "tests/message-card-link-handling.test.ts": [],
+    "tests/message-markdown-katex.test.ts": ["src/renderer/components/MessageMarkdown.tsx"],
+    "tests/mocks/electron.ts": [],
+    "tests/nav-server-session-id-validation.test.ts": [],
+    "tests/omni-worker-logo-entry.test.ts": [],
+    "tests/plugin-runtime-service.test.ts": [],
+    "tests/prose-chat-list-style.test.ts": [],
+    "tests/provider-guidance-ui.test.ts": [],
+    "tests/remote-control-panel-claude-layout.test.ts": [],
+    "tests/remote-control-panel-imports.test.ts": []
+  }
+}

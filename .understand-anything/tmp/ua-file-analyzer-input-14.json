@@ -1,0 +1,35 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": "src/main/claude/agent-runner-message-end.ts",
+      "language": "typescript",
+      "sizeLines": 132,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/claude/think-tag-parser.ts",
+      "language": "typescript",
+      "sizeLines": 165,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/agent-runner-message-end.test.ts",
+      "language": "typescript",
+      "sizeLines": 144,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/think-tag-parser.test.ts",
+      "language": "typescript",
+      "sizeLines": 211,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/main/claude/agent-runner-message-end.ts": ["src/main/claude/think-tag-parser.ts"],
+    "src/main/claude/think-tag-parser.ts": [],
+    "tests/agent-runner-message-end.test.ts": ["src/main/claude/agent-runner-message-end.ts"],
+    "tests/think-tag-parser.test.ts": ["src/main/claude/think-tag-parser.ts"]
+  }
+}

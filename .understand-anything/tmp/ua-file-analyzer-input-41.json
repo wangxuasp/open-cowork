@@ -1,0 +1,182 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": "resources/icon.icns",
+      "language": "icns",
+      "sizeLines": 12566,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/installer.nsh",
+      "language": "nsh",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/windows/Open-Cowork-Legacy-Cleanup.cmd",
+      "language": "batch",
+      "sizeLines": 7,
+      "fileCategory": "script"
+    },
+    {
+      "path": "resources/windows/Open-Cowork-Legacy-Cleanup.ps1",
+      "language": "powershell",
+      "sizeLines": 201,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/after-pack.js",
+      "language": "javascript",
+      "sizeLines": 204,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/bench-api.mjs",
+      "language": "javascript",
+      "sizeLines": 309,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/bundle-mcp.js",
+      "language": "javascript",
+      "sizeLines": 346,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/compress-dmg.js",
+      "language": "javascript",
+      "sizeLines": 119,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/deploy-local.sh",
+      "language": "shell",
+      "sizeLines": 101,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/download-node.js",
+      "language": "javascript",
+      "sizeLines": 273,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/notarize.js",
+      "language": "javascript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/pre-build-check.js",
+      "language": "javascript",
+      "sizeLines": 209,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/prepare-gui-tools.js",
+      "language": "javascript",
+      "sizeLines": 161,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/prepare-python.js",
+      "language": "javascript",
+      "sizeLines": 564,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/start.ps1",
+      "language": "powershell",
+      "sizeLines": 19,
+      "fileCategory": "script"
+    },
+    {
+      "path": "src/main/remote/index.ts",
+      "language": "typescript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/sandbox/index.ts",
+      "language": "typescript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/sandbox/lima-agent/index.ts",
+      "language": "typescript",
+      "sizeLines": 570,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/sandbox/lima-agent/path-containment.ts",
+      "language": "typescript",
+      "sizeLines": 131,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/sandbox/lima-agent/tsconfig.json",
+      "language": "json",
+      "sizeLines": 18,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/main/sandbox/wsl-agent/index.ts",
+      "language": "typescript",
+      "sizeLines": 564,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/sandbox/wsl-agent/path-containment.ts",
+      "language": "typescript",
+      "sizeLines": 131,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/sandbox/wsl-agent/tsconfig.json",
+      "language": "json",
+      "sizeLines": 19,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/main/utils/error-utils.ts",
+      "language": "typescript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/index.ts",
+      "language": "typescript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "resources/icon.icns": [],
+    "resources/installer.nsh": [],
+    "resources/windows/Open-Cowork-Legacy-Cleanup.cmd": [],
+    "resources/windows/Open-Cowork-Legacy-Cleanup.ps1": [],
+    "scripts/after-pack.js": [],
+    "scripts/bench-api.mjs": [],
+    "scripts/bundle-mcp.js": [],
+    "scripts/compress-dmg.js": [],
+    "scripts/deploy-local.sh": [],
+    "scripts/download-node.js": [],
+    "scripts/notarize.js": [],
+    "scripts/pre-build-check.js": [],
+    "scripts/prepare-gui-tools.js": [],
+    "scripts/prepare-python.js": [],
+    "scripts/start.ps1": [],
+    "src/main/remote/index.ts": [],
+    "src/main/sandbox/index.ts": [],
+    "src/main/sandbox/lima-agent/index.ts": ["src/main/sandbox/lima-agent/path-containment.ts"],
+    "src/main/sandbox/lima-agent/path-containment.ts": [],
+    "src/main/sandbox/lima-agent/tsconfig.json": [],
+    "src/main/sandbox/wsl-agent/index.ts": ["src/main/sandbox/wsl-agent/path-containment.ts"],
+    "src/main/sandbox/wsl-agent/path-containment.ts": [],
+    "src/main/sandbox/wsl-agent/tsconfig.json": [],
+    "src/main/utils/error-utils.ts": [],
+    "src/renderer/components/index.ts": []
+  }
+}

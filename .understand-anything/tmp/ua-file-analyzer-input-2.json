@@ -1,0 +1,354 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": "src/main/claude/claude-sdk-one-shot.ts",
+      "language": "typescript",
+      "sizeLines": 380,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/claude/shared-auth.ts",
+      "language": "typescript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/config/config-store.ts",
+      "language": "typescript",
+      "sizeLines": 1726,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/config/config-test-routing.ts",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/memory/core-memory-extractor.ts",
+      "language": "typescript",
+      "sizeLines": 83,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/memory/core-memory-store.ts",
+      "language": "typescript",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/memory/experience-memory-extractor.ts",
+      "language": "typescript",
+      "sizeLines": 109,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/memory/experience-memory-store.ts",
+      "language": "typescript",
+      "sizeLines": 464,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/memory/memory-eval-harness.ts",
+      "language": "typescript",
+      "sizeLines": 297,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/memory/memory-ingestion-queue.ts",
+      "language": "typescript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/memory/memory-llm-client.ts",
+      "language": "typescript",
+      "sizeLines": 187,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/memory/memory-navigator.ts",
+      "language": "typescript",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/memory/memory-prompt-optimizer.ts",
+      "language": "typescript",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/memory/memory-prompts.ts",
+      "language": "typescript",
+      "sizeLines": 162,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/memory/memory-retriever.ts",
+      "language": "typescript",
+      "sizeLines": 266,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/memory/memory-service.ts",
+      "language": "typescript",
+      "sizeLines": 1055,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/memory/memory-state-store.ts",
+      "language": "typescript",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/memory/memory-tools.ts",
+      "language": "typescript",
+      "sizeLines": 128,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/memory/memory-types.ts",
+      "language": "typescript",
+      "sizeLines": 255,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/memory/memory-utils.ts",
+      "language": "typescript",
+      "sizeLines": 387,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/tests/claude/claude-sdk-one-shot.test.ts",
+      "language": "typescript",
+      "sizeLines": 95,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/tests/memory/core-memory-store.test.ts",
+      "language": "typescript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/tests/memory/memory-eval-harness.test.ts",
+      "language": "typescript",
+      "sizeLines": 337,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/tests/memory/memory-llm-client.test.ts",
+      "language": "typescript",
+      "sizeLines": 102,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/tests/memory/memory-service.test.ts",
+      "language": "typescript",
+      "sizeLines": 886,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/tests/memory/memory-smoke-harness.test.ts",
+      "language": "typescript",
+      "sizeLines": 353,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/claude-sdk-one-shot.test.ts",
+      "language": "typescript",
+      "sizeLines": 553,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/config-store-config-sets.test.ts",
+      "language": "typescript",
+      "sizeLines": 210,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/config-store-env.test.ts",
+      "language": "typescript",
+      "sizeLines": 184,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/config-store-performance.test.ts",
+      "language": "typescript",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/config-store-profiles.test.ts",
+      "language": "typescript",
+      "sizeLines": 283,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/config-test-routing.test.ts",
+      "language": "typescript",
+      "sizeLines": 172,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/session-manager-title-unified.test.ts",
+      "language": "typescript",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/main/claude/claude-sdk-one-shot.ts": [
+      "src/main/claude/pi-model-resolution.ts",
+      "src/main/claude/shared-auth.ts",
+      "src/main/config/auth-utils.ts",
+      "src/main/config/config-store.ts",
+      "src/main/session/session-title-utils.ts",
+      "src/main/utils/logger.ts",
+      "src/renderer/types/index.ts"
+    ],
+    "src/main/claude/shared-auth.ts": [],
+    "src/main/config/config-store.ts": [
+      "src/main/config/auth-utils.ts",
+      "src/main/utils/logger.ts",
+      "src/main/utils/store-encryption.ts",
+      "src/shared/api-model-presets.ts"
+    ],
+    "src/main/config/config-test-routing.ts": [
+      "src/main/claude/claude-sdk-one-shot.ts",
+      "src/main/config/config-store.ts",
+      "src/renderer/types/index.ts"
+    ],
+    "src/main/memory/core-memory-extractor.ts": [
+      "src/main/memory/memory-llm-client.ts",
+      "src/main/memory/memory-prompts.ts",
+      "src/main/memory/memory-types.ts",
+      "src/main/memory/memory-utils.ts"
+    ],
+    "src/main/memory/core-memory-store.ts": [
+      "src/main/memory/memory-types.ts",
+      "src/main/memory/memory-utils.ts"
+    ],
+    "src/main/memory/experience-memory-extractor.ts": [
+      "src/main/memory/memory-llm-client.ts",
+      "src/main/memory/memory-prompts.ts",
+      "src/main/memory/memory-types.ts",
+      "src/main/memory/memory-utils.ts"
+    ],
+    "src/main/memory/experience-memory-store.ts": [
+      "src/main/memory/memory-types.ts",
+      "src/main/memory/memory-utils.ts"
+    ],
+    "src/main/memory/memory-eval-harness.ts": [
+      "src/main/memory/memory-llm-client.ts",
+      "src/main/memory/memory-service.ts",
+      "src/main/memory/memory-utils.ts"
+    ],
+    "src/main/memory/memory-ingestion-queue.ts": [],
+    "src/main/memory/memory-llm-client.ts": [
+      "src/main/claude/claude-sdk-one-shot.ts",
+      "src/main/config/auth-utils.ts",
+      "src/main/config/config-store.ts",
+      "src/main/utils/logger.ts"
+    ],
+    "src/main/memory/memory-navigator.ts": [
+      "src/main/memory/memory-llm-client.ts",
+      "src/main/memory/memory-prompts.ts",
+      "src/main/memory/memory-types.ts",
+      "src/main/memory/memory-utils.ts"
+    ],
+    "src/main/memory/memory-prompt-optimizer.ts": [
+      "src/main/memory/memory-eval-harness.ts",
+      "src/main/memory/memory-llm-client.ts",
+      "src/main/memory/memory-prompts.ts",
+      "src/main/memory/memory-utils.ts"
+    ],
+    "src/main/memory/memory-prompts.ts": [],
+    "src/main/memory/memory-retriever.ts": [
+      "src/main/memory/experience-memory-store.ts",
+      "src/main/memory/memory-types.ts",
+      "src/main/memory/memory-utils.ts"
+    ],
+    "src/main/memory/memory-service.ts": [
+      "src/main/config/config-store.ts",
+      "src/main/db/database.ts",
+      "src/main/memory/core-memory-extractor.ts",
+      "src/main/memory/core-memory-store.ts",
+      "src/main/memory/experience-memory-extractor.ts",
+      "src/main/memory/experience-memory-store.ts",
+      "src/main/memory/memory-ingestion-queue.ts",
+      "src/main/memory/memory-llm-client.ts",
+      "src/main/memory/memory-navigator.ts",
+      "src/main/memory/memory-prompts.ts",
+      "src/main/memory/memory-retriever.ts",
+      "src/main/memory/memory-state-store.ts",
+      "src/main/memory/memory-tools.ts",
+      "src/main/memory/memory-types.ts",
+      "src/main/memory/memory-utils.ts",
+      "src/main/utils/logger.ts"
+    ],
+    "src/main/memory/memory-state-store.ts": [
+      "src/main/memory/memory-types.ts",
+      "src/main/memory/memory-utils.ts"
+    ],
+    "src/main/memory/memory-tools.ts": [
+      "src/main/memory/memory-service.ts",
+      "src/main/memory/memory-types.ts"
+    ],
+    "src/main/memory/memory-types.ts": ["src/renderer/types/index.ts"],
+    "src/main/memory/memory-utils.ts": [
+      "src/main/memory/memory-types.ts",
+      "src/renderer/types/index.ts"
+    ],
+    "src/tests/claude/claude-sdk-one-shot.test.ts": [
+      "src/main/claude/claude-sdk-one-shot.ts",
+      "src/main/config/config-store.ts"
+    ],
+    "src/tests/memory/core-memory-store.test.ts": ["src/main/memory/core-memory-store.ts"],
+    "src/tests/memory/memory-eval-harness.test.ts": [
+      "src/main/config/config-store.ts",
+      "src/main/db/database.ts",
+      "src/main/memory/memory-eval-harness.ts",
+      "src/main/memory/memory-llm-client.ts",
+      "src/main/memory/memory-prompt-optimizer.ts",
+      "src/main/memory/memory-service.ts"
+    ],
+    "src/tests/memory/memory-llm-client.test.ts": [
+      "src/main/config/config-store.ts",
+      "src/main/memory/memory-llm-client.ts"
+    ],
+    "src/tests/memory/memory-service.test.ts": [
+      "src/main/config/config-store.ts",
+      "src/main/db/database.ts",
+      "src/main/memory/memory-llm-client.ts",
+      "src/main/memory/memory-service.ts"
+    ],
+    "src/tests/memory/memory-smoke-harness.test.ts": [
+      "src/main/config/config-store.ts",
+      "src/main/db/database.ts",
+      "src/main/memory/memory-llm-client.ts",
+      "src/main/memory/memory-service.ts"
+    ],
+    "tests/claude-sdk-one-shot.test.ts": [
+      "src/main/claude/claude-sdk-one-shot.ts",
+      "src/main/config/config-store.ts"
+    ],
+    "tests/config-store-config-sets.test.ts": ["src/main/config/config-store.ts"],
+    "tests/config-store-env.test.ts": ["src/main/config/config-store.ts"],
+    "tests/config-store-performance.test.ts": ["src/main/config/config-store.ts"],
+    "tests/config-store-profiles.test.ts": ["src/main/config/config-store.ts"],
+    "tests/config-test-routing.test.ts": [
+      "src/main/config/config-store.ts",
+      "src/main/config/config-test-routing.ts",
+      "src/renderer/types/index.ts"
+    ],
+    "tests/session-manager-title-unified.test.ts": [
+      "src/main/claude/claude-sdk-one-shot.ts",
+      "src/main/config/config-store.ts",
+      "src/main/session/session-manager.ts"
+    ]
+  }
+}

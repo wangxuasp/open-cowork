@@ -6,7 +6,7 @@ import { createRequire } from 'module';
 
 // Import the runChecks function from the CommonJS script using createRequire
 const require = createRequire(import.meta.url);
-const { runChecks } = require('../../scripts/pre-build-check.js');
+const { runChecks, validateTrialExpiration } = require('../../scripts/pre-build-check.js');
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -230,5 +230,37 @@ describe('pre-build-check: runChecks', () => {
     );
     expect(linuxCheck).toBeDefined();
     expect(linuxCheck?.severity).toBe('fatal');
+  });
+});
+
+describe('pre-build-check: validateTrialExpiration', () => {
+  it('accepts unset or empty values', () => {
+    expect(validateTrialExpiration(undefined)).toEqual({ valid: true, normalized: null });
+    expect(validateTrialExpiration('')).toEqual({ valid: true, normalized: null });
+    expect(validateTrialExpiration('   ')).toEqual({ valid: true, normalized: null });
+  });
+
+  it('accepts valid YYYY-MM-DD values', () => {
+    expect(validateTrialExpiration('2026-12-31')).toEqual({
+      valid: true,
+      normalized: '2026-12-31',
+    });
+    expect(validateTrialExpiration('2026-02-28')).toEqual({
+      valid: true,
+      normalized: '2026-02-28',
+    });
+  });
+
+  it('normalizes flexible YYYY-M-D values', () => {
+    expect(validateTrialExpiration('2026-6-26')).toEqual({
+      valid: true,
+      normalized: '2026-06-26',
+    });
+  });
+
+  it('rejects invalid formats and calendar dates', () => {
+    expect(validateTrialExpiration('2026/12/31').valid).toBe(false);
+    expect(validateTrialExpiration('2026-13-01').valid).toBe(false);
+    expect(validateTrialExpiration('2026-02-30').valid).toBe(false);
   });
 });

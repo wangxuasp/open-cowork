@@ -1,0 +1,15 @@
+{
+  "nodes": [
+    {
+      "id": "document:website/zh/index.md",
+      "type": "document",
+      "name": "index.md",
+      "filePath": "website/zh/index.md",
+      "summary": "文档文件 index.md，共约 188 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "moderate",
+      "language": "markdown"
+    }
+  ],
+  "edges": []
+}

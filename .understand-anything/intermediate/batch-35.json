@@ -1,0 +1,145 @@
+{
+  "nodes": [
+    {
+      "id": "config:.env.example",
+      "type": "config",
+      "name": ".env.example",
+      "filePath": ".env.example",
+      "summary": "配置文件 .env.example，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "config"
+    },
+    {
+      "id": "document:CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "CHANGELOG.md",
+      "summary": "文档文件 CHANGELOG.md，共约 89 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "moderate",
+      "language": "markdown"
+    },
+    {
+      "id": "document:CODE_OF_CONDUCT.md",
+      "type": "document",
+      "name": "CODE_OF_CONDUCT.md",
+      "filePath": "CODE_OF_CONDUCT.md",
+      "summary": "文档文件 CODE_OF_CONDUCT.md，共约 41 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "simple",
+      "language": "markdown"
+    },
+    {
+      "id": "document:CONTRIBUTING.md",
+      "type": "document",
+      "name": "CONTRIBUTING.md",
+      "filePath": "CONTRIBUTING.md",
+      "summary": "文档文件 CONTRIBUTING.md，共约 155 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "moderate",
+      "language": "markdown"
+    },
+    {
+      "id": "document:README_zh.md",
+      "type": "document",
+      "name": "README_zh.md",
+      "filePath": "README_zh.md",
+      "summary": "文档文件 README_zh.md，共约 247 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "complex",
+      "language": "markdown"
+    },
+    {
+      "id": "document:ROADMAP.md",
+      "type": "document",
+      "name": "ROADMAP.md",
+      "filePath": "ROADMAP.md",
+      "summary": "文档文件 ROADMAP.md，共约 41 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "simple",
+      "language": "markdown"
+    },
+    {
+      "id": "document:SECURITY.md",
+      "type": "document",
+      "name": "SECURITY.md",
+      "filePath": "SECURITY.md",
+      "summary": "文档文件 SECURITY.md，共约 32 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "simple",
+      "language": "markdown"
+    },
+    {
+      "id": "config:electron-builder.yml",
+      "type": "config",
+      "name": "electron-builder.yml",
+      "filePath": "electron-builder.yml",
+      "summary": "配置文件 electron-builder.yml，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "moderate",
+      "language": "yaml"
+    },
+    {
+      "id": "file:index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "index.html",
+      "summary": "源码模块 index.html，体量 14 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["markup"],
+      "complexity": "simple",
+      "language": "html"
+    },
+    {
+      "id": "document:llms.txt",
+      "type": "document",
+      "name": "llms.txt",
+      "filePath": "llms.txt",
+      "summary": "文档文件 llms.txt，共约 58 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "moderate",
+      "language": "txt"
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "配置文件 package.json，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "moderate",
+      "language": "json"
+    },
+    {
+      "id": "document:readme.md",
+      "type": "document",
+      "name": "readme.md",
+      "filePath": "readme.md",
+      "summary": "文档文件 readme.md，共约 251 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "complex",
+      "language": "markdown"
+    },
+    {
+      "id": "config:tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "tsconfig.json",
+      "summary": "配置文件 tsconfig.json，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "json"
+    },
+    {
+      "id": "config:tsconfig.node.json",
+      "type": "config",
+      "name": "tsconfig.node.json",
+      "filePath": "tsconfig.node.json",
+      "summary": "配置文件 tsconfig.node.json，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "json"
+    }
+  ],
+  "edges": []
+}

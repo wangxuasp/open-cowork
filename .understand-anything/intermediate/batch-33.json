@@ -1,0 +1,115 @@
+{
+  "nodes": [
+    {
+      "id": "config:.claude/skills/visio/templates/examples/audit_region.scene.json",
+      "type": "config",
+      "name": "audit_region.scene.json",
+      "filePath": ".claude/skills/visio/templates/examples/audit_region.scene.json",
+      "summary": "配置文件 audit_region.scene.json，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "moderate",
+      "language": "json"
+    },
+    {
+      "id": "config:.claude/skills/visio/templates/examples/basic_flow.scene.json",
+      "type": "config",
+      "name": "basic_flow.scene.json",
+      "filePath": ".claude/skills/visio/templates/examples/basic_flow.scene.json",
+      "summary": "配置文件 basic_flow.scene.json，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "moderate",
+      "language": "json"
+    },
+    {
+      "id": "config:.claude/skills/visio/templates/examples/feature_map_grid.scene.json",
+      "type": "config",
+      "name": "feature_map_grid.scene.json",
+      "filePath": ".claude/skills/visio/templates/examples/feature_map_grid.scene.json",
+      "summary": "配置文件 feature_map_grid.scene.json，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "moderate",
+      "language": "json"
+    },
+    {
+      "id": "config:.claude/skills/visio/templates/examples/gan_loop_feedback.scene.json",
+      "type": "config",
+      "name": "gan_loop_feedback.scene.json",
+      "filePath": ".claude/skills/visio/templates/examples/gan_loop_feedback.scene.json",
+      "summary": "配置文件 gan_loop_feedback.scene.json，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "complex",
+      "language": "json"
+    },
+    {
+      "id": "config:.claude/skills/visio/templates/examples/gan_tfr_full.scene.json",
+      "type": "config",
+      "name": "gan_tfr_full.scene.json",
+      "filePath": ".claude/skills/visio/templates/examples/gan_tfr_full.scene.json",
+      "summary": "配置文件 gan_tfr_full.scene.json，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "complex",
+      "language": "json"
+    },
+    {
+      "id": "config:.claude/skills/visio/templates/examples/lane_math_vector.scene.json",
+      "type": "config",
+      "name": "lane_math_vector.scene.json",
+      "filePath": ".claude/skills/visio/templates/examples/lane_math_vector.scene.json",
+      "summary": "配置文件 lane_math_vector.scene.json，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "moderate",
+      "language": "json"
+    },
+    {
+      "id": "config:.claude/skills/visio/templates/examples/multimodal_paper_components.scene.json",
+      "type": "config",
+      "name": "multimodal_paper_components.scene.json",
+      "filePath": ".claude/skills/visio/templates/examples/multimodal_paper_components.scene.json",
+      "summary": "配置文件 multimodal_paper_components.scene.json，定义项目或运行时的关键参数与依赖。",
+      "tags": ["component", "ui", "configuration"],
+      "complexity": "moderate",
+      "language": "json"
+    },
+    {
+      "id": "config:.claude/skills/visio/templates/examples/operator_boundary_lane.scene.json",
+      "type": "config",
+      "name": "operator_boundary_lane.scene.json",
+      "filePath": ".claude/skills/visio/templates/examples/operator_boundary_lane.scene.json",
+      "summary": "配置文件 operator_boundary_lane.scene.json，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "moderate",
+      "language": "json"
+    },
+    {
+      "id": "config:.claude/skills/visio/templates/examples/paper_module_components.scene.json",
+      "type": "config",
+      "name": "paper_module_components.scene.json",
+      "filePath": ".claude/skills/visio/templates/examples/paper_module_components.scene.json",
+      "summary": "配置文件 paper_module_components.scene.json，定义项目或运行时的关键参数与依赖。",
+      "tags": ["component", "ui", "configuration"],
+      "complexity": "moderate",
+      "language": "json"
+    },
+    {
+      "id": "config:.claude/skills/visio/templates/examples/rounded_orthogonal_connector.scene.json",
+      "type": "config",
+      "name": "rounded_orthogonal_connector.scene.json",
+      "filePath": ".claude/skills/visio/templates/examples/rounded_orthogonal_connector.scene.json",
+      "summary": "配置文件 rounded_orthogonal_connector.scene.json，定义项目或运行时的关键参数与依赖。",
+      "tags": ["service", "integration", "configuration"],
+      "complexity": "complex",
+      "language": "json"
+    },
+    {
+      "id": "config:.claude/skills/visio/templates/examples/vertical_classifier.scene.json",
+      "type": "config",
+      "name": "vertical_classifier.scene.json",
+      "filePath": ".claude/skills/visio/templates/examples/vertical_classifier.scene.json",
+      "summary": "配置文件 vertical_classifier.scene.json，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "moderate",
+      "language": "json"
+    }
+  ],
+  "edges": []
+}

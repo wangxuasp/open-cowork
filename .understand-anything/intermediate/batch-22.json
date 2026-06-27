@@ -1,0 +1,45 @@
+{
+  "nodes": [
+    {
+      "id": "config:.claude/skills/docx/scripts/ooxml/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
+      "type": "config",
+      "name": "opc-contentTypes.xsd",
+      "filePath": ".claude/skills/docx/scripts/ooxml/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
+      "summary": "配置文件 opc-contentTypes.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/docx/scripts/ooxml/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+      "type": "config",
+      "name": "opc-coreProperties.xsd",
+      "filePath": ".claude/skills/docx/scripts/ooxml/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+      "summary": "配置文件 opc-coreProperties.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/docx/scripts/ooxml/schemas/ecma/fouth-edition/opc-digSig.xsd",
+      "type": "config",
+      "name": "opc-digSig.xsd",
+      "filePath": ".claude/skills/docx/scripts/ooxml/schemas/ecma/fouth-edition/opc-digSig.xsd",
+      "summary": "配置文件 opc-digSig.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/docx/scripts/ooxml/schemas/ecma/fouth-edition/opc-relationships.xsd",
+      "type": "config",
+      "name": "opc-relationships.xsd",
+      "filePath": ".claude/skills/docx/scripts/ooxml/schemas/ecma/fouth-edition/opc-relationships.xsd",
+      "summary": "配置文件 opc-relationships.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "xml"
+    }
+  ],
+  "edges": []
+}

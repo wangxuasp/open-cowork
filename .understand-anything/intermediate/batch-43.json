@@ -1,0 +1,570 @@
+{
+  "nodes": [
+    {
+      "id": "file:tests/dark-theme-palette.test.ts",
+      "type": "file",
+      "name": "dark-theme-palette.test.ts",
+      "filePath": "tests/dark-theme-palette.test.ts",
+      "summary": "源码模块 tests/dark-theme-palette.test.ts，体量 17 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/database-path-recovery.test.ts",
+      "type": "file",
+      "name": "database-path-recovery.test.ts",
+      "filePath": "tests/database-path-recovery.test.ts",
+      "summary": "源码模块 tests/database-path-recovery.test.ts，包含 4 个函数，约 118 行有效代码。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/database-path-recovery.test.ts:mockElectron",
+      "type": "function",
+      "name": "mockElectron",
+      "filePath": "tests/database-path-recovery.test.ts",
+      "summary": "函数 mockElectron，位于 tests/database-path-recovery.test.ts 第 8-19 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/database-path-recovery.test.ts:mockBetterSqlite",
+      "type": "function",
+      "name": "mockBetterSqlite",
+      "filePath": "tests/database-path-recovery.test.ts",
+      "summary": "函数 mockBetterSqlite，位于 tests/database-path-recovery.test.ts 第 29-61 行。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/deepseek-common.test.ts",
+      "type": "file",
+      "name": "deepseek-common.test.ts",
+      "filePath": "tests/deepseek-common.test.ts",
+      "summary": "源码模块 tests/deepseek-common.test.ts，包含 2 个函数，约 51 行有效代码。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/deepseek-thinking-serialization.test.ts",
+      "type": "file",
+      "name": "deepseek-thinking-serialization.test.ts",
+      "filePath": "tests/deepseek-thinking-serialization.test.ts",
+      "summary": "源码模块 tests/deepseek-thinking-serialization.test.ts，体量 260 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/dev-script-guard.test.ts",
+      "type": "file",
+      "name": "dev-script-guard.test.ts",
+      "filePath": "tests/dev-script-guard.test.ts",
+      "summary": "源码模块 tests/dev-script-guard.test.ts，体量 13 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/electron-builder-branding.test.ts",
+      "type": "file",
+      "name": "electron-builder-branding.test.ts",
+      "filePath": "tests/electron-builder-branding.test.ts",
+      "summary": "源码模块 tests/electron-builder-branding.test.ts，体量 16 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/electron-builder-native-rebuild.test.ts",
+      "type": "file",
+      "name": "electron-builder-native-rebuild.test.ts",
+      "filePath": "tests/electron-builder-native-rebuild.test.ts",
+      "summary": "源码模块 tests/electron-builder-native-rebuild.test.ts，体量 15 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/index-config-window-behavior.test.ts",
+      "type": "file",
+      "name": "index-config-window-behavior.test.ts",
+      "filePath": "tests/index-config-window-behavior.test.ts",
+      "summary": "源码模块 tests/index-config-window-behavior.test.ts，体量 22 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test", "configuration"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/index-file-navigation-handling.test.ts",
+      "type": "file",
+      "name": "index-file-navigation-handling.test.ts",
+      "filePath": "tests/index-file-navigation-handling.test.ts",
+      "summary": "源码模块 tests/index-file-navigation-handling.test.ts，体量 13 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/logger-context.test.ts",
+      "type": "file",
+      "name": "logger-context.test.ts",
+      "filePath": "tests/logger-context.test.ts",
+      "summary": "源码模块 tests/logger-context.test.ts，包含 1 个函数，约 227 行有效代码。",
+      "tags": ["test", "service"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/logger-context.test.ts:getLogContent",
+      "type": "function",
+      "name": "getLogContent",
+      "filePath": "tests/logger-context.test.ts",
+      "summary": "函数 getLogContent，位于 tests/logger-context.test.ts 第 39-64 行。",
+      "tags": ["test", "service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/logger-fallback.test.ts",
+      "type": "file",
+      "name": "logger-fallback.test.ts",
+      "filePath": "tests/logger-fallback.test.ts",
+      "summary": "源码模块 tests/logger-fallback.test.ts，体量 105 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/message-card-ask-user-question-state.test.ts",
+      "type": "file",
+      "name": "message-card-ask-user-question-state.test.ts",
+      "filePath": "tests/message-card-ask-user-question-state.test.ts",
+      "summary": "源码模块 tests/message-card-ask-user-question-state.test.ts，体量 24 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/message-card-citation-link-normalization.test.ts",
+      "type": "file",
+      "name": "message-card-citation-link-normalization.test.ts",
+      "filePath": "tests/message-card-citation-link-normalization.test.ts",
+      "summary": "源码模块 tests/message-card-citation-link-normalization.test.ts，体量 30 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/message-card-claude-layout.test.ts",
+      "type": "file",
+      "name": "message-card-claude-layout.test.ts",
+      "filePath": "tests/message-card-claude-layout.test.ts",
+      "summary": "源码模块 tests/message-card-claude-layout.test.ts，包含 1 个函数，约 24 行有效代码。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/message-card-file-attachment-layout.test.ts",
+      "type": "file",
+      "name": "message-card-file-attachment-layout.test.ts",
+      "filePath": "tests/message-card-file-attachment-layout.test.ts",
+      "summary": "源码模块 tests/message-card-file-attachment-layout.test.ts，包含 1 个函数，约 24 行有效代码。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/message-card-link-handling.test.ts",
+      "type": "file",
+      "name": "message-card-link-handling.test.ts",
+      "filePath": "tests/message-card-link-handling.test.ts",
+      "summary": "源码模块 tests/message-card-link-handling.test.ts，包含 1 个函数，约 36 行有效代码。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/message-markdown-katex.test.ts",
+      "type": "file",
+      "name": "message-markdown-katex.test.ts",
+      "filePath": "tests/message-markdown-katex.test.ts",
+      "summary": "源码模块 tests/message-markdown-katex.test.ts，体量 22 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/mocks/electron.ts",
+      "type": "file",
+      "name": "electron.ts",
+      "filePath": "tests/mocks/electron.ts",
+      "summary": "TypeScript/JavaScript 模块 tests/mocks/electron.ts，导出 2 个类与 2 个函数，是应用逻辑的一部分。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "class:tests/mocks/electron.ts:MockBrowserWindow",
+      "type": "class",
+      "name": "MockBrowserWindow",
+      "filePath": "tests/mocks/electron.ts",
+      "summary": "类 MockBrowserWindow，含 5 个方法，位于 tests/mocks/electron.ts。",
+      "tags": ["module", "type-definition"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/nav-server-session-id-validation.test.ts",
+      "type": "file",
+      "name": "nav-server-session-id-validation.test.ts",
+      "filePath": "tests/nav-server-session-id-validation.test.ts",
+      "summary": "源码模块 tests/nav-server-session-id-validation.test.ts，体量 39 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/omni-worker-logo-entry.test.ts",
+      "type": "file",
+      "name": "omni-worker-logo-entry.test.ts",
+      "filePath": "tests/omni-worker-logo-entry.test.ts",
+      "summary": "源码模块 tests/omni-worker-logo-entry.test.ts，体量 15 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/plugin-runtime-service.test.ts",
+      "type": "file",
+      "name": "plugin-runtime-service.test.ts",
+      "filePath": "tests/plugin-runtime-service.test.ts",
+      "summary": "源码模块 tests/plugin-runtime-service.test.ts，包含 2 个函数，约 370 行有效代码。",
+      "tags": ["test"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "type": "function",
+      "name": "createPluginFixture",
+      "filePath": "tests/plugin-runtime-service.test.ts",
+      "summary": "函数 createPluginFixture，位于 tests/plugin-runtime-service.test.ts 第 34-73 行。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/prose-chat-list-style.test.ts",
+      "type": "file",
+      "name": "prose-chat-list-style.test.ts",
+      "filePath": "tests/prose-chat-list-style.test.ts",
+      "summary": "源码模块 tests/prose-chat-list-style.test.ts，包含 1 个函数，约 27 行有效代码。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/provider-guidance-ui.test.ts",
+      "type": "file",
+      "name": "provider-guidance-ui.test.ts",
+      "filePath": "tests/provider-guidance-ui.test.ts",
+      "summary": "源码模块 tests/provider-guidance-ui.test.ts，体量 26 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/remote-control-panel-claude-layout.test.ts",
+      "type": "file",
+      "name": "remote-control-panel-claude-layout.test.ts",
+      "filePath": "tests/remote-control-panel-claude-layout.test.ts",
+      "summary": "源码模块 tests/remote-control-panel-claude-layout.test.ts，体量 11 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/remote-control-panel-imports.test.ts",
+      "type": "file",
+      "name": "remote-control-panel-imports.test.ts",
+      "filePath": "tests/remote-control-panel-imports.test.ts",
+      "summary": "源码模块 tests/remote-control-panel-imports.test.ts，体量 16 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:tests/database-path-recovery.test.ts",
+      "target": "function:tests/database-path-recovery.test.ts:mockElectron",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/database-path-recovery.test.ts",
+      "target": "function:tests/database-path-recovery.test.ts:mockBetterSqlite",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:tests/database-path-recovery.test.ts:mockElectron",
+      "target": "function:tests/database-path-recovery.test.ts:vi.doMock",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/database-path-recovery.test.ts:mockBetterSqlite",
+      "target": "function:tests/database-path-recovery.test.ts:vi.doMock",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/logger-context.test.ts",
+      "target": "function:tests/logger-context.test.ts:getLogContent",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:tests/logger-context.test.ts:getLogContent",
+      "target": "function:tests/logger-context.test.ts:import",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/logger-context.test.ts:getLogContent",
+      "target": "function:tests/logger-context.test.ts:logger.getLogFilePath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/logger-context.test.ts:getLogContent",
+      "target": "function:tests/logger-context.test.ts:expect(logFilePath).toBeTruthy",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/logger-context.test.ts:getLogContent",
+      "target": "function:tests/logger-context.test.ts:expect",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/logger-context.test.ts:getLogContent",
+      "target": "function:tests/logger-context.test.ts:logger.closeLogFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/logger-context.test.ts:getLogContent",
+      "target": "function:tests/logger-context.test.ts:resolve",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/logger-context.test.ts:getLogContent",
+      "target": "function:tests/logger-context.test.ts:stream.once",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/logger-context.test.ts:getLogContent",
+      "target": "function:tests/logger-context.test.ts:stream.once",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/logger-context.test.ts:getLogContent",
+      "target": "function:tests/logger-context.test.ts:setTimeout",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/logger-context.test.ts:getLogContent",
+      "target": "function:tests/logger-context.test.ts:fs.readFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/message-markdown-katex.test.ts",
+      "target": "file:src/renderer/components/MessageMarkdown.tsx",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/mocks/electron.ts",
+      "target": "class:tests/mocks/electron.ts:MockBrowserWindow",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/plugin-runtime-service.test.ts",
+      "target": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "target": "function:tests/plugin-runtime-service.test.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "target": "function:tests/plugin-runtime-service.test.ts:fs.mkdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "target": "function:tests/plugin-runtime-service.test.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "target": "function:tests/plugin-runtime-service.test.ts:fs.writeFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "target": "function:tests/plugin-runtime-service.test.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "target": "function:tests/plugin-runtime-service.test.ts:JSON.stringify",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "target": "function:tests/plugin-runtime-service.test.ts:fs.mkdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "target": "function:tests/plugin-runtime-service.test.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "target": "function:tests/plugin-runtime-service.test.ts:fs.writeFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "target": "function:tests/plugin-runtime-service.test.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "target": "function:tests/plugin-runtime-service.test.ts:fs.mkdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "target": "function:tests/plugin-runtime-service.test.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "target": "function:tests/plugin-runtime-service.test.ts:fs.writeFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "target": "function:tests/plugin-runtime-service.test.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "target": "function:tests/plugin-runtime-service.test.ts:fs.mkdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "target": "function:tests/plugin-runtime-service.test.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "target": "function:tests/plugin-runtime-service.test.ts:fs.writeFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "target": "function:tests/plugin-runtime-service.test.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "target": "function:tests/plugin-runtime-service.test.ts:fs.mkdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "target": "function:tests/plugin-runtime-service.test.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "target": "function:tests/plugin-runtime-service.test.ts:fs.writeFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "target": "function:tests/plugin-runtime-service.test.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "target": "function:tests/plugin-runtime-service.test.ts:JSON.stringify",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "target": "function:tests/plugin-runtime-service.test.ts:fs.writeFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "target": "function:tests/plugin-runtime-service.test.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-runtime-service.test.ts:createPluginFixture",
+      "target": "function:tests/plugin-runtime-service.test.ts:JSON.stringify",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ]
+}

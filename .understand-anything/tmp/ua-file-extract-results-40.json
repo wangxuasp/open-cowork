@@ -1,0 +1,1409 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".claude/skills/visio/templates/style_profiles.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 998,
+      "nonEmptyLines": 998,
+      "sections": [
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "default_profile",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "profiles",
+          "level": 1,
+          "line": 4
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": ".claude/skills/visio/templates/visio_components.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 1241,
+      "nonEmptyLines": 1241,
+      "sections": [
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "node_types",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "edge_types",
+          "level": 1,
+          "line": 1064
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": ".claude/skills/visio/tests/test_public_release_smoke.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 345,
+      "nonEmptyLines": 311,
+      "functions": [
+        {
+          "name": "run_script",
+          "startLine": 17,
+          "endLine": 23,
+          "params": ["script"]
+        },
+        {
+          "name": "test_public_release_files_are_present",
+          "startLine": 26,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "test_basic_scene_validates",
+          "startLine": 46,
+          "endLine": 49,
+          "params": []
+        },
+        {
+          "name": "test_rounded_orthogonal_points_rounds_only_the_corner",
+          "startLine": 52,
+          "endLine": 64,
+          "params": []
+        },
+        {
+          "name": "test_pixel_corner_radius_is_scaled_to_inches",
+          "startLine": 67,
+          "endLine": 91,
+          "params": []
+        },
+        {
+          "name": "test_rounded_orthogonal_connector_validates_and_routes",
+          "startLine": 94,
+          "endLine": 128,
+          "params": []
+        },
+        {
+          "name": "test_rounded_orthogonal_example_passes_strict_contract",
+          "startLine": 131,
+          "endLine": 135,
+          "params": []
+        },
+        {
+          "name": "test_review_bundle_and_checklist_gate",
+          "startLine": 138,
+          "endLine": 232,
+          "params": ["tmp_path"]
+        },
+        {
+          "name": "test_arrow_plan_gate_accepts_bound_horizontal_arrow",
+          "startLine": 235,
+          "endLine": 289,
+          "params": ["tmp_path"]
+        },
+        {
+          "name": "test_arrow_plan_gate_rejects_diagonal_horizontal_arrow",
+          "startLine": 292,
+          "endLine": 345,
+          "params": ["tmp_path"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "run_script",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "test_public_release_files_are_present",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "test_basic_scene_validates",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "test_rounded_orthogonal_points_rounds_only_the_corner",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "test_pixel_corner_radius_is_scaled_to_inches",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "test_rounded_orthogonal_connector_validates_and_routes",
+          "line": 94,
+          "isDefault": false
+        },
+        {
+          "name": "test_rounded_orthogonal_example_passes_strict_contract",
+          "line": 131,
+          "isDefault": false
+        },
+        {
+          "name": "test_review_bundle_and_checklist_gate",
+          "line": 138,
+          "isDefault": false
+        },
+        {
+          "name": "test_arrow_plan_gate_accepts_bound_horizontal_arrow",
+          "line": 235,
+          "isDefault": false
+        },
+        {
+          "name": "test_arrow_plan_gate_rejects_diagonal_horizontal_arrow",
+          "line": 292,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "run_script",
+          "callee": "subprocess.run",
+          "lineNumber": 18
+        },
+        {
+          "caller": "run_script",
+          "callee": "str",
+          "lineNumber": 19
+        },
+        {
+          "caller": "test_public_release_files_are_present",
+          "callee": "(ROOT / rel).exists",
+          "lineNumber": 43
+        },
+        {
+          "caller": "test_basic_scene_validates",
+          "callee": "run_script",
+          "lineNumber": 47
+        },
+        {
+          "caller": "test_basic_scene_validates",
+          "callee": "str",
+          "lineNumber": 47
+        },
+        {
+          "caller": "test_rounded_orthogonal_points_rounds_only_the_corner",
+          "callee": "rounded_orthogonal_points",
+          "lineNumber": 54
+        },
+        {
+          "caller": "test_rounded_orthogonal_points_rounds_only_the_corner",
+          "callee": "any",
+          "lineNumber": 59
+        },
+        {
+          "caller": "test_rounded_orthogonal_points_rounds_only_the_corner",
+          "callee": "abs",
+          "lineNumber": 59
+        },
+        {
+          "caller": "test_rounded_orthogonal_points_rounds_only_the_corner",
+          "callee": "abs",
+          "lineNumber": 59
+        },
+        {
+          "caller": "test_rounded_orthogonal_points_rounds_only_the_corner",
+          "callee": "any",
+          "lineNumber": 60
+        },
+        {
+          "caller": "test_rounded_orthogonal_points_rounds_only_the_corner",
+          "callee": "abs",
+          "lineNumber": 60
+        },
+        {
+          "caller": "test_rounded_orthogonal_points_rounds_only_the_corner",
+          "callee": "abs",
+          "lineNumber": 60
+        },
+        {
+          "caller": "test_rounded_orthogonal_points_rounds_only_the_corner",
+          "callee": "all",
+          "lineNumber": 61
+        },
+        {
+          "caller": "test_pixel_corner_radius_is_scaled_to_inches",
+          "callee": "normalize_scene_coordinates",
+          "lineNumber": 89
+        },
+        {
+          "caller": "test_rounded_orthogonal_connector_validates_and_routes",
+          "callee": "Path.cwd",
+          "lineNumber": 115
+        },
+        {
+          "caller": "test_rounded_orthogonal_connector_validates_and_routes",
+          "callee": "scene_path.write_text",
+          "lineNumber": 116
+        },
+        {
+          "caller": "test_rounded_orthogonal_connector_validates_and_routes",
+          "callee": "json.dumps",
+          "lineNumber": 116
+        },
+        {
+          "caller": "test_rounded_orthogonal_connector_validates_and_routes",
+          "callee": "run_script",
+          "lineNumber": 118
+        },
+        {
+          "caller": "test_rounded_orthogonal_connector_validates_and_routes",
+          "callee": "str",
+          "lineNumber": 118
+        },
+        {
+          "caller": "test_rounded_orthogonal_connector_validates_and_routes",
+          "callee": "scene_path.unlink",
+          "lineNumber": 121
+        },
+        {
+          "caller": "test_rounded_orthogonal_connector_validates_and_routes",
+          "callee": "load_component_map",
+          "lineNumber": 123
+        },
+        {
+          "caller": "test_rounded_orthogonal_connector_validates_and_routes",
+          "callee": "edge_style",
+          "lineNumber": 125
+        },
+        {
+          "caller": "test_rounded_orthogonal_connector_validates_and_routes",
+          "callee": "edge_route_points",
+          "lineNumber": 127
+        },
+        {
+          "caller": "test_rounded_orthogonal_example_passes_strict_contract",
+          "callee": "run_script",
+          "lineNumber": 133
+        },
+        {
+          "caller": "test_rounded_orthogonal_example_passes_strict_contract",
+          "callee": "str",
+          "lineNumber": 133
+        },
+        {
+          "caller": "test_review_bundle_and_checklist_gate",
+          "callee": "Image.new(\"RGB\", (320, 180), \"white\").save",
+          "lineNumber": 144
+        },
+        {
+          "caller": "test_review_bundle_and_checklist_gate",
+          "callee": "Image.new",
+          "lineNumber": 144
+        },
+        {
+          "caller": "test_review_bundle_and_checklist_gate",
+          "callee": "Image.new(\"RGB\", (320, 180), (245, 248, 255)).save",
+          "lineNumber": 145
+        },
+        {
+          "caller": "test_review_bundle_and_checklist_gate",
+          "callee": "Image.new",
+          "lineNumber": 145
+        },
+        {
+          "caller": "test_review_bundle_and_checklist_gate",
+          "callee": "scene.write_text",
+          "lineNumber": 146
+        },
+        {
+          "caller": "test_review_bundle_and_checklist_gate",
+          "callee": "json.dumps",
+          "lineNumber": 147
+        },
+        {
+          "caller": "test_review_bundle_and_checklist_gate",
+          "callee": "run_script",
+          "lineNumber": 158
+        },
+        {
+          "caller": "test_review_bundle_and_checklist_gate",
+          "callee": "str",
+          "lineNumber": 161
+        },
+        {
+          "caller": "test_review_bundle_and_checklist_gate",
+          "callee": "str",
+          "lineNumber": 163
+        },
+        {
+          "caller": "test_review_bundle_and_checklist_gate",
+          "callee": "str",
+          "lineNumber": 165
+        },
+        {
+          "caller": "test_review_bundle_and_checklist_gate",
+          "callee": "str",
+          "lineNumber": 172
+        },
+        {
+          "caller": "test_review_bundle_and_checklist_gate",
+          "callee": "findings.write_text",
+          "lineNumber": 178
+        },
+        {
+          "caller": "test_review_bundle_and_checklist_gate",
+          "callee": "json.dumps",
+          "lineNumber": 179
+        },
+        {
+          "caller": "test_review_bundle_and_checklist_gate",
+          "callee": "run_script",
+          "lineNumber": 225
+        },
+        {
+          "caller": "test_review_bundle_and_checklist_gate",
+          "callee": "str",
+          "lineNumber": 227
+        },
+        {
+          "caller": "test_review_bundle_and_checklist_gate",
+          "callee": "str",
+          "lineNumber": 229
+        },
+        {
+          "caller": "test_arrow_plan_gate_accepts_bound_horizontal_arrow",
+          "callee": "scene.write_text",
+          "lineNumber": 237
+        },
+        {
+          "caller": "test_arrow_plan_gate_accepts_bound_horizontal_arrow",
+          "callee": "json.dumps",
+          "lineNumber": 238
+        },
+        {
+          "caller": "test_arrow_plan_gate_accepts_bound_horizontal_arrow",
+          "callee": "run_script",
+          "lineNumber": 288
+        },
+        {
+          "caller": "test_arrow_plan_gate_accepts_bound_horizontal_arrow",
+          "callee": "str",
+          "lineNumber": 288
+        },
+        {
+          "caller": "test_arrow_plan_gate_rejects_diagonal_horizontal_arrow",
+          "callee": "scene.write_text",
+          "lineNumber": 294
+        },
+        {
+          "caller": "test_arrow_plan_gate_rejects_diagonal_horizontal_arrow",
+          "callee": "json.dumps",
+          "lineNumber": 295
+        },
+        {
+          "caller": "test_arrow_plan_gate_rejects_diagonal_horizontal_arrow",
+          "callee": "run_script",
+          "lineNumber": 343
+        },
+        {
+          "caller": "test_arrow_plan_gate_rejects_diagonal_horizontal_arrow",
+          "callee": "str",
+          "lineNumber": 343
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 10,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".claude/skills/xlsx/LICENSE.txt",
+      "language": "txt",
+      "fileCategory": "docs",
+      "totalLines": 30,
+      "nonEmptyLines": 25,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/xlsx/recalc.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 247,
+      "nonEmptyLines": 203,
+      "functions": [
+        {
+          "name": "ensure_xvfb_running",
+          "startLine": 34,
+          "endLine": 69,
+          "params": []
+        },
+        {
+          "name": "has_gtimeout",
+          "startLine": 72,
+          "endLine": 80,
+          "params": []
+        },
+        {
+          "name": "setup_libreoffice_macro",
+          "startLine": 83,
+          "endLine": 111,
+          "params": []
+        },
+        {
+          "name": "recalc",
+          "startLine": 114,
+          "endLine": 224,
+          "params": ["filename", "timeout"]
+        },
+        {
+          "name": "main",
+          "startLine": 227,
+          "endLine": 243,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ensure_xvfb_running",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "has_gtimeout",
+          "line": 72,
+          "isDefault": false
+        },
+        {
+          "name": "setup_libreoffice_macro",
+          "line": 83,
+          "isDefault": false
+        },
+        {
+          "name": "recalc",
+          "line": 114,
+          "isDefault": false
+        },
+        {
+          "name": "main",
+          "line": 227,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ensure_xvfb_running",
+          "callee": "platform.system",
+          "lineNumber": 37
+        },
+        {
+          "caller": "ensure_xvfb_running",
+          "callee": "os.environ.get",
+          "lineNumber": 37
+        },
+        {
+          "caller": "ensure_xvfb_running",
+          "callee": "subprocess.run",
+          "lineNumber": 42
+        },
+        {
+          "caller": "ensure_xvfb_running",
+          "callee": "result.stdout.strip",
+          "lineNumber": 45
+        },
+        {
+          "caller": "ensure_xvfb_running",
+          "callee": "subprocess.Popen",
+          "lineNumber": 53
+        },
+        {
+          "caller": "ensure_xvfb_running",
+          "callee": "RuntimeError",
+          "lineNumber": 59
+        },
+        {
+          "caller": "ensure_xvfb_running",
+          "callee": "range",
+          "lineNumber": 65
+        },
+        {
+          "caller": "ensure_xvfb_running",
+          "callee": "os.path.exists",
+          "lineNumber": 66
+        },
+        {
+          "caller": "ensure_xvfb_running",
+          "callee": "time.sleep",
+          "lineNumber": 68
+        },
+        {
+          "caller": "ensure_xvfb_running",
+          "callee": "RuntimeError",
+          "lineNumber": 69
+        },
+        {
+          "caller": "has_gtimeout",
+          "callee": "subprocess.run",
+          "lineNumber": 75
+        },
+        {
+          "caller": "setup_libreoffice_macro",
+          "callee": "os.path.expanduser",
+          "lineNumber": 85
+        },
+        {
+          "caller": "setup_libreoffice_macro",
+          "callee": "platform.system",
+          "lineNumber": 86
+        },
+        {
+          "caller": "setup_libreoffice_macro",
+          "callee": "os.path.join",
+          "lineNumber": 88
+        },
+        {
+          "caller": "setup_libreoffice_macro",
+          "callee": "os.path.exists",
+          "lineNumber": 92
+        },
+        {
+          "caller": "setup_libreoffice_macro",
+          "callee": "Path(macro_file).read_text",
+          "lineNumber": 93
+        },
+        {
+          "caller": "setup_libreoffice_macro",
+          "callee": "Path",
+          "lineNumber": 93
+        },
+        {
+          "caller": "setup_libreoffice_macro",
+          "callee": "os.path.exists",
+          "lineNumber": 98
+        },
+        {
+          "caller": "setup_libreoffice_macro",
+          "callee": "subprocess.run",
+          "lineNumber": 99
+        },
+        {
+          "caller": "setup_libreoffice_macro",
+          "callee": "os.makedirs",
+          "lineNumber": 104
+        },
+        {
+          "caller": "setup_libreoffice_macro",
+          "callee": "Path(macro_file).write_text",
+          "lineNumber": 108
+        },
+        {
+          "caller": "setup_libreoffice_macro",
+          "callee": "Path",
+          "lineNumber": 108
+        },
+        {
+          "caller": "recalc",
+          "callee": "Path(filename).exists",
+          "lineNumber": 125
+        },
+        {
+          "caller": "recalc",
+          "callee": "Path",
+          "lineNumber": 125
+        },
+        {
+          "caller": "recalc",
+          "callee": "str",
+          "lineNumber": 128
+        },
+        {
+          "caller": "recalc",
+          "callee": "Path(filename).absolute",
+          "lineNumber": 128
+        },
+        {
+          "caller": "recalc",
+          "callee": "Path",
+          "lineNumber": 128
+        },
+        {
+          "caller": "recalc",
+          "callee": "setup_libreoffice_macro",
+          "lineNumber": 130
+        },
+        {
+          "caller": "recalc",
+          "callee": "ensure_xvfb_running",
+          "lineNumber": 134
+        },
+        {
+          "caller": "recalc",
+          "callee": "platform.system",
+          "lineNumber": 145
+        },
+        {
+          "caller": "recalc",
+          "callee": "str",
+          "lineNumber": 146
+        },
+        {
+          "caller": "recalc",
+          "callee": "platform.system",
+          "lineNumber": 147
+        },
+        {
+          "caller": "recalc",
+          "callee": "has_gtimeout",
+          "lineNumber": 147
+        },
+        {
+          "caller": "recalc",
+          "callee": "str",
+          "lineNumber": 148
+        },
+        {
+          "caller": "recalc",
+          "callee": "subprocess.run",
+          "lineNumber": 150
+        },
+        {
+          "caller": "recalc",
+          "callee": "load_workbook",
+          "lineNumber": 160
+        },
+        {
+          "caller": "recalc",
+          "callee": "ws.iter_rows",
+          "lineNumber": 177
+        },
+        {
+          "caller": "recalc",
+          "callee": "isinstance",
+          "lineNumber": 179
+        },
+        {
+          "caller": "recalc",
+          "callee": "error_details[err].append",
+          "lineNumber": 183
+        },
+        {
+          "caller": "recalc",
+          "callee": "wb.close",
+          "lineNumber": 187
+        },
+        {
+          "caller": "recalc",
+          "callee": "error_details.items",
+          "lineNumber": 197
+        },
+        {
+          "caller": "recalc",
+          "callee": "len",
+          "lineNumber": 200
+        },
+        {
+          "caller": "recalc",
+          "callee": "load_workbook",
+          "lineNumber": 205
+        },
+        {
+          "caller": "recalc",
+          "callee": "ws.iter_rows",
+          "lineNumber": 209
+        },
+        {
+          "caller": "recalc",
+          "callee": "isinstance",
+          "lineNumber": 213
+        },
+        {
+          "caller": "recalc",
+          "callee": "cell.value.startswith",
+          "lineNumber": 214
+        },
+        {
+          "caller": "recalc",
+          "callee": "wb_formulas.close",
+          "lineNumber": 217
+        },
+        {
+          "caller": "recalc",
+          "callee": "str",
+          "lineNumber": 224
+        },
+        {
+          "caller": "main",
+          "callee": "len",
+          "lineNumber": 228
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 229
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 230
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 231
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 232
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 233
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 234
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 235
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 236
+        },
+        {
+          "caller": "main",
+          "callee": "sys.exit",
+          "lineNumber": 237
+        },
+        {
+          "caller": "main",
+          "callee": "int",
+          "lineNumber": 240
+        },
+        {
+          "caller": "main",
+          "callee": "len",
+          "lineNumber": 240
+        },
+        {
+          "caller": "main",
+          "callee": "recalc",
+          "lineNumber": 242
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 243
+        },
+        {
+          "caller": "main",
+          "callee": "json.dumps",
+          "lineNumber": 243
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".claude/skills/xlsx/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 289,
+      "nonEmptyLines": 222,
+      "sections": [
+        {
+          "heading": "Requirements for Outputs",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "All Excel files",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Zero Formula Errors",
+          "level": 3,
+          "line": 11
+        },
+        {
+          "heading": "Preserve Existing Templates (when updating templates)",
+          "level": 3,
+          "line": 14
+        },
+        {
+          "heading": "Financial models",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Color Coding Standards",
+          "level": 3,
+          "line": 21
+        },
+        {
+          "heading": "Industry-Standard Color Conventions",
+          "level": 4,
+          "line": 24
+        },
+        {
+          "heading": "Number Formatting Standards",
+          "level": 3,
+          "line": 31
+        },
+        {
+          "heading": "Required Format Rules",
+          "level": 4,
+          "line": 33
+        },
+        {
+          "heading": "Formula Construction Rules",
+          "level": 3,
+          "line": 41
+        },
+        {
+          "heading": "Assumptions Placement",
+          "level": 4,
+          "line": 43
+        },
+        {
+          "heading": "Formula Error Prevention",
+          "level": 4,
+          "line": 48
+        },
+        {
+          "heading": "Documentation Requirements for Hardcodes",
+          "level": 4,
+          "line": 55
+        },
+        {
+          "heading": "XLSX creation, editing, and analysis",
+          "level": 1,
+          "line": 63
+        },
+        {
+          "heading": "Overview",
+          "level": 2,
+          "line": 65
+        },
+        {
+          "heading": "Important Requirements",
+          "level": 2,
+          "line": 69
+        },
+        {
+          "heading": "Reading and analyzing data",
+          "level": 2,
+          "line": 73
+        },
+        {
+          "heading": "Data analysis with pandas",
+          "level": 3,
+          "line": 75
+        },
+        {
+          "heading": "Excel File Workflows",
+          "level": 2,
+          "line": 94
+        },
+        {
+          "heading": "CRITICAL: Use Formulas, Not Hardcoded Values",
+          "level": 2,
+          "line": 96
+        },
+        {
+          "heading": "❌ WRONG - Hardcoding Calculated Values",
+          "level": 3,
+          "line": 100
+        },
+        {
+          "heading": "✅ CORRECT - Using Excel Formulas",
+          "level": 3,
+          "line": 115
+        },
+        {
+          "heading": "Common Workflow",
+          "level": 2,
+          "line": 129
+        },
+        {
+          "heading": "Creating new Excel files",
+          "level": 3,
+          "line": 148
+        },
+        {
+          "heading": "Editing existing Excel files",
+          "level": 3,
+          "line": 177
+        },
+        {
+          "heading": "Recalculating formulas",
+          "level": 2,
+          "line": 204
+        },
+        {
+          "heading": "Formula Verification Checklist",
+          "level": 2,
+          "line": 224
+        },
+        {
+          "heading": "Essential Verification",
+          "level": 3,
+          "line": 228
+        },
+        {
+          "heading": "Common Pitfalls",
+          "level": 3,
+          "line": 233
+        },
+        {
+          "heading": "Formula Testing Strategy",
+          "level": 3,
+          "line": 241
+        },
+        {
+          "heading": "Interpreting recalc.py Output",
+          "level": 3,
+          "line": 246
+        },
+        {
+          "heading": "Best Practices",
+          "level": 2,
+          "line": 262
+        },
+        {
+          "heading": "Library Selection",
+          "level": 3,
+          "line": 264
+        },
+        {
+          "heading": "Working with openpyxl",
+          "level": 3,
+          "line": 268
+        },
+        {
+          "heading": "Working with pandas",
+          "level": 3,
+          "line": 275
+        },
+        {
+          "heading": "Code Style Guidelines",
+          "level": 2,
+          "line": 280
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 36
+      }
+    },
+    {
+      "path": ".cursor/rules/codegraph.mdc",
+      "language": "mdc",
+      "fileCategory": "code",
+      "totalLines": 39,
+      "nonEmptyLines": 31,
+      "metrics": {}
+    },
+    {
+      "path": ".cursor/rules/karpathy-guidelines.mdc",
+      "language": "mdc",
+      "fileCategory": "code",
+      "totalLines": 70,
+      "nonEmptyLines": 48,
+      "metrics": {}
+    },
+    {
+      "path": ".gitattributes",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 24,
+      "metrics": {}
+    },
+    {
+      "path": ".github/CODEOWNERS",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 14,
+      "metrics": {}
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 79,
+      "nonEmptyLines": 71,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "description",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "labels",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "body",
+          "level": 1,
+          "line": 4
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.yml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 66,
+      "nonEmptyLines": 60,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "description",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "labels",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "body",
+          "level": 1,
+          "line": 4
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": ".github/prompts/codex-pr-review.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 161,
+      "nonEmptyLines": 122,
+      "sections": [
+        {
+          "heading": "Open Cowork PR Review Assistant",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Security",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Project Context",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "PR Context (required)",
+          "level": 2,
+          "line": 35
+        },
+        {
+          "heading": "Task",
+          "level": 2,
+          "line": 68
+        },
+        {
+          "heading": "Response Guidelines",
+          "level": 2,
+          "line": 78
+        },
+        {
+          "heading": "Response Format",
+          "level": 2,
+          "line": 96
+        },
+        {
+          "heading": "Post Response to Github",
+          "level": 2,
+          "line": 119
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".github/prompts/issue-auto-response.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 93,
+      "nonEmptyLines": 61,
+      "sections": [
+        {
+          "heading": "Open Cowork Issue Response Assistant",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Security",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Issue Context (required)",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Skip Conditions",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Project Context",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "Task",
+          "level": 2,
+          "line": 47
+        },
+        {
+          "heading": "Response Guidelines",
+          "level": 2,
+          "line": 54
+        },
+        {
+          "heading": "Response Format",
+          "level": 2,
+          "line": 62
+        },
+        {
+          "heading": "Post to GitHub (MANDATORY)",
+          "level": 2,
+          "line": 81
+        },
+        {
+          "heading": "Constraints",
+          "level": 2,
+          "line": 89
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".husky/commit-msg",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 2,
+      "nonEmptyLines": 2,
+      "metrics": {}
+    },
+    {
+      "path": ".husky/pre-commit",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 25,
+      "metrics": {}
+    },
+    {
+      "path": ".npmrc",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 11,
+      "metrics": {}
+    },
+    {
+      "path": ".nvmrc",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {}
+    },
+    {
+      "path": ".understand-anything/.understandignore",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 95,
+      "nonEmptyLines": 89,
+      "metrics": {}
+    },
+    {
+      "path": ".understand-anything/config.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": "commitlint.config.cjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 26,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "docs/memory-live-smoke-checklist.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 51,
+      "nonEmptyLines": 38,
+      "sections": [
+        {
+          "heading": "Memory Live Smoke Checklist",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. Core Memory Retention",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "2. Unified Experience Recall",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "3. Cross-Workspace Recall",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "4. Source Provenance",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "5. Maintenance Actions",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "6. Non-Interactive Flows",
+          "level": 2,
+          "line": 46
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": "patches/@mariozechner+pi-ai+0.60.0.patch",
+      "language": "patch",
+      "fileCategory": "code",
+      "totalLines": 63,
+      "nonEmptyLines": 63,
+      "metrics": {}
+    },
+    {
+      "path": "postcss.config.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 6,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "resources/entitlements.mac.plist",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 23,
+      "nonEmptyLines": 22,
+      "metrics": {}
+    }
+  ]
+}

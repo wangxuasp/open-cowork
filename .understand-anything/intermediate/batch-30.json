@@ -1,0 +1,75 @@
+{
+  "nodes": [
+    {
+      "id": "config:.claude/skills/pptx/ooxml/schemas/microsoft/wml-2010.xsd",
+      "type": "config",
+      "name": "wml-2010.xsd",
+      "filePath": ".claude/skills/pptx/ooxml/schemas/microsoft/wml-2010.xsd",
+      "summary": "配置文件 wml-2010.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "complex",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/pptx/ooxml/schemas/microsoft/wml-2012.xsd",
+      "type": "config",
+      "name": "wml-2012.xsd",
+      "filePath": ".claude/skills/pptx/ooxml/schemas/microsoft/wml-2012.xsd",
+      "summary": "配置文件 wml-2012.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "moderate",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/pptx/ooxml/schemas/microsoft/wml-2018.xsd",
+      "type": "config",
+      "name": "wml-2018.xsd",
+      "filePath": ".claude/skills/pptx/ooxml/schemas/microsoft/wml-2018.xsd",
+      "summary": "配置文件 wml-2018.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/pptx/ooxml/schemas/microsoft/wml-cex-2018.xsd",
+      "type": "config",
+      "name": "wml-cex-2018.xsd",
+      "filePath": ".claude/skills/pptx/ooxml/schemas/microsoft/wml-cex-2018.xsd",
+      "summary": "配置文件 wml-cex-2018.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/pptx/ooxml/schemas/microsoft/wml-cid-2016.xsd",
+      "type": "config",
+      "name": "wml-cid-2016.xsd",
+      "filePath": ".claude/skills/pptx/ooxml/schemas/microsoft/wml-cid-2016.xsd",
+      "summary": "配置文件 wml-cid-2016.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/pptx/ooxml/schemas/microsoft/wml-sdtdatahash-2020.xsd",
+      "type": "config",
+      "name": "wml-sdtdatahash-2020.xsd",
+      "filePath": ".claude/skills/pptx/ooxml/schemas/microsoft/wml-sdtdatahash-2020.xsd",
+      "summary": "配置文件 wml-sdtdatahash-2020.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/pptx/ooxml/schemas/microsoft/wml-symex-2015.xsd",
+      "type": "config",
+      "name": "wml-symex-2015.xsd",
+      "filePath": ".claude/skills/pptx/ooxml/schemas/microsoft/wml-symex-2015.xsd",
+      "summary": "配置文件 wml-symex-2015.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "xml"
+    }
+  ],
+  "edges": []
+}

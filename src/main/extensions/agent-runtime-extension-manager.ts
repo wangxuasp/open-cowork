@@ -46,6 +46,12 @@ export class AgentRuntimeExtensionManager {
         if (!result) {
           continue;
         }
+        if (result.blocked) {
+          return {
+            blocked: true,
+            blockReason: result.blockReason?.trim() || 'Agent session blocked',
+          };
+        }
         if (result.promptPrefix?.trim()) {
           promptPrefixes.push(result.promptPrefix.trim());
         }

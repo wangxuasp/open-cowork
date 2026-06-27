@@ -1,0 +1,450 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/main/claude/agent-runner-message-end.ts",
+      "type": "file",
+      "name": "agent-runner-message-end.ts",
+      "filePath": "src/main/claude/agent-runner-message-end.ts",
+      "summary": "源码模块 src/main/claude/agent-runner-message-end.ts，包含 2 个函数，约 121 行有效代码。",
+      "tags": ["entry-point", "service"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "type": "function",
+      "name": "toUserFacingErrorText",
+      "filePath": "src/main/claude/agent-runner-message-end.ts",
+      "summary": "函数 toUserFacingErrorText，位于 src/main/claude/agent-runner-message-end.ts 第 20-73 行。",
+      "tags": ["entry-point", "service"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/claude/agent-runner-message-end.ts:resolveMessageEndPayload",
+      "type": "function",
+      "name": "resolveMessageEndPayload",
+      "filePath": "src/main/claude/agent-runner-message-end.ts",
+      "summary": "函数 resolveMessageEndPayload，位于 src/main/claude/agent-runner-message-end.ts 第 75-132 行。",
+      "tags": ["entry-point", "service"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/claude/think-tag-parser.ts",
+      "type": "file",
+      "name": "think-tag-parser.ts",
+      "filePath": "src/main/claude/think-tag-parser.ts",
+      "summary": "TypeScript/JavaScript 模块 src/main/claude/think-tag-parser.ts，导出 1 个类与 1 个函数，是应用逻辑的一部分。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/claude/think-tag-parser.ts:splitThinkTagBlocks",
+      "type": "function",
+      "name": "splitThinkTagBlocks",
+      "filePath": "src/main/claude/think-tag-parser.ts",
+      "summary": "函数 splitThinkTagBlocks，位于 src/main/claude/think-tag-parser.ts 第 137-165 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/main/claude/think-tag-parser.ts:ThinkTagStreamParser",
+      "type": "class",
+      "name": "ThinkTagStreamParser",
+      "filePath": "src/main/claude/think-tag-parser.ts",
+      "summary": "类 ThinkTagStreamParser，含 2 个方法，位于 src/main/claude/think-tag-parser.ts。",
+      "tags": ["module", "type-definition"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/agent-runner-message-end.test.ts",
+      "type": "file",
+      "name": "agent-runner-message-end.test.ts",
+      "filePath": "tests/agent-runner-message-end.test.ts",
+      "summary": "源码模块 tests/agent-runner-message-end.test.ts，体量 122 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test", "entry-point", "service"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/think-tag-parser.test.ts",
+      "type": "file",
+      "name": "think-tag-parser.test.ts",
+      "filePath": "tests/think-tag-parser.test.ts",
+      "summary": "源码模块 tests/think-tag-parser.test.ts，包含 1 个函数，约 176 行有效代码。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/think-tag-parser.test.ts:extractThinkTags",
+      "type": "function",
+      "name": "extractThinkTags",
+      "filePath": "tests/think-tag-parser.test.ts",
+      "summary": "函数 extractThinkTags，位于 tests/think-tag-parser.test.ts 第 128-140 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/main/claude/agent-runner-message-end.ts",
+      "target": "file:src/main/claude/think-tag-parser.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/claude/agent-runner-message-end.ts",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/claude/agent-runner-message-end.ts",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:resolveMessageEndPayload",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:errorText.toLowerCase",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:lower.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:lower.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:/\\b400\\b/.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:lower.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:lower.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:/\\b(401|403)\\b/.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:lower.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:lower.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:/\\b429\\b/.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:lower.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:lower.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:/\\b(5\\d{2})\\b/.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:lower.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:lower.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:lower.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:lower.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:lower.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:lower.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:lower.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:lower.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:lower.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:lower.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:lower.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:lower.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:lower.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:lower.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:resolveMessageEndPayload",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:resolveMessageEndPayload",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:Array.isArray",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:resolveMessageEndPayload",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:toUserFacingErrorText",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:resolveMessageEndPayload",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:splitThinkTagBlocks",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:resolveMessageEndPayload",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:effectiveContent.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:resolveMessageEndPayload",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:effectiveContent.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/agent-runner-message-end.ts:resolveMessageEndPayload",
+      "target": "function:src/main/claude/agent-runner-message-end.ts:effectiveContent.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/claude/think-tag-parser.ts",
+      "target": "function:src/main/claude/think-tag-parser.ts:splitThinkTagBlocks",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/claude/think-tag-parser.ts",
+      "target": "class:src/main/claude/think-tag-parser.ts:ThinkTagStreamParser",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/claude/think-tag-parser.ts:splitThinkTagBlocks",
+      "target": "function:src/main/claude/think-tag-parser.ts:input.indexOf",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/think-tag-parser.ts:splitThinkTagBlocks",
+      "target": "function:src/main/claude/think-tag-parser.ts:input.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/think-tag-parser.ts:splitThinkTagBlocks",
+      "target": "function:src/main/claude/think-tag-parser.ts:blocks.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/think-tag-parser.ts:splitThinkTagBlocks",
+      "target": "function:src/main/claude/think-tag-parser.ts:input.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/think-tag-parser.ts:splitThinkTagBlocks",
+      "target": "function:src/main/claude/think-tag-parser.ts:blocks.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/think-tag-parser.ts:splitThinkTagBlocks",
+      "target": "function:src/main/claude/think-tag-parser.ts:input.indexOf",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/think-tag-parser.ts:splitThinkTagBlocks",
+      "target": "function:src/main/claude/think-tag-parser.ts:input.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/think-tag-parser.ts:splitThinkTagBlocks",
+      "target": "function:src/main/claude/think-tag-parser.ts:blocks.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/think-tag-parser.ts:splitThinkTagBlocks",
+      "target": "function:src/main/claude/think-tag-parser.ts:input.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/think-tag-parser.ts:splitThinkTagBlocks",
+      "target": "function:src/main/claude/think-tag-parser.ts:blocks.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/agent-runner-message-end.test.ts",
+      "target": "file:src/main/claude/agent-runner-message-end.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/think-tag-parser.test.ts",
+      "target": "file:src/main/claude/think-tag-parser.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/think-tag-parser.test.ts",
+      "target": "function:tests/think-tag-parser.test.ts:extractThinkTags",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:tests/think-tag-parser.test.ts:extractThinkTags",
+      "target": "function:tests/think-tag-parser.test.ts:splitThinkTagBlocks",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/think-tag-parser.test.ts:extractThinkTags",
+      "target": "function:tests/think-tag-parser.test.ts:blocks\n      .filter((b): b is Extract<typeof b, { type: 'thinking' }> => b.type === 'thinking')\n      .map((b) => b.thinking)\n      .join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/think-tag-parser.test.ts:extractThinkTags",
+      "target": "function:tests/think-tag-parser.test.ts:blocks\n      .filter((b): b is Extract<typeof b, { type: 'thinking' }> => b.type === 'thinking')\n      .map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/think-tag-parser.test.ts:extractThinkTags",
+      "target": "function:tests/think-tag-parser.test.ts:blocks\n      .filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/think-tag-parser.test.ts:extractThinkTags",
+      "target": "function:tests/think-tag-parser.test.ts:blocks\n      .filter((b): b is Extract<typeof b, { type: 'text' }> => b.type === 'text')\n      .map((b) => b.text)\n      .join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/think-tag-parser.test.ts:extractThinkTags",
+      "target": "function:tests/think-tag-parser.test.ts:blocks\n      .filter((b): b is Extract<typeof b, { type: 'text' }> => b.type === 'text')\n      .map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/think-tag-parser.test.ts:extractThinkTags",
+      "target": "function:tests/think-tag-parser.test.ts:blocks\n      .filter",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ]
+}

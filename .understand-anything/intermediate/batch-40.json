@@ -1,0 +1,1168 @@
+{
+  "nodes": [
+    {
+      "id": "config:.claude/skills/visio/templates/style_profiles.json",
+      "type": "config",
+      "name": "style_profiles.json",
+      "filePath": ".claude/skills/visio/templates/style_profiles.json",
+      "summary": "配置文件 style_profiles.json，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "complex",
+      "language": "json"
+    },
+    {
+      "id": "config:.claude/skills/visio/templates/visio_components.json",
+      "type": "config",
+      "name": "visio_components.json",
+      "filePath": ".claude/skills/visio/templates/visio_components.json",
+      "summary": "配置文件 visio_components.json，定义项目或运行时的关键参数与依赖。",
+      "tags": ["component", "ui", "configuration"],
+      "complexity": "complex",
+      "language": "json"
+    },
+    {
+      "id": "file:.claude/skills/visio/tests/test_public_release_smoke.py",
+      "type": "file",
+      "name": "test_public_release_smoke.py",
+      "filePath": ".claude/skills/visio/tests/test_public_release_smoke.py",
+      "summary": "源码模块 .claude/skills/visio/tests/test_public_release_smoke.py，包含 10 个函数，约 311 行有效代码。",
+      "tags": ["test", "utility"],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/visio/tests/test_public_release_smoke.py:run_script",
+      "type": "function",
+      "name": "run_script",
+      "filePath": ".claude/skills/visio/tests/test_public_release_smoke.py",
+      "summary": "函数 run_script，位于 .claude/skills/visio/tests/test_public_release_smoke.py 第 17-23 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_public_release_files_are_present",
+      "type": "function",
+      "name": "test_public_release_files_are_present",
+      "filePath": ".claude/skills/visio/tests/test_public_release_smoke.py",
+      "summary": "函数 test_public_release_files_are_present，位于 .claude/skills/visio/tests/test_public_release_smoke.py 第 26-43 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_basic_scene_validates",
+      "type": "function",
+      "name": "test_basic_scene_validates",
+      "filePath": ".claude/skills/visio/tests/test_public_release_smoke.py",
+      "summary": "函数 test_basic_scene_validates，位于 .claude/skills/visio/tests/test_public_release_smoke.py 第 46-49 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_rounded_orthogonal_points_rounds_only_the_corner",
+      "type": "function",
+      "name": "test_rounded_orthogonal_points_rounds_only_the_corner",
+      "filePath": ".claude/skills/visio/tests/test_public_release_smoke.py",
+      "summary": "函数 test_rounded_orthogonal_points_rounds_only_the_corner，位于 .claude/skills/visio/tests/test_public_release_smoke.py 第 52-64 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_pixel_corner_radius_is_scaled_to_inches",
+      "type": "function",
+      "name": "test_pixel_corner_radius_is_scaled_to_inches",
+      "filePath": ".claude/skills/visio/tests/test_public_release_smoke.py",
+      "summary": "函数 test_pixel_corner_radius_is_scaled_to_inches，位于 .claude/skills/visio/tests/test_public_release_smoke.py 第 67-91 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_rounded_orthogonal_connector_validates_and_routes",
+      "type": "function",
+      "name": "test_rounded_orthogonal_connector_validates_and_routes",
+      "filePath": ".claude/skills/visio/tests/test_public_release_smoke.py",
+      "summary": "函数 test_rounded_orthogonal_connector_validates_and_routes，位于 .claude/skills/visio/tests/test_public_release_smoke.py 第 94-128 行。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_rounded_orthogonal_example_passes_strict_contract",
+      "type": "function",
+      "name": "test_rounded_orthogonal_example_passes_strict_contract",
+      "filePath": ".claude/skills/visio/tests/test_public_release_smoke.py",
+      "summary": "函数 test_rounded_orthogonal_example_passes_strict_contract，位于 .claude/skills/visio/tests/test_public_release_smoke.py 第 131-135 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_review_bundle_and_checklist_gate",
+      "type": "function",
+      "name": "test_review_bundle_and_checklist_gate",
+      "filePath": ".claude/skills/visio/tests/test_public_release_smoke.py",
+      "summary": "函数 test_review_bundle_and_checklist_gate，位于 .claude/skills/visio/tests/test_public_release_smoke.py 第 138-232 行。",
+      "tags": ["test"],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_arrow_plan_gate_accepts_bound_horizontal_arrow",
+      "type": "function",
+      "name": "test_arrow_plan_gate_accepts_bound_horizontal_arrow",
+      "filePath": ".claude/skills/visio/tests/test_public_release_smoke.py",
+      "summary": "函数 test_arrow_plan_gate_accepts_bound_horizontal_arrow，位于 .claude/skills/visio/tests/test_public_release_smoke.py 第 235-289 行。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_arrow_plan_gate_rejects_diagonal_horizontal_arrow",
+      "type": "function",
+      "name": "test_arrow_plan_gate_rejects_diagonal_horizontal_arrow",
+      "filePath": ".claude/skills/visio/tests/test_public_release_smoke.py",
+      "summary": "函数 test_arrow_plan_gate_rejects_diagonal_horizontal_arrow，位于 .claude/skills/visio/tests/test_public_release_smoke.py 第 292-345 行。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "document:.claude/skills/xlsx/LICENSE.txt",
+      "type": "document",
+      "name": "LICENSE.txt",
+      "filePath": ".claude/skills/xlsx/LICENSE.txt",
+      "summary": "文档文件 LICENSE.txt，共约 25 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "simple",
+      "language": "txt"
+    },
+    {
+      "id": "file:.claude/skills/xlsx/recalc.py",
+      "type": "file",
+      "name": "recalc.py",
+      "filePath": ".claude/skills/xlsx/recalc.py",
+      "summary": "源码模块 .claude/skills/xlsx/recalc.py，包含 5 个函数，约 203 行有效代码。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/xlsx/recalc.py:ensure_xvfb_running",
+      "type": "function",
+      "name": "ensure_xvfb_running",
+      "filePath": ".claude/skills/xlsx/recalc.py",
+      "summary": "函数 ensure_xvfb_running，位于 .claude/skills/xlsx/recalc.py 第 34-69 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/xlsx/recalc.py:has_gtimeout",
+      "type": "function",
+      "name": "has_gtimeout",
+      "filePath": ".claude/skills/xlsx/recalc.py",
+      "summary": "函数 has_gtimeout，位于 .claude/skills/xlsx/recalc.py 第 72-80 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/xlsx/recalc.py:setup_libreoffice_macro",
+      "type": "function",
+      "name": "setup_libreoffice_macro",
+      "filePath": ".claude/skills/xlsx/recalc.py",
+      "summary": "函数 setup_libreoffice_macro，位于 .claude/skills/xlsx/recalc.py 第 83-111 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "type": "function",
+      "name": "recalc",
+      "filePath": ".claude/skills/xlsx/recalc.py",
+      "summary": "函数 recalc，位于 .claude/skills/xlsx/recalc.py 第 114-224 行。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/xlsx/recalc.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": ".claude/skills/xlsx/recalc.py",
+      "summary": "函数 main，位于 .claude/skills/xlsx/recalc.py 第 227-243 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "document:.claude/skills/xlsx/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": ".claude/skills/xlsx/SKILL.md",
+      "summary": "文档文件 SKILL.md，共约 222 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "complex",
+      "language": "markdown"
+    },
+    {
+      "id": "file:.cursor/rules/codegraph.mdc",
+      "type": "file",
+      "name": "codegraph.mdc",
+      "filePath": ".cursor/rules/codegraph.mdc",
+      "summary": "源码模块 .cursor/rules/codegraph.mdc，体量 31 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "mdc"
+    },
+    {
+      "id": "file:.cursor/rules/karpathy-guidelines.mdc",
+      "type": "file",
+      "name": "karpathy-guidelines.mdc",
+      "filePath": ".cursor/rules/karpathy-guidelines.mdc",
+      "summary": "源码模块 .cursor/rules/karpathy-guidelines.mdc，体量 48 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "mdc"
+    },
+    {
+      "id": "file:.gitattributes",
+      "type": "file",
+      "name": ".gitattributes",
+      "filePath": ".gitattributes",
+      "summary": "源码模块 .gitattributes，体量 24 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "unknown"
+    },
+    {
+      "id": "file:.github/CODEOWNERS",
+      "type": "file",
+      "name": "CODEOWNERS",
+      "filePath": ".github/CODEOWNERS",
+      "summary": "源码模块 .github/CODEOWNERS，体量 14 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "unknown"
+    },
+    {
+      "id": "config:.github/ISSUE_TEMPLATE/bug_report.yml",
+      "type": "config",
+      "name": "bug_report.yml",
+      "filePath": ".github/ISSUE_TEMPLATE/bug_report.yml",
+      "summary": "配置文件 bug_report.yml，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "moderate",
+      "language": "yaml"
+    },
+    {
+      "id": "config:.github/ISSUE_TEMPLATE/feature_request.yml",
+      "type": "config",
+      "name": "feature_request.yml",
+      "filePath": ".github/ISSUE_TEMPLATE/feature_request.yml",
+      "summary": "配置文件 feature_request.yml，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "moderate",
+      "language": "yaml"
+    },
+    {
+      "id": "document:.github/prompts/codex-pr-review.md",
+      "type": "document",
+      "name": "codex-pr-review.md",
+      "filePath": ".github/prompts/codex-pr-review.md",
+      "summary": "文档文件 codex-pr-review.md，共约 122 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "moderate",
+      "language": "markdown"
+    },
+    {
+      "id": "document:.github/prompts/issue-auto-response.md",
+      "type": "document",
+      "name": "issue-auto-response.md",
+      "filePath": ".github/prompts/issue-auto-response.md",
+      "summary": "文档文件 issue-auto-response.md，共约 61 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "moderate",
+      "language": "markdown"
+    },
+    {
+      "id": "file:.husky/commit-msg",
+      "type": "file",
+      "name": "commit-msg",
+      "filePath": ".husky/commit-msg",
+      "summary": "源码模块 .husky/commit-msg，体量 2 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "unknown"
+    },
+    {
+      "id": "file:.husky/pre-commit",
+      "type": "file",
+      "name": "pre-commit",
+      "filePath": ".husky/pre-commit",
+      "summary": "源码模块 .husky/pre-commit，体量 25 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "unknown"
+    },
+    {
+      "id": "file:.npmrc",
+      "type": "file",
+      "name": ".npmrc",
+      "filePath": ".npmrc",
+      "summary": "源码模块 .npmrc，体量 11 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "unknown"
+    },
+    {
+      "id": "file:.nvmrc",
+      "type": "file",
+      "name": ".nvmrc",
+      "filePath": ".nvmrc",
+      "summary": "源码模块 .nvmrc，体量 1 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "unknown"
+    },
+    {
+      "id": "file:.understand-anything/.understandignore",
+      "type": "file",
+      "name": ".understandignore",
+      "filePath": ".understand-anything/.understandignore",
+      "summary": "源码模块 .understand-anything/.understandignore，体量 89 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "unknown"
+    },
+    {
+      "id": "config:.understand-anything/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": ".understand-anything/config.json",
+      "summary": "配置文件 config.json，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "json"
+    },
+    {
+      "id": "file:commitlint.config.cjs",
+      "type": "file",
+      "name": "commitlint.config.cjs",
+      "filePath": "commitlint.config.cjs",
+      "summary": "源码模块 commitlint.config.cjs，体量 26 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "document:docs/memory-live-smoke-checklist.md",
+      "type": "document",
+      "name": "memory-live-smoke-checklist.md",
+      "filePath": "docs/memory-live-smoke-checklist.md",
+      "summary": "文档文件 memory-live-smoke-checklist.md，共约 38 行有效内容。",
+      "tags": ["service", "documentation"],
+      "complexity": "simple",
+      "language": "markdown"
+    },
+    {
+      "id": "file:patches/@mariozechner+pi-ai+0.60.0.patch",
+      "type": "file",
+      "name": "@mariozechner+pi-ai+0.60.0.patch",
+      "filePath": "patches/@mariozechner+pi-ai+0.60.0.patch",
+      "summary": "源码模块 patches/@mariozechner+pi-ai+0.60.0.patch，体量 63 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "patch"
+    },
+    {
+      "id": "file:postcss.config.js",
+      "type": "file",
+      "name": "postcss.config.js",
+      "filePath": "postcss.config.js",
+      "summary": "源码模块 postcss.config.js，体量 6 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "config:resources/entitlements.mac.plist",
+      "type": "config",
+      "name": "entitlements.mac.plist",
+      "filePath": "resources/entitlements.mac.plist",
+      "summary": "配置文件 entitlements.mac.plist，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "xml"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:.claude/skills/visio/tests/test_public_release_smoke.py",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:run_script",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/visio/tests/test_public_release_smoke.py",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_public_release_files_are_present",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/visio/tests/test_public_release_smoke.py",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_basic_scene_validates",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/visio/tests/test_public_release_smoke.py",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_rounded_orthogonal_points_rounds_only_the_corner",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/visio/tests/test_public_release_smoke.py",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_pixel_corner_radius_is_scaled_to_inches",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/visio/tests/test_public_release_smoke.py",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_rounded_orthogonal_connector_validates_and_routes",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/visio/tests/test_public_release_smoke.py",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_rounded_orthogonal_example_passes_strict_contract",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/visio/tests/test_public_release_smoke.py",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_review_bundle_and_checklist_gate",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/visio/tests/test_public_release_smoke.py",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_arrow_plan_gate_accepts_bound_horizontal_arrow",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/visio/tests/test_public_release_smoke.py",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_arrow_plan_gate_rejects_diagonal_horizontal_arrow",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:run_script",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:subprocess.run",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:run_script",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_public_release_files_are_present",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:(ROOT / rel).exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_basic_scene_validates",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:run_script",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_basic_scene_validates",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_rounded_orthogonal_points_rounds_only_the_corner",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:rounded_orthogonal_points",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_rounded_orthogonal_points_rounds_only_the_corner",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:any",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_rounded_orthogonal_points_rounds_only_the_corner",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:abs",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_rounded_orthogonal_points_rounds_only_the_corner",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:abs",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_rounded_orthogonal_points_rounds_only_the_corner",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:any",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_rounded_orthogonal_points_rounds_only_the_corner",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:abs",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_rounded_orthogonal_points_rounds_only_the_corner",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:abs",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_rounded_orthogonal_points_rounds_only_the_corner",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:all",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_pixel_corner_radius_is_scaled_to_inches",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:normalize_scene_coordinates",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_rounded_orthogonal_connector_validates_and_routes",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:Path.cwd",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_rounded_orthogonal_connector_validates_and_routes",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:scene_path.write_text",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_rounded_orthogonal_connector_validates_and_routes",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:json.dumps",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_rounded_orthogonal_connector_validates_and_routes",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:run_script",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_rounded_orthogonal_connector_validates_and_routes",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_rounded_orthogonal_connector_validates_and_routes",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:scene_path.unlink",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_rounded_orthogonal_connector_validates_and_routes",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:load_component_map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_rounded_orthogonal_connector_validates_and_routes",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:edge_style",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_rounded_orthogonal_connector_validates_and_routes",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:edge_route_points",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_rounded_orthogonal_example_passes_strict_contract",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:run_script",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_rounded_orthogonal_example_passes_strict_contract",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_review_bundle_and_checklist_gate",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:Image.new(\"RGB\", (320, 180), \"white\").save",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_review_bundle_and_checklist_gate",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:Image.new",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_review_bundle_and_checklist_gate",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:Image.new(\"RGB\", (320, 180), (245, 248, 255)).save",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_review_bundle_and_checklist_gate",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:Image.new",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_review_bundle_and_checklist_gate",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:scene.write_text",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_review_bundle_and_checklist_gate",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:json.dumps",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_review_bundle_and_checklist_gate",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:run_script",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_review_bundle_and_checklist_gate",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_review_bundle_and_checklist_gate",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_review_bundle_and_checklist_gate",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_review_bundle_and_checklist_gate",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_review_bundle_and_checklist_gate",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:findings.write_text",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_review_bundle_and_checklist_gate",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:json.dumps",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_review_bundle_and_checklist_gate",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:run_script",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_review_bundle_and_checklist_gate",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_review_bundle_and_checklist_gate",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_arrow_plan_gate_accepts_bound_horizontal_arrow",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:scene.write_text",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_arrow_plan_gate_accepts_bound_horizontal_arrow",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:json.dumps",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_arrow_plan_gate_accepts_bound_horizontal_arrow",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:run_script",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_arrow_plan_gate_accepts_bound_horizontal_arrow",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_arrow_plan_gate_rejects_diagonal_horizontal_arrow",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:scene.write_text",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_arrow_plan_gate_rejects_diagonal_horizontal_arrow",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:json.dumps",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_arrow_plan_gate_rejects_diagonal_horizontal_arrow",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:run_script",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/visio/tests/test_public_release_smoke.py:test_arrow_plan_gate_rejects_diagonal_horizontal_arrow",
+      "target": "function:.claude/skills/visio/tests/test_public_release_smoke.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:.claude/skills/xlsx/recalc.py",
+      "target": "function:.claude/skills/xlsx/recalc.py:ensure_xvfb_running",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/xlsx/recalc.py",
+      "target": "function:.claude/skills/xlsx/recalc.py:has_gtimeout",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/xlsx/recalc.py",
+      "target": "function:.claude/skills/xlsx/recalc.py:setup_libreoffice_macro",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/xlsx/recalc.py",
+      "target": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/xlsx/recalc.py",
+      "target": "function:.claude/skills/xlsx/recalc.py:main",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:ensure_xvfb_running",
+      "target": "function:.claude/skills/xlsx/recalc.py:platform.system",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:ensure_xvfb_running",
+      "target": "function:.claude/skills/xlsx/recalc.py:os.environ.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:ensure_xvfb_running",
+      "target": "function:.claude/skills/xlsx/recalc.py:subprocess.run",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:ensure_xvfb_running",
+      "target": "function:.claude/skills/xlsx/recalc.py:result.stdout.strip",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:ensure_xvfb_running",
+      "target": "function:.claude/skills/xlsx/recalc.py:subprocess.Popen",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:ensure_xvfb_running",
+      "target": "function:.claude/skills/xlsx/recalc.py:RuntimeError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:ensure_xvfb_running",
+      "target": "function:.claude/skills/xlsx/recalc.py:range",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:ensure_xvfb_running",
+      "target": "function:.claude/skills/xlsx/recalc.py:os.path.exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:ensure_xvfb_running",
+      "target": "function:.claude/skills/xlsx/recalc.py:time.sleep",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:ensure_xvfb_running",
+      "target": "function:.claude/skills/xlsx/recalc.py:RuntimeError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:has_gtimeout",
+      "target": "function:.claude/skills/xlsx/recalc.py:subprocess.run",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:setup_libreoffice_macro",
+      "target": "function:.claude/skills/xlsx/recalc.py:os.path.expanduser",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:setup_libreoffice_macro",
+      "target": "function:.claude/skills/xlsx/recalc.py:platform.system",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:setup_libreoffice_macro",
+      "target": "function:.claude/skills/xlsx/recalc.py:os.path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:setup_libreoffice_macro",
+      "target": "function:.claude/skills/xlsx/recalc.py:os.path.exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:setup_libreoffice_macro",
+      "target": "function:.claude/skills/xlsx/recalc.py:Path(macro_file).read_text",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:setup_libreoffice_macro",
+      "target": "function:.claude/skills/xlsx/recalc.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:setup_libreoffice_macro",
+      "target": "function:.claude/skills/xlsx/recalc.py:os.path.exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:setup_libreoffice_macro",
+      "target": "function:.claude/skills/xlsx/recalc.py:subprocess.run",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:setup_libreoffice_macro",
+      "target": "function:.claude/skills/xlsx/recalc.py:os.makedirs",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:setup_libreoffice_macro",
+      "target": "function:.claude/skills/xlsx/recalc.py:Path(macro_file).write_text",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:setup_libreoffice_macro",
+      "target": "function:.claude/skills/xlsx/recalc.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "target": "function:.claude/skills/xlsx/recalc.py:Path(filename).exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "target": "function:.claude/skills/xlsx/recalc.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "target": "function:.claude/skills/xlsx/recalc.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "target": "function:.claude/skills/xlsx/recalc.py:Path(filename).absolute",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "target": "function:.claude/skills/xlsx/recalc.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "target": "function:.claude/skills/xlsx/recalc.py:setup_libreoffice_macro",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "target": "function:.claude/skills/xlsx/recalc.py:ensure_xvfb_running",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "target": "function:.claude/skills/xlsx/recalc.py:platform.system",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "target": "function:.claude/skills/xlsx/recalc.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "target": "function:.claude/skills/xlsx/recalc.py:platform.system",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "target": "function:.claude/skills/xlsx/recalc.py:has_gtimeout",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "target": "function:.claude/skills/xlsx/recalc.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "target": "function:.claude/skills/xlsx/recalc.py:subprocess.run",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "target": "function:.claude/skills/xlsx/recalc.py:load_workbook",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "target": "function:.claude/skills/xlsx/recalc.py:ws.iter_rows",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "target": "function:.claude/skills/xlsx/recalc.py:isinstance",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "target": "function:.claude/skills/xlsx/recalc.py:error_details[err].append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "target": "function:.claude/skills/xlsx/recalc.py:wb.close",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "target": "function:.claude/skills/xlsx/recalc.py:error_details.items",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "target": "function:.claude/skills/xlsx/recalc.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "target": "function:.claude/skills/xlsx/recalc.py:load_workbook",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "target": "function:.claude/skills/xlsx/recalc.py:ws.iter_rows",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "target": "function:.claude/skills/xlsx/recalc.py:isinstance",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "target": "function:.claude/skills/xlsx/recalc.py:cell.value.startswith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "target": "function:.claude/skills/xlsx/recalc.py:wb_formulas.close",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "target": "function:.claude/skills/xlsx/recalc.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:main",
+      "target": "function:.claude/skills/xlsx/recalc.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:main",
+      "target": "function:.claude/skills/xlsx/recalc.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:main",
+      "target": "function:.claude/skills/xlsx/recalc.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:main",
+      "target": "function:.claude/skills/xlsx/recalc.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:main",
+      "target": "function:.claude/skills/xlsx/recalc.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:main",
+      "target": "function:.claude/skills/xlsx/recalc.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:main",
+      "target": "function:.claude/skills/xlsx/recalc.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:main",
+      "target": "function:.claude/skills/xlsx/recalc.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:main",
+      "target": "function:.claude/skills/xlsx/recalc.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:main",
+      "target": "function:.claude/skills/xlsx/recalc.py:sys.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:main",
+      "target": "function:.claude/skills/xlsx/recalc.py:int",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:main",
+      "target": "function:.claude/skills/xlsx/recalc.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:main",
+      "target": "function:.claude/skills/xlsx/recalc.py:recalc",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:main",
+      "target": "function:.claude/skills/xlsx/recalc.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/xlsx/recalc.py:main",
+      "target": "function:.claude/skills/xlsx/recalc.py:json.dumps",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ]
+}

@@ -129,6 +129,30 @@ npm run dev
 
 To build the installer locally: `npm run build`
 
+For a time-limited trial build, set the expiration before building (format `YYYY-MM-DD` or `YYYY-M-D`; the expiration date itself remains usable):
+
+```powershell
+# Windows PowerShell — npm config flag (recommended)
+npm run build:win -- --trial-expiration=2026-6-26
+
+# Windows PowerShell — process environment variable
+$env:AGENT_TRIAL_EXPIRATION='2026-6-26'; npm run build:win
+
+# Windows CMD
+set AGENT_TRIAL_EXPIRATION=2026-06-26 && npm run build:win
+
+# Direct script call (bypasses npm)
+node scripts/build-windows.js --trial-expiration=2026-6-26
+```
+
+**Why two PowerShell styles?** On Windows, `npm run ... -- --trial-expiration=...` does **not** pass the flag to the script's `argv`. npm treats it as its own config and exposes it as `npm_config_trial_expiration`. The build script reads that (and also `AGENT_TRIAL_EXPIRATION` when you set `$env:...` first).
+
+> **Note:** In PowerShell, `set VAR=value` does **not** set environment variables — use `$env:VAR='value'` or `--trial-expiration=...` instead.
+
+During build you should see `[build:win] AGENT_TRIAL_EXPIRATION: 2026-06-26`. After install, the app log shows `[Trial] Expiration date: 2026-06-26 (active|expired)`.
+
+Omit `AGENT_TRIAL_EXPIRATION` for unrestricted builds (development and production releases).
+
 ### Security Configuration: 🔒 Sandbox Support
 
 Open Cowork provides **multi-level sandbox protection** to keep your system safe:

@@ -1,0 +1,47 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 5,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".claude/skills/docx/scripts/templates/comments.xml",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/docx/scripts/templates/commentsExtended.xml",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/docx/scripts/templates/commentsExtensible.xml",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/docx/scripts/templates/commentsIds.xml",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/docx/scripts/templates/people.xml",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "metrics": {}
+    }
+  ]
+}

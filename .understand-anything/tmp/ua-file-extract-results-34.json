@@ -1,0 +1,145 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".claude/skills/visio/templates/examples/paper_figures/attention_mechanism.scene.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 312,
+      "nonEmptyLines": 312,
+      "sections": [
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "metadata",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "page",
+          "level": 1,
+          "line": 14
+        },
+        {
+          "heading": "nodes",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "edges",
+          "level": 1,
+          "line": 226
+        },
+        {
+          "heading": "assets",
+          "level": 1,
+          "line": 311
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".claude/skills/visio/templates/examples/paper_figures/cross_fused_features.scene.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 1150,
+      "nonEmptyLines": 1150,
+      "sections": [
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "metadata",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "page",
+          "level": 1,
+          "line": 14
+        },
+        {
+          "heading": "nodes",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "edges",
+          "level": 1,
+          "line": 644
+        },
+        {
+          "heading": "assets",
+          "level": 1,
+          "line": 1149
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".claude/skills/visio/templates/examples/paper_figures/mask_res_block.scene.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 918,
+      "nonEmptyLines": 918,
+      "sections": [
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "metadata",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "page",
+          "level": 1,
+          "line": 14
+        },
+        {
+          "heading": "nodes",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "edges",
+          "level": 1,
+          "line": 535
+        },
+        {
+          "heading": "assets",
+          "level": 1,
+          "line": 917
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    }
+  ]
+}

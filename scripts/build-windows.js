@@ -4,6 +4,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { spawn, spawnSync } = require('node:child_process');
 const { writeLegacyCleanupArtifacts } = require('./build-windows-artifacts');
+const { validateTrialExpiration } = require('./trial-expiration-utils');
 
 const PROJECT_ROOT = path.join(__dirname, '..');
 const CACHE_ROOT = path.resolve(
@@ -109,6 +110,53 @@ function cleanInvalidElectronCache(electronCacheDir) {
   }
 }
 
+function extractTrialExpirationFromArgs(args) {
+  const builderArgs = [];
+  let trialExpiration;
+
+  for (let index = 0; index < args.length; index += 1) {
+    const arg = args[index];
+    if (arg.startsWith('--trial-expiration=')) {
+      trialExpiration = arg.slice('--trial-expiration='.length);
+      continue;
+    }
+    if (arg === '--trial-expiration') {
+      trialExpiration = args[index + 1];
+      index += 1;
+      continue;
+    }
+    builderArgs.push(arg);
+  }
+
+  return { trialExpiration, builderArgs };
+}
+
+function readTrialExpirationFromNpmConfig() {
+  return (
+    process.env.npm_config_trial_expiration ??
+    process.env.NPM_CONFIG_TRIAL_EXPIRATION ??
+    undefined
+  );
+}
+
+function resolveTrialExpirationEnv(rawValue) {
+  const trimmed = (rawValue ?? '').trim();
+  if (!trimmed) {
+    return { envValue: '', normalized: null };
+  }
+
+  const validation = validateTrialExpiration(trimmed);
+  if (!validation.valid) {
+    console.error('[build:win] Invalid trial expiration:', validation.reason);
+    process.exit(1);
+  }
+
+  return {
+    envValue: validation.normalized ?? '',
+    normalized: validation.normalized ?? null,
+  };
+}
+
 function main() {
   if (process.platform !== 'win32') {
     console.warn('[build:win] This helper is intended for Windows hosts. Skipping build.');
@@ -118,7 +166,36 @@ function main() {
   Object.values(DIRS).forEach(ensureDir);
 
   const forwardedArgs = process.argv.slice(2);
-  const builderArgs = forwardedArgs.length > 0 ? [...forwardedArgs] : ['--win', 'nsis'];
+  if (forwardedArgs.includes('--print-trial-config')) {
+    const { trialExpiration: trialExpirationArg, builderArgs } =
+      extractTrialExpirationFromArgs(forwardedArgs.filter((arg) => arg !== '--print-trial-config'));
+    const trialExpiration = resolveTrialExpirationEnv(
+      trialExpirationArg ??
+        readTrialExpirationFromNpmConfig() ??
+        process.env.AGENT_TRIAL_EXPIRATION
+    );
+    console.log('[build:win] argv:', JSON.stringify(forwardedArgs));
+    console.log(
+      '[build:win] npm_config_trial_expiration:',
+      readTrialExpirationFromNpmConfig() ?? '(unset)'
+    );
+    console.log('[build:win] AGENT_TRIAL_EXPIRATION env:', process.env.AGENT_TRIAL_EXPIRATION ?? '(unset)');
+    console.log(
+      '[build:win] resolved trial expiration:',
+      trialExpiration.normalized ?? '(not set — unrestricted build)'
+    );
+    console.log('[build:win] electron-builder args:', builderArgs.join(' ') || '(default --win nsis)');
+    process.exit(0);
+  }
+  const { trialExpiration: trialExpirationArg, builderArgs: strippedBuilderArgs } =
+    extractTrialExpirationFromArgs(forwardedArgs);
+  const builderArgs =
+    strippedBuilderArgs.length > 0 ? [...strippedBuilderArgs] : ['--win', 'nsis'];
+  const trialExpiration = resolveTrialExpirationEnv(
+    trialExpirationArg ??
+      readTrialExpirationFromNpmConfig() ??
+      process.env.AGENT_TRIAL_EXPIRATION
+  );
   const electronBuilderBinariesMirror = resolveElectronBuilderBinariesMirror();
   const env = {
     ...process.env,
@@ -134,6 +211,12 @@ function main() {
     NPM_CONFIG_ELECTRON_BUILDER_BINARIES_MIRROR: electronBuilderBinariesMirror,
     npm_config_electron_builder_binaries_mirror: electronBuilderBinariesMirror,
   };
+
+  if (trialExpiration.normalized) {
+    env.AGENT_TRIAL_EXPIRATION = trialExpiration.envValue;
+  } else {
+    delete env.AGENT_TRIAL_EXPIRATION;
+  }
 
   delete env.ELECTRON_RUN_AS_NODE;
   cleanInvalidElectronCache(DIRS.electronCache);
@@ -151,6 +234,11 @@ function main() {
   console.log('[build:win] ELECTRON_BUILDER_CACHE:', DIRS.electronBuilderCache);
   console.log('[build:win] ELECTRON_BUILDER_BINARIES_MIRROR:', electronBuilderBinariesMirror);
   console.log('[build:win] NPM_CONFIG_CACHE:', DIRS.npmCache);
+  if (trialExpiration.normalized) {
+    console.log('[build:win] AGENT_TRIAL_EXPIRATION:', trialExpiration.normalized);
+  } else {
+    console.log('[build:win] AGENT_TRIAL_EXPIRATION: (not set — unrestricted build)');
+  }
   if (builderArgs.some((arg) => arg.includes('electronDist'))) {
     console.log('[build:win] electronDist:', LOCAL_ELECTRON_DIST);
   }

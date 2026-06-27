@@ -1,0 +1,42 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": ".claude/skills/docx/scripts/templates/comments.xml",
+      "language": "xml",
+      "sizeLines": 3,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/docx/scripts/templates/commentsExtended.xml",
+      "language": "xml",
+      "sizeLines": 3,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/docx/scripts/templates/commentsExtensible.xml",
+      "language": "xml",
+      "sizeLines": 3,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/docx/scripts/templates/commentsIds.xml",
+      "language": "xml",
+      "sizeLines": 3,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/docx/scripts/templates/people.xml",
+      "language": "xml",
+      "sizeLines": 3,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    ".claude/skills/docx/scripts/templates/comments.xml": [],
+    ".claude/skills/docx/scripts/templates/commentsExtended.xml": [],
+    ".claude/skills/docx/scripts/templates/commentsExtensible.xml": [],
+    ".claude/skills/docx/scripts/templates/commentsIds.xml": [],
+    ".claude/skills/docx/scripts/templates/people.xml": []
+  }
+}

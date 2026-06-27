@@ -1,0 +1,1274 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/main/schedule/scheduled-task-manager.ts",
+      "type": "file",
+      "name": "scheduled-task-manager.ts",
+      "filePath": "src/main/schedule/scheduled-task-manager.ts",
+      "summary": "TypeScript/JavaScript 模块 src/main/schedule/scheduled-task-manager.ts，导出 1 个类与 12 个函数，是应用逻辑的一部分。",
+      "tags": ["utility"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/schedule/scheduled-task-manager.ts:normalizeScheduleConfig",
+      "type": "function",
+      "name": "normalizeScheduleConfig",
+      "filePath": "src/main/schedule/scheduled-task-manager.ts",
+      "summary": "函数 normalizeScheduleConfig，位于 src/main/schedule/scheduled-task-manager.ts 第 419-441 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/schedule/scheduled-task-manager.ts:computeNextRunAt",
+      "type": "function",
+      "name": "computeNextRunAt",
+      "filePath": "src/main/schedule/scheduled-task-manager.ts",
+      "summary": "函数 computeNextRunAt，位于 src/main/schedule/scheduled-task-manager.ts 第 447-458 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/schedule/scheduled-task-manager.ts:normalizeWeekdays",
+      "type": "function",
+      "name": "normalizeWeekdays",
+      "filePath": "src/main/schedule/scheduled-task-manager.ts",
+      "summary": "函数 normalizeWeekdays，位于 src/main/schedule/scheduled-task-manager.ts 第 480-492 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/schedule/scheduled-task-manager.ts:findNextScheduledSlot",
+      "type": "function",
+      "name": "findNextScheduledSlot",
+      "filePath": "src/main/schedule/scheduled-task-manager.ts",
+      "summary": "函数 findNextScheduledSlot，位于 src/main/schedule/scheduled-task-manager.ts 第 513-556 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/main/schedule/scheduled-task-manager.ts:ScheduledTaskManager",
+      "type": "class",
+      "name": "ScheduledTaskManager",
+      "filePath": "src/main/schedule/scheduled-task-manager.ts",
+      "summary": "类 ScheduledTaskManager，含 16 个方法，位于 src/main/schedule/scheduled-task-manager.ts。",
+      "tags": ["module", "type-definition"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/schedule/scheduled-task-store.ts",
+      "type": "file",
+      "name": "scheduled-task-store.ts",
+      "filePath": "src/main/schedule/scheduled-task-store.ts",
+      "summary": "源码模块 src/main/schedule/scheduled-task-store.ts，包含 4 个函数，约 98 行有效代码。",
+      "tags": ["state-management"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/schedule/scheduled-task-store.ts:createScheduledTaskStore",
+      "type": "function",
+      "name": "createScheduledTaskStore",
+      "filePath": "src/main/schedule/scheduled-task-store.ts",
+      "summary": "函数 createScheduledTaskStore，位于 src/main/schedule/scheduled-task-store.ts 第 10-52 行。",
+      "tags": ["state-management"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/schedule/scheduled-task-store.ts:mapRowToTask",
+      "type": "function",
+      "name": "mapRowToTask",
+      "filePath": "src/main/schedule/scheduled-task-store.ts",
+      "summary": "函数 mapRowToTask，位于 src/main/schedule/scheduled-task-store.ts 第 54-72 行。",
+      "tags": ["state-management"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/schedule/scheduled-task-store.ts:mapTaskUpdatesToRow",
+      "type": "function",
+      "name": "mapTaskUpdatesToRow",
+      "filePath": "src/main/schedule/scheduled-task-store.ts",
+      "summary": "函数 mapTaskUpdatesToRow，位于 src/main/schedule/scheduled-task-store.ts 第 74-91 行。",
+      "tags": ["state-management"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/schedule/scheduled-task-store.ts:parseScheduleConfig",
+      "type": "function",
+      "name": "parseScheduleConfig",
+      "filePath": "src/main/schedule/scheduled-task-store.ts",
+      "summary": "函数 parseScheduleConfig，位于 src/main/schedule/scheduled-task-store.ts 第 93-102 行。",
+      "tags": ["state-management"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/session/session-title-flow.ts",
+      "type": "file",
+      "name": "session-title-flow.ts",
+      "filePath": "src/main/session/session-title-flow.ts",
+      "summary": "源码模块 src/main/session/session-title-flow.ts，包含 1 个函数，约 73 行有效代码。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/session/session-title-flow.ts:maybeGenerateSessionTitle",
+      "type": "function",
+      "name": "maybeGenerateSessionTitle",
+      "filePath": "src/main/session/session-title-flow.ts",
+      "summary": "函数 maybeGenerateSessionTitle，位于 src/main/session/session-title-flow.ts 第 22-82 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/session/session-title-utils.ts",
+      "type": "file",
+      "name": "session-title-utils.ts",
+      "filePath": "src/main/session/session-title-utils.ts",
+      "summary": "源码模块 src/main/session/session-title-utils.ts，包含 3 个函数，约 46 行有效代码。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/session/session-title-utils.ts:shouldGenerateTitle",
+      "type": "function",
+      "name": "shouldGenerateTitle",
+      "filePath": "src/main/session/session-title-utils.ts",
+      "summary": "函数 shouldGenerateTitle，位于 src/main/session/session-title-utils.ts 第 11-16 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/session/session-title-utils.ts:normalizeGeneratedTitle",
+      "type": "function",
+      "name": "normalizeGeneratedTitle",
+      "filePath": "src/main/session/session-title-utils.ts",
+      "summary": "函数 normalizeGeneratedTitle，位于 src/main/session/session-title-utils.ts 第 18-34 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/session/session-title-utils.ts:buildTitlePrompt",
+      "type": "function",
+      "name": "buildTitlePrompt",
+      "filePath": "src/main/session/session-title-utils.ts",
+      "summary": "函数 buildTitlePrompt，位于 src/main/session/session-title-utils.ts 第 36-50 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/shared/schedule/task-title.ts",
+      "type": "file",
+      "name": "task-title.ts",
+      "filePath": "src/shared/schedule/task-title.ts",
+      "summary": "源码模块 src/shared/schedule/task-title.ts，包含 5 个函数，约 37 行有效代码。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/shared/schedule/task-title.ts:summarizeSchedulePrompt",
+      "type": "function",
+      "name": "summarizeSchedulePrompt",
+      "filePath": "src/shared/schedule/task-title.ts",
+      "summary": "函数 summarizeSchedulePrompt，位于 src/shared/schedule/task-title.ts 第 17-32 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/shared/schedule/task-title.ts:buildScheduledTaskTitle",
+      "type": "function",
+      "name": "buildScheduledTaskTitle",
+      "filePath": "src/shared/schedule/task-title.ts",
+      "summary": "函数 buildScheduledTaskTitle，位于 src/shared/schedule/task-title.ts 第 34-38 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/shared/schedule/task-title.ts:buildScheduledTaskFallbackTitle",
+      "type": "function",
+      "name": "buildScheduledTaskFallbackTitle",
+      "filePath": "src/shared/schedule/task-title.ts",
+      "summary": "函数 buildScheduledTaskFallbackTitle，位于 src/shared/schedule/task-title.ts 第 40-42 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/schedule-task-title.test.ts",
+      "type": "file",
+      "name": "schedule-task-title.test.ts",
+      "filePath": "tests/schedule-task-title.test.ts",
+      "summary": "源码模块 tests/schedule-task-title.test.ts，体量 29 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/scheduled-task-edge-cases.test.ts",
+      "type": "file",
+      "name": "scheduled-task-edge-cases.test.ts",
+      "filePath": "tests/scheduled-task-edge-cases.test.ts",
+      "summary": "源码模块 tests/scheduled-task-edge-cases.test.ts，包含 2 个函数，约 183 行有效代码。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/scheduled-task-edge-cases.test.ts:createTask",
+      "type": "function",
+      "name": "createTask",
+      "filePath": "tests/scheduled-task-edge-cases.test.ts",
+      "summary": "函数 createTask，位于 tests/scheduled-task-edge-cases.test.ts 第 8-28 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/scheduled-task-edge-cases.test.ts:createStore",
+      "type": "function",
+      "name": "createStore",
+      "filePath": "tests/scheduled-task-edge-cases.test.ts",
+      "summary": "函数 createStore，位于 tests/scheduled-task-edge-cases.test.ts 第 30-63 行。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/scheduled-task-manager.test.ts",
+      "type": "file",
+      "name": "scheduled-task-manager.test.ts",
+      "filePath": "tests/scheduled-task-manager.test.ts",
+      "summary": "源码模块 tests/scheduled-task-manager.test.ts，包含 5 个函数，约 502 行有效代码。",
+      "tags": ["test"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/scheduled-task-manager.test.ts:createTask",
+      "type": "function",
+      "name": "createTask",
+      "filePath": "tests/scheduled-task-manager.test.ts",
+      "summary": "函数 createTask，位于 tests/scheduled-task-manager.test.ts 第 10-30 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/scheduled-task-manager.test.ts:createStore",
+      "type": "function",
+      "name": "createStore",
+      "filePath": "tests/scheduled-task-manager.test.ts",
+      "summary": "函数 createStore，位于 tests/scheduled-task-manager.test.ts 第 50-83 行。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/session-manager-scheduled-title.test.ts",
+      "type": "file",
+      "name": "session-manager-scheduled-title.test.ts",
+      "filePath": "tests/session-manager-scheduled-title.test.ts",
+      "summary": "源码模块 tests/session-manager-scheduled-title.test.ts，体量 74 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/session-title-flow-abort.test.ts",
+      "type": "file",
+      "name": "session-title-flow-abort.test.ts",
+      "filePath": "tests/session-title-flow-abort.test.ts",
+      "summary": "源码模块 tests/session-title-flow-abort.test.ts，包含 1 个函数，约 121 行有效代码。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/session-title-flow-abort.test.ts:makeDeps",
+      "type": "function",
+      "name": "makeDeps",
+      "filePath": "tests/session-title-flow-abort.test.ts",
+      "summary": "函数 makeDeps，位于 tests/session-title-flow-abort.test.ts 第 6-21 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/session-title-flow.test.ts",
+      "type": "file",
+      "name": "session-title-flow.test.ts",
+      "filePath": "tests/session-title-flow.test.ts",
+      "summary": "源码模块 tests/session-title-flow.test.ts，体量 35 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/session-title-utils.test.ts",
+      "type": "file",
+      "name": "session-title-utils.test.ts",
+      "filePath": "tests/session-title-utils.test.ts",
+      "summary": "源码模块 tests/session-title-utils.test.ts，体量 60 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/support/session-title-harness.ts",
+      "type": "file",
+      "name": "session-title-harness.ts",
+      "filePath": "tests/support/session-title-harness.ts",
+      "summary": "源码模块 tests/support/session-title-harness.ts，包含 1 个函数，约 48 行有效代码。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/support/session-title-harness.ts:createTitleFlowHarness",
+      "type": "function",
+      "name": "createTitleFlowHarness",
+      "filePath": "tests/support/session-title-harness.ts",
+      "summary": "函数 createTitleFlowHarness，位于 tests/support/session-title-harness.ts 第 11-52 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "typescript"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/main/schedule/scheduled-task-manager.ts",
+      "target": "file:src/main/utils/logger.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/schedule/scheduled-task-manager.ts",
+      "target": "file:src/shared/schedule/task-title.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/schedule/scheduled-task-manager.ts",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:normalizeScheduleConfig",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/schedule/scheduled-task-manager.ts",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:computeNextRunAt",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/schedule/scheduled-task-manager.ts",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:normalizeWeekdays",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/schedule/scheduled-task-manager.ts",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:findNextScheduledSlot",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/schedule/scheduled-task-manager.ts",
+      "target": "class:src/main/schedule/scheduled-task-manager.ts:ScheduledTaskManager",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-manager.ts:normalizeScheduleConfig",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:normalizeScheduleTimes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-manager.ts:normalizeScheduleConfig",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:normalizeScheduleTimes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-manager.ts:normalizeScheduleConfig",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:normalizeWeekdays",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-manager.ts:computeNextRunAt",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:computeNextRunAtFromScheduleConfig",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-manager.ts:computeNextRunAt",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:getIntervalMs",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-manager.ts:computeNextRunAt",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:Number.isFinite",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-manager.ts:computeNextRunAt",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:Math.floor",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-manager.ts:normalizeWeekdays",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:Array.isArray",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-manager.ts:normalizeWeekdays",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:Array.from",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-manager.ts:normalizeWeekdays",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:days.filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-manager.ts:normalizeWeekdays",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:Number.isInteger",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-manager.ts:normalizeWeekdays",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:normalized.sort",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-manager.ts:findNextScheduledSlot",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:normalizeScheduleTimes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-manager.ts:findNextScheduledSlot",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:normalizeWeekdays",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-manager.ts:findNextScheduledSlot",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:nowDate.getFullYear",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-manager.ts:findNextScheduledSlot",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:nowDate.getMonth",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-manager.ts:findNextScheduledSlot",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:nowDate.getDate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-manager.ts:findNextScheduledSlot",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:allowedWeekdays.has",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-manager.ts:findNextScheduledSlot",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:candidateDate.getDay",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-manager.ts:findNextScheduledSlot",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:time.split(':').map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-manager.ts:findNextScheduledSlot",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:time.split",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-manager.ts:findNextScheduledSlot",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:new Date(\n        candidateDate.getFullYear(),\n        candidateDate.getMonth(),\n        candidateDate.getDate(),\n        hour,\n        minute,\n        0,\n        0\n      ).getTime",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-manager.ts:findNextScheduledSlot",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:candidateDate.getFullYear",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-manager.ts:findNextScheduledSlot",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:candidateDate.getMonth",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-manager.ts:findNextScheduledSlot",
+      "target": "function:src/main/schedule/scheduled-task-manager.ts:candidateDate.getDate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/schedule/scheduled-task-store.ts",
+      "target": "file:src/main/db/database.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/schedule/scheduled-task-store.ts",
+      "target": "file:src/main/schedule/scheduled-task-manager.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/schedule/scheduled-task-store.ts",
+      "target": "function:src/main/schedule/scheduled-task-store.ts:createScheduledTaskStore",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/schedule/scheduled-task-store.ts",
+      "target": "function:src/main/schedule/scheduled-task-store.ts:mapRowToTask",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/schedule/scheduled-task-store.ts",
+      "target": "function:src/main/schedule/scheduled-task-store.ts:mapTaskUpdatesToRow",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/schedule/scheduled-task-store.ts",
+      "target": "function:src/main/schedule/scheduled-task-store.ts:parseScheduleConfig",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-store.ts:createScheduledTaskStore",
+      "target": "function:src/main/schedule/scheduled-task-store.ts:db.scheduledTasks.getAll().map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-store.ts:createScheduledTaskStore",
+      "target": "function:src/main/schedule/scheduled-task-store.ts:db.scheduledTasks.getAll",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-store.ts:createScheduledTaskStore",
+      "target": "function:src/main/schedule/scheduled-task-store.ts:db.scheduledTasks.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-store.ts:createScheduledTaskStore",
+      "target": "function:src/main/schedule/scheduled-task-store.ts:mapRowToTask",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-store.ts:createScheduledTaskStore",
+      "target": "function:src/main/schedule/scheduled-task-store.ts:Date.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-store.ts:createScheduledTaskStore",
+      "target": "function:src/main/schedule/scheduled-task-store.ts:uuidv4",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-store.ts:createScheduledTaskStore",
+      "target": "function:src/main/schedule/scheduled-task-store.ts:JSON.stringify",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-store.ts:createScheduledTaskStore",
+      "target": "function:src/main/schedule/scheduled-task-store.ts:db.scheduledTasks.create",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-store.ts:createScheduledTaskStore",
+      "target": "function:src/main/schedule/scheduled-task-store.ts:mapRowToTask",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-store.ts:createScheduledTaskStore",
+      "target": "function:src/main/schedule/scheduled-task-store.ts:mapTaskUpdatesToRow",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-store.ts:createScheduledTaskStore",
+      "target": "function:src/main/schedule/scheduled-task-store.ts:db.scheduledTasks.update",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-store.ts:createScheduledTaskStore",
+      "target": "function:src/main/schedule/scheduled-task-store.ts:db.scheduledTasks.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-store.ts:createScheduledTaskStore",
+      "target": "function:src/main/schedule/scheduled-task-store.ts:mapRowToTask",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-store.ts:createScheduledTaskStore",
+      "target": "function:src/main/schedule/scheduled-task-store.ts:db.scheduledTasks.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-store.ts:createScheduledTaskStore",
+      "target": "function:src/main/schedule/scheduled-task-store.ts:db.scheduledTasks.delete",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-store.ts:mapRowToTask",
+      "target": "function:src/main/schedule/scheduled-task-store.ts:parseScheduleConfig",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-store.ts:mapTaskUpdatesToRow",
+      "target": "function:src/main/schedule/scheduled-task-store.ts:JSON.stringify",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/schedule/scheduled-task-store.ts:parseScheduleConfig",
+      "target": "function:src/main/schedule/scheduled-task-store.ts:JSON.parse",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/session/session-title-flow.ts",
+      "target": "file:src/main/session/session-title-utils.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/session/session-title-flow.ts",
+      "target": "function:src/main/session/session-title-flow.ts:maybeGenerateSessionTitle",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/session/session-title-flow.ts:maybeGenerateSessionTitle",
+      "target": "function:src/main/session/session-title-flow.ts:deps.shouldAbort",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-flow.ts:maybeGenerateSessionTitle",
+      "target": "function:src/main/session/session-title-flow.ts:deps.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-flow.ts:maybeGenerateSessionTitle",
+      "target": "function:src/main/session/session-title-flow.ts:shouldGenerateTitle",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-flow.ts:maybeGenerateSessionTitle",
+      "target": "function:src/main/session/session-title-flow.ts:deps.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-flow.ts:maybeGenerateSessionTitle",
+      "target": "function:src/main/session/session-title-flow.ts:deps.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-flow.ts:maybeGenerateSessionTitle",
+      "target": "function:src/main/session/session-title-flow.ts:deps.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-flow.ts:maybeGenerateSessionTitle",
+      "target": "function:src/main/session/session-title-flow.ts:deps.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-flow.ts:maybeGenerateSessionTitle",
+      "target": "function:src/main/session/session-title-flow.ts:buildTitlePrompt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-flow.ts:maybeGenerateSessionTitle",
+      "target": "function:src/main/session/session-title-flow.ts:normalizeGeneratedTitle",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-flow.ts:maybeGenerateSessionTitle",
+      "target": "function:src/main/session/session-title-flow.ts:deps.generateTitle",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-flow.ts:maybeGenerateSessionTitle",
+      "target": "function:src/main/session/session-title-flow.ts:deps.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-flow.ts:maybeGenerateSessionTitle",
+      "target": "function:src/main/session/session-title-flow.ts:deps.shouldAbort",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-flow.ts:maybeGenerateSessionTitle",
+      "target": "function:src/main/session/session-title-flow.ts:deps.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-flow.ts:maybeGenerateSessionTitle",
+      "target": "function:src/main/session/session-title-flow.ts:deps.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-flow.ts:maybeGenerateSessionTitle",
+      "target": "function:src/main/session/session-title-flow.ts:deps.getLatestTitle",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-flow.ts:maybeGenerateSessionTitle",
+      "target": "function:src/main/session/session-title-flow.ts:getDefaultTitleFromPrompt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-flow.ts:maybeGenerateSessionTitle",
+      "target": "function:src/main/session/session-title-flow.ts:deps.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-flow.ts:maybeGenerateSessionTitle",
+      "target": "function:src/main/session/session-title-flow.ts:deps.updateTitle",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-flow.ts:maybeGenerateSessionTitle",
+      "target": "function:src/main/session/session-title-flow.ts:deps.markAttempt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-flow.ts:maybeGenerateSessionTitle",
+      "target": "function:src/main/session/session-title-flow.ts:deps.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-flow.ts:maybeGenerateSessionTitle",
+      "target": "function:src/main/session/session-title-flow.ts:deps.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/session/session-title-utils.ts",
+      "target": "file:src/shared/session-title.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/session/session-title-utils.ts",
+      "target": "function:src/main/session/session-title-utils.ts:shouldGenerateTitle",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/session/session-title-utils.ts",
+      "target": "function:src/main/session/session-title-utils.ts:normalizeGeneratedTitle",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/session/session-title-utils.ts",
+      "target": "function:src/main/session/session-title-utils.ts:buildTitlePrompt",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/session/session-title-utils.ts:shouldGenerateTitle",
+      "target": "function:src/main/session/session-title-utils.ts:getDefaultTitleFromPrompt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-utils.ts:normalizeGeneratedTitle",
+      "target": "function:src/main/session/session-title-utils.ts:value\n    .split(/\\r?\\n/)\n    .map((line) => line.trim())\n    .find",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-utils.ts:normalizeGeneratedTitle",
+      "target": "function:src/main/session/session-title-utils.ts:value\n    .split(/\\r?\\n/)\n    .map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-utils.ts:normalizeGeneratedTitle",
+      "target": "function:src/main/session/session-title-utils.ts:value\n    .split",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-utils.ts:normalizeGeneratedTitle",
+      "target": "function:src/main/session/session-title-utils.ts:line.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-utils.ts:normalizeGeneratedTitle",
+      "target": "function:src/main/session/session-title-utils.ts:firstLine.replace(/^[\"'`]+|[\"'`]+$/g, '').trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-utils.ts:normalizeGeneratedTitle",
+      "target": "function:src/main/session/session-title-utils.ts:firstLine.replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-utils.ts:normalizeGeneratedTitle",
+      "target": "function:src/main/session/session-title-utils.ts:normalized.toLowerCase",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-utils.ts:normalizeGeneratedTitle",
+      "target": "function:src/main/session/session-title-utils.ts:normalized.toLowerCase",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-utils.ts:normalizeGeneratedTitle",
+      "target": "function:src/main/session/session-title-utils.ts:normalized.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-utils.ts:buildTitlePrompt",
+      "target": "function:src/main/session/session-title-utils.ts:[\n    'Generate a short title for the following user request. Rules:',\n    '- Max 15 characters (Chinese) or 6 words (English)',\n    '- Reply in the same language as the user request',\n    '- No quotes, numbering, or punctuation at the end',\n    '',\n    '请根据用户请求生成一个简短的对话标题：',\n    '- 不超过15个字',\n    '- 同语言输出',\n    '- 不要加引号或编号',\n    '',\n    `User request / 用户请求：${prompt.trim()}`,\n  ].join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/session/session-title-utils.ts:buildTitlePrompt",
+      "target": "function:src/main/session/session-title-utils.ts:prompt.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/shared/schedule/task-title.ts",
+      "target": "function:src/shared/schedule/task-title.ts:summarizeSchedulePrompt",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/shared/schedule/task-title.ts",
+      "target": "function:src/shared/schedule/task-title.ts:buildScheduledTaskTitle",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/shared/schedule/task-title.ts",
+      "target": "function:src/shared/schedule/task-title.ts:buildScheduledTaskFallbackTitle",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/shared/schedule/task-title.ts:summarizeSchedulePrompt",
+      "target": "function:src/shared/schedule/task-title.ts:normalizeTitlePart",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/schedule/task-title.ts:summarizeSchedulePrompt",
+      "target": "function:src/shared/schedule/task-title.ts:Number.isFinite",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/schedule/task-title.ts:summarizeSchedulePrompt",
+      "target": "function:src/shared/schedule/task-title.ts:normalizedPrompt.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/schedule/task-title.ts:summarizeSchedulePrompt",
+      "target": "function:src/shared/schedule/task-title.ts:Math.max",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/schedule/task-title.ts:buildScheduledTaskTitle",
+      "target": "function:src/shared/schedule/task-title.ts:normalizeTitlePart",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/schedule/task-title.ts:buildScheduledTaskTitle",
+      "target": "function:src/shared/schedule/task-title.ts:stripSchedulePrefix",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/schedule/task-title.ts:buildScheduledTaskFallbackTitle",
+      "target": "function:src/shared/schedule/task-title.ts:buildScheduledTaskTitle",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/schedule/task-title.ts:buildScheduledTaskFallbackTitle",
+      "target": "function:src/shared/schedule/task-title.ts:summarizeSchedulePrompt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/schedule-task-title.test.ts",
+      "target": "file:src/shared/schedule/task-title.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/scheduled-task-edge-cases.test.ts",
+      "target": "file:src/main/schedule/scheduled-task-manager.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/scheduled-task-edge-cases.test.ts",
+      "target": "function:tests/scheduled-task-edge-cases.test.ts:createTask",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/scheduled-task-edge-cases.test.ts",
+      "target": "function:tests/scheduled-task-edge-cases.test.ts:createStore",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:tests/scheduled-task-edge-cases.test.ts:createTask",
+      "target": "function:tests/scheduled-task-edge-cases.test.ts:Date.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/scheduled-task-edge-cases.test.ts:createStore",
+      "target": "function:tests/scheduled-task-edge-cases.test.ts:initialTasks.map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/scheduled-task-edge-cases.test.ts:createStore",
+      "target": "function:tests/scheduled-task-edge-cases.test.ts:Array.from",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/scheduled-task-edge-cases.test.ts:createStore",
+      "target": "function:tests/scheduled-task-edge-cases.test.ts:tasks.values",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/scheduled-task-edge-cases.test.ts:createStore",
+      "target": "function:tests/scheduled-task-edge-cases.test.ts:tasks.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/scheduled-task-edge-cases.test.ts:createStore",
+      "target": "function:tests/scheduled-task-edge-cases.test.ts:Date.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/scheduled-task-edge-cases.test.ts:createStore",
+      "target": "function:tests/scheduled-task-edge-cases.test.ts:tasks.set",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/scheduled-task-edge-cases.test.ts:createStore",
+      "target": "function:tests/scheduled-task-edge-cases.test.ts:tasks.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/scheduled-task-edge-cases.test.ts:createStore",
+      "target": "function:tests/scheduled-task-edge-cases.test.ts:Date.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/scheduled-task-edge-cases.test.ts:createStore",
+      "target": "function:tests/scheduled-task-edge-cases.test.ts:tasks.set",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/scheduled-task-edge-cases.test.ts:createStore",
+      "target": "function:tests/scheduled-task-edge-cases.test.ts:tasks.delete",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/scheduled-task-manager.test.ts",
+      "target": "file:src/main/schedule/scheduled-task-manager.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/scheduled-task-manager.test.ts",
+      "target": "file:src/shared/schedule/task-title.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/scheduled-task-manager.test.ts",
+      "target": "function:tests/scheduled-task-manager.test.ts:createTask",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/scheduled-task-manager.test.ts",
+      "target": "function:tests/scheduled-task-manager.test.ts:createStore",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:tests/scheduled-task-manager.test.ts:createTask",
+      "target": "function:tests/scheduled-task-manager.test.ts:Date.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/scheduled-task-manager.test.ts:createStore",
+      "target": "function:tests/scheduled-task-manager.test.ts:initialTasks.map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/scheduled-task-manager.test.ts:createStore",
+      "target": "function:tests/scheduled-task-manager.test.ts:Array.from",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/scheduled-task-manager.test.ts:createStore",
+      "target": "function:tests/scheduled-task-manager.test.ts:tasks.values",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/scheduled-task-manager.test.ts:createStore",
+      "target": "function:tests/scheduled-task-manager.test.ts:tasks.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/scheduled-task-manager.test.ts:createStore",
+      "target": "function:tests/scheduled-task-manager.test.ts:Date.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/scheduled-task-manager.test.ts:createStore",
+      "target": "function:tests/scheduled-task-manager.test.ts:tasks.set",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/scheduled-task-manager.test.ts:createStore",
+      "target": "function:tests/scheduled-task-manager.test.ts:tasks.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/scheduled-task-manager.test.ts:createStore",
+      "target": "function:tests/scheduled-task-manager.test.ts:Date.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/scheduled-task-manager.test.ts:createStore",
+      "target": "function:tests/scheduled-task-manager.test.ts:tasks.set",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/scheduled-task-manager.test.ts:createStore",
+      "target": "function:tests/scheduled-task-manager.test.ts:tasks.delete",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/session-manager-scheduled-title.test.ts",
+      "target": "file:src/main/session/session-manager.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/session-manager-scheduled-title.test.ts",
+      "target": "file:src/main/session/session-title-utils.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/session-manager-scheduled-title.test.ts",
+      "target": "file:src/shared/schedule/task-title.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/session-title-flow-abort.test.ts",
+      "target": "file:src/main/session/session-title-flow.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/session-title-flow-abort.test.ts",
+      "target": "file:src/main/session/session-title-utils.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/session-title-flow-abort.test.ts",
+      "target": "function:tests/session-title-flow-abort.test.ts:makeDeps",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:tests/session-title-flow-abort.test.ts:makeDeps",
+      "target": "function:tests/session-title-flow-abort.test.ts:getDefaultTitleFromPrompt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-title-flow-abort.test.ts:makeDeps",
+      "target": "function:tests/session-title-flow-abort.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-title-flow-abort.test.ts:makeDeps",
+      "target": "function:tests/session-title-flow-abort.test.ts:getDefaultTitleFromPrompt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-title-flow-abort.test.ts:makeDeps",
+      "target": "function:tests/session-title-flow-abort.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-title-flow-abort.test.ts:makeDeps",
+      "target": "function:tests/session-title-flow-abort.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-title-flow-abort.test.ts:makeDeps",
+      "target": "function:tests/session-title-flow-abort.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/session-title-flow.test.ts",
+      "target": "file:tests/support/session-title-harness.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/session-title-utils.test.ts",
+      "target": "file:src/main/session/session-title-utils.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/support/session-title-harness.ts",
+      "target": "file:src/main/session/session-title-flow.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/support/session-title-harness.ts",
+      "target": "file:src/main/session/session-title-utils.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/support/session-title-harness.ts",
+      "target": "function:tests/support/session-title-harness.ts:createTitleFlowHarness",
+      "type": "contains",
+      "weight": 1
+    }
+  ]
+}

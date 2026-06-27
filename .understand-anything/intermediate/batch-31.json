@@ -1,0 +1,45 @@
+{
+  "nodes": [
+    {
+      "id": "document:.claude/skills/visio/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": ".claude/skills/visio/README.md",
+      "summary": "文档文件 README.md，共约 207 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "complex",
+      "language": "markdown"
+    },
+    {
+      "id": "document:.claude/skills/visio/RELEASE_NOTES.md",
+      "type": "document",
+      "name": "RELEASE_NOTES.md",
+      "filePath": ".claude/skills/visio/RELEASE_NOTES.md",
+      "summary": "文档文件 RELEASE_NOTES.md，共约 33 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "simple",
+      "language": "markdown"
+    },
+    {
+      "id": "document:.claude/skills/visio/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": ".claude/skills/visio/SKILL.md",
+      "summary": "文档文件 SKILL.md，共约 505 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "complex",
+      "language": "markdown"
+    },
+    {
+      "id": "document:.claude/skills/visio/requirements.txt",
+      "type": "document",
+      "name": "requirements.txt",
+      "filePath": ".claude/skills/visio/requirements.txt",
+      "summary": "文档文件 requirements.txt，共约 2 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "simple",
+      "language": "txt"
+    }
+  ],
+  "edges": []
+}

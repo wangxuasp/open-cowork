@@ -1,0 +1,2916 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/main/utils/logger.ts",
+      "type": "file",
+      "name": "logger.ts",
+      "filePath": "src/main/utils/logger.ts",
+      "summary": "源码模块 src/main/utils/logger.ts，包含 34 个函数，约 485 行有效代码。",
+      "tags": ["utility"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/logger.ts:runWithLogContext",
+      "type": "function",
+      "name": "runWithLogContext",
+      "filePath": "src/main/utils/logger.ts",
+      "summary": "函数 runWithLogContext，位于 src/main/utils/logger.ts 第 26-28 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/logger.ts:generateTraceId",
+      "type": "function",
+      "name": "generateTraceId",
+      "filePath": "src/main/utils/logger.ts",
+      "summary": "函数 generateTraceId，位于 src/main/utils/logger.ts 第 34-36 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/logger.ts:resolveUserDataPath",
+      "type": "function",
+      "name": "resolveUserDataPath",
+      "filePath": "src/main/utils/logger.ts",
+      "summary": "函数 resolveUserDataPath，位于 src/main/utils/logger.ts 第 81-94 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/logger.ts:resolveAppVersion",
+      "type": "function",
+      "name": "resolveAppVersion",
+      "filePath": "src/main/utils/logger.ts",
+      "summary": "函数 resolveAppVersion，位于 src/main/utils/logger.ts 第 96-105 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/logger.ts:initLogFile",
+      "type": "function",
+      "name": "initLogFile",
+      "filePath": "src/main/utils/logger.ts",
+      "summary": "函数 initLogFile，位于 src/main/utils/logger.ts 第 110-157 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/logger.ts:cleanupOldLogs",
+      "type": "function",
+      "name": "cleanupOldLogs",
+      "filePath": "src/main/utils/logger.ts",
+      "summary": "函数 cleanupOldLogs，位于 src/main/utils/logger.ts 第 162-211 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/logger.ts:rotateLogIfNeeded",
+      "type": "function",
+      "name": "rotateLogIfNeeded",
+      "filePath": "src/main/utils/logger.ts",
+      "summary": "函数 rotateLogIfNeeded，位于 src/main/utils/logger.ts 第 216-241 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "type": "function",
+      "name": "normalizeLogValue",
+      "filePath": "src/main/utils/logger.ts",
+      "summary": "函数 normalizeLogValue，位于 src/main/utils/logger.ts 第 250-342 行。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/logger.ts:serializeLogArg",
+      "type": "function",
+      "name": "serializeLogArg",
+      "filePath": "src/main/utils/logger.ts",
+      "summary": "函数 serializeLogArg，位于 src/main/utils/logger.ts 第 344-354 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/logger.ts:writeToFile",
+      "type": "function",
+      "name": "writeToFile",
+      "filePath": "src/main/utils/logger.ts",
+      "summary": "函数 writeToFile，位于 src/main/utils/logger.ts 第 359-386 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/logger.ts:shouldPersistLogLevel",
+      "type": "function",
+      "name": "shouldPersistLogLevel",
+      "filePath": "src/main/utils/logger.ts",
+      "summary": "函数 shouldPersistLogLevel，位于 src/main/utils/logger.ts 第 388-390 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/logger.ts:log",
+      "type": "function",
+      "name": "log",
+      "filePath": "src/main/utils/logger.ts",
+      "summary": "函数 log，位于 src/main/utils/logger.ts 第 397-400 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/logger.ts:logWarn",
+      "type": "function",
+      "name": "logWarn",
+      "filePath": "src/main/utils/logger.ts",
+      "summary": "函数 logWarn，位于 src/main/utils/logger.ts 第 402-405 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/logger.ts:logError",
+      "type": "function",
+      "name": "logError",
+      "filePath": "src/main/utils/logger.ts",
+      "summary": "函数 logError，位于 src/main/utils/logger.ts 第 407-410 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/logger.ts:logCtx",
+      "type": "function",
+      "name": "logCtx",
+      "filePath": "src/main/utils/logger.ts",
+      "summary": "函数 logCtx，位于 src/main/utils/logger.ts 第 414-418 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/logger.ts:logCtxWarn",
+      "type": "function",
+      "name": "logCtxWarn",
+      "filePath": "src/main/utils/logger.ts",
+      "summary": "函数 logCtxWarn，位于 src/main/utils/logger.ts 第 420-424 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/logger.ts:logCtxError",
+      "type": "function",
+      "name": "logCtxError",
+      "filePath": "src/main/utils/logger.ts",
+      "summary": "函数 logCtxError，位于 src/main/utils/logger.ts 第 426-430 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/logger.ts:logTiming",
+      "type": "function",
+      "name": "logTiming",
+      "filePath": "src/main/utils/logger.ts",
+      "summary": "函数 logTiming，位于 src/main/utils/logger.ts 第 436-442 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/logger.ts:getLogFilePath",
+      "type": "function",
+      "name": "getLogFilePath",
+      "filePath": "src/main/utils/logger.ts",
+      "summary": "函数 getLogFilePath，位于 src/main/utils/logger.ts 第 447-449 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/logger.ts:getLogsDirectory",
+      "type": "function",
+      "name": "getLogsDirectory",
+      "filePath": "src/main/utils/logger.ts",
+      "summary": "函数 getLogsDirectory，位于 src/main/utils/logger.ts 第 454-457 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/logger.ts:getAllLogFiles",
+      "type": "function",
+      "name": "getAllLogFiles",
+      "filePath": "src/main/utils/logger.ts",
+      "summary": "函数 getAllLogFiles，位于 src/main/utils/logger.ts 第 462-487 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/logger.ts:setDevLogsEnabled",
+      "type": "function",
+      "name": "setDevLogsEnabled",
+      "filePath": "src/main/utils/logger.ts",
+      "summary": "函数 setDevLogsEnabled，位于 src/main/utils/logger.ts 第 492-506 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/logger.ts:isDevLogsEnabled",
+      "type": "function",
+      "name": "isDevLogsEnabled",
+      "filePath": "src/main/utils/logger.ts",
+      "summary": "函数 isDevLogsEnabled，位于 src/main/utils/logger.ts 第 511-513 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/logger.ts:closeLogFile",
+      "type": "function",
+      "name": "closeLogFile",
+      "filePath": "src/main/utils/logger.ts",
+      "summary": "函数 closeLogFile，位于 src/main/utils/logger.ts 第 518-528 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/utils/recent-workspace-files.ts",
+      "type": "file",
+      "name": "recent-workspace-files.ts",
+      "filePath": "src/main/utils/recent-workspace-files.ts",
+      "summary": "源码模块 src/main/utils/recent-workspace-files.ts，包含 2 个函数，约 86 行有效代码。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/recent-workspace-files.ts:listRecentWorkspaceFiles",
+      "type": "function",
+      "name": "listRecentWorkspaceFiles",
+      "filePath": "src/main/utils/recent-workspace-files.ts",
+      "summary": "函数 listRecentWorkspaceFiles，位于 src/main/utils/recent-workspace-files.ts 第 32-95 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/utils/retry.ts",
+      "type": "file",
+      "name": "retry.ts",
+      "filePath": "src/main/utils/retry.ts",
+      "summary": "源码模块 src/main/utils/retry.ts，包含 1 个函数，约 43 行有效代码。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/retry.ts:withRetry",
+      "type": "function",
+      "name": "withRetry",
+      "filePath": "src/main/utils/retry.ts",
+      "summary": "函数 withRetry，位于 src/main/utils/retry.ts 第 6-50 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/utils/safe-fs.ts",
+      "type": "file",
+      "name": "safe-fs.ts",
+      "filePath": "src/main/utils/safe-fs.ts",
+      "summary": "源码模块 src/main/utils/safe-fs.ts，包含 2 个函数，约 50 行有效代码。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/safe-fs.ts:safeReaddirSync",
+      "type": "function",
+      "name": "safeReaddirSync",
+      "filePath": "src/main/utils/safe-fs.ts",
+      "summary": "函数 safeReaddirSync，位于 src/main/utils/safe-fs.ts 第 22-55 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/utils/shell-resolver.ts",
+      "type": "file",
+      "name": "shell-resolver.ts",
+      "filePath": "src/main/utils/shell-resolver.ts",
+      "summary": "源码模块 src/main/utils/shell-resolver.ts，包含 2 个函数，约 24 行有效代码。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/shell-resolver.ts:getDefaultShell",
+      "type": "function",
+      "name": "getDefaultShell",
+      "filePath": "src/main/utils/shell-resolver.ts",
+      "summary": "函数 getDefaultShell，位于 src/main/utils/shell-resolver.ts 第 8-13 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/shell-resolver.ts:getShellArgs",
+      "type": "function",
+      "name": "getShellArgs",
+      "filePath": "src/main/utils/shell-resolver.ts",
+      "summary": "函数 getShellArgs，位于 src/main/utils/shell-resolver.ts 第 20-26 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/workspace-path-constraints.ts",
+      "type": "file",
+      "name": "workspace-path-constraints.ts",
+      "filePath": "src/main/workspace-path-constraints.ts",
+      "summary": "源码模块 src/main/workspace-path-constraints.ts，包含 1 个函数，约 19 行有效代码。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/workspace-path-constraints.ts:getUnsupportedWorkspacePathReason",
+      "type": "function",
+      "name": "getUnsupportedWorkspacePathReason",
+      "filePath": "src/main/workspace-path-constraints.ts",
+      "summary": "函数 getUnsupportedWorkspacePathReason，位于 src/main/workspace-path-constraints.ts 第 9-23 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/shared/local-file-path.ts",
+      "type": "file",
+      "name": "local-file-path.ts",
+      "filePath": "src/shared/local-file-path.ts",
+      "summary": "源码模块 src/shared/local-file-path.ts，包含 6 个函数，约 78 行有效代码。",
+      "tags": ["utility"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/shared/local-file-path.ts:decodePathSafely",
+      "type": "function",
+      "name": "decodePathSafely",
+      "filePath": "src/shared/local-file-path.ts",
+      "summary": "函数 decodePathSafely，位于 src/shared/local-file-path.ts 第 4-10 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/shared/local-file-path.ts:isWindowsDrivePath",
+      "type": "function",
+      "name": "isWindowsDrivePath",
+      "filePath": "src/shared/local-file-path.ts",
+      "summary": "函数 isWindowsDrivePath，位于 src/shared/local-file-path.ts 第 12-14 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/shared/local-file-path.ts:isUncPath",
+      "type": "function",
+      "name": "isUncPath",
+      "filePath": "src/shared/local-file-path.ts",
+      "summary": "函数 isUncPath，位于 src/shared/local-file-path.ts 第 16-18 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/shared/local-file-path.ts:localPathFromFileUrl",
+      "type": "function",
+      "name": "localPathFromFileUrl",
+      "filePath": "src/shared/local-file-path.ts",
+      "summary": "函数 localPathFromFileUrl，位于 src/shared/local-file-path.ts 第 24-72 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/shared/local-file-path.ts:localPathFromAppUrlPathname",
+      "type": "function",
+      "name": "localPathFromAppUrlPathname",
+      "filePath": "src/shared/local-file-path.ts",
+      "summary": "函数 localPathFromAppUrlPathname，位于 src/shared/local-file-path.ts 第 74-98 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/tests/claude/windows-bash-operations.test.ts",
+      "type": "file",
+      "name": "windows-bash-operations.test.ts",
+      "filePath": "src/tests/claude/windows-bash-operations.test.ts",
+      "summary": "TypeScript/JavaScript 模块 src/tests/claude/windows-bash-operations.test.ts，导出 1 个类与 1 个函数，是应用逻辑的一部分。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/tests/claude/windows-bash-operations.test.ts:createSpawnMock",
+      "type": "function",
+      "name": "createSpawnMock",
+      "filePath": "src/tests/claude/windows-bash-operations.test.ts",
+      "summary": "函数 createSpawnMock，位于 src/tests/claude/windows-bash-operations.test.ts 第 21-34 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/tests/config/permission-rules-store.test.ts",
+      "type": "file",
+      "name": "permission-rules-store.test.ts",
+      "filePath": "src/tests/config/permission-rules-store.test.ts",
+      "summary": "源码模块 src/tests/config/permission-rules-store.test.ts，包含 1 个函数，约 220 行有效代码。",
+      "tags": ["test", "state-management", "configuration"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/tests/mcp/mcp-manager.test.ts",
+      "type": "file",
+      "name": "mcp-manager.test.ts",
+      "filePath": "src/tests/mcp/mcp-manager.test.ts",
+      "summary": "源码模块 src/tests/mcp/mcp-manager.test.ts，包含 1 个函数，约 304 行有效代码。",
+      "tags": ["test", "service", "integration"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/tests/path-containment.test.ts",
+      "type": "file",
+      "name": "path-containment.test.ts",
+      "filePath": "src/tests/path-containment.test.ts",
+      "summary": "源码模块 src/tests/path-containment.test.ts，体量 88 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/agent-runner-loop-guard.test.ts",
+      "type": "file",
+      "name": "agent-runner-loop-guard.test.ts",
+      "filePath": "tests/agent-runner-loop-guard.test.ts",
+      "summary": "源码模块 tests/agent-runner-loop-guard.test.ts，体量 239 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test", "entry-point", "service"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/local-file-path.test.ts",
+      "type": "file",
+      "name": "local-file-path.test.ts",
+      "filePath": "tests/local-file-path.test.ts",
+      "summary": "源码模块 tests/local-file-path.test.ts，体量 67 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/logger-level-persistence.test.ts",
+      "type": "file",
+      "name": "logger-level-persistence.test.ts",
+      "filePath": "tests/logger-level-persistence.test.ts",
+      "summary": "源码模块 tests/logger-level-persistence.test.ts，体量 18 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/mcp-chrome-preconnect.test.ts",
+      "type": "file",
+      "name": "mcp-chrome-preconnect.test.ts",
+      "filePath": "tests/mcp-chrome-preconnect.test.ts",
+      "summary": "源码模块 tests/mcp-chrome-preconnect.test.ts，包含 1 个函数，约 63 行有效代码。",
+      "tags": ["test", "service", "integration"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/mcp-chrome-preconnect.test.ts:chromeConfig",
+      "type": "function",
+      "name": "chromeConfig",
+      "filePath": "tests/mcp-chrome-preconnect.test.ts",
+      "summary": "函数 chromeConfig，位于 tests/mcp-chrome-preconnect.test.ts 第 22-31 行。",
+      "tags": ["test", "service", "integration"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/mcp-manager-env-merge.test.ts",
+      "type": "file",
+      "name": "mcp-manager-env-merge.test.ts",
+      "filePath": "tests/mcp-manager-env-merge.test.ts",
+      "summary": "源码模块 tests/mcp-manager-env-merge.test.ts，体量 40 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test", "service", "integration"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/mcp-npx-resolution.test.ts",
+      "type": "file",
+      "name": "mcp-npx-resolution.test.ts",
+      "filePath": "tests/mcp-npx-resolution.test.ts",
+      "summary": "源码模块 tests/mcp-npx-resolution.test.ts，体量 64 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test", "service", "integration"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/mcp-tool-name.test.ts",
+      "type": "file",
+      "name": "mcp-tool-name.test.ts",
+      "filePath": "tests/mcp-tool-name.test.ts",
+      "summary": "源码模块 tests/mcp-tool-name.test.ts，包含 2 个函数，约 289 行有效代码。",
+      "tags": ["test", "service", "integration"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/mcp-tool-name.test.ts:createManagerWithTool",
+      "type": "function",
+      "name": "createManagerWithTool",
+      "filePath": "tests/mcp-tool-name.test.ts",
+      "summary": "函数 createManagerWithTool，位于 tests/mcp-tool-name.test.ts 第 27-49 行。",
+      "tags": ["test", "service", "integration"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/path-guard-command-conversion.test.ts",
+      "type": "file",
+      "name": "path-guard-command-conversion.test.ts",
+      "filePath": "tests/path-guard-command-conversion.test.ts",
+      "summary": "源码模块 tests/path-guard-command-conversion.test.ts，体量 27 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/pi-session-runtime.test.ts",
+      "type": "file",
+      "name": "pi-session-runtime.test.ts",
+      "filePath": "tests/pi-session-runtime.test.ts",
+      "summary": "源码模块 tests/pi-session-runtime.test.ts，体量 48 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/recent-workspace-files.test.ts",
+      "type": "file",
+      "name": "recent-workspace-files.test.ts",
+      "filePath": "tests/recent-workspace-files.test.ts",
+      "summary": "源码模块 tests/recent-workspace-files.test.ts，体量 86 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/retry.test.ts",
+      "type": "file",
+      "name": "retry.test.ts",
+      "filePath": "tests/retry.test.ts",
+      "summary": "源码模块 tests/retry.test.ts，体量 74 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/safe-fs.test.ts",
+      "type": "file",
+      "name": "safe-fs.test.ts",
+      "filePath": "tests/safe-fs.test.ts",
+      "summary": "源码模块 tests/safe-fs.test.ts，体量 30 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/session-manager-crud.test.ts",
+      "type": "file",
+      "name": "session-manager-crud.test.ts",
+      "filePath": "tests/session-manager-crud.test.ts",
+      "summary": "源码模块 tests/session-manager-crud.test.ts，包含 1 个函数，约 325 行有效代码。",
+      "tags": ["test"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/session-manager-crud.test.ts:makeDb",
+      "type": "function",
+      "name": "makeDb",
+      "filePath": "tests/session-manager-crud.test.ts",
+      "summary": "函数 makeDb，位于 tests/session-manager-crud.test.ts 第 53-76 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/session-manager-message-cache.test.ts",
+      "type": "file",
+      "name": "session-manager-message-cache.test.ts",
+      "filePath": "tests/session-manager-message-cache.test.ts",
+      "summary": "源码模块 tests/session-manager-message-cache.test.ts，包含 1 个函数，约 133 行有效代码。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/session-manager-message-cache.test.ts:makeDb",
+      "type": "function",
+      "name": "makeDb",
+      "filePath": "tests/session-manager-message-cache.test.ts",
+      "summary": "函数 makeDb，位于 tests/session-manager-message-cache.test.ts 第 58-89 行。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/session-manager-queue-concurrency.test.ts",
+      "type": "file",
+      "name": "session-manager-queue-concurrency.test.ts",
+      "filePath": "tests/session-manager-queue-concurrency.test.ts",
+      "summary": "源码模块 tests/session-manager-queue-concurrency.test.ts，包含 1 个函数，约 212 行有效代码。",
+      "tags": ["test"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/session-manager-queue-concurrency.test.ts:createMockDb",
+      "type": "function",
+      "name": "createMockDb",
+      "filePath": "tests/session-manager-queue-concurrency.test.ts",
+      "summary": "函数 createMockDb，位于 tests/session-manager-queue-concurrency.test.ts 第 56-85 行。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/skills-manager-plugin-install.test.ts",
+      "type": "file",
+      "name": "skills-manager-plugin-install.test.ts",
+      "filePath": "tests/skills-manager-plugin-install.test.ts",
+      "summary": "源码模块 tests/skills-manager-plugin-install.test.ts，包含 2 个函数，约 131 行有效代码。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/skills-manager-plugin-install.test.ts:createDbMock",
+      "type": "function",
+      "name": "createDbMock",
+      "filePath": "tests/skills-manager-plugin-install.test.ts",
+      "summary": "函数 createDbMock，位于 tests/skills-manager-plugin-install.test.ts 第 29-42 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/skills-manager-plugin-install.test.ts:createPluginDirectory",
+      "type": "function",
+      "name": "createPluginDirectory",
+      "filePath": "tests/skills-manager-plugin-install.test.ts",
+      "summary": "函数 createPluginDirectory，位于 tests/skills-manager-plugin-install.test.ts 第 44-71 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/skills-manager-storage-path.test.ts",
+      "type": "file",
+      "name": "skills-manager-storage-path.test.ts",
+      "filePath": "tests/skills-manager-storage-path.test.ts",
+      "summary": "源码模块 tests/skills-manager-storage-path.test.ts，包含 3 个函数，约 135 行有效代码。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/skills-manager-storage-path.test.ts:createDbMock",
+      "type": "function",
+      "name": "createDbMock",
+      "filePath": "tests/skills-manager-storage-path.test.ts",
+      "summary": "函数 createDbMock，位于 tests/skills-manager-storage-path.test.ts 第 29-42 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/skills-manager-storage-path.test.ts:waitFor",
+      "type": "function",
+      "name": "waitFor",
+      "filePath": "tests/skills-manager-storage-path.test.ts",
+      "summary": "函数 waitFor，位于 tests/skills-manager-storage-path.test.ts 第 54-63 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/teamcenter-skill-runtime.test.ts",
+      "type": "file",
+      "name": "teamcenter-skill-runtime.test.ts",
+      "filePath": "tests/teamcenter-skill-runtime.test.ts",
+      "summary": "源码模块 tests/teamcenter-skill-runtime.test.ts，包含 2 个函数，约 137 行有效代码。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/tool-executor-sandbox.test.ts",
+      "type": "file",
+      "name": "tool-executor-sandbox.test.ts",
+      "filePath": "tests/tool-executor-sandbox.test.ts",
+      "summary": "源码模块 tests/tool-executor-sandbox.test.ts，体量 148 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test", "infrastructure", "security"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/tool-executor-unc-paths.test.ts",
+      "type": "file",
+      "name": "tool-executor-unc-paths.test.ts",
+      "filePath": "tests/tool-executor-unc-paths.test.ts",
+      "summary": "源码模块 tests/tool-executor-unc-paths.test.ts，体量 21 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/tool-result-utils.test.ts",
+      "type": "file",
+      "name": "tool-result-utils.test.ts",
+      "filePath": "tests/tool-result-utils.test.ts",
+      "summary": "源码模块 tests/tool-result-utils.test.ts，体量 80 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/workspace-path-constraints.test.ts",
+      "type": "file",
+      "name": "workspace-path-constraints.test.ts",
+      "filePath": "tests/workspace-path-constraints.test.ts",
+      "summary": "源码模块 tests/workspace-path-constraints.test.ts，体量 31 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/main/utils/logger.ts",
+      "target": "function:src/main/utils/logger.ts:runWithLogContext",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/logger.ts",
+      "target": "function:src/main/utils/logger.ts:generateTraceId",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/logger.ts",
+      "target": "function:src/main/utils/logger.ts:resolveUserDataPath",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/logger.ts",
+      "target": "function:src/main/utils/logger.ts:resolveAppVersion",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/logger.ts",
+      "target": "function:src/main/utils/logger.ts:initLogFile",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/logger.ts",
+      "target": "function:src/main/utils/logger.ts:cleanupOldLogs",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/logger.ts",
+      "target": "function:src/main/utils/logger.ts:rotateLogIfNeeded",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/logger.ts",
+      "target": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/logger.ts",
+      "target": "function:src/main/utils/logger.ts:serializeLogArg",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/logger.ts",
+      "target": "function:src/main/utils/logger.ts:writeToFile",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/logger.ts",
+      "target": "function:src/main/utils/logger.ts:shouldPersistLogLevel",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/logger.ts",
+      "target": "function:src/main/utils/logger.ts:log",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/logger.ts",
+      "target": "function:src/main/utils/logger.ts:logWarn",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/logger.ts",
+      "target": "function:src/main/utils/logger.ts:logError",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/logger.ts",
+      "target": "function:src/main/utils/logger.ts:logCtx",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/logger.ts",
+      "target": "function:src/main/utils/logger.ts:logCtxWarn",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/logger.ts",
+      "target": "function:src/main/utils/logger.ts:logCtxError",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/logger.ts",
+      "target": "function:src/main/utils/logger.ts:logTiming",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/logger.ts",
+      "target": "function:src/main/utils/logger.ts:getLogFilePath",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/logger.ts",
+      "target": "function:src/main/utils/logger.ts:getLogsDirectory",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/logger.ts",
+      "target": "function:src/main/utils/logger.ts:getAllLogFiles",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/logger.ts",
+      "target": "function:src/main/utils/logger.ts:setDevLogsEnabled",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/logger.ts",
+      "target": "function:src/main/utils/logger.ts:isDevLogsEnabled",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/logger.ts",
+      "target": "function:src/main/utils/logger.ts:closeLogFile",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:runWithLogContext",
+      "target": "function:src/main/utils/logger.ts:logStorage.run",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:generateTraceId",
+      "target": "function:src/main/utils/logger.ts:randomUUID().slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:generateTraceId",
+      "target": "function:src/main/utils/logger.ts:randomUUID",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:resolveUserDataPath",
+      "target": "function:src/main/utils/logger.ts:app.getPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:resolveUserDataPath",
+      "target": "function:src/main/utils/logger.ts:userDataPath?.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:resolveUserDataPath",
+      "target": "function:src/main/utils/logger.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:resolveUserDataPath",
+      "target": "function:src/main/utils/logger.ts:process.cwd",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:resolveAppVersion",
+      "target": "function:src/main/utils/logger.ts:app.getVersion",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:initLogFile",
+      "target": "function:src/main/utils/logger.ts:resolveUserDataPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:initLogFile",
+      "target": "function:src/main/utils/logger.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:initLogFile",
+      "target": "function:src/main/utils/logger.ts:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:initLogFile",
+      "target": "function:src/main/utils/logger.ts:fs.mkdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:initLogFile",
+      "target": "function:src/main/utils/logger.ts:new Date()\n      .toISOString()\n      .replace(/[:.]/g, '-')\n      .replace('T', '_')\n      .split",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:initLogFile",
+      "target": "function:src/main/utils/logger.ts:new Date()\n      .toISOString()\n      .replace(/[:.]/g, '-')\n      .replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:initLogFile",
+      "target": "function:src/main/utils/logger.ts:new Date()\n      .toISOString()\n      .replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:initLogFile",
+      "target": "function:src/main/utils/logger.ts:new Date()\n      .toISOString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:initLogFile",
+      "target": "function:src/main/utils/logger.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:initLogFile",
+      "target": "function:src/main/utils/logger.ts:fs.createWriteStream",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:initLogFile",
+      "target": "function:src/main/utils/logger.ts:attachLogStreamErrorHandler",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:initLogFile",
+      "target": "function:src/main/utils/logger.ts:new Date().toISOString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:initLogFile",
+      "target": "function:src/main/utils/logger.ts:resolveAppVersion",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:initLogFile",
+      "target": "function:src/main/utils/logger.ts:logStream.write",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:initLogFile",
+      "target": "function:src/main/utils/logger.ts:safeConsoleLog",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:initLogFile",
+      "target": "function:src/main/utils/logger.ts:cleanupOldLogs",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:initLogFile",
+      "target": "function:src/main/utils/logger.ts:safeConsoleError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:cleanupOldLogs",
+      "target": "function:src/main/utils/logger.ts:fs\n      .readdirSync(logsDir)\n      .filter((f) => f.startsWith('app-') && f.endsWith('.log'))\n      .flatMap((f) => {\n        const filePath = path.join(logsDir, f);\n        try {\n          return [\n            {\n              name: f,\n              path: filePath,\n              mtime: fs.statSync(filePath).mtime.getTime(),\n            },\n          ];\n        } catch (err) {\n          const errno = err as NodeJS.ErrnoException;\n          if (errno.code === 'ENOENT') {\n            // File disappeared between readdir and stat; ignore.\n            return [];\n          }\n          throw err;\n        }\n      })\n      .sort",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:cleanupOldLogs",
+      "target": "function:src/main/utils/logger.ts:fs\n      .readdirSync(logsDir)\n      .filter((f) => f.startsWith('app-') && f.endsWith('.log'))\n      .flatMap",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:cleanupOldLogs",
+      "target": "function:src/main/utils/logger.ts:fs\n      .readdirSync(logsDir)\n      .filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:cleanupOldLogs",
+      "target": "function:src/main/utils/logger.ts:fs\n      .readdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:cleanupOldLogs",
+      "target": "function:src/main/utils/logger.ts:f.startsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:cleanupOldLogs",
+      "target": "function:src/main/utils/logger.ts:f.endsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:cleanupOldLogs",
+      "target": "function:src/main/utils/logger.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:cleanupOldLogs",
+      "target": "function:src/main/utils/logger.ts:fs.statSync(filePath).mtime.getTime",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:cleanupOldLogs",
+      "target": "function:src/main/utils/logger.ts:fs.statSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:cleanupOldLogs",
+      "target": "function:src/main/utils/logger.ts:files\n        .slice(MAX_LOG_FILES)\n        .filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:cleanupOldLogs",
+      "target": "function:src/main/utils/logger.ts:files\n        .slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:cleanupOldLogs",
+      "target": "function:src/main/utils/logger.ts:fs.unlinkSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:cleanupOldLogs",
+      "target": "function:src/main/utils/logger.ts:safeConsoleLog",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:cleanupOldLogs",
+      "target": "function:src/main/utils/logger.ts:safeConsoleError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:cleanupOldLogs",
+      "target": "function:src/main/utils/logger.ts:safeConsoleError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:rotateLogIfNeeded",
+      "target": "function:src/main/utils/logger.ts:fs.statSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:rotateLogIfNeeded",
+      "target": "function:src/main/utils/logger.ts:safeConsoleLog",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:rotateLogIfNeeded",
+      "target": "function:src/main/utils/logger.ts:logStream.end",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:rotateLogIfNeeded",
+      "target": "function:src/main/utils/logger.ts:clearLogStreamState",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:rotateLogIfNeeded",
+      "target": "function:src/main/utils/logger.ts:initLogFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:rotateLogIfNeeded",
+      "target": "function:src/main/utils/logger.ts:clearLogStreamState",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:rotateLogIfNeeded",
+      "target": "function:src/main/utils/logger.ts:initLogFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:rotateLogIfNeeded",
+      "target": "function:src/main/utils/logger.ts:safeConsoleError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:seen.has",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:seen.add",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:Object.entries(err as unknown as Record<string, unknown>).filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:Object.entries",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:['name', 'message', 'stack', 'cause'].includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:truncateLogText",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:truncateLogText",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:Object.fromEntries",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:truncateLogText",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:value.toString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:value.toISOString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:Buffer.isBuffer",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:Array.isArray",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:value\n      .slice(0, MAX_LOG_ARRAY_ITEMS)\n      .map((item) => normalizeLogValue(item, seen, depth + 1))\n      .concat",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:value\n      .slice(0, MAX_LOG_ARRAY_ITEMS)\n      .map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:value\n      .slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:seen.has",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:seen.add",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:Object.entries",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:entries\n      .slice(0, MAX_LOG_OBJECT_KEYS)\n      .map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:entries\n      .slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:limitedEntries.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:Object.fromEntries",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "target": "function:src/main/utils/logger.ts:String",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:serializeLogArg",
+      "target": "function:src/main/utils/logger.ts:normalizeLogValue",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:serializeLogArg",
+      "target": "function:src/main/utils/logger.ts:JSON.stringify",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:serializeLogArg",
+      "target": "function:src/main/utils/logger.ts:String",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:writeToFile",
+      "target": "function:src/main/utils/logger.ts:shouldPersistLogLevel",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:writeToFile",
+      "target": "function:src/main/utils/logger.ts:initLogFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:writeToFile",
+      "target": "function:src/main/utils/logger.ts:getTimestamp",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:writeToFile",
+      "target": "function:src/main/utils/logger.ts:formatCtxPrefix",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:writeToFile",
+      "target": "function:src/main/utils/logger.ts:args.map((arg) => serializeLogArg(arg)).join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:writeToFile",
+      "target": "function:src/main/utils/logger.ts:args.map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:writeToFile",
+      "target": "function:src/main/utils/logger.ts:serializeLogArg",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:writeToFile",
+      "target": "function:src/main/utils/logger.ts:logStream.write",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:writeToFile",
+      "target": "function:src/main/utils/logger.ts:rotateLogIfNeeded",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:writeToFile",
+      "target": "function:src/main/utils/logger.ts:safeConsoleError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:shouldPersistLogLevel",
+      "target": "function:src/main/utils/logger.ts:ALWAYS_PERSIST_LOG_LEVELS.has",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:log",
+      "target": "function:src/main/utils/logger.ts:safeConsoleLog",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:log",
+      "target": "function:src/main/utils/logger.ts:getTimestamp",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:log",
+      "target": "function:src/main/utils/logger.ts:writeToFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:logWarn",
+      "target": "function:src/main/utils/logger.ts:safeConsoleWarn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:logWarn",
+      "target": "function:src/main/utils/logger.ts:getTimestamp",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:logWarn",
+      "target": "function:src/main/utils/logger.ts:writeToFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:logError",
+      "target": "function:src/main/utils/logger.ts:safeConsoleError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:logError",
+      "target": "function:src/main/utils/logger.ts:getTimestamp",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:logError",
+      "target": "function:src/main/utils/logger.ts:writeToFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:logCtx",
+      "target": "function:src/main/utils/logger.ts:formatCtxPrefix",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:logCtx",
+      "target": "function:src/main/utils/logger.ts:safeConsoleLog",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:logCtx",
+      "target": "function:src/main/utils/logger.ts:getTimestamp",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:logCtx",
+      "target": "function:src/main/utils/logger.ts:writeToFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:logCtxWarn",
+      "target": "function:src/main/utils/logger.ts:formatCtxPrefix",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:logCtxWarn",
+      "target": "function:src/main/utils/logger.ts:safeConsoleWarn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:logCtxWarn",
+      "target": "function:src/main/utils/logger.ts:getTimestamp",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:logCtxWarn",
+      "target": "function:src/main/utils/logger.ts:writeToFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:logCtxError",
+      "target": "function:src/main/utils/logger.ts:formatCtxPrefix",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:logCtxError",
+      "target": "function:src/main/utils/logger.ts:safeConsoleError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:logCtxError",
+      "target": "function:src/main/utils/logger.ts:getTimestamp",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:logCtxError",
+      "target": "function:src/main/utils/logger.ts:writeToFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:logTiming",
+      "target": "function:src/main/utils/logger.ts:Date.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:logTiming",
+      "target": "function:src/main/utils/logger.ts:formatCtxPrefix",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:logTiming",
+      "target": "function:src/main/utils/logger.ts:safeConsoleLog",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:logTiming",
+      "target": "function:src/main/utils/logger.ts:getTimestamp",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:logTiming",
+      "target": "function:src/main/utils/logger.ts:writeToFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:getLogsDirectory",
+      "target": "function:src/main/utils/logger.ts:resolveUserDataPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:getLogsDirectory",
+      "target": "function:src/main/utils/logger.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:getAllLogFiles",
+      "target": "function:src/main/utils/logger.ts:getLogsDirectory",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:getAllLogFiles",
+      "target": "function:src/main/utils/logger.ts:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:getAllLogFiles",
+      "target": "function:src/main/utils/logger.ts:fs\n      .readdirSync(logsDir)\n      .filter((f) => f.startsWith('app-') && f.endsWith('.log'))\n      .flatMap((f) => {\n        const filePath = path.join(logsDir, f);\n        try {\n          const stats = fs.statSync(filePath);\n          return [{ name: f, path: filePath, size: stats.size, mtime: stats.mtime }];\n        } catch {\n          // File disappeared between readdir and stat (ENOENT) or is unreadable; skip.\n          return [];\n        }\n      })\n      .sort",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:getAllLogFiles",
+      "target": "function:src/main/utils/logger.ts:fs\n      .readdirSync(logsDir)\n      .filter((f) => f.startsWith('app-') && f.endsWith('.log'))\n      .flatMap",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:getAllLogFiles",
+      "target": "function:src/main/utils/logger.ts:fs\n      .readdirSync(logsDir)\n      .filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:getAllLogFiles",
+      "target": "function:src/main/utils/logger.ts:fs\n      .readdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:getAllLogFiles",
+      "target": "function:src/main/utils/logger.ts:f.startsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:getAllLogFiles",
+      "target": "function:src/main/utils/logger.ts:f.endsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:getAllLogFiles",
+      "target": "function:src/main/utils/logger.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:getAllLogFiles",
+      "target": "function:src/main/utils/logger.ts:fs.statSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:getAllLogFiles",
+      "target": "function:src/main/utils/logger.ts:b.mtime.getTime",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:getAllLogFiles",
+      "target": "function:src/main/utils/logger.ts:a.mtime.getTime",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:getAllLogFiles",
+      "target": "function:src/main/utils/logger.ts:safeConsoleError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:setDevLogsEnabled",
+      "target": "function:src/main/utils/logger.ts:safeConsoleLog",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:setDevLogsEnabled",
+      "target": "function:src/main/utils/logger.ts:logStream.end",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:setDevLogsEnabled",
+      "target": "function:src/main/utils/logger.ts:clearLogStreamState",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:setDevLogsEnabled",
+      "target": "function:src/main/utils/logger.ts:safeConsoleLog",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:setDevLogsEnabled",
+      "target": "function:src/main/utils/logger.ts:safeConsoleError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:closeLogFile",
+      "target": "function:src/main/utils/logger.ts:logStream.end",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:closeLogFile",
+      "target": "function:src/main/utils/logger.ts:safeConsoleLog",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:closeLogFile",
+      "target": "function:src/main/utils/logger.ts:safeConsoleError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/logger.ts:closeLogFile",
+      "target": "function:src/main/utils/logger.ts:clearLogStreamState",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/utils/recent-workspace-files.ts",
+      "target": "function:src/main/utils/recent-workspace-files.ts:listRecentWorkspaceFiles",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/utils/recent-workspace-files.ts:listRecentWorkspaceFiles",
+      "target": "function:src/main/utils/recent-workspace-files.ts:path.resolve",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/recent-workspace-files.ts:listRecentWorkspaceFiles",
+      "target": "function:src/main/utils/recent-workspace-files.ts:queue.shift",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/recent-workspace-files.ts:listRecentWorkspaceFiles",
+      "target": "function:src/main/utils/recent-workspace-files.ts:fs.readdir",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/recent-workspace-files.ts:listRecentWorkspaceFiles",
+      "target": "function:src/main/utils/recent-workspace-files.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/recent-workspace-files.ts:listRecentWorkspaceFiles",
+      "target": "function:src/main/utils/recent-workspace-files.ts:entry.isSymbolicLink",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/recent-workspace-files.ts:listRecentWorkspaceFiles",
+      "target": "function:src/main/utils/recent-workspace-files.ts:entry.isDirectory",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/recent-workspace-files.ts:listRecentWorkspaceFiles",
+      "target": "function:src/main/utils/recent-workspace-files.ts:EXCLUDED_DIRS.has",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/recent-workspace-files.ts:listRecentWorkspaceFiles",
+      "target": "function:src/main/utils/recent-workspace-files.ts:queue.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/recent-workspace-files.ts:listRecentWorkspaceFiles",
+      "target": "function:src/main/utils/recent-workspace-files.ts:entry.isFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/recent-workspace-files.ts:listRecentWorkspaceFiles",
+      "target": "function:src/main/utils/recent-workspace-files.ts:shouldIgnoreFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/recent-workspace-files.ts:listRecentWorkspaceFiles",
+      "target": "function:src/main/utils/recent-workspace-files.ts:fs.stat",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/recent-workspace-files.ts:listRecentWorkspaceFiles",
+      "target": "function:src/main/utils/recent-workspace-files.ts:Math.max",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/recent-workspace-files.ts:listRecentWorkspaceFiles",
+      "target": "function:src/main/utils/recent-workspace-files.ts:results.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/recent-workspace-files.ts:listRecentWorkspaceFiles",
+      "target": "function:src/main/utils/recent-workspace-files.ts:results.sort((a, b) => b.modifiedAt - a.modifiedAt).slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/recent-workspace-files.ts:listRecentWorkspaceFiles",
+      "target": "function:src/main/utils/recent-workspace-files.ts:results.sort",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/utils/retry.ts",
+      "target": "file:src/main/utils/logger.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/utils/retry.ts",
+      "target": "function:src/main/utils/retry.ts:withRetry",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/utils/retry.ts:withRetry",
+      "target": "function:src/main/utils/retry.ts:operation",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/retry.ts:withRetry",
+      "target": "function:src/main/utils/retry.ts:String",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/retry.ts:withRetry",
+      "target": "function:src/main/utils/retry.ts:shouldRetry",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/retry.ts:withRetry",
+      "target": "function:src/main/utils/retry.ts:onRetry",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/retry.ts:withRetry",
+      "target": "function:src/main/utils/retry.ts:logWarn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/retry.ts:withRetry",
+      "target": "function:src/main/utils/retry.ts:setTimeout",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/retry.ts:withRetry",
+      "target": "function:src/main/utils/retry.ts:Math.min",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/utils/safe-fs.ts",
+      "target": "function:src/main/utils/safe-fs.ts:safeReaddirSync",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/utils/safe-fs.ts:safeReaddirSync",
+      "target": "function:src/main/utils/safe-fs.ts:fs.readdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/safe-fs.ts:safeReaddirSync",
+      "target": "function:src/main/utils/safe-fs.ts:onSkip",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/safe-fs.ts:safeReaddirSync",
+      "target": "function:src/main/utils/safe-fs.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/safe-fs.ts:safeReaddirSync",
+      "target": "function:src/main/utils/safe-fs.ts:fs.lstatSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/safe-fs.ts:safeReaddirSync",
+      "target": "function:src/main/utils/safe-fs.ts:entries.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/safe-fs.ts:safeReaddirSync",
+      "target": "function:src/main/utils/safe-fs.ts:lstat.isDirectory",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/safe-fs.ts:safeReaddirSync",
+      "target": "function:src/main/utils/safe-fs.ts:lstat.isSymbolicLink",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/safe-fs.ts:safeReaddirSync",
+      "target": "function:src/main/utils/safe-fs.ts:lstat.isFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/safe-fs.ts:safeReaddirSync",
+      "target": "function:src/main/utils/safe-fs.ts:onSkip",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/safe-fs.ts:safeReaddirSync",
+      "target": "function:src/main/utils/safe-fs.ts:isPermissionError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/utils/shell-resolver.ts",
+      "target": "function:src/main/utils/shell-resolver.ts:getDefaultShell",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/shell-resolver.ts",
+      "target": "function:src/main/utils/shell-resolver.ts:getShellArgs",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/utils/shell-resolver.ts:getDefaultShell",
+      "target": "function:src/main/utils/shell-resolver.ts:platform",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/shell-resolver.ts:getShellArgs",
+      "target": "function:src/main/utils/shell-resolver.ts:getDefaultShell",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/shell-resolver.ts:getShellArgs",
+      "target": "function:src/main/utils/shell-resolver.ts:platform",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/workspace-path-constraints.ts",
+      "target": "file:src/shared/local-file-path.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/workspace-path-constraints.ts",
+      "target": "function:src/main/workspace-path-constraints.ts:getUnsupportedWorkspacePathReason",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/workspace-path-constraints.ts:getUnsupportedWorkspacePathReason",
+      "target": "function:src/main/workspace-path-constraints.ts:isUncPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/shared/local-file-path.ts",
+      "target": "function:src/shared/local-file-path.ts:decodePathSafely",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/shared/local-file-path.ts",
+      "target": "function:src/shared/local-file-path.ts:isWindowsDrivePath",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/shared/local-file-path.ts",
+      "target": "function:src/shared/local-file-path.ts:isUncPath",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/shared/local-file-path.ts",
+      "target": "function:src/shared/local-file-path.ts:localPathFromFileUrl",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/shared/local-file-path.ts",
+      "target": "function:src/shared/local-file-path.ts:localPathFromAppUrlPathname",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/shared/local-file-path.ts:decodePathSafely",
+      "target": "function:src/shared/local-file-path.ts:decodeURIComponent",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/local-file-path.ts:isWindowsDrivePath",
+      "target": "function:src/shared/local-file-path.ts:windowsDrivePathPattern.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/local-file-path.ts:isUncPath",
+      "target": "function:src/shared/local-file-path.ts:uncPathPattern.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/local-file-path.ts:localPathFromFileUrl",
+      "target": "function:src/shared/local-file-path.ts:fileUrl.startsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/local-file-path.ts:localPathFromFileUrl",
+      "target": "function:src/shared/local-file-path.ts:detectPlatform",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/local-file-path.ts:localPathFromFileUrl",
+      "target": "function:src/shared/local-file-path.ts:decodePathSafely",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/local-file-path.ts:localPathFromFileUrl",
+      "target": "function:src/shared/local-file-path.ts:decodePathSafely",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/local-file-path.ts:localPathFromFileUrl",
+      "target": "function:src/shared/local-file-path.ts:hostname.toLowerCase",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/local-file-path.ts:localPathFromFileUrl",
+      "target": "function:src/shared/local-file-path.ts:pathname.replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/local-file-path.ts:localPathFromFileUrl",
+      "target": "function:src/shared/local-file-path.ts:/^\\/[A-Za-z]:\\//.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/local-file-path.ts:localPathFromFileUrl",
+      "target": "function:src/shared/local-file-path.ts:pathname.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/local-file-path.ts:localPathFromFileUrl",
+      "target": "function:src/shared/local-file-path.ts:decodePathSafely",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/local-file-path.ts:localPathFromFileUrl",
+      "target": "function:src/shared/local-file-path.ts:fileUrl.replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/local-file-path.ts:localPathFromFileUrl",
+      "target": "function:src/shared/local-file-path.ts:fallback.toLowerCase().startsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/local-file-path.ts:localPathFromFileUrl",
+      "target": "function:src/shared/local-file-path.ts:fallback.toLowerCase",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/local-file-path.ts:localPathFromFileUrl",
+      "target": "function:src/shared/local-file-path.ts:fallback.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/local-file-path.ts:localPathFromFileUrl",
+      "target": "function:src/shared/local-file-path.ts:fallback.startsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/local-file-path.ts:localPathFromFileUrl",
+      "target": "function:src/shared/local-file-path.ts:fallback.slice(2).replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/local-file-path.ts:localPathFromFileUrl",
+      "target": "function:src/shared/local-file-path.ts:fallback.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/local-file-path.ts:localPathFromAppUrlPathname",
+      "target": "function:src/shared/local-file-path.ts:decodePathSafely",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/local-file-path.ts:localPathFromAppUrlPathname",
+      "target": "function:src/shared/local-file-path.ts:detectPlatform",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/local-file-path.ts:localPathFromAppUrlPathname",
+      "target": "function:src/shared/local-file-path.ts:/^\\/[A-Za-z]:\\//.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/local-file-path.ts:localPathFromAppUrlPathname",
+      "target": "function:src/shared/local-file-path.ts:decodedPathname.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/local-file-path.ts:localPathFromAppUrlPathname",
+      "target": "function:src/shared/local-file-path.ts:/^\\/\\/[^/]+\\/.+/.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/local-file-path.ts:localPathFromAppUrlPathname",
+      "target": "function:src/shared/local-file-path.ts:decodedPathname.slice(2).replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/local-file-path.ts:localPathFromAppUrlPathname",
+      "target": "function:src/shared/local-file-path.ts:decodedPathname.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/local-file-path.ts:localPathFromAppUrlPathname",
+      "target": "function:src/shared/local-file-path.ts:/^\\/(?:Users|home|opt|tmp|var|Volumes|mnt)\\//.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/tests/claude/windows-bash-operations.test.ts",
+      "target": "file:src/main/claude/windows-bash-operations.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/claude/windows-bash-operations.test.ts",
+      "target": "function:src/tests/claude/windows-bash-operations.test.ts:createSpawnMock",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/tests/claude/windows-bash-operations.test.ts:createSpawnMock",
+      "target": "function:src/tests/claude/windows-bash-operations.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/claude/windows-bash-operations.test.ts:createSpawnMock",
+      "target": "function:src/tests/claude/windows-bash-operations.test.ts:children.shift",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/claude/windows-bash-operations.test.ts:createSpawnMock",
+      "target": "function:src/tests/claude/windows-bash-operations.test.ts:args.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/claude/windows-bash-operations.test.ts:createSpawnMock",
+      "target": "function:src/tests/claude/windows-bash-operations.test.ts:Object.assign",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/tests/config/permission-rules-store.test.ts",
+      "target": "file:src/main/config/permission-rules-store.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/mcp/mcp-manager.test.ts",
+      "target": "file:src/main/mcp/mcp-manager.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/path-containment.test.ts",
+      "target": "file:src/main/tools/path-containment.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/agent-runner-loop-guard.test.ts",
+      "target": "file:src/main/claude/agent-runner-loop-guard.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/local-file-path.test.ts",
+      "target": "file:src/shared/local-file-path.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/logger-level-persistence.test.ts",
+      "target": "file:src/main/utils/logger.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/mcp-chrome-preconnect.test.ts",
+      "target": "file:src/main/mcp/mcp-manager.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/mcp-chrome-preconnect.test.ts",
+      "target": "function:tests/mcp-chrome-preconnect.test.ts:chromeConfig",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/mcp-manager-env-merge.test.ts",
+      "target": "file:src/main/mcp/mcp-manager.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/mcp-npx-resolution.test.ts",
+      "target": "file:src/main/mcp/mcp-manager.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/mcp-tool-name.test.ts",
+      "target": "file:src/main/mcp/mcp-manager.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/mcp-tool-name.test.ts",
+      "target": "function:tests/mcp-tool-name.test.ts:createManagerWithTool",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:tests/mcp-tool-name.test.ts:createManagerWithTool",
+      "target": "function:tests/mcp-tool-name.test.ts:vi.fn().mockResolvedValue",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/mcp-tool-name.test.ts:createManagerWithTool",
+      "target": "function:tests/mcp-tool-name.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/mcp-tool-name.test.ts:createManagerWithTool",
+      "target": "function:tests/mcp-tool-name.test.ts:asTestManager",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/path-guard-command-conversion.test.ts",
+      "target": "file:src/main/sandbox/path-guard.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/pi-session-runtime.test.ts",
+      "target": "file:src/main/claude/pi-session-runtime.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/recent-workspace-files.test.ts",
+      "target": "file:src/main/utils/recent-workspace-files.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/retry.test.ts",
+      "target": "file:src/main/utils/retry.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/safe-fs.test.ts",
+      "target": "file:src/main/utils/safe-fs.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/session-manager-crud.test.ts",
+      "target": "file:src/main/db/database.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/session-manager-crud.test.ts",
+      "target": "file:src/main/session/session-manager.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/session-manager-crud.test.ts",
+      "target": "function:tests/session-manager-crud.test.ts:makeDb",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:tests/session-manager-crud.test.ts:makeDb",
+      "target": "function:tests/session-manager-crud.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-crud.test.ts:makeDb",
+      "target": "function:tests/session-manager-crud.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-crud.test.ts:makeDb",
+      "target": "function:tests/session-manager-crud.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-crud.test.ts:makeDb",
+      "target": "function:tests/session-manager-crud.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-crud.test.ts:makeDb",
+      "target": "function:tests/session-manager-crud.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-crud.test.ts:makeDb",
+      "target": "function:tests/session-manager-crud.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-crud.test.ts:makeDb",
+      "target": "function:tests/session-manager-crud.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-crud.test.ts:makeDb",
+      "target": "function:tests/session-manager-crud.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-crud.test.ts:makeDb",
+      "target": "function:tests/session-manager-crud.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-crud.test.ts:makeDb",
+      "target": "function:tests/session-manager-crud.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-crud.test.ts:makeDb",
+      "target": "function:tests/session-manager-crud.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-crud.test.ts:makeDb",
+      "target": "function:tests/session-manager-crud.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-crud.test.ts:makeDb",
+      "target": "function:tests/session-manager-crud.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/session-manager-message-cache.test.ts",
+      "target": "file:src/main/db/database.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/session-manager-message-cache.test.ts",
+      "target": "file:src/main/session/session-manager.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/session-manager-message-cache.test.ts",
+      "target": "function:tests/session-manager-message-cache.test.ts:makeDb",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:tests/session-manager-message-cache.test.ts:makeDb",
+      "target": "function:tests/session-manager-message-cache.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-message-cache.test.ts:makeDb",
+      "target": "function:tests/session-manager-message-cache.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-message-cache.test.ts:makeDb",
+      "target": "function:tests/session-manager-message-cache.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-message-cache.test.ts:makeDb",
+      "target": "function:tests/session-manager-message-cache.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-message-cache.test.ts:makeDb",
+      "target": "function:tests/session-manager-message-cache.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-message-cache.test.ts:makeDb",
+      "target": "function:tests/session-manager-message-cache.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-message-cache.test.ts:makeDb",
+      "target": "function:tests/session-manager-message-cache.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-message-cache.test.ts:makeDb",
+      "target": "function:tests/session-manager-message-cache.test.ts:JSON.stringify",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-message-cache.test.ts:makeDb",
+      "target": "function:tests/session-manager-message-cache.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-message-cache.test.ts:makeDb",
+      "target": "function:tests/session-manager-message-cache.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-message-cache.test.ts:makeDb",
+      "target": "function:tests/session-manager-message-cache.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-message-cache.test.ts:makeDb",
+      "target": "function:tests/session-manager-message-cache.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-message-cache.test.ts:makeDb",
+      "target": "function:tests/session-manager-message-cache.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-message-cache.test.ts:makeDb",
+      "target": "function:tests/session-manager-message-cache.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/session-manager-queue-concurrency.test.ts",
+      "target": "file:src/main/db/database.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/session-manager-queue-concurrency.test.ts",
+      "target": "file:src/main/session/session-manager.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/session-manager-queue-concurrency.test.ts",
+      "target": "function:tests/session-manager-queue-concurrency.test.ts:createMockDb",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:tests/session-manager-queue-concurrency.test.ts:createMockDb",
+      "target": "function:tests/session-manager-queue-concurrency.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-queue-concurrency.test.ts:createMockDb",
+      "target": "function:tests/session-manager-queue-concurrency.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-queue-concurrency.test.ts:createMockDb",
+      "target": "function:tests/session-manager-queue-concurrency.test.ts:Date.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-queue-concurrency.test.ts:createMockDb",
+      "target": "function:tests/session-manager-queue-concurrency.test.ts:Date.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-queue-concurrency.test.ts:createMockDb",
+      "target": "function:tests/session-manager-queue-concurrency.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-queue-concurrency.test.ts:createMockDb",
+      "target": "function:tests/session-manager-queue-concurrency.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-queue-concurrency.test.ts:createMockDb",
+      "target": "function:tests/session-manager-queue-concurrency.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-queue-concurrency.test.ts:createMockDb",
+      "target": "function:tests/session-manager-queue-concurrency.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-queue-concurrency.test.ts:createMockDb",
+      "target": "function:tests/session-manager-queue-concurrency.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-queue-concurrency.test.ts:createMockDb",
+      "target": "function:tests/session-manager-queue-concurrency.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-queue-concurrency.test.ts:createMockDb",
+      "target": "function:tests/session-manager-queue-concurrency.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-queue-concurrency.test.ts:createMockDb",
+      "target": "function:tests/session-manager-queue-concurrency.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-queue-concurrency.test.ts:createMockDb",
+      "target": "function:tests/session-manager-queue-concurrency.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-queue-concurrency.test.ts:createMockDb",
+      "target": "function:tests/session-manager-queue-concurrency.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/session-manager-queue-concurrency.test.ts:createMockDb",
+      "target": "function:tests/session-manager-queue-concurrency.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/skills-manager-plugin-install.test.ts",
+      "target": "file:src/main/db/database.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/skills-manager-plugin-install.test.ts",
+      "target": "file:src/main/skills/skills-manager.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/skills-manager-plugin-install.test.ts",
+      "target": "function:tests/skills-manager-plugin-install.test.ts:createDbMock",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/skills-manager-plugin-install.test.ts",
+      "target": "function:tests/skills-manager-plugin-install.test.ts:createPluginDirectory",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:tests/skills-manager-plugin-install.test.ts:createDbMock",
+      "target": "function:tests/skills-manager-plugin-install.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/skills-manager-plugin-install.test.ts:createDbMock",
+      "target": "function:tests/skills-manager-plugin-install.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/skills-manager-plugin-install.test.ts:createDbMock",
+      "target": "function:tests/skills-manager-plugin-install.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/skills-manager-plugin-install.test.ts:createDbMock",
+      "target": "function:tests/skills-manager-plugin-install.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/skills-manager-plugin-install.test.ts:createDbMock",
+      "target": "function:tests/skills-manager-plugin-install.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/skills-manager-plugin-install.test.ts:createPluginDirectory",
+      "target": "function:tests/skills-manager-plugin-install.test.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/skills-manager-plugin-install.test.ts:createPluginDirectory",
+      "target": "function:tests/skills-manager-plugin-install.test.ts:fs.mkdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/skills-manager-plugin-install.test.ts:createPluginDirectory",
+      "target": "function:tests/skills-manager-plugin-install.test.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/skills-manager-plugin-install.test.ts:createPluginDirectory",
+      "target": "function:tests/skills-manager-plugin-install.test.ts:fs.writeFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/skills-manager-plugin-install.test.ts:createPluginDirectory",
+      "target": "function:tests/skills-manager-plugin-install.test.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/skills-manager-plugin-install.test.ts:createPluginDirectory",
+      "target": "function:tests/skills-manager-plugin-install.test.ts:JSON.stringify",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/skills-manager-plugin-install.test.ts:createPluginDirectory",
+      "target": "function:tests/skills-manager-plugin-install.test.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/skills-manager-plugin-install.test.ts:createPluginDirectory",
+      "target": "function:tests/skills-manager-plugin-install.test.ts:fs.mkdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/skills-manager-plugin-install.test.ts:createPluginDirectory",
+      "target": "function:tests/skills-manager-plugin-install.test.ts:fs.writeFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/skills-manager-plugin-install.test.ts:createPluginDirectory",
+      "target": "function:tests/skills-manager-plugin-install.test.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/skills-manager-storage-path.test.ts",
+      "target": "file:src/main/db/database.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/skills-manager-storage-path.test.ts",
+      "target": "file:src/main/skills/skills-manager.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/skills-manager-storage-path.test.ts",
+      "target": "function:tests/skills-manager-storage-path.test.ts:createDbMock",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/skills-manager-storage-path.test.ts",
+      "target": "function:tests/skills-manager-storage-path.test.ts:waitFor",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:tests/skills-manager-storage-path.test.ts:createDbMock",
+      "target": "function:tests/skills-manager-storage-path.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/skills-manager-storage-path.test.ts:createDbMock",
+      "target": "function:tests/skills-manager-storage-path.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/skills-manager-storage-path.test.ts:createDbMock",
+      "target": "function:tests/skills-manager-storage-path.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/skills-manager-storage-path.test.ts:createDbMock",
+      "target": "function:tests/skills-manager-storage-path.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/skills-manager-storage-path.test.ts:createDbMock",
+      "target": "function:tests/skills-manager-storage-path.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/skills-manager-storage-path.test.ts:waitFor",
+      "target": "function:tests/skills-manager-storage-path.test.ts:Date.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/skills-manager-storage-path.test.ts:waitFor",
+      "target": "function:tests/skills-manager-storage-path.test.ts:Date.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/skills-manager-storage-path.test.ts:waitFor",
+      "target": "function:tests/skills-manager-storage-path.test.ts:predicate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/skills-manager-storage-path.test.ts:waitFor",
+      "target": "function:tests/skills-manager-storage-path.test.ts:setTimeout",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/teamcenter-skill-runtime.test.ts",
+      "target": "file:src/main/skills/teamcenter-skill-runtime.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/tool-executor-sandbox.test.ts",
+      "target": "file:src/main/tools/tool-executor.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/tool-executor-unc-paths.test.ts",
+      "target": "file:src/main/tools/sandbox-tool-executor.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/tool-executor-unc-paths.test.ts",
+      "target": "file:src/main/tools/tool-executor.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/tool-result-utils.test.ts",
+      "target": "file:src/main/claude/tool-result-utils.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/workspace-path-constraints.test.ts",
+      "target": "file:src/main/workspace-path-constraints.ts",
+      "type": "imports",
+      "weight": 0.7
+    }
+  ]
+}

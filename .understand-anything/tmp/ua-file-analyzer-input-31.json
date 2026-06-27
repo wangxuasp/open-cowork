@@ -1,0 +1,35 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": ".claude/skills/visio/README.md",
+      "language": "markdown",
+      "sizeLines": 282,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/visio/RELEASE_NOTES.md",
+      "language": "markdown",
+      "sizeLines": 47,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/visio/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 675,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/visio/requirements.txt",
+      "language": "txt",
+      "sizeLines": 2,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".claude/skills/visio/README.md": [],
+    ".claude/skills/visio/RELEASE_NOTES.md": [],
+    ".claude/skills/visio/SKILL.md": [],
+    ".claude/skills/visio/requirements.txt": []
+  }
+}

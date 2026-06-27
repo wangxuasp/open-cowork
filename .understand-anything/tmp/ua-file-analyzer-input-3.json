@@ -1,0 +1,260 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": "src/main/utils/logger.ts",
+      "language": "typescript",
+      "sizeLines": 559,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/utils/recent-workspace-files.ts",
+      "language": "typescript",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/utils/retry.ts",
+      "language": "typescript",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/utils/safe-fs.ts",
+      "language": "typescript",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/utils/shell-resolver.ts",
+      "language": "typescript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/workspace-path-constraints.ts",
+      "language": "typescript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/local-file-path.ts",
+      "language": "typescript",
+      "sizeLines": 98,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/tests/claude/windows-bash-operations.test.ts",
+      "language": "typescript",
+      "sizeLines": 179,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/tests/config/permission-rules-store.test.ts",
+      "language": "typescript",
+      "sizeLines": 252,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/tests/mcp/mcp-manager.test.ts",
+      "language": "typescript",
+      "sizeLines": 345,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/tests/path-containment.test.ts",
+      "language": "typescript",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/agent-runner-loop-guard.test.ts",
+      "language": "typescript",
+      "sizeLines": 277,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/local-file-path.test.ts",
+      "language": "typescript",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/logger-level-persistence.test.ts",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/mcp-chrome-preconnect.test.ts",
+      "language": "typescript",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/mcp-manager-env-merge.test.ts",
+      "language": "typescript",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/mcp-npx-resolution.test.ts",
+      "language": "typescript",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/mcp-tool-name.test.ts",
+      "language": "typescript",
+      "sizeLines": 332,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/path-guard-command-conversion.test.ts",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/pi-session-runtime.test.ts",
+      "language": "typescript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/recent-workspace-files.test.ts",
+      "language": "typescript",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/retry.test.ts",
+      "language": "typescript",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/safe-fs.test.ts",
+      "language": "typescript",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/session-manager-crud.test.ts",
+      "language": "typescript",
+      "sizeLines": 365,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/session-manager-message-cache.test.ts",
+      "language": "typescript",
+      "sizeLines": 152,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/session-manager-queue-concurrency.test.ts",
+      "language": "typescript",
+      "sizeLines": 247,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/skills-manager-plugin-install.test.ts",
+      "language": "typescript",
+      "sizeLines": 157,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/skills-manager-storage-path.test.ts",
+      "language": "typescript",
+      "sizeLines": 161,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/teamcenter-skill-runtime.test.ts",
+      "language": "typescript",
+      "sizeLines": 156,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/tool-executor-sandbox.test.ts",
+      "language": "typescript",
+      "sizeLines": 176,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/tool-executor-unc-paths.test.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/tool-result-utils.test.ts",
+      "language": "typescript",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/workspace-path-constraints.test.ts",
+      "language": "typescript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/main/utils/logger.ts": [],
+    "src/main/utils/recent-workspace-files.ts": [],
+    "src/main/utils/retry.ts": ["src/main/utils/logger.ts"],
+    "src/main/utils/safe-fs.ts": [],
+    "src/main/utils/shell-resolver.ts": [],
+    "src/main/workspace-path-constraints.ts": ["src/shared/local-file-path.ts"],
+    "src/shared/local-file-path.ts": [],
+    "src/tests/claude/windows-bash-operations.test.ts": [
+      "src/main/claude/windows-bash-operations.ts"
+    ],
+    "src/tests/config/permission-rules-store.test.ts": [
+      "src/main/config/permission-rules-store.ts"
+    ],
+    "src/tests/mcp/mcp-manager.test.ts": ["src/main/mcp/mcp-manager.ts"],
+    "src/tests/path-containment.test.ts": ["src/main/tools/path-containment.ts"],
+    "tests/agent-runner-loop-guard.test.ts": ["src/main/claude/agent-runner-loop-guard.ts"],
+    "tests/local-file-path.test.ts": ["src/shared/local-file-path.ts"],
+    "tests/logger-level-persistence.test.ts": ["src/main/utils/logger.ts"],
+    "tests/mcp-chrome-preconnect.test.ts": ["src/main/mcp/mcp-manager.ts"],
+    "tests/mcp-manager-env-merge.test.ts": ["src/main/mcp/mcp-manager.ts"],
+    "tests/mcp-npx-resolution.test.ts": ["src/main/mcp/mcp-manager.ts"],
+    "tests/mcp-tool-name.test.ts": ["src/main/mcp/mcp-manager.ts"],
+    "tests/path-guard-command-conversion.test.ts": ["src/main/sandbox/path-guard.ts"],
+    "tests/pi-session-runtime.test.ts": ["src/main/claude/pi-session-runtime.ts"],
+    "tests/recent-workspace-files.test.ts": ["src/main/utils/recent-workspace-files.ts"],
+    "tests/retry.test.ts": ["src/main/utils/retry.ts"],
+    "tests/safe-fs.test.ts": ["src/main/utils/safe-fs.ts"],
+    "tests/session-manager-crud.test.ts": [
+      "src/main/db/database.ts",
+      "src/main/session/session-manager.ts"
+    ],
+    "tests/session-manager-message-cache.test.ts": [
+      "src/main/db/database.ts",
+      "src/main/session/session-manager.ts"
+    ],
+    "tests/session-manager-queue-concurrency.test.ts": [
+      "src/main/db/database.ts",
+      "src/main/session/session-manager.ts"
+    ],
+    "tests/skills-manager-plugin-install.test.ts": [
+      "src/main/db/database.ts",
+      "src/main/skills/skills-manager.ts"
+    ],
+    "tests/skills-manager-storage-path.test.ts": [
+      "src/main/db/database.ts",
+      "src/main/skills/skills-manager.ts"
+    ],
+    "tests/teamcenter-skill-runtime.test.ts": ["src/main/skills/teamcenter-skill-runtime.ts"],
+    "tests/tool-executor-sandbox.test.ts": ["src/main/tools/tool-executor.ts"],
+    "tests/tool-executor-unc-paths.test.ts": [
+      "src/main/tools/sandbox-tool-executor.ts",
+      "src/main/tools/tool-executor.ts"
+    ],
+    "tests/tool-result-utils.test.ts": ["src/main/claude/tool-result-utils.ts"],
+    "tests/workspace-path-constraints.test.ts": ["src/main/workspace-path-constraints.ts"]
+  }
+}

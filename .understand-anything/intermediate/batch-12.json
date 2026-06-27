@@ -1,0 +1,630 @@
+{
+  "nodes": [
+    {
+      "id": "file:.claude/skills/docx/scripts/ooxml/scripts/validate.py",
+      "type": "file",
+      "name": "validate.py",
+      "filePath": ".claude/skills/docx/scripts/ooxml/scripts/validate.py",
+      "summary": "源码模块 .claude/skills/docx/scripts/ooxml/scripts/validate.py，包含 1 个函数，约 87 行有效代码。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": ".claude/skills/docx/scripts/ooxml/scripts/validate.py",
+      "summary": "函数 main，位于 .claude/skills/docx/scripts/ooxml/scripts/validate.py 第 26-99 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "file:.claude/skills/docx/scripts/ooxml/scripts/validation/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": ".claude/skills/docx/scripts/ooxml/scripts/validation/__init__.py",
+      "summary": "源码模块 .claude/skills/docx/scripts/ooxml/scripts/validation/__init__.py，体量 13 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "file:.claude/skills/docx/scripts/ooxml/scripts/validation/base.py",
+      "type": "file",
+      "name": "base.py",
+      "filePath": ".claude/skills/docx/scripts/ooxml/scripts/validation/base.py",
+      "summary": "TypeScript/JavaScript 模块 .claude/skills/docx/scripts/ooxml/scripts/validation/base.py，导出 1 个类与 0 个函数，是应用逻辑的一部分。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "class:.claude/skills/docx/scripts/ooxml/scripts/validation/base.py:BaseSchemaValidator",
+      "type": "class",
+      "name": "BaseSchemaValidator",
+      "filePath": ".claude/skills/docx/scripts/ooxml/scripts/validation/base.py",
+      "summary": "类 BaseSchemaValidator，含 20 个方法，位于 .claude/skills/docx/scripts/ooxml/scripts/validation/base.py。",
+      "tags": ["module", "type-definition"],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "file:.claude/skills/docx/scripts/ooxml/scripts/validation/docx.py",
+      "type": "file",
+      "name": "docx.py",
+      "filePath": ".claude/skills/docx/scripts/ooxml/scripts/validation/docx.py",
+      "summary": "TypeScript/JavaScript 模块 .claude/skills/docx/scripts/ooxml/scripts/validation/docx.py，导出 1 个类与 0 个函数，是应用逻辑的一部分。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "class:.claude/skills/docx/scripts/ooxml/scripts/validation/docx.py:DOCXSchemaValidator",
+      "type": "class",
+      "name": "DOCXSchemaValidator",
+      "filePath": ".claude/skills/docx/scripts/ooxml/scripts/validation/docx.py",
+      "summary": "类 DOCXSchemaValidator，含 11 个方法，位于 .claude/skills/docx/scripts/ooxml/scripts/validation/docx.py。",
+      "tags": ["module", "type-definition"],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "file:.claude/skills/docx/scripts/ooxml/scripts/validation/pptx.py",
+      "type": "file",
+      "name": "pptx.py",
+      "filePath": ".claude/skills/docx/scripts/ooxml/scripts/validation/pptx.py",
+      "summary": "TypeScript/JavaScript 模块 .claude/skills/docx/scripts/ooxml/scripts/validation/pptx.py，导出 1 个类与 0 个函数，是应用逻辑的一部分。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "class:.claude/skills/docx/scripts/ooxml/scripts/validation/pptx.py:PPTXSchemaValidator",
+      "type": "class",
+      "name": "PPTXSchemaValidator",
+      "filePath": ".claude/skills/docx/scripts/ooxml/scripts/validation/pptx.py",
+      "summary": "类 PPTXSchemaValidator，含 6 个方法，位于 .claude/skills/docx/scripts/ooxml/scripts/validation/pptx.py。",
+      "tags": ["module", "type-definition"],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "file:.claude/skills/docx/scripts/ooxml/scripts/validation/redlining.py",
+      "type": "file",
+      "name": "redlining.py",
+      "filePath": ".claude/skills/docx/scripts/ooxml/scripts/validation/redlining.py",
+      "summary": "TypeScript/JavaScript 模块 .claude/skills/docx/scripts/ooxml/scripts/validation/redlining.py，导出 1 个类与 0 个函数，是应用逻辑的一部分。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "class:.claude/skills/docx/scripts/ooxml/scripts/validation/redlining.py:RedliningValidator",
+      "type": "class",
+      "name": "RedliningValidator",
+      "filePath": ".claude/skills/docx/scripts/ooxml/scripts/validation/redlining.py",
+      "summary": "类 RedliningValidator，含 7 个方法，位于 .claude/skills/docx/scripts/ooxml/scripts/validation/redlining.py。",
+      "tags": ["module", "type-definition"],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "file:.claude/skills/docx/scripts/pack.py",
+      "type": "file",
+      "name": "pack.py",
+      "filePath": ".claude/skills/docx/scripts/pack.py",
+      "summary": "源码模块 .claude/skills/docx/scripts/pack.py，包含 3 个函数，约 130 行有效代码。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/pack.py:pack",
+      "type": "function",
+      "name": "pack",
+      "filePath": ".claude/skills/docx/scripts/pack.py",
+      "summary": "函数 pack，位于 .claude/skills/docx/scripts/pack.py 第 22-75 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/pack.py:_run_validation",
+      "type": "function",
+      "name": "_run_validation",
+      "filePath": ".claude/skills/docx/scripts/pack.py",
+      "summary": "函数 _run_validation，位于 .claude/skills/docx/scripts/pack.py 第 78-105 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/pack.py:_condense_xml",
+      "type": "function",
+      "name": "_condense_xml",
+      "filePath": ".claude/skills/docx/scripts/pack.py",
+      "summary": "函数 _condense_xml，位于 .claude/skills/docx/scripts/pack.py 第 108-133 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:.claude/skills/docx/scripts/ooxml/scripts/validate.py",
+      "target": "file:.claude/skills/docx/scripts/ooxml/scripts/validation/__init__.py",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/ooxml/scripts/validate.py",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:argparse.ArgumentParser",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:parser.add_argument",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:parser.add_argument",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:parser.add_argument",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:parser.add_argument",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:parser.parse_args",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:original_file.suffix.lower",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:path.exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:original_file.is_file",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:path.is_file",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:path.suffix.lower",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:tempfile.mkdtemp",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:zipfile.ZipFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:zf.extractall",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:path.is_dir",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:sys.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:V",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:validator.repair",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:V",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:validator.validate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/validate.py:sys.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/ooxml/scripts/validation/__init__.py",
+      "target": "file:.claude/skills/docx/scripts/ooxml/scripts/validation/base.py",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/ooxml/scripts/validation/__init__.py",
+      "target": "file:.claude/skills/docx/scripts/ooxml/scripts/validation/docx.py",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/ooxml/scripts/validation/__init__.py",
+      "target": "file:.claude/skills/docx/scripts/ooxml/scripts/validation/pptx.py",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/ooxml/scripts/validation/__init__.py",
+      "target": "file:.claude/skills/docx/scripts/ooxml/scripts/validation/redlining.py",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/ooxml/scripts/validation/base.py",
+      "target": "class:.claude/skills/docx/scripts/ooxml/scripts/validation/base.py:BaseSchemaValidator",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/ooxml/scripts/validation/docx.py",
+      "target": "file:.claude/skills/docx/scripts/ooxml/scripts/validation/base.py",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/ooxml/scripts/validation/docx.py",
+      "target": "class:.claude/skills/docx/scripts/ooxml/scripts/validation/docx.py:DOCXSchemaValidator",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/ooxml/scripts/validation/pptx.py",
+      "target": "file:.claude/skills/docx/scripts/ooxml/scripts/validation/base.py",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/ooxml/scripts/validation/pptx.py",
+      "target": "class:.claude/skills/docx/scripts/ooxml/scripts/validation/pptx.py:PPTXSchemaValidator",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/ooxml/scripts/validation/redlining.py",
+      "target": "class:.claude/skills/docx/scripts/ooxml/scripts/validation/redlining.py:RedliningValidator",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/pack.py",
+      "target": "file:.claude/skills/docx/scripts/ooxml/scripts/validation/__init__.py",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/pack.py",
+      "target": "function:.claude/skills/docx/scripts/pack.py:pack",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/pack.py",
+      "target": "function:.claude/skills/docx/scripts/pack.py:_run_validation",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/pack.py",
+      "target": "function:.claude/skills/docx/scripts/pack.py:_condense_xml",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:pack",
+      "target": "function:.claude/skills/docx/scripts/pack.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:pack",
+      "target": "function:.claude/skills/docx/scripts/pack.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:pack",
+      "target": "function:.claude/skills/docx/scripts/pack.py:input_dir.is_dir",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:pack",
+      "target": "function:.claude/skills/docx/scripts/pack.py:output_path.suffix.lower",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:pack",
+      "target": "function:.claude/skills/docx/scripts/pack.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:pack",
+      "target": "function:.claude/skills/docx/scripts/pack.py:original_path.exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:pack",
+      "target": "function:.claude/skills/docx/scripts/pack.py:_run_validation",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:pack",
+      "target": "function:.claude/skills/docx/scripts/pack.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:pack",
+      "target": "function:.claude/skills/docx/scripts/pack.py:tempfile.TemporaryDirectory",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:pack",
+      "target": "function:.claude/skills/docx/scripts/pack.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:pack",
+      "target": "function:.claude/skills/docx/scripts/pack.py:shutil.copytree",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:pack",
+      "target": "function:.claude/skills/docx/scripts/pack.py:temp_content_dir.rglob",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:pack",
+      "target": "function:.claude/skills/docx/scripts/pack.py:_condense_xml",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:pack",
+      "target": "function:.claude/skills/docx/scripts/pack.py:output_path.parent.mkdir",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:pack",
+      "target": "function:.claude/skills/docx/scripts/pack.py:zipfile.ZipFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:pack",
+      "target": "function:.claude/skills/docx/scripts/pack.py:temp_content_dir.rglob",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:pack",
+      "target": "function:.claude/skills/docx/scripts/pack.py:f.is_file",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:pack",
+      "target": "function:.claude/skills/docx/scripts/pack.py:zf.write",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:pack",
+      "target": "function:.claude/skills/docx/scripts/pack.py:f.relative_to",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:_run_validation",
+      "target": "function:.claude/skills/docx/scripts/pack.py:V",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:_run_validation",
+      "target": "function:.claude/skills/docx/scripts/pack.py:validator.repair",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:_run_validation",
+      "target": "function:.claude/skills/docx/scripts/pack.py:output_lines.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:_run_validation",
+      "target": "function:.claude/skills/docx/scripts/pack.py:V",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:_run_validation",
+      "target": "function:.claude/skills/docx/scripts/pack.py:validator.validate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:_run_validation",
+      "target": "function:.claude/skills/docx/scripts/pack.py:output_lines.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:_run_validation",
+      "target": "function:.claude/skills/docx/scripts/pack.py:\"\\n\".join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:_condense_xml",
+      "target": "function:.claude/skills/docx/scripts/pack.py:open",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:_condense_xml",
+      "target": "function:.claude/skills/docx/scripts/pack.py:defusedxml.minidom.parse",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:_condense_xml",
+      "target": "function:.claude/skills/docx/scripts/pack.py:dom.getElementsByTagName",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:_condense_xml",
+      "target": "function:.claude/skills/docx/scripts/pack.py:element.tagName.endswith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:_condense_xml",
+      "target": "function:.claude/skills/docx/scripts/pack.py:list",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:_condense_xml",
+      "target": "function:.claude/skills/docx/scripts/pack.py:child.nodeValue.strip",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:_condense_xml",
+      "target": "function:.claude/skills/docx/scripts/pack.py:element.removeChild",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:_condense_xml",
+      "target": "function:.claude/skills/docx/scripts/pack.py:open",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:_condense_xml",
+      "target": "function:.claude/skills/docx/scripts/pack.py:f.write",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/pack.py:_condense_xml",
+      "target": "function:.claude/skills/docx/scripts/pack.py:dom.toxml",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ]
+}

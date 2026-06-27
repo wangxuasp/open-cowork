@@ -1,0 +1,1652 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 13,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/main/schedule/scheduled-task-manager.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 556,
+      "nonEmptyLines": 510,
+      "functions": [
+        {
+          "name": "normalizeRepeatEvery",
+          "startLine": 402,
+          "endLine": 408,
+          "params": ["value"]
+        },
+        {
+          "name": "normalizeRepeatUnit",
+          "startLine": 410,
+          "endLine": 417,
+          "params": ["value"]
+        },
+        {
+          "name": "normalizeScheduleConfig",
+          "startLine": 419,
+          "endLine": 441,
+          "params": ["value"]
+        },
+        {
+          "name": "isRepeatingTask",
+          "startLine": 443,
+          "endLine": 445,
+          "params": ["task"]
+        },
+        {
+          "name": "computeNextRunAt",
+          "startLine": 447,
+          "endLine": 458,
+          "params": ["task", "now"]
+        },
+        {
+          "name": "getIntervalMs",
+          "startLine": 460,
+          "endLine": 468,
+          "params": ["repeatEvery", "repeatUnit"]
+        },
+        {
+          "name": "normalizeScheduleTimes",
+          "startLine": 470,
+          "endLine": 478,
+          "params": ["times"]
+        },
+        {
+          "name": "normalizeWeekdays",
+          "startLine": 480,
+          "endLine": 492,
+          "params": ["days"]
+        },
+        {
+          "name": "compareTimeStrings",
+          "startLine": 494,
+          "endLine": 496,
+          "params": ["left", "right"]
+        },
+        {
+          "name": "toTimeMinutes",
+          "startLine": 498,
+          "endLine": 501,
+          "params": ["value"]
+        },
+        {
+          "name": "computeNextRunAtFromScheduleConfig",
+          "startLine": 503,
+          "endLine": 511,
+          "params": ["scheduleConfig", "now"]
+        },
+        {
+          "name": "findNextScheduledSlot",
+          "startLine": 513,
+          "endLine": 556,
+          "params": ["now", "times", "weekdays"]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ScheduledTaskManager",
+          "startLine": 110,
+          "endLine": 400,
+          "methods": [
+            "constructor",
+            "start",
+            "stop",
+            "list",
+            "get",
+            "create",
+            "update",
+            "delete",
+            "toggle",
+            "runNow",
+            "scheduleTask",
+            "handleTrigger",
+            "prepareExecution",
+            "computeToggleNextRunAt",
+            "executeAndRecord",
+            "clearTimer"
+          ],
+          "properties": [
+            "store",
+            "executeTask",
+            "onTaskError",
+            "now",
+            "timers",
+            "executingTasks",
+            "running"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ScheduledTaskManager",
+          "line": 110,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "constructor",
+          "callee": "Date.now",
+          "lineNumber": 123
+        },
+        {
+          "caller": "start",
+          "callee": "this.store.list",
+          "lineNumber": 129
+        },
+        {
+          "caller": "start",
+          "callee": "this.scheduleTask",
+          "lineNumber": 131
+        },
+        {
+          "caller": "stop",
+          "callee": "this.timers.values",
+          "lineNumber": 137
+        },
+        {
+          "caller": "stop",
+          "callee": "clearTimeout",
+          "lineNumber": 138
+        },
+        {
+          "caller": "stop",
+          "callee": "this.timers.clear",
+          "lineNumber": 140
+        },
+        {
+          "caller": "list",
+          "callee": "this.store.list().sort",
+          "lineNumber": 144
+        },
+        {
+          "caller": "list",
+          "callee": "this.store.list",
+          "lineNumber": 144
+        },
+        {
+          "caller": "get",
+          "callee": "this.store.get",
+          "lineNumber": 158
+        },
+        {
+          "caller": "create",
+          "callee": "input.prompt.trim",
+          "lineNumber": 162
+        },
+        {
+          "caller": "create",
+          "callee": "buildScheduledTaskTitle",
+          "lineNumber": 164
+        },
+        {
+          "caller": "create",
+          "callee": "buildScheduledTaskFallbackTitle",
+          "lineNumber": 165
+        },
+        {
+          "caller": "create",
+          "callee": "normalizeScheduleConfig",
+          "lineNumber": 166
+        },
+        {
+          "caller": "create",
+          "callee": "normalizeRepeatEvery",
+          "lineNumber": 169
+        },
+        {
+          "caller": "create",
+          "callee": "normalizeRepeatUnit",
+          "lineNumber": 173
+        },
+        {
+          "caller": "create",
+          "callee": "this.store.create",
+          "lineNumber": 174
+        },
+        {
+          "caller": "create",
+          "callee": "this.scheduleTask",
+          "lineNumber": 184
+        },
+        {
+          "caller": "update",
+          "callee": "this.store.get",
+          "lineNumber": 189
+        },
+        {
+          "caller": "update",
+          "callee": "updates.prompt.trim",
+          "lineNumber": 191
+        },
+        {
+          "caller": "update",
+          "callee": "buildScheduledTaskTitle",
+          "lineNumber": 195
+        },
+        {
+          "caller": "update",
+          "callee": "normalizeScheduleConfig",
+          "lineNumber": 199
+        },
+        {
+          "caller": "update",
+          "callee": "normalizeRepeatEvery",
+          "lineNumber": 208
+        },
+        {
+          "caller": "update",
+          "callee": "normalizeRepeatUnit",
+          "lineNumber": 213
+        },
+        {
+          "caller": "update",
+          "callee": "this.store.update",
+          "lineNumber": 217
+        },
+        {
+          "caller": "update",
+          "callee": "this.scheduleTask",
+          "lineNumber": 226
+        },
+        {
+          "caller": "delete",
+          "callee": "this.clearTimer",
+          "lineNumber": 231
+        },
+        {
+          "caller": "delete",
+          "callee": "this.store.delete",
+          "lineNumber": 232
+        },
+        {
+          "caller": "toggle",
+          "callee": "this.store.get",
+          "lineNumber": 236
+        },
+        {
+          "caller": "toggle",
+          "callee": "isRepeatingTask",
+          "lineNumber": 238
+        },
+        {
+          "caller": "toggle",
+          "callee": "this.now",
+          "lineNumber": 240
+        },
+        {
+          "caller": "toggle",
+          "callee": "this.computeToggleNextRunAt",
+          "lineNumber": 244
+        },
+        {
+          "caller": "toggle",
+          "callee": "this.store.update",
+          "lineNumber": 245
+        },
+        {
+          "caller": "toggle",
+          "callee": "this.scheduleTask",
+          "lineNumber": 247
+        },
+        {
+          "caller": "runNow",
+          "callee": "this.store.get",
+          "lineNumber": 252
+        },
+        {
+          "caller": "runNow",
+          "callee": "this.executingTasks.has",
+          "lineNumber": 254
+        },
+        {
+          "caller": "runNow",
+          "callee": "this.executingTasks.add",
+          "lineNumber": 257
+        },
+        {
+          "caller": "runNow",
+          "callee": "this.prepareExecution",
+          "lineNumber": 258
+        },
+        {
+          "caller": "runNow",
+          "callee": "this.executeAndRecord",
+          "lineNumber": 260
+        },
+        {
+          "caller": "runNow",
+          "callee": "this.executingTasks.delete",
+          "lineNumber": 265
+        },
+        {
+          "caller": "runNow",
+          "callee": "this.store.get",
+          "lineNumber": 267
+        },
+        {
+          "caller": "scheduleTask",
+          "callee": "this.clearTimer",
+          "lineNumber": 271
+        },
+        {
+          "caller": "scheduleTask",
+          "callee": "Math.max",
+          "lineNumber": 275
+        },
+        {
+          "caller": "scheduleTask",
+          "callee": "this.now",
+          "lineNumber": 275
+        },
+        {
+          "caller": "scheduleTask",
+          "callee": "Math.min",
+          "lineNumber": 276
+        },
+        {
+          "caller": "scheduleTask",
+          "callee": "log",
+          "lineNumber": 278
+        },
+        {
+          "caller": "scheduleTask",
+          "callee": "setTimeout",
+          "lineNumber": 280
+        },
+        {
+          "caller": "scheduleTask",
+          "callee": "this.handleTrigger",
+          "lineNumber": 281
+        },
+        {
+          "caller": "scheduleTask",
+          "callee": "this.timers.set",
+          "lineNumber": 283
+        },
+        {
+          "caller": "handleTrigger",
+          "callee": "this.timers.delete",
+          "lineNumber": 287
+        },
+        {
+          "caller": "handleTrigger",
+          "callee": "this.store.get",
+          "lineNumber": 288
+        },
+        {
+          "caller": "handleTrigger",
+          "callee": "this.now",
+          "lineNumber": 291
+        },
+        {
+          "caller": "handleTrigger",
+          "callee": "this.scheduleTask",
+          "lineNumber": 292
+        },
+        {
+          "caller": "handleTrigger",
+          "callee": "this.executingTasks.has",
+          "lineNumber": 295
+        },
+        {
+          "caller": "handleTrigger",
+          "callee": "this.executingTasks.add",
+          "lineNumber": 298
+        },
+        {
+          "caller": "handleTrigger",
+          "callee": "this.prepareExecution",
+          "lineNumber": 299
+        },
+        {
+          "caller": "handleTrigger",
+          "callee": "this.executeAndRecord(taskToExecute)\n      .catch((err) => {\n        const errorMessage = err instanceof Error ? err.message : String(err);\n        try {\n          this.store.update(taskToExecute.id, {\n            lastRunAt: this.now(),\n            lastRunSessionId: null,\n            lastError: errorMessage,\n          });\n        } catch (updateError) {\n          logError(\n            '[ScheduledTaskManager] Failed to update store after unhandled error:',\n            updateError\n          );\n        }\n        this.onTaskError?.(taskToExecute.id, errorMessage);\n        logError(`[ScheduledTask] Unhandled error executing task ${taskToExecute.id}:`, err);\n      })\n      .finally",
+          "lineNumber": 300
+        },
+        {
+          "caller": "handleTrigger",
+          "callee": "this.executeAndRecord(taskToExecute)\n      .catch",
+          "lineNumber": 300
+        },
+        {
+          "caller": "handleTrigger",
+          "callee": "this.executeAndRecord",
+          "lineNumber": 300
+        },
+        {
+          "caller": "handleTrigger",
+          "callee": "String",
+          "lineNumber": 302
+        },
+        {
+          "caller": "handleTrigger",
+          "callee": "this.store.update",
+          "lineNumber": 304
+        },
+        {
+          "caller": "handleTrigger",
+          "callee": "this.now",
+          "lineNumber": 305
+        },
+        {
+          "caller": "handleTrigger",
+          "callee": "logError",
+          "lineNumber": 310
+        },
+        {
+          "caller": "handleTrigger",
+          "callee": "this.onTaskError",
+          "lineNumber": 315
+        },
+        {
+          "caller": "handleTrigger",
+          "callee": "logError",
+          "lineNumber": 316
+        },
+        {
+          "caller": "handleTrigger",
+          "callee": "this.executingTasks.delete",
+          "lineNumber": 319
+        },
+        {
+          "caller": "prepareExecution",
+          "callee": "this.clearTimer",
+          "lineNumber": 324
+        },
+        {
+          "caller": "prepareExecution",
+          "callee": "isRepeatingTask",
+          "lineNumber": 330
+        },
+        {
+          "caller": "prepareExecution",
+          "callee": "computeNextRunAt",
+          "lineNumber": 331
+        },
+        {
+          "caller": "prepareExecution",
+          "callee": "this.now",
+          "lineNumber": 331
+        },
+        {
+          "caller": "prepareExecution",
+          "callee": "this.store.update",
+          "lineNumber": 333
+        },
+        {
+          "caller": "prepareExecution",
+          "callee": "this.scheduleTask",
+          "lineNumber": 338
+        },
+        {
+          "caller": "prepareExecution",
+          "callee": "this.store.update",
+          "lineNumber": 345
+        },
+        {
+          "caller": "computeToggleNextRunAt",
+          "callee": "this.now",
+          "lineNumber": 353
+        },
+        {
+          "caller": "computeToggleNextRunAt",
+          "callee": "isRepeatingTask",
+          "lineNumber": 354
+        },
+        {
+          "caller": "computeToggleNextRunAt",
+          "callee": "computeNextRunAt",
+          "lineNumber": 355
+        },
+        {
+          "caller": "computeToggleNextRunAt",
+          "callee": "Math.max",
+          "lineNumber": 361
+        },
+        {
+          "caller": "executeAndRecord",
+          "callee": "this.executeTask",
+          "lineNumber": 366
+        },
+        {
+          "caller": "executeAndRecord",
+          "callee": "this.store.update",
+          "lineNumber": 368
+        },
+        {
+          "caller": "executeAndRecord",
+          "callee": "this.now",
+          "lineNumber": 369
+        },
+        {
+          "caller": "executeAndRecord",
+          "callee": "logError",
+          "lineNumber": 374
+        },
+        {
+          "caller": "executeAndRecord",
+          "callee": "String",
+          "lineNumber": 378
+        },
+        {
+          "caller": "executeAndRecord",
+          "callee": "this.store.update",
+          "lineNumber": 380
+        },
+        {
+          "caller": "executeAndRecord",
+          "callee": "this.now",
+          "lineNumber": 381
+        },
+        {
+          "caller": "executeAndRecord",
+          "callee": "logError",
+          "lineNumber": 386
+        },
+        {
+          "caller": "executeAndRecord",
+          "callee": "this.onTaskError",
+          "lineNumber": 388
+        },
+        {
+          "caller": "clearTimer",
+          "callee": "this.timers.get",
+          "lineNumber": 394
+        },
+        {
+          "caller": "clearTimer",
+          "callee": "clearTimeout",
+          "lineNumber": 396
+        },
+        {
+          "caller": "clearTimer",
+          "callee": "this.timers.delete",
+          "lineNumber": 397
+        },
+        {
+          "caller": "normalizeRepeatEvery",
+          "callee": "Number.isFinite",
+          "lineNumber": 404
+        },
+        {
+          "caller": "normalizeRepeatEvery",
+          "callee": "Math.floor",
+          "lineNumber": 405
+        },
+        {
+          "caller": "normalizeScheduleConfig",
+          "callee": "normalizeScheduleTimes",
+          "lineNumber": 426
+        },
+        {
+          "caller": "normalizeScheduleConfig",
+          "callee": "normalizeScheduleTimes",
+          "lineNumber": 433
+        },
+        {
+          "caller": "normalizeScheduleConfig",
+          "callee": "normalizeWeekdays",
+          "lineNumber": 434
+        },
+        {
+          "caller": "isRepeatingTask",
+          "callee": "Boolean",
+          "lineNumber": 444
+        },
+        {
+          "caller": "computeNextRunAt",
+          "callee": "computeNextRunAtFromScheduleConfig",
+          "lineNumber": 449
+        },
+        {
+          "caller": "computeNextRunAt",
+          "callee": "getIntervalMs",
+          "lineNumber": 451
+        },
+        {
+          "caller": "computeNextRunAt",
+          "callee": "Number.isFinite",
+          "lineNumber": 454
+        },
+        {
+          "caller": "computeNextRunAt",
+          "callee": "Math.floor",
+          "lineNumber": 456
+        },
+        {
+          "caller": "normalizeScheduleTimes",
+          "callee": "Array.isArray",
+          "lineNumber": 471
+        },
+        {
+          "caller": "normalizeScheduleTimes",
+          "callee": "Array.from",
+          "lineNumber": 474
+        },
+        {
+          "caller": "normalizeScheduleTimes",
+          "callee": "times.filter",
+          "lineNumber": 475
+        },
+        {
+          "caller": "normalizeScheduleTimes",
+          "callee": "/^([01]\\d|2[0-3]):([0-5]\\d)$/.test",
+          "lineNumber": 475
+        },
+        {
+          "caller": "normalizeScheduleTimes",
+          "callee": "validTimes.sort",
+          "lineNumber": 477
+        },
+        {
+          "caller": "normalizeScheduleTimes",
+          "callee": "compareTimeStrings",
+          "lineNumber": 477
+        },
+        {
+          "caller": "normalizeWeekdays",
+          "callee": "Array.isArray",
+          "lineNumber": 481
+        },
+        {
+          "caller": "normalizeWeekdays",
+          "callee": "Array.from",
+          "lineNumber": 484
+        },
+        {
+          "caller": "normalizeWeekdays",
+          "callee": "days.filter",
+          "lineNumber": 486
+        },
+        {
+          "caller": "normalizeWeekdays",
+          "callee": "Number.isInteger",
+          "lineNumber": 487
+        },
+        {
+          "caller": "normalizeWeekdays",
+          "callee": "normalized.sort",
+          "lineNumber": 491
+        },
+        {
+          "caller": "compareTimeStrings",
+          "callee": "toTimeMinutes",
+          "lineNumber": 495
+        },
+        {
+          "caller": "compareTimeStrings",
+          "callee": "toTimeMinutes",
+          "lineNumber": 495
+        },
+        {
+          "caller": "toTimeMinutes",
+          "callee": "value.split(':').map",
+          "lineNumber": 499
+        },
+        {
+          "caller": "toTimeMinutes",
+          "callee": "value.split",
+          "lineNumber": 499
+        },
+        {
+          "caller": "computeNextRunAtFromScheduleConfig",
+          "callee": "findNextScheduledSlot",
+          "lineNumber": 508
+        },
+        {
+          "caller": "computeNextRunAtFromScheduleConfig",
+          "callee": "findNextScheduledSlot",
+          "lineNumber": 510
+        },
+        {
+          "caller": "findNextScheduledSlot",
+          "callee": "normalizeScheduleTimes",
+          "lineNumber": 518
+        },
+        {
+          "caller": "findNextScheduledSlot",
+          "callee": "normalizeWeekdays",
+          "lineNumber": 522
+        },
+        {
+          "caller": "findNextScheduledSlot",
+          "callee": "nowDate.getFullYear",
+          "lineNumber": 527
+        },
+        {
+          "caller": "findNextScheduledSlot",
+          "callee": "nowDate.getMonth",
+          "lineNumber": 528
+        },
+        {
+          "caller": "findNextScheduledSlot",
+          "callee": "nowDate.getDate",
+          "lineNumber": 529
+        },
+        {
+          "caller": "findNextScheduledSlot",
+          "callee": "allowedWeekdays.has",
+          "lineNumber": 535
+        },
+        {
+          "caller": "findNextScheduledSlot",
+          "callee": "candidateDate.getDay",
+          "lineNumber": 535
+        },
+        {
+          "caller": "findNextScheduledSlot",
+          "callee": "time.split(':').map",
+          "lineNumber": 539
+        },
+        {
+          "caller": "findNextScheduledSlot",
+          "callee": "time.split",
+          "lineNumber": 539
+        },
+        {
+          "caller": "findNextScheduledSlot",
+          "callee": "new Date(\n        candidateDate.getFullYear(),\n        candidateDate.getMonth(),\n        candidateDate.getDate(),\n        hour,\n        minute,\n        0,\n        0\n      ).getTime",
+          "lineNumber": 540
+        },
+        {
+          "caller": "findNextScheduledSlot",
+          "callee": "candidateDate.getFullYear",
+          "lineNumber": 541
+        },
+        {
+          "caller": "findNextScheduledSlot",
+          "callee": "candidateDate.getMonth",
+          "lineNumber": 542
+        },
+        {
+          "caller": "findNextScheduledSlot",
+          "callee": "candidateDate.getDate",
+          "lineNumber": 543
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 12,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/schedule/scheduled-task-store.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 102,
+      "nonEmptyLines": 98,
+      "functions": [
+        {
+          "name": "createScheduledTaskStore",
+          "startLine": 10,
+          "endLine": 52,
+          "params": ["db"]
+        },
+        {
+          "name": "mapRowToTask",
+          "startLine": 54,
+          "endLine": 72,
+          "params": ["row"]
+        },
+        {
+          "name": "mapTaskUpdatesToRow",
+          "startLine": 74,
+          "endLine": 91,
+          "params": ["updates"]
+        },
+        {
+          "name": "parseScheduleConfig",
+          "startLine": 93,
+          "endLine": 102,
+          "params": ["value"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createScheduledTaskStore",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createScheduledTaskStore",
+          "callee": "db.scheduledTasks.getAll().map",
+          "lineNumber": 12
+        },
+        {
+          "caller": "createScheduledTaskStore",
+          "callee": "db.scheduledTasks.getAll",
+          "lineNumber": 12
+        },
+        {
+          "caller": "createScheduledTaskStore",
+          "callee": "db.scheduledTasks.get",
+          "lineNumber": 14
+        },
+        {
+          "caller": "createScheduledTaskStore",
+          "callee": "mapRowToTask",
+          "lineNumber": 15
+        },
+        {
+          "caller": "createScheduledTaskStore",
+          "callee": "Date.now",
+          "lineNumber": 18
+        },
+        {
+          "caller": "createScheduledTaskStore",
+          "callee": "uuidv4",
+          "lineNumber": 20
+        },
+        {
+          "caller": "createScheduledTaskStore",
+          "callee": "JSON.stringify",
+          "lineNumber": 26
+        },
+        {
+          "caller": "createScheduledTaskStore",
+          "callee": "db.scheduledTasks.create",
+          "lineNumber": 36
+        },
+        {
+          "caller": "createScheduledTaskStore",
+          "callee": "mapRowToTask",
+          "lineNumber": 37
+        },
+        {
+          "caller": "createScheduledTaskStore",
+          "callee": "mapTaskUpdatesToRow",
+          "lineNumber": 40
+        },
+        {
+          "caller": "createScheduledTaskStore",
+          "callee": "db.scheduledTasks.update",
+          "lineNumber": 41
+        },
+        {
+          "caller": "createScheduledTaskStore",
+          "callee": "db.scheduledTasks.get",
+          "lineNumber": 42
+        },
+        {
+          "caller": "createScheduledTaskStore",
+          "callee": "mapRowToTask",
+          "lineNumber": 43
+        },
+        {
+          "caller": "createScheduledTaskStore",
+          "callee": "db.scheduledTasks.get",
+          "lineNumber": 46
+        },
+        {
+          "caller": "createScheduledTaskStore",
+          "callee": "db.scheduledTasks.delete",
+          "lineNumber": 48
+        },
+        {
+          "caller": "mapRowToTask",
+          "callee": "parseScheduleConfig",
+          "lineNumber": 62
+        },
+        {
+          "caller": "mapTaskUpdatesToRow",
+          "callee": "JSON.stringify",
+          "lineNumber": 82
+        },
+        {
+          "caller": "parseScheduleConfig",
+          "callee": "JSON.parse",
+          "lineNumber": 98
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/session/session-title-flow.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 82,
+      "nonEmptyLines": 73,
+      "functions": [
+        {
+          "name": "maybeGenerateSessionTitle",
+          "startLine": 22,
+          "endLine": 82,
+          "params": ["deps"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "maybeGenerateSessionTitle",
+          "line": 22,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "maybeGenerateSessionTitle",
+          "callee": "deps.shouldAbort",
+          "lineNumber": 23
+        },
+        {
+          "caller": "maybeGenerateSessionTitle",
+          "callee": "deps.log",
+          "lineNumber": 24
+        },
+        {
+          "caller": "maybeGenerateSessionTitle",
+          "callee": "shouldGenerateTitle",
+          "lineNumber": 27
+        },
+        {
+          "caller": "maybeGenerateSessionTitle",
+          "callee": "deps.log",
+          "lineNumber": 36
+        },
+        {
+          "caller": "maybeGenerateSessionTitle",
+          "callee": "deps.log",
+          "lineNumber": 40
+        },
+        {
+          "caller": "maybeGenerateSessionTitle",
+          "callee": "deps.log",
+          "lineNumber": 43
+        },
+        {
+          "caller": "maybeGenerateSessionTitle",
+          "callee": "deps.log",
+          "lineNumber": 47
+        },
+        {
+          "caller": "maybeGenerateSessionTitle",
+          "callee": "buildTitlePrompt",
+          "lineNumber": 49
+        },
+        {
+          "caller": "maybeGenerateSessionTitle",
+          "callee": "normalizeGeneratedTitle",
+          "lineNumber": 52
+        },
+        {
+          "caller": "maybeGenerateSessionTitle",
+          "callee": "deps.generateTitle",
+          "lineNumber": 52
+        },
+        {
+          "caller": "maybeGenerateSessionTitle",
+          "callee": "deps.log",
+          "lineNumber": 54
+        },
+        {
+          "caller": "maybeGenerateSessionTitle",
+          "callee": "deps.shouldAbort",
+          "lineNumber": 58
+        },
+        {
+          "caller": "maybeGenerateSessionTitle",
+          "callee": "deps.log",
+          "lineNumber": 59
+        },
+        {
+          "caller": "maybeGenerateSessionTitle",
+          "callee": "deps.log",
+          "lineNumber": 64
+        },
+        {
+          "caller": "maybeGenerateSessionTitle",
+          "callee": "deps.getLatestTitle",
+          "lineNumber": 68
+        },
+        {
+          "caller": "maybeGenerateSessionTitle",
+          "callee": "getDefaultTitleFromPrompt",
+          "lineNumber": 69
+        },
+        {
+          "caller": "maybeGenerateSessionTitle",
+          "callee": "deps.log",
+          "lineNumber": 71
+        },
+        {
+          "caller": "maybeGenerateSessionTitle",
+          "callee": "deps.updateTitle",
+          "lineNumber": 75
+        },
+        {
+          "caller": "maybeGenerateSessionTitle",
+          "callee": "deps.markAttempt",
+          "lineNumber": 77
+        },
+        {
+          "caller": "maybeGenerateSessionTitle",
+          "callee": "deps.log",
+          "lineNumber": 78
+        },
+        {
+          "caller": "maybeGenerateSessionTitle",
+          "callee": "deps.log",
+          "lineNumber": 80
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/session/session-title-utils.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 50,
+      "nonEmptyLines": 46,
+      "functions": [
+        {
+          "name": "shouldGenerateTitle",
+          "startLine": 11,
+          "endLine": 16,
+          "params": ["input"]
+        },
+        {
+          "name": "normalizeGeneratedTitle",
+          "startLine": 18,
+          "endLine": 34,
+          "params": ["value"]
+        },
+        {
+          "name": "buildTitlePrompt",
+          "startLine": 36,
+          "endLine": 50,
+          "params": ["prompt"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DEFAULT_SESSION_TITLE",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "getDefaultTitleFromPrompt",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "shouldGenerateTitle",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "normalizeGeneratedTitle",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "buildTitlePrompt",
+          "line": 36,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "shouldGenerateTitle",
+          "callee": "getDefaultTitleFromPrompt",
+          "lineNumber": 14
+        },
+        {
+          "caller": "normalizeGeneratedTitle",
+          "callee": "value\n    .split(/\\r?\\n/)\n    .map((line) => line.trim())\n    .find",
+          "lineNumber": 20
+        },
+        {
+          "caller": "normalizeGeneratedTitle",
+          "callee": "value\n    .split(/\\r?\\n/)\n    .map",
+          "lineNumber": 20
+        },
+        {
+          "caller": "normalizeGeneratedTitle",
+          "callee": "value\n    .split",
+          "lineNumber": 20
+        },
+        {
+          "caller": "normalizeGeneratedTitle",
+          "callee": "line.trim",
+          "lineNumber": 22
+        },
+        {
+          "caller": "normalizeGeneratedTitle",
+          "callee": "firstLine.replace(/^[\"'`]+|[\"'`]+$/g, '').trim",
+          "lineNumber": 25
+        },
+        {
+          "caller": "normalizeGeneratedTitle",
+          "callee": "firstLine.replace",
+          "lineNumber": 25
+        },
+        {
+          "caller": "normalizeGeneratedTitle",
+          "callee": "normalized.toLowerCase",
+          "lineNumber": 28
+        },
+        {
+          "caller": "normalizeGeneratedTitle",
+          "callee": "normalized.toLowerCase",
+          "lineNumber": 29
+        },
+        {
+          "caller": "normalizeGeneratedTitle",
+          "callee": "normalized.slice",
+          "lineNumber": 33
+        },
+        {
+          "caller": "buildTitlePrompt",
+          "callee": "[\n    'Generate a short title for the following user request. Rules:',\n    '- Max 15 characters (Chinese) or 6 words (English)',\n    '- Reply in the same language as the user request',\n    '- No quotes, numbering, or punctuation at the end',\n    '',\n    '请根据用户请求生成一个简短的对话标题：',\n    '- 不超过15个字',\n    '- 同语言输出',\n    '- 不要加引号或编号',\n    '',\n    `User request / 用户请求：${prompt.trim()}`,\n  ].join",
+          "lineNumber": 37
+        },
+        {
+          "caller": "buildTitlePrompt",
+          "callee": "prompt.trim",
+          "lineNumber": 48
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 5,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/shared/schedule/task-title.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 42,
+      "nonEmptyLines": 37,
+      "functions": [
+        {
+          "name": "normalizeTitlePart",
+          "startLine": 6,
+          "endLine": 11,
+          "params": ["value"]
+        },
+        {
+          "name": "stripSchedulePrefix",
+          "startLine": 13,
+          "endLine": 15,
+          "params": ["value"]
+        },
+        {
+          "name": "summarizeSchedulePrompt",
+          "startLine": 17,
+          "endLine": 32,
+          "params": ["prompt", "maxLength"]
+        },
+        {
+          "name": "buildScheduledTaskTitle",
+          "startLine": 34,
+          "endLine": 38,
+          "params": ["titleOrSummary"]
+        },
+        {
+          "name": "buildScheduledTaskFallbackTitle",
+          "startLine": 40,
+          "endLine": 42,
+          "params": ["prompt"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "summarizeSchedulePrompt",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "buildScheduledTaskTitle",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "buildScheduledTaskFallbackTitle",
+          "line": 40,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "normalizeTitlePart",
+          "callee": "value\n    .trim()\n    .replace(/[\\r\\n]+/g, ' ')\n    .replace",
+          "lineNumber": 7
+        },
+        {
+          "caller": "normalizeTitlePart",
+          "callee": "value\n    .trim()\n    .replace",
+          "lineNumber": 7
+        },
+        {
+          "caller": "normalizeTitlePart",
+          "callee": "value\n    .trim",
+          "lineNumber": 7
+        },
+        {
+          "caller": "stripSchedulePrefix",
+          "callee": "value.replace(PREFIX_PATTERN, '').trim",
+          "lineNumber": 14
+        },
+        {
+          "caller": "stripSchedulePrefix",
+          "callee": "value.replace",
+          "lineNumber": 14
+        },
+        {
+          "caller": "summarizeSchedulePrompt",
+          "callee": "normalizeTitlePart",
+          "lineNumber": 21
+        },
+        {
+          "caller": "summarizeSchedulePrompt",
+          "callee": "Number.isFinite",
+          "lineNumber": 25
+        },
+        {
+          "caller": "summarizeSchedulePrompt",
+          "callee": "normalizedPrompt.slice",
+          "lineNumber": 31
+        },
+        {
+          "caller": "summarizeSchedulePrompt",
+          "callee": "Math.max",
+          "lineNumber": 31
+        },
+        {
+          "caller": "buildScheduledTaskTitle",
+          "callee": "normalizeTitlePart",
+          "lineNumber": 35
+        },
+        {
+          "caller": "buildScheduledTaskTitle",
+          "callee": "stripSchedulePrefix",
+          "lineNumber": 35
+        },
+        {
+          "caller": "buildScheduledTaskFallbackTitle",
+          "callee": "buildScheduledTaskTitle",
+          "lineNumber": 41
+        },
+        {
+          "caller": "buildScheduledTaskFallbackTitle",
+          "callee": "summarizeSchedulePrompt",
+          "lineNumber": 41
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/schedule-task-title.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 29,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/scheduled-task-edge-cases.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 208,
+      "nonEmptyLines": 183,
+      "functions": [
+        {
+          "name": "createTask",
+          "startLine": 8,
+          "endLine": 28,
+          "params": ["overrides"]
+        },
+        {
+          "name": "createStore",
+          "startLine": 30,
+          "endLine": 63,
+          "params": ["initialTasks"]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createTask",
+          "callee": "Date.now",
+          "lineNumber": 9
+        },
+        {
+          "caller": "createStore",
+          "callee": "initialTasks.map",
+          "lineNumber": 31
+        },
+        {
+          "caller": "createStore",
+          "callee": "Array.from",
+          "lineNumber": 34
+        },
+        {
+          "caller": "createStore",
+          "callee": "tasks.values",
+          "lineNumber": 34
+        },
+        {
+          "caller": "createStore",
+          "callee": "tasks.get",
+          "lineNumber": 35
+        },
+        {
+          "caller": "createStore",
+          "callee": "Date.now",
+          "lineNumber": 37
+        },
+        {
+          "caller": "createStore",
+          "callee": "tasks.set",
+          "lineNumber": 47
+        },
+        {
+          "caller": "createStore",
+          "callee": "tasks.get",
+          "lineNumber": 51
+        },
+        {
+          "caller": "createStore",
+          "callee": "Date.now",
+          "lineNumber": 56
+        },
+        {
+          "caller": "createStore",
+          "callee": "tasks.set",
+          "lineNumber": 58
+        },
+        {
+          "caller": "createStore",
+          "callee": "tasks.delete",
+          "lineNumber": 61
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/scheduled-task-manager.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 583,
+      "nonEmptyLines": 502,
+      "functions": [
+        {
+          "name": "createTask",
+          "startLine": 10,
+          "endLine": 30,
+          "params": ["overrides"]
+        },
+        {
+          "name": "toLocalTimestamp",
+          "startLine": 32,
+          "endLine": 40,
+          "params": ["year", "month", "day", "hour", "minute"]
+        },
+        {
+          "name": "createDailySchedule",
+          "startLine": 42,
+          "endLine": 44,
+          "params": ["times"]
+        },
+        {
+          "name": "createWeeklySchedule",
+          "startLine": 46,
+          "endLine": 48,
+          "params": ["weekdays", "times"]
+        },
+        {
+          "name": "createStore",
+          "startLine": 50,
+          "endLine": 83,
+          "params": ["initialTasks"]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createTask",
+          "callee": "Date.now",
+          "lineNumber": 11
+        },
+        {
+          "caller": "toLocalTimestamp",
+          "callee": "new Date(year, month - 1, day, hour, minute, 0, 0).getTime",
+          "lineNumber": 39
+        },
+        {
+          "caller": "createStore",
+          "callee": "initialTasks.map",
+          "lineNumber": 51
+        },
+        {
+          "caller": "createStore",
+          "callee": "Array.from",
+          "lineNumber": 54
+        },
+        {
+          "caller": "createStore",
+          "callee": "tasks.values",
+          "lineNumber": 54
+        },
+        {
+          "caller": "createStore",
+          "callee": "tasks.get",
+          "lineNumber": 55
+        },
+        {
+          "caller": "createStore",
+          "callee": "Date.now",
+          "lineNumber": 57
+        },
+        {
+          "caller": "createStore",
+          "callee": "tasks.set",
+          "lineNumber": 67
+        },
+        {
+          "caller": "createStore",
+          "callee": "tasks.get",
+          "lineNumber": 71
+        },
+        {
+          "caller": "createStore",
+          "callee": "Date.now",
+          "lineNumber": 76
+        },
+        {
+          "caller": "createStore",
+          "callee": "tasks.set",
+          "lineNumber": 78
+        },
+        {
+          "caller": "createStore",
+          "callee": "tasks.delete",
+          "lineNumber": 81
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/session-manager-scheduled-title.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 86,
+      "nonEmptyLines": 74,
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/session-title-flow-abort.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 134,
+      "nonEmptyLines": 121,
+      "functions": [
+        {
+          "name": "makeDeps",
+          "startLine": 6,
+          "endLine": 21,
+          "params": ["overrides"]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "makeDeps",
+          "callee": "getDefaultTitleFromPrompt",
+          "lineNumber": 12
+        },
+        {
+          "caller": "makeDeps",
+          "callee": "vi.fn",
+          "lineNumber": 14
+        },
+        {
+          "caller": "makeDeps",
+          "callee": "getDefaultTitleFromPrompt",
+          "lineNumber": 15
+        },
+        {
+          "caller": "makeDeps",
+          "callee": "vi.fn",
+          "lineNumber": 16
+        },
+        {
+          "caller": "makeDeps",
+          "callee": "vi.fn",
+          "lineNumber": 17
+        },
+        {
+          "caller": "makeDeps",
+          "callee": "vi.fn",
+          "lineNumber": 18
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/session-title-flow.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 39,
+      "nonEmptyLines": 35,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/session-title-utils.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 67,
+      "nonEmptyLines": 60,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/support/session-title-harness.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 52,
+      "nonEmptyLines": 48,
+      "functions": [
+        {
+          "name": "createTitleFlowHarness",
+          "startLine": 11,
+          "endLine": 52,
+          "params": ["options"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createTitleFlowHarness",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "runFirstMessage",
+          "callee": "getDefaultTitleFromPrompt",
+          "lineNumber": 20
+        },
+        {
+          "caller": "runFirstMessage",
+          "callee": "maybeGenerateSessionTitle",
+          "lineNumber": 21
+        },
+        {
+          "caller": "runFirstMessage",
+          "callee": "attemptedSessions.has",
+          "lineNumber": 26
+        },
+        {
+          "caller": "runFirstMessage",
+          "callee": "attemptedSessions.add",
+          "lineNumber": 30
+        },
+        {
+          "caller": "hasAttempted",
+          "callee": "attemptedSessions.has",
+          "lineNumber": 49
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

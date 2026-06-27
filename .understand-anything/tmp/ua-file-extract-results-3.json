@@ -1,0 +1,2638 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 33,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/main/utils/logger.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 559,
+      "nonEmptyLines": 485,
+      "functions": [
+        {
+          "name": "runWithLogContext",
+          "startLine": 26,
+          "endLine": 28,
+          "params": ["ctx", "fn"]
+        },
+        {
+          "name": "generateTraceId",
+          "startLine": 34,
+          "endLine": 36,
+          "params": []
+        },
+        {
+          "name": "formatCtxPrefix",
+          "startLine": 38,
+          "endLine": 45,
+          "params": []
+        },
+        {
+          "name": "clearLogStreamState",
+          "startLine": 66,
+          "endLine": 70,
+          "params": []
+        },
+        {
+          "name": "attachLogStreamErrorHandler",
+          "startLine": 72,
+          "endLine": 79,
+          "params": ["stream", "filePath"]
+        },
+        {
+          "name": "resolveUserDataPath",
+          "startLine": 81,
+          "endLine": 94,
+          "params": []
+        },
+        {
+          "name": "resolveAppVersion",
+          "startLine": 96,
+          "endLine": 105,
+          "params": []
+        },
+        {
+          "name": "initLogFile",
+          "startLine": 110,
+          "endLine": 157,
+          "params": []
+        },
+        {
+          "name": "cleanupOldLogs",
+          "startLine": 162,
+          "endLine": 211,
+          "params": ["logsDir"]
+        },
+        {
+          "name": "rotateLogIfNeeded",
+          "startLine": 216,
+          "endLine": 241,
+          "params": []
+        },
+        {
+          "name": "truncateLogText",
+          "startLine": 243,
+          "endLine": 248,
+          "params": ["value", "maxLength"]
+        },
+        {
+          "name": "normalizeLogValue",
+          "startLine": 250,
+          "endLine": 342,
+          "params": ["value", "seen", "depth"]
+        },
+        {
+          "name": "serializeLogArg",
+          "startLine": 344,
+          "endLine": 354,
+          "params": ["arg"]
+        },
+        {
+          "name": "writeToFile",
+          "startLine": 359,
+          "endLine": 386,
+          "params": ["level", "...args"]
+        },
+        {
+          "name": "shouldPersistLogLevel",
+          "startLine": 388,
+          "endLine": 390,
+          "params": ["level", "detailedLogsEnabled"]
+        },
+        {
+          "name": "getTimestamp",
+          "startLine": 392,
+          "endLine": 395,
+          "params": []
+        },
+        {
+          "name": "log",
+          "startLine": 397,
+          "endLine": 400,
+          "params": ["...args"]
+        },
+        {
+          "name": "logWarn",
+          "startLine": 402,
+          "endLine": 405,
+          "params": ["...args"]
+        },
+        {
+          "name": "logError",
+          "startLine": 407,
+          "endLine": 410,
+          "params": ["...args"]
+        },
+        {
+          "name": "logCtx",
+          "startLine": 414,
+          "endLine": 418,
+          "params": ["...args"]
+        },
+        {
+          "name": "logCtxWarn",
+          "startLine": 420,
+          "endLine": 424,
+          "params": ["...args"]
+        },
+        {
+          "name": "logCtxError",
+          "startLine": 426,
+          "endLine": 430,
+          "params": ["...args"]
+        },
+        {
+          "name": "logTiming",
+          "startLine": 436,
+          "endLine": 442,
+          "params": ["label", "startTime"]
+        },
+        {
+          "name": "getLogFilePath",
+          "startLine": 447,
+          "endLine": 449,
+          "params": []
+        },
+        {
+          "name": "getLogsDirectory",
+          "startLine": 454,
+          "endLine": 457,
+          "params": []
+        },
+        {
+          "name": "getAllLogFiles",
+          "startLine": 462,
+          "endLine": 487,
+          "params": []
+        },
+        {
+          "name": "setDevLogsEnabled",
+          "startLine": 492,
+          "endLine": 506,
+          "params": ["enabled"]
+        },
+        {
+          "name": "isDevLogsEnabled",
+          "startLine": 511,
+          "endLine": 513,
+          "params": []
+        },
+        {
+          "name": "closeLogFile",
+          "startLine": 518,
+          "endLine": 528,
+          "params": []
+        },
+        {
+          "name": "isBrokenPipeError",
+          "startLine": 530,
+          "endLine": 537,
+          "params": ["error"]
+        },
+        {
+          "name": "safeConsoleCall",
+          "startLine": 539,
+          "endLine": 547,
+          "params": ["method", "...args"]
+        },
+        {
+          "name": "safeConsoleLog",
+          "startLine": 549,
+          "endLine": 551,
+          "params": ["...args"]
+        },
+        {
+          "name": "safeConsoleWarn",
+          "startLine": 553,
+          "endLine": 555,
+          "params": ["...args"]
+        },
+        {
+          "name": "safeConsoleError",
+          "startLine": 557,
+          "endLine": 559,
+          "params": ["...args"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "logStorage",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "runWithLogContext",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "generateTraceId",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "shouldPersistLogLevel",
+          "line": 388,
+          "isDefault": false
+        },
+        {
+          "name": "log",
+          "line": 397,
+          "isDefault": false
+        },
+        {
+          "name": "logWarn",
+          "line": 402,
+          "isDefault": false
+        },
+        {
+          "name": "logError",
+          "line": 407,
+          "isDefault": false
+        },
+        {
+          "name": "logCtx",
+          "line": 414,
+          "isDefault": false
+        },
+        {
+          "name": "logCtxWarn",
+          "line": 420,
+          "isDefault": false
+        },
+        {
+          "name": "logCtxError",
+          "line": 426,
+          "isDefault": false
+        },
+        {
+          "name": "logTiming",
+          "line": 436,
+          "isDefault": false
+        },
+        {
+          "name": "getLogFilePath",
+          "line": 447,
+          "isDefault": false
+        },
+        {
+          "name": "getLogsDirectory",
+          "line": 454,
+          "isDefault": false
+        },
+        {
+          "name": "getAllLogFiles",
+          "line": 462,
+          "isDefault": false
+        },
+        {
+          "name": "setDevLogsEnabled",
+          "line": 492,
+          "isDefault": false
+        },
+        {
+          "name": "isDevLogsEnabled",
+          "line": 511,
+          "isDefault": false
+        },
+        {
+          "name": "closeLogFile",
+          "line": 518,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "runWithLogContext",
+          "callee": "logStorage.run",
+          "lineNumber": 27
+        },
+        {
+          "caller": "generateTraceId",
+          "callee": "randomUUID().slice",
+          "lineNumber": 35
+        },
+        {
+          "caller": "generateTraceId",
+          "callee": "randomUUID",
+          "lineNumber": 35
+        },
+        {
+          "caller": "formatCtxPrefix",
+          "callee": "logStorage.getStore",
+          "lineNumber": 39
+        },
+        {
+          "caller": "formatCtxPrefix",
+          "callee": "parts.push",
+          "lineNumber": 42
+        },
+        {
+          "caller": "formatCtxPrefix",
+          "callee": "ctx.sessionId.slice",
+          "lineNumber": 42
+        },
+        {
+          "caller": "formatCtxPrefix",
+          "callee": "parts.push",
+          "lineNumber": 43
+        },
+        {
+          "caller": "formatCtxPrefix",
+          "callee": "parts.join",
+          "lineNumber": 44
+        },
+        {
+          "caller": "attachLogStreamErrorHandler",
+          "callee": "stream.on",
+          "lineNumber": 73
+        },
+        {
+          "caller": "attachLogStreamErrorHandler",
+          "callee": "safeConsoleError",
+          "lineNumber": 74
+        },
+        {
+          "caller": "attachLogStreamErrorHandler",
+          "callee": "clearLogStreamState",
+          "lineNumber": 76
+        },
+        {
+          "caller": "resolveUserDataPath",
+          "callee": "app.getPath",
+          "lineNumber": 84
+        },
+        {
+          "caller": "resolveUserDataPath",
+          "callee": "userDataPath?.trim",
+          "lineNumber": 85
+        },
+        {
+          "caller": "resolveUserDataPath",
+          "callee": "path.join",
+          "lineNumber": 93
+        },
+        {
+          "caller": "resolveUserDataPath",
+          "callee": "process.cwd",
+          "lineNumber": 93
+        },
+        {
+          "caller": "resolveAppVersion",
+          "callee": "app.getVersion",
+          "lineNumber": 99
+        },
+        {
+          "caller": "initLogFile",
+          "callee": "resolveUserDataPath",
+          "lineNumber": 115
+        },
+        {
+          "caller": "initLogFile",
+          "callee": "path.join",
+          "lineNumber": 116
+        },
+        {
+          "caller": "initLogFile",
+          "callee": "fs.existsSync",
+          "lineNumber": 118
+        },
+        {
+          "caller": "initLogFile",
+          "callee": "fs.mkdirSync",
+          "lineNumber": 119
+        },
+        {
+          "caller": "initLogFile",
+          "callee": "new Date()\n      .toISOString()\n      .replace(/[:.]/g, '-')\n      .replace('T', '_')\n      .split",
+          "lineNumber": 123
+        },
+        {
+          "caller": "initLogFile",
+          "callee": "new Date()\n      .toISOString()\n      .replace(/[:.]/g, '-')\n      .replace",
+          "lineNumber": 123
+        },
+        {
+          "caller": "initLogFile",
+          "callee": "new Date()\n      .toISOString()\n      .replace",
+          "lineNumber": 123
+        },
+        {
+          "caller": "initLogFile",
+          "callee": "new Date()\n      .toISOString",
+          "lineNumber": 123
+        },
+        {
+          "caller": "initLogFile",
+          "callee": "path.join",
+          "lineNumber": 129
+        },
+        {
+          "caller": "initLogFile",
+          "callee": "fs.createWriteStream",
+          "lineNumber": 132
+        },
+        {
+          "caller": "initLogFile",
+          "callee": "attachLogStreamErrorHandler",
+          "lineNumber": 133
+        },
+        {
+          "caller": "initLogFile",
+          "callee": "new Date().toISOString",
+          "lineNumber": 139
+        },
+        {
+          "caller": "initLogFile",
+          "callee": "resolveAppVersion",
+          "lineNumber": 144
+        },
+        {
+          "caller": "initLogFile",
+          "callee": "logStream.write",
+          "lineNumber": 148
+        },
+        {
+          "caller": "initLogFile",
+          "callee": "safeConsoleLog",
+          "lineNumber": 150
+        },
+        {
+          "caller": "initLogFile",
+          "callee": "cleanupOldLogs",
+          "lineNumber": 153
+        },
+        {
+          "caller": "initLogFile",
+          "callee": "safeConsoleError",
+          "lineNumber": 155
+        },
+        {
+          "caller": "cleanupOldLogs",
+          "callee": "fs\n      .readdirSync(logsDir)\n      .filter((f) => f.startsWith('app-') && f.endsWith('.log'))\n      .flatMap((f) => {\n        const filePath = path.join(logsDir, f);\n        try {\n          return [\n            {\n              name: f,\n              path: filePath,\n              mtime: fs.statSync(filePath).mtime.getTime(),\n            },\n          ];\n        } catch (err) {\n          const errno = err as NodeJS.ErrnoException;\n          if (errno.code === 'ENOENT') {\n            // File disappeared between readdir and stat; ignore.\n            return [];\n          }\n          throw err;\n        }\n      })\n      .sort",
+          "lineNumber": 164
+        },
+        {
+          "caller": "cleanupOldLogs",
+          "callee": "fs\n      .readdirSync(logsDir)\n      .filter((f) => f.startsWith('app-') && f.endsWith('.log'))\n      .flatMap",
+          "lineNumber": 164
+        },
+        {
+          "caller": "cleanupOldLogs",
+          "callee": "fs\n      .readdirSync(logsDir)\n      .filter",
+          "lineNumber": 164
+        },
+        {
+          "caller": "cleanupOldLogs",
+          "callee": "fs\n      .readdirSync",
+          "lineNumber": 164
+        },
+        {
+          "caller": "cleanupOldLogs",
+          "callee": "f.startsWith",
+          "lineNumber": 166
+        },
+        {
+          "caller": "cleanupOldLogs",
+          "callee": "f.endsWith",
+          "lineNumber": 166
+        },
+        {
+          "caller": "cleanupOldLogs",
+          "callee": "path.join",
+          "lineNumber": 168
+        },
+        {
+          "caller": "cleanupOldLogs",
+          "callee": "fs.statSync(filePath).mtime.getTime",
+          "lineNumber": 174
+        },
+        {
+          "caller": "cleanupOldLogs",
+          "callee": "fs.statSync",
+          "lineNumber": 174
+        },
+        {
+          "caller": "cleanupOldLogs",
+          "callee": "files\n        .slice(MAX_LOG_FILES)\n        .filter",
+          "lineNumber": 191
+        },
+        {
+          "caller": "cleanupOldLogs",
+          "callee": "files\n        .slice",
+          "lineNumber": 191
+        },
+        {
+          "caller": "cleanupOldLogs",
+          "callee": "fs.unlinkSync",
+          "lineNumber": 196
+        },
+        {
+          "caller": "cleanupOldLogs",
+          "callee": "safeConsoleLog",
+          "lineNumber": 197
+        },
+        {
+          "caller": "cleanupOldLogs",
+          "callee": "safeConsoleError",
+          "lineNumber": 204
+        },
+        {
+          "caller": "cleanupOldLogs",
+          "callee": "safeConsoleError",
+          "lineNumber": 209
+        },
+        {
+          "caller": "rotateLogIfNeeded",
+          "callee": "fs.statSync",
+          "lineNumber": 220
+        },
+        {
+          "caller": "rotateLogIfNeeded",
+          "callee": "safeConsoleLog",
+          "lineNumber": 222
+        },
+        {
+          "caller": "rotateLogIfNeeded",
+          "callee": "logStream.end",
+          "lineNumber": 225
+        },
+        {
+          "caller": "rotateLogIfNeeded",
+          "callee": "clearLogStreamState",
+          "lineNumber": 228
+        },
+        {
+          "caller": "rotateLogIfNeeded",
+          "callee": "initLogFile",
+          "lineNumber": 229
+        },
+        {
+          "caller": "rotateLogIfNeeded",
+          "callee": "clearLogStreamState",
+          "lineNumber": 235
+        },
+        {
+          "caller": "rotateLogIfNeeded",
+          "callee": "initLogFile",
+          "lineNumber": 236
+        },
+        {
+          "caller": "rotateLogIfNeeded",
+          "callee": "safeConsoleError",
+          "lineNumber": 239
+        },
+        {
+          "caller": "truncateLogText",
+          "callee": "value.slice",
+          "lineNumber": 247
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "seen.has",
+          "lineNumber": 252
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "seen.add",
+          "lineNumber": 255
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "Object.entries(err as unknown as Record<string, unknown>).filter",
+          "lineNumber": 257
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "Object.entries",
+          "lineNumber": 257
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "['name', 'message', 'stack', 'cause'].includes",
+          "lineNumber": 258
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "truncateLogText",
+          "lineNumber": 262
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "truncateLogText",
+          "lineNumber": 263
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "normalizeLogValue",
+          "lineNumber": 264
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "normalizeLogValue",
+          "lineNumber": 267
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "Object.fromEntries",
+          "lineNumber": 267
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "truncateLogText",
+          "lineNumber": 273
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "value.toString",
+          "lineNumber": 290
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "value.toISOString",
+          "lineNumber": 298
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "Buffer.isBuffer",
+          "lineNumber": 301
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "Array.isArray",
+          "lineNumber": 309
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "value\n      .slice(0, MAX_LOG_ARRAY_ITEMS)\n      .map((item) => normalizeLogValue(item, seen, depth + 1))\n      .concat",
+          "lineNumber": 310
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "value\n      .slice(0, MAX_LOG_ARRAY_ITEMS)\n      .map",
+          "lineNumber": 310
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "value\n      .slice",
+          "lineNumber": 310
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "normalizeLogValue",
+          "lineNumber": 312
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "seen.has",
+          "lineNumber": 321
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "seen.add",
+          "lineNumber": 324
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "Object.entries",
+          "lineNumber": 326
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "entries\n      .slice(0, MAX_LOG_OBJECT_KEYS)\n      .map",
+          "lineNumber": 327
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "entries\n      .slice",
+          "lineNumber": 327
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "normalizeLogValue",
+          "lineNumber": 329
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "limitedEntries.push",
+          "lineNumber": 332
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "Object.fromEntries",
+          "lineNumber": 338
+        },
+        {
+          "caller": "normalizeLogValue",
+          "callee": "String",
+          "lineNumber": 341
+        },
+        {
+          "caller": "serializeLogArg",
+          "callee": "normalizeLogValue",
+          "lineNumber": 345
+        },
+        {
+          "caller": "serializeLogArg",
+          "callee": "JSON.stringify",
+          "lineNumber": 350
+        },
+        {
+          "caller": "serializeLogArg",
+          "callee": "String",
+          "lineNumber": 352
+        },
+        {
+          "caller": "writeToFile",
+          "callee": "shouldPersistLogLevel",
+          "lineNumber": 360
+        },
+        {
+          "caller": "writeToFile",
+          "callee": "initLogFile",
+          "lineNumber": 365
+        },
+        {
+          "caller": "writeToFile",
+          "callee": "getTimestamp",
+          "lineNumber": 370
+        },
+        {
+          "caller": "writeToFile",
+          "callee": "formatCtxPrefix",
+          "lineNumber": 371
+        },
+        {
+          "caller": "writeToFile",
+          "callee": "args.map((arg) => serializeLogArg(arg)).join",
+          "lineNumber": 372
+        },
+        {
+          "caller": "writeToFile",
+          "callee": "args.map",
+          "lineNumber": 372
+        },
+        {
+          "caller": "writeToFile",
+          "callee": "serializeLogArg",
+          "lineNumber": 372
+        },
+        {
+          "caller": "writeToFile",
+          "callee": "logStream.write",
+          "lineNumber": 374
+        },
+        {
+          "caller": "writeToFile",
+          "callee": "rotateLogIfNeeded",
+          "lineNumber": 380
+        },
+        {
+          "caller": "writeToFile",
+          "callee": "safeConsoleError",
+          "lineNumber": 383
+        },
+        {
+          "caller": "shouldPersistLogLevel",
+          "callee": "ALWAYS_PERSIST_LOG_LEVELS.has",
+          "lineNumber": 389
+        },
+        {
+          "caller": "getTimestamp",
+          "callee": "now.toISOString().replace('T', ' ').replace",
+          "lineNumber": 394
+        },
+        {
+          "caller": "getTimestamp",
+          "callee": "now.toISOString().replace",
+          "lineNumber": 394
+        },
+        {
+          "caller": "getTimestamp",
+          "callee": "now.toISOString",
+          "lineNumber": 394
+        },
+        {
+          "caller": "log",
+          "callee": "safeConsoleLog",
+          "lineNumber": 398
+        },
+        {
+          "caller": "log",
+          "callee": "getTimestamp",
+          "lineNumber": 398
+        },
+        {
+          "caller": "log",
+          "callee": "writeToFile",
+          "lineNumber": 399
+        },
+        {
+          "caller": "logWarn",
+          "callee": "safeConsoleWarn",
+          "lineNumber": 403
+        },
+        {
+          "caller": "logWarn",
+          "callee": "getTimestamp",
+          "lineNumber": 403
+        },
+        {
+          "caller": "logWarn",
+          "callee": "writeToFile",
+          "lineNumber": 404
+        },
+        {
+          "caller": "logError",
+          "callee": "safeConsoleError",
+          "lineNumber": 408
+        },
+        {
+          "caller": "logError",
+          "callee": "getTimestamp",
+          "lineNumber": 408
+        },
+        {
+          "caller": "logError",
+          "callee": "writeToFile",
+          "lineNumber": 409
+        },
+        {
+          "caller": "logCtx",
+          "callee": "formatCtxPrefix",
+          "lineNumber": 415
+        },
+        {
+          "caller": "logCtx",
+          "callee": "safeConsoleLog",
+          "lineNumber": 416
+        },
+        {
+          "caller": "logCtx",
+          "callee": "getTimestamp",
+          "lineNumber": 416
+        },
+        {
+          "caller": "logCtx",
+          "callee": "writeToFile",
+          "lineNumber": 417
+        },
+        {
+          "caller": "logCtxWarn",
+          "callee": "formatCtxPrefix",
+          "lineNumber": 421
+        },
+        {
+          "caller": "logCtxWarn",
+          "callee": "safeConsoleWarn",
+          "lineNumber": 422
+        },
+        {
+          "caller": "logCtxWarn",
+          "callee": "getTimestamp",
+          "lineNumber": 422
+        },
+        {
+          "caller": "logCtxWarn",
+          "callee": "writeToFile",
+          "lineNumber": 423
+        },
+        {
+          "caller": "logCtxError",
+          "callee": "formatCtxPrefix",
+          "lineNumber": 427
+        },
+        {
+          "caller": "logCtxError",
+          "callee": "safeConsoleError",
+          "lineNumber": 428
+        },
+        {
+          "caller": "logCtxError",
+          "callee": "getTimestamp",
+          "lineNumber": 428
+        },
+        {
+          "caller": "logCtxError",
+          "callee": "writeToFile",
+          "lineNumber": 429
+        },
+        {
+          "caller": "logTiming",
+          "callee": "Date.now",
+          "lineNumber": 437
+        },
+        {
+          "caller": "logTiming",
+          "callee": "formatCtxPrefix",
+          "lineNumber": 438
+        },
+        {
+          "caller": "logTiming",
+          "callee": "safeConsoleLog",
+          "lineNumber": 440
+        },
+        {
+          "caller": "logTiming",
+          "callee": "getTimestamp",
+          "lineNumber": 440
+        },
+        {
+          "caller": "logTiming",
+          "callee": "writeToFile",
+          "lineNumber": 441
+        },
+        {
+          "caller": "getLogsDirectory",
+          "callee": "resolveUserDataPath",
+          "lineNumber": 455
+        },
+        {
+          "caller": "getLogsDirectory",
+          "callee": "path.join",
+          "lineNumber": 456
+        },
+        {
+          "caller": "getAllLogFiles",
+          "callee": "getLogsDirectory",
+          "lineNumber": 464
+        },
+        {
+          "caller": "getAllLogFiles",
+          "callee": "fs.existsSync",
+          "lineNumber": 465
+        },
+        {
+          "caller": "getAllLogFiles",
+          "callee": "fs\n      .readdirSync(logsDir)\n      .filter((f) => f.startsWith('app-') && f.endsWith('.log'))\n      .flatMap((f) => {\n        const filePath = path.join(logsDir, f);\n        try {\n          const stats = fs.statSync(filePath);\n          return [{ name: f, path: filePath, size: stats.size, mtime: stats.mtime }];\n        } catch {\n          // File disappeared between readdir and stat (ENOENT) or is unreadable; skip.\n          return [];\n        }\n      })\n      .sort",
+          "lineNumber": 469
+        },
+        {
+          "caller": "getAllLogFiles",
+          "callee": "fs\n      .readdirSync(logsDir)\n      .filter((f) => f.startsWith('app-') && f.endsWith('.log'))\n      .flatMap",
+          "lineNumber": 469
+        },
+        {
+          "caller": "getAllLogFiles",
+          "callee": "fs\n      .readdirSync(logsDir)\n      .filter",
+          "lineNumber": 469
+        },
+        {
+          "caller": "getAllLogFiles",
+          "callee": "fs\n      .readdirSync",
+          "lineNumber": 469
+        },
+        {
+          "caller": "getAllLogFiles",
+          "callee": "f.startsWith",
+          "lineNumber": 471
+        },
+        {
+          "caller": "getAllLogFiles",
+          "callee": "f.endsWith",
+          "lineNumber": 471
+        },
+        {
+          "caller": "getAllLogFiles",
+          "callee": "path.join",
+          "lineNumber": 473
+        },
+        {
+          "caller": "getAllLogFiles",
+          "callee": "fs.statSync",
+          "lineNumber": 475
+        },
+        {
+          "caller": "getAllLogFiles",
+          "callee": "b.mtime.getTime",
+          "lineNumber": 482
+        },
+        {
+          "caller": "getAllLogFiles",
+          "callee": "a.mtime.getTime",
+          "lineNumber": 482
+        },
+        {
+          "caller": "getAllLogFiles",
+          "callee": "safeConsoleError",
+          "lineNumber": 484
+        },
+        {
+          "caller": "setDevLogsEnabled",
+          "callee": "safeConsoleLog",
+          "lineNumber": 494
+        },
+        {
+          "caller": "setDevLogsEnabled",
+          "callee": "logStream.end",
+          "lineNumber": 499
+        },
+        {
+          "caller": "setDevLogsEnabled",
+          "callee": "clearLogStreamState",
+          "lineNumber": 500
+        },
+        {
+          "caller": "setDevLogsEnabled",
+          "callee": "safeConsoleLog",
+          "lineNumber": 501
+        },
+        {
+          "caller": "setDevLogsEnabled",
+          "callee": "safeConsoleError",
+          "lineNumber": 503
+        },
+        {
+          "caller": "closeLogFile",
+          "callee": "logStream.end",
+          "lineNumber": 521
+        },
+        {
+          "caller": "closeLogFile",
+          "callee": "safeConsoleLog",
+          "lineNumber": 522
+        },
+        {
+          "caller": "closeLogFile",
+          "callee": "safeConsoleError",
+          "lineNumber": 524
+        },
+        {
+          "caller": "closeLogFile",
+          "callee": "clearLogStreamState",
+          "lineNumber": 527
+        },
+        {
+          "caller": "isBrokenPipeError",
+          "callee": "Boolean",
+          "lineNumber": 531
+        },
+        {
+          "caller": "safeConsoleCall",
+          "callee": "method",
+          "lineNumber": 541
+        },
+        {
+          "caller": "safeConsoleCall",
+          "callee": "isBrokenPipeError",
+          "lineNumber": 543
+        },
+        {
+          "caller": "safeConsoleLog",
+          "callee": "safeConsoleCall",
+          "lineNumber": 550
+        },
+        {
+          "caller": "safeConsoleWarn",
+          "callee": "safeConsoleCall",
+          "lineNumber": 554
+        },
+        {
+          "caller": "safeConsoleError",
+          "callee": "safeConsoleCall",
+          "lineNumber": 558
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 17,
+        "functionCount": 34,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/utils/recent-workspace-files.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 103,
+      "nonEmptyLines": 86,
+      "functions": [
+        {
+          "name": "listRecentWorkspaceFiles",
+          "startLine": 32,
+          "endLine": 95,
+          "params": ["rootDir", "sinceMs", "limit"]
+        },
+        {
+          "name": "shouldIgnoreFile",
+          "startLine": 97,
+          "endLine": 103,
+          "params": ["fileName"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "listRecentWorkspaceFiles",
+          "line": 32,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "listRecentWorkspaceFiles",
+          "callee": "path.resolve",
+          "lineNumber": 38
+        },
+        {
+          "caller": "listRecentWorkspaceFiles",
+          "callee": "queue.shift",
+          "lineNumber": 41
+        },
+        {
+          "caller": "listRecentWorkspaceFiles",
+          "callee": "fs.readdir",
+          "lineNumber": 48
+        },
+        {
+          "caller": "listRecentWorkspaceFiles",
+          "callee": "path.join",
+          "lineNumber": 54
+        },
+        {
+          "caller": "listRecentWorkspaceFiles",
+          "callee": "entry.isSymbolicLink",
+          "lineNumber": 57
+        },
+        {
+          "caller": "listRecentWorkspaceFiles",
+          "callee": "entry.isDirectory",
+          "lineNumber": 61
+        },
+        {
+          "caller": "listRecentWorkspaceFiles",
+          "callee": "EXCLUDED_DIRS.has",
+          "lineNumber": 62
+        },
+        {
+          "caller": "listRecentWorkspaceFiles",
+          "callee": "queue.push",
+          "lineNumber": 63
+        },
+        {
+          "caller": "listRecentWorkspaceFiles",
+          "callee": "entry.isFile",
+          "lineNumber": 68
+        },
+        {
+          "caller": "listRecentWorkspaceFiles",
+          "callee": "shouldIgnoreFile",
+          "lineNumber": 72
+        },
+        {
+          "caller": "listRecentWorkspaceFiles",
+          "callee": "fs.stat",
+          "lineNumber": 77
+        },
+        {
+          "caller": "listRecentWorkspaceFiles",
+          "callee": "Math.max",
+          "lineNumber": 78
+        },
+        {
+          "caller": "listRecentWorkspaceFiles",
+          "callee": "results.push",
+          "lineNumber": 83
+        },
+        {
+          "caller": "listRecentWorkspaceFiles",
+          "callee": "results.sort((a, b) => b.modifiedAt - a.modifiedAt).slice",
+          "lineNumber": 94
+        },
+        {
+          "caller": "listRecentWorkspaceFiles",
+          "callee": "results.sort",
+          "lineNumber": 94
+        },
+        {
+          "caller": "shouldIgnoreFile",
+          "callee": "EXCLUDED_FILES.has",
+          "lineNumber": 98
+        },
+        {
+          "caller": "shouldIgnoreFile",
+          "callee": "EXCLUDED_FILE_PATTERNS.some",
+          "lineNumber": 102
+        },
+        {
+          "caller": "shouldIgnoreFile",
+          "callee": "pattern.test",
+          "lineNumber": 102
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/utils/retry.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 50,
+      "nonEmptyLines": 43,
+      "functions": [
+        {
+          "name": "withRetry",
+          "startLine": 6,
+          "endLine": 50,
+          "params": ["operation", "options"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "withRetry",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "withRetry",
+          "callee": "operation",
+          "lineNumber": 31
+        },
+        {
+          "caller": "withRetry",
+          "callee": "String",
+          "lineNumber": 33
+        },
+        {
+          "caller": "withRetry",
+          "callee": "shouldRetry",
+          "lineNumber": 35
+        },
+        {
+          "caller": "withRetry",
+          "callee": "onRetry",
+          "lineNumber": 40
+        },
+        {
+          "caller": "withRetry",
+          "callee": "logWarn",
+          "lineNumber": 43
+        },
+        {
+          "caller": "withRetry",
+          "callee": "setTimeout",
+          "lineNumber": 44
+        },
+        {
+          "caller": "withRetry",
+          "callee": "Math.min",
+          "lineNumber": 45
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/utils/safe-fs.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 55,
+      "nonEmptyLines": 50,
+      "functions": [
+        {
+          "name": "isPermissionError",
+          "startLine": 12,
+          "endLine": 15,
+          "params": ["error"]
+        },
+        {
+          "name": "safeReaddirSync",
+          "startLine": 22,
+          "endLine": 55,
+          "params": ["dir", "onSkip"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "safeReaddirSync",
+          "line": 22,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "safeReaddirSync",
+          "callee": "fs.readdirSync",
+          "lineNumber": 28
+        },
+        {
+          "caller": "safeReaddirSync",
+          "callee": "onSkip",
+          "lineNumber": 30
+        },
+        {
+          "caller": "safeReaddirSync",
+          "callee": "path.join",
+          "lineNumber": 36
+        },
+        {
+          "caller": "safeReaddirSync",
+          "callee": "fs.lstatSync",
+          "lineNumber": 38
+        },
+        {
+          "caller": "safeReaddirSync",
+          "callee": "entries.push",
+          "lineNumber": 39
+        },
+        {
+          "caller": "safeReaddirSync",
+          "callee": "lstat.isDirectory",
+          "lineNumber": 42
+        },
+        {
+          "caller": "safeReaddirSync",
+          "callee": "lstat.isSymbolicLink",
+          "lineNumber": 43
+        },
+        {
+          "caller": "safeReaddirSync",
+          "callee": "lstat.isFile",
+          "lineNumber": 44
+        },
+        {
+          "caller": "safeReaddirSync",
+          "callee": "onSkip",
+          "lineNumber": 47
+        },
+        {
+          "caller": "safeReaddirSync",
+          "callee": "isPermissionError",
+          "lineNumber": 48
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/utils/shell-resolver.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 24,
+      "functions": [
+        {
+          "name": "getDefaultShell",
+          "startLine": 8,
+          "endLine": 13,
+          "params": []
+        },
+        {
+          "name": "getShellArgs",
+          "startLine": 20,
+          "endLine": 26,
+          "params": ["command"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getDefaultShell",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "getShellArgs",
+          "line": 20,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getDefaultShell",
+          "callee": "platform",
+          "lineNumber": 9
+        },
+        {
+          "caller": "getShellArgs",
+          "callee": "getDefaultShell",
+          "lineNumber": 21
+        },
+        {
+          "caller": "getShellArgs",
+          "callee": "platform",
+          "lineNumber": 22
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/workspace-path-constraints.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 19,
+      "functions": [
+        {
+          "name": "getUnsupportedWorkspacePathReason",
+          "startLine": 9,
+          "endLine": 23,
+          "params": ["{\n  platform,\n  sandboxEnabled,\n  workspacePath,\n}"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getUnsupportedWorkspacePathReason",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getUnsupportedWorkspacePathReason",
+          "callee": "isUncPath",
+          "lineNumber": 18
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/shared/local-file-path.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 98,
+      "nonEmptyLines": 78,
+      "functions": [
+        {
+          "name": "decodePathSafely",
+          "startLine": 4,
+          "endLine": 10,
+          "params": ["value"]
+        },
+        {
+          "name": "isWindowsDrivePath",
+          "startLine": 12,
+          "endLine": 14,
+          "params": ["value"]
+        },
+        {
+          "name": "isUncPath",
+          "startLine": 16,
+          "endLine": 18,
+          "params": ["value"]
+        },
+        {
+          "name": "detectPlatform",
+          "startLine": 20,
+          "endLine": 22,
+          "params": ["platform"]
+        },
+        {
+          "name": "localPathFromFileUrl",
+          "startLine": 24,
+          "endLine": 72,
+          "params": ["fileUrl", "platform"]
+        },
+        {
+          "name": "localPathFromAppUrlPathname",
+          "startLine": 74,
+          "endLine": 98,
+          "params": ["pathname", "platform"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "decodePathSafely",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "isWindowsDrivePath",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "isUncPath",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "localPathFromFileUrl",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "localPathFromAppUrlPathname",
+          "line": 74,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "decodePathSafely",
+          "callee": "decodeURIComponent",
+          "lineNumber": 6
+        },
+        {
+          "caller": "isWindowsDrivePath",
+          "callee": "windowsDrivePathPattern.test",
+          "lineNumber": 13
+        },
+        {
+          "caller": "isUncPath",
+          "callee": "uncPathPattern.test",
+          "lineNumber": 17
+        },
+        {
+          "caller": "localPathFromFileUrl",
+          "callee": "fileUrl.startsWith",
+          "lineNumber": 25
+        },
+        {
+          "caller": "localPathFromFileUrl",
+          "callee": "detectPlatform",
+          "lineNumber": 29
+        },
+        {
+          "caller": "localPathFromFileUrl",
+          "callee": "decodePathSafely",
+          "lineNumber": 33
+        },
+        {
+          "caller": "localPathFromFileUrl",
+          "callee": "decodePathSafely",
+          "lineNumber": 34
+        },
+        {
+          "caller": "localPathFromFileUrl",
+          "callee": "hostname.toLowerCase",
+          "lineNumber": 36
+        },
+        {
+          "caller": "localPathFromFileUrl",
+          "callee": "pathname.replace",
+          "lineNumber": 38
+        },
+        {
+          "caller": "localPathFromFileUrl",
+          "callee": "/^\\/[A-Za-z]:\\//.test",
+          "lineNumber": 48
+        },
+        {
+          "caller": "localPathFromFileUrl",
+          "callee": "pathname.slice",
+          "lineNumber": 49
+        },
+        {
+          "caller": "localPathFromFileUrl",
+          "callee": "decodePathSafely",
+          "lineNumber": 54
+        },
+        {
+          "caller": "localPathFromFileUrl",
+          "callee": "fileUrl.replace",
+          "lineNumber": 54
+        },
+        {
+          "caller": "localPathFromFileUrl",
+          "callee": "fallback.toLowerCase().startsWith",
+          "lineNumber": 59
+        },
+        {
+          "caller": "localPathFromFileUrl",
+          "callee": "fallback.toLowerCase",
+          "lineNumber": 59
+        },
+        {
+          "caller": "localPathFromFileUrl",
+          "callee": "fallback.slice",
+          "lineNumber": 60
+        },
+        {
+          "caller": "localPathFromFileUrl",
+          "callee": "fallback.startsWith",
+          "lineNumber": 63
+        },
+        {
+          "caller": "localPathFromFileUrl",
+          "callee": "fallback.slice(2).replace",
+          "lineNumber": 65
+        },
+        {
+          "caller": "localPathFromFileUrl",
+          "callee": "fallback.slice",
+          "lineNumber": 65
+        },
+        {
+          "caller": "localPathFromAppUrlPathname",
+          "callee": "decodePathSafely",
+          "lineNumber": 75
+        },
+        {
+          "caller": "localPathFromAppUrlPathname",
+          "callee": "detectPlatform",
+          "lineNumber": 80
+        },
+        {
+          "caller": "localPathFromAppUrlPathname",
+          "callee": "/^\\/[A-Za-z]:\\//.test",
+          "lineNumber": 82
+        },
+        {
+          "caller": "localPathFromAppUrlPathname",
+          "callee": "decodedPathname.slice",
+          "lineNumber": 83
+        },
+        {
+          "caller": "localPathFromAppUrlPathname",
+          "callee": "/^\\/\\/[^/]+\\/.+/.test",
+          "lineNumber": 86
+        },
+        {
+          "caller": "localPathFromAppUrlPathname",
+          "callee": "decodedPathname.slice(2).replace",
+          "lineNumber": 88
+        },
+        {
+          "caller": "localPathFromAppUrlPathname",
+          "callee": "decodedPathname.slice",
+          "lineNumber": 88
+        },
+        {
+          "caller": "localPathFromAppUrlPathname",
+          "callee": "/^\\/(?:Users|home|opt|tmp|var|Volumes|mnt)\\//.test",
+          "lineNumber": 93
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 6,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/tests/claude/windows-bash-operations.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 179,
+      "nonEmptyLines": 159,
+      "functions": [
+        {
+          "name": "createSpawnMock",
+          "startLine": 21,
+          "endLine": 34,
+          "params": ["children"]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FakeChildProcess",
+          "startLine": 11,
+          "endLine": 19,
+          "methods": ["constructor"],
+          "properties": ["stdout", "stderr", "kill"]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "constructor",
+          "callee": "super",
+          "lineNumber": 17
+        },
+        {
+          "caller": "createSpawnMock",
+          "callee": "vi.fn",
+          "lineNumber": 22
+        },
+        {
+          "caller": "createSpawnMock",
+          "callee": "children.shift",
+          "lineNumber": 23
+        },
+        {
+          "caller": "createSpawnMock",
+          "callee": "args.join",
+          "lineNumber": 24
+        },
+        {
+          "caller": "createSpawnMock",
+          "callee": "Object.assign",
+          "lineNumber": 25
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/tests/config/permission-rules-store.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 252,
+      "nonEmptyLines": 220,
+      "functions": [
+        {
+          "name": "resetToDefaults",
+          "startLine": 28,
+          "endLine": 32,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "resetToDefaults",
+          "callee": "setPermissionRules",
+          "lineNumber": 29
+        },
+        {
+          "caller": "resetToDefaults",
+          "callee": "forgetSessionPermissions",
+          "lineNumber": 30
+        },
+        {
+          "caller": "resetToDefaults",
+          "callee": "forgetSessionPermissions",
+          "lineNumber": 31
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/tests/mcp/mcp-manager.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 345,
+      "nonEmptyLines": 304,
+      "functions": [
+        {
+          "name": "asTestManager",
+          "startLine": 48,
+          "endLine": 50,
+          "params": ["manager"]
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/tests/path-containment.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 114,
+      "nonEmptyLines": 88,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/agent-runner-loop-guard.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 277,
+      "nonEmptyLines": 239,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/local-file-path.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 78,
+      "nonEmptyLines": 67,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/logger-level-persistence.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 18,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/mcp-chrome-preconnect.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 76,
+      "nonEmptyLines": 63,
+      "functions": [
+        {
+          "name": "chromeConfig",
+          "startLine": 22,
+          "endLine": 31,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/mcp-manager-env-merge.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 46,
+      "nonEmptyLines": 40,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/mcp-npx-resolution.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 80,
+      "nonEmptyLines": 64,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/mcp-tool-name.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 332,
+      "nonEmptyLines": 289,
+      "functions": [
+        {
+          "name": "asTestManager",
+          "startLine": 23,
+          "endLine": 25,
+          "params": ["manager"]
+        },
+        {
+          "name": "createManagerWithTool",
+          "startLine": 27,
+          "endLine": 49,
+          "params": ["toolName"]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createManagerWithTool",
+          "callee": "vi.fn().mockResolvedValue",
+          "lineNumber": 30
+        },
+        {
+          "caller": "createManagerWithTool",
+          "callee": "vi.fn",
+          "lineNumber": 30
+        },
+        {
+          "caller": "createManagerWithTool",
+          "callee": "asTestManager",
+          "lineNumber": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/path-guard-command-conversion.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 27,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/pi-session-runtime.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 58,
+      "nonEmptyLines": 48,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/recent-workspace-files.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 114,
+      "nonEmptyLines": 86,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/retry.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 89,
+      "nonEmptyLines": 74,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/safe-fs.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 36,
+      "nonEmptyLines": 30,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/session-manager-crud.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 365,
+      "nonEmptyLines": 325,
+      "functions": [
+        {
+          "name": "makeDb",
+          "startLine": 53,
+          "endLine": 76,
+          "params": ["overrides"]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "makeDb",
+          "callee": "vi.fn",
+          "lineNumber": 56
+        },
+        {
+          "caller": "makeDb",
+          "callee": "vi.fn",
+          "lineNumber": 57
+        },
+        {
+          "caller": "makeDb",
+          "callee": "vi.fn",
+          "lineNumber": 58
+        },
+        {
+          "caller": "makeDb",
+          "callee": "vi.fn",
+          "lineNumber": 59
+        },
+        {
+          "caller": "makeDb",
+          "callee": "vi.fn",
+          "lineNumber": 60
+        },
+        {
+          "caller": "makeDb",
+          "callee": "vi.fn",
+          "lineNumber": 63
+        },
+        {
+          "caller": "makeDb",
+          "callee": "vi.fn",
+          "lineNumber": 64
+        },
+        {
+          "caller": "makeDb",
+          "callee": "vi.fn",
+          "lineNumber": 65
+        },
+        {
+          "caller": "makeDb",
+          "callee": "vi.fn",
+          "lineNumber": 66
+        },
+        {
+          "caller": "makeDb",
+          "callee": "vi.fn",
+          "lineNumber": 69
+        },
+        {
+          "caller": "makeDb",
+          "callee": "vi.fn",
+          "lineNumber": 70
+        },
+        {
+          "caller": "makeDb",
+          "callee": "vi.fn",
+          "lineNumber": 71
+        },
+        {
+          "caller": "makeDb",
+          "callee": "vi.fn",
+          "lineNumber": 72
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/session-manager-message-cache.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 152,
+      "nonEmptyLines": 133,
+      "functions": [
+        {
+          "name": "makeDb",
+          "startLine": 58,
+          "endLine": 89,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "makeDb",
+          "callee": "vi.fn",
+          "lineNumber": 61
+        },
+        {
+          "caller": "makeDb",
+          "callee": "vi.fn",
+          "lineNumber": 62
+        },
+        {
+          "caller": "makeDb",
+          "callee": "vi.fn",
+          "lineNumber": 63
+        },
+        {
+          "caller": "makeDb",
+          "callee": "vi.fn",
+          "lineNumber": 64
+        },
+        {
+          "caller": "makeDb",
+          "callee": "vi.fn",
+          "lineNumber": 65
+        },
+        {
+          "caller": "makeDb",
+          "callee": "vi.fn",
+          "lineNumber": 68
+        },
+        {
+          "caller": "makeDb",
+          "callee": "vi.fn",
+          "lineNumber": 69
+        },
+        {
+          "caller": "makeDb",
+          "callee": "JSON.stringify",
+          "lineNumber": 74
+        },
+        {
+          "caller": "makeDb",
+          "callee": "vi.fn",
+          "lineNumber": 79
+        },
+        {
+          "caller": "makeDb",
+          "callee": "vi.fn",
+          "lineNumber": 80
+        },
+        {
+          "caller": "makeDb",
+          "callee": "vi.fn",
+          "lineNumber": 83
+        },
+        {
+          "caller": "makeDb",
+          "callee": "vi.fn",
+          "lineNumber": 84
+        },
+        {
+          "caller": "makeDb",
+          "callee": "vi.fn",
+          "lineNumber": 85
+        },
+        {
+          "caller": "makeDb",
+          "callee": "vi.fn",
+          "lineNumber": 86
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/session-manager-queue-concurrency.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 247,
+      "nonEmptyLines": 212,
+      "functions": [
+        {
+          "name": "createMockDb",
+          "startLine": 56,
+          "endLine": 85,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createMockDb",
+          "callee": "vi.fn",
+          "lineNumber": 59
+        },
+        {
+          "caller": "createMockDb",
+          "callee": "vi.fn",
+          "lineNumber": 60
+        },
+        {
+          "caller": "createMockDb",
+          "callee": "Date.now",
+          "lineNumber": 63
+        },
+        {
+          "caller": "createMockDb",
+          "callee": "Date.now",
+          "lineNumber": 64
+        },
+        {
+          "caller": "createMockDb",
+          "callee": "vi.fn",
+          "lineNumber": 68
+        },
+        {
+          "caller": "createMockDb",
+          "callee": "vi.fn",
+          "lineNumber": 69
+        },
+        {
+          "caller": "createMockDb",
+          "callee": "vi.fn",
+          "lineNumber": 70
+        },
+        {
+          "caller": "createMockDb",
+          "callee": "vi.fn",
+          "lineNumber": 73
+        },
+        {
+          "caller": "createMockDb",
+          "callee": "vi.fn",
+          "lineNumber": 74
+        },
+        {
+          "caller": "createMockDb",
+          "callee": "vi.fn",
+          "lineNumber": 75
+        },
+        {
+          "caller": "createMockDb",
+          "callee": "vi.fn",
+          "lineNumber": 76
+        },
+        {
+          "caller": "createMockDb",
+          "callee": "vi.fn",
+          "lineNumber": 79
+        },
+        {
+          "caller": "createMockDb",
+          "callee": "vi.fn",
+          "lineNumber": 80
+        },
+        {
+          "caller": "createMockDb",
+          "callee": "vi.fn",
+          "lineNumber": 81
+        },
+        {
+          "caller": "createMockDb",
+          "callee": "vi.fn",
+          "lineNumber": 82
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/skills-manager-plugin-install.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 157,
+      "nonEmptyLines": 131,
+      "functions": [
+        {
+          "name": "createDbMock",
+          "startLine": 29,
+          "endLine": 42,
+          "params": []
+        },
+        {
+          "name": "createPluginDirectory",
+          "startLine": 44,
+          "endLine": 71,
+          "params": ["root", "pluginName", "skills", "withManifest"]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createDbMock",
+          "callee": "vi.fn",
+          "lineNumber": 30
+        },
+        {
+          "caller": "createDbMock",
+          "callee": "vi.fn",
+          "lineNumber": 37
+        },
+        {
+          "caller": "createDbMock",
+          "callee": "vi.fn",
+          "lineNumber": 38
+        },
+        {
+          "caller": "createDbMock",
+          "callee": "vi.fn",
+          "lineNumber": 39
+        },
+        {
+          "caller": "createDbMock",
+          "callee": "vi.fn",
+          "lineNumber": 40
+        },
+        {
+          "caller": "createPluginDirectory",
+          "callee": "path.join",
+          "lineNumber": 50
+        },
+        {
+          "caller": "createPluginDirectory",
+          "callee": "fs.mkdirSync",
+          "lineNumber": 52
+        },
+        {
+          "caller": "createPluginDirectory",
+          "callee": "path.join",
+          "lineNumber": 52
+        },
+        {
+          "caller": "createPluginDirectory",
+          "callee": "fs.writeFileSync",
+          "lineNumber": 53
+        },
+        {
+          "caller": "createPluginDirectory",
+          "callee": "path.join",
+          "lineNumber": 54
+        },
+        {
+          "caller": "createPluginDirectory",
+          "callee": "JSON.stringify",
+          "lineNumber": 55
+        },
+        {
+          "caller": "createPluginDirectory",
+          "callee": "path.join",
+          "lineNumber": 61
+        },
+        {
+          "caller": "createPluginDirectory",
+          "callee": "fs.mkdirSync",
+          "lineNumber": 62
+        },
+        {
+          "caller": "createPluginDirectory",
+          "callee": "fs.writeFileSync",
+          "lineNumber": 63
+        },
+        {
+          "caller": "createPluginDirectory",
+          "callee": "path.join",
+          "lineNumber": 64
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/skills-manager-storage-path.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 161,
+      "nonEmptyLines": 135,
+      "functions": [
+        {
+          "name": "createDbMock",
+          "startLine": 29,
+          "endLine": 42,
+          "params": []
+        },
+        {
+          "name": "writeSkill",
+          "startLine": 44,
+          "endLine": 52,
+          "params": ["rootPath", "name", "description"]
+        },
+        {
+          "name": "waitFor",
+          "startLine": 54,
+          "endLine": 63,
+          "params": ["predicate", "timeoutMs"]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createDbMock",
+          "callee": "vi.fn",
+          "lineNumber": 30
+        },
+        {
+          "caller": "createDbMock",
+          "callee": "vi.fn",
+          "lineNumber": 37
+        },
+        {
+          "caller": "createDbMock",
+          "callee": "vi.fn",
+          "lineNumber": 38
+        },
+        {
+          "caller": "createDbMock",
+          "callee": "vi.fn",
+          "lineNumber": 39
+        },
+        {
+          "caller": "createDbMock",
+          "callee": "vi.fn",
+          "lineNumber": 40
+        },
+        {
+          "caller": "writeSkill",
+          "callee": "path.join",
+          "lineNumber": 45
+        },
+        {
+          "caller": "writeSkill",
+          "callee": "fs.mkdirSync",
+          "lineNumber": 46
+        },
+        {
+          "caller": "writeSkill",
+          "callee": "fs.writeFileSync",
+          "lineNumber": 47
+        },
+        {
+          "caller": "writeSkill",
+          "callee": "path.join",
+          "lineNumber": 48
+        },
+        {
+          "caller": "waitFor",
+          "callee": "Date.now",
+          "lineNumber": 55
+        },
+        {
+          "caller": "waitFor",
+          "callee": "Date.now",
+          "lineNumber": 56
+        },
+        {
+          "caller": "waitFor",
+          "callee": "predicate",
+          "lineNumber": 57
+        },
+        {
+          "caller": "waitFor",
+          "callee": "setTimeout",
+          "lineNumber": 60
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/teamcenter-skill-runtime.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 156,
+      "nonEmptyLines": 137,
+      "functions": [
+        {
+          "name": "makeTempRoot",
+          "startLine": 16,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "writeRuntimeSkill",
+          "startLine": 22,
+          "endLine": 27,
+          "params": ["root", "name", "content"]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "makeTempRoot",
+          "callee": "fs.mkdtempSync",
+          "lineNumber": 17
+        },
+        {
+          "caller": "makeTempRoot",
+          "callee": "path.join",
+          "lineNumber": 17
+        },
+        {
+          "caller": "makeTempRoot",
+          "callee": "os.tmpdir",
+          "lineNumber": 17
+        },
+        {
+          "caller": "makeTempRoot",
+          "callee": "tempRoots.push",
+          "lineNumber": 18
+        },
+        {
+          "caller": "writeRuntimeSkill",
+          "callee": "path.join",
+          "lineNumber": 23
+        },
+        {
+          "caller": "writeRuntimeSkill",
+          "callee": "fs.mkdirSync",
+          "lineNumber": 24
+        },
+        {
+          "caller": "writeRuntimeSkill",
+          "callee": "fs.writeFileSync",
+          "lineNumber": 25
+        },
+        {
+          "caller": "writeRuntimeSkill",
+          "callee": "path.join",
+          "lineNumber": 25
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/tool-executor-sandbox.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 176,
+      "nonEmptyLines": 148,
+      "callGraph": [
+        {
+          "caller": "validateCmd",
+          "callee": "(executor as any).validateCommandSandbox",
+          "lineNumber": 27
+        },
+        {
+          "caller": "validateCmd",
+          "callee": "(executor as any).validateCommandSandbox",
+          "lineNumber": 67
+        },
+        {
+          "caller": "validateCmd",
+          "callee": "(executor as any).validateCommandSandbox",
+          "lineNumber": 88
+        },
+        {
+          "caller": "fmt",
+          "callee": "(executor as any).formatSize",
+          "lineNumber": 117
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/tool-executor-unc-paths.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 21,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/tool-result-utils.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 92,
+      "nonEmptyLines": 80,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/workspace-path-constraints.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 31,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

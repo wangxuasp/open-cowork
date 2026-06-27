@@ -1,0 +1,1341 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/renderer/components/MessageMarkdown.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 60,
+      "nonEmptyLines": 55,
+      "exports": [
+        {
+          "name": "MessageMarkdown",
+          "line": 39,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/renderer/components/remote/SlackConfigStep.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 128,
+      "nonEmptyLines": 118,
+      "functions": [
+        {
+          "name": "SlackConfigStep",
+          "startLine": 19,
+          "endLine": 128,
+          "params": [
+            "{\n  botToken,\n  appToken,\n  useSocketMode,\n  dmPolicy,\n  onBotTokenChange,\n  onAppTokenChange,\n  onSocketModeChange,\n  onDmPolicyChange,\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SlackConfigStep",
+          "line": 19,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SlackConfigStep",
+          "callee": "useTranslation",
+          "lineNumber": 29
+        },
+        {
+          "caller": "SlackConfigStep",
+          "callee": "t",
+          "lineNumber": 32
+        },
+        {
+          "caller": "SlackConfigStep",
+          "callee": "t",
+          "lineNumber": 32
+        },
+        {
+          "caller": "SlackConfigStep",
+          "callee": "t",
+          "lineNumber": 35
+        },
+        {
+          "caller": "SlackConfigStep",
+          "callee": "t",
+          "lineNumber": 36
+        },
+        {
+          "caller": "SlackConfigStep",
+          "callee": "t",
+          "lineNumber": 38
+        },
+        {
+          "caller": "SlackConfigStep",
+          "callee": "t",
+          "lineNumber": 38
+        },
+        {
+          "caller": "SlackConfigStep",
+          "callee": "t",
+          "lineNumber": 44
+        },
+        {
+          "caller": "SlackConfigStep",
+          "callee": "t",
+          "lineNumber": 45
+        },
+        {
+          "caller": "SlackConfigStep",
+          "callee": "t",
+          "lineNumber": 51
+        },
+        {
+          "caller": "SlackConfigStep",
+          "callee": "onBotTokenChange",
+          "lineNumber": 56
+        },
+        {
+          "caller": "SlackConfigStep",
+          "callee": "onSocketModeChange",
+          "lineNumber": 64
+        },
+        {
+          "caller": "SlackConfigStep",
+          "callee": "t",
+          "lineNumber": 73
+        },
+        {
+          "caller": "SlackConfigStep",
+          "callee": "t",
+          "lineNumber": 75
+        },
+        {
+          "caller": "SlackConfigStep",
+          "callee": "t",
+          "lineNumber": 82
+        },
+        {
+          "caller": "SlackConfigStep",
+          "callee": "onAppTokenChange",
+          "lineNumber": 87
+        },
+        {
+          "caller": "SlackConfigStep",
+          "callee": "t",
+          "lineNumber": 96
+        },
+        {
+          "caller": "SlackConfigStep",
+          "callee": "dmPolicies.map",
+          "lineNumber": 99
+        },
+        {
+          "caller": "SlackConfigStep",
+          "callee": "onDmPolicyChange",
+          "lineNumber": 102
+        },
+        {
+          "caller": "SlackConfigStep",
+          "callee": "t",
+          "lineNumber": 124
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/renderer/i18n/locales/en.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 958,
+      "nonEmptyLines": 958,
+      "sections": [
+        {
+          "heading": "common",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "welcome",
+          "level": 1,
+          "line": 24
+        },
+        {
+          "heading": "settings",
+          "level": 1,
+          "line": 51
+        },
+        {
+          "heading": "general",
+          "level": 1,
+          "line": 74
+        },
+        {
+          "heading": "about",
+          "level": 1,
+          "line": 76
+        },
+        {
+          "heading": "teamcenter",
+          "level": 1,
+          "line": 65
+        },
+        {
+          "heading": "knowledgeBase",
+          "level": 1,
+          "line": 67
+        },
+        {
+          "heading": "memory",
+          "level": 1,
+          "line": 61
+        },
+        {
+          "heading": "language",
+          "level": 1,
+          "line": 85
+        },
+        {
+          "heading": "api",
+          "level": 1,
+          "line": 175
+        },
+        {
+          "heading": "window",
+          "level": 1,
+          "line": 391
+        },
+        {
+          "heading": "sandbox",
+          "level": 1,
+          "line": 55
+        },
+        {
+          "heading": "mcp",
+          "level": 1,
+          "line": 503
+        },
+        {
+          "heading": "credentials",
+          "level": 1,
+          "line": 547
+        },
+        {
+          "heading": "skills",
+          "level": 1,
+          "line": 59
+        },
+        {
+          "heading": "logs",
+          "level": 1,
+          "line": 71
+        },
+        {
+          "heading": "sidebar",
+          "level": 1,
+          "line": 631
+        },
+        {
+          "heading": "chat",
+          "level": 1,
+          "line": 658
+        },
+        {
+          "heading": "context",
+          "level": 1,
+          "line": 670
+        },
+        {
+          "heading": "messageCard",
+          "level": 1,
+          "line": 702
+        },
+        {
+          "heading": "schedule",
+          "level": 1,
+          "line": 63
+        },
+        {
+          "heading": "remote",
+          "level": 1,
+          "line": 69
+        },
+        {
+          "heading": "time",
+          "level": 1,
+          "line": 916
+        },
+        {
+          "heading": "permission",
+          "level": 1,
+          "line": 919
+        },
+        {
+          "heading": "sudo",
+          "level": 1,
+          "line": 943
+        },
+        {
+          "heading": "errorBoundary",
+          "level": 1,
+          "line": 952
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 26
+      }
+    },
+    {
+      "path": "src/renderer/i18n/locales/zh.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 958,
+      "nonEmptyLines": 958,
+      "sections": [
+        {
+          "heading": "common",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "welcome",
+          "level": 1,
+          "line": 24
+        },
+        {
+          "heading": "settings",
+          "level": 1,
+          "line": 51
+        },
+        {
+          "heading": "general",
+          "level": 1,
+          "line": 74
+        },
+        {
+          "heading": "about",
+          "level": 1,
+          "line": 76
+        },
+        {
+          "heading": "teamcenter",
+          "level": 1,
+          "line": 65
+        },
+        {
+          "heading": "knowledgeBase",
+          "level": 1,
+          "line": 67
+        },
+        {
+          "heading": "memory",
+          "level": 1,
+          "line": 61
+        },
+        {
+          "heading": "language",
+          "level": 1,
+          "line": 85
+        },
+        {
+          "heading": "api",
+          "level": 1,
+          "line": 175
+        },
+        {
+          "heading": "window",
+          "level": 1,
+          "line": 391
+        },
+        {
+          "heading": "sandbox",
+          "level": 1,
+          "line": 55
+        },
+        {
+          "heading": "mcp",
+          "level": 1,
+          "line": 503
+        },
+        {
+          "heading": "credentials",
+          "level": 1,
+          "line": 547
+        },
+        {
+          "heading": "skills",
+          "level": 1,
+          "line": 59
+        },
+        {
+          "heading": "logs",
+          "level": 1,
+          "line": 71
+        },
+        {
+          "heading": "sidebar",
+          "level": 1,
+          "line": 631
+        },
+        {
+          "heading": "chat",
+          "level": 1,
+          "line": 658
+        },
+        {
+          "heading": "context",
+          "level": 1,
+          "line": 670
+        },
+        {
+          "heading": "messageCard",
+          "level": 1,
+          "line": 702
+        },
+        {
+          "heading": "schedule",
+          "level": 1,
+          "line": 63
+        },
+        {
+          "heading": "remote",
+          "level": 1,
+          "line": 69
+        },
+        {
+          "heading": "time",
+          "level": 1,
+          "line": 916
+        },
+        {
+          "heading": "permission",
+          "level": 1,
+          "line": 919
+        },
+        {
+          "heading": "sudo",
+          "level": 1,
+          "line": 943
+        },
+        {
+          "heading": "errorBoundary",
+          "level": 1,
+          "line": 952
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 26
+      }
+    },
+    {
+      "path": "src/renderer/i18n/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 115,
+      "nonEmptyLines": 85,
+      "sections": [
+        {
+          "heading": "国际化 (i18n) 使用指南",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "架构优势",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "基本用法",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "1. 在组件中使用翻译",
+          "level": 3,
+          "line": 15
+        },
+        {
+          "heading": "2. 带变量的翻译",
+          "level": 3,
+          "line": 32
+        },
+        {
+          "heading": "3. 复数形式",
+          "level": 3,
+          "line": 46
+        },
+        {
+          "heading": "4. 切换语言",
+          "level": 3,
+          "line": 62
+        },
+        {
+          "heading": "添加新翻译",
+          "level": 2,
+          "line": 80
+        },
+        {
+          "heading": "翻译文件结构",
+          "level": 2,
+          "line": 86
+        },
+        {
+          "heading": "语言切换组件",
+          "level": 2,
+          "line": 100
+        },
+        {
+          "heading": "最佳实践",
+          "level": 2,
+          "line": 110
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": "src/renderer/styles/globals.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 337,
+      "nonEmptyLines": 284,
+      "metrics": {}
+    },
+    {
+      "path": "src/renderer/vite-env.d.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 13,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/tests/memory/memory-integration-files.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 62,
+      "nonEmptyLines": 55,
+      "functions": [
+        {
+          "name": "readProjectFile",
+          "startLine": 5,
+          "endLine": 7,
+          "params": ["relativePath"]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "readProjectFile",
+          "callee": "readFileSync",
+          "lineNumber": 6
+        },
+        {
+          "caller": "readProjectFile",
+          "callee": "path.resolve",
+          "lineNumber": 6
+        },
+        {
+          "caller": "readProjectFile",
+          "callee": "process.cwd",
+          "lineNumber": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/tests/pre-build-check.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 234,
+      "nonEmptyLines": 178,
+      "functions": [
+        {
+          "name": "makeTempDir",
+          "startLine": 15,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "makeFile",
+          "startLine": 19,
+          "endLine": 22,
+          "params": ["filePath"]
+        },
+        {
+          "name": "makeDir",
+          "startLine": 24,
+          "endLine": 26,
+          "params": ["dirPath"]
+        },
+        {
+          "name": "populateDarwinArtifacts",
+          "startLine": 31,
+          "endLine": 42,
+          "params": ["root", "arch"]
+        },
+        {
+          "name": "populateWin32Artifacts",
+          "startLine": 47,
+          "endLine": 55,
+          "params": ["root"]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "makeTempDir",
+          "callee": "fs.mkdtempSync",
+          "lineNumber": 16
+        },
+        {
+          "caller": "makeTempDir",
+          "callee": "path.join",
+          "lineNumber": 16
+        },
+        {
+          "caller": "makeTempDir",
+          "callee": "os.tmpdir",
+          "lineNumber": 16
+        },
+        {
+          "caller": "makeFile",
+          "callee": "fs.mkdirSync",
+          "lineNumber": 20
+        },
+        {
+          "caller": "makeFile",
+          "callee": "path.dirname",
+          "lineNumber": 20
+        },
+        {
+          "caller": "makeFile",
+          "callee": "fs.writeFileSync",
+          "lineNumber": 21
+        },
+        {
+          "caller": "makeDir",
+          "callee": "fs.mkdirSync",
+          "lineNumber": 25
+        },
+        {
+          "caller": "populateDarwinArtifacts",
+          "callee": "makeFile",
+          "lineNumber": 33
+        },
+        {
+          "caller": "populateDarwinArtifacts",
+          "callee": "path.join",
+          "lineNumber": 33
+        },
+        {
+          "caller": "populateDarwinArtifacts",
+          "callee": "makeFile",
+          "lineNumber": 34
+        },
+        {
+          "caller": "populateDarwinArtifacts",
+          "callee": "path.join",
+          "lineNumber": 34
+        },
+        {
+          "caller": "populateDarwinArtifacts",
+          "callee": "makeDir",
+          "lineNumber": 35
+        },
+        {
+          "caller": "populateDarwinArtifacts",
+          "callee": "path.join",
+          "lineNumber": 35
+        },
+        {
+          "caller": "populateDarwinArtifacts",
+          "callee": "makeDir",
+          "lineNumber": 36
+        },
+        {
+          "caller": "populateDarwinArtifacts",
+          "callee": "path.join",
+          "lineNumber": 36
+        },
+        {
+          "caller": "populateDarwinArtifacts",
+          "callee": "makeDir",
+          "lineNumber": 37
+        },
+        {
+          "caller": "populateDarwinArtifacts",
+          "callee": "path.join",
+          "lineNumber": 37
+        },
+        {
+          "caller": "populateDarwinArtifacts",
+          "callee": "makeFile",
+          "lineNumber": 40
+        },
+        {
+          "caller": "populateDarwinArtifacts",
+          "callee": "path.join",
+          "lineNumber": 40
+        },
+        {
+          "caller": "populateDarwinArtifacts",
+          "callee": "makeFile",
+          "lineNumber": 41
+        },
+        {
+          "caller": "populateDarwinArtifacts",
+          "callee": "path.join",
+          "lineNumber": 41
+        },
+        {
+          "caller": "populateWin32Artifacts",
+          "callee": "makeFile",
+          "lineNumber": 48
+        },
+        {
+          "caller": "populateWin32Artifacts",
+          "callee": "path.join",
+          "lineNumber": 48
+        },
+        {
+          "caller": "populateWin32Artifacts",
+          "callee": "makeFile",
+          "lineNumber": 49
+        },
+        {
+          "caller": "populateWin32Artifacts",
+          "callee": "path.join",
+          "lineNumber": 49
+        },
+        {
+          "caller": "populateWin32Artifacts",
+          "callee": "makeDir",
+          "lineNumber": 50
+        },
+        {
+          "caller": "populateWin32Artifacts",
+          "callee": "path.join",
+          "lineNumber": 50
+        },
+        {
+          "caller": "populateWin32Artifacts",
+          "callee": "makeDir",
+          "lineNumber": 51
+        },
+        {
+          "caller": "populateWin32Artifacts",
+          "callee": "path.join",
+          "lineNumber": 51
+        },
+        {
+          "caller": "populateWin32Artifacts",
+          "callee": "makeDir",
+          "lineNumber": 52
+        },
+        {
+          "caller": "populateWin32Artifacts",
+          "callee": "path.join",
+          "lineNumber": 52
+        },
+        {
+          "caller": "populateWin32Artifacts",
+          "callee": "makeFile",
+          "lineNumber": 53
+        },
+        {
+          "caller": "populateWin32Artifacts",
+          "callee": "path.join",
+          "lineNumber": 53
+        },
+        {
+          "caller": "populateWin32Artifacts",
+          "callee": "makeFile",
+          "lineNumber": 54
+        },
+        {
+          "caller": "populateWin32Artifacts",
+          "callee": "path.join",
+          "lineNumber": 54
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/tests/preflight.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 195,
+      "nonEmptyLines": 164,
+      "functions": [
+        {
+          "name": "touch",
+          "startLine": 23,
+          "endLine": 26,
+          "params": ["filePath"]
+        },
+        {
+          "name": "makeSkillsDir",
+          "startLine": 28,
+          "endLine": 30,
+          "params": ["resourcesDir"]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "touch",
+          "callee": "fs.mkdirSync",
+          "lineNumber": 24
+        },
+        {
+          "caller": "touch",
+          "callee": "path.dirname",
+          "lineNumber": 24
+        },
+        {
+          "caller": "touch",
+          "callee": "fs.writeFileSync",
+          "lineNumber": 25
+        },
+        {
+          "caller": "makeSkillsDir",
+          "callee": "fs.mkdirSync",
+          "lineNumber": 29
+        },
+        {
+          "caller": "makeSkillsDir",
+          "callee": "path.join",
+          "lineNumber": 29
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/tests/renderer-crash-safety.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 195,
+      "nonEmptyLines": 168,
+      "functions": [
+        {
+          "name": "shortenPath",
+          "startLine": 12,
+          "endLine": 17,
+          "params": ["p"]
+        },
+        {
+          "name": "getMcpToolDisplayName",
+          "startLine": 20,
+          "endLine": 29,
+          "params": ["name", "displayName"]
+        },
+        {
+          "name": "getToolLabel",
+          "startLine": 32,
+          "endLine": 66,
+          "params": ["name", "input", "displayName"]
+        },
+        {
+          "name": "getSummary",
+          "startLine": 69,
+          "endLine": 82,
+          "params": ["toolResult", "_toolName"]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "shortenPath",
+          "callee": "String",
+          "lineNumber": 13
+        },
+        {
+          "caller": "shortenPath",
+          "callee": "p.replace(/\\\\/g, '/').split('/').filter",
+          "lineNumber": 14
+        },
+        {
+          "caller": "shortenPath",
+          "callee": "p.replace(/\\\\/g, '/').split",
+          "lineNumber": 14
+        },
+        {
+          "caller": "shortenPath",
+          "callee": "p.replace",
+          "lineNumber": 14
+        },
+        {
+          "caller": "shortenPath",
+          "callee": "segments.join",
+          "lineNumber": 15
+        },
+        {
+          "caller": "shortenPath",
+          "callee": "segments.slice(-2).join",
+          "lineNumber": 16
+        },
+        {
+          "caller": "shortenPath",
+          "callee": "segments.slice",
+          "lineNumber": 16
+        },
+        {
+          "caller": "getMcpToolDisplayName",
+          "callee": "displayName.trim",
+          "lineNumber": 21
+        },
+        {
+          "caller": "getMcpToolDisplayName",
+          "callee": "name.startsWith",
+          "lineNumber": 24
+        },
+        {
+          "caller": "getMcpToolDisplayName",
+          "callee": "name.match",
+          "lineNumber": 25
+        },
+        {
+          "caller": "getToolLabel",
+          "callee": "name.startsWith",
+          "lineNumber": 34
+        },
+        {
+          "caller": "getToolLabel",
+          "callee": "getMcpToolDisplayName",
+          "lineNumber": 35
+        },
+        {
+          "caller": "getToolLabel",
+          "callee": "name.toLowerCase",
+          "lineNumber": 37
+        },
+        {
+          "caller": "getToolLabel",
+          "callee": "String",
+          "lineNumber": 39
+        },
+        {
+          "caller": "getToolLabel",
+          "callee": "shortenPath",
+          "lineNumber": 40
+        },
+        {
+          "caller": "getToolLabel",
+          "callee": "String",
+          "lineNumber": 43
+        },
+        {
+          "caller": "getToolLabel",
+          "callee": "shortenPath",
+          "lineNumber": 44
+        },
+        {
+          "caller": "getToolLabel",
+          "callee": "String",
+          "lineNumber": 47
+        },
+        {
+          "caller": "getToolLabel",
+          "callee": "shortenPath",
+          "lineNumber": 48
+        },
+        {
+          "caller": "getToolLabel",
+          "callee": "String",
+          "lineNumber": 51
+        },
+        {
+          "caller": "getToolLabel",
+          "callee": "cmd.substring",
+          "lineNumber": 53
+        },
+        {
+          "caller": "getToolLabel",
+          "callee": "String",
+          "lineNumber": 58
+        },
+        {
+          "caller": "getToolLabel",
+          "callee": "String",
+          "lineNumber": 59
+        },
+        {
+          "caller": "getToolLabel",
+          "callee": "String",
+          "lineNumber": 60
+        },
+        {
+          "caller": "getToolLabel",
+          "callee": "String",
+          "lineNumber": 62
+        },
+        {
+          "caller": "getToolLabel",
+          "callee": "url.substring",
+          "lineNumber": 63
+        },
+        {
+          "caller": "getSummary",
+          "callee": "content.split",
+          "lineNumber": 76
+        },
+        {
+          "caller": "getSummary",
+          "callee": "firstLine.substring",
+          "lineNumber": 77
+        },
+        {
+          "caller": "getSummary",
+          "callee": "content.trim",
+          "lineNumber": 79
+        },
+        {
+          "caller": "getSummary",
+          "callee": "content.trim().split",
+          "lineNumber": 80
+        },
+        {
+          "caller": "getSummary",
+          "callee": "content.trim",
+          "lineNumber": 80
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/tests/skills/dangling-symlink.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 163,
+      "nonEmptyLines": 132,
+      "functions": [
+        {
+          "name": "isDanglingSymlink",
+          "startLine": 8,
+          "endLine": 21,
+          "params": ["filePath"]
+        },
+        {
+          "name": "supportsDirectorySymlinks",
+          "startLine": 23,
+          "endLine": 37,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "isDanglingSymlink",
+          "callee": "fs.lstatSync",
+          "lineNumber": 10
+        },
+        {
+          "caller": "isDanglingSymlink",
+          "callee": "lstat.isSymbolicLink",
+          "lineNumber": 11
+        },
+        {
+          "caller": "isDanglingSymlink",
+          "callee": "fs.statSync",
+          "lineNumber": 13
+        },
+        {
+          "caller": "supportsDirectorySymlinks",
+          "callee": "fs.mkdtempSync",
+          "lineNumber": 24
+        },
+        {
+          "caller": "supportsDirectorySymlinks",
+          "callee": "path.join",
+          "lineNumber": 24
+        },
+        {
+          "caller": "supportsDirectorySymlinks",
+          "callee": "os.tmpdir",
+          "lineNumber": 24
+        },
+        {
+          "caller": "supportsDirectorySymlinks",
+          "callee": "path.join",
+          "lineNumber": 25
+        },
+        {
+          "caller": "supportsDirectorySymlinks",
+          "callee": "path.join",
+          "lineNumber": 26
+        },
+        {
+          "caller": "supportsDirectorySymlinks",
+          "callee": "fs.mkdirSync",
+          "lineNumber": 29
+        },
+        {
+          "caller": "supportsDirectorySymlinks",
+          "callee": "fs.symlinkSync",
+          "lineNumber": 30
+        },
+        {
+          "caller": "supportsDirectorySymlinks",
+          "callee": "fs.rmSync",
+          "lineNumber": 35
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tailwind.config.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 85,
+      "nonEmptyLines": 85,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/about-settings-entry.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 46,
+      "nonEmptyLines": 39,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/agent-runner-loop-guard-abort.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 118,
+      "nonEmptyLines": 103,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/agent-runner-pi.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 196,
+      "nonEmptyLines": 175,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/app-layout-scroll-lock.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 20,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/app-startup-lazy-load.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 21,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/build-windows-script.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 48,
+      "nonEmptyLines": 39,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/bundle-mcp-script.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 61,
+      "nonEmptyLines": 49,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/chat-view-claude-layout.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 29,
+      "nonEmptyLines": 24,
+      "functions": [
+        {
+          "name": "readChatView",
+          "startLine": 7,
+          "endLine": 9,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "readChatView",
+          "callee": "fs.readFileSync",
+          "lineNumber": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/chat-view-stop-entry.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 15,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/chat-view-width-layout.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 19,
+      "functions": [
+        {
+          "name": "readChatView",
+          "startLine": 5,
+          "endLine": 8,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "readChatView",
+          "callee": "path.resolve",
+          "lineNumber": 6
+        },
+        {
+          "caller": "readChatView",
+          "callee": "fs.readFileSync",
+          "lineNumber": 7
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/config-modal-claude-layout.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 20,
+      "nonEmptyLines": 17,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/context-panel-recent-files.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 16,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

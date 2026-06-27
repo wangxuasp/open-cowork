@@ -1,0 +1,12 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": "website/zh/index.md",
+      "language": "markdown",
+      "sizeLines": 235,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": { "website/zh/index.md": [] }
+}

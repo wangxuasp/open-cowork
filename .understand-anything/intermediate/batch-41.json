@@ -1,0 +1,4772 @@
+{
+  "nodes": [
+    {
+      "id": "file:resources/icon.icns",
+      "type": "file",
+      "name": "icon.icns",
+      "filePath": "resources/icon.icns",
+      "summary": "源码模块 resources/icon.icns，体量 12543 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "icns"
+    },
+    {
+      "id": "file:resources/installer.nsh",
+      "type": "file",
+      "name": "installer.nsh",
+      "filePath": "resources/installer.nsh",
+      "summary": "源码模块 resources/installer.nsh，体量 46 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "nsh"
+    },
+    {
+      "id": "file:resources/windows/Open-Cowork-Legacy-Cleanup.cmd",
+      "type": "file",
+      "name": "Open-Cowork-Legacy-Cleanup.cmd",
+      "filePath": "resources/windows/Open-Cowork-Legacy-Cleanup.cmd",
+      "summary": "源码模块 resources/windows/Open-Cowork-Legacy-Cleanup.cmd，体量 7 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["script"],
+      "complexity": "simple",
+      "language": "batch"
+    },
+    {
+      "id": "file:resources/windows/Open-Cowork-Legacy-Cleanup.ps1",
+      "type": "file",
+      "name": "Open-Cowork-Legacy-Cleanup.ps1",
+      "filePath": "resources/windows/Open-Cowork-Legacy-Cleanup.ps1",
+      "summary": "源码模块 resources/windows/Open-Cowork-Legacy-Cleanup.ps1，体量 164 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["script"],
+      "complexity": "moderate",
+      "language": "powershell"
+    },
+    {
+      "id": "file:scripts/after-pack.js",
+      "type": "file",
+      "name": "after-pack.js",
+      "filePath": "scripts/after-pack.js",
+      "summary": "源码模块 scripts/after-pack.js，包含 3 个函数，约 186 行有效代码。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/after-pack.js:removeExcept",
+      "type": "function",
+      "name": "removeExcept",
+      "filePath": "scripts/after-pack.js",
+      "summary": "函数 removeExcept，位于 scripts/after-pack.js 第 31-41 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/after-pack.js:findDirs",
+      "type": "function",
+      "name": "findDirs",
+      "filePath": "scripts/after-pack.js",
+      "summary": "函数 findDirs，位于 scripts/after-pack.js 第 46-70 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "file:scripts/bench-api.mjs",
+      "type": "file",
+      "name": "bench-api.mjs",
+      "filePath": "scripts/bench-api.mjs",
+      "summary": "源码模块 scripts/bench-api.mjs，包含 9 个函数，约 260 行有效代码。",
+      "tags": ["utility"],
+      "complexity": "complex",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/bench-api.mjs:decryptConfig",
+      "type": "function",
+      "name": "decryptConfig",
+      "filePath": "scripts/bench-api.mjs",
+      "summary": "函数 decryptConfig，位于 scripts/bench-api.mjs 第 23-37 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/bench-api.mjs:measureAnthropicStreaming",
+      "type": "function",
+      "name": "measureAnthropicStreaming",
+      "filePath": "scripts/bench-api.mjs",
+      "summary": "函数 measureAnthropicStreaming，位于 scripts/bench-api.mjs 第 55-95 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/bench-api.mjs:measureOpenAIStreaming",
+      "type": "function",
+      "name": "measureOpenAIStreaming",
+      "filePath": "scripts/bench-api.mjs",
+      "summary": "函数 measureOpenAIStreaming，位于 scripts/bench-api.mjs 第 97-137 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/bench-api.mjs:resolvePresets",
+      "type": "function",
+      "name": "resolvePresets",
+      "filePath": "scripts/bench-api.mjs",
+      "summary": "函数 resolvePresets，位于 scripts/bench-api.mjs 第 145-202 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/bench-api.mjs:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scripts/bench-api.mjs",
+      "summary": "函数 main，位于 scripts/bench-api.mjs 第 217-304 行。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "javascript"
+    },
+    {
+      "id": "file:scripts/bundle-mcp.js",
+      "type": "file",
+      "name": "bundle-mcp.js",
+      "filePath": "scripts/bundle-mcp.js",
+      "summary": "源码模块 scripts/bundle-mcp.js，包含 12 个函数，约 299 行有效代码。",
+      "tags": ["service", "integration", "utility"],
+      "complexity": "complex",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/bundle-mcp.js:removePathWithRetries",
+      "type": "function",
+      "name": "removePathWithRetries",
+      "filePath": "scripts/bundle-mcp.js",
+      "summary": "函数 removePathWithRetries，位于 scripts/bundle-mcp.js 第 97-123 行。",
+      "tags": ["service", "integration"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/bundle-mcp.js:copyFileWithRetries",
+      "type": "function",
+      "name": "copyFileWithRetries",
+      "filePath": "scripts/bundle-mcp.js",
+      "summary": "函数 copyFileWithRetries，位于 scripts/bundle-mcp.js 第 125-141 行。",
+      "tags": ["service", "integration"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/bundle-mcp.js:copyDirectoryContentsWithRetries",
+      "type": "function",
+      "name": "copyDirectoryContentsWithRetries",
+      "filePath": "scripts/bundle-mcp.js",
+      "summary": "函数 copyDirectoryContentsWithRetries，位于 scripts/bundle-mcp.js 第 143-167 行。",
+      "tags": ["service", "integration"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/bundle-mcp.js:replaceDirectoryWithRetries",
+      "type": "function",
+      "name": "replaceDirectoryWithRetries",
+      "filePath": "scripts/bundle-mcp.js",
+      "summary": "函数 replaceDirectoryWithRetries，位于 scripts/bundle-mcp.js 第 169-203 行。",
+      "tags": ["service", "integration"],
+      "complexity": "moderate",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/bundle-mcp.js:bundleWithEsbuild",
+      "type": "function",
+      "name": "bundleWithEsbuild",
+      "filePath": "scripts/bundle-mcp.js",
+      "summary": "函数 bundleWithEsbuild，位于 scripts/bundle-mcp.js 第 205-231 行。",
+      "tags": ["service", "integration"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/bundle-mcp.js:transpileFallback",
+      "type": "function",
+      "name": "transpileFallback",
+      "filePath": "scripts/bundle-mcp.js",
+      "summary": "函数 transpileFallback，位于 scripts/bundle-mcp.js 第 233-280 行。",
+      "tags": ["service", "integration"],
+      "complexity": "moderate",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/bundle-mcp.js:stageBundledServers",
+      "type": "function",
+      "name": "stageBundledServers",
+      "filePath": "scripts/bundle-mcp.js",
+      "summary": "函数 stageBundledServers，位于 scripts/bundle-mcp.js 第 282-306 行。",
+      "tags": ["service", "integration"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/bundle-mcp.js:bundleMCPServers",
+      "type": "function",
+      "name": "bundleMCPServers",
+      "filePath": "scripts/bundle-mcp.js",
+      "summary": "函数 bundleMCPServers，位于 scripts/bundle-mcp.js 第 308-334 行。",
+      "tags": ["service", "integration"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "file:scripts/compress-dmg.js",
+      "type": "file",
+      "name": "compress-dmg.js",
+      "filePath": "scripts/compress-dmg.js",
+      "summary": "源码模块 scripts/compress-dmg.js，体量 101 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "javascript"
+    },
+    {
+      "id": "file:scripts/deploy-local.sh",
+      "type": "file",
+      "name": "deploy-local.sh",
+      "filePath": "scripts/deploy-local.sh",
+      "summary": "源码模块 scripts/deploy-local.sh，体量 79 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["script"],
+      "complexity": "moderate",
+      "language": "shell"
+    },
+    {
+      "id": "file:scripts/download-node.js",
+      "type": "file",
+      "name": "download-node.js",
+      "filePath": "scripts/download-node.js",
+      "summary": "源码模块 scripts/download-node.js，包含 6 个函数，约 240 行有效代码。",
+      "tags": ["utility"],
+      "complexity": "complex",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/download-node.js:applyNpxFix",
+      "type": "function",
+      "name": "applyNpxFix",
+      "filePath": "scripts/download-node.js",
+      "summary": "函数 applyNpxFix，位于 scripts/download-node.js 第 35-78 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/download-node.js:download",
+      "type": "function",
+      "name": "download",
+      "filePath": "scripts/download-node.js",
+      "summary": "函数 download，位于 scripts/download-node.js 第 80-103 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/download-node.js:removeFileWithRetries",
+      "type": "function",
+      "name": "removeFileWithRetries",
+      "filePath": "scripts/download-node.js",
+      "summary": "函数 removeFileWithRetries，位于 scripts/download-node.js 第 109-137 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/download-node.js:downloadAndExtract",
+      "type": "function",
+      "name": "downloadAndExtract",
+      "filePath": "scripts/download-node.js",
+      "summary": "函数 downloadAndExtract，位于 scripts/download-node.js 第 139-245 行。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/download-node.js:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scripts/download-node.js",
+      "summary": "函数 main，位于 scripts/download-node.js 第 247-271 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "file:scripts/notarize.js",
+      "type": "file",
+      "name": "notarize.js",
+      "filePath": "scripts/notarize.js",
+      "summary": "源码模块 scripts/notarize.js，体量 39 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "file:scripts/pre-build-check.js",
+      "type": "file",
+      "name": "pre-build-check.js",
+      "filePath": "scripts/pre-build-check.js",
+      "summary": "源码模块 scripts/pre-build-check.js，包含 3 个函数，约 186 行有效代码。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/pre-build-check.js:buildCheckList",
+      "type": "function",
+      "name": "buildCheckList",
+      "filePath": "scripts/pre-build-check.js",
+      "summary": "函数 buildCheckList，位于 scripts/pre-build-check.js 第 34-122 行。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/pre-build-check.js:runChecks",
+      "type": "function",
+      "name": "runChecks",
+      "filePath": "scripts/pre-build-check.js",
+      "summary": "函数 runChecks，位于 scripts/pre-build-check.js 第 132-178 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/pre-build-check.js:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scripts/pre-build-check.js",
+      "summary": "函数 main，位于 scripts/pre-build-check.js 第 183-203 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "file:scripts/prepare-gui-tools.js",
+      "type": "file",
+      "name": "prepare-gui-tools.js",
+      "filePath": "scripts/prepare-gui-tools.js",
+      "summary": "源码模块 scripts/prepare-gui-tools.js，包含 6 个函数，约 132 行有效代码。",
+      "tags": ["utility"],
+      "complexity": "moderate",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/prepare-gui-tools.js:detectBinaryArch",
+      "type": "function",
+      "name": "detectBinaryArch",
+      "filePath": "scripts/prepare-gui-tools.js",
+      "summary": "函数 detectBinaryArch，位于 scripts/prepare-gui-tools.js 第 37-49 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/prepare-gui-tools.js:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scripts/prepare-gui-tools.js",
+      "summary": "函数 main，位于 scripts/prepare-gui-tools.js 第 59-158 行。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "javascript"
+    },
+    {
+      "id": "file:scripts/prepare-python.js",
+      "type": "file",
+      "name": "prepare-python.js",
+      "filePath": "scripts/prepare-python.js",
+      "summary": "源码模块 scripts/prepare-python.js，包含 14 个函数，约 501 行有效代码。",
+      "tags": ["utility"],
+      "complexity": "complex",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/prepare-python.js:download",
+      "type": "function",
+      "name": "download",
+      "filePath": "scripts/prepare-python.js",
+      "summary": "函数 download，位于 scripts/prepare-python.js 第 98-140 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/prepare-python.js:fetchJson",
+      "type": "function",
+      "name": "fetchJson",
+      "filePath": "scripts/prepare-python.js",
+      "summary": "函数 fetchJson，位于 scripts/prepare-python.js 第 142-180 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/prepare-python.js:findExistingArchive",
+      "type": "function",
+      "name": "findExistingArchive",
+      "filePath": "scripts/prepare-python.js",
+      "summary": "函数 findExistingArchive，位于 scripts/prepare-python.js 第 186-212 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/prepare-python.js:findStandaloneAssetUrl",
+      "type": "function",
+      "name": "findStandaloneAssetUrl",
+      "filePath": "scripts/prepare-python.js",
+      "summary": "函数 findStandaloneAssetUrl，位于 scripts/prepare-python.js 第 214-287 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/prepare-python.js:getStripComponentsForArchive",
+      "type": "function",
+      "name": "getStripComponentsForArchive",
+      "filePath": "scripts/prepare-python.js",
+      "summary": "函数 getStripComponentsForArchive，位于 scripts/prepare-python.js 第 289-300 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/prepare-python.js:extractArchive",
+      "type": "function",
+      "name": "extractArchive",
+      "filePath": "scripts/prepare-python.js",
+      "summary": "函数 extractArchive，位于 scripts/prepare-python.js 第 302-316 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/prepare-python.js:installPackages",
+      "type": "function",
+      "name": "installPackages",
+      "filePath": "scripts/prepare-python.js",
+      "summary": "函数 installPackages，位于 scripts/prepare-python.js 第 326-358 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "type": "function",
+      "name": "cleanPythonRuntime",
+      "filePath": "scripts/prepare-python.js",
+      "summary": "函数 cleanPythonRuntime，位于 scripts/prepare-python.js 第 367-468 行。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/prepare-python.js:preparePlatformArch",
+      "type": "function",
+      "name": "preparePlatformArch",
+      "filePath": "scripts/prepare-python.js",
+      "summary": "函数 preparePlatformArch，位于 scripts/prepare-python.js 第 470-520 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/prepare-python.js:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scripts/prepare-python.js",
+      "summary": "函数 main，位于 scripts/prepare-python.js 第 522-559 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "javascript"
+    },
+    {
+      "id": "file:scripts/start.ps1",
+      "type": "file",
+      "name": "start.ps1",
+      "filePath": "scripts/start.ps1",
+      "summary": "源码模块 scripts/start.ps1，体量 15 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["script"],
+      "complexity": "simple",
+      "language": "powershell"
+    },
+    {
+      "id": "file:src/main/remote/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/main/remote/index.ts",
+      "summary": "源码模块 src/main/remote/index.ts，体量 15 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["entry-point"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/sandbox/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/main/sandbox/index.ts",
+      "summary": "源码模块 src/main/sandbox/index.ts，体量 21 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["entry-point", "infrastructure", "security"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/sandbox/lima-agent/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/main/sandbox/lima-agent/index.ts",
+      "summary": "TypeScript/JavaScript 模块 src/main/sandbox/lima-agent/index.ts，导出 1 个类与 3 个函数，是应用逻辑的一部分。",
+      "tags": ["entry-point", "infrastructure", "security"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/sandbox/lima-agent/index.ts:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "src/main/sandbox/lima-agent/index.ts",
+      "summary": "函数 main，位于 src/main/sandbox/lima-agent/index.ts 第 488-564 行。",
+      "tags": ["entry-point", "infrastructure", "security"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/main/sandbox/lima-agent/index.ts:SandboxAgent",
+      "type": "class",
+      "name": "SandboxAgent",
+      "filePath": "src/main/sandbox/lima-agent/index.ts",
+      "summary": "类 SandboxAgent，含 15 个方法，位于 src/main/sandbox/lima-agent/index.ts。",
+      "tags": ["entry-point", "infrastructure", "security", "type-definition"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/sandbox/lima-agent/path-containment.ts",
+      "type": "file",
+      "name": "path-containment.ts",
+      "filePath": "src/main/sandbox/lima-agent/path-containment.ts",
+      "summary": "源码模块 src/main/sandbox/lima-agent/path-containment.ts，包含 7 个函数，约 106 行有效代码。",
+      "tags": ["infrastructure", "security", "utility"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/sandbox/lima-agent/path-containment.ts:normalizePathForContainment",
+      "type": "function",
+      "name": "normalizePathForContainment",
+      "filePath": "src/main/sandbox/lima-agent/path-containment.ts",
+      "summary": "函数 normalizePathForContainment，位于 src/main/sandbox/lima-agent/path-containment.ts 第 23-31 行。",
+      "tags": ["infrastructure", "security"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/sandbox/lima-agent/path-containment.ts:resolveSegments",
+      "type": "function",
+      "name": "resolveSegments",
+      "filePath": "src/main/sandbox/lima-agent/path-containment.ts",
+      "summary": "函数 resolveSegments，位于 src/main/sandbox/lima-agent/path-containment.ts 第 37-57 行。",
+      "tags": ["infrastructure", "security"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/sandbox/lima-agent/path-containment.ts:canonicalizePath",
+      "type": "function",
+      "name": "canonicalizePath",
+      "filePath": "src/main/sandbox/lima-agent/path-containment.ts",
+      "summary": "函数 canonicalizePath，位于 src/main/sandbox/lima-agent/path-containment.ts 第 59-103 行。",
+      "tags": ["infrastructure", "security"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/sandbox/lima-agent/path-containment.ts:isPathWithinRoot",
+      "type": "function",
+      "name": "isPathWithinRoot",
+      "filePath": "src/main/sandbox/lima-agent/path-containment.ts",
+      "summary": "函数 isPathWithinRoot，位于 src/main/sandbox/lima-agent/path-containment.ts 第 105-131 行。",
+      "tags": ["infrastructure", "security"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "config:src/main/sandbox/lima-agent/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "src/main/sandbox/lima-agent/tsconfig.json",
+      "summary": "配置文件 tsconfig.json，定义项目或运行时的关键参数与依赖。",
+      "tags": ["infrastructure", "security", "configuration"],
+      "complexity": "simple",
+      "language": "json"
+    },
+    {
+      "id": "file:src/main/sandbox/wsl-agent/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/main/sandbox/wsl-agent/index.ts",
+      "summary": "TypeScript/JavaScript 模块 src/main/sandbox/wsl-agent/index.ts，导出 1 个类与 3 个函数，是应用逻辑的一部分。",
+      "tags": ["entry-point", "infrastructure", "security"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/sandbox/wsl-agent/index.ts:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "src/main/sandbox/wsl-agent/index.ts",
+      "summary": "函数 main，位于 src/main/sandbox/wsl-agent/index.ts 第 482-558 行。",
+      "tags": ["entry-point", "infrastructure", "security"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/main/sandbox/wsl-agent/index.ts:SandboxAgent",
+      "type": "class",
+      "name": "SandboxAgent",
+      "filePath": "src/main/sandbox/wsl-agent/index.ts",
+      "summary": "类 SandboxAgent，含 15 个方法，位于 src/main/sandbox/wsl-agent/index.ts。",
+      "tags": ["entry-point", "infrastructure", "security", "type-definition"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/sandbox/wsl-agent/path-containment.ts",
+      "type": "file",
+      "name": "path-containment.ts",
+      "filePath": "src/main/sandbox/wsl-agent/path-containment.ts",
+      "summary": "源码模块 src/main/sandbox/wsl-agent/path-containment.ts，包含 7 个函数，约 106 行有效代码。",
+      "tags": ["infrastructure", "security", "utility"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/sandbox/wsl-agent/path-containment.ts:normalizePathForContainment",
+      "type": "function",
+      "name": "normalizePathForContainment",
+      "filePath": "src/main/sandbox/wsl-agent/path-containment.ts",
+      "summary": "函数 normalizePathForContainment，位于 src/main/sandbox/wsl-agent/path-containment.ts 第 23-31 行。",
+      "tags": ["infrastructure", "security"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/sandbox/wsl-agent/path-containment.ts:resolveSegments",
+      "type": "function",
+      "name": "resolveSegments",
+      "filePath": "src/main/sandbox/wsl-agent/path-containment.ts",
+      "summary": "函数 resolveSegments，位于 src/main/sandbox/wsl-agent/path-containment.ts 第 37-57 行。",
+      "tags": ["infrastructure", "security"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/sandbox/wsl-agent/path-containment.ts:canonicalizePath",
+      "type": "function",
+      "name": "canonicalizePath",
+      "filePath": "src/main/sandbox/wsl-agent/path-containment.ts",
+      "summary": "函数 canonicalizePath，位于 src/main/sandbox/wsl-agent/path-containment.ts 第 59-103 行。",
+      "tags": ["infrastructure", "security"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/sandbox/wsl-agent/path-containment.ts:isPathWithinRoot",
+      "type": "function",
+      "name": "isPathWithinRoot",
+      "filePath": "src/main/sandbox/wsl-agent/path-containment.ts",
+      "summary": "函数 isPathWithinRoot，位于 src/main/sandbox/wsl-agent/path-containment.ts 第 105-131 行。",
+      "tags": ["infrastructure", "security"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "config:src/main/sandbox/wsl-agent/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "src/main/sandbox/wsl-agent/tsconfig.json",
+      "summary": "配置文件 tsconfig.json，定义项目或运行时的关键参数与依赖。",
+      "tags": ["infrastructure", "security", "configuration"],
+      "complexity": "simple",
+      "language": "json"
+    },
+    {
+      "id": "file:src/main/utils/error-utils.ts",
+      "type": "file",
+      "name": "error-utils.ts",
+      "filePath": "src/main/utils/error-utils.ts",
+      "summary": "源码模块 src/main/utils/error-utils.ts，包含 2 个函数，约 18 行有效代码。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/error-utils.ts:getErrorMessage",
+      "type": "function",
+      "name": "getErrorMessage",
+      "filePath": "src/main/utils/error-utils.ts",
+      "summary": "函数 getErrorMessage，位于 src/main/utils/error-utils.ts 第 5-9 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/error-utils.ts:getErrorDetails",
+      "type": "function",
+      "name": "getErrorDetails",
+      "filePath": "src/main/utils/error-utils.ts",
+      "summary": "函数 getErrorDetails，位于 src/main/utils/error-utils.ts 第 14-19 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/renderer/components/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/renderer/components/index.ts",
+      "summary": "源码模块 src/renderer/components/index.ts，体量 6 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["entry-point", "component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:scripts/after-pack.js",
+      "target": "function:scripts/after-pack.js:removeExcept",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/after-pack.js",
+      "target": "function:scripts/after-pack.js:findDirs",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:scripts/after-pack.js:removeExcept",
+      "target": "function:scripts/after-pack.js:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/after-pack.js:removeExcept",
+      "target": "function:scripts/after-pack.js:whitelist.map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/after-pack.js:removeExcept",
+      "target": "function:scripts/after-pack.js:w.toLowerCase",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/after-pack.js:removeExcept",
+      "target": "function:scripts/after-pack.js:fs.readdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/after-pack.js:removeExcept",
+      "target": "function:scripts/after-pack.js:whiteSet.has",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/after-pack.js:removeExcept",
+      "target": "function:scripts/after-pack.js:entry.toLowerCase",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/after-pack.js:removeExcept",
+      "target": "function:scripts/after-pack.js:fs.rmSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/after-pack.js:removeExcept",
+      "target": "function:scripts/after-pack.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/after-pack.js:findDirs",
+      "target": "function:scripts/after-pack.js:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/after-pack.js:findDirs",
+      "target": "function:scripts/after-pack.js:walk",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/bench-api.mjs",
+      "target": "function:scripts/bench-api.mjs:decryptConfig",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/bench-api.mjs",
+      "target": "function:scripts/bench-api.mjs:measureAnthropicStreaming",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/bench-api.mjs",
+      "target": "function:scripts/bench-api.mjs:measureOpenAIStreaming",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/bench-api.mjs",
+      "target": "function:scripts/bench-api.mjs:resolvePresets",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/bench-api.mjs",
+      "target": "function:scripts/bench-api.mjs:main",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:decryptConfig",
+      "target": "function:scripts/bench-api.mjs:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:decryptConfig",
+      "target": "function:scripts/bench-api.mjs:os.homedir",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:decryptConfig",
+      "target": "function:scripts/bench-api.mjs:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:decryptConfig",
+      "target": "function:scripts/bench-api.mjs:fs.readFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:decryptConfig",
+      "target": "function:scripts/bench-api.mjs:data.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:decryptConfig",
+      "target": "function:scripts/bench-api.mjs:crypto.pbkdf2Sync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:decryptConfig",
+      "target": "function:scripts/bench-api.mjs:crypto.createDecipheriv",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:decryptConfig",
+      "target": "function:scripts/bench-api.mjs:Buffer.concat",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:decryptConfig",
+      "target": "function:scripts/bench-api.mjs:decipher.update",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:decryptConfig",
+      "target": "function:scripts/bench-api.mjs:data.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:decryptConfig",
+      "target": "function:scripts/bench-api.mjs:decipher.final",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:decryptConfig",
+      "target": "function:scripts/bench-api.mjs:JSON.parse",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:decryptConfig",
+      "target": "function:scripts/bench-api.mjs:dec.toString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:measureAnthropicStreaming",
+      "target": "function:scripts/bench-api.mjs:JSON.stringify",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:measureAnthropicStreaming",
+      "target": "function:scripts/bench-api.mjs:performance.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:measureAnthropicStreaming",
+      "target": "function:scripts/bench-api.mjs:fetch",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:measureAnthropicStreaming",
+      "target": "function:scripts/bench-api.mjs:AbortSignal.timeout",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:measureAnthropicStreaming",
+      "target": "function:scripts/bench-api.mjs:res.text",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:measureAnthropicStreaming",
+      "target": "function:scripts/bench-api.mjs:txt.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:measureAnthropicStreaming",
+      "target": "function:scripts/bench-api.mjs:res.body.getReader",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:measureAnthropicStreaming",
+      "target": "function:scripts/bench-api.mjs:reader.read",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:measureAnthropicStreaming",
+      "target": "function:scripts/bench-api.mjs:decoder.decode",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:measureAnthropicStreaming",
+      "target": "function:scripts/bench-api.mjs:chunk.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:measureAnthropicStreaming",
+      "target": "function:scripts/bench-api.mjs:performance.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:measureAnthropicStreaming",
+      "target": "function:scripts/bench-api.mjs:performance.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:measureAnthropicStreaming",
+      "target": "function:scripts/bench-api.mjs:performance.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:measureOpenAIStreaming",
+      "target": "function:scripts/bench-api.mjs:JSON.stringify",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:measureOpenAIStreaming",
+      "target": "function:scripts/bench-api.mjs:performance.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:measureOpenAIStreaming",
+      "target": "function:scripts/bench-api.mjs:fetch",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:measureOpenAIStreaming",
+      "target": "function:scripts/bench-api.mjs:AbortSignal.timeout",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:measureOpenAIStreaming",
+      "target": "function:scripts/bench-api.mjs:res.text",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:measureOpenAIStreaming",
+      "target": "function:scripts/bench-api.mjs:txt.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:measureOpenAIStreaming",
+      "target": "function:scripts/bench-api.mjs:res.body.getReader",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:measureOpenAIStreaming",
+      "target": "function:scripts/bench-api.mjs:reader.read",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:measureOpenAIStreaming",
+      "target": "function:scripts/bench-api.mjs:decoder.decode",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:measureOpenAIStreaming",
+      "target": "function:scripts/bench-api.mjs:chunk.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:measureOpenAIStreaming",
+      "target": "function:scripts/bench-api.mjs:chunk.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:measureOpenAIStreaming",
+      "target": "function:scripts/bench-api.mjs:performance.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:measureOpenAIStreaming",
+      "target": "function:scripts/bench-api.mjs:performance.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:measureOpenAIStreaming",
+      "target": "function:scripts/bench-api.mjs:performance.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:resolvePresets",
+      "target": "function:scripts/bench-api.mjs:p.apiKey?.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:resolvePresets",
+      "target": "function:scripts/bench-api.mjs:presets.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:resolvePresets",
+      "target": "function:scripts/bench-api.mjs:apiKey.startsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:resolvePresets",
+      "target": "function:scripts/bench-api.mjs:presets.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:resolvePresets",
+      "target": "function:scripts/bench-api.mjs:presets.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:resolvePresets",
+      "target": "function:scripts/bench-api.mjs:resolveAnthropicEndpoint",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:resolvePresets",
+      "target": "function:scripts/bench-api.mjs:presets.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:resolvePresets",
+      "target": "function:scripts/bench-api.mjs:resolveOpenAIEndpoint",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:resolvePresets",
+      "target": "function:scripts/bench-api.mjs:presets.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:parseArgs",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:process.argv.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:Math.max",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:parseInt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:decryptConfig",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:console.error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:process.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:resolvePresets",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:presets.filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:console.error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:process.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:'Preset'.padEnd",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:'Protocol'.padEnd",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:'Model'.padEnd",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:label.padStart",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:totalLabel.padStart",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:'─'.repeat",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:pad",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:'—'.padEnd",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:'—'.padEnd",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:'—'.padStart",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:'—'.padStart",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:measureAnthropicStreaming",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:measureOpenAIStreaming",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:ttfts.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:totals.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:lastError.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:pad",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:pad",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:pad",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:'—'.padStart",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:'—'.padStart",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:avg",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:avg",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:Math.min",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:Math.min",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:ms",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:ms",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:ms",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:ms",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:ms",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:ms",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:pad",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:pad",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:pad",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:ttftStr.padStart",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:totalStr.padStart",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bench-api.mjs:main",
+      "target": "function:scripts/bench-api.mjs:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/bundle-mcp.js",
+      "target": "function:scripts/bundle-mcp.js:removePathWithRetries",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/bundle-mcp.js",
+      "target": "function:scripts/bundle-mcp.js:copyFileWithRetries",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/bundle-mcp.js",
+      "target": "function:scripts/bundle-mcp.js:copyDirectoryContentsWithRetries",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/bundle-mcp.js",
+      "target": "function:scripts/bundle-mcp.js:replaceDirectoryWithRetries",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/bundle-mcp.js",
+      "target": "function:scripts/bundle-mcp.js:bundleWithEsbuild",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/bundle-mcp.js",
+      "target": "function:scripts/bundle-mcp.js:transpileFallback",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/bundle-mcp.js",
+      "target": "function:scripts/bundle-mcp.js:stageBundledServers",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/bundle-mcp.js",
+      "target": "function:scripts/bundle-mcp.js:bundleMCPServers",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:removePathWithRetries",
+      "target": "function:scripts/bundle-mcp.js:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:removePathWithRetries",
+      "target": "function:scripts/bundle-mcp.js:fs.rmSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:removePathWithRetries",
+      "target": "function:scripts/bundle-mcp.js:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:removePathWithRetries",
+      "target": "function:scripts/bundle-mcp.js:isRetryableFileOpError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:removePathWithRetries",
+      "target": "function:scripts/bundle-mcp.js:console.warn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:removePathWithRetries",
+      "target": "function:scripts/bundle-mcp.js:path.basename",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:removePathWithRetries",
+      "target": "function:scripts/bundle-mcp.js:sleep",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:copyFileWithRetries",
+      "target": "function:scripts/bundle-mcp.js:fs.copyFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:copyFileWithRetries",
+      "target": "function:scripts/bundle-mcp.js:isRetryableFileOpError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:copyFileWithRetries",
+      "target": "function:scripts/bundle-mcp.js:console.warn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:copyFileWithRetries",
+      "target": "function:scripts/bundle-mcp.js:path.basename",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:copyFileWithRetries",
+      "target": "function:scripts/bundle-mcp.js:sleep",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:copyDirectoryContentsWithRetries",
+      "target": "function:scripts/bundle-mcp.js:fs.mkdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:copyDirectoryContentsWithRetries",
+      "target": "function:scripts/bundle-mcp.js:fs.readdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:copyDirectoryContentsWithRetries",
+      "target": "function:scripts/bundle-mcp.js:sourceEntries.map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:copyDirectoryContentsWithRetries",
+      "target": "function:scripts/bundle-mcp.js:fs.readdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:copyDirectoryContentsWithRetries",
+      "target": "function:scripts/bundle-mcp.js:sourceEntryNames.has",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:copyDirectoryContentsWithRetries",
+      "target": "function:scripts/bundle-mcp.js:removePathWithRetries",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:copyDirectoryContentsWithRetries",
+      "target": "function:scripts/bundle-mcp.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:copyDirectoryContentsWithRetries",
+      "target": "function:scripts/bundle-mcp.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:copyDirectoryContentsWithRetries",
+      "target": "function:scripts/bundle-mcp.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:copyDirectoryContentsWithRetries",
+      "target": "function:scripts/bundle-mcp.js:entry.isDirectory",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:copyDirectoryContentsWithRetries",
+      "target": "function:scripts/bundle-mcp.js:copyDirectoryContentsWithRetries",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:copyDirectoryContentsWithRetries",
+      "target": "function:scripts/bundle-mcp.js:copyFileWithRetries",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:replaceDirectoryWithRetries",
+      "target": "function:scripts/bundle-mcp.js:removePathWithRetries",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:replaceDirectoryWithRetries",
+      "target": "function:scripts/bundle-mcp.js:fs.renameSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:replaceDirectoryWithRetries",
+      "target": "function:scripts/bundle-mcp.js:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:replaceDirectoryWithRetries",
+      "target": "function:scripts/bundle-mcp.js:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:replaceDirectoryWithRetries",
+      "target": "function:scripts/bundle-mcp.js:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:replaceDirectoryWithRetries",
+      "target": "function:scripts/bundle-mcp.js:isRetryableFileOpError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:replaceDirectoryWithRetries",
+      "target": "function:scripts/bundle-mcp.js:console.warn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:replaceDirectoryWithRetries",
+      "target": "function:scripts/bundle-mcp.js:path.basename",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:replaceDirectoryWithRetries",
+      "target": "function:scripts/bundle-mcp.js:sleep",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:replaceDirectoryWithRetries",
+      "target": "function:scripts/bundle-mcp.js:console.warn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:replaceDirectoryWithRetries",
+      "target": "function:scripts/bundle-mcp.js:path.basename",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:replaceDirectoryWithRetries",
+      "target": "function:scripts/bundle-mcp.js:copyDirectoryContentsWithRetries",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:replaceDirectoryWithRetries",
+      "target": "function:scripts/bundle-mcp.js:removePathIfExists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:bundleWithEsbuild",
+      "target": "function:scripts/bundle-mcp.js:require",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:bundleWithEsbuild",
+      "target": "function:scripts/bundle-mcp.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:bundleWithEsbuild",
+      "target": "function:scripts/bundle-mcp.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:bundleWithEsbuild",
+      "target": "function:scripts/bundle-mcp.js:esbuild.build",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:bundleWithEsbuild",
+      "target": "function:scripts/bundle-mcp.js:fs.statSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:bundleWithEsbuild",
+      "target": "function:scripts/bundle-mcp.js:(stats.size / 1024).toFixed",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:bundleWithEsbuild",
+      "target": "function:scripts/bundle-mcp.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:bundleWithEsbuild",
+      "target": "function:scripts/bundle-mcp.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:bundleWithEsbuild",
+      "target": "function:scripts/bundle-mcp.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:transpileFallback",
+      "target": "function:scripts/bundle-mcp.js:require",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:transpileFallback",
+      "target": "function:scripts/bundle-mcp.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:transpileFallback",
+      "target": "function:scripts/bundle-mcp.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:transpileFallback",
+      "target": "function:scripts/bundle-mcp.js:fs.readdirSync(SRC_MCP_DIR).filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:transpileFallback",
+      "target": "function:scripts/bundle-mcp.js:fs.readdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:transpileFallback",
+      "target": "function:scripts/bundle-mcp.js:file.endsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:transpileFallback",
+      "target": "function:scripts/bundle-mcp.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:transpileFallback",
+      "target": "function:scripts/bundle-mcp.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:transpileFallback",
+      "target": "function:scripts/bundle-mcp.js:file.replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:transpileFallback",
+      "target": "function:scripts/bundle-mcp.js:fs.readFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:transpileFallback",
+      "target": "function:scripts/bundle-mcp.js:ts.transpileModule",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:transpileFallback",
+      "target": "function:scripts/bundle-mcp.js:result.diagnostics.filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:transpileFallback",
+      "target": "function:scripts/bundle-mcp.js:errors.map((d) => ts.flattenDiagnosticMessageText(d.messageText, '\\n')).join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:transpileFallback",
+      "target": "function:scripts/bundle-mcp.js:errors.map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:transpileFallback",
+      "target": "function:scripts/bundle-mcp.js:ts.flattenDiagnosticMessageText",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:transpileFallback",
+      "target": "function:scripts/bundle-mcp.js:fs.writeFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:transpileFallback",
+      "target": "function:scripts/bundle-mcp.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:transpileFallback",
+      "target": "function:scripts/bundle-mcp.js:fs.statSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:transpileFallback",
+      "target": "function:scripts/bundle-mcp.js:(stats.size / 1024).toFixed",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:transpileFallback",
+      "target": "function:scripts/bundle-mcp.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:transpileFallback",
+      "target": "function:scripts/bundle-mcp.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:transpileFallback",
+      "target": "function:scripts/bundle-mcp.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:stageBundledServers",
+      "target": "function:scripts/bundle-mcp.js:path.dirname",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:stageBundledServers",
+      "target": "function:scripts/bundle-mcp.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:stageBundledServers",
+      "target": "function:scripts/bundle-mcp.js:Date.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:stageBundledServers",
+      "target": "function:scripts/bundle-mcp.js:ensureDir",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:stageBundledServers",
+      "target": "function:scripts/bundle-mcp.js:removePathIfExists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:stageBundledServers",
+      "target": "function:scripts/bundle-mcp.js:fs.mkdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:stageBundledServers",
+      "target": "function:scripts/bundle-mcp.js:copyFileWithRetries",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:stageBundledServers",
+      "target": "function:scripts/bundle-mcp.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:stageBundledServers",
+      "target": "function:scripts/bundle-mcp.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:stageBundledServers",
+      "target": "function:scripts/bundle-mcp.js:replaceDirectoryWithRetries",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:stageBundledServers",
+      "target": "function:scripts/bundle-mcp.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:stageBundledServers",
+      "target": "function:scripts/bundle-mcp.js:path.relative",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:stageBundledServers",
+      "target": "function:scripts/bundle-mcp.js:removePathIfExists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:bundleMCPServers",
+      "target": "function:scripts/bundle-mcp.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:bundleMCPServers",
+      "target": "function:scripts/bundle-mcp.js:ensureDir",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:bundleMCPServers",
+      "target": "function:scripts/bundle-mcp.js:require.resolve",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:bundleMCPServers",
+      "target": "function:scripts/bundle-mcp.js:bundleWithEsbuild",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:bundleMCPServers",
+      "target": "function:scripts/bundle-mcp.js:console.error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:bundleMCPServers",
+      "target": "function:scripts/bundle-mcp.js:process.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:bundleMCPServers",
+      "target": "function:scripts/bundle-mcp.js:stageBundledServers",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/bundle-mcp.js:bundleMCPServers",
+      "target": "function:scripts/bundle-mcp.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/download-node.js",
+      "target": "function:scripts/download-node.js:applyNpxFix",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/download-node.js",
+      "target": "function:scripts/download-node.js:download",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/download-node.js",
+      "target": "function:scripts/download-node.js:removeFileWithRetries",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/download-node.js",
+      "target": "function:scripts/download-node.js:downloadAndExtract",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/download-node.js",
+      "target": "function:scripts/download-node.js:main",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:scripts/download-node.js:applyNpxFix",
+      "target": "function:scripts/download-node.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:applyNpxFix",
+      "target": "function:scripts/download-node.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:applyNpxFix",
+      "target": "function:scripts/download-node.js:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:applyNpxFix",
+      "target": "function:scripts/download-node.js:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:applyNpxFix",
+      "target": "function:scripts/download-node.js:fs.readFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:applyNpxFix",
+      "target": "function:scripts/download-node.js:current.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:applyNpxFix",
+      "target": "function:scripts/download-node.js:fs.lstatSync(npxBinPath).isSymbolicLink",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:applyNpxFix",
+      "target": "function:scripts/download-node.js:fs.lstatSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:applyNpxFix",
+      "target": "function:scripts/download-node.js:fs.unlinkSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:applyNpxFix",
+      "target": "function:scripts/download-node.js:extractDir.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:applyNpxFix",
+      "target": "function:scripts/download-node.js:extractDir.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:applyNpxFix",
+      "target": "function:scripts/download-node.js:fs.writeFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:applyNpxFix",
+      "target": "function:scripts/download-node.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:applyNpxFix",
+      "target": "function:scripts/download-node.js:fs.writeFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:applyNpxFix",
+      "target": "function:scripts/download-node.js:fs.chmodSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:applyNpxFix",
+      "target": "function:scripts/download-node.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:download",
+      "target": "function:scripts/download-node.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:download",
+      "target": "function:scripts/download-node.js:fs.createWriteStream",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:download",
+      "target": "function:scripts/download-node.js:https.get(url, (response) => {\n      if (response.statusCode === 302 || response.statusCode === 301) {\n        // Follow redirect\n        return download(response.headers.location, dest).then(resolve).catch(reject);\n      }\n      if (response.statusCode !== 200) {\n        reject(new Error(`Failed to download: ${response.statusCode}`));\n        return;\n      }\n      response.pipe(file);\n      file.on('finish', () => {\n        file.close();\n        resolve();\n      });\n    }).on",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:download",
+      "target": "function:scripts/download-node.js:https.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:download",
+      "target": "function:scripts/download-node.js:download(response.headers.location, dest).then(resolve).catch",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:download",
+      "target": "function:scripts/download-node.js:download(response.headers.location, dest).then",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:download",
+      "target": "function:scripts/download-node.js:download",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:download",
+      "target": "function:scripts/download-node.js:reject",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:download",
+      "target": "function:scripts/download-node.js:response.pipe",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:download",
+      "target": "function:scripts/download-node.js:file.on",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:download",
+      "target": "function:scripts/download-node.js:file.close",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:download",
+      "target": "function:scripts/download-node.js:resolve",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:download",
+      "target": "function:scripts/download-node.js:fs.unlink",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:download",
+      "target": "function:scripts/download-node.js:reject",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:removeFileWithRetries",
+      "target": "function:scripts/download-node.js:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:removeFileWithRetries",
+      "target": "function:scripts/download-node.js:fs.unlinkSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:removeFileWithRetries",
+      "target": "function:scripts/download-node.js:console.warn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:removeFileWithRetries",
+      "target": "function:scripts/download-node.js:path.basename",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:removeFileWithRetries",
+      "target": "function:scripts/download-node.js:sleepSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:fs.mkdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:applyNpxFix",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:download",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:fs.mkdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:execSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:execSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:fs.readdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:files.forEach",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:fs.renameSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:fs.rmdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:execSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:removeFileWithRetries",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:fs.rmSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:fs.unlinkSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:fs.rmSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:applyNpxFix",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:console.error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:removeFileWithRetries",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:downloadAndExtract",
+      "target": "function:scripts/download-node.js:fs.rmSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:main",
+      "target": "function:scripts/download-node.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:main",
+      "target": "function:scripts/download-node.js:Object.entries",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:main",
+      "target": "function:scripts/download-node.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:main",
+      "target": "function:scripts/download-node.js:Object.keys",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:main",
+      "target": "function:scripts/download-node.js:downloads.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:main",
+      "target": "function:scripts/download-node.js:downloadAndExtract",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:main",
+      "target": "function:scripts/download-node.js:Promise.all",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/download-node.js:main",
+      "target": "function:scripts/download-node.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/pre-build-check.js",
+      "target": "function:scripts/pre-build-check.js:buildCheckList",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/pre-build-check.js",
+      "target": "function:scripts/pre-build-check.js:runChecks",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/pre-build-check.js",
+      "target": "function:scripts/pre-build-check.js:main",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:scripts/pre-build-check.js:buildCheckList",
+      "target": "function:scripts/pre-build-check.js:checks.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/pre-build-check.js:buildCheckList",
+      "target": "function:scripts/pre-build-check.js:checks.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/pre-build-check.js:buildCheckList",
+      "target": "function:scripts/pre-build-check.js:checks.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/pre-build-check.js:runChecks",
+      "target": "function:scripts/pre-build-check.js:buildCheckList",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/pre-build-check.js:runChecks",
+      "target": "function:scripts/pre-build-check.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/pre-build-check.js:runChecks",
+      "target": "function:scripts/pre-build-check.js:fs.statSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/pre-build-check.js:runChecks",
+      "target": "function:scripts/pre-build-check.js:stat.isDirectory",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/pre-build-check.js:runChecks",
+      "target": "function:scripts/pre-build-check.js:stat.isFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/pre-build-check.js:runChecks",
+      "target": "function:scripts/pre-build-check.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/pre-build-check.js:runChecks",
+      "target": "function:scripts/pre-build-check.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/pre-build-check.js:runChecks",
+      "target": "function:scripts/pre-build-check.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/pre-build-check.js:runChecks",
+      "target": "function:scripts/pre-build-check.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/pre-build-check.js:runChecks",
+      "target": "function:scripts/pre-build-check.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/pre-build-check.js:runChecks",
+      "target": "function:scripts/pre-build-check.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/pre-build-check.js:runChecks",
+      "target": "function:scripts/pre-build-check.js:results.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/pre-build-check.js:main",
+      "target": "function:scripts/pre-build-check.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/pre-build-check.js:main",
+      "target": "function:scripts/pre-build-check.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/pre-build-check.js:main",
+      "target": "function:scripts/pre-build-check.js:runChecks",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/pre-build-check.js:main",
+      "target": "function:scripts/pre-build-check.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/pre-build-check.js:main",
+      "target": "function:scripts/pre-build-check.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/pre-build-check.js:main",
+      "target": "function:scripts/pre-build-check.js:process.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/pre-build-check.js:main",
+      "target": "function:scripts/pre-build-check.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/pre-build-check.js:main",
+      "target": "function:scripts/pre-build-check.js:process.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/prepare-gui-tools.js",
+      "target": "function:scripts/prepare-gui-tools.js:detectBinaryArch",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/prepare-gui-tools.js",
+      "target": "function:scripts/prepare-gui-tools.js:main",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:scripts/prepare-gui-tools.js:detectBinaryArch",
+      "target": "function:scripts/prepare-gui-tools.js:tryExecFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-gui-tools.js:detectBinaryArch",
+      "target": "function:scripts/prepare-gui-tools.js:out.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-gui-tools.js:detectBinaryArch",
+      "target": "function:scripts/prepare-gui-tools.js:out.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-gui-tools.js:detectBinaryArch",
+      "target": "function:scripts/prepare-gui-tools.js:out.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-gui-tools.js:main",
+      "target": "function:scripts/prepare-gui-tools.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-gui-tools.js:main",
+      "target": "function:scripts/prepare-gui-tools.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-gui-tools.js:main",
+      "target": "function:scripts/prepare-gui-tools.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-gui-tools.js:main",
+      "target": "function:scripts/prepare-gui-tools.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-gui-tools.js:main",
+      "target": "function:scripts/prepare-gui-tools.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-gui-tools.js:main",
+      "target": "function:scripts/prepare-gui-tools.js:ensureDir",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-gui-tools.js:main",
+      "target": "function:scripts/prepare-gui-tools.js:ensureDir",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-gui-tools.js:main",
+      "target": "function:scripts/prepare-gui-tools.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-gui-tools.js:main",
+      "target": "function:scripts/prepare-gui-tools.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-gui-tools.js:main",
+      "target": "function:scripts/prepare-gui-tools.js:exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-gui-tools.js:main",
+      "target": "function:scripts/prepare-gui-tools.js:exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-gui-tools.js:main",
+      "target": "function:scripts/prepare-gui-tools.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-gui-tools.js:main",
+      "target": "function:scripts/prepare-gui-tools.js:tryExecFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-gui-tools.js:main",
+      "target": "function:scripts/prepare-gui-tools.js:candidates.add",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-gui-tools.js:main",
+      "target": "function:scripts/prepare-gui-tools.js:[...candidates].filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-gui-tools.js:main",
+      "target": "function:scripts/prepare-gui-tools.js:console.error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-gui-tools.js:main",
+      "target": "function:scripts/prepare-gui-tools.js:detectBinaryArch",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-gui-tools.js:main",
+      "target": "function:scripts/prepare-gui-tools.js:copyExecutable",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-gui-tools.js:main",
+      "target": "function:scripts/prepare-gui-tools.js:copyExecutable",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-gui-tools.js:main",
+      "target": "function:scripts/prepare-gui-tools.js:copyExecutable",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-gui-tools.js:main",
+      "target": "function:scripts/prepare-gui-tools.js:copyExecutable",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-gui-tools.js:main",
+      "target": "function:scripts/prepare-gui-tools.js:console.error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-gui-tools.js:main",
+      "target": "function:scripts/prepare-gui-tools.js:console.warn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/prepare-python.js",
+      "target": "function:scripts/prepare-python.js:download",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/prepare-python.js",
+      "target": "function:scripts/prepare-python.js:fetchJson",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/prepare-python.js",
+      "target": "function:scripts/prepare-python.js:findExistingArchive",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/prepare-python.js",
+      "target": "function:scripts/prepare-python.js:findStandaloneAssetUrl",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/prepare-python.js",
+      "target": "function:scripts/prepare-python.js:getStripComponentsForArchive",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/prepare-python.js",
+      "target": "function:scripts/prepare-python.js:extractArchive",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/prepare-python.js",
+      "target": "function:scripts/prepare-python.js:installPackages",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/prepare-python.js",
+      "target": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/prepare-python.js",
+      "target": "function:scripts/prepare-python.js:preparePlatformArch",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/prepare-python.js",
+      "target": "function:scripts/prepare-python.js:main",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:scripts/prepare-python.js:download",
+      "target": "function:scripts/prepare-python.js:ensureDir",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:download",
+      "target": "function:scripts/prepare-python.js:path.dirname",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:download",
+      "target": "function:scripts/prepare-python.js:fs.createWriteStream",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:download",
+      "target": "function:scripts/prepare-python.js:https.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:download",
+      "target": "function:scripts/prepare-python.js:file.close",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:download",
+      "target": "function:scripts/prepare-python.js:fs.unlinkSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:download",
+      "target": "function:scripts/prepare-python.js:download(redirect, dest).then(resolve).catch",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:download",
+      "target": "function:scripts/prepare-python.js:download(redirect, dest).then",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:download",
+      "target": "function:scripts/prepare-python.js:download",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:download",
+      "target": "function:scripts/prepare-python.js:file.close",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:download",
+      "target": "function:scripts/prepare-python.js:fs.unlinkSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:download",
+      "target": "function:scripts/prepare-python.js:reject",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:download",
+      "target": "function:scripts/prepare-python.js:response.pipe",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:download",
+      "target": "function:scripts/prepare-python.js:file.on",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:download",
+      "target": "function:scripts/prepare-python.js:file.close",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:download",
+      "target": "function:scripts/prepare-python.js:resolve",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:download",
+      "target": "function:scripts/prepare-python.js:request.on",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:download",
+      "target": "function:scripts/prepare-python.js:file.close",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:download",
+      "target": "function:scripts/prepare-python.js:fs.unlinkSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:download",
+      "target": "function:scripts/prepare-python.js:reject",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:fetchJson",
+      "target": "function:scripts/prepare-python.js:https.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:fetchJson",
+      "target": "function:scripts/prepare-python.js:reject",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:fetchJson",
+      "target": "function:scripts/prepare-python.js:fetchJson(redirect).then(resolve).catch",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:fetchJson",
+      "target": "function:scripts/prepare-python.js:fetchJson(redirect).then",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:fetchJson",
+      "target": "function:scripts/prepare-python.js:fetchJson",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:fetchJson",
+      "target": "function:scripts/prepare-python.js:reject",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:fetchJson",
+      "target": "function:scripts/prepare-python.js:res.on",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:fetchJson",
+      "target": "function:scripts/prepare-python.js:res.on",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:fetchJson",
+      "target": "function:scripts/prepare-python.js:resolve",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:fetchJson",
+      "target": "function:scripts/prepare-python.js:JSON.parse",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:fetchJson",
+      "target": "function:scripts/prepare-python.js:reject",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:fetchJson",
+      "target": "function:scripts/prepare-python.js:request.on",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:findExistingArchive",
+      "target": "function:scripts/prepare-python.js:exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:findExistingArchive",
+      "target": "function:scripts/prepare-python.js:fs.readdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:findExistingArchive",
+      "target": "function:scripts/prepare-python.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:findExistingArchive",
+      "target": "function:scripts/prepare-python.js:fs.statSync(filePath).isFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:findExistingArchive",
+      "target": "function:scripts/prepare-python.js:fs.statSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:findExistingArchive",
+      "target": "function:scripts/prepare-python.js:file.endsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:findExistingArchive",
+      "target": "function:scripts/prepare-python.js:file.endsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:findExistingArchive",
+      "target": "function:scripts/prepare-python.js:file.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:findExistingArchive",
+      "target": "function:scripts/prepare-python.js:file.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:findExistingArchive",
+      "target": "function:scripts/prepare-python.js:file.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:findExistingArchive",
+      "target": "function:scripts/prepare-python.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:findStandaloneAssetUrl",
+      "target": "function:scripts/prepare-python.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:findStandaloneAssetUrl",
+      "target": "function:scripts/prepare-python.js:findExistingArchive",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:findStandaloneAssetUrl",
+      "target": "function:scripts/prepare-python.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:findStandaloneAssetUrl",
+      "target": "function:scripts/prepare-python.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:findStandaloneAssetUrl",
+      "target": "function:scripts/prepare-python.js:defaultUrl.substring",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:findStandaloneAssetUrl",
+      "target": "function:scripts/prepare-python.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:findStandaloneAssetUrl",
+      "target": "function:scripts/prepare-python.js:fetchJson",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:findStandaloneAssetUrl",
+      "target": "function:scripts/prepare-python.js:Array.isArray",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:findStandaloneAssetUrl",
+      "target": "function:scripts/prepare-python.js:name.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:findStandaloneAssetUrl",
+      "target": "function:scripts/prepare-python.js:name.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:findStandaloneAssetUrl",
+      "target": "function:scripts/prepare-python.js:name.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:findStandaloneAssetUrl",
+      "target": "function:scripts/prepare-python.js:name.endsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:findStandaloneAssetUrl",
+      "target": "function:scripts/prepare-python.js:name.endsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:findStandaloneAssetUrl",
+      "target": "function:scripts/prepare-python.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:findStandaloneAssetUrl",
+      "target": "function:scripts/prepare-python.js:url.substring",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:findStandaloneAssetUrl",
+      "target": "function:scripts/prepare-python.js:console.error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:getStripComponentsForArchive",
+      "target": "function:scripts/prepare-python.js:archivePath.endsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:getStripComponentsForArchive",
+      "target": "function:scripts/prepare-python.js:execSync(listCmd, { encoding: 'utf8' }).split",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:getStripComponentsForArchive",
+      "target": "function:scripts/prepare-python.js:execSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:getStripComponentsForArchive",
+      "target": "function:scripts/prepare-python.js:list.find",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:getStripComponentsForArchive",
+      "target": "function:scripts/prepare-python.js:p.endsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:getStripComponentsForArchive",
+      "target": "function:scripts/prepare-python.js:python3Entry.replace(/\\/bin\\/python3$/, '').replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:getStripComponentsForArchive",
+      "target": "function:scripts/prepare-python.js:python3Entry.replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:getStripComponentsForArchive",
+      "target": "function:scripts/prepare-python.js:prefix.split('/').filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:getStripComponentsForArchive",
+      "target": "function:scripts/prepare-python.js:prefix.split",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:extractArchive",
+      "target": "function:scripts/prepare-python.js:ensureDir",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:extractArchive",
+      "target": "function:scripts/prepare-python.js:fs.readdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:extractArchive",
+      "target": "function:scripts/prepare-python.js:fs.rmSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:extractArchive",
+      "target": "function:scripts/prepare-python.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:extractArchive",
+      "target": "function:scripts/prepare-python.js:archivePath.endsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:extractArchive",
+      "target": "function:scripts/prepare-python.js:getStripComponentsForArchive",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:extractArchive",
+      "target": "function:scripts/prepare-python.js:execSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:installPackages",
+      "target": "function:scripts/prepare-python.js:ensureDir",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:installPackages",
+      "target": "function:scripts/prepare-python.js:path.resolve",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:installPackages",
+      "target": "function:scripts/prepare-python.js:resolveRuntimeVersionFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:installPackages",
+      "target": "function:scripts/prepare-python.js:exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:installPackages",
+      "target": "function:scripts/prepare-python.js:fs.readFileSync(runtimeMarkerFile, 'utf-8').trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:installPackages",
+      "target": "function:scripts/prepare-python.js:fs.readFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:installPackages",
+      "target": "function:scripts/prepare-python.js:exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:installPackages",
+      "target": "function:scripts/prepare-python.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:installPackages",
+      "target": "function:scripts/prepare-python.js:exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:installPackages",
+      "target": "function:scripts/prepare-python.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:installPackages",
+      "target": "function:scripts/prepare-python.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:installPackages",
+      "target": "function:scripts/prepare-python.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:installPackages",
+      "target": "function:scripts/prepare-python.js:ensurePipAvailable",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:installPackages",
+      "target": "function:scripts/prepare-python.js:JSON.stringify",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:installPackages",
+      "target": "function:scripts/prepare-python.js:packageSpecs.map((pkg) => JSON.stringify(pkg)).join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:installPackages",
+      "target": "function:scripts/prepare-python.js:packageSpecs.map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:installPackages",
+      "target": "function:scripts/prepare-python.js:JSON.stringify",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:installPackages",
+      "target": "function:scripts/prepare-python.js:execSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:installPackages",
+      "target": "function:scripts/prepare-python.js:fs.writeFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:fs.readdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:isWhitelisted",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:fs.statSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:stat.isDirectory",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:parseInt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:execSync(`du -sk \"${entryPath}\"`, { encoding: 'utf8' }).split",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:execSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:fs.rmSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:Math.round",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:execSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:execSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:fs.readdirSync(libDir).filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:fs.readdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:d.startsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:fs.rmSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:fs.readdirSync(stdlibDir).filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:fs.readdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:f.startsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:fs.rmSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:fs.readdirSync(libDir).filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:fs.readdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:d.startsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:d.startsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:fs.rmSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:execSync(`du -sh \"${destDir}\"`, { encoding: 'utf8' }).split",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:execSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "target": "function:scripts/prepare-python.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:preparePlatformArch",
+      "target": "function:scripts/prepare-python.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:preparePlatformArch",
+      "target": "function:scripts/prepare-python.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:preparePlatformArch",
+      "target": "function:scripts/prepare-python.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:preparePlatformArch",
+      "target": "function:scripts/prepare-python.js:exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:preparePlatformArch",
+      "target": "function:scripts/prepare-python.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:preparePlatformArch",
+      "target": "function:scripts/prepare-python.js:findStandaloneAssetUrl",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:preparePlatformArch",
+      "target": "function:scripts/prepare-python.js:url.startsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:preparePlatformArch",
+      "target": "function:scripts/prepare-python.js:url.replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:preparePlatformArch",
+      "target": "function:scripts/prepare-python.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:preparePlatformArch",
+      "target": "function:scripts/prepare-python.js:path.basename",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:preparePlatformArch",
+      "target": "function:scripts/prepare-python.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:preparePlatformArch",
+      "target": "function:scripts/prepare-python.js:exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:preparePlatformArch",
+      "target": "function:scripts/prepare-python.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:preparePlatformArch",
+      "target": "function:scripts/prepare-python.js:download",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:preparePlatformArch",
+      "target": "function:scripts/prepare-python.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:preparePlatformArch",
+      "target": "function:scripts/prepare-python.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:preparePlatformArch",
+      "target": "function:scripts/prepare-python.js:extractArchive",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:preparePlatformArch",
+      "target": "function:scripts/prepare-python.js:exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:preparePlatformArch",
+      "target": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:preparePlatformArch",
+      "target": "function:scripts/prepare-python.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:preparePlatformArch",
+      "target": "function:scripts/prepare-python.js:installPackages",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:preparePlatformArch",
+      "target": "function:scripts/prepare-python.js:cleanPythonRuntime",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:main",
+      "target": "function:scripts/prepare-python.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:main",
+      "target": "function:scripts/prepare-python.js:ensureDir",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:main",
+      "target": "function:scripts/prepare-python.js:ensureDir",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:main",
+      "target": "function:scripts/prepare-python.js:process.argv.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:main",
+      "target": "function:scripts/prepare-python.js:args.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:main",
+      "target": "function:scripts/prepare-python.js:args.indexOf",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:main",
+      "target": "function:scripts/prepare-python.js:Object.keys",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:main",
+      "target": "function:scripts/prepare-python.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:main",
+      "target": "function:scripts/prepare-python.js:supportedArches.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:main",
+      "target": "function:scripts/prepare-python.js:supportedArches.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:main",
+      "target": "function:scripts/prepare-python.js:supportedArches.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:main",
+      "target": "function:scripts/prepare-python.js:preparePlatformArch",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/prepare-python.js:main",
+      "target": "function:scripts/prepare-python.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/sandbox/lima-agent/index.ts",
+      "target": "file:src/main/sandbox/lima-agent/path-containment.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/sandbox/lima-agent/index.ts",
+      "target": "function:src/main/sandbox/lima-agent/index.ts:main",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/sandbox/lima-agent/index.ts",
+      "target": "class:src/main/sandbox/lima-agent/index.ts:SandboxAgent",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/index.ts:main",
+      "target": "function:src/main/sandbox/lima-agent/index.ts:readline.createInterface",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/index.ts:main",
+      "target": "function:src/main/sandbox/lima-agent/index.ts:log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/index.ts:main",
+      "target": "function:src/main/sandbox/lima-agent/index.ts:rl.on",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/index.ts:main",
+      "target": "function:src/main/sandbox/lima-agent/index.ts:line.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/index.ts:main",
+      "target": "function:src/main/sandbox/lima-agent/index.ts:JSON.parse",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/index.ts:main",
+      "target": "function:src/main/sandbox/lima-agent/index.ts:agent.handleRequest",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/index.ts:main",
+      "target": "function:src/main/sandbox/lima-agent/index.ts:sendResponse",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/index.ts:main",
+      "target": "function:src/main/sandbox/lima-agent/index.ts:String",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/index.ts:main",
+      "target": "function:src/main/sandbox/lima-agent/index.ts:logError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/index.ts:main",
+      "target": "function:src/main/sandbox/lima-agent/index.ts:sendResponse",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/index.ts:main",
+      "target": "function:src/main/sandbox/lima-agent/index.ts:rl.on",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/index.ts:main",
+      "target": "function:src/main/sandbox/lima-agent/index.ts:log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/index.ts:main",
+      "target": "function:src/main/sandbox/lima-agent/index.ts:process.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/index.ts:main",
+      "target": "function:src/main/sandbox/lima-agent/index.ts:process.on",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/index.ts:main",
+      "target": "function:src/main/sandbox/lima-agent/index.ts:log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/index.ts:main",
+      "target": "function:src/main/sandbox/lima-agent/index.ts:process.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/index.ts:main",
+      "target": "function:src/main/sandbox/lima-agent/index.ts:process.on",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/index.ts:main",
+      "target": "function:src/main/sandbox/lima-agent/index.ts:log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/index.ts:main",
+      "target": "function:src/main/sandbox/lima-agent/index.ts:process.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/index.ts:main",
+      "target": "function:src/main/sandbox/lima-agent/index.ts:process.on",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/index.ts:main",
+      "target": "function:src/main/sandbox/lima-agent/index.ts:logError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/index.ts:main",
+      "target": "function:src/main/sandbox/lima-agent/index.ts:process.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/index.ts:main",
+      "target": "function:src/main/sandbox/lima-agent/index.ts:process.on",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/index.ts:main",
+      "target": "function:src/main/sandbox/lima-agent/index.ts:logError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/sandbox/lima-agent/path-containment.ts",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:normalizePathForContainment",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/sandbox/lima-agent/path-containment.ts",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:resolveSegments",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/sandbox/lima-agent/path-containment.ts",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:canonicalizePath",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/sandbox/lima-agent/path-containment.ts",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:isPathWithinRoot",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:normalizePathForContainment",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:pathValue.replace(/[\\\\/]+/g, '/').replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:normalizePathForContainment",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:pathValue.replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:normalizePathForContainment",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:pathValue.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:normalizePathForContainment",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:pathValue.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:normalizePathForContainment",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:normalized.toLowerCase",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:resolveSegments",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:pathValue.split(/[\\\\/]+/).filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:resolveSegments",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:pathValue.split",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:resolveSegments",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:resolved.pop",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:resolveSegments",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:resolved.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:resolveSegments",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:normalizeSegment",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:pathValue.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:isWindowsDrivePath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:normalizeSegment",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:pathValue.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:resolveSegments",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:pathValue.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:isUncPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:/^\\/\\/[^/]+\\/+[^/]+/.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:pathValue.replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:normalized.match",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:normalizeSegment",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:normalizeSegment",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:resolveSegments",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:pathValue.startsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:pathValue.startsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:resolveSegments",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:isPathWithinRoot",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:canonicalizePath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:isPathWithinRoot",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:canonicalizePath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/lima-agent/path-containment.ts:isPathWithinRoot",
+      "target": "function:src/main/sandbox/lima-agent/path-containment.ts:normalizedRoot.segments.every",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/sandbox/wsl-agent/index.ts",
+      "target": "file:src/main/sandbox/wsl-agent/path-containment.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/sandbox/wsl-agent/index.ts",
+      "target": "function:src/main/sandbox/wsl-agent/index.ts:main",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/sandbox/wsl-agent/index.ts",
+      "target": "class:src/main/sandbox/wsl-agent/index.ts:SandboxAgent",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/index.ts:main",
+      "target": "function:src/main/sandbox/wsl-agent/index.ts:readline.createInterface",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/index.ts:main",
+      "target": "function:src/main/sandbox/wsl-agent/index.ts:log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/index.ts:main",
+      "target": "function:src/main/sandbox/wsl-agent/index.ts:rl.on",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/index.ts:main",
+      "target": "function:src/main/sandbox/wsl-agent/index.ts:line.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/index.ts:main",
+      "target": "function:src/main/sandbox/wsl-agent/index.ts:JSON.parse",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/index.ts:main",
+      "target": "function:src/main/sandbox/wsl-agent/index.ts:agent.handleRequest",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/index.ts:main",
+      "target": "function:src/main/sandbox/wsl-agent/index.ts:sendResponse",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/index.ts:main",
+      "target": "function:src/main/sandbox/wsl-agent/index.ts:String",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/index.ts:main",
+      "target": "function:src/main/sandbox/wsl-agent/index.ts:logError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/index.ts:main",
+      "target": "function:src/main/sandbox/wsl-agent/index.ts:sendResponse",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/index.ts:main",
+      "target": "function:src/main/sandbox/wsl-agent/index.ts:rl.on",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/index.ts:main",
+      "target": "function:src/main/sandbox/wsl-agent/index.ts:log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/index.ts:main",
+      "target": "function:src/main/sandbox/wsl-agent/index.ts:process.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/index.ts:main",
+      "target": "function:src/main/sandbox/wsl-agent/index.ts:process.on",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/index.ts:main",
+      "target": "function:src/main/sandbox/wsl-agent/index.ts:log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/index.ts:main",
+      "target": "function:src/main/sandbox/wsl-agent/index.ts:process.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/index.ts:main",
+      "target": "function:src/main/sandbox/wsl-agent/index.ts:process.on",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/index.ts:main",
+      "target": "function:src/main/sandbox/wsl-agent/index.ts:log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/index.ts:main",
+      "target": "function:src/main/sandbox/wsl-agent/index.ts:process.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/index.ts:main",
+      "target": "function:src/main/sandbox/wsl-agent/index.ts:process.on",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/index.ts:main",
+      "target": "function:src/main/sandbox/wsl-agent/index.ts:logError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/index.ts:main",
+      "target": "function:src/main/sandbox/wsl-agent/index.ts:process.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/index.ts:main",
+      "target": "function:src/main/sandbox/wsl-agent/index.ts:process.on",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/index.ts:main",
+      "target": "function:src/main/sandbox/wsl-agent/index.ts:logError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/sandbox/wsl-agent/path-containment.ts",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:normalizePathForContainment",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/sandbox/wsl-agent/path-containment.ts",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:resolveSegments",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/sandbox/wsl-agent/path-containment.ts",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:canonicalizePath",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/sandbox/wsl-agent/path-containment.ts",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:isPathWithinRoot",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:normalizePathForContainment",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:pathValue.replace(/[\\\\/]+/g, '/').replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:normalizePathForContainment",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:pathValue.replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:normalizePathForContainment",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:pathValue.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:normalizePathForContainment",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:pathValue.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:normalizePathForContainment",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:normalized.toLowerCase",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:resolveSegments",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:pathValue.split(/[\\\\/]+/).filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:resolveSegments",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:pathValue.split",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:resolveSegments",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:resolved.pop",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:resolveSegments",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:resolved.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:resolveSegments",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:normalizeSegment",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:pathValue.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:isWindowsDrivePath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:normalizeSegment",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:pathValue.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:resolveSegments",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:pathValue.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:isUncPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:/^\\/\\/[^/]+\\/+[^/]+/.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:pathValue.replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:normalized.match",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:normalizeSegment",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:normalizeSegment",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:resolveSegments",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:pathValue.startsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:pathValue.startsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:canonicalizePath",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:resolveSegments",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:isPathWithinRoot",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:canonicalizePath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:isPathWithinRoot",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:canonicalizePath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/sandbox/wsl-agent/path-containment.ts:isPathWithinRoot",
+      "target": "function:src/main/sandbox/wsl-agent/path-containment.ts:normalizedRoot.segments.every",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/utils/error-utils.ts",
+      "target": "function:src/main/utils/error-utils.ts:getErrorMessage",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/error-utils.ts",
+      "target": "function:src/main/utils/error-utils.ts:getErrorDetails",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/utils/error-utils.ts:getErrorMessage",
+      "target": "function:src/main/utils/error-utils.ts:String",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/error-utils.ts:getErrorDetails",
+      "target": "function:src/main/utils/error-utils.ts:String",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ]
+}

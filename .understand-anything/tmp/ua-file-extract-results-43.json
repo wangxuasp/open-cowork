@@ -1,0 +1,952 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "tests/dark-theme-palette.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 20,
+      "nonEmptyLines": 17,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/database-path-recovery.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 147,
+      "nonEmptyLines": 118,
+      "functions": [
+        {
+          "name": "mockElectron",
+          "startLine": 8,
+          "endLine": 19,
+          "params": ["userDataPath"]
+        },
+        {
+          "name": "mockLogger",
+          "startLine": 21,
+          "endLine": 27,
+          "params": []
+        },
+        {
+          "name": "mockBetterSqlite",
+          "startLine": 29,
+          "endLine": 61,
+          "params": []
+        },
+        {
+          "name": "loadDatabaseModule",
+          "startLine": 63,
+          "endLine": 69,
+          "params": ["userDataPath"]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "mockElectron",
+          "callee": "vi.doMock",
+          "lineNumber": 9
+        },
+        {
+          "caller": "mockLogger",
+          "callee": "vi.doMock",
+          "lineNumber": 22
+        },
+        {
+          "caller": "mockLogger",
+          "callee": "vi.fn",
+          "lineNumber": 23
+        },
+        {
+          "caller": "mockLogger",
+          "callee": "vi.fn",
+          "lineNumber": 24
+        },
+        {
+          "caller": "mockLogger",
+          "callee": "vi.fn",
+          "lineNumber": 25
+        },
+        {
+          "caller": "mockBetterSqlite",
+          "callee": "vi.doMock",
+          "lineNumber": 30
+        },
+        {
+          "caller": "constructor",
+          "callee": "path.dirname",
+          "lineNumber": 33
+        },
+        {
+          "caller": "constructor",
+          "callee": "fs.existsSync",
+          "lineNumber": 34
+        },
+        {
+          "caller": "constructor",
+          "callee": "fs.statSync(parentDir).isDirectory",
+          "lineNumber": 34
+        },
+        {
+          "caller": "constructor",
+          "callee": "fs.statSync",
+          "lineNumber": 34
+        },
+        {
+          "caller": "constructor",
+          "callee": "fs.existsSync",
+          "lineNumber": 37
+        },
+        {
+          "caller": "constructor",
+          "callee": "fs.writeFileSync",
+          "lineNumber": 38
+        },
+        {
+          "caller": "loadDatabaseModule",
+          "callee": "vi.resetModules",
+          "lineNumber": 64
+        },
+        {
+          "caller": "loadDatabaseModule",
+          "callee": "mockElectron",
+          "lineNumber": 65
+        },
+        {
+          "caller": "loadDatabaseModule",
+          "callee": "mockLogger",
+          "lineNumber": 66
+        },
+        {
+          "caller": "loadDatabaseModule",
+          "callee": "mockBetterSqlite",
+          "lineNumber": 67
+        },
+        {
+          "caller": "loadDatabaseModule",
+          "callee": "import",
+          "lineNumber": 68
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/deepseek-common.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 60,
+      "nonEmptyLines": 51,
+      "functions": [
+        {
+          "name": "importCommonWithExecFileSync",
+          "startLine": 3,
+          "endLine": 7,
+          "params": ["execFileSync"]
+        },
+        {
+          "name": "missingCommandError",
+          "startLine": 9,
+          "endLine": 13,
+          "params": ["command"]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "importCommonWithExecFileSync",
+          "callee": "vi.resetModules",
+          "lineNumber": 4
+        },
+        {
+          "caller": "importCommonWithExecFileSync",
+          "callee": "vi.doMock",
+          "lineNumber": 5
+        },
+        {
+          "caller": "importCommonWithExecFileSync",
+          "callee": "import",
+          "lineNumber": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/deepseek-thinking-serialization.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 292,
+      "nonEmptyLines": 260,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/dev-script-guard.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 13,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/electron-builder-branding.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 16,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/electron-builder-native-rebuild.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 15,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/index-config-window-behavior.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 22,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/index-file-navigation-handling.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 13,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/logger-context.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 268,
+      "nonEmptyLines": 227,
+      "functions": [
+        {
+          "name": "getLogContent",
+          "startLine": 39,
+          "endLine": 64,
+          "params": ["logger"]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getLogContent",
+          "callee": "import",
+          "lineNumber": 39
+        },
+        {
+          "caller": "getLogContent",
+          "callee": "logger.getLogFilePath",
+          "lineNumber": 40
+        },
+        {
+          "caller": "getLogContent",
+          "callee": "expect(logFilePath).toBeTruthy",
+          "lineNumber": 41
+        },
+        {
+          "caller": "getLogContent",
+          "callee": "expect",
+          "lineNumber": 41
+        },
+        {
+          "caller": "getLogContent",
+          "callee": "logger.closeLogFile",
+          "lineNumber": 46
+        },
+        {
+          "caller": "getLogContent",
+          "callee": "resolve",
+          "lineNumber": 52
+        },
+        {
+          "caller": "getLogContent",
+          "callee": "stream.once",
+          "lineNumber": 55
+        },
+        {
+          "caller": "getLogContent",
+          "callee": "stream.once",
+          "lineNumber": 56
+        },
+        {
+          "caller": "getLogContent",
+          "callee": "setTimeout",
+          "lineNumber": 60
+        },
+        {
+          "caller": "getLogContent",
+          "callee": "fs.readFileSync",
+          "lineNumber": 63
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/logger-fallback.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 132,
+      "nonEmptyLines": 105,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/message-card-ask-user-question-state.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 24,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/message-card-citation-link-normalization.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 30,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/message-card-claude-layout.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 28,
+      "nonEmptyLines": 24,
+      "functions": [
+        {
+          "name": "readAllMessageContent",
+          "startLine": 9,
+          "endLine": 14,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "readAllMessageContent",
+          "callee": "[\n    fs.readFileSync(messageCardPath, 'utf8'),\n    ...fs.readdirSync(messageDir).map((f) => fs.readFileSync(path.join(messageDir, f), 'utf8')),\n  ].join",
+          "lineNumber": 10
+        },
+        {
+          "caller": "readAllMessageContent",
+          "callee": "fs.readFileSync",
+          "lineNumber": 11
+        },
+        {
+          "caller": "readAllMessageContent",
+          "callee": "fs.readdirSync(messageDir).map",
+          "lineNumber": 12
+        },
+        {
+          "caller": "readAllMessageContent",
+          "callee": "fs.readdirSync",
+          "lineNumber": 12
+        },
+        {
+          "caller": "readAllMessageContent",
+          "callee": "fs.readFileSync",
+          "lineNumber": 12
+        },
+        {
+          "caller": "readAllMessageContent",
+          "callee": "path.join",
+          "lineNumber": 12
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/message-card-file-attachment-layout.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 24,
+      "functions": [
+        {
+          "name": "readMessageCard",
+          "startLine": 6,
+          "endLine": 13,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "readMessageCard",
+          "callee": "path.resolve",
+          "lineNumber": 7
+        },
+        {
+          "caller": "readMessageCard",
+          "callee": "path.resolve",
+          "lineNumber": 8
+        },
+        {
+          "caller": "readMessageCard",
+          "callee": "[\n    fs.readFileSync(messageCardPath, 'utf8'),\n    ...fs.readdirSync(messageDir).map((f) => fs.readFileSync(path.join(messageDir, f), 'utf8')),\n  ].join",
+          "lineNumber": 9
+        },
+        {
+          "caller": "readMessageCard",
+          "callee": "fs.readFileSync",
+          "lineNumber": 10
+        },
+        {
+          "caller": "readMessageCard",
+          "callee": "fs.readdirSync(messageDir).map",
+          "lineNumber": 11
+        },
+        {
+          "caller": "readMessageCard",
+          "callee": "fs.readdirSync",
+          "lineNumber": 11
+        },
+        {
+          "caller": "readMessageCard",
+          "callee": "fs.readFileSync",
+          "lineNumber": 11
+        },
+        {
+          "caller": "readMessageCard",
+          "callee": "path.join",
+          "lineNumber": 11
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/message-card-link-handling.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 44,
+      "nonEmptyLines": 36,
+      "functions": [
+        {
+          "name": "readAllMessageContent",
+          "startLine": 9,
+          "endLine": 14,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "readAllMessageContent",
+          "callee": "[\n    fs.readFileSync(messageCardPath, 'utf8'),\n    ...fs.readdirSync(messageDir).map((f) => fs.readFileSync(path.join(messageDir, f), 'utf8')),\n  ].join",
+          "lineNumber": 10
+        },
+        {
+          "caller": "readAllMessageContent",
+          "callee": "fs.readFileSync",
+          "lineNumber": 11
+        },
+        {
+          "caller": "readAllMessageContent",
+          "callee": "fs.readdirSync(messageDir).map",
+          "lineNumber": 12
+        },
+        {
+          "caller": "readAllMessageContent",
+          "callee": "fs.readdirSync",
+          "lineNumber": 12
+        },
+        {
+          "caller": "readAllMessageContent",
+          "callee": "fs.readFileSync",
+          "lineNumber": 12
+        },
+        {
+          "caller": "readAllMessageContent",
+          "callee": "path.join",
+          "lineNumber": 12
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/message-markdown-katex.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 22,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/mocks/electron.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 141,
+      "nonEmptyLines": 121,
+      "functions": [
+        {
+          "name": "noop",
+          "startLine": 1,
+          "endLine": 1,
+          "params": []
+        },
+        {
+          "name": "noopAsync",
+          "startLine": 2,
+          "endLine": 2,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "MockBrowserWindow",
+          "startLine": 4,
+          "endLine": 47,
+          "methods": [
+            "getAllWindows",
+            "getFocusedWindow",
+            "isDestroyed",
+            "isMinimized",
+            "isMaximized"
+          ],
+          "properties": [
+            "webContents",
+            "loadURL",
+            "loadFile",
+            "on",
+            "once",
+            "show",
+            "hide",
+            "close",
+            "destroy",
+            "focus",
+            "restore",
+            "minimize",
+            "maximize",
+            "unmaximize",
+            "setMenuBarVisibility",
+            "setBackgroundColor"
+          ]
+        },
+        {
+          "name": "MockTray",
+          "startLine": 49,
+          "endLine": 56,
+          "methods": ["constructor"],
+          "properties": ["setToolTip", "setContextMenu", "on", "destroy"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "app",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "ipcMain",
+          "line": 80,
+          "isDefault": false
+        },
+        {
+          "name": "ipcRenderer",
+          "line": 87,
+          "isDefault": false
+        },
+        {
+          "name": "dialog",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "shell",
+          "line": 104,
+          "isDefault": false
+        },
+        {
+          "name": "nativeTheme",
+          "line": 110,
+          "isDefault": false
+        },
+        {
+          "name": "Menu",
+          "line": 116,
+          "isDefault": false
+        },
+        {
+          "name": "BrowserWindow",
+          "line": 121,
+          "isDefault": false
+        },
+        {
+          "name": "Tray",
+          "line": 122,
+          "isDefault": false
+        },
+        {
+          "name": "contextBridge",
+          "line": 124,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 2,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "tests/nav-server-session-id-validation.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 46,
+      "nonEmptyLines": 39,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/omni-worker-logo-entry.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 15,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/plugin-runtime-service.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 412,
+      "nonEmptyLines": 370,
+      "functions": [
+        {
+          "name": "createPluginFixture",
+          "startLine": 34,
+          "endLine": 73,
+          "params": ["root", "pluginName"]
+        },
+        {
+          "name": "createRuntimeService",
+          "startLine": 75,
+          "endLine": 82,
+          "params": ["options"]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createPluginFixture",
+          "callee": "path.join",
+          "lineNumber": 35
+        },
+        {
+          "caller": "createPluginFixture",
+          "callee": "fs.mkdirSync",
+          "lineNumber": 36
+        },
+        {
+          "caller": "createPluginFixture",
+          "callee": "path.join",
+          "lineNumber": 36
+        },
+        {
+          "caller": "createPluginFixture",
+          "callee": "fs.writeFileSync",
+          "lineNumber": 37
+        },
+        {
+          "caller": "createPluginFixture",
+          "callee": "path.join",
+          "lineNumber": 38
+        },
+        {
+          "caller": "createPluginFixture",
+          "callee": "JSON.stringify",
+          "lineNumber": 39
+        },
+        {
+          "caller": "createPluginFixture",
+          "callee": "fs.mkdirSync",
+          "lineNumber": 51
+        },
+        {
+          "caller": "createPluginFixture",
+          "callee": "path.join",
+          "lineNumber": 51
+        },
+        {
+          "caller": "createPluginFixture",
+          "callee": "fs.writeFileSync",
+          "lineNumber": 52
+        },
+        {
+          "caller": "createPluginFixture",
+          "callee": "path.join",
+          "lineNumber": 53
+        },
+        {
+          "caller": "createPluginFixture",
+          "callee": "fs.mkdirSync",
+          "lineNumber": 58
+        },
+        {
+          "caller": "createPluginFixture",
+          "callee": "path.join",
+          "lineNumber": 58
+        },
+        {
+          "caller": "createPluginFixture",
+          "callee": "fs.writeFileSync",
+          "lineNumber": 59
+        },
+        {
+          "caller": "createPluginFixture",
+          "callee": "path.join",
+          "lineNumber": 59
+        },
+        {
+          "caller": "createPluginFixture",
+          "callee": "fs.mkdirSync",
+          "lineNumber": 61
+        },
+        {
+          "caller": "createPluginFixture",
+          "callee": "path.join",
+          "lineNumber": 61
+        },
+        {
+          "caller": "createPluginFixture",
+          "callee": "fs.writeFileSync",
+          "lineNumber": 62
+        },
+        {
+          "caller": "createPluginFixture",
+          "callee": "path.join",
+          "lineNumber": 62
+        },
+        {
+          "caller": "createPluginFixture",
+          "callee": "fs.mkdirSync",
+          "lineNumber": 64
+        },
+        {
+          "caller": "createPluginFixture",
+          "callee": "path.join",
+          "lineNumber": 64
+        },
+        {
+          "caller": "createPluginFixture",
+          "callee": "fs.writeFileSync",
+          "lineNumber": 65
+        },
+        {
+          "caller": "createPluginFixture",
+          "callee": "path.join",
+          "lineNumber": 66
+        },
+        {
+          "caller": "createPluginFixture",
+          "callee": "JSON.stringify",
+          "lineNumber": 67
+        },
+        {
+          "caller": "createPluginFixture",
+          "callee": "fs.writeFileSync",
+          "lineNumber": 71
+        },
+        {
+          "caller": "createPluginFixture",
+          "callee": "path.join",
+          "lineNumber": 71
+        },
+        {
+          "caller": "createPluginFixture",
+          "callee": "JSON.stringify",
+          "lineNumber": 71
+        },
+        {
+          "caller": "createRuntimeService",
+          "callee": "import",
+          "lineNumber": 76
+        },
+        {
+          "caller": "createRuntimeService",
+          "callee": "vi.fn",
+          "lineNumber": 78
+        },
+        {
+          "caller": "createRuntimeService",
+          "callee": "vi.fn",
+          "lineNumber": 79
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/prose-chat-list-style.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 32,
+      "nonEmptyLines": 27,
+      "functions": [
+        {
+          "name": "readStyles",
+          "startLine": 5,
+          "endLine": 8,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "readStyles",
+          "callee": "path.resolve",
+          "lineNumber": 6
+        },
+        {
+          "caller": "readStyles",
+          "callee": "fs.readFileSync",
+          "lineNumber": 7
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/provider-guidance-ui.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 29,
+      "nonEmptyLines": 26,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/remote-control-panel-claude-layout.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 11,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/remote-control-panel-imports.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 16,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

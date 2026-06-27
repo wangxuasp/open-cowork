@@ -1,0 +1,1372 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/renderer/utils/sandbox-i18n.ts",
+      "type": "file",
+      "name": "sandbox-i18n.ts",
+      "filePath": "src/renderer/utils/sandbox-i18n.ts",
+      "summary": "源码模块 src/renderer/utils/sandbox-i18n.ts，包含 6 个函数，约 101 行有效代码。",
+      "tags": ["infrastructure", "security", "component", "ui", "utility"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/utils/sandbox-i18n.ts:translateSetupMessage",
+      "type": "function",
+      "name": "translateSetupMessage",
+      "filePath": "src/renderer/utils/sandbox-i18n.ts",
+      "summary": "函数 translateSetupMessage，位于 src/renderer/utils/sandbox-i18n.ts 第 4-27 行。",
+      "tags": ["infrastructure", "security", "component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/utils/sandbox-i18n.ts:translateSetupDetail",
+      "type": "function",
+      "name": "translateSetupDetail",
+      "filePath": "src/renderer/utils/sandbox-i18n.ts",
+      "summary": "函数 translateSetupDetail，位于 src/renderer/utils/sandbox-i18n.ts 第 29-60 行。",
+      "tags": ["infrastructure", "security", "component", "ui"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/utils/sandbox-i18n.ts:translateSyncMessage",
+      "type": "function",
+      "name": "translateSyncMessage",
+      "filePath": "src/renderer/utils/sandbox-i18n.ts",
+      "summary": "函数 translateSyncMessage，位于 src/renderer/utils/sandbox-i18n.ts 第 62-71 行。",
+      "tags": ["infrastructure", "security", "component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/utils/sandbox-i18n.ts:translateSyncDetail",
+      "type": "function",
+      "name": "translateSyncDetail",
+      "filePath": "src/renderer/utils/sandbox-i18n.ts",
+      "summary": "函数 translateSyncDetail，位于 src/renderer/utils/sandbox-i18n.ts 第 73-87 行。",
+      "tags": ["infrastructure", "security", "component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/utils/sandbox-i18n.ts:getSandboxSetupDisplayText",
+      "type": "function",
+      "name": "getSandboxSetupDisplayText",
+      "filePath": "src/renderer/utils/sandbox-i18n.ts",
+      "summary": "函数 getSandboxSetupDisplayText，位于 src/renderer/utils/sandbox-i18n.ts 第 89-97 行。",
+      "tags": ["infrastructure", "security", "component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/utils/sandbox-i18n.ts:getSandboxSyncDisplayText",
+      "type": "function",
+      "name": "getSandboxSyncDisplayText",
+      "filePath": "src/renderer/utils/sandbox-i18n.ts",
+      "summary": "函数 getSandboxSyncDisplayText，位于 src/renderer/utils/sandbox-i18n.ts 第 99-107 行。",
+      "tags": ["infrastructure", "security", "component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/renderer/utils/session-switch.ts",
+      "type": "file",
+      "name": "session-switch.ts",
+      "filePath": "src/renderer/utils/session-switch.ts",
+      "summary": "源码模块 src/renderer/utils/session-switch.ts，包含 1 个函数，约 63 行有效代码。",
+      "tags": ["component", "ui"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/utils/session-switch.ts:switchToSession",
+      "type": "function",
+      "name": "switchToSession",
+      "filePath": "src/renderer/utils/session-switch.ts",
+      "summary": "函数 switchToSession，位于 src/renderer/utils/session-switch.ts 第 21-72 行。",
+      "tags": ["component", "ui"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/renderer/utils/session-update.ts",
+      "type": "file",
+      "name": "session-update.ts",
+      "filePath": "src/renderer/utils/session-update.ts",
+      "summary": "源码模块 src/renderer/utils/session-update.ts，包含 2 个函数，约 29 行有效代码。",
+      "tags": ["component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/utils/session-update.ts:applySessionUpdate",
+      "type": "function",
+      "name": "applySessionUpdate",
+      "filePath": "src/renderer/utils/session-update.ts",
+      "summary": "函数 applySessionUpdate，位于 src/renderer/utils/session-update.ts 第 3-19 行。",
+      "tags": ["component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/utils/session-update.ts:isInsertableSessionUpdate",
+      "type": "function",
+      "name": "isInsertableSessionUpdate",
+      "filePath": "src/renderer/utils/session-update.ts",
+      "summary": "函数 isInsertableSessionUpdate，位于 src/renderer/utils/session-update.ts 第 21-31 行。",
+      "tags": ["component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/renderer/utils/tool-output-path.ts",
+      "type": "file",
+      "name": "tool-output-path.ts",
+      "filePath": "src/renderer/utils/tool-output-path.ts",
+      "summary": "源码模块 src/renderer/utils/tool-output-path.ts，包含 4 个函数，约 76 行有效代码。",
+      "tags": ["component", "ui"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromToolOutput",
+      "type": "function",
+      "name": "extractFilePathFromToolOutput",
+      "filePath": "src/renderer/utils/tool-output-path.ts",
+      "summary": "函数 extractFilePathFromToolOutput，位于 src/renderer/utils/tool-output-path.ts 第 17-52 行。",
+      "tags": ["component", "ui"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromToolInput",
+      "type": "function",
+      "name": "extractFilePathFromToolInput",
+      "filePath": "src/renderer/utils/tool-output-path.ts",
+      "summary": "函数 extractFilePathFromToolInput，位于 src/renderer/utils/tool-output-path.ts 第 54-70 行。",
+      "tags": ["component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromText",
+      "type": "function",
+      "name": "extractFilePathFromText",
+      "filePath": "src/renderer/utils/tool-output-path.ts",
+      "summary": "函数 extractFilePathFromText，位于 src/renderer/utils/tool-output-path.ts 第 72-83 行。",
+      "tags": ["component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/renderer/utils/tool-result-summary.ts",
+      "type": "file",
+      "name": "tool-result-summary.ts",
+      "filePath": "src/renderer/utils/tool-result-summary.ts",
+      "summary": "源码模块 src/renderer/utils/tool-result-summary.ts，包含 4 个函数，约 47 行有效代码。",
+      "tags": ["component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/utils/tool-result-summary.ts:isScreenshotToolName",
+      "type": "function",
+      "name": "isScreenshotToolName",
+      "filePath": "src/renderer/utils/tool-result-summary.ts",
+      "summary": "函数 isScreenshotToolName，位于 src/renderer/utils/tool-result-summary.ts 第 7-16 行。",
+      "tags": ["component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/utils/tool-result-summary.ts:shouldUseScreenshotSummary",
+      "type": "function",
+      "name": "shouldUseScreenshotSummary",
+      "filePath": "src/renderer/utils/tool-result-summary.ts",
+      "summary": "函数 shouldUseScreenshotSummary，位于 src/renderer/utils/tool-result-summary.ts 第 18-23 行。",
+      "tags": ["component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/utils/tool-result-summary.ts:shouldPreferToolResultImages",
+      "type": "function",
+      "name": "shouldPreferToolResultImages",
+      "filePath": "src/renderer/utils/tool-result-summary.ts",
+      "summary": "函数 shouldPreferToolResultImages，位于 src/renderer/utils/tool-result-summary.ts 第 25-41 行。",
+      "tags": ["component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/utils/tool-result-summary.ts:shouldRenderToolResultText",
+      "type": "function",
+      "name": "shouldRenderToolResultText",
+      "filePath": "src/renderer/utils/tool-result-summary.ts",
+      "summary": "函数 shouldRenderToolResultText，位于 src/renderer/utils/tool-result-summary.ts 第 43-54 行。",
+      "tags": ["component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/shared/ipc-types.ts",
+      "type": "file",
+      "name": "ipc-types.ts",
+      "filePath": "src/shared/ipc-types.ts",
+      "summary": "源码模块 src/shared/ipc-types.ts，体量 144 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/shared/session-title.ts",
+      "type": "file",
+      "name": "session-title.ts",
+      "filePath": "src/shared/session-title.ts",
+      "summary": "源码模块 src/shared/session-title.ts，包含 3 个函数，约 23 行有效代码。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/shared/session-title.ts:getDefaultTitleFromPrompt",
+      "type": "function",
+      "name": "getDefaultTitleFromPrompt",
+      "filePath": "src/shared/session-title.ts",
+      "summary": "函数 getDefaultTitleFromPrompt，位于 src/shared/session-title.ts 第 10-14 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/shared/session-title.ts:getInitialSessionTitle",
+      "type": "function",
+      "name": "getInitialSessionTitle",
+      "filePath": "src/shared/session-title.ts",
+      "summary": "函数 getInitialSessionTitle，位于 src/shared/session-title.ts 第 16-28 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/tests/claude/agent-runner-history-rebuild.test.ts",
+      "type": "file",
+      "name": "agent-runner-history-rebuild.test.ts",
+      "filePath": "src/tests/claude/agent-runner-history-rebuild.test.ts",
+      "summary": "源码模块 src/tests/claude/agent-runner-history-rebuild.test.ts，体量 224 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test", "entry-point", "service"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/tests/renderer/session-switch.test.ts",
+      "type": "file",
+      "name": "session-switch.test.ts",
+      "filePath": "src/tests/renderer/session-switch.test.ts",
+      "summary": "源码模块 src/tests/renderer/session-switch.test.ts，包含 2 个函数，约 74 行有效代码。",
+      "tags": ["test", "component", "ui"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/tests/renderer/sidebar-session-click.test.ts",
+      "type": "file",
+      "name": "sidebar-session-click.test.ts",
+      "filePath": "src/tests/renderer/sidebar-session-click.test.ts",
+      "summary": "源码模块 src/tests/renderer/sidebar-session-click.test.ts，体量 105 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test", "component", "ui"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/tests/store/session-state.test.ts",
+      "type": "file",
+      "name": "session-state.test.ts",
+      "filePath": "src/tests/store/session-state.test.ts",
+      "summary": "源码模块 src/tests/store/session-state.test.ts，体量 300 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test", "state-management"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/artifact-icon.test.ts",
+      "type": "file",
+      "name": "artifact-icon.test.ts",
+      "filePath": "tests/artifact-icon.test.ts",
+      "summary": "源码模块 tests/artifact-icon.test.ts，体量 27 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/artifact-parser.test.ts",
+      "type": "file",
+      "name": "artifact-parser.test.ts",
+      "filePath": "tests/artifact-parser.test.ts",
+      "summary": "源码模块 tests/artifact-parser.test.ts，体量 49 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/artifact-steps.test.ts",
+      "type": "file",
+      "name": "artifact-steps.test.ts",
+      "filePath": "tests/artifact-steps.test.ts",
+      "summary": "源码模块 tests/artifact-steps.test.ts，体量 288 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/client-event-utils.test.ts",
+      "type": "file",
+      "name": "client-event-utils.test.ts",
+      "filePath": "tests/client-event-utils.test.ts",
+      "summary": "源码模块 tests/client-event-utils.test.ts，包含 1 个函数，约 60 行有效代码。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/client-event-utils.test.ts:makeEvent",
+      "type": "function",
+      "name": "makeEvent",
+      "filePath": "tests/client-event-utils.test.ts",
+      "summary": "函数 makeEvent，位于 tests/client-event-utils.test.ts 第 5-32 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/diagnostics-summary.test.ts",
+      "type": "file",
+      "name": "diagnostics-summary.test.ts",
+      "filePath": "tests/diagnostics-summary.test.ts",
+      "summary": "源码模块 tests/diagnostics-summary.test.ts，体量 215 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/file-link.test.ts",
+      "type": "file",
+      "name": "file-link.test.ts",
+      "filePath": "tests/file-link.test.ts",
+      "summary": "源码模块 tests/file-link.test.ts，体量 108 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/latex-delimiters.test.ts",
+      "type": "file",
+      "name": "latex-delimiters.test.ts",
+      "filePath": "tests/latex-delimiters.test.ts",
+      "summary": "源码模块 tests/latex-delimiters.test.ts，体量 63 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/memory-manager-no-fts.test.ts",
+      "type": "file",
+      "name": "memory-manager-no-fts.test.ts",
+      "filePath": "tests/memory-manager-no-fts.test.ts",
+      "summary": "源码模块 tests/memory-manager-no-fts.test.ts，包含 1 个函数，约 93 行有效代码。",
+      "tags": ["test", "service"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/memory-manager-no-fts.test.ts:createDbStub",
+      "type": "function",
+      "name": "createDbStub",
+      "filePath": "tests/memory-manager-no-fts.test.ts",
+      "summary": "函数 createDbStub，位于 tests/memory-manager-no-fts.test.ts 第 20-55 行。",
+      "tags": ["test", "service"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/path-resolver-containment.test.ts",
+      "type": "file",
+      "name": "path-resolver-containment.test.ts",
+      "filePath": "tests/path-resolver-containment.test.ts",
+      "summary": "源码模块 tests/path-resolver-containment.test.ts，体量 29 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/plugin-catalog-dev-impl.test.ts",
+      "type": "file",
+      "name": "plugin-catalog-dev-impl.test.ts",
+      "filePath": "tests/plugin-catalog-dev-impl.test.ts",
+      "summary": "源码模块 tests/plugin-catalog-dev-impl.test.ts，包含 3 个函数，约 148 行有效代码。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/plugin-catalog-dev-impl.test.ts:pluginDetailHtml",
+      "type": "function",
+      "name": "pluginDetailHtml",
+      "filePath": "tests/plugin-catalog-dev-impl.test.ts",
+      "summary": "函数 pluginDetailHtml，位于 tests/plugin-catalog-dev-impl.test.ts 第 16-39 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/plugin-catalog-dev-impl.test.ts:mockResponse",
+      "type": "function",
+      "name": "mockResponse",
+      "filePath": "tests/plugin-catalog-dev-impl.test.ts",
+      "summary": "函数 mockResponse，位于 tests/plugin-catalog-dev-impl.test.ts 第 41-60 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/plugin-catalog-service.test.ts",
+      "type": "file",
+      "name": "plugin-catalog-service.test.ts",
+      "filePath": "tests/plugin-catalog-service.test.ts",
+      "summary": "源码模块 tests/plugin-catalog-service.test.ts，包含 1 个函数，约 136 行有效代码。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/renderer-diagnostics.test.ts",
+      "type": "file",
+      "name": "renderer-diagnostics.test.ts",
+      "filePath": "tests/renderer-diagnostics.test.ts",
+      "summary": "源码模块 tests/renderer-diagnostics.test.ts，体量 27 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test", "component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/session-title-defaults.test.ts",
+      "type": "file",
+      "name": "session-title-defaults.test.ts",
+      "filePath": "tests/session-title-defaults.test.ts",
+      "summary": "源码模块 tests/session-title-defaults.test.ts，体量 18 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/session-update-event.test.ts",
+      "type": "file",
+      "name": "session-update-event.test.ts",
+      "filePath": "tests/session-update-event.test.ts",
+      "summary": "源码模块 tests/session-update-event.test.ts，体量 30 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/tool-output-path.test.ts",
+      "type": "file",
+      "name": "tool-output-path.test.ts",
+      "filePath": "tests/tool-output-path.test.ts",
+      "summary": "源码模块 tests/tool-output-path.test.ts，体量 63 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/tool-result-summary.test.ts",
+      "type": "file",
+      "name": "tool-result-summary.test.ts",
+      "filePath": "tests/tool-result-summary.test.ts",
+      "summary": "源码模块 tests/tool-result-summary.test.ts，体量 53 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/renderer/utils/sandbox-i18n.ts",
+      "target": "file:src/renderer/types/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/utils/sandbox-i18n.ts",
+      "target": "function:src/renderer/utils/sandbox-i18n.ts:translateSetupMessage",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/utils/sandbox-i18n.ts",
+      "target": "function:src/renderer/utils/sandbox-i18n.ts:translateSetupDetail",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/utils/sandbox-i18n.ts",
+      "target": "function:src/renderer/utils/sandbox-i18n.ts:translateSyncMessage",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/utils/sandbox-i18n.ts",
+      "target": "function:src/renderer/utils/sandbox-i18n.ts:translateSyncDetail",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/utils/sandbox-i18n.ts",
+      "target": "function:src/renderer/utils/sandbox-i18n.ts:getSandboxSetupDisplayText",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/utils/sandbox-i18n.ts",
+      "target": "function:src/renderer/utils/sandbox-i18n.ts:getSandboxSyncDisplayText",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/renderer/utils/sandbox-i18n.ts:translateSetupMessage",
+      "target": "function:src/renderer/utils/sandbox-i18n.ts:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/sandbox-i18n.ts:translateSetupDetail",
+      "target": "function:src/renderer/utils/sandbox-i18n.ts:detail.match",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/sandbox-i18n.ts:translateSetupDetail",
+      "target": "function:src/renderer/utils/sandbox-i18n.ts:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/sandbox-i18n.ts:translateSetupDetail",
+      "target": "function:src/renderer/utils/sandbox-i18n.ts:detail.match",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/sandbox-i18n.ts:translateSetupDetail",
+      "target": "function:src/renderer/utils/sandbox-i18n.ts:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/sandbox-i18n.ts:translateSetupDetail",
+      "target": "function:src/renderer/utils/sandbox-i18n.ts:detail.match",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/sandbox-i18n.ts:translateSetupDetail",
+      "target": "function:src/renderer/utils/sandbox-i18n.ts:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/sandbox-i18n.ts:translateSetupDetail",
+      "target": "function:src/renderer/utils/sandbox-i18n.ts:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/sandbox-i18n.ts:translateSyncMessage",
+      "target": "function:src/renderer/utils/sandbox-i18n.ts:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/sandbox-i18n.ts:translateSyncDetail",
+      "target": "function:src/renderer/utils/sandbox-i18n.ts:/^Synced \\d+ files$/.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/sandbox-i18n.ts:translateSyncDetail",
+      "target": "function:src/renderer/utils/sandbox-i18n.ts:Number",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/sandbox-i18n.ts:translateSyncDetail",
+      "target": "function:src/renderer/utils/sandbox-i18n.ts:detail.match",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/sandbox-i18n.ts:translateSyncDetail",
+      "target": "function:src/renderer/utils/sandbox-i18n.ts:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/sandbox-i18n.ts:translateSyncDetail",
+      "target": "function:src/renderer/utils/sandbox-i18n.ts:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/sandbox-i18n.ts:getSandboxSetupDisplayText",
+      "target": "function:src/renderer/utils/sandbox-i18n.ts:translateSetupMessage",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/sandbox-i18n.ts:getSandboxSetupDisplayText",
+      "target": "function:src/renderer/utils/sandbox-i18n.ts:translateSetupDetail",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/sandbox-i18n.ts:getSandboxSyncDisplayText",
+      "target": "function:src/renderer/utils/sandbox-i18n.ts:translateSyncMessage",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/sandbox-i18n.ts:getSandboxSyncDisplayText",
+      "target": "function:src/renderer/utils/sandbox-i18n.ts:translateSyncDetail",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/utils/session-switch.ts",
+      "target": "file:src/renderer/store/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/utils/session-switch.ts",
+      "target": "file:src/renderer/types/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/utils/session-switch.ts",
+      "target": "function:src/renderer/utils/session-switch.ts:switchToSession",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/renderer/utils/session-switch.ts:switchToSession",
+      "target": "function:src/renderer/utils/session-switch.ts:setShowSettings",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/session-switch.ts:switchToSession",
+      "target": "function:src/renderer/utils/session-switch.ts:getSessionStates",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/session-switch.ts:switchToSession",
+      "target": "function:src/renderer/utils/session-switch.ts:getSessionMessages",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/session-switch.ts:switchToSession",
+      "target": "function:src/renderer/utils/session-switch.ts:getSessionStates",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/session-switch.ts:switchToSession",
+      "target": "function:src/renderer/utils/session-switch.ts:setMessages",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/session-switch.ts:switchToSession",
+      "target": "function:src/renderer/utils/session-switch.ts:onError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/session-switch.ts:switchToSession",
+      "target": "function:src/renderer/utils/session-switch.ts:canActivate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/session-switch.ts:switchToSession",
+      "target": "function:src/renderer/utils/session-switch.ts:setActiveSession",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/session-switch.ts:switchToSession",
+      "target": "function:src/renderer/utils/session-switch.ts:getSessionStates",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/session-switch.ts:switchToSession",
+      "target": "function:src/renderer/utils/session-switch.ts:getSessionTraceSteps",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/session-switch.ts:switchToSession",
+      "target": "function:src/renderer/utils/session-switch.ts:getSessionStates",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/session-switch.ts:switchToSession",
+      "target": "function:src/renderer/utils/session-switch.ts:setTraceSteps",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/session-switch.ts:switchToSession",
+      "target": "function:src/renderer/utils/session-switch.ts:onError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/utils/session-update.ts",
+      "target": "file:src/renderer/types/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/utils/session-update.ts",
+      "target": "function:src/renderer/utils/session-update.ts:applySessionUpdate",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/utils/session-update.ts",
+      "target": "function:src/renderer/utils/session-update.ts:isInsertableSessionUpdate",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/renderer/utils/session-update.ts:applySessionUpdate",
+      "target": "function:src/renderer/utils/session-update.ts:sessions.findIndex",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/session-update.ts:applySessionUpdate",
+      "target": "function:src/renderer/utils/session-update.ts:isInsertableSessionUpdate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/session-update.ts:applySessionUpdate",
+      "target": "function:src/renderer/utils/session-update.ts:sessions.map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/session-update.ts:isInsertableSessionUpdate",
+      "target": "function:src/renderer/utils/session-update.ts:Array.isArray",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/session-update.ts:isInsertableSessionUpdate",
+      "target": "function:src/renderer/utils/session-update.ts:Array.isArray",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/utils/tool-output-path.ts",
+      "target": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromToolOutput",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/utils/tool-output-path.ts",
+      "target": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromToolInput",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/utils/tool-output-path.ts",
+      "target": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromText",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromToolOutput",
+      "target": "function:src/renderer/utils/tool-output-path.ts:toolOutput.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromToolOutput",
+      "target": "function:src/renderer/utils/tool-output-path.ts:JSON.parse",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromToolOutput",
+      "target": "function:src/renderer/utils/tool-output-path.ts:parsed.filePath.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromToolOutput",
+      "target": "function:src/renderer/utils/tool-output-path.ts:parsed.filePath.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromToolOutput",
+      "target": "function:src/renderer/utils/tool-output-path.ts:parsed.path.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromToolOutput",
+      "target": "function:src/renderer/utils/tool-output-path.ts:parsed.path.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromToolOutput",
+      "target": "function:src/renderer/utils/tool-output-path.ts:Array.isArray",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromToolOutput",
+      "target": "function:src/renderer/utils/tool-output-path.ts:parsed.content\n          .map((item) => (item && typeof item.text === 'string' ? item.text : ''))\n          .filter(Boolean)\n          .join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromToolOutput",
+      "target": "function:src/renderer/utils/tool-output-path.ts:parsed.content\n          .map((item) => (item && typeof item.text === 'string' ? item.text : ''))\n          .filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromToolOutput",
+      "target": "function:src/renderer/utils/tool-output-path.ts:parsed.content\n          .map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromToolOutput",
+      "target": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromText",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromToolOutput",
+      "target": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromText",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromToolInput",
+      "target": "function:src/renderer/utils/tool-output-path.ts:value.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromToolInput",
+      "target": "function:src/renderer/utils/tool-output-path.ts:value.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromText",
+      "target": "function:src/renderer/utils/tool-output-path.ts:text.match",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromText",
+      "target": "function:src/renderer/utils/tool-output-path.ts:text.match",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromText",
+      "target": "function:src/renderer/utils/tool-output-path.ts:text.match",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromText",
+      "target": "function:src/renderer/utils/tool-output-path.ts:text.match",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromText",
+      "target": "function:src/renderer/utils/tool-output-path.ts:text.match",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-output-path.ts:extractFilePathFromText",
+      "target": "function:src/renderer/utils/tool-output-path.ts:sanitizeMatchedPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/utils/tool-result-summary.ts",
+      "target": "function:src/renderer/utils/tool-result-summary.ts:isScreenshotToolName",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/utils/tool-result-summary.ts",
+      "target": "function:src/renderer/utils/tool-result-summary.ts:shouldUseScreenshotSummary",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/utils/tool-result-summary.ts",
+      "target": "function:src/renderer/utils/tool-result-summary.ts:shouldPreferToolResultImages",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/utils/tool-result-summary.ts",
+      "target": "function:src/renderer/utils/tool-result-summary.ts:shouldRenderToolResultText",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/renderer/utils/tool-result-summary.ts:isScreenshotToolName",
+      "target": "function:src/renderer/utils/tool-result-summary.ts:toolName.toLowerCase",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-result-summary.ts:isScreenshotToolName",
+      "target": "function:src/renderer/utils/tool-result-summary.ts:lower.endsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-result-summary.ts:isScreenshotToolName",
+      "target": "function:src/renderer/utils/tool-result-summary.ts:/(?:^|__|_)(?:screenshot|take_screenshot|capture_screenshot)(?:$|__|_)/.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-result-summary.ts:shouldUseScreenshotSummary",
+      "target": "function:src/renderer/utils/tool-result-summary.ts:isScreenshotToolName",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-result-summary.ts:shouldUseScreenshotSummary",
+      "target": "function:src/renderer/utils/tool-result-summary.ts:screenshotSuccessPattern.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-result-summary.ts:shouldPreferToolResultImages",
+      "target": "function:src/renderer/utils/tool-result-summary.ts:content.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-result-summary.ts:shouldPreferToolResultImages",
+      "target": "function:src/renderer/utils/tool-result-summary.ts:shouldUseScreenshotSummary",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-result-summary.ts:shouldPreferToolResultImages",
+      "target": "function:src/renderer/utils/tool-result-summary.ts:omittedImageOutputPattern.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-result-summary.ts:shouldPreferToolResultImages",
+      "target": "function:src/renderer/utils/tool-result-summary.ts:emptyOutputPattern.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-result-summary.ts:shouldRenderToolResultText",
+      "target": "function:src/renderer/utils/tool-result-summary.ts:content.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/tool-result-summary.ts:shouldRenderToolResultText",
+      "target": "function:src/renderer/utils/tool-result-summary.ts:shouldPreferToolResultImages",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/shared/session-title.ts",
+      "target": "function:src/shared/session-title.ts:getDefaultTitleFromPrompt",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/shared/session-title.ts",
+      "target": "function:src/shared/session-title.ts:getInitialSessionTitle",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/shared/session-title.ts:getDefaultTitleFromPrompt",
+      "target": "function:src/shared/session-title.ts:prompt.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/session-title.ts:getDefaultTitleFromPrompt",
+      "target": "function:src/shared/session-title.ts:truncateSessionTitle",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/session-title.ts:getInitialSessionTitle",
+      "target": "function:src/shared/session-title.ts:getDefaultTitleFromPrompt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/session-title.ts:getInitialSessionTitle",
+      "target": "function:src/shared/session-title.ts:firstAttachmentName?.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/session-title.ts:getInitialSessionTitle",
+      "target": "function:src/shared/session-title.ts:truncateSessionTitle",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/tests/claude/agent-runner-history-rebuild.test.ts",
+      "target": "file:src/main/claude/agent-runner.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/claude/agent-runner-history-rebuild.test.ts",
+      "target": "file:src/renderer/types/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/renderer/session-switch.test.ts",
+      "target": "file:src/renderer/store/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/renderer/session-switch.test.ts",
+      "target": "file:src/renderer/types/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/renderer/session-switch.test.ts",
+      "target": "file:src/renderer/utils/session-switch.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/renderer/sidebar-session-click.test.ts",
+      "target": "file:src/renderer/store/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/store/session-state.test.ts",
+      "target": "file:src/renderer/store/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/store/session-state.test.ts",
+      "target": "file:src/renderer/types/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/artifact-icon.test.ts",
+      "target": "file:src/renderer/utils/artifact-steps.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/artifact-parser.test.ts",
+      "target": "file:src/main/utils/artifact-parser.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/artifact-steps.test.ts",
+      "target": "file:src/renderer/types/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/artifact-steps.test.ts",
+      "target": "file:src/renderer/utils/artifact-steps.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/client-event-utils.test.ts",
+      "target": "file:src/main/client-event-utils.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/client-event-utils.test.ts",
+      "target": "file:src/renderer/types/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/client-event-utils.test.ts",
+      "target": "function:tests/client-event-utils.test.ts:makeEvent",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/diagnostics-summary.test.ts",
+      "target": "file:src/main/utils/diagnostics-summary.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/diagnostics-summary.test.ts",
+      "target": "file:src/renderer/types/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/file-link.test.ts",
+      "target": "file:src/renderer/utils/file-link.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/latex-delimiters.test.ts",
+      "target": "file:src/renderer/utils/latex-delimiters.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/memory-manager-no-fts.test.ts",
+      "target": "file:src/main/memory/memory-manager.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/memory-manager-no-fts.test.ts",
+      "target": "function:tests/memory-manager-no-fts.test.ts:createDbStub",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:tests/memory-manager-no-fts.test.ts:createDbStub",
+      "target": "function:tests/memory-manager-no-fts.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/memory-manager-no-fts.test.ts:createDbStub",
+      "target": "function:tests/memory-manager-no-fts.test.ts:sql.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/memory-manager-no-fts.test.ts:createDbStub",
+      "target": "function:tests/memory-manager-no-fts.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/memory-manager-no-fts.test.ts:createDbStub",
+      "target": "function:tests/memory-manager-no-fts.test.ts:/INSERT INTO memory_entries/i.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/memory-manager-no-fts.test.ts:createDbStub",
+      "target": "function:tests/memory-manager-no-fts.test.ts:rows.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/memory-manager-no-fts.test.ts:createDbStub",
+      "target": "function:tests/memory-manager-no-fts.test.ts:/INSERT INTO memory_fts/i.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/memory-manager-no-fts.test.ts:createDbStub",
+      "target": "function:tests/memory-manager-no-fts.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/memory-manager-no-fts.test.ts:createDbStub",
+      "target": "function:tests/memory-manager-no-fts.test.ts:(likePattern as string).slice(1, -1).toLowerCase",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/memory-manager-no-fts.test.ts:createDbStub",
+      "target": "function:tests/memory-manager-no-fts.test.ts:(likePattern as string).slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/memory-manager-no-fts.test.ts:createDbStub",
+      "target": "function:tests/memory-manager-no-fts.test.ts:rows.filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/memory-manager-no-fts.test.ts:createDbStub",
+      "target": "function:tests/memory-manager-no-fts.test.ts:r.content.toLowerCase().includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/memory-manager-no-fts.test.ts:createDbStub",
+      "target": "function:tests/memory-manager-no-fts.test.ts:r.content.toLowerCase",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/path-resolver-containment.test.ts",
+      "target": "file:src/main/sandbox/path-resolver.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/path-resolver-containment.test.ts",
+      "target": "file:src/renderer/types/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/plugin-catalog-dev-impl.test.ts",
+      "target": "file:src/main/skills/plugin-catalog-service.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/plugin-catalog-dev-impl.test.ts",
+      "target": "function:tests/plugin-catalog-dev-impl.test.ts:pluginDetailHtml",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/plugin-catalog-dev-impl.test.ts",
+      "target": "function:tests/plugin-catalog-dev-impl.test.ts:mockResponse",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:tests/plugin-catalog-dev-impl.test.ts:pluginDetailHtml",
+      "target": "function:tests/plugin-catalog-dev-impl.test.ts:[\n    '<html><head>',\n    `<title>${title}</title>`,\n    descMeta,\n    '</head><body>',\n    `<button data-copy=\"${opts.installCommand}\">Copy</button>`,\n    authorBlock,\n    '</body></html>',\n  ].join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-catalog-dev-impl.test.ts:mockResponse",
+      "target": "function:tests/plugin-catalog-dev-impl.test.ts:Promise.resolve",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-catalog-dev-impl.test.ts:mockResponse",
+      "target": "function:tests/plugin-catalog-dev-impl.test.ts:mockResponse",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-catalog-dev-impl.test.ts:mockResponse",
+      "target": "function:tests/plugin-catalog-dev-impl.test.ts:Promise.resolve",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-catalog-dev-impl.test.ts:mockResponse",
+      "target": "function:tests/plugin-catalog-dev-impl.test.ts:Promise.resolve",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-catalog-dev-impl.test.ts:mockResponse",
+      "target": "function:tests/plugin-catalog-dev-impl.test.ts:Promise.resolve",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-catalog-dev-impl.test.ts:mockResponse",
+      "target": "function:tests/plugin-catalog-dev-impl.test.ts:Promise.resolve",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/plugin-catalog-dev-impl.test.ts:mockResponse",
+      "target": "function:tests/plugin-catalog-dev-impl.test.ts:Promise.resolve",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/plugin-catalog-service.test.ts",
+      "target": "file:src/main/skills/plugin-catalog-service.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/renderer-diagnostics.test.ts",
+      "target": "file:src/renderer/utils/renderer-diagnostics.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/session-title-defaults.test.ts",
+      "target": "file:src/shared/session-title.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/session-update-event.test.ts",
+      "target": "file:src/renderer/utils/session-update.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/tool-output-path.test.ts",
+      "target": "file:src/renderer/utils/tool-output-path.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/tool-result-summary.test.ts",
+      "target": "file:src/renderer/utils/tool-result-summary.ts",
+      "type": "imports",
+      "weight": 0.7
+    }
+  ]
+}

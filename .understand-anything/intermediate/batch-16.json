@@ -1,0 +1,1510 @@
+{
+  "nodes": [
+    {
+      "id": "file:.github/scripts/deepseek-common.mjs",
+      "type": "file",
+      "name": "deepseek-common.mjs",
+      "filePath": ".github/scripts/deepseek-common.mjs",
+      "summary": "源码模块 .github/scripts/deepseek-common.mjs，包含 27 个函数，约 435 行有效代码。",
+      "tags": ["utility"],
+      "complexity": "complex",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-common.mjs:requireEnv",
+      "type": "function",
+      "name": "requireEnv",
+      "filePath": ".github/scripts/deepseek-common.mjs",
+      "summary": "函数 requireEnv，位于 .github/scripts/deepseek-common.mjs 第 37-43 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-common.mjs:loadEventPayload",
+      "type": "function",
+      "name": "loadEventPayload",
+      "filePath": ".github/scripts/deepseek-common.mjs",
+      "summary": "函数 loadEventPayload，位于 .github/scripts/deepseek-common.mjs 第 45-48 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-common.mjs:readTextFileIfExists",
+      "type": "function",
+      "name": "readTextFileIfExists",
+      "filePath": ".github/scripts/deepseek-common.mjs",
+      "summary": "函数 readTextFileIfExists，位于 .github/scripts/deepseek-common.mjs 第 50-56 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-common.mjs:truncate",
+      "type": "function",
+      "name": "truncate",
+      "filePath": ".github/scripts/deepseek-common.mjs",
+      "summary": "函数 truncate，位于 .github/scripts/deepseek-common.mjs 第 58-66 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-common.mjs:runGh",
+      "type": "function",
+      "name": "runGh",
+      "filePath": ".github/scripts/deepseek-common.mjs",
+      "summary": "函数 runGh，位于 .github/scripts/deepseek-common.mjs 第 79-91 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-common.mjs:buildGitGrepArgsFromRgArgs",
+      "type": "function",
+      "name": "buildGitGrepArgsFromRgArgs",
+      "filePath": ".github/scripts/deepseek-common.mjs",
+      "summary": "函数 buildGitGrepArgsFromRgArgs，位于 .github/scripts/deepseek-common.mjs 第 93-141 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-common.mjs:runGitGrepFallback",
+      "type": "function",
+      "name": "runGitGrepFallback",
+      "filePath": ".github/scripts/deepseek-common.mjs",
+      "summary": "函数 runGitGrepFallback，位于 .github/scripts/deepseek-common.mjs 第 143-162 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-common.mjs:runRg",
+      "type": "function",
+      "name": "runRg",
+      "filePath": ".github/scripts/deepseek-common.mjs",
+      "summary": "函数 runRg，位于 .github/scripts/deepseek-common.mjs 第 164-181 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-common.mjs:normalizeApiBaseUrl",
+      "type": "function",
+      "name": "normalizeApiBaseUrl",
+      "filePath": ".github/scripts/deepseek-common.mjs",
+      "summary": "函数 normalizeApiBaseUrl，位于 .github/scripts/deepseek-common.mjs 第 183-192 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-common.mjs:buildDeepSeekChatUrl",
+      "type": "function",
+      "name": "buildDeepSeekChatUrl",
+      "filePath": ".github/scripts/deepseek-common.mjs",
+      "summary": "函数 buildDeepSeekChatUrl，位于 .github/scripts/deepseek-common.mjs 第 194-196 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-common.mjs:mapReasoningEffort",
+      "type": "function",
+      "name": "mapReasoningEffort",
+      "filePath": ".github/scripts/deepseek-common.mjs",
+      "summary": "函数 mapReasoningEffort，位于 .github/scripts/deepseek-common.mjs 第 198-204 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-common.mjs:resolveThinkingConfig",
+      "type": "function",
+      "name": "resolveThinkingConfig",
+      "filePath": ".github/scripts/deepseek-common.mjs",
+      "summary": "函数 resolveThinkingConfig，位于 .github/scripts/deepseek-common.mjs 第 206-212 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-common.mjs:parseJsonObject",
+      "type": "function",
+      "name": "parseJsonObject",
+      "filePath": ".github/scripts/deepseek-common.mjs",
+      "summary": "函数 parseJsonObject，位于 .github/scripts/deepseek-common.mjs 第 214-231 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-common.mjs:callDeepSeekJson",
+      "type": "function",
+      "name": "callDeepSeekJson",
+      "filePath": ".github/scripts/deepseek-common.mjs",
+      "summary": "函数 callDeepSeekJson，位于 .github/scripts/deepseek-common.mjs 第 233-292 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-common.mjs:assertNonEmptyParsedString",
+      "type": "function",
+      "name": "assertNonEmptyParsedString",
+      "filePath": ".github/scripts/deepseek-common.mjs",
+      "summary": "函数 assertNonEmptyParsedString，位于 .github/scripts/deepseek-common.mjs 第 303-318 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-common.mjs:callDeepSeekJsonWithRetries",
+      "type": "function",
+      "name": "callDeepSeekJsonWithRetries",
+      "filePath": ".github/scripts/deepseek-common.mjs",
+      "summary": "函数 callDeepSeekJsonWithRetries，位于 .github/scripts/deepseek-common.mjs 第 320-358 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-common.mjs:ensureBotSignature",
+      "type": "function",
+      "name": "ensureBotSignature",
+      "filePath": ".github/scripts/deepseek-common.mjs",
+      "summary": "函数 ensureBotSignature，位于 .github/scripts/deepseek-common.mjs 第 359-368 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-common.mjs:writeTempJson",
+      "type": "function",
+      "name": "writeTempJson",
+      "filePath": ".github/scripts/deepseek-common.mjs",
+      "summary": "函数 writeTempJson，位于 .github/scripts/deepseek-common.mjs 第 370-377 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-common.mjs:printUsage",
+      "type": "function",
+      "name": "printUsage",
+      "filePath": ".github/scripts/deepseek-common.mjs",
+      "summary": "函数 printUsage，位于 .github/scripts/deepseek-common.mjs 第 379-385 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-common.mjs:loadRepoDocs",
+      "type": "function",
+      "name": "loadRepoDocs",
+      "filePath": ".github/scripts/deepseek-common.mjs",
+      "summary": "函数 loadRepoDocs，位于 .github/scripts/deepseek-common.mjs 第 387-400 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-common.mjs:listPullRequestFiles",
+      "type": "function",
+      "name": "listPullRequestFiles",
+      "filePath": ".github/scripts/deepseek-common.mjs",
+      "summary": "函数 listPullRequestFiles，位于 .github/scripts/deepseek-common.mjs 第 402-405 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-common.mjs:loadPullRequestFileExcerpts",
+      "type": "function",
+      "name": "loadPullRequestFileExcerpts",
+      "filePath": ".github/scripts/deepseek-common.mjs",
+      "summary": "函数 loadPullRequestFileExcerpts，位于 .github/scripts/deepseek-common.mjs 第 407-426 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-common.mjs:extractKeywords",
+      "type": "function",
+      "name": "extractKeywords",
+      "filePath": ".github/scripts/deepseek-common.mjs",
+      "summary": "函数 extractKeywords，位于 .github/scripts/deepseek-common.mjs 第 428-449 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-common.mjs:searchRepoSnippets",
+      "type": "function",
+      "name": "searchRepoSnippets",
+      "filePath": ".github/scripts/deepseek-common.mjs",
+      "summary": "函数 searchRepoSnippets，位于 .github/scripts/deepseek-common.mjs 第 451-482 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "javascript"
+    },
+    {
+      "id": "file:.github/scripts/deepseek-issue-response.mjs",
+      "type": "file",
+      "name": "deepseek-issue-response.mjs",
+      "filePath": ".github/scripts/deepseek-issue-response.mjs",
+      "summary": "源码模块 .github/scripts/deepseek-issue-response.mjs，包含 3 个函数，约 84 行有效代码。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-issue-response.mjs:main",
+      "type": "function",
+      "name": "main",
+      "filePath": ".github/scripts/deepseek-issue-response.mjs",
+      "summary": "函数 main，位于 .github/scripts/deepseek-issue-response.mjs 第 34-89 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "javascript"
+    },
+    {
+      "id": "file:.github/scripts/deepseek-pr-review.mjs",
+      "type": "file",
+      "name": "deepseek-pr-review.mjs",
+      "filePath": ".github/scripts/deepseek-pr-review.mjs",
+      "summary": "源码模块 .github/scripts/deepseek-pr-review.mjs，包含 5 个函数，约 178 行有效代码。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-pr-review.mjs:buildSystemPrompt",
+      "type": "function",
+      "name": "buildSystemPrompt",
+      "filePath": ".github/scripts/deepseek-pr-review.mjs",
+      "summary": "函数 buildSystemPrompt，位于 .github/scripts/deepseek-pr-review.mjs 第 17-26 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-pr-review.mjs:serializeFiles",
+      "type": "function",
+      "name": "serializeFiles",
+      "filePath": ".github/scripts/deepseek-pr-review.mjs",
+      "summary": "函数 serializeFiles，位于 .github/scripts/deepseek-pr-review.mjs 第 37-52 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "type": "function",
+      "name": "main",
+      "filePath": ".github/scripts/deepseek-pr-review.mjs",
+      "summary": "函数 main，位于 .github/scripts/deepseek-pr-review.mjs 第 63-188 行。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "javascript"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:.github/scripts/deepseek-common.mjs",
+      "target": "function:.github/scripts/deepseek-common.mjs:requireEnv",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.github/scripts/deepseek-common.mjs",
+      "target": "function:.github/scripts/deepseek-common.mjs:loadEventPayload",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.github/scripts/deepseek-common.mjs",
+      "target": "function:.github/scripts/deepseek-common.mjs:readTextFileIfExists",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.github/scripts/deepseek-common.mjs",
+      "target": "function:.github/scripts/deepseek-common.mjs:truncate",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.github/scripts/deepseek-common.mjs",
+      "target": "function:.github/scripts/deepseek-common.mjs:runGh",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.github/scripts/deepseek-common.mjs",
+      "target": "function:.github/scripts/deepseek-common.mjs:buildGitGrepArgsFromRgArgs",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.github/scripts/deepseek-common.mjs",
+      "target": "function:.github/scripts/deepseek-common.mjs:runGitGrepFallback",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.github/scripts/deepseek-common.mjs",
+      "target": "function:.github/scripts/deepseek-common.mjs:runRg",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.github/scripts/deepseek-common.mjs",
+      "target": "function:.github/scripts/deepseek-common.mjs:normalizeApiBaseUrl",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.github/scripts/deepseek-common.mjs",
+      "target": "function:.github/scripts/deepseek-common.mjs:buildDeepSeekChatUrl",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.github/scripts/deepseek-common.mjs",
+      "target": "function:.github/scripts/deepseek-common.mjs:mapReasoningEffort",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.github/scripts/deepseek-common.mjs",
+      "target": "function:.github/scripts/deepseek-common.mjs:resolveThinkingConfig",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.github/scripts/deepseek-common.mjs",
+      "target": "function:.github/scripts/deepseek-common.mjs:parseJsonObject",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.github/scripts/deepseek-common.mjs",
+      "target": "function:.github/scripts/deepseek-common.mjs:callDeepSeekJson",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.github/scripts/deepseek-common.mjs",
+      "target": "function:.github/scripts/deepseek-common.mjs:assertNonEmptyParsedString",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.github/scripts/deepseek-common.mjs",
+      "target": "function:.github/scripts/deepseek-common.mjs:callDeepSeekJsonWithRetries",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.github/scripts/deepseek-common.mjs",
+      "target": "function:.github/scripts/deepseek-common.mjs:ensureBotSignature",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.github/scripts/deepseek-common.mjs",
+      "target": "function:.github/scripts/deepseek-common.mjs:writeTempJson",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.github/scripts/deepseek-common.mjs",
+      "target": "function:.github/scripts/deepseek-common.mjs:printUsage",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.github/scripts/deepseek-common.mjs",
+      "target": "function:.github/scripts/deepseek-common.mjs:loadRepoDocs",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.github/scripts/deepseek-common.mjs",
+      "target": "function:.github/scripts/deepseek-common.mjs:listPullRequestFiles",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.github/scripts/deepseek-common.mjs",
+      "target": "function:.github/scripts/deepseek-common.mjs:loadPullRequestFileExcerpts",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.github/scripts/deepseek-common.mjs",
+      "target": "function:.github/scripts/deepseek-common.mjs:extractKeywords",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.github/scripts/deepseek-common.mjs",
+      "target": "function:.github/scripts/deepseek-common.mjs:searchRepoSnippets",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:requireEnv",
+      "target": "function:.github/scripts/deepseek-common.mjs:process.env[name]?.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:loadEventPayload",
+      "target": "function:.github/scripts/deepseek-common.mjs:requireEnv",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:loadEventPayload",
+      "target": "function:.github/scripts/deepseek-common.mjs:JSON.parse",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:loadEventPayload",
+      "target": "function:.github/scripts/deepseek-common.mjs:fs.readFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:readTextFileIfExists",
+      "target": "function:.github/scripts/deepseek-common.mjs:path.resolve",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:readTextFileIfExists",
+      "target": "function:.github/scripts/deepseek-common.mjs:process.cwd",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:readTextFileIfExists",
+      "target": "function:.github/scripts/deepseek-common.mjs:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:readTextFileIfExists",
+      "target": "function:.github/scripts/deepseek-common.mjs:fs.readFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:truncate",
+      "target": "function:.github/scripts/deepseek-common.mjs:text.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:runGh",
+      "target": "function:.github/scripts/deepseek-common.mjs:execFileSync('gh', args, {\n      cwd: process.cwd(),\n      encoding: 'utf8',\n      input: options.input,\n      maxBuffer: 20 * 1024 * 1024,\n      stdio: ['pipe', 'pipe', 'pipe'],\n    }).trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:runGh",
+      "target": "function:.github/scripts/deepseek-common.mjs:execFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:runGh",
+      "target": "function:.github/scripts/deepseek-common.mjs:process.cwd",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:runGh",
+      "target": "function:.github/scripts/deepseek-common.mjs:formatCommandError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:buildGitGrepArgsFromRgArgs",
+      "target": "function:.github/scripts/deepseek-common.mjs:gitArgs.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:buildGitGrepArgsFromRgArgs",
+      "target": "function:.github/scripts/deepseek-common.mjs:gitArgs.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:buildGitGrepArgsFromRgArgs",
+      "target": "function:.github/scripts/deepseek-common.mjs:gitArgs.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:buildGitGrepArgsFromRgArgs",
+      "target": "function:.github/scripts/deepseek-common.mjs:pathspecs.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:buildGitGrepArgsFromRgArgs",
+      "target": "function:.github/scripts/deepseek-common.mjs:glob.startsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:buildGitGrepArgsFromRgArgs",
+      "target": "function:.github/scripts/deepseek-common.mjs:glob.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:buildGitGrepArgsFromRgArgs",
+      "target": "function:.github/scripts/deepseek-common.mjs:arg.startsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:buildGitGrepArgsFromRgArgs",
+      "target": "function:.github/scripts/deepseek-common.mjs:pathspecs.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:runGitGrepFallback",
+      "target": "function:.github/scripts/deepseek-common.mjs:buildGitGrepArgsFromRgArgs",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:runGitGrepFallback",
+      "target": "function:.github/scripts/deepseek-common.mjs:execFileSync('git', gitArgs, {\n      cwd: process.cwd(),\n      encoding: 'utf8',\n      maxBuffer: 10 * 1024 * 1024,\n      stdio: ['pipe', 'pipe', 'pipe'],\n    }).trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:runGitGrepFallback",
+      "target": "function:.github/scripts/deepseek-common.mjs:execFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:runGitGrepFallback",
+      "target": "function:.github/scripts/deepseek-common.mjs:process.cwd",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:runGitGrepFallback",
+      "target": "function:.github/scripts/deepseek-common.mjs:isMissingExecutable",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:runGitGrepFallback",
+      "target": "function:.github/scripts/deepseek-common.mjs:formatCommandError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:runRg",
+      "target": "function:.github/scripts/deepseek-common.mjs:execFileSync('rg', args, {\n      cwd: process.cwd(),\n      encoding: 'utf8',\n      maxBuffer: 10 * 1024 * 1024,\n      stdio: ['pipe', 'pipe', 'pipe'],\n    }).trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:runRg",
+      "target": "function:.github/scripts/deepseek-common.mjs:execFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:runRg",
+      "target": "function:.github/scripts/deepseek-common.mjs:process.cwd",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:runRg",
+      "target": "function:.github/scripts/deepseek-common.mjs:isMissingExecutable",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:runRg",
+      "target": "function:.github/scripts/deepseek-common.mjs:runGitGrepFallback",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:runRg",
+      "target": "function:.github/scripts/deepseek-common.mjs:formatCommandError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:normalizeApiBaseUrl",
+      "target": "function:.github/scripts/deepseek-common.mjs:baseUrl\n    .trim()\n    .replace(/\\/+$/, '')\n    .replace(/\\/v1\\/responses$/, '')\n    .replace(/\\/responses$/, '')\n    .replace(/\\/v1\\/chat\\/completions$/, '')\n    .replace(/\\/chat\\/completions$/, '')\n    .replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:normalizeApiBaseUrl",
+      "target": "function:.github/scripts/deepseek-common.mjs:baseUrl\n    .trim()\n    .replace(/\\/+$/, '')\n    .replace(/\\/v1\\/responses$/, '')\n    .replace(/\\/responses$/, '')\n    .replace(/\\/v1\\/chat\\/completions$/, '')\n    .replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:normalizeApiBaseUrl",
+      "target": "function:.github/scripts/deepseek-common.mjs:baseUrl\n    .trim()\n    .replace(/\\/+$/, '')\n    .replace(/\\/v1\\/responses$/, '')\n    .replace(/\\/responses$/, '')\n    .replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:normalizeApiBaseUrl",
+      "target": "function:.github/scripts/deepseek-common.mjs:baseUrl\n    .trim()\n    .replace(/\\/+$/, '')\n    .replace(/\\/v1\\/responses$/, '')\n    .replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:normalizeApiBaseUrl",
+      "target": "function:.github/scripts/deepseek-common.mjs:baseUrl\n    .trim()\n    .replace(/\\/+$/, '')\n    .replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:normalizeApiBaseUrl",
+      "target": "function:.github/scripts/deepseek-common.mjs:baseUrl\n    .trim()\n    .replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:normalizeApiBaseUrl",
+      "target": "function:.github/scripts/deepseek-common.mjs:baseUrl\n    .trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:buildDeepSeekChatUrl",
+      "target": "function:.github/scripts/deepseek-common.mjs:normalizeApiBaseUrl",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:mapReasoningEffort",
+      "target": "function:.github/scripts/deepseek-common.mjs:(effort || 'high').toLowerCase",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:resolveThinkingConfig",
+      "target": "function:.github/scripts/deepseek-common.mjs:(model || '').toLowerCase",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:resolveThinkingConfig",
+      "target": "function:.github/scripts/deepseek-common.mjs:normalized.startsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:parseJsonObject",
+      "target": "function:.github/scripts/deepseek-common.mjs:JSON.parse",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:parseJsonObject",
+      "target": "function:.github/scripts/deepseek-common.mjs:text.match",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:parseJsonObject",
+      "target": "function:.github/scripts/deepseek-common.mjs:JSON.parse",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:callDeepSeekJson",
+      "target": "function:.github/scripts/deepseek-common.mjs:mapReasoningEffort",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:callDeepSeekJson",
+      "target": "function:.github/scripts/deepseek-common.mjs:resolveThinkingConfig",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:callDeepSeekJson",
+      "target": "function:.github/scripts/deepseek-common.mjs:fetch",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:callDeepSeekJson",
+      "target": "function:.github/scripts/deepseek-common.mjs:buildDeepSeekChatUrl",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:callDeepSeekJson",
+      "target": "function:.github/scripts/deepseek-common.mjs:JSON.stringify",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:callDeepSeekJson",
+      "target": "function:.github/scripts/deepseek-common.mjs:AbortSignal.timeout",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:callDeepSeekJson",
+      "target": "function:.github/scripts/deepseek-common.mjs:response.text",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:callDeepSeekJson",
+      "target": "function:.github/scripts/deepseek-common.mjs:truncate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:callDeepSeekJson",
+      "target": "function:.github/scripts/deepseek-common.mjs:JSON.parse",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:callDeepSeekJson",
+      "target": "function:.github/scripts/deepseek-common.mjs:content.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:callDeepSeekJson",
+      "target": "function:.github/scripts/deepseek-common.mjs:truncate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:callDeepSeekJson",
+      "target": "function:.github/scripts/deepseek-common.mjs:parseJsonObject",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:callDeepSeekJson",
+      "target": "function:.github/scripts/deepseek-common.mjs:truncate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:assertNonEmptyParsedString",
+      "target": "function:.github/scripts/deepseek-common.mjs:value.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:assertNonEmptyParsedString",
+      "target": "function:.github/scripts/deepseek-common.mjs:value.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:assertNonEmptyParsedString",
+      "target": "function:.github/scripts/deepseek-common.mjs:JSON.stringify",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:assertNonEmptyParsedString",
+      "target": "function:.github/scripts/deepseek-common.mjs:String",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:assertNonEmptyParsedString",
+      "target": "function:.github/scripts/deepseek-common.mjs:truncate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:callDeepSeekJsonWithRetries",
+      "target": "function:.github/scripts/deepseek-common.mjs:[\n            userPrompt,\n            '',\n            'AUTOMATION RETRY NOTE:',\n            '- Your previous response was invalid for automation.',\n            '- Return ONLY valid JSON.',\n            `- The JSON MUST include a non-empty string field named \"${fieldName}\".`,\n            '- Do not wrap the JSON in code fences.',\n            `- Do not return an empty, null, or missing \"${fieldName}\" field.`,\n          ].join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:callDeepSeekJsonWithRetries",
+      "target": "function:.github/scripts/deepseek-common.mjs:callDeepSeekJson",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:callDeepSeekJsonWithRetries",
+      "target": "function:.github/scripts/deepseek-common.mjs:assertNonEmptyParsedString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:callDeepSeekJsonWithRetries",
+      "target": "function:.github/scripts/deepseek-common.mjs:isRetryableDeepSeekOutputError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:callDeepSeekJsonWithRetries",
+      "target": "function:.github/scripts/deepseek-common.mjs:console.warn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:ensureBotSignature",
+      "target": "function:.github/scripts/deepseek-common.mjs:body.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:ensureBotSignature",
+      "target": "function:.github/scripts/deepseek-common.mjs:trimmed.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:writeTempJson",
+      "target": "function:.github/scripts/deepseek-common.mjs:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:writeTempJson",
+      "target": "function:.github/scripts/deepseek-common.mjs:os.tmpdir",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:writeTempJson",
+      "target": "function:.github/scripts/deepseek-common.mjs:Date.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:writeTempJson",
+      "target": "function:.github/scripts/deepseek-common.mjs:Math.random().toString(16).slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:writeTempJson",
+      "target": "function:.github/scripts/deepseek-common.mjs:Math.random().toString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:writeTempJson",
+      "target": "function:.github/scripts/deepseek-common.mjs:Math.random",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:writeTempJson",
+      "target": "function:.github/scripts/deepseek-common.mjs:fs.writeFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:writeTempJson",
+      "target": "function:.github/scripts/deepseek-common.mjs:JSON.stringify",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:printUsage",
+      "target": "function:.github/scripts/deepseek-common.mjs:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:printUsage",
+      "target": "function:.github/scripts/deepseek-common.mjs:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:printUsage",
+      "target": "function:.github/scripts/deepseek-common.mjs:JSON.stringify",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:loadRepoDocs",
+      "target": "function:.github/scripts/deepseek-common.mjs:relativePaths\n    .map((relativePath) => {\n      const content = readTextFileIfExists(relativePath);\n      if (!content) {\n        return null;\n      }\n      return {\n        path: relativePath,\n        content: truncate(content, maxChars, relativePath),\n      };\n    })\n    .filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:loadRepoDocs",
+      "target": "function:.github/scripts/deepseek-common.mjs:relativePaths\n    .map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:loadRepoDocs",
+      "target": "function:.github/scripts/deepseek-common.mjs:readTextFileIfExists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:loadRepoDocs",
+      "target": "function:.github/scripts/deepseek-common.mjs:truncate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:listPullRequestFiles",
+      "target": "function:.github/scripts/deepseek-common.mjs:runGh",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:listPullRequestFiles",
+      "target": "function:.github/scripts/deepseek-common.mjs:JSON.parse",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:loadPullRequestFileExcerpts",
+      "target": "function:.github/scripts/deepseek-common.mjs:[...new Set(filePaths)].slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:loadPullRequestFileExcerpts",
+      "target": "function:.github/scripts/deepseek-common.mjs:execFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:loadPullRequestFileExcerpts",
+      "target": "function:.github/scripts/deepseek-common.mjs:process.cwd",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:loadPullRequestFileExcerpts",
+      "target": "function:.github/scripts/deepseek-common.mjs:excerpts.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:loadPullRequestFileExcerpts",
+      "target": "function:.github/scripts/deepseek-common.mjs:truncate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:extractKeywords",
+      "target": "function:.github/scripts/deepseek-common.mjs:text.matchAll",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:extractKeywords",
+      "target": "function:.github/scripts/deepseek-common.mjs:pushKeyword",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:extractKeywords",
+      "target": "function:.github/scripts/deepseek-common.mjs:text.matchAll",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:extractKeywords",
+      "target": "function:.github/scripts/deepseek-common.mjs:pushKeyword",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:extractKeywords",
+      "target": "function:.github/scripts/deepseek-common.mjs:keywords.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:searchRepoSnippets",
+      "target": "function:.github/scripts/deepseek-common.mjs:extractKeywords",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:searchRepoSnippets",
+      "target": "function:.github/scripts/deepseek-common.mjs:args.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:searchRepoSnippets",
+      "target": "function:.github/scripts/deepseek-common.mjs:args.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:searchRepoSnippets",
+      "target": "function:.github/scripts/deepseek-common.mjs:runRg(args)\n    .split('\\n')\n    .map((line) => line.trim())\n    .filter(Boolean)\n    .slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:searchRepoSnippets",
+      "target": "function:.github/scripts/deepseek-common.mjs:runRg(args)\n    .split('\\n')\n    .map((line) => line.trim())\n    .filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:searchRepoSnippets",
+      "target": "function:.github/scripts/deepseek-common.mjs:runRg(args)\n    .split('\\n')\n    .map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:searchRepoSnippets",
+      "target": "function:.github/scripts/deepseek-common.mjs:runRg(args)\n    .split",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:searchRepoSnippets",
+      "target": "function:.github/scripts/deepseek-common.mjs:runRg",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-common.mjs:searchRepoSnippets",
+      "target": "function:.github/scripts/deepseek-common.mjs:line.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:.github/scripts/deepseek-issue-response.mjs",
+      "target": "file:.github/scripts/deepseek-common.mjs",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:.github/scripts/deepseek-issue-response.mjs",
+      "target": "function:.github/scripts/deepseek-issue-response.mjs:main",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:.github/scripts/deepseek-issue-response.mjs:main",
+      "target": "function:.github/scripts/deepseek-issue-response.mjs:requireEnv",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-issue-response.mjs:main",
+      "target": "function:.github/scripts/deepseek-issue-response.mjs:requireEnv",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-issue-response.mjs:main",
+      "target": "function:.github/scripts/deepseek-issue-response.mjs:requireEnv",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-issue-response.mjs:main",
+      "target": "function:.github/scripts/deepseek-issue-response.mjs:loadEventPayload",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-issue-response.mjs:main",
+      "target": "function:.github/scripts/deepseek-issue-response.mjs:String",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-issue-response.mjs:main",
+      "target": "function:.github/scripts/deepseek-issue-response.mjs:readTextFileIfExists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-issue-response.mjs:main",
+      "target": "function:.github/scripts/deepseek-issue-response.mjs:JSON.parse",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-issue-response.mjs:main",
+      "target": "function:.github/scripts/deepseek-issue-response.mjs:runGh",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-issue-response.mjs:main",
+      "target": "function:.github/scripts/deepseek-issue-response.mjs:loadRepoDocs",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-issue-response.mjs:main",
+      "target": "function:.github/scripts/deepseek-issue-response.mjs:searchRepoSnippets",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-issue-response.mjs:main",
+      "target": "function:.github/scripts/deepseek-issue-response.mjs:[\n    `Repo: ${repo}`,\n    `Issue number: ${issueNumber}`,\n    '',\n    'Issue metadata:',\n    JSON.stringify(issue, null, 2),\n    '',\n    'Repository docs:',\n    serializeDocs(docs),\n    '',\n    'Repository search snippets:',\n    searchSnippets.length > 0 ? searchSnippets.join('\\n') : 'No relevant repo snippets found.',\n  ].join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-issue-response.mjs:main",
+      "target": "function:.github/scripts/deepseek-issue-response.mjs:JSON.stringify",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-issue-response.mjs:main",
+      "target": "function:.github/scripts/deepseek-issue-response.mjs:serializeDocs",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-issue-response.mjs:main",
+      "target": "function:.github/scripts/deepseek-issue-response.mjs:searchSnippets.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-issue-response.mjs:main",
+      "target": "function:.github/scripts/deepseek-issue-response.mjs:callDeepSeekJsonWithRetries",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-issue-response.mjs:main",
+      "target": "function:.github/scripts/deepseek-issue-response.mjs:buildSystemPrompt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-issue-response.mjs:main",
+      "target": "function:.github/scripts/deepseek-issue-response.mjs:ensureBotSignature",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-issue-response.mjs:main",
+      "target": "function:.github/scripts/deepseek-issue-response.mjs:assertNonEmptyParsedString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-issue-response.mjs:main",
+      "target": "function:.github/scripts/deepseek-issue-response.mjs:writeTempJson",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-issue-response.mjs:main",
+      "target": "function:.github/scripts/deepseek-issue-response.mjs:runGh",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-issue-response.mjs:main",
+      "target": "function:.github/scripts/deepseek-issue-response.mjs:printUsage",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:.github/scripts/deepseek-pr-review.mjs",
+      "target": "file:.github/scripts/deepseek-common.mjs",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:.github/scripts/deepseek-pr-review.mjs",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:buildSystemPrompt",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.github/scripts/deepseek-pr-review.mjs",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:serializeFiles",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.github/scripts/deepseek-pr-review.mjs",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:serializeFiles",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:files\n    .map((file) =>\n      [\n        `### ${file.filename}`,\n        `status: ${file.status}`,\n        `additions: ${file.additions}`,\n        `deletions: ${file.deletions}`,\n        file.patch ? truncate(file.patch, 5000, `${file.filename} patch`) : '[no patch available]',\n      ].join('\\n')\n    )\n    .join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:serializeFiles",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:files\n    .map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:serializeFiles",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:[\n        `### ${file.filename}`,\n        `status: ${file.status}`,\n        `additions: ${file.additions}`,\n        `deletions: ${file.deletions}`,\n        file.patch ? truncate(file.patch, 5000, `${file.filename} patch`) : '[no patch available]',\n      ].join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:serializeFiles",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:truncate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:requireEnv",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:requireEnv",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:requireEnv",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:loadEventPayload",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:String",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:readTextFileIfExists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:JSON.parse",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:runGh",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:runGh",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:listPullRequestFiles",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:loadRepoDocs",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:loadPullRequestFileExcerpts",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:files.map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:runGh",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:runGh",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:runGh",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:[\n      'Previous bot review:',\n      truncate(review, 8000, 'previous review'),\n      'Previous bot review comments:',\n      truncate(reviewComments, 8000, 'previous review comments'),\n      compareDiff ? `Compare diff since previous review:\\n${truncate(compareDiff, 20000, 'compare diff')}` : '',\n    ]\n      .filter(Boolean)\n      .join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:[\n      'Previous bot review:',\n      truncate(review, 8000, 'previous review'),\n      'Previous bot review comments:',\n      truncate(reviewComments, 8000, 'previous review comments'),\n      compareDiff ? `Compare diff since previous review:\\n${truncate(compareDiff, 20000, 'compare diff')}` : '',\n    ]\n      .filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:truncate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:truncate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:truncate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:[\n    `Repo: ${repo}`,\n    `PR number: ${prNumber}`,\n    `Current head SHA: ${currentHeadSha}`,\n    `Review mode hint: ${isFollowUpReview ? 'follow-up after new commits' : 'initial'}`,\n    '',\n    'PR metadata:',\n    JSON.stringify(prMeta, null, 2),\n    '',\n    'Repository docs:',\n    serializeDocs(docs),\n    '',\n    'Changed files and patches:',\n    serializeFiles(files),\n    '',\n    'PR head file excerpts:',\n    serializeExcerpts(excerpts),\n    '',\n    'Unified diff:',\n    truncate(diff, 120000, 'PR diff'),\n    '',\n    'Follow-up context:',\n    followUpContext,\n  ].join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:JSON.stringify",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:serializeDocs",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:serializeFiles",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:serializeExcerpts",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:truncate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:callDeepSeekJsonWithRetries",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:buildSystemPrompt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:ensureBotSignature",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:assertNonEmptyParsedString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:runGh",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:writeTempJson",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:runGh",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.github/scripts/deepseek-pr-review.mjs:main",
+      "target": "function:.github/scripts/deepseek-pr-review.mjs:printUsage",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ]
+}

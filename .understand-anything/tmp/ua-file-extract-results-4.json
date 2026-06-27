@@ -1,0 +1,6578 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 27,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/main/claude/pi-model-resolution.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 371,
+      "nonEmptyLines": 336,
+      "functions": [
+        {
+          "name": "resolvePiRouteProtocol",
+          "startLine": 43,
+          "endLine": 55,
+          "params": ["provider", "customProtocol"]
+        },
+        {
+          "name": "shouldDisableDeveloperRoleForEndpoint",
+          "startLine": 57,
+          "endLine": 71,
+          "params": ["model", "options"]
+        },
+        {
+          "name": "shouldPreserveOpenAIResponsesApi",
+          "startLine": 73,
+          "endLine": 83,
+          "params": ["model", "options"]
+        },
+        {
+          "name": "inferPiApi",
+          "startLine": 85,
+          "endLine": 96,
+          "params": ["protocol"]
+        },
+        {
+          "name": "lookupModelSpecs",
+          "startLine": 123,
+          "endLine": 134,
+          "params": ["modelId"]
+        },
+        {
+          "name": "buildSyntheticPiModel",
+          "startLine": 136,
+          "endLine": 161,
+          "params": [
+            "modelId",
+            "provider",
+            "protocol",
+            "baseUrl",
+            "apiOverride",
+            "reasoning",
+            "contextWindow",
+            "maxTokens"
+          ]
+        },
+        {
+          "name": "resolveSyntheticPiModelFallback",
+          "startLine": 163,
+          "endLine": 195,
+          "params": ["input"]
+        },
+        {
+          "name": "resolvePiModelString",
+          "startLine": 197,
+          "endLine": 208,
+          "params": ["input"]
+        },
+        {
+          "name": "addLookupCandidate",
+          "startLine": 210,
+          "endLine": 232,
+          "params": ["candidates", "seen", "provider", "model"]
+        },
+        {
+          "name": "buildPiModelLookupCandidates",
+          "startLine": 234,
+          "endLine": 268,
+          "params": ["modelString", "options"]
+        },
+        {
+          "name": "applyPiModelRuntimeOverrides",
+          "startLine": 270,
+          "endLine": 354,
+          "params": ["model", "options"]
+        },
+        {
+          "name": "resolvePiRegistryModel",
+          "startLine": 356,
+          "endLine": 371,
+          "params": ["modelString", "options"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "resolvePiRouteProtocol",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "inferPiApi",
+          "line": 85,
+          "isDefault": false
+        },
+        {
+          "name": "buildSyntheticPiModel",
+          "line": 136,
+          "isDefault": false
+        },
+        {
+          "name": "resolveSyntheticPiModelFallback",
+          "line": 163,
+          "isDefault": false
+        },
+        {
+          "name": "resolvePiModelString",
+          "line": 197,
+          "isDefault": false
+        },
+        {
+          "name": "buildPiModelLookupCandidates",
+          "line": 234,
+          "isDefault": false
+        },
+        {
+          "name": "applyPiModelRuntimeOverrides",
+          "line": 270,
+          "isDefault": false
+        },
+        {
+          "name": "resolvePiRegistryModel",
+          "line": 356,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "shouldDisableDeveloperRoleForEndpoint",
+          "callee": "options.customBaseUrl?.trim",
+          "lineNumber": 65
+        },
+        {
+          "caller": "shouldDisableDeveloperRoleForEndpoint",
+          "callee": "model.baseUrl?.trim",
+          "lineNumber": 65
+        },
+        {
+          "caller": "shouldDisableDeveloperRoleForEndpoint",
+          "callee": "isOfficialOpenAIBaseUrl",
+          "lineNumber": 66
+        },
+        {
+          "caller": "shouldPreserveOpenAIResponsesApi",
+          "callee": "options.customBaseUrl?.trim",
+          "lineNumber": 81
+        },
+        {
+          "caller": "shouldPreserveOpenAIResponsesApi",
+          "callee": "model.baseUrl?.trim",
+          "lineNumber": 81
+        },
+        {
+          "caller": "shouldPreserveOpenAIResponsesApi",
+          "callee": "isOfficialOpenAIBaseUrl",
+          "lineNumber": 82
+        },
+        {
+          "caller": "lookupModelSpecs",
+          "callee": "modelId.toLowerCase",
+          "lineNumber": 126
+        },
+        {
+          "caller": "lookupModelSpecs",
+          "callee": "Object.entries",
+          "lineNumber": 128
+        },
+        {
+          "caller": "lookupModelSpecs",
+          "callee": "lower.startsWith",
+          "lineNumber": 129
+        },
+        {
+          "caller": "lookupModelSpecs",
+          "callee": "lower.startsWith",
+          "lineNumber": 129
+        },
+        {
+          "caller": "buildSyntheticPiModel",
+          "callee": "inferPiApi",
+          "lineNumber": 146
+        },
+        {
+          "caller": "buildSyntheticPiModel",
+          "callee": "REASONING_MODEL_PATTERN.test",
+          "lineNumber": 147
+        },
+        {
+          "caller": "buildSyntheticPiModel",
+          "callee": "lookupModelSpecs",
+          "lineNumber": 148
+        },
+        {
+          "caller": "resolveSyntheticPiModelFallback",
+          "callee": "input.rawModel?.trim",
+          "lineNumber": 166
+        },
+        {
+          "caller": "resolveSyntheticPiModelFallback",
+          "callee": "input.resolvedModelString.trim",
+          "lineNumber": 167
+        },
+        {
+          "caller": "resolveSyntheticPiModelFallback",
+          "callee": "modelString.split",
+          "lineNumber": 168
+        },
+        {
+          "caller": "resolveSyntheticPiModelFallback",
+          "callee": "parts.slice(1).join",
+          "lineNumber": 170
+        },
+        {
+          "caller": "resolveSyntheticPiModelFallback",
+          "callee": "parts.slice",
+          "lineNumber": 170
+        },
+        {
+          "caller": "resolveSyntheticPiModelFallback",
+          "callee": "input.baseUrl?.trim",
+          "lineNumber": 171
+        },
+        {
+          "caller": "resolveSyntheticPiModelFallback",
+          "callee": "rawModel.includes",
+          "lineNumber": 173
+        },
+        {
+          "caller": "resolveSyntheticPiModelFallback",
+          "callee": "isOfficialOpenAIBaseUrl",
+          "lineNumber": 176
+        },
+        {
+          "caller": "resolvePiModelString",
+          "callee": "input.model?.trim",
+          "lineNumber": 198
+        },
+        {
+          "caller": "resolvePiModelString",
+          "callee": "model.includes",
+          "lineNumber": 202
+        },
+        {
+          "caller": "addLookupCandidate",
+          "callee": "provider?.trim",
+          "lineNumber": 216
+        },
+        {
+          "caller": "addLookupCandidate",
+          "callee": "model?.trim",
+          "lineNumber": 217
+        },
+        {
+          "caller": "addLookupCandidate",
+          "callee": "INVALID_REGISTRY_PROVIDERS.has",
+          "lineNumber": 221
+        },
+        {
+          "caller": "addLookupCandidate",
+          "callee": "seen.has",
+          "lineNumber": 227
+        },
+        {
+          "caller": "addLookupCandidate",
+          "callee": "seen.add",
+          "lineNumber": 230
+        },
+        {
+          "caller": "addLookupCandidate",
+          "callee": "candidates.push",
+          "lineNumber": 231
+        },
+        {
+          "caller": "buildPiModelLookupCandidates",
+          "callee": "options.rawProvider?.trim",
+          "lineNumber": 240
+        },
+        {
+          "caller": "buildPiModelLookupCandidates",
+          "callee": "modelString.trim",
+          "lineNumber": 241
+        },
+        {
+          "caller": "buildPiModelLookupCandidates",
+          "callee": "trimmedModel.split",
+          "lineNumber": 242
+        },
+        {
+          "caller": "buildPiModelLookupCandidates",
+          "callee": "parts.slice(1).join",
+          "lineNumber": 248
+        },
+        {
+          "caller": "buildPiModelLookupCandidates",
+          "callee": "parts.slice",
+          "lineNumber": 248
+        },
+        {
+          "caller": "buildPiModelLookupCandidates",
+          "callee": "addLookupCandidate",
+          "lineNumber": 251
+        },
+        {
+          "caller": "buildPiModelLookupCandidates",
+          "callee": "addLookupCandidate",
+          "lineNumber": 254
+        },
+        {
+          "caller": "buildPiModelLookupCandidates",
+          "callee": "addLookupCandidate",
+          "lineNumber": 256
+        },
+        {
+          "caller": "buildPiModelLookupCandidates",
+          "callee": "addLookupCandidate",
+          "lineNumber": 258
+        },
+        {
+          "caller": "buildPiModelLookupCandidates",
+          "callee": "addLookupCandidate",
+          "lineNumber": 263
+        },
+        {
+          "caller": "buildPiModelLookupCandidates",
+          "callee": "addLookupCandidate",
+          "lineNumber": 265
+        },
+        {
+          "caller": "applyPiModelRuntimeOverrides",
+          "callee": "Boolean",
+          "lineNumber": 277
+        },
+        {
+          "caller": "applyPiModelRuntimeOverrides",
+          "callee": "shouldPreserveOpenAIResponsesApi",
+          "lineNumber": 288
+        },
+        {
+          "caller": "applyPiModelRuntimeOverrides",
+          "callee": "shouldDisableDeveloperRoleForEndpoint",
+          "lineNumber": 296
+        },
+        {
+          "caller": "applyPiModelRuntimeOverrides",
+          "callee": "DEEPSEEK_V4_MODEL_PATTERN.test",
+          "lineNumber": 332
+        },
+        {
+          "caller": "applyPiModelRuntimeOverrides",
+          "callee": "inferPiApi",
+          "lineNumber": 347
+        },
+        {
+          "caller": "applyPiModelRuntimeOverrides",
+          "callee": "shouldPreserveOpenAIResponsesApi",
+          "lineNumber": 348
+        },
+        {
+          "caller": "resolvePiRegistryModel",
+          "callee": "buildPiModelLookupCandidates",
+          "lineNumber": 360
+        },
+        {
+          "caller": "resolvePiRegistryModel",
+          "callee": "(getModel as (...args: unknown[]) => Model<Api> | undefined)",
+          "lineNumber": 362
+        },
+        {
+          "caller": "resolvePiRegistryModel",
+          "callee": "applyPiModelRuntimeOverrides",
+          "lineNumber": 367
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 8,
+        "functionCount": 12,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/config/api-diagnostics.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 730,
+      "nonEmptyLines": 649,
+      "functions": [
+        {
+          "name": "makeStep",
+          "startLine": 46,
+          "endLine": 48,
+          "params": ["name"]
+        },
+        {
+          "name": "normalizeNetworkHostname",
+          "startLine": 50,
+          "endLine": 55,
+          "params": ["hostname"]
+        },
+        {
+          "name": "isLoopback",
+          "startLine": 57,
+          "endLine": 60,
+          "params": ["hostname"]
+        },
+        {
+          "name": "resolveEffectiveUrl",
+          "startLine": 62,
+          "endLine": 86,
+          "params": ["input"]
+        },
+        {
+          "name": "defaultPort",
+          "startLine": 88,
+          "endLine": 97,
+          "params": ["protocol", "provider", "hostname"]
+        },
+        {
+          "name": "isOpenAICompatible",
+          "startLine": 99,
+          "endLine": 106,
+          "params": ["input"]
+        },
+        {
+          "name": "isAnthropicCompatible",
+          "startLine": 108,
+          "endLine": 113,
+          "params": ["input"]
+        },
+        {
+          "name": "isGeminiProtocol",
+          "startLine": 115,
+          "endLine": 120,
+          "params": ["input"]
+        },
+        {
+          "name": "getErrorMessage",
+          "startLine": 122,
+          "endLine": 124,
+          "params": ["err"]
+        },
+        {
+          "name": "getApiErrorInfo",
+          "startLine": 126,
+          "endLine": 139,
+          "params": ["err"]
+        },
+        {
+          "name": "isLikelyAuthFailure",
+          "startLine": 141,
+          "endLine": 153,
+          "params": ["error"]
+        },
+        {
+          "name": "isGeminiModelsGetProbeUnavailable",
+          "startLine": 155,
+          "endLine": 161,
+          "params": ["error"]
+        },
+        {
+          "name": "shouldContinueAfterGeminiAuthProbeError",
+          "startLine": 163,
+          "endLine": 176,
+          "params": ["error"]
+        },
+        {
+          "name": "getModelDiagnosticFix",
+          "startLine": 178,
+          "endLine": 196,
+          "params": ["errorType", "model"]
+        },
+        {
+          "name": "makeAnthropicClient",
+          "startLine": 204,
+          "endLine": 213,
+          "params": ["opts"]
+        },
+        {
+          "name": "resolveClientBaseUrl",
+          "startLine": 218,
+          "endLine": 247,
+          "params": ["input"]
+        },
+        {
+          "name": "stepDns",
+          "startLine": 253,
+          "endLine": 270,
+          "params": ["hostname", "step"]
+        },
+        {
+          "name": "stepTcp",
+          "startLine": 272,
+          "endLine": 297,
+          "params": ["hostname", "port", "step"]
+        },
+        {
+          "name": "stepTls",
+          "startLine": 299,
+          "endLine": 360,
+          "params": ["hostname", "port", "isHttps", "step"]
+        },
+        {
+          "name": "stepAuth",
+          "startLine": 362,
+          "endLine": 491,
+          "params": ["input", "step"]
+        },
+        {
+          "name": "stepModel",
+          "startLine": 493,
+          "endLine": 558,
+          "params": ["input", "step"]
+        },
+        {
+          "name": "runDiagnostics",
+          "startLine": 567,
+          "endLine": 586,
+          "params": ["input"]
+        },
+        {
+          "name": "runDiagnosticsImpl",
+          "startLine": 588,
+          "endLine": 698,
+          "params": ["input"]
+        },
+        {
+          "name": "discoverLocalOllama",
+          "startLine": 704,
+          "endLine": 730,
+          "params": ["input"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "isLikelyAuthFailure",
+          "line": 141,
+          "isDefault": false
+        },
+        {
+          "name": "shouldContinueAfterGeminiAuthProbeError",
+          "line": 163,
+          "isDefault": false
+        },
+        {
+          "name": "runDiagnostics",
+          "line": 567,
+          "isDefault": false
+        },
+        {
+          "name": "discoverLocalOllama",
+          "line": 704,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "normalizeNetworkHostname",
+          "callee": "hostname.startsWith",
+          "lineNumber": 51
+        },
+        {
+          "caller": "normalizeNetworkHostname",
+          "callee": "hostname.endsWith",
+          "lineNumber": 51
+        },
+        {
+          "caller": "normalizeNetworkHostname",
+          "callee": "hostname.slice",
+          "lineNumber": 52
+        },
+        {
+          "caller": "isLoopback",
+          "callee": "normalizeNetworkHostname",
+          "lineNumber": 58
+        },
+        {
+          "caller": "resolveEffectiveUrl",
+          "callee": "input.baseUrl?.trim",
+          "lineNumber": 63
+        },
+        {
+          "caller": "resolveEffectiveUrl",
+          "callee": "/^https?:\\/\\//i.test",
+          "lineNumber": 75
+        },
+        {
+          "caller": "defaultPort",
+          "callee": "isLoopback",
+          "lineNumber": 93
+        },
+        {
+          "caller": "getErrorMessage",
+          "callee": "String",
+          "lineNumber": 123
+        },
+        {
+          "caller": "getApiErrorInfo",
+          "callee": "String",
+          "lineNumber": 135
+        },
+        {
+          "caller": "getApiErrorInfo",
+          "callee": "String",
+          "lineNumber": 138
+        },
+        {
+          "caller": "isLikelyAuthFailure",
+          "callee": "error.message.toLowerCase",
+          "lineNumber": 146
+        },
+        {
+          "caller": "isLikelyAuthFailure",
+          "callee": "/api\\s*key.*(?:not\\s*valid|invalid)|invalid.*api\\s*key|unauthorized|forbidden|permission\\s*denied/.test",
+          "lineNumber": 148
+        },
+        {
+          "caller": "isLikelyAuthFailure",
+          "callee": "/api\\s*key|auth|credential|permission/.test",
+          "lineNumber": 151
+        },
+        {
+          "caller": "isGeminiModelsGetProbeUnavailable",
+          "callee": "/models\\.get|reading ['\"]get['\"]|reading get/i.test",
+          "lineNumber": 160
+        },
+        {
+          "caller": "shouldContinueAfterGeminiAuthProbeError",
+          "callee": "isLikelyAuthFailure",
+          "lineNumber": 171
+        },
+        {
+          "caller": "shouldContinueAfterGeminiAuthProbeError",
+          "callee": "isGeminiModelsGetProbeUnavailable",
+          "lineNumber": 175
+        },
+        {
+          "caller": "resolveClientBaseUrl",
+          "callee": "input.baseUrl?.trim",
+          "lineNumber": 219
+        },
+        {
+          "caller": "resolveClientBaseUrl",
+          "callee": "normalizeOllamaBaseUrl",
+          "lineNumber": 222
+        },
+        {
+          "caller": "resolveClientBaseUrl",
+          "callee": "isOpenAICompatible",
+          "lineNumber": 225
+        },
+        {
+          "caller": "resolveClientBaseUrl",
+          "callee": "normalizeOpenAICompatibleBaseUrl",
+          "lineNumber": 226
+        },
+        {
+          "caller": "resolveClientBaseUrl",
+          "callee": "isAnthropicCompatible",
+          "lineNumber": 233
+        },
+        {
+          "caller": "resolveClientBaseUrl",
+          "callee": "normalizeAnthropicBaseUrl",
+          "lineNumber": 234
+        },
+        {
+          "caller": "resolveClientBaseUrl",
+          "callee": "normalizeAnthropicBaseUrl",
+          "lineNumber": 236
+        },
+        {
+          "caller": "stepDns",
+          "callee": "isLoopback",
+          "lineNumber": 254
+        },
+        {
+          "caller": "stepDns",
+          "callee": "Date.now",
+          "lineNumber": 260
+        },
+        {
+          "caller": "stepDns",
+          "callee": "dns.promises.lookup",
+          "lineNumber": 262
+        },
+        {
+          "caller": "stepDns",
+          "callee": "getErrorMessage",
+          "lineNumber": 266
+        },
+        {
+          "caller": "stepDns",
+          "callee": "Date.now",
+          "lineNumber": 269
+        },
+        {
+          "caller": "stepTcp",
+          "callee": "Date.now",
+          "lineNumber": 273
+        },
+        {
+          "caller": "stepTcp",
+          "callee": "net.createConnection",
+          "lineNumber": 276
+        },
+        {
+          "caller": "stepTcp",
+          "callee": "socket.once",
+          "lineNumber": 277
+        },
+        {
+          "caller": "stepTcp",
+          "callee": "socket.destroy",
+          "lineNumber": 278
+        },
+        {
+          "caller": "stepTcp",
+          "callee": "resolve",
+          "lineNumber": 279
+        },
+        {
+          "caller": "stepTcp",
+          "callee": "socket.once",
+          "lineNumber": 281
+        },
+        {
+          "caller": "stepTcp",
+          "callee": "socket.destroy",
+          "lineNumber": 282
+        },
+        {
+          "caller": "stepTcp",
+          "callee": "reject",
+          "lineNumber": 283
+        },
+        {
+          "caller": "stepTcp",
+          "callee": "socket.once",
+          "lineNumber": 285
+        },
+        {
+          "caller": "stepTcp",
+          "callee": "socket.destroy",
+          "lineNumber": 286
+        },
+        {
+          "caller": "stepTcp",
+          "callee": "reject",
+          "lineNumber": 287
+        },
+        {
+          "caller": "stepTcp",
+          "callee": "getErrorMessage",
+          "lineNumber": 293
+        },
+        {
+          "caller": "stepTcp",
+          "callee": "Date.now",
+          "lineNumber": 296
+        },
+        {
+          "caller": "stepTls",
+          "callee": "Date.now",
+          "lineNumber": 311
+        },
+        {
+          "caller": "stepTls",
+          "callee": "net.isIP",
+          "lineNumber": 314
+        },
+        {
+          "caller": "finish",
+          "callee": "socket.destroy",
+          "lineNumber": 319
+        },
+        {
+          "caller": "finish",
+          "callee": "reject",
+          "lineNumber": 321
+        },
+        {
+          "caller": "finish",
+          "callee": "resolve",
+          "lineNumber": 324
+        },
+        {
+          "caller": "stepTls",
+          "callee": "tls.connect",
+          "lineNumber": 326
+        },
+        {
+          "caller": "stepTls",
+          "callee": "finish",
+          "lineNumber": 335
+        },
+        {
+          "caller": "stepTls",
+          "callee": "String",
+          "lineNumber": 335
+        },
+        {
+          "caller": "stepTls",
+          "callee": "finish",
+          "lineNumber": 338
+        },
+        {
+          "caller": "stepTls",
+          "callee": "socket.once",
+          "lineNumber": 341
+        },
+        {
+          "caller": "stepTls",
+          "callee": "finish",
+          "lineNumber": 343
+        },
+        {
+          "caller": "stepTls",
+          "callee": "String",
+          "lineNumber": 343
+        },
+        {
+          "caller": "stepTls",
+          "callee": "socket.once",
+          "lineNumber": 346
+        },
+        {
+          "caller": "stepTls",
+          "callee": "finish",
+          "lineNumber": 347
+        },
+        {
+          "caller": "stepTls",
+          "callee": "socket.once",
+          "lineNumber": 349
+        },
+        {
+          "caller": "stepTls",
+          "callee": "finish",
+          "lineNumber": 350
+        },
+        {
+          "caller": "stepTls",
+          "callee": "getErrorMessage",
+          "lineNumber": 356
+        },
+        {
+          "caller": "stepTls",
+          "callee": "Date.now",
+          "lineNumber": 359
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "isGeminiProtocol",
+          "lineNumber": 364
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "Date.now",
+          "lineNumber": 365
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "input.apiKey?.trim",
+          "lineNumber": 366
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "Date.now",
+          "lineNumber": 372
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "import",
+          "lineNumber": 377
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "import",
+          "lineNumber": 377
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "resolveClientBaseUrl",
+          "lineNumber": 378
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "input.model?.trim",
+          "lineNumber": 381
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "client.models.get",
+          "lineNumber": 382
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "getApiErrorInfo",
+          "lineNumber": 385
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "shouldContinueAfterGeminiAuthProbeError",
+          "lineNumber": 386
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "log",
+          "lineNumber": 391
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "isLikelyAuthFailure",
+          "lineNumber": 395
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "Date.now",
+          "lineNumber": 399
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "Date.now",
+          "lineNumber": 403
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "input.apiKey?.trim",
+          "lineNumber": 404
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "resolveClientBaseUrl",
+          "lineNumber": 405
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "isOpenAICompatible",
+          "lineNumber": 408
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "resolveOllamaCredentials",
+          "lineNumber": 411
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "resolveOpenAICredentials",
+          "lineNumber": 417
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "Date.now",
+          "lineNumber": 428
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "client.models.list",
+          "lineNumber": 437
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "shouldAllowEmptyAnthropicApiKey",
+          "lineNumber": 440
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "Date.now",
+          "lineNumber": 451
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "shouldUseAnthropicAuthToken",
+          "lineNumber": 455
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "makeAnthropicClient",
+          "lineNumber": 462
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "client.models.list",
+          "lineNumber": 463
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "getApiErrorInfo",
+          "lineNumber": 468
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "log",
+          "lineNumber": 476
+        },
+        {
+          "caller": "stepAuth",
+          "callee": "Date.now",
+          "lineNumber": 490
+        },
+        {
+          "caller": "stepModel",
+          "callee": "Date.now",
+          "lineNumber": 500
+        },
+        {
+          "caller": "stepModel",
+          "callee": "fetchOllamaModelIndex",
+          "lineNumber": 504
+        },
+        {
+          "caller": "stepModel",
+          "callee": "input.model.trim",
+          "lineNumber": 508
+        },
+        {
+          "caller": "stepModel",
+          "callee": "result.models.some",
+          "lineNumber": 509
+        },
+        {
+          "caller": "stepModel",
+          "callee": "Date.now",
+          "lineNumber": 515
+        },
+        {
+          "caller": "stepModel",
+          "callee": "Date.now",
+          "lineNumber": 523
+        },
+        {
+          "caller": "stepModel",
+          "callee": "Date.now",
+          "lineNumber": 528
+        },
+        {
+          "caller": "stepModel",
+          "callee": "configStore.getAll",
+          "lineNumber": 532
+        },
+        {
+          "caller": "stepModel",
+          "callee": "probeWithClaudeSdk",
+          "lineNumber": 533
+        },
+        {
+          "caller": "stepModel",
+          "callee": "getModelDiagnosticFix",
+          "lineNumber": 550
+        },
+        {
+          "caller": "stepModel",
+          "callee": "getErrorMessage",
+          "lineNumber": 554
+        },
+        {
+          "caller": "stepModel",
+          "callee": "Date.now",
+          "lineNumber": 557
+        },
+        {
+          "caller": "runDiagnostics",
+          "callee": "log",
+          "lineNumber": 570
+        },
+        {
+          "caller": "runDiagnostics",
+          "callee": "STEP_NAMES.map",
+          "lineNumber": 572
+        },
+        {
+          "caller": "runDiagnostics",
+          "callee": "runDiagnosticsImpl",
+          "lineNumber": 582
+        },
+        {
+          "caller": "runDiagnosticsImpl",
+          "callee": "log",
+          "lineNumber": 590
+        },
+        {
+          "caller": "runDiagnosticsImpl",
+          "callee": "Boolean",
+          "lineNumber": 593
+        },
+        {
+          "caller": "runDiagnosticsImpl",
+          "callee": "input.apiKey?.trim",
+          "lineNumber": 593
+        },
+        {
+          "caller": "runDiagnosticsImpl",
+          "callee": "STEP_NAMES.map",
+          "lineNumber": 599
+        },
+        {
+          "caller": "runDiagnosticsImpl",
+          "callee": "Object.fromEntries",
+          "lineNumber": 600
+        },
+        {
+          "caller": "runDiagnosticsImpl",
+          "callee": "steps.map",
+          "lineNumber": 600
+        },
+        {
+          "caller": "runDiagnosticsImpl",
+          "callee": "resolveEffectiveUrl",
+          "lineNumber": 609
+        },
+        {
+          "caller": "runDiagnosticsImpl",
+          "callee": "normalizeNetworkHostname",
+          "lineNumber": 610
+        },
+        {
+          "caller": "runDiagnosticsImpl",
+          "callee": "Number",
+          "lineNumber": 612
+        },
+        {
+          "caller": "runDiagnosticsImpl",
+          "callee": "defaultPort",
+          "lineNumber": 612
+        },
+        {
+          "caller": "runDiagnosticsImpl",
+          "callee": "stepDns",
+          "lineNumber": 617
+        },
+        {
+          "caller": "runDiagnosticsImpl",
+          "callee": "isFail",
+          "lineNumber": 618
+        },
+        {
+          "caller": "runDiagnosticsImpl",
+          "callee": "stepTcp",
+          "lineNumber": 624
+        },
+        {
+          "caller": "runDiagnosticsImpl",
+          "callee": "isFail",
+          "lineNumber": 625
+        },
+        {
+          "caller": "runDiagnosticsImpl",
+          "callee": "stepTls",
+          "lineNumber": 631
+        },
+        {
+          "caller": "runDiagnosticsImpl",
+          "callee": "isFail",
+          "lineNumber": 632
+        },
+        {
+          "caller": "runDiagnosticsImpl",
+          "callee": "stepAuth",
+          "lineNumber": 638
+        },
+        {
+          "caller": "runDiagnosticsImpl",
+          "callee": "isFail",
+          "lineNumber": 639
+        },
+        {
+          "caller": "runDiagnosticsImpl",
+          "callee": "stepModel",
+          "lineNumber": 645
+        },
+        {
+          "caller": "runDiagnosticsImpl",
+          "callee": "isFail",
+          "lineNumber": 646
+        },
+        {
+          "caller": "runDiagnosticsImpl",
+          "callee": "steps.reduce",
+          "lineNumber": 657
+        },
+        {
+          "caller": "runDiagnosticsImpl",
+          "callee": "steps.find",
+          "lineNumber": 658
+        },
+        {
+          "caller": "runDiagnosticsImpl",
+          "callee": "failedStep.fix?.startsWith",
+          "lineNumber": 680
+        },
+        {
+          "caller": "runDiagnosticsImpl",
+          "callee": "log",
+          "lineNumber": 688
+        },
+        {
+          "caller": "runDiagnosticsImpl",
+          "callee": "logWarn",
+          "lineNumber": 690
+        },
+        {
+          "caller": "runDiagnosticsImpl",
+          "callee": "failedStep?.error?.slice",
+          "lineNumber": 692
+        },
+        {
+          "caller": "discoverLocalOllama",
+          "callee": "input?.baseUrl?.trim",
+          "lineNumber": 707
+        },
+        {
+          "caller": "discoverLocalOllama",
+          "callee": "isLoopbackBaseUrl",
+          "lineNumber": 709
+        },
+        {
+          "caller": "discoverLocalOllama",
+          "callee": "normalizeOllamaBaseUrl",
+          "lineNumber": 710
+        },
+        {
+          "caller": "discoverLocalOllama",
+          "callee": "fetchOllamaModelIndex",
+          "lineNumber": 714
+        },
+        {
+          "caller": "discoverLocalOllama",
+          "callee": "result.models.map",
+          "lineNumber": 715
+        },
+        {
+          "caller": "discoverLocalOllama",
+          "callee": "log",
+          "lineNumber": 718
+        },
+        {
+          "caller": "discoverLocalOllama",
+          "callee": "log",
+          "lineNumber": 722
+        }
+      ],
+      "metrics": {
+        "importCount": 8,
+        "exportCount": 4,
+        "functionCount": 24,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/config/auth-utils.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 257,
+      "nonEmptyLines": 230,
+      "functions": [
+        {
+          "name": "isLikelyOAuthAccessToken",
+          "startLine": 21,
+          "endLine": 27,
+          "params": ["token"]
+        },
+        {
+          "name": "shouldUseAnthropicAuthToken",
+          "startLine": 29,
+          "endLine": 39,
+          "params": ["config"]
+        },
+        {
+          "name": "isOpenAIProvider",
+          "startLine": 41,
+          "endLine": 47,
+          "params": ["config"]
+        },
+        {
+          "name": "sanitizeOpenAIAccountId",
+          "startLine": 49,
+          "endLine": 58,
+          "params": ["raw"]
+        },
+        {
+          "name": "normalizeBaseUrl",
+          "startLine": 60,
+          "endLine": 66,
+          "params": ["baseUrl"]
+        },
+        {
+          "name": "normalizeOpenAICompatibleBaseUrl",
+          "startLine": 68,
+          "endLine": 113,
+          "params": ["baseUrl"]
+        },
+        {
+          "name": "normalizeOllamaBaseUrl",
+          "startLine": 115,
+          "endLine": 117,
+          "params": ["baseUrl"]
+        },
+        {
+          "name": "extractHostname",
+          "startLine": 119,
+          "endLine": 129,
+          "params": ["baseUrl"]
+        },
+        {
+          "name": "isOfficialOpenAIBaseUrl",
+          "startLine": 131,
+          "endLine": 145,
+          "params": ["baseUrl"]
+        },
+        {
+          "name": "getUnifiedUnsupportedCustomOpenAIBaseUrl",
+          "startLine": 147,
+          "endLine": 157,
+          "params": ["config"]
+        },
+        {
+          "name": "normalizeAnthropicBaseUrl",
+          "startLine": 159,
+          "endLine": 168,
+          "params": ["baseUrl"]
+        },
+        {
+          "name": "resolveOpenAICredentials",
+          "startLine": 170,
+          "endLine": 184,
+          "params": ["config"]
+        },
+        {
+          "name": "shouldAllowEmptyOllamaApiKey",
+          "startLine": 186,
+          "endLine": 190,
+          "params": ["config"]
+        },
+        {
+          "name": "resolveOllamaCredentials",
+          "startLine": 192,
+          "endLine": 203,
+          "params": ["config"]
+        },
+        {
+          "name": "isLoopbackBaseUrl",
+          "startLine": 205,
+          "endLine": 207,
+          "params": ["baseUrl"]
+        },
+        {
+          "name": "shouldAllowEmptyAnthropicApiKey",
+          "startLine": 209,
+          "endLine": 217,
+          "params": ["config"]
+        },
+        {
+          "name": "shouldAllowEmptyOpenAIApiKey",
+          "startLine": 219,
+          "endLine": 227,
+          "params": ["config"]
+        },
+        {
+          "name": "isOllamaLegacyCustomOpenAIConfig",
+          "startLine": 229,
+          "endLine": 247,
+          "params": ["config"]
+        },
+        {
+          "name": "shouldAllowEmptyGeminiApiKey",
+          "startLine": 249,
+          "endLine": 257,
+          "params": ["config"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "OPENAI_PLATFORM_BASE_URL",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "LOCAL_OPENAI_PLACEHOLDER_KEY",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "OLLAMA_PLACEHOLDER_KEY",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "isLikelyOAuthAccessToken",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "shouldUseAnthropicAuthToken",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "isOpenAIProvider",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "sanitizeOpenAIAccountId",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "normalizeOpenAICompatibleBaseUrl",
+          "line": 68,
+          "isDefault": false
+        },
+        {
+          "name": "normalizeOllamaBaseUrl",
+          "line": 115,
+          "isDefault": false
+        },
+        {
+          "name": "isOfficialOpenAIBaseUrl",
+          "line": 131,
+          "isDefault": false
+        },
+        {
+          "name": "getUnifiedUnsupportedCustomOpenAIBaseUrl",
+          "line": 147,
+          "isDefault": false
+        },
+        {
+          "name": "normalizeAnthropicBaseUrl",
+          "line": 159,
+          "isDefault": false
+        },
+        {
+          "name": "resolveOpenAICredentials",
+          "line": 170,
+          "isDefault": false
+        },
+        {
+          "name": "shouldAllowEmptyOllamaApiKey",
+          "line": 186,
+          "isDefault": false
+        },
+        {
+          "name": "resolveOllamaCredentials",
+          "line": 192,
+          "isDefault": false
+        },
+        {
+          "name": "isLoopbackBaseUrl",
+          "line": 205,
+          "isDefault": false
+        },
+        {
+          "name": "shouldAllowEmptyAnthropicApiKey",
+          "line": 209,
+          "isDefault": false
+        },
+        {
+          "name": "shouldAllowEmptyOpenAIApiKey",
+          "line": 219,
+          "isDefault": false
+        },
+        {
+          "name": "isOllamaLegacyCustomOpenAIConfig",
+          "line": 229,
+          "isDefault": false
+        },
+        {
+          "name": "shouldAllowEmptyGeminiApiKey",
+          "line": 249,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "isLikelyOAuthAccessToken",
+          "callee": "token?.trim",
+          "lineNumber": 22
+        },
+        {
+          "caller": "isLikelyOAuthAccessToken",
+          "callee": "API_KEY_PREFIX_RE.test",
+          "lineNumber": 26
+        },
+        {
+          "caller": "shouldUseAnthropicAuthToken",
+          "callee": "isLikelyOAuthAccessToken",
+          "lineNumber": 38
+        },
+        {
+          "caller": "sanitizeOpenAIAccountId",
+          "callee": "raw?.trim",
+          "lineNumber": 50
+        },
+        {
+          "caller": "sanitizeOpenAIAccountId",
+          "callee": "value.includes",
+          "lineNumber": 51
+        },
+        {
+          "caller": "sanitizeOpenAIAccountId",
+          "callee": "CHATGPT_ACCOUNT_ID_RE.test",
+          "lineNumber": 54
+        },
+        {
+          "caller": "normalizeBaseUrl",
+          "callee": "baseUrl?.trim",
+          "lineNumber": 61
+        },
+        {
+          "caller": "normalizeBaseUrl",
+          "callee": "value.replace",
+          "lineNumber": 65
+        },
+        {
+          "caller": "normalizeOpenAICompatibleBaseUrl",
+          "callee": "normalizeBaseUrl",
+          "lineNumber": 69
+        },
+        {
+          "caller": "normalizeOpenAICompatibleBaseUrl",
+          "callee": "parsed.hostname.toLowerCase",
+          "lineNumber": 75
+        },
+        {
+          "caller": "normalizeOpenAICompatibleBaseUrl",
+          "callee": "host.includes",
+          "lineNumber": 78
+        },
+        {
+          "caller": "normalizeOpenAICompatibleBaseUrl",
+          "callee": "parsed.pathname.replace",
+          "lineNumber": 79
+        },
+        {
+          "caller": "normalizeOpenAICompatibleBaseUrl",
+          "callee": "pathname\n        .replace(/\\/chat\\/completions$/i, '')\n        .replace(/\\/completions$/i, '')\n        .replace(/\\/responses$/i, '')\n        .replace",
+          "lineNumber": 81
+        },
+        {
+          "caller": "normalizeOpenAICompatibleBaseUrl",
+          "callee": "pathname\n        .replace(/\\/chat\\/completions$/i, '')\n        .replace(/\\/completions$/i, '')\n        .replace",
+          "lineNumber": 81
+        },
+        {
+          "caller": "normalizeOpenAICompatibleBaseUrl",
+          "callee": "pathname\n        .replace(/\\/chat\\/completions$/i, '')\n        .replace",
+          "lineNumber": 81
+        },
+        {
+          "caller": "normalizeOpenAICompatibleBaseUrl",
+          "callee": "pathname\n        .replace",
+          "lineNumber": 81
+        },
+        {
+          "caller": "normalizeOpenAICompatibleBaseUrl",
+          "callee": "parsed.toString().replace",
+          "lineNumber": 88
+        },
+        {
+          "caller": "normalizeOpenAICompatibleBaseUrl",
+          "callee": "parsed.toString",
+          "lineNumber": 88
+        },
+        {
+          "caller": "normalizeOpenAICompatibleBaseUrl",
+          "callee": "/^\\/api$/i.test",
+          "lineNumber": 90
+        },
+        {
+          "caller": "normalizeOpenAICompatibleBaseUrl",
+          "callee": "parsed.toString().replace",
+          "lineNumber": 92
+        },
+        {
+          "caller": "normalizeOpenAICompatibleBaseUrl",
+          "callee": "parsed.toString",
+          "lineNumber": 92
+        },
+        {
+          "caller": "normalizeOpenAICompatibleBaseUrl",
+          "callee": "parsed.toString().replace",
+          "lineNumber": 95
+        },
+        {
+          "caller": "normalizeOpenAICompatibleBaseUrl",
+          "callee": "parsed.toString",
+          "lineNumber": 95
+        },
+        {
+          "caller": "normalizeOpenAICompatibleBaseUrl",
+          "callee": "parsed.pathname.replace",
+          "lineNumber": 101
+        },
+        {
+          "caller": "normalizeOpenAICompatibleBaseUrl",
+          "callee": "pathname\n      .replace(/\\/chat\\/completions$/i, '')\n      .replace(/\\/completions$/i, '')\n      .replace(/\\/responses$/i, '')\n      .replace",
+          "lineNumber": 102
+        },
+        {
+          "caller": "normalizeOpenAICompatibleBaseUrl",
+          "callee": "pathname\n      .replace(/\\/chat\\/completions$/i, '')\n      .replace(/\\/completions$/i, '')\n      .replace",
+          "lineNumber": 102
+        },
+        {
+          "caller": "normalizeOpenAICompatibleBaseUrl",
+          "callee": "pathname\n      .replace(/\\/chat\\/completions$/i, '')\n      .replace",
+          "lineNumber": 102
+        },
+        {
+          "caller": "normalizeOpenAICompatibleBaseUrl",
+          "callee": "pathname\n      .replace",
+          "lineNumber": 102
+        },
+        {
+          "caller": "normalizeOpenAICompatibleBaseUrl",
+          "callee": "parsed.toString().replace",
+          "lineNumber": 109
+        },
+        {
+          "caller": "normalizeOpenAICompatibleBaseUrl",
+          "callee": "parsed.toString",
+          "lineNumber": 109
+        },
+        {
+          "caller": "normalizeOllamaBaseUrl",
+          "callee": "sharedNormalizeOllamaBaseUrl",
+          "lineNumber": 116
+        },
+        {
+          "caller": "extractHostname",
+          "callee": "normalizeBaseUrl",
+          "lineNumber": 120
+        },
+        {
+          "caller": "extractHostname",
+          "callee": "new URL(normalized).hostname.toLowerCase",
+          "lineNumber": 125
+        },
+        {
+          "caller": "isOfficialOpenAIBaseUrl",
+          "callee": "extractHostname",
+          "lineNumber": 132
+        },
+        {
+          "caller": "isOfficialOpenAIBaseUrl",
+          "callee": "OFFICIAL_OPENAI_HOSTS.has",
+          "lineNumber": 136
+        },
+        {
+          "caller": "isOfficialOpenAIBaseUrl",
+          "callee": "host.endsWith",
+          "lineNumber": 140
+        },
+        {
+          "caller": "getUnifiedUnsupportedCustomOpenAIBaseUrl",
+          "callee": "resolveOpenAICredentials",
+          "lineNumber": 151
+        },
+        {
+          "caller": "getUnifiedUnsupportedCustomOpenAIBaseUrl",
+          "callee": "isOfficialOpenAIBaseUrl",
+          "lineNumber": 153
+        },
+        {
+          "caller": "getUnifiedUnsupportedCustomOpenAIBaseUrl",
+          "callee": "normalizeBaseUrl",
+          "lineNumber": 156
+        },
+        {
+          "caller": "normalizeAnthropicBaseUrl",
+          "callee": "normalizeBaseUrl",
+          "lineNumber": 160
+        },
+        {
+          "caller": "normalizeAnthropicBaseUrl",
+          "callee": "/\\/v1$/i.test",
+          "lineNumber": 164
+        },
+        {
+          "caller": "normalizeAnthropicBaseUrl",
+          "callee": "value.slice",
+          "lineNumber": 165
+        },
+        {
+          "caller": "resolveOpenAICredentials",
+          "callee": "config.apiKey?.trim",
+          "lineNumber": 173
+        },
+        {
+          "caller": "resolveOpenAICredentials",
+          "callee": "shouldAllowEmptyOpenAIApiKey",
+          "lineNumber": 175
+        },
+        {
+          "caller": "resolveOpenAICredentials",
+          "callee": "normalizeOpenAICompatibleBaseUrl",
+          "lineNumber": 179
+        },
+        {
+          "caller": "resolveOllamaCredentials",
+          "callee": "config.apiKey?.trim",
+          "lineNumber": 198
+        },
+        {
+          "caller": "resolveOllamaCredentials",
+          "callee": "normalizeOllamaBaseUrl",
+          "lineNumber": 201
+        },
+        {
+          "caller": "isLoopbackBaseUrl",
+          "callee": "sharedIsLoopbackBaseUrl",
+          "lineNumber": 206
+        },
+        {
+          "caller": "shouldAllowEmptyAnthropicApiKey",
+          "callee": "isLoopbackBaseUrl",
+          "lineNumber": 215
+        },
+        {
+          "caller": "shouldAllowEmptyOpenAIApiKey",
+          "callee": "isLoopbackBaseUrl",
+          "lineNumber": 225
+        },
+        {
+          "caller": "isOllamaLegacyCustomOpenAIConfig",
+          "callee": "normalizeBaseUrl",
+          "lineNumber": 235
+        },
+        {
+          "caller": "isOllamaLegacyCustomOpenAIConfig",
+          "callee": "isLoopbackBaseUrl",
+          "lineNumber": 236
+        },
+        {
+          "caller": "isOllamaLegacyCustomOpenAIConfig",
+          "callee": "parsed.pathname.replace",
+          "lineNumber": 242
+        },
+        {
+          "caller": "shouldAllowEmptyGeminiApiKey",
+          "callee": "isLoopbackBaseUrl",
+          "lineNumber": 255
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 20,
+        "functionCount": 19,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/config/ollama-api.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 298,
+      "nonEmptyLines": 267,
+      "functions": [
+        {
+          "name": "resetOllamaModelIndexCache",
+          "startLine": 20,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "buildBaseUrl",
+          "startLine": 25,
+          "endLine": 27,
+          "params": ["baseUrl"]
+        },
+        {
+          "name": "buildCacheKey",
+          "startLine": 29,
+          "endLine": 36,
+          "params": ["baseUrl", "apiKey"]
+        },
+        {
+          "name": "resolveModelsTimeoutMs",
+          "startLine": 38,
+          "endLine": 42,
+          "params": ["baseUrl"]
+        },
+        {
+          "name": "buildHeaders",
+          "startLine": 44,
+          "endLine": 53,
+          "params": ["apiKey"]
+        },
+        {
+          "name": "extractErrorMessage",
+          "startLine": 55,
+          "endLine": 64,
+          "params": ["error"]
+        },
+        {
+          "name": "extractErrorCode",
+          "startLine": 66,
+          "endLine": 79,
+          "params": ["error"]
+        },
+        {
+          "name": "normalizeError",
+          "startLine": 81,
+          "endLine": 110,
+          "params": ["error"]
+        },
+        {
+          "name": "parseJsonResponse",
+          "startLine": 112,
+          "endLine": 122,
+          "params": ["response"]
+        },
+        {
+          "name": "fetchOllamaModelIndex",
+          "startLine": 124,
+          "endLine": 177,
+          "params": ["input"]
+        },
+        {
+          "name": "listOllamaModels",
+          "startLine": 179,
+          "endLine": 185,
+          "params": ["input"]
+        },
+        {
+          "name": "testOllamaConnection",
+          "startLine": 187,
+          "endLine": 223,
+          "params": ["input"]
+        },
+        {
+          "name": "resetOllamaModelInfoCache",
+          "startLine": 235,
+          "endLine": 237,
+          "params": []
+        },
+        {
+          "name": "fetchOllamaModelInfo",
+          "startLine": 239,
+          "endLine": 298,
+          "params": ["input"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "REQUEST_TIMEOUT_MS",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "OLLAMA_MODELS_TIMEOUT_LOCAL_MS",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "OLLAMA_MODELS_TIMEOUT_REMOTE_MS",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "resetOllamaModelIndexCache",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "normalizeError",
+          "line": 81,
+          "isDefault": false
+        },
+        {
+          "name": "fetchOllamaModelIndex",
+          "line": 124,
+          "isDefault": false
+        },
+        {
+          "name": "listOllamaModels",
+          "line": 179,
+          "isDefault": false
+        },
+        {
+          "name": "testOllamaConnection",
+          "line": 187,
+          "isDefault": false
+        },
+        {
+          "name": "resetOllamaModelInfoCache",
+          "line": 235,
+          "isDefault": false
+        },
+        {
+          "name": "fetchOllamaModelInfo",
+          "line": 239,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "resetOllamaModelIndexCache",
+          "callee": "modelIndexCache.clear",
+          "lineNumber": 21
+        },
+        {
+          "caller": "resetOllamaModelIndexCache",
+          "callee": "modelIndexInflight.clear",
+          "lineNumber": 22
+        },
+        {
+          "caller": "buildBaseUrl",
+          "callee": "normalizeOllamaBaseUrl",
+          "lineNumber": 26
+        },
+        {
+          "caller": "buildCacheKey",
+          "callee": "apiKey?.trim",
+          "lineNumber": 30
+        },
+        {
+          "caller": "buildCacheKey",
+          "callee": "crypto.createHash('sha256').update(trimmedKey).digest('hex').slice",
+          "lineNumber": 33
+        },
+        {
+          "caller": "buildCacheKey",
+          "callee": "crypto.createHash('sha256').update(trimmedKey).digest",
+          "lineNumber": 33
+        },
+        {
+          "caller": "buildCacheKey",
+          "callee": "crypto.createHash('sha256').update",
+          "lineNumber": 33
+        },
+        {
+          "caller": "buildCacheKey",
+          "callee": "crypto.createHash",
+          "lineNumber": 33
+        },
+        {
+          "caller": "resolveModelsTimeoutMs",
+          "callee": "isLoopbackBaseUrl",
+          "lineNumber": 39
+        },
+        {
+          "caller": "buildHeaders",
+          "callee": "apiKey?.trim",
+          "lineNumber": 48
+        },
+        {
+          "caller": "extractErrorMessage",
+          "callee": "[error.message, causeMessage].filter(Boolean).join",
+          "lineNumber": 61
+        },
+        {
+          "caller": "extractErrorMessage",
+          "callee": "[error.message, causeMessage].filter",
+          "lineNumber": 61
+        },
+        {
+          "caller": "extractErrorMessage",
+          "callee": "String",
+          "lineNumber": 63
+        },
+        {
+          "caller": "normalizeError",
+          "callee": "extractErrorMessage",
+          "lineNumber": 82
+        },
+        {
+          "caller": "normalizeError",
+          "callee": "extractErrorCode",
+          "lineNumber": 83
+        },
+        {
+          "caller": "normalizeError",
+          "callee": "/401|403|unauthorized|forbidden/i.test",
+          "lineNumber": 84
+        },
+        {
+          "caller": "normalizeError",
+          "callee": "/404|not found/i.test",
+          "lineNumber": 87
+        },
+        {
+          "caller": "normalizeError",
+          "callee": "/429|rate limit|too many requests/i.test",
+          "lineNumber": 90
+        },
+        {
+          "caller": "normalizeError",
+          "callee": "/5\\d\\d|server error|internal error/i.test",
+          "lineNumber": 93
+        },
+        {
+          "caller": "normalizeError",
+          "callee": "/econnrefused/i.test",
+          "lineNumber": 96
+        },
+        {
+          "caller": "normalizeError",
+          "callee": "/timed?\\s*out|timeout|abort/i.test",
+          "lineNumber": 99
+        },
+        {
+          "caller": "normalizeError",
+          "callee": "/network|fetch failed|enotfound|eai_again/i.test",
+          "lineNumber": 105
+        },
+        {
+          "caller": "parseJsonResponse",
+          "callee": "response.text",
+          "lineNumber": 113
+        },
+        {
+          "caller": "parseJsonResponse",
+          "callee": "JSON.parse",
+          "lineNumber": 118
+        },
+        {
+          "caller": "parseJsonResponse",
+          "callee": "text.substring",
+          "lineNumber": 120
+        },
+        {
+          "caller": "fetchOllamaModelIndex",
+          "callee": "buildBaseUrl",
+          "lineNumber": 128
+        },
+        {
+          "caller": "fetchOllamaModelIndex",
+          "callee": "buildCacheKey",
+          "lineNumber": 129
+        },
+        {
+          "caller": "fetchOllamaModelIndex",
+          "callee": "Date.now",
+          "lineNumber": 130
+        },
+        {
+          "caller": "fetchOllamaModelIndex",
+          "callee": "modelIndexCache.get",
+          "lineNumber": 131
+        },
+        {
+          "caller": "fetchOllamaModelIndex",
+          "callee": "modelIndexInflight.get",
+          "lineNumber": 136
+        },
+        {
+          "caller": "fetchOllamaModelIndex",
+          "callee": "(async (): Promise<OllamaModelIndexResult> => {\n    const response = await fetch(`${baseUrl}/models`, {\n      method: 'GET',\n      headers: buildHeaders(input.apiKey),\n      signal: AbortSignal.timeout(resolveModelsTimeoutMs(baseUrl)),\n    });\n    const data = await parseJsonResponse(response);\n    const models = (Array.isArray(data?.data) ? data.data : [])\n      .map((item: unknown) => {\n        const modelItem = item as { id?: unknown };\n        const id = typeof modelItem?.id === 'string' ? modelItem.id.trim() : '';\n        if (!id) {\n          return null;\n        }\n        return {\n          id,\n          name: id,\n        };\n      })\n      .filter((item: ProviderModelInfo | null): item is ProviderModelInfo => Boolean(item));\n\n    const result = { baseUrl, models };\n    modelIndexCache.set(cacheKey, {\n      expiresAt: Date.now() + OLLAMA_MODELS_CACHE_TTL_MS,\n      result,\n    });\n    return result;\n  })",
+          "lineNumber": 141
+        },
+        {
+          "caller": "fetchOllamaModelIndex",
+          "callee": "fetch",
+          "lineNumber": 142
+        },
+        {
+          "caller": "fetchOllamaModelIndex",
+          "callee": "buildHeaders",
+          "lineNumber": 144
+        },
+        {
+          "caller": "fetchOllamaModelIndex",
+          "callee": "AbortSignal.timeout",
+          "lineNumber": 145
+        },
+        {
+          "caller": "fetchOllamaModelIndex",
+          "callee": "resolveModelsTimeoutMs",
+          "lineNumber": 145
+        },
+        {
+          "caller": "fetchOllamaModelIndex",
+          "callee": "parseJsonResponse",
+          "lineNumber": 147
+        },
+        {
+          "caller": "fetchOllamaModelIndex",
+          "callee": "(Array.isArray(data?.data) ? data.data : [])\n      .map((item: unknown) => {\n        const modelItem = item as { id?: unknown };\n        const id = typeof modelItem?.id === 'string' ? modelItem.id.trim() : '';\n        if (!id) {\n          return null;\n        }\n        return {\n          id,\n          name: id,\n        };\n      })\n      .filter",
+          "lineNumber": 148
+        },
+        {
+          "caller": "fetchOllamaModelIndex",
+          "callee": "(Array.isArray(data?.data) ? data.data : [])\n      .map",
+          "lineNumber": 148
+        },
+        {
+          "caller": "fetchOllamaModelIndex",
+          "callee": "Array.isArray",
+          "lineNumber": 148
+        },
+        {
+          "caller": "fetchOllamaModelIndex",
+          "callee": "modelItem.id.trim",
+          "lineNumber": 151
+        },
+        {
+          "caller": "fetchOllamaModelIndex",
+          "callee": "Boolean",
+          "lineNumber": 160
+        },
+        {
+          "caller": "fetchOllamaModelIndex",
+          "callee": "modelIndexCache.set",
+          "lineNumber": 163
+        },
+        {
+          "caller": "fetchOllamaModelIndex",
+          "callee": "Date.now",
+          "lineNumber": 164
+        },
+        {
+          "caller": "fetchOllamaModelIndex",
+          "callee": "modelIndexInflight.set",
+          "lineNumber": 171
+        },
+        {
+          "caller": "fetchOllamaModelIndex",
+          "callee": "modelIndexInflight.delete",
+          "lineNumber": 175
+        },
+        {
+          "caller": "listOllamaModels",
+          "callee": "fetchOllamaModelIndex",
+          "lineNumber": 183
+        },
+        {
+          "caller": "testOllamaConnection",
+          "callee": "Date.now",
+          "lineNumber": 188
+        },
+        {
+          "caller": "testOllamaConnection",
+          "callee": "input.model?.trim",
+          "lineNumber": 191
+        },
+        {
+          "caller": "testOllamaConnection",
+          "callee": "fetch",
+          "lineNumber": 195
+        },
+        {
+          "caller": "testOllamaConnection",
+          "callee": "buildBaseUrl",
+          "lineNumber": 195
+        },
+        {
+          "caller": "testOllamaConnection",
+          "callee": "buildHeaders",
+          "lineNumber": 197
+        },
+        {
+          "caller": "testOllamaConnection",
+          "callee": "JSON.stringify",
+          "lineNumber": 198
+        },
+        {
+          "caller": "testOllamaConnection",
+          "callee": "AbortSignal.timeout",
+          "lineNumber": 203
+        },
+        {
+          "caller": "testOllamaConnection",
+          "callee": "parseJsonResponse",
+          "lineNumber": 205
+        },
+        {
+          "caller": "testOllamaConnection",
+          "callee": "listOllamaModels",
+          "lineNumber": 207
+        },
+        {
+          "caller": "testOllamaConnection",
+          "callee": "Date.now",
+          "lineNumber": 215
+        },
+        {
+          "caller": "testOllamaConnection",
+          "callee": "normalizeError",
+          "lineNumber": 219
+        },
+        {
+          "caller": "testOllamaConnection",
+          "callee": "Date.now",
+          "lineNumber": 220
+        },
+        {
+          "caller": "resetOllamaModelInfoCache",
+          "callee": "modelInfoCache.clear",
+          "lineNumber": 236
+        },
+        {
+          "caller": "fetchOllamaModelInfo",
+          "callee": "ollamaNativeBaseUrl",
+          "lineNumber": 244
+        },
+        {
+          "caller": "fetchOllamaModelInfo",
+          "callee": "Date.now",
+          "lineNumber": 246
+        },
+        {
+          "caller": "fetchOllamaModelInfo",
+          "callee": "modelInfoCache.get",
+          "lineNumber": 247
+        },
+        {
+          "caller": "fetchOllamaModelInfo",
+          "callee": "fetch",
+          "lineNumber": 253
+        },
+        {
+          "caller": "fetchOllamaModelInfo",
+          "callee": "buildHeaders",
+          "lineNumber": 255
+        },
+        {
+          "caller": "fetchOllamaModelInfo",
+          "callee": "JSON.stringify",
+          "lineNumber": 256
+        },
+        {
+          "caller": "fetchOllamaModelInfo",
+          "callee": "AbortSignal.timeout",
+          "lineNumber": 257
+        },
+        {
+          "caller": "fetchOllamaModelInfo",
+          "callee": "parseJsonResponse",
+          "lineNumber": 259
+        },
+        {
+          "caller": "fetchOllamaModelInfo",
+          "callee": "Object.keys",
+          "lineNumber": 267
+        },
+        {
+          "caller": "fetchOllamaModelInfo",
+          "callee": "key.endsWith",
+          "lineNumber": 268
+        },
+        {
+          "caller": "fetchOllamaModelInfo",
+          "callee": "(data.parameters as string).match",
+          "lineNumber": 277
+        },
+        {
+          "caller": "fetchOllamaModelInfo",
+          "callee": "parseInt",
+          "lineNumber": 279
+        },
+        {
+          "caller": "fetchOllamaModelInfo",
+          "callee": "modelInfoCache.set",
+          "lineNumber": 289
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 10,
+        "functionCount": 14,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/renderer/components/ApiConfigSetManager.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 255,
+      "nonEmptyLines": 243,
+      "functions": [
+        {
+          "name": "ApiConfigSetManager",
+          "startLine": 29,
+          "endLine": 255,
+          "params": ["props"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ApiConfigSetManager",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "useTranslation",
+          "lineNumber": 30
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "useState",
+          "lineNumber": 51
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "useState",
+          "lineNumber": 52
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "useState",
+          "lineNumber": 53
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "useEffect",
+          "lineNumber": 55
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "setActiveLocalDialog",
+          "lineNumber": 56
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "setRenameName",
+          "lineNumber": 57
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "setIsInlineRenaming",
+          "lineNumber": 58
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "t",
+          "lineNumber": 61
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "Boolean",
+          "lineNumber": 63
+        },
+        {
+          "caller": "cancelInlineRename",
+          "callee": "setRenameName",
+          "lineNumber": 66
+        },
+        {
+          "caller": "cancelInlineRename",
+          "callee": "setIsInlineRenaming",
+          "lineNumber": 67
+        },
+        {
+          "caller": "commitInlineRename",
+          "callee": "setIsInlineRenaming",
+          "lineNumber": 72
+        },
+        {
+          "caller": "commitInlineRename",
+          "callee": "renameName.trim",
+          "lineNumber": 75
+        },
+        {
+          "caller": "commitInlineRename",
+          "callee": "setRenameName",
+          "lineNumber": 77
+        },
+        {
+          "caller": "commitInlineRename",
+          "callee": "setIsInlineRenaming",
+          "lineNumber": 78
+        },
+        {
+          "caller": "commitInlineRename",
+          "callee": "onRenameSet",
+          "lineNumber": 81
+        },
+        {
+          "caller": "commitInlineRename",
+          "callee": "setRenameName",
+          "lineNumber": 83
+        },
+        {
+          "caller": "commitInlineRename",
+          "callee": "setIsInlineRenaming",
+          "lineNumber": 86
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "t",
+          "lineNumber": 93
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "t",
+          "lineNumber": 95
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "setRenameName",
+          "lineNumber": 103
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "commitInlineRename",
+          "lineNumber": 104
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "e.preventDefault",
+          "lineNumber": 107
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "commitInlineRename",
+          "lineNumber": 108
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "e.preventDefault",
+          "lineNumber": 111
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "cancelInlineRename",
+          "lineNumber": 112
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "t",
+          "lineNumber": 117
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "onSwitchSet",
+          "lineNumber": 123
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "configSets.map",
+          "lineNumber": 127
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "t",
+          "lineNumber": 129
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "t",
+          "lineNumber": 135
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "onSaveCurrentSet",
+          "lineNumber": 140
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "t",
+          "lineNumber": 145
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "onRequestCreateBlankSet",
+          "lineNumber": 149
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "t",
+          "lineNumber": 154
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "setRenameName",
+          "lineNumber": 162
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "setIsInlineRenaming",
+          "lineNumber": 163
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "t",
+          "lineNumber": 169
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "setActiveLocalDialog",
+          "lineNumber": 174
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "t",
+          "lineNumber": 182
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "t",
+          "lineNumber": 187
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "setActiveLocalDialog",
+          "lineNumber": 192
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "t",
+          "lineNumber": 196
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "onDeleteSet",
+          "lineNumber": 204
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "setActiveLocalDialog",
+          "lineNumber": 206
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "t",
+          "lineNumber": 212
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "onSaveAndContinuePendingAction",
+          "lineNumber": 224
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "t",
+          "lineNumber": 228
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "onDiscardAndContinuePendingAction",
+          "lineNumber": 232
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "t",
+          "lineNumber": 236
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "t",
+          "lineNumber": 244
+        },
+        {
+          "caller": "ApiConfigSetManager",
+          "callee": "t",
+          "lineNumber": 251
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/renderer/components/ApiDiagnosticsPanel.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 306,
+      "nonEmptyLines": 281,
+      "functions": [
+        {
+          "name": "StatusBadge",
+          "startLine": 47,
+          "endLine": 62,
+          "params": ["{ status }"]
+        },
+        {
+          "name": "statusColors",
+          "startLine": 65,
+          "endLine": 104,
+          "params": ["status"]
+        },
+        {
+          "name": "Connector",
+          "startLine": 107,
+          "endLine": 133,
+          "params": ["{\n  leftStatus,\n  rightStatus,\n}"]
+        },
+        {
+          "name": "PipelineNode",
+          "startLine": 136,
+          "endLine": 171,
+          "params": ["{ step }"]
+        },
+        {
+          "name": "FailureDetail",
+          "startLine": 174,
+          "endLine": 192,
+          "params": ["{ step }"]
+        },
+        {
+          "name": "ApiDiagnosticsPanel",
+          "startLine": 196,
+          "endLine": 306,
+          "params": [
+            "{\n  result,\n  isRunning,\n  onRunDiagnostics,\n  onRunDeepDiagnostics,\n  disabled = false,\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ApiDiagnosticsPanel",
+          "line": 196,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "PipelineNode",
+          "callee": "useTranslation",
+          "lineNumber": 137
+        },
+        {
+          "caller": "PipelineNode",
+          "callee": "t",
+          "lineNumber": 139
+        },
+        {
+          "caller": "PipelineNode",
+          "callee": "statusColors",
+          "lineNumber": 140
+        },
+        {
+          "caller": "FailureDetail",
+          "callee": "useTranslation",
+          "lineNumber": 175
+        },
+        {
+          "caller": "FailureDetail",
+          "callee": "(() => {\n    if (!step.fix) return '';\n    const [key, ...paramParts] = step.fix.split(':');\n    const param = paramParts.join(':');\n    const i18nKey = `api.diagnostic.fix.${key}`;\n    const resolved = t(i18nKey, { host: param, model: param, defaultValue: '' });\n    return resolved || step.fix;\n  })",
+          "lineNumber": 177
+        },
+        {
+          "caller": "FailureDetail",
+          "callee": "step.fix.split",
+          "lineNumber": 179
+        },
+        {
+          "caller": "FailureDetail",
+          "callee": "paramParts.join",
+          "lineNumber": 180
+        },
+        {
+          "caller": "FailureDetail",
+          "callee": "t",
+          "lineNumber": 182
+        },
+        {
+          "caller": "ApiDiagnosticsPanel",
+          "callee": "useTranslation",
+          "lineNumber": 203
+        },
+        {
+          "caller": "ApiDiagnosticsPanel",
+          "callee": "PENDING_STEP_NAMES.map",
+          "lineNumber": 206
+        },
+        {
+          "caller": "ApiDiagnosticsPanel",
+          "callee": "displaySteps.find",
+          "lineNumber": 211
+        },
+        {
+          "caller": "ApiDiagnosticsPanel",
+          "callee": "onRunDiagnostics",
+          "lineNumber": 218
+        },
+        {
+          "caller": "ApiDiagnosticsPanel",
+          "callee": "t",
+          "lineNumber": 231
+        },
+        {
+          "caller": "ApiDiagnosticsPanel",
+          "callee": "t",
+          "lineNumber": 232
+        },
+        {
+          "caller": "ApiDiagnosticsPanel",
+          "callee": "onRunDeepDiagnostics",
+          "lineNumber": 237
+        },
+        {
+          "caller": "ApiDiagnosticsPanel",
+          "callee": "t",
+          "lineNumber": 245
+        },
+        {
+          "caller": "ApiDiagnosticsPanel",
+          "callee": "displaySteps.map",
+          "lineNumber": 255
+        },
+        {
+          "caller": "ApiDiagnosticsPanel",
+          "callee": "t",
+          "lineNumber": 273
+        },
+        {
+          "caller": "ApiDiagnosticsPanel",
+          "callee": "t",
+          "lineNumber": 280
+        },
+        {
+          "caller": "ApiDiagnosticsPanel",
+          "callee": "t",
+          "lineNumber": 291
+        },
+        {
+          "caller": "ApiDiagnosticsPanel",
+          "callee": "t",
+          "lineNumber": 292
+        },
+        {
+          "caller": "ApiDiagnosticsPanel",
+          "callee": "t",
+          "lineNumber": 294
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 6,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/renderer/components/ConfigModal.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 494,
+      "nonEmptyLines": 477,
+      "functions": [
+        {
+          "name": "ConfigModal",
+          "startLine": 40,
+          "endLine": 494,
+          "params": ["{\n  isOpen,\n  onClose,\n  onSave,\n  initialConfig,\n  isFirstRun,\n}"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ConfigModal",
+          "line": 40,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ConfigModal",
+          "callee": "useTranslation",
+          "lineNumber": 47
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "useApiConfigState",
+          "lineNumber": 104
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "useEffect",
+          "lineNumber": 110
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "setTimeout",
+          "lineNumber": 114
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "onClose",
+          "lineNumber": 115
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "clearTimeout",
+          "lineNumber": 117
+        },
+        {
+          "caller": "testErrorMessage",
+          "callee": "t",
+          "lineNumber": 125
+        },
+        {
+          "caller": "testErrorMessage",
+          "callee": "t",
+          "lineNumber": 127
+        },
+        {
+          "caller": "testErrorMessage",
+          "callee": "t",
+          "lineNumber": 129
+        },
+        {
+          "caller": "testErrorMessage",
+          "callee": "t",
+          "lineNumber": 131
+        },
+        {
+          "caller": "testErrorMessage",
+          "callee": "t",
+          "lineNumber": 133
+        },
+        {
+          "caller": "testErrorMessage",
+          "callee": "t",
+          "lineNumber": 135
+        },
+        {
+          "caller": "testErrorMessage",
+          "callee": "t",
+          "lineNumber": 137
+        },
+        {
+          "caller": "testErrorMessage",
+          "callee": "t",
+          "lineNumber": 139
+        },
+        {
+          "caller": "testErrorMessage",
+          "callee": "t",
+          "lineNumber": 141
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 156
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 159
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 159
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 162
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 162
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 201
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "(['openrouter', 'anthropic', 'openai', 'gemini', 'ollama', 'custom'] as const).map",
+          "lineNumber": 204
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "changeProvider",
+          "lineNumber": 208
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 216
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 228
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "setApiKey",
+          "lineNumber": 233
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 234
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 247
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "(\n                  [\n                    { id: 'anthropic', label: 'Anthropic' },\n                    { id: 'openai', label: 'OpenAI' },\n                    { id: 'gemini', label: 'Gemini' },\n                  ] as const\n                ).map",
+          "lineNumber": 250
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "changeProtocol",
+          "lineNumber": 259
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 270
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 281
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "discoverLocalOllama",
+          "lineNumber": 287
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 294
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 295
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "setBaseUrl",
+          "lineNumber": 302
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 316
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 318
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 320
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 321
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 324
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 335
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "refreshModelOptions",
+          "lineNumber": 342
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 348
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 348
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 363
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 363
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 364
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 364
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "setCustomModel",
+          "lineNumber": 373
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "setModel",
+          "lineNumber": 380
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "modelOptions.map",
+          "lineNumber": 384
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 391
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 426
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "testErrorMessage",
+          "lineNumber": 429
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "apiKey.trim",
+          "lineNumber": 455
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 461
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 466
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "handleSave",
+          "lineNumber": 472
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "apiKey.trim",
+          "lineNumber": 474
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 480
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 485
+        },
+        {
+          "caller": "ConfigModal",
+          "callee": "t",
+          "lineNumber": 485
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/renderer/components/ProviderGuidance.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 118,
+      "nonEmptyLines": 109,
+      "functions": [
+        {
+          "name": "GuidanceInlineHint",
+          "startLine": 19,
+          "endLine": 36,
+          "params": ["{ text, tone = 'info' }"]
+        },
+        {
+          "name": "CommonProviderSetupsCard",
+          "startLine": 43,
+          "endLine": 118,
+          "params": ["{\n  setups,\n  onApplySetup,\n}"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "GuidanceInlineHint",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "CommonProviderSetupsCard",
+          "line": 43,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "CommonProviderSetupsCard",
+          "callee": "useTranslation",
+          "lineNumber": 47
+        },
+        {
+          "caller": "CommonProviderSetupsCard",
+          "callee": "t",
+          "lineNumber": 58
+        },
+        {
+          "caller": "CommonProviderSetupsCard",
+          "callee": "t",
+          "lineNumber": 61
+        },
+        {
+          "caller": "CommonProviderSetupsCard",
+          "callee": "t",
+          "lineNumber": 68
+        },
+        {
+          "caller": "CommonProviderSetupsCard",
+          "callee": "t",
+          "lineNumber": 69
+        },
+        {
+          "caller": "CommonProviderSetupsCard",
+          "callee": "t",
+          "lineNumber": 70
+        },
+        {
+          "caller": "CommonProviderSetupsCard",
+          "callee": "t",
+          "lineNumber": 71
+        },
+        {
+          "caller": "CommonProviderSetupsCard",
+          "callee": "t",
+          "lineNumber": 72
+        },
+        {
+          "caller": "CommonProviderSetupsCard",
+          "callee": "t",
+          "lineNumber": 74
+        },
+        {
+          "caller": "CommonProviderSetupsCard",
+          "callee": "setups.map",
+          "lineNumber": 79
+        },
+        {
+          "caller": "CommonProviderSetupsCard",
+          "callee": "t",
+          "lineNumber": 89
+        },
+        {
+          "caller": "CommonProviderSetupsCard",
+          "callee": "onApplySetup",
+          "lineNumber": 105
+        },
+        {
+          "caller": "CommonProviderSetupsCard",
+          "callee": "t",
+          "lineNumber": 108
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/renderer/components/settings/SettingsAPI.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 465,
+      "nonEmptyLines": 450,
+      "functions": [
+        {
+          "name": "SettingsAPI",
+          "startLine": 25,
+          "endLine": 465,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SettingsAPI",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SettingsAPI",
+          "callee": "useTranslation",
+          "lineNumber": 26
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "useApiConfigState",
+          "lineNumber": 89
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 95
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 127
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 129
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "(['openrouter', 'anthropic', 'openai', 'gemini', 'ollama', 'custom'] as const).map",
+          "lineNumber": 131
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "changeProvider",
+          "lineNumber": 135
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 143
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 157
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 159
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "setApiKey",
+          "lineNumber": 164
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 165
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 181
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "(\n              [\n                { id: 'anthropic', label: 'Anthropic' },\n                { id: 'openai', label: 'OpenAI' },\n                { id: 'gemini', label: 'Gemini' },\n              ] as const\n            ).map",
+          "lineNumber": 184
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "changeProtocol",
+          "lineNumber": 193
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 204
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 217
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "discoverLocalOllama",
+          "lineNumber": 223
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 230
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 231
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "setBaseUrl",
+          "lineNumber": 239
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 253
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 255
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 257
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 258
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 261
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 275
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "refreshModelOptions",
+          "lineNumber": 282
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 288
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 288
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 304
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 305
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 307
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 308
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "setCustomModel",
+          "lineNumber": 318
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "setModel",
+          "lineNumber": 326
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "(modelOptions as ModelOptionItem[]).map",
+          "lineNumber": 330
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 337
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 352
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "setContextWindow",
+          "lineNumber": 358
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 359
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 370
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "setMaxTokens",
+          "lineNumber": 376
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 377
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 383
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "setEnableThinking",
+          "lineNumber": 402
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 406
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 407
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 410
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "apiKey.trim",
+          "lineNumber": 436
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "handleSave",
+          "lineNumber": 444
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "apiKey.trim",
+          "lineNumber": 446
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 452
+        },
+        {
+          "caller": "SettingsAPI",
+          "callee": "t",
+          "lineNumber": 457
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/renderer/hooks/useApiConfigState.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 2117,
+      "nonEmptyLines": 1927,
+      "functions": [
+        {
+          "name": "isProfileKey",
+          "startLine": 82,
+          "endLine": 84,
+          "params": ["value"]
+        },
+        {
+          "name": "isProviderType",
+          "startLine": 86,
+          "endLine": 95,
+          "params": ["value"]
+        },
+        {
+          "name": "isCustomProtocol",
+          "startLine": 97,
+          "endLine": 99,
+          "params": ["value"]
+        },
+        {
+          "name": "profileKeyFromProvider",
+          "startLine": 101,
+          "endLine": 115,
+          "params": ["provider", "customProtocol"]
+        },
+        {
+          "name": "profileKeyToProvider",
+          "startLine": 117,
+          "endLine": 140,
+          "params": ["profileKey"]
+        },
+        {
+          "name": "isCustomAnthropicLoopbackGateway",
+          "startLine": 142,
+          "endLine": 144,
+          "params": ["baseUrl"]
+        },
+        {
+          "name": "isCustomGeminiLoopbackGateway",
+          "startLine": 146,
+          "endLine": 148,
+          "params": ["baseUrl"]
+        },
+        {
+          "name": "isCustomOpenAiLoopbackGateway",
+          "startLine": 150,
+          "endLine": 152,
+          "params": ["baseUrl"]
+        },
+        {
+          "name": "isLegacyOllamaConfig",
+          "startLine": 154,
+          "endLine": 172,
+          "params": ["config"]
+        },
+        {
+          "name": "modelPresetForProfile",
+          "startLine": 174,
+          "endLine": 188,
+          "params": ["profileKey", "presets"]
+        },
+        {
+          "name": "defaultProfileForKey",
+          "startLine": 190,
+          "endLine": 205,
+          "params": ["profileKey", "presets"]
+        },
+        {
+          "name": "normalizeDiscoveredOllamaModels",
+          "startLine": 207,
+          "endLine": 212,
+          "params": ["models"]
+        },
+        {
+          "name": "clearDiscoveredModelsForProfile",
+          "startLine": 216,
+          "endLine": 221,
+          "params": ["prev", "profileKey"]
+        },
+        {
+          "name": "isPristineCustomProfile",
+          "startLine": 223,
+          "endLine": 237,
+          "params": ["profileKey", "profile", "fallback"]
+        },
+        {
+          "name": "normalizeProfile",
+          "startLine": 239,
+          "endLine": 277,
+          "params": ["profileKey", "profile", "presets"]
+        },
+        {
+          "name": "buildApiConfigSnapshot",
+          "startLine": 279,
+          "endLine": 337,
+          "params": ["config", "presets"]
+        },
+        {
+          "name": "toPersistedProfiles",
+          "startLine": 339,
+          "endLine": 357,
+          "params": ["profiles"]
+        },
+        {
+          "name": "buildApiConfigDraftSignature",
+          "startLine": 359,
+          "endLine": 375,
+          "params": ["activeProfileKey", "profiles", "enableThinking"]
+        },
+        {
+          "name": "buildApiConfigSets",
+          "startLine": 377,
+          "endLine": 468,
+          "params": ["config", "presets"]
+        },
+        {
+          "name": "buildApiConfigBootstrap",
+          "startLine": 470,
+          "endLine": 487,
+          "params": ["config", "presets"]
+        },
+        {
+          "name": "translateApiConfigErrorMessage",
+          "startLine": 489,
+          "endLine": 515,
+          "params": ["message", "t"]
+        },
+        {
+          "name": "protocolLabel",
+          "startLine": 517,
+          "endLine": 528,
+          "params": ["protocol", "t"]
+        },
+        {
+          "name": "providerTabLabel",
+          "startLine": 530,
+          "endLine": 539,
+          "params": ["provider", "presets", "t"]
+        },
+        {
+          "name": "buildSetupModelState",
+          "startLine": 541,
+          "endLine": 553,
+          "params": ["setup", "profileKey", "presets"]
+        },
+        {
+          "name": "apiConfigReducer",
+          "startLine": 673,
+          "endLine": 807,
+          "params": ["state", "action"]
+        },
+        {
+          "name": "useApiConfigState",
+          "startLine": 809,
+          "endLine": 2117,
+          "params": ["options"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getModelInputGuidance",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "FALLBACK_PROVIDER_PRESETS",
+          "line": 69,
+          "isDefault": false
+        },
+        {
+          "name": "profileKeyFromProvider",
+          "line": 101,
+          "isDefault": false
+        },
+        {
+          "name": "profileKeyToProvider",
+          "line": 117,
+          "isDefault": false
+        },
+        {
+          "name": "isCustomAnthropicLoopbackGateway",
+          "line": 142,
+          "isDefault": false
+        },
+        {
+          "name": "isCustomGeminiLoopbackGateway",
+          "line": 146,
+          "isDefault": false
+        },
+        {
+          "name": "isCustomOpenAiLoopbackGateway",
+          "line": 150,
+          "isDefault": false
+        },
+        {
+          "name": "buildApiConfigSnapshot",
+          "line": 279,
+          "isDefault": false
+        },
+        {
+          "name": "buildApiConfigDraftSignature",
+          "line": 359,
+          "isDefault": false
+        },
+        {
+          "name": "buildApiConfigSets",
+          "line": 377,
+          "isDefault": false
+        },
+        {
+          "name": "buildApiConfigBootstrap",
+          "line": 470,
+          "isDefault": false
+        },
+        {
+          "name": "useApiConfigState",
+          "line": 809,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "isProfileKey",
+          "callee": "PROFILE_KEYS.includes",
+          "lineNumber": 83
+        },
+        {
+          "caller": "isCustomAnthropicLoopbackGateway",
+          "callee": "isLoopbackBaseUrl",
+          "lineNumber": 143
+        },
+        {
+          "caller": "isCustomGeminiLoopbackGateway",
+          "callee": "isLoopbackBaseUrl",
+          "lineNumber": 147
+        },
+        {
+          "caller": "isCustomOpenAiLoopbackGateway",
+          "callee": "isLoopbackBaseUrl",
+          "lineNumber": 151
+        },
+        {
+          "caller": "isLegacyOllamaConfig",
+          "callee": "config.baseUrl?.trim",
+          "lineNumber": 160
+        },
+        {
+          "caller": "isLegacyOllamaConfig",
+          "callee": "isLoopbackBaseUrl",
+          "lineNumber": 161
+        },
+        {
+          "caller": "isLegacyOllamaConfig",
+          "callee": "parsed.pathname.replace",
+          "lineNumber": 167
+        },
+        {
+          "caller": "defaultProfileForKey",
+          "callee": "modelPresetForProfile",
+          "lineNumber": 194
+        },
+        {
+          "caller": "defaultProfileForKey",
+          "callee": "profileKey.startsWith",
+          "lineNumber": 195
+        },
+        {
+          "caller": "normalizeDiscoveredOllamaModels",
+          "callee": "(models || [])\n    .map((id) => id.trim())\n    .filter(Boolean)\n    .map",
+          "lineNumber": 208
+        },
+        {
+          "caller": "normalizeDiscoveredOllamaModels",
+          "callee": "(models || [])\n    .map((id) => id.trim())\n    .filter",
+          "lineNumber": 208
+        },
+        {
+          "caller": "normalizeDiscoveredOllamaModels",
+          "callee": "(models || [])\n    .map",
+          "lineNumber": 208
+        },
+        {
+          "caller": "normalizeDiscoveredOllamaModels",
+          "callee": "id.trim",
+          "lineNumber": 209
+        },
+        {
+          "caller": "isPristineCustomProfile",
+          "callee": "profileKey.startsWith",
+          "lineNumber": 228
+        },
+        {
+          "caller": "isPristineCustomProfile",
+          "callee": "profile.apiKey?.trim",
+          "lineNumber": 232
+        },
+        {
+          "caller": "isPristineCustomProfile",
+          "callee": "profile.baseUrl?.trim",
+          "lineNumber": 233
+        },
+        {
+          "caller": "isPristineCustomProfile",
+          "callee": "profile.model?.trim",
+          "lineNumber": 234
+        },
+        {
+          "caller": "normalizeProfile",
+          "callee": "defaultProfileForKey",
+          "lineNumber": 244
+        },
+        {
+          "caller": "normalizeProfile",
+          "callee": "isPristineCustomProfile",
+          "lineNumber": 249
+        },
+        {
+          "caller": "normalizeProfile",
+          "callee": "profile?.model?.trim",
+          "lineNumber": 261
+        },
+        {
+          "caller": "normalizeProfile",
+          "callee": "profile?.baseUrl?.trim",
+          "lineNumber": 262
+        },
+        {
+          "caller": "normalizeProfile",
+          "callee": "modelPresetForProfile(profileKey, presets).models.some",
+          "lineNumber": 263
+        },
+        {
+          "caller": "normalizeProfile",
+          "callee": "modelPresetForProfile",
+          "lineNumber": 263
+        },
+        {
+          "caller": "normalizeProfile",
+          "callee": "normalizeOllamaBaseUrl",
+          "lineNumber": 269
+        },
+        {
+          "caller": "normalizeProfile",
+          "callee": "String",
+          "lineNumber": 274
+        },
+        {
+          "caller": "normalizeProfile",
+          "callee": "String",
+          "lineNumber": 275
+        },
+        {
+          "caller": "buildApiConfigSnapshot",
+          "callee": "isLegacyOllamaConfig",
+          "lineNumber": 283
+        },
+        {
+          "caller": "buildApiConfigSnapshot",
+          "callee": "profileKeyFromProvider",
+          "lineNumber": 292
+        },
+        {
+          "caller": "buildApiConfigSnapshot",
+          "callee": "isProfileKey",
+          "lineNumber": 295
+        },
+        {
+          "caller": "buildApiConfigSnapshot",
+          "callee": "normalizeProfile",
+          "lineNumber": 301
+        },
+        {
+          "caller": "buildApiConfigSnapshot",
+          "callee": "normalizeProfile",
+          "lineNumber": 305
+        },
+        {
+          "caller": "buildApiConfigSnapshot",
+          "callee": "Boolean",
+          "lineNumber": 317
+        },
+        {
+          "caller": "buildApiConfigSnapshot",
+          "callee": "Object.keys",
+          "lineNumber": 318
+        },
+        {
+          "caller": "buildApiConfigSnapshot",
+          "callee": "normalizeProfile",
+          "lineNumber": 321
+        },
+        {
+          "caller": "buildApiConfigSnapshot",
+          "callee": "Boolean",
+          "lineNumber": 335
+        },
+        {
+          "caller": "toPersistedProfiles",
+          "callee": "profile.customModel.trim",
+          "lineNumber": 346
+        },
+        {
+          "caller": "toPersistedProfiles",
+          "callee": "profile.baseUrl.trim",
+          "lineNumber": 350
+        },
+        {
+          "caller": "toPersistedProfiles",
+          "callee": "Number",
+          "lineNumber": 352
+        },
+        {
+          "caller": "toPersistedProfiles",
+          "callee": "Number",
+          "lineNumber": 353
+        },
+        {
+          "caller": "buildApiConfigDraftSignature",
+          "callee": "toPersistedProfiles",
+          "lineNumber": 364
+        },
+        {
+          "caller": "buildApiConfigDraftSignature",
+          "callee": "JSON.stringify",
+          "lineNumber": 365
+        },
+        {
+          "caller": "buildApiConfigDraftSignature",
+          "callee": "PROFILE_KEYS.map",
+          "lineNumber": 368
+        },
+        {
+          "caller": "buildApiConfigSets",
+          "callee": "new Date().toISOString",
+          "lineNumber": 381
+        },
+        {
+          "caller": "buildApiConfigSets",
+          "callee": "config.configSets.map",
+          "lineNumber": 384
+        },
+        {
+          "caller": "buildApiConfigSets",
+          "callee": "isLegacyOllamaConfig",
+          "lineNumber": 385
+        },
+        {
+          "caller": "buildApiConfigSets",
+          "callee": "isProviderType",
+          "lineNumber": 386
+        },
+        {
+          "caller": "buildApiConfigSets",
+          "callee": "isCustomProtocol",
+          "lineNumber": 387
+        },
+        {
+          "caller": "buildApiConfigSets",
+          "callee": "isProviderType",
+          "lineNumber": 392
+        },
+        {
+          "caller": "buildApiConfigSets",
+          "callee": "isCustomProtocol",
+          "lineNumber": 397
+        },
+        {
+          "caller": "buildApiConfigSets",
+          "callee": "profileKeyFromProvider",
+          "lineNumber": 400
+        },
+        {
+          "caller": "buildApiConfigSets",
+          "callee": "isProfileKey",
+          "lineNumber": 403
+        },
+        {
+          "caller": "buildApiConfigSets",
+          "callee": "normalizeProfile",
+          "lineNumber": 409
+        },
+        {
+          "caller": "buildApiConfigSets",
+          "callee": "uiProfile.customModel.trim",
+          "lineNumber": 414
+        },
+        {
+          "caller": "buildApiConfigSets",
+          "callee": "normalizeProfile",
+          "lineNumber": 420
+        },
+        {
+          "caller": "buildApiConfigSets",
+          "callee": "ollamaProfile.customModel.trim",
+          "lineNumber": 429
+        },
+        {
+          "caller": "buildApiConfigSets",
+          "callee": "set.id.trim",
+          "lineNumber": 436
+        },
+        {
+          "caller": "buildApiConfigSets",
+          "callee": "set.name.trim",
+          "lineNumber": 437
+        },
+        {
+          "caller": "buildApiConfigSets",
+          "callee": "Boolean",
+          "lineNumber": 442
+        },
+        {
+          "caller": "buildApiConfigSets",
+          "callee": "set.updatedAt.trim",
+          "lineNumber": 443
+        },
+        {
+          "caller": "buildApiConfigSets",
+          "callee": "buildApiConfigSnapshot",
+          "lineNumber": 448
+        },
+        {
+          "caller": "buildApiConfigSets",
+          "callee": "profileKeyToProvider",
+          "lineNumber": 449
+        },
+        {
+          "caller": "buildApiConfigSets",
+          "callee": "config.activeConfigSetId.trim",
+          "lineNumber": 451
+        },
+        {
+          "caller": "buildApiConfigSets",
+          "callee": "toPersistedProfiles",
+          "lineNumber": 463
+        },
+        {
+          "caller": "buildApiConfigBootstrap",
+          "callee": "buildApiConfigSnapshot",
+          "lineNumber": 474
+        },
+        {
+          "caller": "buildApiConfigBootstrap",
+          "callee": "buildApiConfigSets",
+          "lineNumber": 475
+        },
+        {
+          "caller": "buildApiConfigBootstrap",
+          "callee": "configSets.some",
+          "lineNumber": 478
+        },
+        {
+          "caller": "translateApiConfigErrorMessage",
+          "callee": "t",
+          "lineNumber": 494
+        },
+        {
+          "caller": "translateApiConfigErrorMessage",
+          "callee": "t",
+          "lineNumber": 497
+        },
+        {
+          "caller": "translateApiConfigErrorMessage",
+          "callee": "t",
+          "lineNumber": 500
+        },
+        {
+          "caller": "translateApiConfigErrorMessage",
+          "callee": "t",
+          "lineNumber": 503
+        },
+        {
+          "caller": "translateApiConfigErrorMessage",
+          "callee": "t",
+          "lineNumber": 506
+        },
+        {
+          "caller": "translateApiConfigErrorMessage",
+          "callee": "message.match",
+          "lineNumber": 509
+        },
+        {
+          "caller": "translateApiConfigErrorMessage",
+          "callee": "t",
+          "lineNumber": 511
+        },
+        {
+          "caller": "translateApiConfigErrorMessage",
+          "callee": "Number",
+          "lineNumber": 511
+        },
+        {
+          "caller": "protocolLabel",
+          "callee": "t",
+          "lineNumber": 522
+        },
+        {
+          "caller": "protocolLabel",
+          "callee": "t",
+          "lineNumber": 525
+        },
+        {
+          "caller": "protocolLabel",
+          "callee": "t",
+          "lineNumber": 527
+        },
+        {
+          "caller": "providerTabLabel",
+          "callee": "t",
+          "lineNumber": 536
+        },
+        {
+          "caller": "buildSetupModelState",
+          "callee": "modelPresetForProfile",
+          "lineNumber": 546
+        },
+        {
+          "caller": "buildSetupModelState",
+          "callee": "preset.models.some",
+          "lineNumber": 547
+        },
+        {
+          "caller": "apiConfigReducer",
+          "callee": "defaultProfileForKey",
+          "lineNumber": 702
+        },
+        {
+          "caller": "apiConfigReducer",
+          "callee": "action.updater",
+          "lineNumber": 713
+        },
+        {
+          "caller": "apiConfigReducer",
+          "callee": "defaultProfileForKey",
+          "lineNumber": 715
+        },
+        {
+          "caller": "apiConfigReducer",
+          "callee": "clearDiscoveredModelsForProfile",
+          "lineNumber": 729
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useTranslation",
+          "lineNumber": 810
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useAppStore",
+          "lineNumber": 812
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useAppStore",
+          "lineNumber": 813
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useRef",
+          "lineNumber": 814
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "buildApiConfigBootstrap",
+          "lineNumber": 816
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useReducer",
+          "lineNumber": 827
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "Boolean",
+          "lineNumber": 836
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useRef",
+          "lineNumber": 886
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useRef",
+          "lineNumber": 887
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useRef",
+          "lineNumber": 896
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 898
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 899
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 902
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 903
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 906
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 907
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 910
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 911
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 914
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 915
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 918
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 919
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "t",
+          "lineNumber": 922
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "t",
+          "lineNumber": 923
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useMemo",
+          "lineNumber": 925
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "profileKeyToProvider",
+          "lineNumber": 925
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "defaultProfileForKey",
+          "lineNumber": 929
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "modelPresetForProfile",
+          "lineNumber": 930
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "Object.prototype.hasOwnProperty.call",
+          "lineNumber": 933
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "getModelInputGuidance",
+          "lineNumber": 939
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useMemo",
+          "lineNumber": 941
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "configSets.find",
+          "lineNumber": 942
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useMemo",
+          "lineNumber": 945
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "configSets.find",
+          "lineNumber": 948
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "Boolean",
+          "lineNumber": 961
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useMemo",
+          "lineNumber": 965
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "detectCommonProviderSetup",
+          "lineNumber": 966
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useMemo",
+          "lineNumber": 969
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "getFallbackOpenAISetup",
+          "lineNumber": 969
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useMemo",
+          "lineNumber": 970
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "baseUrl.trim",
+          "lineNumber": 977
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "isParsableBaseUrl",
+          "lineNumber": 978
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 984
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "protocolLabel",
+          "lineNumber": 986
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useMemo",
+          "lineNumber": 989
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useMemo",
+          "lineNumber": 998
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "t",
+          "lineNumber": 1003
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "t",
+          "lineNumber": 1005
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "providerTabLabel",
+          "lineNumber": 1007
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "t",
+          "lineNumber": 1012
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "setupDisplayProtocol",
+          "lineNumber": 1014
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "t",
+          "lineNumber": 1018
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "setupDisplayProtocol",
+          "lineNumber": 1020
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useMemo",
+          "lineNumber": 1023
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "t",
+          "lineNumber": 1029
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "setupDisplayProtocol",
+          "lineNumber": 1030
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "t",
+          "lineNumber": 1036
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "t",
+          "lineNumber": 1037
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "setupDisplayProtocol",
+          "lineNumber": 1038
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useMemo",
+          "lineNumber": 1050
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "orderCommonProviderSetups(detectedProviderSetup?.id).map",
+          "lineNumber": 1053
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "orderCommonProviderSetups",
+          "lineNumber": 1053
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "t",
+          "lineNumber": 1055
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "setupDisplayProtocol",
+          "lineNumber": 1056
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "t",
+          "lineNumber": 1059
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useMemo",
+          "lineNumber": 1065
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "resolveProviderGuidanceErrorHint",
+          "lineNumber": 1066
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "t",
+          "lineNumber": 1072
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "t",
+          "lineNumber": 1073
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "providerTabLabel",
+          "lineNumber": 1074
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "t",
+          "lineNumber": 1078
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "t",
+          "lineNumber": 1079
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "setupDisplayProtocol",
+          "lineNumber": 1080
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "t",
+          "lineNumber": 1084
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "t",
+          "lineNumber": 1087
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "t",
+          "lineNumber": 1088
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "setupDisplayProtocol",
+          "lineNumber": 1089
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "t",
+          "lineNumber": 1093
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "isCustomAnthropicLoopbackGateway",
+          "lineNumber": 1109
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "isCustomOpenAiLoopbackGateway",
+          "lineNumber": 1110
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "isCustomGeminiLoopbackGateway",
+          "lineNumber": 1111
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useMemo",
+          "lineNumber": 1113
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "buildApiConfigDraftSignature",
+          "lineNumber": 1114
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1120
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "buildApiConfigBootstrap",
+          "lineNumber": 1122
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "profileKeyToProvider",
+          "lineNumber": 1124
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1134
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "buildApiConfigDraftSignature",
+          "lineNumber": 1144
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1155
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "applyLoadedState",
+          "lineNumber": 1157
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "setAppConfig",
+          "lineNumber": 1158
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "setIsConfigured",
+          "lineNumber": 1159
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "Boolean",
+          "lineNumber": 1159
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1164
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1166
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1171
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "profileKeyFromProvider",
+          "lineNumber": 1173
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1177
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1182
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1183
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1184
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "profileKeyFromProvider",
+          "lineNumber": 1184
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1187
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "updateActiveProfile",
+          "lineNumber": 1189
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1194
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "updateActiveProfile",
+          "lineNumber": 1196
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1201
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "updateActiveProfile",
+          "lineNumber": 1203
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1208
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "updateActiveProfile",
+          "lineNumber": 1210
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1215
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "updateActiveProfile",
+          "lineNumber": 1217
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1222
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "updateActiveProfile",
+          "lineNumber": 1224
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1229
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "COMMON_PROVIDER_SETUPS.find",
+          "lineNumber": 1231
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "profileKeyFromProvider",
+          "lineNumber": 1237
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "buildSetupModelState",
+          "lineNumber": 1238
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1241
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1244
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1253
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1258
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "updateActiveProfile",
+          "lineNumber": 1259
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1275
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1276
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useEffect",
+          "lineNumber": 1279
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1281
+        },
+        {
+          "caller": "load",
+          "callee": "dispatch",
+          "lineNumber": 1287
+        },
+        {
+          "caller": "load",
+          "callee": "window.electronAPI.config.getPresets",
+          "lineNumber": 1290
+        },
+        {
+          "caller": "load",
+          "callee": "window.electronAPI.config.get",
+          "lineNumber": 1292
+        },
+        {
+          "caller": "load",
+          "callee": "applyLoadedState",
+          "lineNumber": 1296
+        },
+        {
+          "caller": "load",
+          "callee": "console.error",
+          "lineNumber": 1299
+        },
+        {
+          "caller": "load",
+          "callee": "applyLoadedState",
+          "lineNumber": 1300
+        },
+        {
+          "caller": "load",
+          "callee": "dispatch",
+          "lineNumber": 1304
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "load",
+          "lineNumber": 1309
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useEffect",
+          "lineNumber": 1315
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "clearError",
+          "lineNumber": 1316
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1317
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1318
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useEffect",
+          "lineNumber": 1330
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "baseUrl.trim",
+          "lineNumber": 1333
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useEffect",
+          "lineNumber": 1338
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1343
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "modelPresetForProfile",
+          "lineNumber": 1347
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1348
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "preset.models.some",
+          "lineNumber": 1353
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1366
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "apiKey.trim",
+          "lineNumber": 1367
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showErrorKey",
+          "lineNumber": 1368
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "customModel.trim",
+          "lineNumber": 1372
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showErrorKey",
+          "lineNumber": 1374
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "baseUrl.trim",
+          "lineNumber": 1378
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showErrorKey",
+          "lineNumber": 1379
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "clearError",
+          "lineNumber": 1383
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1384
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1385
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "baseUrl.trim",
+          "lineNumber": 1389
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "(baseUrl.trim() || currentPreset.baseUrl || '').trim",
+          "lineNumber": 1390
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "baseUrl.trim",
+          "lineNumber": 1390
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "window.electronAPI.config.test",
+          "lineNumber": 1392
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "apiKey.trim",
+          "lineNumber": 1394
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1399
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showSuccessKey",
+          "lineNumber": 1401
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "setTimeout",
+          "lineNumber": 1402
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "clearSuccessMessage",
+          "lineNumber": 1402
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1405
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "String",
+          "lineNumber": 1410
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1414
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1433
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "apiKey.trim",
+          "lineNumber": 1434
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showErrorKey",
+          "lineNumber": 1435
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "clearError",
+          "lineNumber": 1439
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1440
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1441
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1442
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "baseUrl.trim",
+          "lineNumber": 1446
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "(baseUrl.trim() || currentPreset.baseUrl || '').trim",
+          "lineNumber": 1447
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "baseUrl.trim",
+          "lineNumber": 1447
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "customModel.trim",
+          "lineNumber": 1449
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "window.electronAPI.config.diagnose",
+          "lineNumber": 1451
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "apiKey.trim",
+          "lineNumber": 1453
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1459
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showErrorText",
+          "lineNumber": 1461
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1463
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1480
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "handleDiagnose",
+          "lineNumber": 1481
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1484
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "baseUrl.trim",
+          "lineNumber": 1490
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1493
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "clearError",
+          "lineNumber": 1494
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "window.electronAPI.config.listModels",
+          "lineNumber": 1496
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "apiKey.trim",
+          "lineNumber": 1498
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1512
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1514
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "current.customModel.trim",
+          "lineNumber": 1518
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "current.model.trim",
+          "lineNumber": 1519
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "models.some",
+          "lineNumber": 1520
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "Boolean",
+          "lineNumber": 1522
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1544
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showErrorText",
+          "lineNumber": 1546
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showErrorKey",
+          "lineNumber": 1548
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1553
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1567
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "normalizeOllamaBaseUrl",
+          "lineNumber": 1575
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1577
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "options?.autoSelectModelId?.trim",
+          "lineNumber": 1581
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "current.customModel.trim",
+          "lineNumber": 1582
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "current.model.trim",
+          "lineNumber": 1583
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "models.some",
+          "lineNumber": 1584
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "Boolean",
+          "lineNumber": 1586
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1599
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1604
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "baseUrl.trim",
+          "lineNumber": 1611
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "isLoopbackBaseUrl",
+          "lineNumber": 1612
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1614
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "clearError",
+          "lineNumber": 1616
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "window.electronAPI.config.discoverLocal",
+          "lineNumber": 1620
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1634
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showErrorKey",
+          "lineNumber": 1637
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "normalizeDiscoveredOllamaModels",
+          "lineNumber": 1642
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "applyDiscoveredOllamaState",
+          "lineNumber": 1643
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showErrorKey",
+          "lineNumber": 1649
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showSuccessKey",
+          "lineNumber": 1651
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "setTimeout",
+          "lineNumber": 1652
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "clearSuccessMessage",
+          "lineNumber": 1652
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1667
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showErrorText",
+          "lineNumber": 1671
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showErrorKey",
+          "lineNumber": 1673
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1679
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useEffect",
+          "lineNumber": 1698
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "baseUrl.trim",
+          "lineNumber": 1700
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "/^https?:\\/\\/.{3,}/i.test",
+          "lineNumber": 1701
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "setTimeout",
+          "lineNumber": 1702
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "refreshModelOptions",
+          "lineNumber": 1703
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "clearTimeout",
+          "lineNumber": 1705
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1708
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "apiKey.trim",
+          "lineNumber": 1710
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showErrorKey",
+          "lineNumber": 1711
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "customModel.trim",
+          "lineNumber": 1715
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showErrorKey",
+          "lineNumber": 1717
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "baseUrl.trim",
+          "lineNumber": 1721
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showErrorKey",
+          "lineNumber": 1722
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "clearError",
+          "lineNumber": 1726
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1727
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "baseUrl.trim",
+          "lineNumber": 1731
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "(currentPreset.baseUrl || baseUrl).trim",
+          "lineNumber": 1732
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "toPersistedProfiles",
+          "lineNumber": 1734
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "apiKey.trim",
+          "lineNumber": 1738
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "onSave",
+          "lineNumber": 1749
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "window.electronAPI.config.save",
+          "lineNumber": 1751
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "applyPersistedConfigToStore",
+          "lineNumber": 1752
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1755
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showSuccessKey",
+          "lineNumber": 1757
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1758
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "Date.now",
+          "lineNumber": 1758
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "setTimeout",
+          "lineNumber": 1759
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "clearSuccessMessage",
+          "lineNumber": 1759
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showErrorText",
+          "lineNumber": 1764
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "translateApiConfigErrorMessage",
+          "lineNumber": 1764
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showErrorKey",
+          "lineNumber": 1766
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1770
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1800
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1806
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "clearError",
+          "lineNumber": 1807
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "window.electronAPI.config.switchSet",
+          "lineNumber": 1809
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "applyPersistedConfigToStore",
+          "lineNumber": 1810
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showSuccessKey",
+          "lineNumber": 1812
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "setTimeout",
+          "lineNumber": 1813
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "clearSuccessMessage",
+          "lineNumber": 1813
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showErrorText",
+          "lineNumber": 1818
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "translateApiConfigErrorMessage",
+          "lineNumber": 1818
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showErrorKey",
+          "lineNumber": 1820
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1824
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1839
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showErrorKey",
+          "lineNumber": 1846
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "payload.name.trim",
+          "lineNumber": 1850
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showErrorKey",
+          "lineNumber": 1852
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1856
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "clearError",
+          "lineNumber": 1857
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "window.electronAPI.config.createSet",
+          "lineNumber": 1859
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "applyPersistedConfigToStore",
+          "lineNumber": 1864
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showSuccessKey",
+          "lineNumber": 1865
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "setTimeout",
+          "lineNumber": 1866
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "clearSuccessMessage",
+          "lineNumber": 1866
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showErrorText",
+          "lineNumber": 1870
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "translateApiConfigErrorMessage",
+          "lineNumber": 1870
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showErrorKey",
+          "lineNumber": 1872
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1876
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1893
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "createConfigSet",
+          "lineNumber": 1894
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "t",
+          "lineNumber": 1895
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1900
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1908
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "switchConfigSet",
+          "lineNumber": 1912
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1917
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "switchConfigSet",
+          "lineNumber": 1919
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1924
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1925
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1928
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "handleSave",
+          "lineNumber": 1933
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1937
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "continuePendingConfigSetAction",
+          "lineNumber": 1938
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1941
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1946
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "continuePendingConfigSetAction",
+          "lineNumber": 1947
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1950
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "handleSave",
+          "lineNumber": 1952
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "createBlankConfigSet",
+          "lineNumber": 1957
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 1960
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "name.trim",
+          "lineNumber": 1966
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showErrorKey",
+          "lineNumber": 1968
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1972
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "clearError",
+          "lineNumber": 1973
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "window.electronAPI.config.renameSet",
+          "lineNumber": 1975
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "applyPersistedConfigToStore",
+          "lineNumber": 1976
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showSuccessKey",
+          "lineNumber": 1977
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "setTimeout",
+          "lineNumber": 1978
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "clearSuccessMessage",
+          "lineNumber": 1978
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showErrorText",
+          "lineNumber": 1982
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "translateApiConfigErrorMessage",
+          "lineNumber": 1982
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showErrorKey",
+          "lineNumber": 1984
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 1988
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "useCallback",
+          "lineNumber": 2003
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 2009
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "clearError",
+          "lineNumber": 2010
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "window.electronAPI.config.deleteSet",
+          "lineNumber": 2012
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "applyPersistedConfigToStore",
+          "lineNumber": 2013
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showSuccessKey",
+          "lineNumber": 2014
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "setTimeout",
+          "lineNumber": 2015
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "clearSuccessMessage",
+          "lineNumber": 2015
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showErrorText",
+          "lineNumber": 2019
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "translateApiConfigErrorMessage",
+          "lineNumber": 2019
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "showErrorKey",
+          "lineNumber": 2021
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "dispatch",
+          "lineNumber": 2025
+        },
+        {
+          "caller": "useApiConfigState",
+          "callee": "Boolean",
+          "lineNumber": 2040
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 12,
+        "functionCount": 26,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/shared/api-model-presets.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 228,
+      "nonEmptyLines": 214,
+      "functions": [
+        {
+          "name": "getModelInputGuidance",
+          "startLine": 171,
+          "endLine": 228,
+          "params": ["provider", "customProtocol"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "API_PROVIDER_PRESETS",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "PI_AI_CURATED_PRESETS",
+          "line": 122,
+          "isDefault": false
+        },
+        {
+          "name": "getModelInputGuidance",
+          "line": 171,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/shared/api-provider-guidance.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 289,
+      "nonEmptyLines": 265,
+      "functions": [
+        {
+          "name": "normalizeBaseUrl",
+          "startLine": 153,
+          "endLine": 163,
+          "params": ["baseUrl"]
+        },
+        {
+          "name": "isParsableBaseUrl",
+          "startLine": 165,
+          "endLine": 167,
+          "params": ["baseUrl"]
+        },
+        {
+          "name": "matchesHost",
+          "startLine": 169,
+          "endLine": 175,
+          "params": ["hostname", "candidates"]
+        },
+        {
+          "name": "matchesHostContains",
+          "startLine": 177,
+          "endLine": 183,
+          "params": ["hostname", "candidates"]
+        },
+        {
+          "name": "matchesPath",
+          "startLine": 185,
+          "endLine": 201,
+          "params": ["pathname", "setup"]
+        },
+        {
+          "name": "matchesPort",
+          "startLine": 203,
+          "endLine": 209,
+          "params": ["portname", "candidates"]
+        },
+        {
+          "name": "detectCommonProviderSetup",
+          "startLine": 211,
+          "endLine": 240,
+          "params": ["baseUrl"]
+        },
+        {
+          "name": "orderCommonProviderSetups",
+          "startLine": 242,
+          "endLine": 252,
+          "params": ["activeId"]
+        },
+        {
+          "name": "getFallbackOpenAISetup",
+          "startLine": 254,
+          "endLine": 256,
+          "params": []
+        },
+        {
+          "name": "detectProviderGuidanceHintCode",
+          "startLine": 258,
+          "endLine": 270,
+          "params": ["details"]
+        },
+        {
+          "name": "resolveProviderGuidanceErrorHint",
+          "startLine": 272,
+          "endLine": 289,
+          "params": ["details", "setup"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "COMMON_PROVIDER_SETUPS",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "isParsableBaseUrl",
+          "line": 165,
+          "isDefault": false
+        },
+        {
+          "name": "detectCommonProviderSetup",
+          "line": 211,
+          "isDefault": false
+        },
+        {
+          "name": "orderCommonProviderSetups",
+          "line": 242,
+          "isDefault": false
+        },
+        {
+          "name": "getFallbackOpenAISetup",
+          "line": 254,
+          "isDefault": false
+        },
+        {
+          "name": "resolveProviderGuidanceErrorHint",
+          "line": 272,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "normalizeBaseUrl",
+          "callee": "baseUrl?.trim",
+          "lineNumber": 154
+        },
+        {
+          "caller": "isParsableBaseUrl",
+          "callee": "normalizeBaseUrl",
+          "lineNumber": 166
+        },
+        {
+          "caller": "matchesHost",
+          "callee": "hostname.toLowerCase",
+          "lineNumber": 173
+        },
+        {
+          "caller": "matchesHost",
+          "callee": "candidates.some",
+          "lineNumber": 174
+        },
+        {
+          "caller": "matchesHost",
+          "callee": "host.endsWith",
+          "lineNumber": 174
+        },
+        {
+          "caller": "matchesHostContains",
+          "callee": "hostname.toLowerCase",
+          "lineNumber": 181
+        },
+        {
+          "caller": "matchesHostContains",
+          "callee": "candidates.some",
+          "lineNumber": 182
+        },
+        {
+          "caller": "matchesHostContains",
+          "callee": "host.includes",
+          "lineNumber": 182
+        },
+        {
+          "caller": "matchesHostContains",
+          "callee": "candidate.toLowerCase",
+          "lineNumber": 182
+        },
+        {
+          "caller": "matchesPath",
+          "callee": "pathname.replace",
+          "lineNumber": 186
+        },
+        {
+          "caller": "matchesPath",
+          "callee": "pathPrefixes.some",
+          "lineNumber": 190
+        },
+        {
+          "caller": "matchesPath",
+          "callee": "normalizedPath.startsWith",
+          "lineNumber": 192
+        },
+        {
+          "caller": "matchesPath",
+          "callee": "pathIncludes.some",
+          "lineNumber": 199
+        },
+        {
+          "caller": "matchesPath",
+          "callee": "normalizedPath.includes",
+          "lineNumber": 199
+        },
+        {
+          "caller": "matchesPort",
+          "callee": "candidates.includes",
+          "lineNumber": 208
+        },
+        {
+          "caller": "detectCommonProviderSetup",
+          "callee": "normalizeBaseUrl",
+          "lineNumber": 212
+        },
+        {
+          "caller": "detectCommonProviderSetup",
+          "callee": "parsed.hostname.toLowerCase",
+          "lineNumber": 217
+        },
+        {
+          "caller": "detectCommonProviderSetup",
+          "callee": "matchesHost",
+          "lineNumber": 224
+        },
+        {
+          "caller": "detectCommonProviderSetup",
+          "callee": "matchesHostContains",
+          "lineNumber": 227
+        },
+        {
+          "caller": "detectCommonProviderSetup",
+          "callee": "matchesPort",
+          "lineNumber": 230
+        },
+        {
+          "caller": "detectCommonProviderSetup",
+          "callee": "matchesPath",
+          "lineNumber": 233
+        },
+        {
+          "caller": "orderCommonProviderSetups",
+          "callee": "[...COMMON_PROVIDER_SETUPS].sort",
+          "lineNumber": 247
+        },
+        {
+          "caller": "getFallbackOpenAISetup",
+          "callee": "COMMON_PROVIDER_SETUPS.find",
+          "lineNumber": 255
+        },
+        {
+          "caller": "detectProviderGuidanceHintCode",
+          "callee": "details?.trim().toLowerCase",
+          "lineNumber": 259
+        },
+        {
+          "caller": "detectProviderGuidanceHintCode",
+          "callee": "details?.trim",
+          "lineNumber": 259
+        },
+        {
+          "caller": "detectProviderGuidanceHintCode",
+          "callee": "value.startsWith",
+          "lineNumber": 266
+        },
+        {
+          "caller": "resolveProviderGuidanceErrorHint",
+          "callee": "detectProviderGuidanceHintCode",
+          "lineNumber": 276
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 6,
+        "functionCount": 11,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/shared/network/loopback.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 28,
+      "nonEmptyLines": 24,
+      "functions": [
+        {
+          "name": "normalizeHostname",
+          "startLine": 3,
+          "endLine": 9,
+          "params": ["hostname"]
+        },
+        {
+          "name": "isLoopbackHostname",
+          "startLine": 11,
+          "endLine": 13,
+          "params": ["hostname"]
+        },
+        {
+          "name": "isLoopbackBaseUrl",
+          "startLine": 15,
+          "endLine": 28,
+          "params": ["baseUrl"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "isLoopbackHostname",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "isLoopbackBaseUrl",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "normalizeHostname",
+          "callee": "hostname.trim().toLowerCase",
+          "lineNumber": 4
+        },
+        {
+          "caller": "normalizeHostname",
+          "callee": "hostname.trim",
+          "lineNumber": 4
+        },
+        {
+          "caller": "normalizeHostname",
+          "callee": "trimmed.startsWith",
+          "lineNumber": 5
+        },
+        {
+          "caller": "normalizeHostname",
+          "callee": "trimmed.endsWith",
+          "lineNumber": 5
+        },
+        {
+          "caller": "normalizeHostname",
+          "callee": "trimmed.slice",
+          "lineNumber": 6
+        },
+        {
+          "caller": "isLoopbackHostname",
+          "callee": "LOOPBACK_HOSTS.has",
+          "lineNumber": 12
+        },
+        {
+          "caller": "isLoopbackHostname",
+          "callee": "normalizeHostname",
+          "lineNumber": 12
+        },
+        {
+          "caller": "isLoopbackBaseUrl",
+          "callee": "baseUrl?.trim",
+          "lineNumber": 16
+        },
+        {
+          "caller": "isLoopbackBaseUrl",
+          "callee": "value.includes",
+          "lineNumber": 22
+        },
+        {
+          "caller": "isLoopbackBaseUrl",
+          "callee": "isLoopbackHostname",
+          "lineNumber": 24
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/shared/ollama-base-url.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 58,
+      "nonEmptyLines": 54,
+      "functions": [
+        {
+          "name": "trimTrailingSlashes",
+          "startLine": 3,
+          "endLine": 5,
+          "params": ["value"]
+        },
+        {
+          "name": "normalizeOllamaBaseUrl",
+          "startLine": 7,
+          "endLine": 40,
+          "params": ["baseUrl"]
+        },
+        {
+          "name": "ollamaNativeBaseUrl",
+          "startLine": 47,
+          "endLine": 50,
+          "params": ["openaiBaseUrl"]
+        },
+        {
+          "name": "shouldAutoDiscoverLocalOllamaBaseUrl",
+          "startLine": 52,
+          "endLine": 58,
+          "params": ["baseUrl"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DEFAULT_OLLAMA_BASE_URL",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "normalizeOllamaBaseUrl",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "ollamaNativeBaseUrl",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "shouldAutoDiscoverLocalOllamaBaseUrl",
+          "line": 52,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "trimTrailingSlashes",
+          "callee": "value.replace",
+          "lineNumber": 4
+        },
+        {
+          "caller": "normalizeOllamaBaseUrl",
+          "callee": "baseUrl?.trim",
+          "lineNumber": 8
+        },
+        {
+          "caller": "normalizeOllamaBaseUrl",
+          "callee": "trimTrailingSlashes",
+          "lineNumber": 13
+        },
+        {
+          "caller": "normalizeOllamaBaseUrl",
+          "callee": "parsed.pathname.replace",
+          "lineNumber": 14
+        },
+        {
+          "caller": "normalizeOllamaBaseUrl",
+          "callee": "pathname.replace",
+          "lineNumber": 15
+        },
+        {
+          "caller": "normalizeOllamaBaseUrl",
+          "callee": "parsed.toString().replace",
+          "lineNumber": 18
+        },
+        {
+          "caller": "normalizeOllamaBaseUrl",
+          "callee": "parsed.toString",
+          "lineNumber": 18
+        },
+        {
+          "caller": "normalizeOllamaBaseUrl",
+          "callee": "/\\/v1$/i.test",
+          "lineNumber": 20
+        },
+        {
+          "caller": "normalizeOllamaBaseUrl",
+          "callee": "/\\/api\\/v1$/i.test",
+          "lineNumber": 20
+        },
+        {
+          "caller": "normalizeOllamaBaseUrl",
+          "callee": "parsed.toString().replace",
+          "lineNumber": 22
+        },
+        {
+          "caller": "normalizeOllamaBaseUrl",
+          "callee": "parsed.toString",
+          "lineNumber": 22
+        },
+        {
+          "caller": "normalizeOllamaBaseUrl",
+          "callee": "/\\/api(?:\\/v1)?$/i.test",
+          "lineNumber": 24
+        },
+        {
+          "caller": "normalizeOllamaBaseUrl",
+          "callee": "parsed.toString().replace",
+          "lineNumber": 26
+        },
+        {
+          "caller": "normalizeOllamaBaseUrl",
+          "callee": "parsed.toString",
+          "lineNumber": 26
+        },
+        {
+          "caller": "normalizeOllamaBaseUrl",
+          "callee": "parsed.toString().replace",
+          "lineNumber": 29
+        },
+        {
+          "caller": "normalizeOllamaBaseUrl",
+          "callee": "parsed.toString",
+          "lineNumber": 29
+        },
+        {
+          "caller": "normalizeOllamaBaseUrl",
+          "callee": "trimTrailingSlashes",
+          "lineNumber": 31
+        },
+        {
+          "caller": "normalizeOllamaBaseUrl",
+          "callee": "/\\/v1$/i.test",
+          "lineNumber": 32
+        },
+        {
+          "caller": "normalizeOllamaBaseUrl",
+          "callee": "/\\/api\\/v1$/i.test",
+          "lineNumber": 32
+        },
+        {
+          "caller": "normalizeOllamaBaseUrl",
+          "callee": "/\\/api(?:\\/v1)?$/i.test",
+          "lineNumber": 35
+        },
+        {
+          "caller": "normalizeOllamaBaseUrl",
+          "callee": "compact.replace",
+          "lineNumber": 36
+        },
+        {
+          "caller": "ollamaNativeBaseUrl",
+          "callee": "openaiBaseUrl.replace",
+          "lineNumber": 48
+        },
+        {
+          "caller": "ollamaNativeBaseUrl",
+          "callee": "/\\/v1$/i.test",
+          "lineNumber": 49
+        },
+        {
+          "caller": "ollamaNativeBaseUrl",
+          "callee": "trimmed.replace",
+          "lineNumber": 49
+        },
+        {
+          "caller": "shouldAutoDiscoverLocalOllamaBaseUrl",
+          "callee": "baseUrl?.trim",
+          "lineNumber": 53
+        },
+        {
+          "caller": "shouldAutoDiscoverLocalOllamaBaseUrl",
+          "callee": "normalizeOllamaBaseUrl",
+          "lineNumber": 57
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/tests/claude/pi-model-resolution.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 49,
+      "nonEmptyLines": 44,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/tests/config/api-diagnostics.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 40,
+      "nonEmptyLines": 35,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/tests/config/auth-utils.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 188,
+      "nonEmptyLines": 159,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/api-config-state-config-sets.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 219,
+      "nonEmptyLines": 207,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/api-config-state.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 307,
+      "nonEmptyLines": 283,
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/api-diagnostics.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 412,
+      "nonEmptyLines": 362,
+      "callGraph": [
+        {
+          "caller": "once",
+          "callee": "queueMicrotask",
+          "lineNumber": 107
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/auth-utils.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 319,
+      "nonEmptyLines": 285,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/loopback-url.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 21,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/ollama-api.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 206,
+      "nonEmptyLines": 183,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/ollama-base-url.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 45,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/ollama-discovery.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 131,
+      "nonEmptyLines": 111,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/pi-model-resolution.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 521,
+      "nonEmptyLines": 469,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/provider-guidance.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 63,
+      "nonEmptyLines": 56,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

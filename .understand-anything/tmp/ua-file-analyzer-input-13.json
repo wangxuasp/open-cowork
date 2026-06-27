@@ -1,0 +1,60 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": ".claude/skills/pptx/ooxml/scripts/validate.py",
+      "language": "python",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/scripts/validation/__init__.py",
+      "language": "python",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/scripts/validation/base.py",
+      "language": "python",
+      "sizeLines": 1023,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/scripts/validation/docx.py",
+      "language": "python",
+      "sizeLines": 369,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/scripts/validation/pptx.py",
+      "language": "python",
+      "sizeLines": 315,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/scripts/validation/redlining.py",
+      "language": "python",
+      "sizeLines": 283,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    ".claude/skills/pptx/ooxml/scripts/validate.py": [
+      ".claude/skills/pptx/ooxml/scripts/validation/__init__.py"
+    ],
+    ".claude/skills/pptx/ooxml/scripts/validation/__init__.py": [
+      ".claude/skills/pptx/ooxml/scripts/validation/base.py",
+      ".claude/skills/pptx/ooxml/scripts/validation/docx.py",
+      ".claude/skills/pptx/ooxml/scripts/validation/pptx.py",
+      ".claude/skills/pptx/ooxml/scripts/validation/redlining.py"
+    ],
+    ".claude/skills/pptx/ooxml/scripts/validation/base.py": [],
+    ".claude/skills/pptx/ooxml/scripts/validation/docx.py": [
+      ".claude/skills/pptx/ooxml/scripts/validation/base.py"
+    ],
+    ".claude/skills/pptx/ooxml/scripts/validation/pptx.py": [
+      ".claude/skills/pptx/ooxml/scripts/validation/base.py"
+    ],
+    ".claude/skills/pptx/ooxml/scripts/validation/redlining.py": []
+  }
+}

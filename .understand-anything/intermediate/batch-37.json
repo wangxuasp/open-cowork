@@ -1,0 +1,45 @@
+{
+  "nodes": [
+    {
+      "id": "document:website/public/llms-full.txt",
+      "type": "document",
+      "name": "llms-full.txt",
+      "filePath": "website/public/llms-full.txt",
+      "summary": "文档文件 llms-full.txt，共约 98 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "moderate",
+      "language": "txt"
+    },
+    {
+      "id": "document:website/public/llms.txt",
+      "type": "document",
+      "name": "llms.txt",
+      "filePath": "website/public/llms.txt",
+      "summary": "文档文件 llms.txt，共约 29 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "simple",
+      "language": "txt"
+    },
+    {
+      "id": "config:website/public/project.json",
+      "type": "config",
+      "name": "project.json",
+      "filePath": "website/public/project.json",
+      "summary": "配置文件 project.json，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "moderate",
+      "language": "json"
+    },
+    {
+      "id": "document:website/public/robots.txt",
+      "type": "document",
+      "name": "robots.txt",
+      "filePath": "website/public/robots.txt",
+      "summary": "文档文件 robots.txt，共约 28 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "simple",
+      "language": "txt"
+    }
+  ],
+  "edges": []
+}

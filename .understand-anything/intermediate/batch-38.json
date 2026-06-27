@@ -1,0 +1,2790 @@
+{
+  "nodes": [
+    {
+      "id": "document:.claude/skills/bom/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": ".claude/skills/bom/SKILL.md",
+      "summary": "文档文件 SKILL.md，共约 82 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "moderate",
+      "language": "markdown"
+    },
+    {
+      "id": "document:.claude/skills/context/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": ".claude/skills/context/SKILL.md",
+      "summary": "文档文件 SKILL.md，共约 39 行有效内容。",
+      "tags": ["service", "documentation"],
+      "complexity": "simple",
+      "language": "markdown"
+    },
+    {
+      "id": "document:.claude/skills/dataset/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": ".claude/skills/dataset/SKILL.md",
+      "summary": "文档文件 SKILL.md，共约 141 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "moderate",
+      "language": "markdown"
+    },
+    {
+      "id": "document:.claude/skills/docx/LICENSE.txt",
+      "type": "document",
+      "name": "LICENSE.txt",
+      "filePath": ".claude/skills/docx/LICENSE.txt",
+      "summary": "文档文件 LICENSE.txt，共约 25 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "simple",
+      "language": "txt"
+    },
+    {
+      "id": "file:.claude/skills/docx/scripts/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": ".claude/skills/docx/scripts/__init__.py",
+      "summary": "源码模块 .claude/skills/docx/scripts/__init__.py，体量 1 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "file:.claude/skills/docx/scripts/comment.py",
+      "type": "file",
+      "name": "comment.py",
+      "filePath": ".claude/skills/docx/scripts/comment.py",
+      "summary": "源码模块 .claude/skills/docx/scripts/comment.py，包含 10 个函数，约 291 行有效代码。",
+      "tags": ["utility"],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/comment.py:_generate_hex_id",
+      "type": "function",
+      "name": "_generate_hex_id",
+      "filePath": ".claude/skills/docx/scripts/comment.py",
+      "summary": "函数 _generate_hex_id，位于 .claude/skills/docx/scripts/comment.py 第 55-57 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/comment.py:_encode_smart_quotes",
+      "type": "function",
+      "name": "_encode_smart_quotes",
+      "filePath": ".claude/skills/docx/scripts/comment.py",
+      "summary": "函数 _encode_smart_quotes，位于 .claude/skills/docx/scripts/comment.py 第 69-73 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/comment.py:_append_xml",
+      "type": "function",
+      "name": "_append_xml",
+      "filePath": ".claude/skills/docx/scripts/comment.py",
+      "summary": "函数 _append_xml，位于 .claude/skills/docx/scripts/comment.py 第 76-87 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/comment.py:_find_para_id",
+      "type": "function",
+      "name": "_find_para_id",
+      "filePath": ".claude/skills/docx/scripts/comment.py",
+      "summary": "函数 _find_para_id，位于 .claude/skills/docx/scripts/comment.py 第 90-98 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/comment.py:_get_next_rid",
+      "type": "function",
+      "name": "_get_next_rid",
+      "filePath": ".claude/skills/docx/scripts/comment.py",
+      "summary": "函数 _get_next_rid，位于 .claude/skills/docx/scripts/comment.py 第 101-112 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/comment.py:_has_relationship",
+      "type": "function",
+      "name": "_has_relationship",
+      "filePath": ".claude/skills/docx/scripts/comment.py",
+      "summary": "函数 _has_relationship，位于 .claude/skills/docx/scripts/comment.py 第 115-121 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/comment.py:_has_content_type",
+      "type": "function",
+      "name": "_has_content_type",
+      "filePath": ".claude/skills/docx/scripts/comment.py",
+      "summary": "函数 _has_content_type，位于 .claude/skills/docx/scripts/comment.py 第 124-130 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_relationships",
+      "type": "function",
+      "name": "_ensure_comment_relationships",
+      "filePath": ".claude/skills/docx/scripts/comment.py",
+      "summary": "函数 _ensure_comment_relationships，位于 .claude/skills/docx/scripts/comment.py 第 133-174 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_content_types",
+      "type": "function",
+      "name": "_ensure_comment_content_types",
+      "filePath": ".claude/skills/docx/scripts/comment.py",
+      "summary": "函数 _ensure_comment_content_types，位于 .claude/skills/docx/scripts/comment.py 第 177-215 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/comment.py:add_comment",
+      "type": "function",
+      "name": "add_comment",
+      "filePath": ".claude/skills/docx/scripts/comment.py",
+      "summary": "函数 add_comment，位于 .claude/skills/docx/scripts/comment.py 第 218-303 行。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "file:.claude/skills/docx/scripts/helpers/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": ".claude/skills/docx/scripts/helpers/__init__.py",
+      "summary": "源码模块 .claude/skills/docx/scripts/helpers/__init__.py，体量 0 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "file:.claude/skills/docx/scripts/helpers/merge_runs.py",
+      "type": "file",
+      "name": "merge_runs.py",
+      "filePath": ".claude/skills/docx/scripts/helpers/merge_runs.py",
+      "summary": "源码模块 .claude/skills/docx/scripts/helpers/merge_runs.py，包含 9 个函数，约 135 行有效代码。",
+      "tags": ["utility"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:merge_runs",
+      "type": "function",
+      "name": "merge_runs",
+      "filePath": ".claude/skills/docx/scripts/helpers/merge_runs.py",
+      "summary": "函数 merge_runs，位于 .claude/skills/docx/scripts/helpers/merge_runs.py 第 15-47 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_find_elements_by_tag",
+      "type": "function",
+      "name": "_find_elements_by_tag",
+      "filePath": ".claude/skills/docx/scripts/helpers/merge_runs.py",
+      "summary": "函数 _find_elements_by_tag，位于 .claude/skills/docx/scripts/helpers/merge_runs.py 第 50-62 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_matches_tag",
+      "type": "function",
+      "name": "_matches_tag",
+      "filePath": ".claude/skills/docx/scripts/helpers/merge_runs.py",
+      "summary": "函数 _matches_tag，位于 .claude/skills/docx/scripts/helpers/merge_runs.py 第 65-68 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_remove_proof_errors",
+      "type": "function",
+      "name": "_remove_proof_errors",
+      "filePath": ".claude/skills/docx/scripts/helpers/merge_runs.py",
+      "summary": "函数 _remove_proof_errors，位于 .claude/skills/docx/scripts/helpers/merge_runs.py 第 71-75 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_merge_adjacent_runs",
+      "type": "function",
+      "name": "_merge_adjacent_runs",
+      "filePath": ".claude/skills/docx/scripts/helpers/merge_runs.py",
+      "summary": "函数 _merge_adjacent_runs，位于 .claude/skills/docx/scripts/helpers/merge_runs.py 第 78-107 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_can_merge_runs",
+      "type": "function",
+      "name": "_can_merge_runs",
+      "filePath": ".claude/skills/docx/scripts/helpers/merge_runs.py",
+      "summary": "函数 _can_merge_runs，位于 .claude/skills/docx/scripts/helpers/merge_runs.py 第 110-124 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_get_rpr",
+      "type": "function",
+      "name": "_get_rpr",
+      "filePath": ".claude/skills/docx/scripts/helpers/merge_runs.py",
+      "summary": "函数 _get_rpr，位于 .claude/skills/docx/scripts/helpers/merge_runs.py 第 127-132 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_consolidate_text_elements",
+      "type": "function",
+      "name": "_consolidate_text_elements",
+      "filePath": ".claude/skills/docx/scripts/helpers/merge_runs.py",
+      "summary": "函数 _consolidate_text_elements，位于 .claude/skills/docx/scripts/helpers/merge_runs.py 第 135-162 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_are_adjacent",
+      "type": "function",
+      "name": "_are_adjacent",
+      "filePath": ".claude/skills/docx/scripts/helpers/merge_runs.py",
+      "summary": "函数 _are_adjacent，位于 .claude/skills/docx/scripts/helpers/merge_runs.py 第 165-176 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "config:.claude/skills/docx/scripts/ooxml/schemas/mce/mc.xsd",
+      "type": "config",
+      "name": "mc.xsd",
+      "filePath": ".claude/skills/docx/scripts/ooxml/schemas/mce/mc.xsd",
+      "summary": "配置文件 mc.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "moderate",
+      "language": "xml"
+    },
+    {
+      "id": "file:.claude/skills/docx/scripts/ooxml/scripts/pack.py",
+      "type": "file",
+      "name": "pack.py",
+      "filePath": ".claude/skills/docx/scripts/ooxml/scripts/pack.py",
+      "summary": "源码模块 .claude/skills/docx/scripts/ooxml/scripts/pack.py，包含 4 个函数，约 132 行有效代码。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": ".claude/skills/docx/scripts/ooxml/scripts/pack.py",
+      "summary": "函数 main，位于 .claude/skills/docx/scripts/ooxml/scripts/pack.py 第 19-42 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:pack_document",
+      "type": "function",
+      "name": "pack_document",
+      "filePath": ".claude/skills/docx/scripts/ooxml/scripts/pack.py",
+      "summary": "函数 pack_document，位于 .claude/skills/docx/scripts/ooxml/scripts/pack.py 第 45-87 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:validate_document",
+      "type": "function",
+      "name": "validate_document",
+      "filePath": ".claude/skills/docx/scripts/ooxml/scripts/pack.py",
+      "summary": "函数 validate_document，位于 .claude/skills/docx/scripts/ooxml/scripts/pack.py 第 90-130 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:condense_xml",
+      "type": "function",
+      "name": "condense_xml",
+      "filePath": ".claude/skills/docx/scripts/ooxml/scripts/pack.py",
+      "summary": "函数 condense_xml，位于 .claude/skills/docx/scripts/ooxml/scripts/pack.py 第 133-155 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "file:.claude/skills/docx/scripts/ooxml/scripts/unpack.py",
+      "type": "file",
+      "name": "unpack.py",
+      "filePath": ".claude/skills/docx/scripts/ooxml/scripts/unpack.py",
+      "summary": "源码模块 .claude/skills/docx/scripts/ooxml/scripts/unpack.py，体量 32 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "file:.claude/skills/docx/scripts/unpack.py",
+      "type": "file",
+      "name": "unpack.py",
+      "filePath": ".claude/skills/docx/scripts/unpack.py",
+      "summary": "源码模块 .claude/skills/docx/scripts/unpack.py，包含 3 个函数，约 92 行有效代码。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/unpack.py:unpack",
+      "type": "function",
+      "name": "unpack",
+      "filePath": ".claude/skills/docx/scripts/unpack.py",
+      "summary": "函数 unpack，位于 .claude/skills/docx/scripts/unpack.py 第 29-82 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/unpack.py:_pretty_print_xml",
+      "type": "function",
+      "name": "_pretty_print_xml",
+      "filePath": ".claude/skills/docx/scripts/unpack.py",
+      "summary": "函数 _pretty_print_xml，位于 .claude/skills/docx/scripts/unpack.py 第 85-89 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/docx/scripts/unpack.py:_escape_smart_quotes",
+      "type": "function",
+      "name": "_escape_smart_quotes",
+      "filePath": ".claude/skills/docx/scripts/unpack.py",
+      "summary": "函数 _escape_smart_quotes，位于 .claude/skills/docx/scripts/unpack.py 第 92-97 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "document:.claude/skills/docx/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": ".claude/skills/docx/SKILL.md",
+      "summary": "文档文件 SKILL.md，共约 342 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "complex",
+      "language": "markdown"
+    },
+    {
+      "id": "document:.claude/skills/drawing/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": ".claude/skills/drawing/SKILL.md",
+      "summary": "文档文件 SKILL.md，共约 52 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "moderate",
+      "language": "markdown"
+    },
+    {
+      "id": "document:.claude/skills/folder/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": ".claude/skills/folder/SKILL.md",
+      "summary": "文档文件 SKILL.md，共约 70 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "moderate",
+      "language": "markdown"
+    },
+    {
+      "id": "document:.claude/skills/item/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": ".claude/skills/item/SKILL.md",
+      "summary": "文档文件 SKILL.md，共约 78 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "moderate",
+      "language": "markdown"
+    },
+    {
+      "id": "document:.claude/skills/open/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": ".claude/skills/open/SKILL.md",
+      "summary": "文档文件 SKILL.md，共约 29 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "simple",
+      "language": "markdown"
+    },
+    {
+      "id": "file:.claude/skills/pdf/scripts/check_bounding_boxes.py",
+      "type": "file",
+      "name": "check_bounding_boxes.py",
+      "filePath": ".claude/skills/pdf/scripts/check_bounding_boxes.py",
+      "summary": "TypeScript/JavaScript 模块 .claude/skills/pdf/scripts/check_bounding_boxes.py，导出 1 个类与 1 个函数，是应用逻辑的一部分。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:get_bounding_box_messages",
+      "type": "function",
+      "name": "get_bounding_box_messages",
+      "filePath": ".claude/skills/pdf/scripts/check_bounding_boxes.py",
+      "summary": "函数 get_bounding_box_messages，位于 .claude/skills/pdf/scripts/check_bounding_boxes.py 第 18-60 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "file:.claude/skills/pdf/scripts/check_fillable_fields.py",
+      "type": "file",
+      "name": "check_fillable_fields.py",
+      "filePath": ".claude/skills/pdf/scripts/check_fillable_fields.py",
+      "summary": "源码模块 .claude/skills/pdf/scripts/check_fillable_fields.py，体量 8 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "file:.claude/skills/pdf/scripts/convert_pdf_to_images.py",
+      "type": "file",
+      "name": "convert_pdf_to_images.py",
+      "filePath": ".claude/skills/pdf/scripts/convert_pdf_to_images.py",
+      "summary": "源码模块 .claude/skills/pdf/scripts/convert_pdf_to_images.py，包含 1 个函数，约 25 行有效代码。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pdf/scripts/convert_pdf_to_images.py:convert",
+      "type": "function",
+      "name": "convert",
+      "filePath": ".claude/skills/pdf/scripts/convert_pdf_to_images.py",
+      "summary": "函数 convert，位于 .claude/skills/pdf/scripts/convert_pdf_to_images.py 第 10-26 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "file:.claude/skills/pdf/scripts/create_validation_image.py",
+      "type": "file",
+      "name": "create_validation_image.py",
+      "filePath": ".claude/skills/pdf/scripts/create_validation_image.py",
+      "summary": "源码模块 .claude/skills/pdf/scripts/create_validation_image.py，包含 1 个函数，约 31 行有效代码。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pdf/scripts/create_validation_image.py:create_validation_image",
+      "type": "function",
+      "name": "create_validation_image",
+      "filePath": ".claude/skills/pdf/scripts/create_validation_image.py",
+      "summary": "函数 create_validation_image，位于 .claude/skills/pdf/scripts/create_validation_image.py 第 11-30 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "file:.claude/skills/pdf/scripts/extract_form_field_info.py",
+      "type": "file",
+      "name": "extract_form_field_info.py",
+      "filePath": ".claude/skills/pdf/scripts/extract_form_field_info.py",
+      "summary": "源码模块 .claude/skills/pdf/scripts/extract_form_field_info.py，包含 4 个函数，约 130 行有效代码。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_full_annotation_field_id",
+      "type": "function",
+      "name": "get_full_annotation_field_id",
+      "filePath": ".claude/skills/pdf/scripts/extract_form_field_info.py",
+      "summary": "函数 get_full_annotation_field_id，位于 .claude/skills/pdf/scripts/extract_form_field_info.py 第 12-19 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:make_field_dict",
+      "type": "function",
+      "name": "make_field_dict",
+      "filePath": ".claude/skills/pdf/scripts/extract_form_field_info.py",
+      "summary": "函数 make_field_dict，位于 .claude/skills/pdf/scripts/extract_form_field_info.py 第 22-50 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_field_info",
+      "type": "function",
+      "name": "get_field_info",
+      "filePath": ".claude/skills/pdf/scripts/extract_form_field_info.py",
+      "summary": "函数 get_field_info，位于 .claude/skills/pdf/scripts/extract_form_field_info.py 第 62-137 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:write_field_info",
+      "type": "function",
+      "name": "write_field_info",
+      "filePath": ".claude/skills/pdf/scripts/extract_form_field_info.py",
+      "summary": "函数 write_field_info，位于 .claude/skills/pdf/scripts/extract_form_field_info.py 第 140-145 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "file:.claude/skills/pdf/scripts/fill_fillable_fields.py",
+      "type": "file",
+      "name": "fill_fillable_fields.py",
+      "filePath": ".claude/skills/pdf/scripts/fill_fillable_fields.py",
+      "summary": "源码模块 .claude/skills/pdf/scripts/fill_fillable_fields.py，包含 3 个函数，约 96 行有效代码。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:fill_pdf_fields",
+      "type": "function",
+      "name": "fill_pdf_fields",
+      "filePath": ".claude/skills/pdf/scripts/fill_fillable_fields.py",
+      "summary": "函数 fill_pdf_fields，位于 .claude/skills/pdf/scripts/fill_fillable_fields.py 第 15-59 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:validation_error_for_field_value",
+      "type": "function",
+      "name": "validation_error_for_field_value",
+      "filePath": ".claude/skills/pdf/scripts/fill_fillable_fields.py",
+      "summary": "函数 validation_error_for_field_value，位于 .claude/skills/pdf/scripts/fill_fillable_fields.py 第 62-78 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:monkeypatch_pydpf_method",
+      "type": "function",
+      "name": "monkeypatch_pydpf_method",
+      "filePath": ".claude/skills/pdf/scripts/fill_fillable_fields.py",
+      "summary": "函数 monkeypatch_pydpf_method，位于 .claude/skills/pdf/scripts/fill_fillable_fields.py 第 93-106 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "file:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
+      "type": "file",
+      "name": "fill_pdf_form_with_annotations.py",
+      "filePath": ".claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
+      "summary": "源码模块 .claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py，包含 2 个函数，约 83 行有效代码。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:transform_coordinates",
+      "type": "function",
+      "name": "transform_coordinates",
+      "filePath": ".claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
+      "summary": "函数 transform_coordinates，位于 .claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py 第 11-25 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:fill_pdf_form",
+      "type": "function",
+      "name": "fill_pdf_form",
+      "filePath": ".claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
+      "summary": "函数 fill_pdf_form，位于 .claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py 第 28-97 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "file:.claude/skills/pptx/html2pptx.tgz",
+      "type": "file",
+      "name": "html2pptx.tgz",
+      "filePath": ".claude/skills/pptx/html2pptx.tgz",
+      "summary": "源码模块 .claude/skills/pptx/html2pptx.tgz，体量 70 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "tgz"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:.claude/skills/docx/scripts/comment.py",
+      "target": "function:.claude/skills/docx/scripts/comment.py:_generate_hex_id",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/comment.py",
+      "target": "function:.claude/skills/docx/scripts/comment.py:_encode_smart_quotes",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/comment.py",
+      "target": "function:.claude/skills/docx/scripts/comment.py:_append_xml",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/comment.py",
+      "target": "function:.claude/skills/docx/scripts/comment.py:_find_para_id",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/comment.py",
+      "target": "function:.claude/skills/docx/scripts/comment.py:_get_next_rid",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/comment.py",
+      "target": "function:.claude/skills/docx/scripts/comment.py:_has_relationship",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/comment.py",
+      "target": "function:.claude/skills/docx/scripts/comment.py:_has_content_type",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/comment.py",
+      "target": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_relationships",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/comment.py",
+      "target": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_content_types",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/comment.py",
+      "target": "function:.claude/skills/docx/scripts/comment.py:add_comment",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_generate_hex_id",
+      "target": "function:.claude/skills/docx/scripts/comment.py:random.randint",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_encode_smart_quotes",
+      "target": "function:.claude/skills/docx/scripts/comment.py:SMART_QUOTE_ENTITIES.items",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_encode_smart_quotes",
+      "target": "function:.claude/skills/docx/scripts/comment.py:text.replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_append_xml",
+      "target": "function:.claude/skills/docx/scripts/comment.py:defusedxml.minidom.parseString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_append_xml",
+      "target": "function:.claude/skills/docx/scripts/comment.py:xml_path.read_text",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_append_xml",
+      "target": "function:.claude/skills/docx/scripts/comment.py:dom.getElementsByTagName",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_append_xml",
+      "target": "function:.claude/skills/docx/scripts/comment.py:\" \".join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_append_xml",
+      "target": "function:.claude/skills/docx/scripts/comment.py:NS.items",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_append_xml",
+      "target": "function:.claude/skills/docx/scripts/comment.py:defusedxml.minidom.parseString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_append_xml",
+      "target": "function:.claude/skills/docx/scripts/comment.py:root.appendChild",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_append_xml",
+      "target": "function:.claude/skills/docx/scripts/comment.py:dom.importNode",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_append_xml",
+      "target": "function:.claude/skills/docx/scripts/comment.py:_encode_smart_quotes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_append_xml",
+      "target": "function:.claude/skills/docx/scripts/comment.py:dom.toxml(encoding=\"UTF-8\").decode",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_append_xml",
+      "target": "function:.claude/skills/docx/scripts/comment.py:dom.toxml",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_append_xml",
+      "target": "function:.claude/skills/docx/scripts/comment.py:xml_path.write_text",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_find_para_id",
+      "target": "function:.claude/skills/docx/scripts/comment.py:defusedxml.minidom.parseString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_find_para_id",
+      "target": "function:.claude/skills/docx/scripts/comment.py:comments_path.read_text",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_find_para_id",
+      "target": "function:.claude/skills/docx/scripts/comment.py:dom.getElementsByTagName",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_find_para_id",
+      "target": "function:.claude/skills/docx/scripts/comment.py:c.getAttribute",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_find_para_id",
+      "target": "function:.claude/skills/docx/scripts/comment.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_find_para_id",
+      "target": "function:.claude/skills/docx/scripts/comment.py:c.getElementsByTagName",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_find_para_id",
+      "target": "function:.claude/skills/docx/scripts/comment.py:p.getAttribute",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_get_next_rid",
+      "target": "function:.claude/skills/docx/scripts/comment.py:defusedxml.minidom.parseString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_get_next_rid",
+      "target": "function:.claude/skills/docx/scripts/comment.py:rels_path.read_text",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_get_next_rid",
+      "target": "function:.claude/skills/docx/scripts/comment.py:dom.getElementsByTagName",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_get_next_rid",
+      "target": "function:.claude/skills/docx/scripts/comment.py:rel.getAttribute",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_get_next_rid",
+      "target": "function:.claude/skills/docx/scripts/comment.py:rid.startswith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_get_next_rid",
+      "target": "function:.claude/skills/docx/scripts/comment.py:max",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_get_next_rid",
+      "target": "function:.claude/skills/docx/scripts/comment.py:int",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_has_relationship",
+      "target": "function:.claude/skills/docx/scripts/comment.py:defusedxml.minidom.parseString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_has_relationship",
+      "target": "function:.claude/skills/docx/scripts/comment.py:rels_path.read_text",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_has_relationship",
+      "target": "function:.claude/skills/docx/scripts/comment.py:dom.getElementsByTagName",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_has_relationship",
+      "target": "function:.claude/skills/docx/scripts/comment.py:rel.getAttribute",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_has_content_type",
+      "target": "function:.claude/skills/docx/scripts/comment.py:defusedxml.minidom.parseString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_has_content_type",
+      "target": "function:.claude/skills/docx/scripts/comment.py:ct_path.read_text",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_has_content_type",
+      "target": "function:.claude/skills/docx/scripts/comment.py:dom.getElementsByTagName",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_has_content_type",
+      "target": "function:.claude/skills/docx/scripts/comment.py:override.getAttribute",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_relationships",
+      "target": "function:.claude/skills/docx/scripts/comment.py:rels_path.exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_relationships",
+      "target": "function:.claude/skills/docx/scripts/comment.py:_has_relationship",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_relationships",
+      "target": "function:.claude/skills/docx/scripts/comment.py:defusedxml.minidom.parseString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_relationships",
+      "target": "function:.claude/skills/docx/scripts/comment.py:rels_path.read_text",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_relationships",
+      "target": "function:.claude/skills/docx/scripts/comment.py:_get_next_rid",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_relationships",
+      "target": "function:.claude/skills/docx/scripts/comment.py:dom.createElement",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_relationships",
+      "target": "function:.claude/skills/docx/scripts/comment.py:rel.setAttribute",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_relationships",
+      "target": "function:.claude/skills/docx/scripts/comment.py:rel.setAttribute",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_relationships",
+      "target": "function:.claude/skills/docx/scripts/comment.py:rel.setAttribute",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_relationships",
+      "target": "function:.claude/skills/docx/scripts/comment.py:root.appendChild",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_relationships",
+      "target": "function:.claude/skills/docx/scripts/comment.py:rels_path.write_bytes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_relationships",
+      "target": "function:.claude/skills/docx/scripts/comment.py:dom.toxml",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_content_types",
+      "target": "function:.claude/skills/docx/scripts/comment.py:ct_path.exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_content_types",
+      "target": "function:.claude/skills/docx/scripts/comment.py:_has_content_type",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_content_types",
+      "target": "function:.claude/skills/docx/scripts/comment.py:defusedxml.minidom.parseString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_content_types",
+      "target": "function:.claude/skills/docx/scripts/comment.py:ct_path.read_text",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_content_types",
+      "target": "function:.claude/skills/docx/scripts/comment.py:dom.createElement",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_content_types",
+      "target": "function:.claude/skills/docx/scripts/comment.py:override.setAttribute",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_content_types",
+      "target": "function:.claude/skills/docx/scripts/comment.py:override.setAttribute",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_content_types",
+      "target": "function:.claude/skills/docx/scripts/comment.py:root.appendChild",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_content_types",
+      "target": "function:.claude/skills/docx/scripts/comment.py:ct_path.write_bytes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_content_types",
+      "target": "function:.claude/skills/docx/scripts/comment.py:dom.toxml",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:add_comment",
+      "target": "function:.claude/skills/docx/scripts/comment.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:add_comment",
+      "target": "function:.claude/skills/docx/scripts/comment.py:word.exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:add_comment",
+      "target": "function:.claude/skills/docx/scripts/comment.py:_generate_hex_id",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:add_comment",
+      "target": "function:.claude/skills/docx/scripts/comment.py:_generate_hex_id",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:add_comment",
+      "target": "function:.claude/skills/docx/scripts/comment.py:datetime.now(timezone.utc).strftime",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:add_comment",
+      "target": "function:.claude/skills/docx/scripts/comment.py:datetime.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:add_comment",
+      "target": "function:.claude/skills/docx/scripts/comment.py:comments.exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:add_comment",
+      "target": "function:.claude/skills/docx/scripts/comment.py:shutil.copy",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:add_comment",
+      "target": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_relationships",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:add_comment",
+      "target": "function:.claude/skills/docx/scripts/comment.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:add_comment",
+      "target": "function:.claude/skills/docx/scripts/comment.py:_ensure_comment_content_types",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:add_comment",
+      "target": "function:.claude/skills/docx/scripts/comment.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:add_comment",
+      "target": "function:.claude/skills/docx/scripts/comment.py:_append_xml",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:add_comment",
+      "target": "function:.claude/skills/docx/scripts/comment.py:COMMENT_XML.format",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:add_comment",
+      "target": "function:.claude/skills/docx/scripts/comment.py:ext.exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:add_comment",
+      "target": "function:.claude/skills/docx/scripts/comment.py:shutil.copy",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:add_comment",
+      "target": "function:.claude/skills/docx/scripts/comment.py:_find_para_id",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:add_comment",
+      "target": "function:.claude/skills/docx/scripts/comment.py:_append_xml",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:add_comment",
+      "target": "function:.claude/skills/docx/scripts/comment.py:_append_xml",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:add_comment",
+      "target": "function:.claude/skills/docx/scripts/comment.py:ids.exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:add_comment",
+      "target": "function:.claude/skills/docx/scripts/comment.py:shutil.copy",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:add_comment",
+      "target": "function:.claude/skills/docx/scripts/comment.py:_append_xml",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:add_comment",
+      "target": "function:.claude/skills/docx/scripts/comment.py:extensible.exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:add_comment",
+      "target": "function:.claude/skills/docx/scripts/comment.py:shutil.copy",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/comment.py:add_comment",
+      "target": "function:.claude/skills/docx/scripts/comment.py:_append_xml",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/helpers/merge_runs.py",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:merge_runs",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/helpers/merge_runs.py",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_find_elements_by_tag",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/helpers/merge_runs.py",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_matches_tag",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/helpers/merge_runs.py",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_remove_proof_errors",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/helpers/merge_runs.py",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_merge_adjacent_runs",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/helpers/merge_runs.py",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_can_merge_runs",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/helpers/merge_runs.py",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_get_rpr",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/helpers/merge_runs.py",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_consolidate_text_elements",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/helpers/merge_runs.py",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_are_adjacent",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:merge_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:merge_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:doc_xml.exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:merge_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:defusedxml.minidom.parseString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:merge_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:doc_xml.read_text",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:merge_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_remove_proof_errors",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:merge_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_find_elements_by_tag",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:merge_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_merge_adjacent_runs",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:merge_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_find_elements_by_tag",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:merge_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_consolidate_text_elements",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:merge_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:doc_xml.write_bytes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:merge_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:dom.toxml",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_find_elements_by_tag",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:traverse",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_matches_tag",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:local_name.endswith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_remove_proof_errors",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_find_elements_by_tag",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_remove_proof_errors",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:elem.parentNode.removeChild",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_merge_adjacent_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_merge_adjacent_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_merge_adjacent_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_matches_tag",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_merge_adjacent_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_matches_tag",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_merge_adjacent_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_can_merge_runs",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_merge_adjacent_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:list",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_merge_adjacent_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_matches_tag",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_merge_adjacent_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:current.appendChild",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_merge_adjacent_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:paragraph.removeChild",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_merge_adjacent_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:children.pop",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_can_merge_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:run1.getAttribute",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_can_merge_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:run1.getAttribute",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_can_merge_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:run2.getAttribute",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_can_merge_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:run2.getAttribute",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_can_merge_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_get_rpr",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_can_merge_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_get_rpr",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_can_merge_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:rpr1.toxml",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_can_merge_runs",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:rpr2.toxml",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_get_rpr",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_matches_tag",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_consolidate_text_elements",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_matches_tag",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_consolidate_text_elements",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:range",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_consolidate_text_elements",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_consolidate_text_elements",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_are_adjacent",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_consolidate_text_elements",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:prev.appendChild",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_consolidate_text_elements",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:run.ownerDocument.createTextNode",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_consolidate_text_elements",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:merged.startswith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_consolidate_text_elements",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:merged.endswith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_consolidate_text_elements",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:prev.setAttribute",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_consolidate_text_elements",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:prev.hasAttribute",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_consolidate_text_elements",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:prev.removeAttribute",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_consolidate_text_elements",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:run.removeChild",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:_are_adjacent",
+      "target": "function:.claude/skills/docx/scripts/helpers/merge_runs.py:node.data.strip",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/ooxml/scripts/pack.py",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:main",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/ooxml/scripts/pack.py",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:pack_document",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/ooxml/scripts/pack.py",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:validate_document",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/ooxml/scripts/pack.py",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:condense_xml",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:argparse.ArgumentParser",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:parser.add_argument",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:parser.add_argument",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:parser.add_argument",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:parser.parse_args",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:pack_document",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:sys.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:main",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:sys.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:pack_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:pack_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:pack_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:input_dir.is_dir",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:pack_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:ValueError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:pack_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:output_file.suffix.lower",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:pack_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:ValueError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:pack_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:tempfile.TemporaryDirectory",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:pack_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:pack_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:shutil.copytree",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:pack_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:temp_content_dir.rglob",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:pack_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:condense_xml",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:pack_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:output_file.parent.mkdir",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:pack_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:zipfile.ZipFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:pack_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:temp_content_dir.rglob",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:pack_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:f.is_file",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:pack_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:zf.write",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:pack_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:f.relative_to",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:pack_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:validate_document",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:pack_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:output_file.unlink",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:validate_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:doc_path.suffix.lower",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:validate_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:tempfile.TemporaryDirectory",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:validate_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:subprocess.run",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:validate_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:validate_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:(Path(temp_dir) / f\"{doc_path.stem}.html\").exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:validate_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:validate_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:result.stderr.strip",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:validate_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:validate_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:validate_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:validate_document",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:condense_xml",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:open",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:condense_xml",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:defusedxml.minidom.parse",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:condense_xml",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:dom.getElementsByTagName",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:condense_xml",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:element.tagName.endswith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:condense_xml",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:list",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:condense_xml",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:child.nodeValue.strip",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:condense_xml",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:element.removeChild",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:condense_xml",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:open",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:condense_xml",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:f.write",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:condense_xml",
+      "target": "function:.claude/skills/docx/scripts/ooxml/scripts/pack.py:dom.toxml",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/unpack.py",
+      "target": "file:.claude/skills/docx/scripts/helpers/merge_runs.py",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/unpack.py",
+      "target": "function:.claude/skills/docx/scripts/unpack.py:unpack",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/unpack.py",
+      "target": "function:.claude/skills/docx/scripts/unpack.py:_pretty_print_xml",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/docx/scripts/unpack.py",
+      "target": "function:.claude/skills/docx/scripts/unpack.py:_escape_smart_quotes",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/unpack.py:unpack",
+      "target": "function:.claude/skills/docx/scripts/unpack.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/unpack.py:unpack",
+      "target": "function:.claude/skills/docx/scripts/unpack.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/unpack.py:unpack",
+      "target": "function:.claude/skills/docx/scripts/unpack.py:input_path.exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/unpack.py:unpack",
+      "target": "function:.claude/skills/docx/scripts/unpack.py:input_path.suffix.lower",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/unpack.py:unpack",
+      "target": "function:.claude/skills/docx/scripts/unpack.py:output_path.mkdir",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/unpack.py:unpack",
+      "target": "function:.claude/skills/docx/scripts/unpack.py:zipfile.ZipFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/unpack.py:unpack",
+      "target": "function:.claude/skills/docx/scripts/unpack.py:zf.extractall",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/unpack.py:unpack",
+      "target": "function:.claude/skills/docx/scripts/unpack.py:list",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/unpack.py:unpack",
+      "target": "function:.claude/skills/docx/scripts/unpack.py:output_path.rglob",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/unpack.py:unpack",
+      "target": "function:.claude/skills/docx/scripts/unpack.py:list",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/unpack.py:unpack",
+      "target": "function:.claude/skills/docx/scripts/unpack.py:output_path.rglob",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/unpack.py:unpack",
+      "target": "function:.claude/skills/docx/scripts/unpack.py:_pretty_print_xml",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/unpack.py:unpack",
+      "target": "function:.claude/skills/docx/scripts/unpack.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/unpack.py:unpack",
+      "target": "function:.claude/skills/docx/scripts/unpack.py:do_merge_runs",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/unpack.py:unpack",
+      "target": "function:.claude/skills/docx/scripts/unpack.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/unpack.py:unpack",
+      "target": "function:.claude/skills/docx/scripts/unpack.py:_escape_smart_quotes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/unpack.py:_pretty_print_xml",
+      "target": "function:.claude/skills/docx/scripts/unpack.py:xml_file.read_text",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/unpack.py:_pretty_print_xml",
+      "target": "function:.claude/skills/docx/scripts/unpack.py:defusedxml.minidom.parseString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/unpack.py:_pretty_print_xml",
+      "target": "function:.claude/skills/docx/scripts/unpack.py:xml_file.write_bytes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/unpack.py:_pretty_print_xml",
+      "target": "function:.claude/skills/docx/scripts/unpack.py:dom.toprettyxml",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/unpack.py:_escape_smart_quotes",
+      "target": "function:.claude/skills/docx/scripts/unpack.py:xml_file.read_text",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/unpack.py:_escape_smart_quotes",
+      "target": "function:.claude/skills/docx/scripts/unpack.py:SMART_QUOTE_REPLACEMENTS.items",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/unpack.py:_escape_smart_quotes",
+      "target": "function:.claude/skills/docx/scripts/unpack.py:content.replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/docx/scripts/unpack.py:_escape_smart_quotes",
+      "target": "function:.claude/skills/docx/scripts/unpack.py:xml_file.write_text",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:.claude/skills/pdf/scripts/check_bounding_boxes.py",
+      "target": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:get_bounding_box_messages",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:get_bounding_box_messages",
+      "target": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:json.load",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:get_bounding_box_messages",
+      "target": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:messages.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:get_bounding_box_messages",
+      "target": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:get_bounding_box_messages",
+      "target": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:rects_and_fields.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:get_bounding_box_messages",
+      "target": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:RectAndField",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:get_bounding_box_messages",
+      "target": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:rects_and_fields.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:get_bounding_box_messages",
+      "target": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:RectAndField",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:get_bounding_box_messages",
+      "target": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:enumerate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:get_bounding_box_messages",
+      "target": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:range",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:get_bounding_box_messages",
+      "target": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:get_bounding_box_messages",
+      "target": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:rects_intersect",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:get_bounding_box_messages",
+      "target": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:messages.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:get_bounding_box_messages",
+      "target": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:messages.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:get_bounding_box_messages",
+      "target": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:get_bounding_box_messages",
+      "target": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:messages.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:get_bounding_box_messages",
+      "target": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:ri.field[\"entry_text\"].get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:get_bounding_box_messages",
+      "target": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:messages.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:get_bounding_box_messages",
+      "target": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:get_bounding_box_messages",
+      "target": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:messages.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:get_bounding_box_messages",
+      "target": "function:.claude/skills/pdf/scripts/check_bounding_boxes.py:messages.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:.claude/skills/pdf/scripts/convert_pdf_to_images.py",
+      "target": "function:.claude/skills/pdf/scripts/convert_pdf_to_images.py:convert",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/convert_pdf_to_images.py:convert",
+      "target": "function:.claude/skills/pdf/scripts/convert_pdf_to_images.py:convert_from_path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/convert_pdf_to_images.py:convert",
+      "target": "function:.claude/skills/pdf/scripts/convert_pdf_to_images.py:enumerate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/convert_pdf_to_images.py:convert",
+      "target": "function:.claude/skills/pdf/scripts/convert_pdf_to_images.py:min",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/convert_pdf_to_images.py:convert",
+      "target": "function:.claude/skills/pdf/scripts/convert_pdf_to_images.py:int",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/convert_pdf_to_images.py:convert",
+      "target": "function:.claude/skills/pdf/scripts/convert_pdf_to_images.py:int",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/convert_pdf_to_images.py:convert",
+      "target": "function:.claude/skills/pdf/scripts/convert_pdf_to_images.py:image.resize",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/convert_pdf_to_images.py:convert",
+      "target": "function:.claude/skills/pdf/scripts/convert_pdf_to_images.py:os.path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/convert_pdf_to_images.py:convert",
+      "target": "function:.claude/skills/pdf/scripts/convert_pdf_to_images.py:image.save",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/convert_pdf_to_images.py:convert",
+      "target": "function:.claude/skills/pdf/scripts/convert_pdf_to_images.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/convert_pdf_to_images.py:convert",
+      "target": "function:.claude/skills/pdf/scripts/convert_pdf_to_images.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/convert_pdf_to_images.py:convert",
+      "target": "function:.claude/skills/pdf/scripts/convert_pdf_to_images.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:.claude/skills/pdf/scripts/create_validation_image.py",
+      "target": "function:.claude/skills/pdf/scripts/create_validation_image.py:create_validation_image",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/create_validation_image.py:create_validation_image",
+      "target": "function:.claude/skills/pdf/scripts/create_validation_image.py:open",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/create_validation_image.py:create_validation_image",
+      "target": "function:.claude/skills/pdf/scripts/create_validation_image.py:json.load",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/create_validation_image.py:create_validation_image",
+      "target": "function:.claude/skills/pdf/scripts/create_validation_image.py:Image.open",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/create_validation_image.py:create_validation_image",
+      "target": "function:.claude/skills/pdf/scripts/create_validation_image.py:ImageDraw.Draw",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/create_validation_image.py:create_validation_image",
+      "target": "function:.claude/skills/pdf/scripts/create_validation_image.py:draw.rectangle",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/create_validation_image.py:create_validation_image",
+      "target": "function:.claude/skills/pdf/scripts/create_validation_image.py:draw.rectangle",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/create_validation_image.py:create_validation_image",
+      "target": "function:.claude/skills/pdf/scripts/create_validation_image.py:img.save",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/create_validation_image.py:create_validation_image",
+      "target": "function:.claude/skills/pdf/scripts/create_validation_image.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:.claude/skills/pdf/scripts/extract_form_field_info.py",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_full_annotation_field_id",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pdf/scripts/extract_form_field_info.py",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:make_field_dict",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pdf/scripts/extract_form_field_info.py",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_field_info",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pdf/scripts/extract_form_field_info.py",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:write_field_info",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_full_annotation_field_id",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:annotation.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_full_annotation_field_id",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:components.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_full_annotation_field_id",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:annotation.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_full_annotation_field_id",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:\".\".join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_full_annotation_field_id",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:reversed",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:make_field_dict",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:field.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:make_field_dict",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:field.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:make_field_dict",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:make_field_dict",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:make_field_dict",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:field.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_field_info",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:reader.get_fields",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_field_info",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:set",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_field_info",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:fields.items",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_field_info",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:field.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_field_info",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:field.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_field_info",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:possible_radio_names.add",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_field_info",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:make_field_dict",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_field_info",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:enumerate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_field_info",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:page.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_field_info",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_full_annotation_field_id",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_field_info",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:ann.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_field_info",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_field_info",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:ann.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_field_info",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:radio_fields_by_id[field_id][\"radio_options\"].append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_field_info",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:field_info_by_id.values",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_field_info",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:fields_with_location.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_field_info",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_field_info",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:field_info.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_field_info",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:list",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_field_info",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:radio_fields_by_id.values",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_field_info",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:sorted_fields.sort",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:write_field_info",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:PdfReader",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:write_field_info",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:get_field_info",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:write_field_info",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:open",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:write_field_info",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:json.dump",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:write_field_info",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:write_field_info",
+      "target": "function:.claude/skills/pdf/scripts/extract_form_field_info.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:.claude/skills/pdf/scripts/fill_fillable_fields.py",
+      "target": "file:.claude/skills/pdf/scripts/extract_form_field_info.py",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:.claude/skills/pdf/scripts/fill_fillable_fields.py",
+      "target": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:fill_pdf_fields",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pdf/scripts/fill_fillable_fields.py",
+      "target": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:validation_error_for_field_value",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pdf/scripts/fill_fillable_fields.py",
+      "target": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:monkeypatch_pydpf_method",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:fill_pdf_fields",
+      "target": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:open",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:fill_pdf_fields",
+      "target": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:json.load",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:fill_pdf_fields",
+      "target": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:PdfReader",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:fill_pdf_fields",
+      "target": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:get_field_info",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:fill_pdf_fields",
+      "target": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:fields_by_ids.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:fill_pdf_fields",
+      "target": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:fill_pdf_fields",
+      "target": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:fill_pdf_fields",
+      "target": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:validation_error_for_field_value",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:fill_pdf_fields",
+      "target": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:fill_pdf_fields",
+      "target": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:sys.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:fill_pdf_fields",
+      "target": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:PdfWriter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:fill_pdf_fields",
+      "target": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:fields_by_page.items",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:fill_pdf_fields",
+      "target": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:writer.update_page_form_field_values",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:fill_pdf_fields",
+      "target": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:writer.set_need_appearances_writer",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:fill_pdf_fields",
+      "target": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:open",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:fill_pdf_fields",
+      "target": "function:.claude/skills/pdf/scripts/fill_fillable_fields.py:writer.write",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
+      "target": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:transform_coordinates",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
+      "target": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:fill_pdf_form",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:fill_pdf_form",
+      "target": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:open",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:fill_pdf_form",
+      "target": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:json.load",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:fill_pdf_form",
+      "target": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:PdfReader",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:fill_pdf_form",
+      "target": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:PdfWriter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:fill_pdf_form",
+      "target": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:writer.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:fill_pdf_form",
+      "target": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:enumerate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:fill_pdf_form",
+      "target": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:next",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:fill_pdf_form",
+      "target": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:transform_coordinates",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:fill_pdf_form",
+      "target": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:entry_text.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:fill_pdf_form",
+      "target": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:fill_pdf_form",
+      "target": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:entry_text.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:fill_pdf_form",
+      "target": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:entry_text.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:fill_pdf_form",
+      "target": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:FreeText",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:fill_pdf_form",
+      "target": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:annotations.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:fill_pdf_form",
+      "target": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:writer.add_annotation",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:fill_pdf_form",
+      "target": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:open",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:fill_pdf_form",
+      "target": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:writer.write",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:fill_pdf_form",
+      "target": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:fill_pdf_form",
+      "target": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:fill_pdf_form",
+      "target": "function:.claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py:len",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ]
+}

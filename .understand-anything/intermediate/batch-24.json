@@ -1,0 +1,55 @@
+{
+  "nodes": [
+    {
+      "id": "config:.claude/skills/docx/scripts/templates/comments.xml",
+      "type": "config",
+      "name": "comments.xml",
+      "filePath": ".claude/skills/docx/scripts/templates/comments.xml",
+      "summary": "配置文件 comments.xml，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/docx/scripts/templates/commentsExtended.xml",
+      "type": "config",
+      "name": "commentsExtended.xml",
+      "filePath": ".claude/skills/docx/scripts/templates/commentsExtended.xml",
+      "summary": "配置文件 commentsExtended.xml，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/docx/scripts/templates/commentsExtensible.xml",
+      "type": "config",
+      "name": "commentsExtensible.xml",
+      "filePath": ".claude/skills/docx/scripts/templates/commentsExtensible.xml",
+      "summary": "配置文件 commentsExtensible.xml，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/docx/scripts/templates/commentsIds.xml",
+      "type": "config",
+      "name": "commentsIds.xml",
+      "filePath": ".claude/skills/docx/scripts/templates/commentsIds.xml",
+      "summary": "配置文件 commentsIds.xml，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/docx/scripts/templates/people.xml",
+      "type": "config",
+      "name": "people.xml",
+      "filePath": ".claude/skills/docx/scripts/templates/people.xml",
+      "summary": "配置文件 people.xml，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "xml"
+    }
+  ],
+  "edges": []
+}

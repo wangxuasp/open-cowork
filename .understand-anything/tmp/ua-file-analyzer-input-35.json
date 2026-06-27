@@ -1,0 +1,45 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    { "path": ".env.example", "language": "config", "sizeLines": 13, "fileCategory": "config" },
+    { "path": "CHANGELOG.md", "language": "markdown", "sizeLines": 133, "fileCategory": "docs" },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "language": "markdown",
+      "sizeLines": 73,
+      "fileCategory": "docs"
+    },
+    { "path": "CONTRIBUTING.md", "language": "markdown", "sizeLines": 221, "fileCategory": "docs" },
+    { "path": "README_zh.md", "language": "markdown", "sizeLines": 343, "fileCategory": "docs" },
+    { "path": "ROADMAP.md", "language": "markdown", "sizeLines": 55, "fileCategory": "docs" },
+    { "path": "SECURITY.md", "language": "markdown", "sizeLines": 46, "fileCategory": "docs" },
+    {
+      "path": "electron-builder.yml",
+      "language": "yaml",
+      "sizeLines": 177,
+      "fileCategory": "config"
+    },
+    { "path": "index.html", "language": "html", "sizeLines": 15, "fileCategory": "markup" },
+    { "path": "llms.txt", "language": "txt", "sizeLines": 81, "fileCategory": "docs" },
+    { "path": "package.json", "language": "json", "sizeLines": 147, "fileCategory": "config" },
+    { "path": "readme.md", "language": "markdown", "sizeLines": 352, "fileCategory": "docs" },
+    { "path": "tsconfig.json", "language": "json", "sizeLines": 31, "fileCategory": "config" },
+    { "path": "tsconfig.node.json", "language": "json", "sizeLines": 15, "fileCategory": "config" }
+  ],
+  "batchImportData": {
+    ".env.example": [],
+    "CHANGELOG.md": [],
+    "CODE_OF_CONDUCT.md": [],
+    "CONTRIBUTING.md": [],
+    "README_zh.md": [],
+    "ROADMAP.md": [],
+    "SECURITY.md": [],
+    "electron-builder.yml": [],
+    "index.html": [],
+    "llms.txt": [],
+    "package.json": [],
+    "readme.md": [],
+    "tsconfig.json": [],
+    "tsconfig.node.json": []
+  }
+}

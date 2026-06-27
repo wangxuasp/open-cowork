@@ -1,0 +1,184 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": ".claude/skills/bom/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 125,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/context/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 58,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/dataset/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 209,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/docx/LICENSE.txt",
+      "language": "txt",
+      "sizeLines": 30,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/docx/scripts/__init__.py",
+      "language": "python",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/docx/scripts/comment.py",
+      "language": "python",
+      "sizeLines": 341,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/docx/scripts/helpers/__init__.py",
+      "language": "python",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/docx/scripts/helpers/merge_runs.py",
+      "language": "python",
+      "sizeLines": 176,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/docx/scripts/ooxml/schemas/mce/mc.xsd",
+      "language": "xml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/docx/scripts/ooxml/scripts/pack.py",
+      "language": "python",
+      "sizeLines": 159,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/docx/scripts/ooxml/scripts/unpack.py",
+      "language": "python",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/docx/scripts/unpack.py",
+      "language": "python",
+      "sizeLines": 119,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/docx/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 421,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/drawing/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 79,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/folder/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 102,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/item/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 117,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/open/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 43,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/pdf/scripts/check_bounding_boxes.py",
+      "language": "python",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/pdf/scripts/check_fillable_fields.py",
+      "language": "python",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/pdf/scripts/convert_pdf_to_images.py",
+      "language": "python",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/pdf/scripts/create_validation_image.py",
+      "language": "python",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/pdf/scripts/extract_form_field_info.py",
+      "language": "python",
+      "sizeLines": 152,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/pdf/scripts/fill_fillable_fields.py",
+      "language": "python",
+      "sizeLines": 117,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
+      "language": "python",
+      "sizeLines": 107,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/pptx/html2pptx.tgz",
+      "language": "tgz",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    ".claude/skills/bom/SKILL.md": [],
+    ".claude/skills/context/SKILL.md": [],
+    ".claude/skills/dataset/SKILL.md": [],
+    ".claude/skills/docx/LICENSE.txt": [],
+    ".claude/skills/docx/scripts/__init__.py": [],
+    ".claude/skills/docx/scripts/comment.py": [],
+    ".claude/skills/docx/scripts/helpers/__init__.py": [],
+    ".claude/skills/docx/scripts/helpers/merge_runs.py": [],
+    ".claude/skills/docx/scripts/ooxml/schemas/mce/mc.xsd": [],
+    ".claude/skills/docx/scripts/ooxml/scripts/pack.py": [],
+    ".claude/skills/docx/scripts/ooxml/scripts/unpack.py": [],
+    ".claude/skills/docx/scripts/unpack.py": [".claude/skills/docx/scripts/helpers/merge_runs.py"],
+    ".claude/skills/docx/SKILL.md": [],
+    ".claude/skills/drawing/SKILL.md": [],
+    ".claude/skills/folder/SKILL.md": [],
+    ".claude/skills/item/SKILL.md": [],
+    ".claude/skills/open/SKILL.md": [],
+    ".claude/skills/pdf/scripts/check_bounding_boxes.py": [],
+    ".claude/skills/pdf/scripts/check_fillable_fields.py": [],
+    ".claude/skills/pdf/scripts/convert_pdf_to_images.py": [],
+    ".claude/skills/pdf/scripts/create_validation_image.py": [],
+    ".claude/skills/pdf/scripts/extract_form_field_info.py": [],
+    ".claude/skills/pdf/scripts/fill_fillable_fields.py": [
+      ".claude/skills/pdf/scripts/extract_form_field_info.py"
+    ],
+    ".claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py": [],
+    ".claude/skills/pptx/html2pptx.tgz": []
+  }
+}

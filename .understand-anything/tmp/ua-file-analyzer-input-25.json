@@ -1,0 +1,35 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": ".claude/skills/pdf/FORMS.md",
+      "language": "markdown",
+      "sizeLines": 205,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/pdf/LICENSE.txt",
+      "language": "txt",
+      "sizeLines": 30,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/pdf/REFERENCE.md",
+      "language": "markdown",
+      "sizeLines": 611,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/pdf/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 294,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".claude/skills/pdf/FORMS.md": [],
+    ".claude/skills/pdf/LICENSE.txt": [],
+    ".claude/skills/pdf/REFERENCE.md": [],
+    ".claude/skills/pdf/SKILL.md": []
+  }
+}

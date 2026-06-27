@@ -1,0 +1,167 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 20,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 1499,
+      "nonEmptyLines": 1499,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 146,
+      "nonEmptyLines": 146,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 1085,
+      "nonEmptyLines": 1085,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 11,
+      "nonEmptyLines": 11,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/dml-main.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 3081,
+      "nonEmptyLines": 3081,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/dml-picture.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 23,
+      "nonEmptyLines": 23,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 185,
+      "nonEmptyLines": 185,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 287,
+      "nonEmptyLines": 287,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/pml.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 1676,
+      "nonEmptyLines": 1676,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 28,
+      "nonEmptyLines": 28,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 144,
+      "nonEmptyLines": 144,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 174,
+      "nonEmptyLines": 174,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 25,
+      "nonEmptyLines": 25,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 18,
+      "nonEmptyLines": 18,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 59,
+      "nonEmptyLines": 59,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 56,
+      "nonEmptyLines": 56,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 195,
+      "nonEmptyLines": 195,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-math.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 582,
+      "nonEmptyLines": 582,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 25,
+      "nonEmptyLines": 25,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/sml.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 4439,
+      "nonEmptyLines": 4439,
+      "metrics": {}
+    }
+  ]
+}

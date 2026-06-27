@@ -1,0 +1,468 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".claude/skills/pdf/FORMS.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 205,
+      "nonEmptyLines": 186,
+      "sections": [
+        {
+          "heading": "Fillable fields",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "Non-fillable fields",
+          "level": 1,
+          "line": 78
+        },
+        {
+          "heading": "Step 1: Visual Analysis (REQUIRED)",
+          "level": 2,
+          "line": 85
+        },
+        {
+          "heading": "Step 2: Create fields.json and validation images (REQUIRED)",
+          "level": 3,
+          "line": 130
+        },
+        {
+          "heading": "Step 3: Validate Bounding Boxes (REQUIRED)",
+          "level": 3,
+          "line": 184
+        },
+        {
+          "heading": "Automated intersection check",
+          "level": 4,
+          "line": 185
+        },
+        {
+          "heading": "Manual image inspection",
+          "level": 4,
+          "line": 191
+        },
+        {
+          "heading": "Step 4: Add annotations to the PDF",
+          "level": 3,
+          "line": 203
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".claude/skills/pdf/LICENSE.txt",
+      "language": "txt",
+      "fileCategory": "docs",
+      "totalLines": 30,
+      "nonEmptyLines": 25,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/pdf/REFERENCE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 612,
+      "nonEmptyLines": 479,
+      "sections": [
+        {
+          "heading": "PDF Processing Advanced Reference",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "pypdfium2 Library (Apache/BSD License)",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Overview",
+          "level": 3,
+          "line": 7
+        },
+        {
+          "heading": "Render PDF to Images",
+          "level": 3,
+          "line": 10
+        },
+        {
+          "heading": "Extract Text with pypdfium2",
+          "level": 3,
+          "line": 36
+        },
+        {
+          "heading": "JavaScript Libraries",
+          "level": 2,
+          "line": 46
+        },
+        {
+          "heading": "pdf-lib (MIT License)",
+          "level": 3,
+          "line": 48
+        },
+        {
+          "heading": "Load and Manipulate Existing PDF",
+          "level": 4,
+          "line": 52
+        },
+        {
+          "heading": "Create Complex PDFs from Scratch",
+          "level": 4,
+          "line": 80
+        },
+        {
+          "heading": "Advanced Merge and Split Operations",
+          "level": 4,
+          "line": 141
+        },
+        {
+          "heading": "pdfjs-dist (Apache License)",
+          "level": 3,
+          "line": 170
+        },
+        {
+          "heading": "Basic PDF Loading and Rendering",
+          "level": 4,
+          "line": 174
+        },
+        {
+          "heading": "Extract Text with Coordinates",
+          "level": 4,
+          "line": 208
+        },
+        {
+          "heading": "Extract Annotations and Forms",
+          "level": 4,
+          "line": 244
+        },
+        {
+          "heading": "Advanced Command-Line Operations",
+          "level": 2,
+          "line": 265
+        },
+        {
+          "heading": "poppler-utils Advanced Features",
+          "level": 3,
+          "line": 267
+        },
+        {
+          "heading": "Extract Text with Bounding Box Coordinates",
+          "level": 4,
+          "line": 269
+        },
+        {
+          "heading": "Advanced Image Conversion",
+          "level": 4,
+          "line": 277
+        },
+        {
+          "heading": "Extract Embedded Images",
+          "level": 4,
+          "line": 289
+        },
+        {
+          "heading": "qpdf Advanced Features",
+          "level": 3,
+          "line": 301
+        },
+        {
+          "heading": "Complex Page Manipulation",
+          "level": 4,
+          "line": 303
+        },
+        {
+          "heading": "PDF Optimization and Repair",
+          "level": 4,
+          "line": 315
+        },
+        {
+          "heading": "Advanced Encryption",
+          "level": 4,
+          "line": 331
+        },
+        {
+          "heading": "Advanced Python Techniques",
+          "level": 2,
+          "line": 343
+        },
+        {
+          "heading": "pdfplumber Advanced Features",
+          "level": 3,
+          "line": 345
+        },
+        {
+          "heading": "Extract Text with Precise Coordinates",
+          "level": 4,
+          "line": 347
+        },
+        {
+          "heading": "Advanced Table Extraction with Custom Settings",
+          "level": 4,
+          "line": 363
+        },
+        {
+          "heading": "reportlab Advanced Features",
+          "level": 3,
+          "line": 385
+        },
+        {
+          "heading": "Create Professional Reports with Tables",
+          "level": 4,
+          "line": 387
+        },
+        {
+          "heading": "Complex Workflows",
+          "level": 2,
+          "line": 426
+        },
+        {
+          "heading": "Extract Figures/Images from PDF",
+          "level": 3,
+          "line": 428
+        },
+        {
+          "heading": "Method 1: Using pdfimages (fastest)",
+          "level": 4,
+          "line": 430
+        },
+        {
+          "heading": "Method 2: Using pypdfium2 + Image Processing",
+          "level": 4,
+          "line": 436
+        },
+        {
+          "heading": "Batch PDF Processing with Error Handling",
+          "level": 3,
+          "line": 463
+        },
+        {
+          "heading": "Advanced PDF Cropping",
+          "level": 3,
+          "line": 509
+        },
+        {
+          "heading": "Performance Optimization Tips",
+          "level": 2,
+          "line": 528
+        },
+        {
+          "heading": "1. For Large PDFs",
+          "level": 3,
+          "line": 530
+        },
+        {
+          "heading": "2. For Text Extraction",
+          "level": 3,
+          "line": 535
+        },
+        {
+          "heading": "3. For Image Extraction",
+          "level": 3,
+          "line": 540
+        },
+        {
+          "heading": "4. For Form Filling",
+          "level": 3,
+          "line": 544
+        },
+        {
+          "heading": "5. Memory Management",
+          "level": 3,
+          "line": 548
+        },
+        {
+          "heading": "Troubleshooting Common Issues",
+          "level": 2,
+          "line": 567
+        },
+        {
+          "heading": "Encrypted PDFs",
+          "level": 3,
+          "line": 569
+        },
+        {
+          "heading": "Corrupted PDFs",
+          "level": 3,
+          "line": 582
+        },
+        {
+          "heading": "Text Extraction Issues",
+          "level": 3,
+          "line": 589
+        },
+        {
+          "heading": "License Information",
+          "level": 2,
+          "line": 603
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 46
+      }
+    },
+    {
+      "path": ".claude/skills/pdf/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 294,
+      "nonEmptyLines": 226,
+      "sections": [
+        {
+          "heading": "PDF Processing Guide",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "Overview",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Quick Start",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Python Libraries",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "pypdf - Basic Operations",
+          "level": 3,
+          "line": 30
+        },
+        {
+          "heading": "Merge PDFs",
+          "level": 4,
+          "line": 32
+        },
+        {
+          "heading": "Split PDF",
+          "level": 4,
+          "line": 46
+        },
+        {
+          "heading": "Extract Metadata",
+          "level": 4,
+          "line": 56
+        },
+        {
+          "heading": "Rotate Pages",
+          "level": 4,
+          "line": 66
+        },
+        {
+          "heading": "pdfplumber - Text and Table Extraction",
+          "level": 3,
+          "line": 79
+        },
+        {
+          "heading": "Extract Text with Layout",
+          "level": 4,
+          "line": 81
+        },
+        {
+          "heading": "Extract Tables",
+          "level": 4,
+          "line": 91
+        },
+        {
+          "heading": "Advanced Table Extraction",
+          "level": 4,
+          "line": 102
+        },
+        {
+          "heading": "reportlab - Create PDFs",
+          "level": 3,
+          "line": 121
+        },
+        {
+          "heading": "Basic PDF Creation",
+          "level": 4,
+          "line": 123
+        },
+        {
+          "heading": "Create PDF with Multiple Pages",
+          "level": 4,
+          "line": 142
+        },
+        {
+          "heading": "Command-Line Tools",
+          "level": 2,
+          "line": 169
+        },
+        {
+          "heading": "pdftotext (poppler-utils)",
+          "level": 3,
+          "line": 171
+        },
+        {
+          "heading": "qpdf",
+          "level": 3,
+          "line": 183
+        },
+        {
+          "heading": "pdftk (if available)",
+          "level": 3,
+          "line": 199
+        },
+        {
+          "heading": "Common Tasks",
+          "level": 2,
+          "line": 211
+        },
+        {
+          "heading": "Extract Text from Scanned PDFs",
+          "level": 3,
+          "line": 213
+        },
+        {
+          "heading": "Add Watermark",
+          "level": 3,
+          "line": 232
+        },
+        {
+          "heading": "Extract Images",
+          "level": 3,
+          "line": 251
+        },
+        {
+          "heading": "Password Protection",
+          "level": 3,
+          "line": 259
+        },
+        {
+          "heading": "Quick Reference",
+          "level": 2,
+          "line": 276
+        },
+        {
+          "heading": "Next Steps",
+          "level": 2,
+          "line": 289
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 27
+      }
+    }
+  ]
+}

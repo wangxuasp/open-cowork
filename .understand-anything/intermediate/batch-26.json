@@ -1,0 +1,55 @@
+{
+  "nodes": [
+    {
+      "id": "document:.claude/skills/pptx/LICENSE.txt",
+      "type": "document",
+      "name": "LICENSE.txt",
+      "filePath": ".claude/skills/pptx/LICENSE.txt",
+      "summary": "文档文件 LICENSE.txt，共约 25 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "simple",
+      "language": "txt"
+    },
+    {
+      "id": "document:.claude/skills/pptx/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": ".claude/skills/pptx/SKILL.md",
+      "summary": "文档文件 SKILL.md，共约 372 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "complex",
+      "language": "markdown"
+    },
+    {
+      "id": "document:.claude/skills/pptx/css.md",
+      "type": "document",
+      "name": "css.md",
+      "filePath": ".claude/skills/pptx/css.md",
+      "summary": "文档文件 css.md，共约 243 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "complex",
+      "language": "markdown"
+    },
+    {
+      "id": "document:.claude/skills/pptx/html2pptx.md",
+      "type": "document",
+      "name": "html2pptx.md",
+      "filePath": ".claude/skills/pptx/html2pptx.md",
+      "summary": "文档文件 html2pptx.md，共约 959 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "complex",
+      "language": "markdown"
+    },
+    {
+      "id": "document:.claude/skills/pptx/ooxml.md",
+      "type": "document",
+      "name": "ooxml.md",
+      "filePath": ".claude/skills/pptx/ooxml.md",
+      "summary": "文档文件 ooxml.md，共约 380 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "complex",
+      "language": "markdown"
+    }
+  ],
+  "edges": []
+}

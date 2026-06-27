@@ -1,0 +1,104 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": "src/renderer/components/RemoteControlPanel.tsx",
+      "language": "typescript",
+      "sizeLines": 360,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/remote/AdvancedConfigStep.tsx",
+      "language": "typescript",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/remote/AuthorizedUsersSection.tsx",
+      "language": "typescript",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/remote/ConfigStepNav.tsx",
+      "language": "typescript",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/remote/ConnectionConfigStep.tsx",
+      "language": "typescript",
+      "sizeLines": 217,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/remote/FeishuConfigStep.tsx",
+      "language": "typescript",
+      "sizeLines": 109,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/remote/GatewayControlCard.tsx",
+      "language": "typescript",
+      "sizeLines": 87,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/remote/PairingGuideCard.tsx",
+      "language": "typescript",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/remote/PairingRequestsSection.tsx",
+      "language": "typescript",
+      "sizeLines": 110,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/remote/QuickStartGuide.tsx",
+      "language": "typescript",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/remote/types.ts",
+      "language": "typescript",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/renderer/components/RemoteControlPanel.tsx": [
+      "src/renderer/components/remote/AdvancedConfigStep.tsx",
+      "src/renderer/components/remote/AuthorizedUsersSection.tsx",
+      "src/renderer/components/remote/ConfigStepNav.tsx",
+      "src/renderer/components/remote/ConnectionConfigStep.tsx",
+      "src/renderer/components/remote/FeishuConfigStep.tsx",
+      "src/renderer/components/remote/GatewayControlCard.tsx",
+      "src/renderer/components/remote/PairingGuideCard.tsx",
+      "src/renderer/components/remote/PairingRequestsSection.tsx",
+      "src/renderer/components/remote/QuickStartGuide.tsx",
+      "src/renderer/components/remote/types.ts"
+    ],
+    "src/renderer/components/remote/AdvancedConfigStep.tsx": [],
+    "src/renderer/components/remote/AuthorizedUsersSection.tsx": [
+      "src/renderer/components/remote/types.ts",
+      "src/renderer/utils/i18n-format.ts"
+    ],
+    "src/renderer/components/remote/ConfigStepNav.tsx": ["src/renderer/components/remote/types.ts"],
+    "src/renderer/components/remote/ConnectionConfigStep.tsx": [
+      "src/renderer/components/remote/types.ts"
+    ],
+    "src/renderer/components/remote/FeishuConfigStep.tsx": [],
+    "src/renderer/components/remote/GatewayControlCard.tsx": [
+      "src/renderer/components/remote/types.ts"
+    ],
+    "src/renderer/components/remote/PairingGuideCard.tsx": [],
+    "src/renderer/components/remote/PairingRequestsSection.tsx": [
+      "src/renderer/components/remote/types.ts"
+    ],
+    "src/renderer/components/remote/QuickStartGuide.tsx": [],
+    "src/renderer/components/remote/types.ts": []
+  }
+}

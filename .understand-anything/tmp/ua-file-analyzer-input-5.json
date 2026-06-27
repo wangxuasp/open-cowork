@@ -1,0 +1,286 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": "src/main/client-event-utils.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/memory/memory-manager.ts",
+      "language": "typescript",
+      "sizeLines": 332,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/skills/plugin-catalog-service.ts",
+      "language": "typescript",
+      "sizeLines": 259,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/skills/plugin-registry-store.ts",
+      "language": "typescript",
+      "sizeLines": 75,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/utils/artifact-parser.ts",
+      "language": "typescript",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/utils/diagnostics-summary.ts",
+      "language": "typescript",
+      "sizeLines": 329,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/preload/index.ts",
+      "language": "typescript",
+      "sizeLines": 679,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/App.tsx",
+      "language": "typescript",
+      "sizeLines": 261,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/ChatView.tsx",
+      "language": "typescript",
+      "sizeLines": 851,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/ContextPanel.tsx",
+      "language": "typescript",
+      "sizeLines": 664,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/ErrorBoundary.tsx",
+      "language": "typescript",
+      "sizeLines": 90,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/GlobalNoticeToast.tsx",
+      "language": "typescript",
+      "sizeLines": 73,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/MessageCard.tsx",
+      "language": "typescript",
+      "sizeLines": 135,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/PanelErrorBoundary.tsx",
+      "language": "typescript",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/PermissionDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 152,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/SandboxSetupDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 220,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/SandboxSyncToast.tsx",
+      "language": "typescript",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/SettingsPanel.tsx",
+      "language": "typescript",
+      "sizeLines": 331,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/Sidebar.tsx",
+      "language": "typescript",
+      "sizeLines": 519,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/SudoPasswordDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 119,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/Titlebar.tsx",
+      "language": "typescript",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/WelcomeView.tsx",
+      "language": "typescript",
+      "sizeLines": 645,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/message/AskUserQuestionBlock.tsx",
+      "language": "typescript",
+      "sizeLines": 73,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/message/CodeBlock.tsx",
+      "language": "typescript",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/message/ContentBlockView.tsx",
+      "language": "typescript",
+      "sizeLines": 362,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/message/ThinkingBlock.tsx",
+      "language": "typescript",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/message/TodoWriteBlock.tsx",
+      "language": "typescript",
+      "sizeLines": 118,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/main/client-event-utils.ts": ["src/renderer/types/index.ts"],
+    "src/main/memory/memory-manager.ts": [
+      "src/main/utils/logger.ts",
+      "src/renderer/types/index.ts"
+    ],
+    "src/main/skills/plugin-catalog-service.ts": ["src/renderer/types/index.ts"],
+    "src/main/skills/plugin-registry-store.ts": ["src/renderer/types/index.ts"],
+    "src/main/utils/artifact-parser.ts": ["src/renderer/types/index.ts"],
+    "src/main/utils/diagnostics-summary.ts": ["src/renderer/types/index.ts"],
+    "src/preload/index.ts": ["src/renderer/types/index.ts", "src/shared/ipc-types.ts"],
+    "src/renderer/App.tsx": [
+      "src/renderer/components/GlobalNoticeToast.tsx",
+      "src/renderer/components/PanelErrorBoundary.tsx",
+      "src/renderer/components/PermissionDialog.tsx",
+      "src/renderer/components/SandboxSetupDialog.tsx",
+      "src/renderer/components/SandboxSyncToast.tsx",
+      "src/renderer/components/Sidebar.tsx",
+      "src/renderer/components/SudoPasswordDialog.tsx",
+      "src/renderer/components/Titlebar.tsx",
+      "src/renderer/components/WelcomeView.tsx",
+      "src/renderer/hooks/useIPC.ts",
+      "src/renderer/hooks/useWindowSize.ts",
+      "src/renderer/store/index.ts",
+      "src/renderer/store/selectors.ts",
+      "src/renderer/types/index.ts"
+    ],
+    "src/renderer/components/ChatView.tsx": [
+      "src/renderer/components/MessageCard.tsx",
+      "src/renderer/hooks/useIPC.ts",
+      "src/renderer/store/index.ts",
+      "src/renderer/store/selectors.ts",
+      "src/renderer/types/index.ts"
+    ],
+    "src/renderer/components/ContextPanel.tsx": [
+      "src/renderer/components/message/toolHelpers.tsx",
+      "src/renderer/hooks/useIPC.ts",
+      "src/renderer/store/index.ts",
+      "src/renderer/types/index.ts",
+      "src/renderer/utils/artifact-path.ts",
+      "src/renderer/utils/artifact-steps.ts",
+      "src/renderer/utils/tool-output-path.ts"
+    ],
+    "src/renderer/components/ErrorBoundary.tsx": ["src/renderer/i18n/config.ts"],
+    "src/renderer/components/GlobalNoticeToast.tsx": ["src/renderer/store/index.ts"],
+    "src/renderer/components/MessageCard.tsx": [
+      "src/renderer/components/message/ContentBlockView.tsx",
+      "src/renderer/types/index.ts"
+    ],
+    "src/renderer/components/PanelErrorBoundary.tsx": [],
+    "src/renderer/components/PermissionDialog.tsx": [
+      "src/renderer/hooks/useIPC.ts",
+      "src/renderer/types/index.ts"
+    ],
+    "src/renderer/components/SandboxSetupDialog.tsx": [
+      "src/renderer/types/index.ts",
+      "src/renderer/utils/sandbox-i18n.ts"
+    ],
+    "src/renderer/components/SandboxSyncToast.tsx": [
+      "src/renderer/types/index.ts",
+      "src/renderer/utils/sandbox-i18n.ts"
+    ],
+    "src/renderer/components/SettingsPanel.tsx": [
+      "src/renderer/components/RemoteControlPanel.tsx",
+      "src/renderer/components/settings/SettingsAbout.tsx",
+      "src/renderer/components/settings/SettingsAPI.tsx",
+      "src/renderer/components/settings/SettingsConnectors.tsx",
+      "src/renderer/components/settings/SettingsGeneral.tsx",
+      "src/renderer/components/settings/SettingsKnowledgeBase.tsx",
+      "src/renderer/components/settings/SettingsLogs.tsx",
+      "src/renderer/components/settings/SettingsMemory.tsx",
+      "src/renderer/components/settings/SettingsSandbox.tsx",
+      "src/renderer/components/settings/SettingsSchedule.tsx",
+      "src/renderer/components/settings/SettingsSkills.tsx",
+      "src/renderer/components/settings/SettingsTeamcenter.tsx",
+      "src/renderer/hooks/useWindowSize.ts",
+      "src/renderer/store/index.ts"
+    ],
+    "src/renderer/components/Sidebar.tsx": [
+      "src/renderer/hooks/useIPC.ts",
+      "src/renderer/store/index.ts",
+      "src/renderer/types/index.ts",
+      "src/renderer/utils/session-switch.ts"
+    ],
+    "src/renderer/components/SudoPasswordDialog.tsx": [
+      "src/renderer/hooks/useIPC.ts",
+      "src/renderer/types/index.ts"
+    ],
+    "src/renderer/components/Titlebar.tsx": [],
+    "src/renderer/components/WelcomeView.tsx": [
+      "src/renderer/hooks/useIPC.ts",
+      "src/renderer/store/index.ts",
+      "src/renderer/types/index.ts",
+      "src/shared/session-title.ts"
+    ],
+    "src/renderer/components/message/AskUserQuestionBlock.tsx": ["src/renderer/types/index.ts"],
+    "src/renderer/components/message/CodeBlock.tsx": [],
+    "src/renderer/components/message/ContentBlockView.tsx": [
+      "src/renderer/components/message/CodeBlock.tsx",
+      "src/renderer/components/message/ThinkingBlock.tsx",
+      "src/renderer/components/message/ToolResultBlock.tsx",
+      "src/renderer/components/message/ToolUseBlock.tsx",
+      "src/renderer/components/message/types.ts",
+      "src/renderer/components/PanelErrorBoundary.tsx",
+      "src/renderer/store/index.ts",
+      "src/renderer/types/index.ts",
+      "src/renderer/utils/file-link.ts",
+      "src/renderer/utils/latex-delimiters.ts",
+      "src/renderer/utils/markdown-local-link.ts",
+      "src/shared/workspace-path.ts"
+    ],
+    "src/renderer/components/message/ThinkingBlock.tsx": [
+      "src/renderer/components/PanelErrorBoundary.tsx"
+    ],
+    "src/renderer/components/message/TodoWriteBlock.tsx": [
+      "src/renderer/components/message/types.ts",
+      "src/renderer/types/index.ts"
+    ]
+  }
+}

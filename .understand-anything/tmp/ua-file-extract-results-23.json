@@ -1,0 +1,63 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 7,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".claude/skills/docx/scripts/ooxml/schemas/microsoft/wml-2010.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 560,
+      "nonEmptyLines": 560,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/docx/scripts/ooxml/schemas/microsoft/wml-2012.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 67,
+      "nonEmptyLines": 67,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/docx/scripts/ooxml/schemas/microsoft/wml-2018.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 14,
+      "nonEmptyLines": 14,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/docx/scripts/ooxml/schemas/microsoft/wml-cex-2018.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 20,
+      "nonEmptyLines": 20,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/docx/scripts/ooxml/schemas/microsoft/wml-cid-2016.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 13,
+      "nonEmptyLines": 13,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/docx/scripts/ooxml/schemas/microsoft/wml-sdtdatahash-2020.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/docx/scripts/ooxml/schemas/microsoft/wml-symex-2015.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 8,
+      "nonEmptyLines": 8,
+      "metrics": {}
+    }
+  ]
+}

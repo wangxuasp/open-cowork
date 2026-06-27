@@ -1,0 +1,239 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": "src/main/remote/channels/channel-base.ts",
+      "language": "typescript",
+      "sizeLines": 232,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/remote/channels/feishu/feishu-api.ts",
+      "language": "typescript",
+      "sizeLines": 450,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/remote/channels/feishu/feishu-channel.ts",
+      "language": "typescript",
+      "sizeLines": 704,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/remote/channels/feishu/feishu-ws-client.ts",
+      "language": "typescript",
+      "sizeLines": 384,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/remote/channels/feishu/index.ts",
+      "language": "typescript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/remote/channels/slack/index.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/remote/channels/slack/slack-channel.ts",
+      "language": "typescript",
+      "sizeLines": 251,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/remote/gateway.ts",
+      "language": "typescript",
+      "sizeLines": 863,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/remote/message-router.ts",
+      "language": "typescript",
+      "sizeLines": 626,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/remote/remote-config-store.ts",
+      "language": "typescript",
+      "sizeLines": 328,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/remote/remote-manager.ts",
+      "language": "typescript",
+      "sizeLines": 1313,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/remote/remote-title.ts",
+      "language": "typescript",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/remote/tunnel-manager.ts",
+      "language": "typescript",
+      "sizeLines": 171,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/remote/types.ts",
+      "language": "typescript",
+      "sizeLines": 575,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/utils/store-encryption.ts",
+      "language": "typescript",
+      "sizeLines": 235,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/utils/artifact-path.ts",
+      "language": "typescript",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/utils/markdown-local-link.ts",
+      "language": "typescript",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/workspace-path.ts",
+      "language": "typescript",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/tests/workspace-path.test.ts",
+      "language": "typescript",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/artifact-path.test.ts",
+      "language": "typescript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/markdown-local-link.test.ts",
+      "language": "typescript",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/remote-cwd-propagation.test.ts",
+      "language": "typescript",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/remote-cwd-state.test.ts",
+      "language": "typescript",
+      "sizeLines": 171,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/remote-default-workdir.test.ts",
+      "language": "typescript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/remote-user-message-ui.test.ts",
+      "language": "typescript",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/main/remote/channels/channel-base.ts": [
+      "src/main/remote/types.ts",
+      "src/main/utils/logger.ts"
+    ],
+    "src/main/remote/channels/feishu/feishu-api.ts": ["src/main/utils/logger.ts"],
+    "src/main/remote/channels/feishu/feishu-channel.ts": [
+      "src/main/remote/channels/channel-base.ts",
+      "src/main/remote/channels/feishu/feishu-api.ts",
+      "src/main/remote/channels/feishu/feishu-ws-client.ts",
+      "src/main/remote/types.ts",
+      "src/main/utils/logger.ts"
+    ],
+    "src/main/remote/channels/feishu/feishu-ws-client.ts": ["src/main/utils/logger.ts"],
+    "src/main/remote/channels/feishu/index.ts": [],
+    "src/main/remote/channels/slack/index.ts": [],
+    "src/main/remote/channels/slack/slack-channel.ts": [
+      "src/main/remote/channels/channel-base.ts",
+      "src/main/remote/types.ts",
+      "src/main/utils/logger.ts"
+    ],
+    "src/main/remote/gateway.ts": [
+      "src/main/remote/message-router.ts",
+      "src/main/remote/types.ts",
+      "src/main/utils/logger.ts"
+    ],
+    "src/main/remote/message-router.ts": [
+      "src/main/remote/types.ts",
+      "src/main/utils/logger.ts",
+      "src/renderer/types/index.ts",
+      "src/shared/local-file-path.ts",
+      "src/shared/workspace-path.ts"
+    ],
+    "src/main/remote/remote-config-store.ts": [
+      "src/main/remote/types.ts",
+      "src/main/utils/logger.ts",
+      "src/main/utils/store-encryption.ts"
+    ],
+    "src/main/remote/remote-manager.ts": [
+      "src/main/remote/channels/feishu/index.ts",
+      "src/main/remote/channels/slack/index.ts",
+      "src/main/remote/gateway.ts",
+      "src/main/remote/message-router.ts",
+      "src/main/remote/remote-config-store.ts",
+      "src/main/remote/remote-title.ts",
+      "src/main/remote/tunnel-manager.ts",
+      "src/main/remote/types.ts",
+      "src/main/utils/logger.ts",
+      "src/renderer/types/index.ts"
+    ],
+    "src/main/remote/remote-title.ts": [],
+    "src/main/remote/tunnel-manager.ts": [
+      "src/main/remote/remote-config-store.ts",
+      "src/main/utils/logger.ts"
+    ],
+    "src/main/remote/types.ts": [],
+    "src/main/utils/store-encryption.ts": [],
+    "src/renderer/utils/artifact-path.ts": ["src/shared/workspace-path.ts"],
+    "src/renderer/utils/markdown-local-link.ts": [
+      "src/renderer/utils/artifact-path.ts",
+      "src/shared/local-file-path.ts"
+    ],
+    "src/shared/workspace-path.ts": ["src/shared/local-file-path.ts"],
+    "src/tests/workspace-path.test.ts": ["src/shared/workspace-path.ts"],
+    "tests/artifact-path.test.ts": ["src/renderer/utils/artifact-path.ts"],
+    "tests/markdown-local-link.test.ts": ["src/renderer/utils/markdown-local-link.ts"],
+    "tests/remote-cwd-propagation.test.ts": [
+      "src/main/remote/remote-manager.ts",
+      "src/main/remote/types.ts"
+    ],
+    "tests/remote-cwd-state.test.ts": [
+      "src/main/remote/remote-manager.ts",
+      "src/main/remote/types.ts"
+    ],
+    "tests/remote-default-workdir.test.ts": [
+      "src/main/remote/remote-manager.ts",
+      "src/main/remote/types.ts"
+    ],
+    "tests/remote-user-message-ui.test.ts": [
+      "src/main/remote/remote-manager.ts",
+      "src/main/remote/types.ts",
+      "src/renderer/types/index.ts"
+    ]
+  }
+}

@@ -2,7 +2,17 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import electron from 'vite-plugin-electron';
 import { resolve } from 'path';
-import { builtinModules } from 'module';
+import { builtinModules, createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+const { validateTrialExpiration } = require('./scripts/trial-expiration-utils.js');
+
+const trialExpirationRaw = process.env.AGENT_TRIAL_EXPIRATION ?? '';
+const trialExpirationValidation = validateTrialExpiration(trialExpirationRaw);
+if (!trialExpirationValidation.valid) {
+  throw new Error(trialExpirationValidation.reason);
+}
+const trialExpirationDefined = trialExpirationValidation.normalized ?? '';
 
 // Node built-in modules must be external for Electron main process
 const nodeBuiltins = builtinModules.flatMap((m) => [m, `node:${m}`]);
@@ -16,6 +26,9 @@ const ignoredWatchPaths = [
 ];
 
 export default defineConfig({
+  define: {
+    __AGENT_TRIAL_EXPIRATION__: JSON.stringify(trialExpirationDefined),
+  },
   plugins: [
     react(),
     electron([
@@ -25,6 +38,9 @@ export default defineConfig({
           args.startup();
         },
         vite: {
+          define: {
+            __AGENT_TRIAL_EXPIRATION__: JSON.stringify(trialExpirationDefined),
+          },
           build: {
             outDir: 'dist-electron/main',
             rollupOptions: {

@@ -1,0 +1,350 @@
+{
+  "nodes": [
+    {
+      "id": "file:.claude/skills/pptx/ooxml/scripts/validate.py",
+      "type": "file",
+      "name": "validate.py",
+      "filePath": ".claude/skills/pptx/ooxml/scripts/validate.py",
+      "summary": "源码模块 .claude/skills/pptx/ooxml/scripts/validate.py，包含 1 个函数，约 87 行有效代码。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": ".claude/skills/pptx/ooxml/scripts/validate.py",
+      "summary": "函数 main，位于 .claude/skills/pptx/ooxml/scripts/validate.py 第 26-99 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "file:.claude/skills/pptx/ooxml/scripts/validation/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": ".claude/skills/pptx/ooxml/scripts/validation/__init__.py",
+      "summary": "源码模块 .claude/skills/pptx/ooxml/scripts/validation/__init__.py，体量 13 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "file:.claude/skills/pptx/ooxml/scripts/validation/base.py",
+      "type": "file",
+      "name": "base.py",
+      "filePath": ".claude/skills/pptx/ooxml/scripts/validation/base.py",
+      "summary": "TypeScript/JavaScript 模块 .claude/skills/pptx/ooxml/scripts/validation/base.py，导出 1 个类与 0 个函数，是应用逻辑的一部分。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "class:.claude/skills/pptx/ooxml/scripts/validation/base.py:BaseSchemaValidator",
+      "type": "class",
+      "name": "BaseSchemaValidator",
+      "filePath": ".claude/skills/pptx/ooxml/scripts/validation/base.py",
+      "summary": "类 BaseSchemaValidator，含 20 个方法，位于 .claude/skills/pptx/ooxml/scripts/validation/base.py。",
+      "tags": ["module", "type-definition"],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "file:.claude/skills/pptx/ooxml/scripts/validation/docx.py",
+      "type": "file",
+      "name": "docx.py",
+      "filePath": ".claude/skills/pptx/ooxml/scripts/validation/docx.py",
+      "summary": "TypeScript/JavaScript 模块 .claude/skills/pptx/ooxml/scripts/validation/docx.py，导出 1 个类与 0 个函数，是应用逻辑的一部分。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "class:.claude/skills/pptx/ooxml/scripts/validation/docx.py:DOCXSchemaValidator",
+      "type": "class",
+      "name": "DOCXSchemaValidator",
+      "filePath": ".claude/skills/pptx/ooxml/scripts/validation/docx.py",
+      "summary": "类 DOCXSchemaValidator，含 11 个方法，位于 .claude/skills/pptx/ooxml/scripts/validation/docx.py。",
+      "tags": ["module", "type-definition"],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "file:.claude/skills/pptx/ooxml/scripts/validation/pptx.py",
+      "type": "file",
+      "name": "pptx.py",
+      "filePath": ".claude/skills/pptx/ooxml/scripts/validation/pptx.py",
+      "summary": "TypeScript/JavaScript 模块 .claude/skills/pptx/ooxml/scripts/validation/pptx.py，导出 1 个类与 0 个函数，是应用逻辑的一部分。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "class:.claude/skills/pptx/ooxml/scripts/validation/pptx.py:PPTXSchemaValidator",
+      "type": "class",
+      "name": "PPTXSchemaValidator",
+      "filePath": ".claude/skills/pptx/ooxml/scripts/validation/pptx.py",
+      "summary": "类 PPTXSchemaValidator，含 6 个方法，位于 .claude/skills/pptx/ooxml/scripts/validation/pptx.py。",
+      "tags": ["module", "type-definition"],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "file:.claude/skills/pptx/ooxml/scripts/validation/redlining.py",
+      "type": "file",
+      "name": "redlining.py",
+      "filePath": ".claude/skills/pptx/ooxml/scripts/validation/redlining.py",
+      "summary": "TypeScript/JavaScript 模块 .claude/skills/pptx/ooxml/scripts/validation/redlining.py，导出 1 个类与 0 个函数，是应用逻辑的一部分。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "class:.claude/skills/pptx/ooxml/scripts/validation/redlining.py:RedliningValidator",
+      "type": "class",
+      "name": "RedliningValidator",
+      "filePath": ".claude/skills/pptx/ooxml/scripts/validation/redlining.py",
+      "summary": "类 RedliningValidator，含 7 个方法，位于 .claude/skills/pptx/ooxml/scripts/validation/redlining.py。",
+      "tags": ["module", "type-definition"],
+      "complexity": "complex",
+      "language": "python"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:.claude/skills/pptx/ooxml/scripts/validate.py",
+      "target": "file:.claude/skills/pptx/ooxml/scripts/validation/__init__.py",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:.claude/skills/pptx/ooxml/scripts/validate.py",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:argparse.ArgumentParser",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:parser.add_argument",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:parser.add_argument",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:parser.add_argument",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:parser.add_argument",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:parser.parse_args",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:original_file.suffix.lower",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:path.exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:original_file.is_file",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:path.is_file",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:path.suffix.lower",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:tempfile.mkdtemp",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:zipfile.ZipFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:zf.extractall",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:path.is_dir",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:sys.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:V",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:validator.repair",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:V",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:validator.validate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/ooxml/scripts/validate.py:main",
+      "target": "function:.claude/skills/pptx/ooxml/scripts/validate.py:sys.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:.claude/skills/pptx/ooxml/scripts/validation/__init__.py",
+      "target": "file:.claude/skills/pptx/ooxml/scripts/validation/base.py",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:.claude/skills/pptx/ooxml/scripts/validation/__init__.py",
+      "target": "file:.claude/skills/pptx/ooxml/scripts/validation/docx.py",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:.claude/skills/pptx/ooxml/scripts/validation/__init__.py",
+      "target": "file:.claude/skills/pptx/ooxml/scripts/validation/pptx.py",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:.claude/skills/pptx/ooxml/scripts/validation/__init__.py",
+      "target": "file:.claude/skills/pptx/ooxml/scripts/validation/redlining.py",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:.claude/skills/pptx/ooxml/scripts/validation/base.py",
+      "target": "class:.claude/skills/pptx/ooxml/scripts/validation/base.py:BaseSchemaValidator",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pptx/ooxml/scripts/validation/docx.py",
+      "target": "file:.claude/skills/pptx/ooxml/scripts/validation/base.py",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:.claude/skills/pptx/ooxml/scripts/validation/docx.py",
+      "target": "class:.claude/skills/pptx/ooxml/scripts/validation/docx.py:DOCXSchemaValidator",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pptx/ooxml/scripts/validation/pptx.py",
+      "target": "file:.claude/skills/pptx/ooxml/scripts/validation/base.py",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:.claude/skills/pptx/ooxml/scripts/validation/pptx.py",
+      "target": "class:.claude/skills/pptx/ooxml/scripts/validation/pptx.py:PPTXSchemaValidator",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pptx/ooxml/scripts/validation/redlining.py",
+      "target": "class:.claude/skills/pptx/ooxml/scripts/validation/redlining.py:RedliningValidator",
+      "type": "contains",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/microsoft/wml-2010.xsd",
+      "language": "xml",
+      "sizeLines": 560,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/microsoft/wml-2012.xsd",
+      "language": "xml",
+      "sizeLines": 67,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/microsoft/wml-2018.xsd",
+      "language": "xml",
+      "sizeLines": 14,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/microsoft/wml-cex-2018.xsd",
+      "language": "xml",
+      "sizeLines": 20,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/microsoft/wml-cid-2016.xsd",
+      "language": "xml",
+      "sizeLines": 13,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/microsoft/wml-sdtdatahash-2020.xsd",
+      "language": "xml",
+      "sizeLines": 4,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/microsoft/wml-symex-2015.xsd",
+      "language": "xml",
+      "sizeLines": 8,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    ".claude/skills/pptx/ooxml/schemas/microsoft/wml-2010.xsd": [],
+    ".claude/skills/pptx/ooxml/schemas/microsoft/wml-2012.xsd": [],
+    ".claude/skills/pptx/ooxml/schemas/microsoft/wml-2018.xsd": [],
+    ".claude/skills/pptx/ooxml/schemas/microsoft/wml-cex-2018.xsd": [],
+    ".claude/skills/pptx/ooxml/schemas/microsoft/wml-cid-2016.xsd": [],
+    ".claude/skills/pptx/ooxml/schemas/microsoft/wml-sdtdatahash-2020.xsd": [],
+    ".claude/skills/pptx/ooxml/schemas/microsoft/wml-symex-2015.xsd": []
+  }
+}

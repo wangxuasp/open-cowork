@@ -1,0 +1,56 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": ".claude/skills/visio/references/full-scene-regeneration-prompt.md",
+      "language": "markdown",
+      "sizeLines": 90,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/visio/references/renderer-effective-fields.json",
+      "language": "json",
+      "sizeLines": 201,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/visio/references/review-contract.md",
+      "language": "markdown",
+      "sizeLines": 244,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/visio/references/reviewer-two-image-prompt.md",
+      "language": "markdown",
+      "sizeLines": 112,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/visio/references/scene-schema.md",
+      "language": "markdown",
+      "sizeLines": 1904,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/visio/references/visio-component-map.md",
+      "language": "markdown",
+      "sizeLines": 231,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/visio/references/visio-export-flow.md",
+      "language": "markdown",
+      "sizeLines": 56,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".claude/skills/visio/references/full-scene-regeneration-prompt.md": [],
+    ".claude/skills/visio/references/renderer-effective-fields.json": [],
+    ".claude/skills/visio/references/review-contract.md": [],
+    ".claude/skills/visio/references/reviewer-two-image-prompt.md": [],
+    ".claude/skills/visio/references/scene-schema.md": [],
+    ".claude/skills/visio/references/visio-component-map.md": [],
+    ".claude/skills/visio/references/visio-export-flow.md": []
+  }
+}

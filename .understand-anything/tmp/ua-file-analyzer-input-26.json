@@ -1,0 +1,42 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": ".claude/skills/pptx/LICENSE.txt",
+      "language": "txt",
+      "sizeLines": 30,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/pptx/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 474,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/pptx/css.md",
+      "language": "markdown",
+      "sizeLines": 337,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/pptx/html2pptx.md",
+      "language": "markdown",
+      "sizeLines": 1210,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml.md",
+      "language": "markdown",
+      "sizeLines": 426,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".claude/skills/pptx/LICENSE.txt": [],
+    ".claude/skills/pptx/SKILL.md": [],
+    ".claude/skills/pptx/css.md": [],
+    ".claude/skills/pptx/html2pptx.md": [],
+    ".claude/skills/pptx/ooxml.md": []
+  }
+}

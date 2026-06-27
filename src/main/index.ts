@@ -25,6 +25,8 @@ import { PluginRuntimeService } from './skills/plugin-runtime-service';
 import { MemoryService } from './memory/memory-service';
 import { MemoryExtension } from './memory/memory-extension';
 import { AgentRuntimeExtensionManager } from './extensions/agent-runtime-extension-manager';
+import { TrialExpirationExtension } from './trial/trial-expiration-extension';
+import { getTrialExpirationDate, isTrialExpired } from './trial/trial-config';
 import {
   configStore,
   getPiAiModelPresets,
@@ -836,7 +838,20 @@ app
 
     pluginRuntimeService = new PluginRuntimeService(new PluginCatalogService());
     memoryService = new MemoryService(db);
-    const extensionManager = new AgentRuntimeExtensionManager([new MemoryExtension(memoryService)]);
+    const extensionManager = new AgentRuntimeExtensionManager([
+      new TrialExpirationExtension(),
+      new MemoryExtension(memoryService),
+    ]);
+    const trialExpirationDate = getTrialExpirationDate();
+    if (trialExpirationDate) {
+      log(
+        '[Trial] Expiration date:',
+        trialExpirationDate,
+        isTrialExpired() ? '(expired)' : '(active)'
+      );
+    } else {
+      log('[Trial] No expiration configured');
+    }
 
     // Initialize session manager before creating an interactive window.
     // This avoids session.start racing the startup path and hitting a null manager.

@@ -1,0 +1,221 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": "src/renderer/utils/sandbox-i18n.ts",
+      "language": "typescript",
+      "sizeLines": 107,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/utils/session-switch.ts",
+      "language": "typescript",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/utils/session-update.ts",
+      "language": "typescript",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/utils/tool-output-path.ts",
+      "language": "typescript",
+      "sizeLines": 87,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/utils/tool-result-summary.ts",
+      "language": "typescript",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/ipc-types.ts",
+      "language": "typescript",
+      "sizeLines": 159,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/session-title.ts",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/tests/claude/agent-runner-history-rebuild.test.ts",
+      "language": "typescript",
+      "sizeLines": 244,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/tests/renderer/session-switch.test.ts",
+      "language": "typescript",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/tests/renderer/sidebar-session-click.test.ts",
+      "language": "typescript",
+      "sizeLines": 122,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/tests/store/session-state.test.ts",
+      "language": "typescript",
+      "sizeLines": 339,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/artifact-icon.test.ts",
+      "language": "typescript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/artifact-parser.test.ts",
+      "language": "typescript",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/artifact-steps.test.ts",
+      "language": "typescript",
+      "sizeLines": 323,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/client-event-utils.test.ts",
+      "language": "typescript",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/diagnostics-summary.test.ts",
+      "language": "typescript",
+      "sizeLines": 225,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/file-link.test.ts",
+      "language": "typescript",
+      "sizeLines": 122,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/latex-delimiters.test.ts",
+      "language": "typescript",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/memory-manager-no-fts.test.ts",
+      "language": "typescript",
+      "sizeLines": 112,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/path-resolver-containment.test.ts",
+      "language": "typescript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/plugin-catalog-dev-impl.test.ts",
+      "language": "typescript",
+      "sizeLines": 174,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/plugin-catalog-service.test.ts",
+      "language": "typescript",
+      "sizeLines": 153,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/renderer-diagnostics.test.ts",
+      "language": "typescript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/session-title-defaults.test.ts",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/session-update-event.test.ts",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/tool-output-path.test.ts",
+      "language": "typescript",
+      "sizeLines": 74,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/tool-result-summary.test.ts",
+      "language": "typescript",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/renderer/utils/sandbox-i18n.ts": ["src/renderer/types/index.ts"],
+    "src/renderer/utils/session-switch.ts": [
+      "src/renderer/store/index.ts",
+      "src/renderer/types/index.ts"
+    ],
+    "src/renderer/utils/session-update.ts": ["src/renderer/types/index.ts"],
+    "src/renderer/utils/tool-output-path.ts": [],
+    "src/renderer/utils/tool-result-summary.ts": [],
+    "src/shared/ipc-types.ts": [],
+    "src/shared/session-title.ts": [],
+    "src/tests/claude/agent-runner-history-rebuild.test.ts": [
+      "src/main/claude/agent-runner.ts",
+      "src/renderer/types/index.ts"
+    ],
+    "src/tests/renderer/session-switch.test.ts": [
+      "src/renderer/store/index.ts",
+      "src/renderer/types/index.ts",
+      "src/renderer/utils/session-switch.ts"
+    ],
+    "src/tests/renderer/sidebar-session-click.test.ts": ["src/renderer/store/index.ts"],
+    "src/tests/store/session-state.test.ts": [
+      "src/renderer/store/index.ts",
+      "src/renderer/types/index.ts"
+    ],
+    "tests/artifact-icon.test.ts": ["src/renderer/utils/artifact-steps.ts"],
+    "tests/artifact-parser.test.ts": ["src/main/utils/artifact-parser.ts"],
+    "tests/artifact-steps.test.ts": [
+      "src/renderer/types/index.ts",
+      "src/renderer/utils/artifact-steps.ts"
+    ],
+    "tests/client-event-utils.test.ts": [
+      "src/main/client-event-utils.ts",
+      "src/renderer/types/index.ts"
+    ],
+    "tests/diagnostics-summary.test.ts": [
+      "src/main/utils/diagnostics-summary.ts",
+      "src/renderer/types/index.ts"
+    ],
+    "tests/file-link.test.ts": ["src/renderer/utils/file-link.ts"],
+    "tests/latex-delimiters.test.ts": ["src/renderer/utils/latex-delimiters.ts"],
+    "tests/memory-manager-no-fts.test.ts": ["src/main/memory/memory-manager.ts"],
+    "tests/path-resolver-containment.test.ts": [
+      "src/main/sandbox/path-resolver.ts",
+      "src/renderer/types/index.ts"
+    ],
+    "tests/plugin-catalog-dev-impl.test.ts": ["src/main/skills/plugin-catalog-service.ts"],
+    "tests/plugin-catalog-service.test.ts": ["src/main/skills/plugin-catalog-service.ts"],
+    "tests/renderer-diagnostics.test.ts": ["src/renderer/utils/renderer-diagnostics.ts"],
+    "tests/session-title-defaults.test.ts": ["src/shared/session-title.ts"],
+    "tests/session-update-event.test.ts": ["src/renderer/utils/session-update.ts"],
+    "tests/tool-output-path.test.ts": ["src/renderer/utils/tool-output-path.ts"],
+    "tests/tool-result-summary.test.ts": ["src/renderer/utils/tool-result-summary.ts"]
+  }
+}

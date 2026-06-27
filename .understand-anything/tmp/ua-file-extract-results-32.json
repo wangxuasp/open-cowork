@@ -1,0 +1,564 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 7,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".claude/skills/visio/references/full-scene-regeneration-prompt.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 90,
+      "nonEmptyLines": 62,
+      "sections": [
+        {
+          "heading": "Full-Scene Regeneration Prompt",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Inputs",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Goal",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Hard Rules",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "Required Working Order",
+          "level": 2,
+          "line": 30
+        },
+        {
+          "heading": "Authoring Priorities",
+          "level": 2,
+          "line": 41
+        },
+        {
+          "heading": "Output Contract",
+          "level": 2,
+          "line": 60
+        },
+        {
+          "heading": "Failure Avoidance",
+          "level": 2,
+          "line": 72
+        },
+        {
+          "heading": "Completion Check",
+          "level": 2,
+          "line": 82
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": ".claude/skills/visio/references/renderer-effective-fields.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 201,
+      "nonEmptyLines": 201,
+      "sections": [
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "_defaults",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "components",
+          "level": 1,
+          "line": 95
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": ".claude/skills/visio/references/review-contract.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 244,
+      "nonEmptyLines": 181,
+      "sections": [
+        {
+          "heading": "Review Contract",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Source Image Contract",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Review Manifest",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "Optional Debug Asset Policy",
+          "level": 2,
+          "line": 71
+        },
+        {
+          "heading": "`review_findings.json`",
+          "level": 2,
+          "line": 84
+        },
+        {
+          "heading": "`scene_rebuild_brief.json`",
+          "level": 2,
+          "line": 157
+        },
+        {
+          "heading": "No-Op Gate",
+          "level": 2,
+          "line": 211
+        },
+        {
+          "heading": "Rebuild Policy",
+          "level": 2,
+          "line": 235
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".claude/skills/visio/references/reviewer-two-image-prompt.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 112,
+      "nonEmptyLines": 90,
+      "sections": [
+        {
+          "heading": "Reviewer Prompt",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Input Contract",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Task",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Output Rules",
+          "level": 2,
+          "line": 33
+        },
+        {
+          "heading": "Severity",
+          "level": 2,
+          "line": 96
+        },
+        {
+          "heading": "Review Discipline",
+          "level": 2,
+          "line": 105
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".claude/skills/visio/references/scene-schema.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 1904,
+      "nonEmptyLines": 1533,
+      "sections": [
+        {
+          "heading": "Scene Schema",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Purpose",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Coordinate Rules",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Top-Level Structure",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "`page`",
+          "level": 2,
+          "line": 47
+        },
+        {
+          "heading": "`metadata`",
+          "level": 2,
+          "line": 61
+        },
+        {
+          "heading": "Large Figure Discipline",
+          "level": 2,
+          "line": 286
+        },
+        {
+          "heading": "`nodes`",
+          "level": 2,
+          "line": 306
+        },
+        {
+          "heading": "Text Fitting",
+          "level": 3,
+          "line": 377
+        },
+        {
+          "heading": "`page_background`",
+          "level": 3,
+          "line": 465
+        },
+        {
+          "heading": "`stacked_process`",
+          "level": 3,
+          "line": 483
+        },
+        {
+          "heading": "Compact Paper Detail Components",
+          "level": 3,
+          "line": 511
+        },
+        {
+          "heading": "`notched_block`",
+          "level": 3,
+          "line": 525
+        },
+        {
+          "heading": "`feature_map_banded`",
+          "level": 3,
+          "line": 545
+        },
+        {
+          "heading": "`feature_map_grid`",
+          "level": 3,
+          "line": 572
+        },
+        {
+          "heading": "`polygon_node`",
+          "level": 3,
+          "line": 596
+        },
+        {
+          "heading": "`trapezoid_node`",
+          "level": 3,
+          "line": 622
+        },
+        {
+          "heading": "`dual_wing_encoder`",
+          "level": 3,
+          "line": 647
+        },
+        {
+          "heading": "`cuboid_node`",
+          "level": 3,
+          "line": 677
+        },
+        {
+          "heading": "`tensor_stack`",
+          "level": 3,
+          "line": 702
+        },
+        {
+          "heading": "`modality_spine`",
+          "level": 3,
+          "line": 752
+        },
+        {
+          "heading": "`math_vector`",
+          "level": 3,
+          "line": 778
+        },
+        {
+          "heading": "`math_text`",
+          "level": 3,
+          "line": 803
+        },
+        {
+          "heading": "`math_label_box`",
+          "level": 3,
+          "line": 832
+        },
+        {
+          "heading": "`tfr_panel`",
+          "level": 3,
+          "line": 860
+        },
+        {
+          "heading": "`merge_bus`",
+          "level": 3,
+          "line": 895
+        },
+        {
+          "heading": "`concat_operator`",
+          "level": 3,
+          "line": 922
+        },
+        {
+          "heading": "`layer_sequence`",
+          "level": 3,
+          "line": 950
+        },
+        {
+          "heading": "`dashed_region`",
+          "level": 3,
+          "line": 1000
+        },
+        {
+          "heading": "`loss_region`",
+          "level": 3,
+          "line": 1019
+        },
+        {
+          "heading": "`audit_region`",
+          "level": 3,
+          "line": 1044
+        },
+        {
+          "heading": "`operator_node`",
+          "level": 3,
+          "line": 1062
+        },
+        {
+          "heading": "`attention_score_motif`",
+          "level": 3,
+          "line": 1084
+        },
+        {
+          "heading": "`boundary_port`",
+          "level": 3,
+          "line": 1115
+        },
+        {
+          "heading": "`wave_signal`",
+          "level": 3,
+          "line": 1135
+        },
+        {
+          "heading": "`classifier_head`",
+          "level": 3,
+          "line": 1154
+        },
+        {
+          "heading": "`layer_sequence`",
+          "level": 3,
+          "line": 1180
+        },
+        {
+          "heading": "`boundary_fanout`",
+          "level": 3,
+          "line": 1282
+        },
+        {
+          "heading": "`vector_label_group`",
+          "level": 3,
+          "line": 1305
+        },
+        {
+          "heading": "`caption_block`",
+          "level": 3,
+          "line": 1315
+        },
+        {
+          "heading": "`grid_matrix`",
+          "level": 3,
+          "line": 1330
+        },
+        {
+          "heading": "`token_grid`",
+          "level": 3,
+          "line": 1361
+        },
+        {
+          "heading": "`probability_bar_list`",
+          "level": 3,
+          "line": 1396
+        },
+        {
+          "heading": "`bracket`",
+          "level": 3,
+          "line": 1470
+        },
+        {
+          "heading": "`brace_merge`",
+          "level": 3,
+          "line": 1503
+        },
+        {
+          "heading": "`multi_port_junction`",
+          "level": 3,
+          "line": 1530
+        },
+        {
+          "heading": "`junction_point`",
+          "level": 3,
+          "line": 1536
+        },
+        {
+          "heading": "`edges`",
+          "level": 2,
+          "line": 1602
+        },
+        {
+          "heading": "`assets`",
+          "level": 2,
+          "line": 1890
+        },
+        {
+          "heading": "Example",
+          "level": 2,
+          "line": 1902
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 50
+      }
+    },
+    {
+      "path": ".claude/skills/visio/references/visio-component-map.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 231,
+      "nonEmptyLines": 152,
+      "sections": [
+        {
+          "heading": "Visio Component Map",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Intent",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Supported Node Types",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Supported Edge Types",
+          "level": 2,
+          "line": 49
+        },
+        {
+          "heading": "Why The Vocabulary Is Small",
+          "level": 2,
+          "line": 67
+        },
+        {
+          "heading": "Future Upgrade Path",
+          "level": 2,
+          "line": 75
+        },
+        {
+          "heading": "Styling Guidance",
+          "level": 2,
+          "line": 87
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": ".claude/skills/visio/references/visio-export-flow.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 56,
+      "nonEmptyLines": 37,
+      "sections": [
+        {
+          "heading": "Visio Export Flow",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Prerequisites",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Pipeline",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Expected Outputs",
+          "level": 2,
+          "line": 30
+        },
+        {
+          "heading": "Current V1 Limitations",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Debug Priorities",
+          "level": 2,
+          "line": 48
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    }
+  ]
+}

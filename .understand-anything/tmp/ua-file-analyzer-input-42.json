@@ -1,0 +1,182 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": "src/renderer/components/MessageMarkdown.tsx",
+      "language": "typescript",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/remote/SlackConfigStep.tsx",
+      "language": "typescript",
+      "sizeLines": 128,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/i18n/locales/en.json",
+      "language": "json",
+      "sizeLines": 958,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/renderer/i18n/locales/zh.json",
+      "language": "json",
+      "sizeLines": 958,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/renderer/i18n/README.md",
+      "language": "markdown",
+      "sizeLines": 115,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/renderer/styles/globals.css",
+      "language": "css",
+      "sizeLines": 337,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/renderer/vite-env.d.ts",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/tests/memory/memory-integration-files.test.ts",
+      "language": "typescript",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/tests/pre-build-check.test.ts",
+      "language": "typescript",
+      "sizeLines": 234,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/tests/preflight.test.ts",
+      "language": "typescript",
+      "sizeLines": 195,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/tests/renderer-crash-safety.test.ts",
+      "language": "typescript",
+      "sizeLines": 195,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/tests/skills/dangling-symlink.test.ts",
+      "language": "typescript",
+      "sizeLines": 163,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tailwind.config.js",
+      "language": "javascript",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/about-settings-entry.test.ts",
+      "language": "typescript",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/agent-runner-loop-guard-abort.test.ts",
+      "language": "typescript",
+      "sizeLines": 118,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/agent-runner-pi.test.ts",
+      "language": "typescript",
+      "sizeLines": 196,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/app-layout-scroll-lock.test.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/app-startup-lazy-load.test.ts",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/build-windows-script.test.ts",
+      "language": "typescript",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/bundle-mcp-script.test.ts",
+      "language": "typescript",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/chat-view-claude-layout.test.ts",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/chat-view-stop-entry.test.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/chat-view-width-layout.test.ts",
+      "language": "typescript",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/config-modal-claude-layout.test.ts",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/context-panel-recent-files.test.ts",
+      "language": "typescript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/renderer/components/MessageMarkdown.tsx": [],
+    "src/renderer/components/remote/SlackConfigStep.tsx": [],
+    "src/renderer/i18n/locales/en.json": [],
+    "src/renderer/i18n/locales/zh.json": [],
+    "src/renderer/i18n/README.md": [],
+    "src/renderer/styles/globals.css": [],
+    "src/renderer/vite-env.d.ts": [],
+    "src/tests/memory/memory-integration-files.test.ts": [],
+    "src/tests/pre-build-check.test.ts": ["scripts/pre-build-check.js"],
+    "src/tests/preflight.test.ts": [],
+    "src/tests/renderer-crash-safety.test.ts": [],
+    "src/tests/skills/dangling-symlink.test.ts": [],
+    "tailwind.config.js": [],
+    "tests/about-settings-entry.test.ts": [],
+    "tests/agent-runner-loop-guard-abort.test.ts": [],
+    "tests/agent-runner-pi.test.ts": [],
+    "tests/app-layout-scroll-lock.test.ts": [],
+    "tests/app-startup-lazy-load.test.ts": [],
+    "tests/build-windows-script.test.ts": [],
+    "tests/bundle-mcp-script.test.ts": ["scripts/bundle-mcp.js"],
+    "tests/chat-view-claude-layout.test.ts": [],
+    "tests/chat-view-stop-entry.test.ts": [],
+    "tests/chat-view-width-layout.test.ts": [],
+    "tests/config-modal-claude-layout.test.ts": [],
+    "tests/context-panel-recent-files.test.ts": []
+  }
+}

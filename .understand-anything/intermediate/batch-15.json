@@ -1,0 +1,2386 @@
+{
+  "nodes": [
+    {
+      "id": "file:.claude/skills/pptx/scripts/inventory.py",
+      "type": "file",
+      "name": "inventory.py",
+      "filePath": ".claude/skills/pptx/scripts/inventory.py",
+      "summary": "TypeScript/JavaScript 模块 .claude/skills/pptx/scripts/inventory.py，导出 3 个类与 9 个函数，是应用逻辑的一部分。",
+      "tags": ["utility"],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": ".claude/skills/pptx/scripts/inventory.py",
+      "summary": "函数 main，位于 .claude/skills/pptx/scripts/inventory.py 第 50-125 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pptx/scripts/inventory.py:is_valid_shape",
+      "type": "function",
+      "name": "is_valid_shape",
+      "filePath": ".claude/skills/pptx/scripts/inventory.py",
+      "summary": "函数 is_valid_shape，位于 .claude/skills/pptx/scripts/inventory.py 第 742-763 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pptx/scripts/inventory.py:collect_shapes_with_absolute_positions",
+      "type": "function",
+      "name": "collect_shapes_with_absolute_positions",
+      "filePath": ".claude/skills/pptx/scripts/inventory.py",
+      "summary": "函数 collect_shapes_with_absolute_positions，位于 .claude/skills/pptx/scripts/inventory.py 第 766-816 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pptx/scripts/inventory.py:sort_shapes_by_position",
+      "type": "function",
+      "name": "sort_shapes_by_position",
+      "filePath": ".claude/skills/pptx/scripts/inventory.py",
+      "summary": "函数 sort_shapes_by_position，位于 .claude/skills/pptx/scripts/inventory.py 第 819-846 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pptx/scripts/inventory.py:calculate_overlap",
+      "type": "function",
+      "name": "calculate_overlap",
+      "filePath": ".claude/skills/pptx/scripts/inventory.py",
+      "summary": "函数 calculate_overlap，位于 .claude/skills/pptx/scripts/inventory.py 第 849-879 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pptx/scripts/inventory.py:detect_overlaps",
+      "type": "function",
+      "name": "detect_overlaps",
+      "filePath": ".claude/skills/pptx/scripts/inventory.py",
+      "summary": "函数 detect_overlaps，位于 .claude/skills/pptx/scripts/inventory.py 第 882-911 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pptx/scripts/inventory.py:extract_text_inventory",
+      "type": "function",
+      "name": "extract_text_inventory",
+      "filePath": ".claude/skills/pptx/scripts/inventory.py",
+      "summary": "函数 extract_text_inventory，位于 .claude/skills/pptx/scripts/inventory.py 第 914-974 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pptx/scripts/inventory.py:get_inventory_as_dict",
+      "type": "function",
+      "name": "get_inventory_as_dict",
+      "filePath": ".claude/skills/pptx/scripts/inventory.py",
+      "summary": "函数 get_inventory_as_dict，位于 .claude/skills/pptx/scripts/inventory.py 第 977-1000 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pptx/scripts/inventory.py:save_inventory",
+      "type": "function",
+      "name": "save_inventory",
+      "filePath": ".claude/skills/pptx/scripts/inventory.py",
+      "summary": "函数 save_inventory，位于 .claude/skills/pptx/scripts/inventory.py 第 1003-1016 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "class:.claude/skills/pptx/scripts/inventory.py:ParagraphData",
+      "type": "class",
+      "name": "ParagraphData",
+      "filePath": ".claude/skills/pptx/scripts/inventory.py",
+      "summary": "类 ParagraphData，含 2 个方法，位于 .claude/skills/pptx/scripts/inventory.py。",
+      "tags": ["module", "type-definition"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "class:.claude/skills/pptx/scripts/inventory.py:ShapeData",
+      "type": "class",
+      "name": "ShapeData",
+      "filePath": ".claude/skills/pptx/scripts/inventory.py",
+      "summary": "类 ShapeData，含 15 个方法，位于 .claude/skills/pptx/scripts/inventory.py。",
+      "tags": ["module", "type-definition"],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "file:.claude/skills/pptx/scripts/replace.py",
+      "type": "file",
+      "name": "replace.py",
+      "filePath": ".claude/skills/pptx/scripts/replace.py",
+      "summary": "源码模块 .claude/skills/pptx/scripts/replace.py，包含 8 个函数，约 311 行有效代码。",
+      "tags": ["utility"],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pptx/scripts/replace.py:clear_paragraph_bullets",
+      "type": "function",
+      "name": "clear_paragraph_bullets",
+      "filePath": ".claude/skills/pptx/scripts/replace.py",
+      "summary": "函数 clear_paragraph_bullets，位于 .claude/skills/pptx/scripts/replace.py 第 29-43 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pptx/scripts/replace.py:apply_paragraph_properties",
+      "type": "function",
+      "name": "apply_paragraph_properties",
+      "filePath": ".claude/skills/pptx/scripts/replace.py",
+      "summary": "函数 apply_paragraph_properties，位于 .claude/skills/pptx/scripts/replace.py 第 46-113 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pptx/scripts/replace.py:apply_font_properties",
+      "type": "function",
+      "name": "apply_font_properties",
+      "filePath": ".claude/skills/pptx/scripts/replace.py",
+      "summary": "函数 apply_font_properties，位于 .claude/skills/pptx/scripts/replace.py 第 116-143 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pptx/scripts/replace.py:detect_frame_overflow",
+      "type": "function",
+      "name": "detect_frame_overflow",
+      "filePath": ".claude/skills/pptx/scripts/replace.py",
+      "summary": "函数 detect_frame_overflow，位于 .claude/skills/pptx/scripts/replace.py 第 146-162 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pptx/scripts/replace.py:validate_replacements",
+      "type": "function",
+      "name": "validate_replacements",
+      "filePath": ".claude/skills/pptx/scripts/replace.py",
+      "summary": "函数 validate_replacements，位于 .claude/skills/pptx/scripts/replace.py 第 165-204 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pptx/scripts/replace.py:check_duplicate_keys",
+      "type": "function",
+      "name": "check_duplicate_keys",
+      "filePath": ".claude/skills/pptx/scripts/replace.py",
+      "summary": "函数 check_duplicate_keys，位于 .claude/skills/pptx/scripts/replace.py 第 207-214 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "type": "function",
+      "name": "apply_replacements",
+      "filePath": ".claude/skills/pptx/scripts/replace.py",
+      "summary": "函数 apply_replacements，位于 .claude/skills/pptx/scripts/replace.py 第 217-356 行。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pptx/scripts/replace.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": ".claude/skills/pptx/scripts/replace.py",
+      "summary": "函数 main，位于 .claude/skills/pptx/scripts/replace.py 第 359-384 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "file:.claude/skills/pptx/scripts/thumbnail.py",
+      "type": "file",
+      "name": "thumbnail.py",
+      "filePath": ".claude/skills/pptx/scripts/thumbnail.py",
+      "summary": "源码模块 .claude/skills/pptx/scripts/thumbnail.py，包含 6 个函数，约 374 行有效代码。",
+      "tags": ["utility"],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": ".claude/skills/pptx/scripts/thumbnail.py",
+      "summary": "函数 main，位于 .claude/skills/pptx/scripts/thumbnail.py 第 70-149 行。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pptx/scripts/thumbnail.py:create_hidden_slide_placeholder",
+      "type": "function",
+      "name": "create_hidden_slide_placeholder",
+      "filePath": ".claude/skills/pptx/scripts/thumbnail.py",
+      "summary": "函数 create_hidden_slide_placeholder，位于 .claude/skills/pptx/scripts/thumbnail.py 第 152-159 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pptx/scripts/thumbnail.py:get_placeholder_regions",
+      "type": "function",
+      "name": "get_placeholder_regions",
+      "filePath": ".claude/skills/pptx/scripts/thumbnail.py",
+      "summary": "函数 get_placeholder_regions，位于 .claude/skills/pptx/scripts/thumbnail.py 第 162-197 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "type": "function",
+      "name": "convert_to_images",
+      "filePath": ".claude/skills/pptx/scripts/thumbnail.py",
+      "summary": "函数 convert_to_images，位于 .claude/skills/pptx/scripts/thumbnail.py 第 200-274 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grids",
+      "type": "function",
+      "name": "create_grids",
+      "filePath": ".claude/skills/pptx/scripts/thumbnail.py",
+      "summary": "函数 create_grids，位于 .claude/skills/pptx/scripts/thumbnail.py 第 277-321 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "type": "function",
+      "name": "create_grid",
+      "filePath": ".claude/skills/pptx/scripts/thumbnail.py",
+      "summary": "函数 create_grid，位于 .claude/skills/pptx/scripts/thumbnail.py 第 324-449 行。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "python"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:.claude/skills/pptx/scripts/inventory.py",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pptx/scripts/inventory.py",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:is_valid_shape",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pptx/scripts/inventory.py",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:collect_shapes_with_absolute_positions",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pptx/scripts/inventory.py",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:sort_shapes_by_position",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pptx/scripts/inventory.py",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:calculate_overlap",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pptx/scripts/inventory.py",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:detect_overlaps",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pptx/scripts/inventory.py",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:extract_text_inventory",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pptx/scripts/inventory.py",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:get_inventory_as_dict",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pptx/scripts/inventory.py",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:save_inventory",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pptx/scripts/inventory.py",
+      "target": "class:.claude/skills/pptx/scripts/inventory.py:ParagraphData",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pptx/scripts/inventory.py",
+      "target": "class:.claude/skills/pptx/scripts/inventory.py:ShapeData",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:argparse.ArgumentParser",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:parser.add_argument",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:parser.add_argument",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:parser.add_argument",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:parser.parse_args",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:input_path.exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:sys.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:input_path.suffix.lower",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:sys.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:extract_text_inventory",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:output_path.parent.mkdir",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:save_inventory",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:sum",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:inventory.values",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:traceback.print_exc",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:main",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:sys.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:is_valid_shape",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:hasattr",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:is_valid_shape",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:shape.text_frame.text.strip",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:is_valid_shape",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:hasattr",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:is_valid_shape",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:str(shape.placeholder_format.type).split(\".\")[-1].split",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:is_valid_shape",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:str(shape.placeholder_format.type).split",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:is_valid_shape",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:is_valid_shape",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:text.isdigit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:collect_shapes_with_absolute_positions",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:hasattr",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:collect_shapes_with_absolute_positions",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:hasattr",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:collect_shapes_with_absolute_positions",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:hasattr",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:collect_shapes_with_absolute_positions",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:result.extend",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:collect_shapes_with_absolute_positions",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:collect_shapes_with_absolute_positions",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:collect_shapes_with_absolute_positions",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:is_valid_shape",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:collect_shapes_with_absolute_positions",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:hasattr",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:collect_shapes_with_absolute_positions",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:hasattr",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:collect_shapes_with_absolute_positions",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:ShapeWithPosition",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:sort_shapes_by_position",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:sorted",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:sort_shapes_by_position",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:abs",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:sort_shapes_by_position",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:row.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:sort_shapes_by_position",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:result.extend",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:sort_shapes_by_position",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:sorted",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:sort_shapes_by_position",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:result.extend",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:sort_shapes_by_position",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:sorted",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:calculate_overlap",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:min",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:calculate_overlap",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:max",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:calculate_overlap",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:min",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:calculate_overlap",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:max",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:calculate_overlap",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:round",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:detect_overlaps",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:detect_overlaps",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:range",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:detect_overlaps",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:range",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:detect_overlaps",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:calculate_overlap",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:extract_text_inventory",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:Presentation",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:extract_text_inventory",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:extract_text_inventory",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:enumerate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:extract_text_inventory",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:shapes_with_positions.extend",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:extract_text_inventory",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:collect_shapes_with_absolute_positions",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:extract_text_inventory",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:ShapeData",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:extract_text_inventory",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:sort_shapes_by_position",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:extract_text_inventory",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:enumerate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:extract_text_inventory",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:extract_text_inventory",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:detect_overlaps",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:get_inventory_as_dict",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:extract_text_inventory",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:get_inventory_as_dict",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:inventory.items",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:get_inventory_as_dict",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:shape_data.to_dict",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:get_inventory_as_dict",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:shapes.items",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:save_inventory",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:inventory.items",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:save_inventory",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:shape_data.to_dict",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:save_inventory",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:shapes.items",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:save_inventory",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:open",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/inventory.py:save_inventory",
+      "target": "function:.claude/skills/pptx/scripts/inventory.py:json.dump",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:.claude/skills/pptx/scripts/replace.py",
+      "target": "file:.claude/skills/pptx/scripts/inventory.py",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:.claude/skills/pptx/scripts/replace.py",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:clear_paragraph_bullets",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pptx/scripts/replace.py",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:apply_paragraph_properties",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pptx/scripts/replace.py",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:apply_font_properties",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pptx/scripts/replace.py",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:detect_frame_overflow",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pptx/scripts/replace.py",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:validate_replacements",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pptx/scripts/replace.py",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:check_duplicate_keys",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pptx/scripts/replace.py",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pptx/scripts/replace.py",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:main",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:clear_paragraph_bullets",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:paragraph._element.get_or_add_pPr",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:clear_paragraph_bullets",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:list",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:clear_paragraph_bullets",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:child.tag.endswith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:clear_paragraph_bullets",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:child.tag.endswith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:clear_paragraph_bullets",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:child.tag.endswith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:clear_paragraph_bullets",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:child.tag.endswith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:clear_paragraph_bullets",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:pPr.remove",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_paragraph_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:para_data.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_paragraph_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:clear_paragraph_bullets",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_paragraph_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:para_data.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_paragraph_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:para_data.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_paragraph_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:para_data.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_paragraph_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:int",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_paragraph_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:int",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_paragraph_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_paragraph_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_paragraph_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:OxmlElement",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_paragraph_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:buChar.set",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_paragraph_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:pPr.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_paragraph_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:OxmlElement",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_paragraph_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:pPr.insert",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_paragraph_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:Pt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_paragraph_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:Pt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_paragraph_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:Pt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_paragraph_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:paragraph.add_run",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_paragraph_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:apply_font_properties",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_font_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:Pt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_font_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:para_data[\"color\"].lstrip",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_font_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_font_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:int",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_font_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:int",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_font_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:int",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_font_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:RGBColor",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_font_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:getattr",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_font_properties",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:detect_frame_overflow",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:inventory.items",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:detect_frame_overflow",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:shapes_dict.items",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:validate_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:replacements.items",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:validate_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:slide_key.startswith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:validate_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:errors.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:validate_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:shapes_data.keys",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:validate_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:inventory[slide_key].keys",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:validate_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:validate_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:unused_with_content.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:validate_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:unused_with_content.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:validate_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:errors.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:validate_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:', '.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:validate_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:sorted",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:check_duplicate_keys",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:ValueError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:Presentation",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:extract_text_inventory",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:detect_frame_overflow",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:open",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:json.load",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:validate_replacements",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:ValueError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:inventory.items",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:slide_key.startswith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:int",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:slide_key.split",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:shapes_dict.items",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:text_frame.clear",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:replacements.get(slide_key, {}).get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:replacements.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:enumerate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:text_frame.add_paragraph",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:apply_paragraph_properties",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:tempfile.NamedTemporaryFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:prs.save",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:extract_text_inventory",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:detect_frame_overflow",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:tmp_path.unlink",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:updated_overflow.items",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:shape_overflows.items",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:original_overflow.get(slide_key, {}).get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:original_overflow.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:overflow_errors.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:updated_inventory.items",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:shapes_dict.items",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:warnings.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:ValueError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:prs.save",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:main",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:main",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:main",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:sys.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:main",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:main",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:main",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:main",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:input_pptx.exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:main",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:main",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:sys.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:main",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:replacements_json.exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:main",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:main",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:sys.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:main",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:apply_replacements",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:main",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:main",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:main",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:main",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:main",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:traceback.print_exc",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/replace.py:main",
+      "target": "function:.claude/skills/pptx/scripts/replace.py:sys.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:.claude/skills/pptx/scripts/thumbnail.py",
+      "target": "file:.claude/skills/pptx/scripts/inventory.py",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:.claude/skills/pptx/scripts/thumbnail.py",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pptx/scripts/thumbnail.py",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:create_hidden_slide_placeholder",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pptx/scripts/thumbnail.py",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:get_placeholder_regions",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pptx/scripts/thumbnail.py",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pptx/scripts/thumbnail.py",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grids",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:.claude/skills/pptx/scripts/thumbnail.py",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:argparse.ArgumentParser",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:parser.add_argument",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:parser.add_argument",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:parser.add_argument",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:parser.add_argument",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:parser.parse_args",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:min",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:input_path.exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:input_path.suffix.lower",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:sys.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:tempfile.TemporaryDirectory",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:get_placeholder_regions",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:Path",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:sys.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grids",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:main",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:sys.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_hidden_slide_placeholder",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:Image.new",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_hidden_slide_placeholder",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:ImageDraw.Draw",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_hidden_slide_placeholder",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:max",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_hidden_slide_placeholder",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:min",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_hidden_slide_placeholder",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:draw.line",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_hidden_slide_placeholder",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:draw.line",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:get_placeholder_regions",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:Presentation",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:get_placeholder_regions",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:get_placeholder_regions",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:extract_text_inventory",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:get_placeholder_regions",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:inventory.items",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:get_placeholder_regions",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:int",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:get_placeholder_regions",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:slide_key.split",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:get_placeholder_regions",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:shapes.items",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:get_placeholder_regions",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:regions.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:Presentation",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:enumerate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:slide.element.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:sorted",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:subprocess.run",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:pdf_path.exists",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:RuntimeError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:subprocess.run",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:RuntimeError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:sorted",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:temp_dir.glob",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:Image.open",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:range",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:create_hidden_slide_placeholder",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:placeholder_img.save",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:all_images.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:convert_to_images",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:all_images.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grids",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:print",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grids",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:enumerate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grids",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:range",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grids",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grids",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:min",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grids",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grids",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grids",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grids",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:grid_filename.parent.mkdir",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grids",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:grid.save",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grids",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grids",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:grid_files.append",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grids",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:str",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:int",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:int",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:Image.open",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:int",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:len",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:Image.new",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:ImageDraw.Draw",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:ImageFont.load_default",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:ImageFont.load_default",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:enumerate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:draw.textbbox",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:draw.text",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:Image.open",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:img.convert",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:Image.new",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:ImageDraw.Draw",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:int",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:int",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:int",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:int",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:max",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:min",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:overlay_draw.rectangle",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:Image.alpha_composite",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:img.convert",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:img.thumbnail",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:grid.paste",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:.claude/skills/pptx/scripts/thumbnail.py:create_grid",
+      "target": "function:.claude/skills/pptx/scripts/thumbnail.py:draw.rectangle",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ]
+}

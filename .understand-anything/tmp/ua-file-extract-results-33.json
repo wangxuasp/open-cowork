@@ -1,0 +1,513 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 11,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".claude/skills/visio/templates/examples/audit_region.scene.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 93,
+      "nonEmptyLines": 93,
+      "sections": [
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "metadata",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "page",
+          "level": 1,
+          "line": 8
+        },
+        {
+          "heading": "nodes",
+          "level": 1,
+          "line": 15
+        },
+        {
+          "heading": "edges",
+          "level": 1,
+          "line": 69
+        },
+        {
+          "heading": "assets",
+          "level": 1,
+          "line": 92
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".claude/skills/visio/templates/examples/basic_flow.scene.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 93,
+      "nonEmptyLines": 93,
+      "sections": [
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "metadata",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "page",
+          "level": 1,
+          "line": 11
+        },
+        {
+          "heading": "nodes",
+          "level": 1,
+          "line": 18
+        },
+        {
+          "heading": "edges",
+          "level": 1,
+          "line": 65
+        },
+        {
+          "heading": "assets",
+          "level": 1,
+          "line": 92
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".claude/skills/visio/templates/examples/feature_map_grid.scene.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 95,
+      "nonEmptyLines": 95,
+      "sections": [
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "metadata",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "page",
+          "level": 1,
+          "line": 10
+        },
+        {
+          "heading": "nodes",
+          "level": 1,
+          "line": 17
+        },
+        {
+          "heading": "edges",
+          "level": 1,
+          "line": 55
+        },
+        {
+          "heading": "assets",
+          "level": 1,
+          "line": 94
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".claude/skills/visio/templates/examples/gan_loop_feedback.scene.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 296,
+      "nonEmptyLines": 296,
+      "sections": [
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "metadata",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "page",
+          "level": 1,
+          "line": 12
+        },
+        {
+          "heading": "assets",
+          "level": 1,
+          "line": 20
+        },
+        {
+          "heading": "nodes",
+          "level": 1,
+          "line": 21
+        },
+        {
+          "heading": "edges",
+          "level": 1,
+          "line": 169
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".claude/skills/visio/templates/examples/gan_tfr_full.scene.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 431,
+      "nonEmptyLines": 431,
+      "sections": [
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "metadata",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "page",
+          "level": 1,
+          "line": 15
+        },
+        {
+          "heading": "nodes",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "edges",
+          "level": 1,
+          "line": 208
+        },
+        {
+          "heading": "assets",
+          "level": 1,
+          "line": 430
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".claude/skills/visio/templates/examples/lane_math_vector.scene.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 158,
+      "nonEmptyLines": 158,
+      "sections": [
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "metadata",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "page",
+          "level": 1,
+          "line": 10
+        },
+        {
+          "heading": "nodes",
+          "level": 1,
+          "line": 18
+        },
+        {
+          "heading": "edges",
+          "level": 1,
+          "line": 131
+        },
+        {
+          "heading": "assets",
+          "level": 1,
+          "line": 157
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".claude/skills/visio/templates/examples/multimodal_paper_components.scene.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 159,
+      "nonEmptyLines": 159,
+      "sections": [
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "metadata",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "page",
+          "level": 1,
+          "line": 8
+        },
+        {
+          "heading": "nodes",
+          "level": 1,
+          "line": 14
+        },
+        {
+          "heading": "edges",
+          "level": 1,
+          "line": 131
+        },
+        {
+          "heading": "assets",
+          "level": 1,
+          "line": 158
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".claude/skills/visio/templates/examples/operator_boundary_lane.scene.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 144,
+      "nonEmptyLines": 144,
+      "sections": [
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "metadata",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "page",
+          "level": 1,
+          "line": 10
+        },
+        {
+          "heading": "nodes",
+          "level": 1,
+          "line": 17
+        },
+        {
+          "heading": "edges",
+          "level": 1,
+          "line": 119
+        },
+        {
+          "heading": "assets",
+          "level": 1,
+          "line": 143
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".claude/skills/visio/templates/examples/paper_module_components.scene.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 177,
+      "nonEmptyLines": 177,
+      "sections": [
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "metadata",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "page",
+          "level": 1,
+          "line": 10
+        },
+        {
+          "heading": "nodes",
+          "level": 1,
+          "line": 17
+        },
+        {
+          "heading": "edges",
+          "level": 1,
+          "line": 131
+        },
+        {
+          "heading": "assets",
+          "level": 1,
+          "line": 176
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".claude/skills/visio/templates/examples/rounded_orthogonal_connector.scene.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 220,
+      "nonEmptyLines": 220,
+      "sections": [
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "metadata",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "page",
+          "level": 1,
+          "line": 139
+        },
+        {
+          "heading": "assets",
+          "level": 1,
+          "line": 147
+        },
+        {
+          "heading": "nodes",
+          "level": 1,
+          "line": 148
+        },
+        {
+          "heading": "edges",
+          "level": 1,
+          "line": 198
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".claude/skills/visio/templates/examples/vertical_classifier.scene.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 98,
+      "nonEmptyLines": 98,
+      "sections": [
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "metadata",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "page",
+          "level": 1,
+          "line": 8
+        },
+        {
+          "heading": "nodes",
+          "level": 1,
+          "line": 15
+        },
+        {
+          "heading": "edges",
+          "level": 1,
+          "line": 87
+        },
+        {
+          "heading": "assets",
+          "level": 1,
+          "line": 97
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    }
+  ]
+}

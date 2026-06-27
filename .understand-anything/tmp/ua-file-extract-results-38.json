@@ -1,0 +1,2968 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".claude/skills/bom/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 125,
+      "nonEmptyLines": 82,
+      "sections": [
+        {
+          "heading": "BOM 操作技能",
+          "level": 1,
+          "line": 8
+        },
+        {
+          "heading": "支持的操作",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "操作一：创建单层 BOM",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "功能说明",
+          "level": 3,
+          "line": 21
+        },
+        {
+          "heading": "前置条件",
+          "level": 3,
+          "line": 26
+        },
+        {
+          "heading": "执行步骤",
+          "level": 3,
+          "line": 42
+        },
+        {
+          "heading": "第一步：构造请求体",
+          "level": 4,
+          "line": 44
+        },
+        {
+          "heading": "第二步：调用创建接口",
+          "level": 4,
+          "line": 55
+        },
+        {
+          "heading": "第三步：处理返回结果",
+          "level": 4,
+          "line": 62
+        },
+        {
+          "heading": "操作二：查询 BOM 组成",
+          "level": 1,
+          "line": 77
+        },
+        {
+          "heading": "功能说明",
+          "level": 3,
+          "line": 79
+        },
+        {
+          "heading": "前置条件",
+          "level": 3,
+          "line": 83
+        },
+        {
+          "heading": "执行步骤",
+          "level": 3,
+          "line": 96
+        },
+        {
+          "heading": "第一步：根据 UID 构造查询零组件ID",
+          "level": 4,
+          "line": 98
+        },
+        {
+          "heading": "第二步：调用查询bom的接口",
+          "level": 4,
+          "line": 102
+        },
+        {
+          "heading": "第三步：处理返回结果",
+          "level": 4,
+          "line": 108
+        },
+        {
+          "heading": "安全要求",
+          "level": 2,
+          "line": 121
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 17
+      }
+    },
+    {
+      "path": ".claude/skills/context/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 58,
+      "nonEmptyLines": 39,
+      "sections": [
+        {
+          "heading": "获取上下文技能",
+          "level": 1,
+          "line": 10
+        },
+        {
+          "heading": "功能说明",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "前置条件",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "执行步骤",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "第一步：调用上下文接口",
+          "level": 3,
+          "line": 24
+        },
+        {
+          "heading": "第二步：处理返回结果",
+          "level": 3,
+          "line": 36
+        },
+        {
+          "heading": "第三步：展示上下文信息",
+          "level": 3,
+          "line": 47
+        },
+        {
+          "heading": "安全要求",
+          "level": 2,
+          "line": 55
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".claude/skills/dataset/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 209,
+      "nonEmptyLines": 141,
+      "sections": [
+        {
+          "heading": "Teamcenter 数据集操作技能",
+          "level": 1,
+          "line": 10
+        },
+        {
+          "heading": "API 基础信息",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "支持的操作",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "1：创建数据集（create）",
+          "level": 2,
+          "line": 33
+        },
+        {
+          "heading": "2：导入文件（import）",
+          "level": 2,
+          "line": 73
+        },
+        {
+          "heading": "3：删除数据集（delete）",
+          "level": 2,
+          "line": 92
+        },
+        {
+          "heading": "4：替换文件（replace）",
+          "level": 2,
+          "line": 123
+        },
+        {
+          "heading": "5：导出文件（export）",
+          "level": 2,
+          "line": 163
+        },
+        {
+          "heading": "通用错误处理",
+          "level": 2,
+          "line": 181
+        },
+        {
+          "heading": "参数缺失时的处理",
+          "level": 2,
+          "line": 194
+        },
+        {
+          "heading": "安全要求",
+          "level": 2,
+          "line": 205
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": ".claude/skills/docx/LICENSE.txt",
+      "language": "txt",
+      "fileCategory": "docs",
+      "totalLines": 30,
+      "nonEmptyLines": 25,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/docx/scripts/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".claude/skills/docx/scripts/comment.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 341,
+      "nonEmptyLines": 291,
+      "functions": [
+        {
+          "name": "_generate_hex_id",
+          "startLine": 55,
+          "endLine": 57,
+          "params": []
+        },
+        {
+          "name": "_encode_smart_quotes",
+          "startLine": 69,
+          "endLine": 73,
+          "params": ["text"]
+        },
+        {
+          "name": "_append_xml",
+          "startLine": 76,
+          "endLine": 87,
+          "params": ["xml_path", "root_tag", "content"]
+        },
+        {
+          "name": "_find_para_id",
+          "startLine": 90,
+          "endLine": 98,
+          "params": ["comments_path", "comment_id"]
+        },
+        {
+          "name": "_get_next_rid",
+          "startLine": 101,
+          "endLine": 112,
+          "params": ["rels_path"]
+        },
+        {
+          "name": "_has_relationship",
+          "startLine": 115,
+          "endLine": 121,
+          "params": ["rels_path", "target"]
+        },
+        {
+          "name": "_has_content_type",
+          "startLine": 124,
+          "endLine": 130,
+          "params": ["ct_path", "part_name"]
+        },
+        {
+          "name": "_ensure_comment_relationships",
+          "startLine": 133,
+          "endLine": 174,
+          "params": ["unpacked_dir"]
+        },
+        {
+          "name": "_ensure_comment_content_types",
+          "startLine": 177,
+          "endLine": 215,
+          "params": ["unpacked_dir"]
+        },
+        {
+          "name": "add_comment",
+          "startLine": 218,
+          "endLine": 303,
+          "params": ["unpacked_dir", "comment_id", "text", "author", "initials", "parent_id"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "_generate_hex_id",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "_encode_smart_quotes",
+          "line": 69,
+          "isDefault": false
+        },
+        {
+          "name": "_append_xml",
+          "line": 76,
+          "isDefault": false
+        },
+        {
+          "name": "_find_para_id",
+          "line": 90,
+          "isDefault": false
+        },
+        {
+          "name": "_get_next_rid",
+          "line": 101,
+          "isDefault": false
+        },
+        {
+          "name": "_has_relationship",
+          "line": 115,
+          "isDefault": false
+        },
+        {
+          "name": "_has_content_type",
+          "line": 124,
+          "isDefault": false
+        },
+        {
+          "name": "_ensure_comment_relationships",
+          "line": 133,
+          "isDefault": false
+        },
+        {
+          "name": "_ensure_comment_content_types",
+          "line": 177,
+          "isDefault": false
+        },
+        {
+          "name": "add_comment",
+          "line": 218,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "_generate_hex_id",
+          "callee": "random.randint",
+          "lineNumber": 57
+        },
+        {
+          "caller": "_encode_smart_quotes",
+          "callee": "SMART_QUOTE_ENTITIES.items",
+          "lineNumber": 71
+        },
+        {
+          "caller": "_encode_smart_quotes",
+          "callee": "text.replace",
+          "lineNumber": 72
+        },
+        {
+          "caller": "_append_xml",
+          "callee": "defusedxml.minidom.parseString",
+          "lineNumber": 78
+        },
+        {
+          "caller": "_append_xml",
+          "callee": "xml_path.read_text",
+          "lineNumber": 78
+        },
+        {
+          "caller": "_append_xml",
+          "callee": "dom.getElementsByTagName",
+          "lineNumber": 79
+        },
+        {
+          "caller": "_append_xml",
+          "callee": "\" \".join",
+          "lineNumber": 80
+        },
+        {
+          "caller": "_append_xml",
+          "callee": "NS.items",
+          "lineNumber": 80
+        },
+        {
+          "caller": "_append_xml",
+          "callee": "defusedxml.minidom.parseString",
+          "lineNumber": 81
+        },
+        {
+          "caller": "_append_xml",
+          "callee": "root.appendChild",
+          "lineNumber": 84
+        },
+        {
+          "caller": "_append_xml",
+          "callee": "dom.importNode",
+          "lineNumber": 84
+        },
+        {
+          "caller": "_append_xml",
+          "callee": "_encode_smart_quotes",
+          "lineNumber": 86
+        },
+        {
+          "caller": "_append_xml",
+          "callee": "dom.toxml(encoding=\"UTF-8\").decode",
+          "lineNumber": 86
+        },
+        {
+          "caller": "_append_xml",
+          "callee": "dom.toxml",
+          "lineNumber": 86
+        },
+        {
+          "caller": "_append_xml",
+          "callee": "xml_path.write_text",
+          "lineNumber": 87
+        },
+        {
+          "caller": "_find_para_id",
+          "callee": "defusedxml.minidom.parseString",
+          "lineNumber": 92
+        },
+        {
+          "caller": "_find_para_id",
+          "callee": "comments_path.read_text",
+          "lineNumber": 92
+        },
+        {
+          "caller": "_find_para_id",
+          "callee": "dom.getElementsByTagName",
+          "lineNumber": 93
+        },
+        {
+          "caller": "_find_para_id",
+          "callee": "c.getAttribute",
+          "lineNumber": 94
+        },
+        {
+          "caller": "_find_para_id",
+          "callee": "str",
+          "lineNumber": 94
+        },
+        {
+          "caller": "_find_para_id",
+          "callee": "c.getElementsByTagName",
+          "lineNumber": 95
+        },
+        {
+          "caller": "_find_para_id",
+          "callee": "p.getAttribute",
+          "lineNumber": 96
+        },
+        {
+          "caller": "_get_next_rid",
+          "callee": "defusedxml.minidom.parseString",
+          "lineNumber": 103
+        },
+        {
+          "caller": "_get_next_rid",
+          "callee": "rels_path.read_text",
+          "lineNumber": 103
+        },
+        {
+          "caller": "_get_next_rid",
+          "callee": "dom.getElementsByTagName",
+          "lineNumber": 105
+        },
+        {
+          "caller": "_get_next_rid",
+          "callee": "rel.getAttribute",
+          "lineNumber": 106
+        },
+        {
+          "caller": "_get_next_rid",
+          "callee": "rid.startswith",
+          "lineNumber": 107
+        },
+        {
+          "caller": "_get_next_rid",
+          "callee": "max",
+          "lineNumber": 109
+        },
+        {
+          "caller": "_get_next_rid",
+          "callee": "int",
+          "lineNumber": 109
+        },
+        {
+          "caller": "_has_relationship",
+          "callee": "defusedxml.minidom.parseString",
+          "lineNumber": 117
+        },
+        {
+          "caller": "_has_relationship",
+          "callee": "rels_path.read_text",
+          "lineNumber": 117
+        },
+        {
+          "caller": "_has_relationship",
+          "callee": "dom.getElementsByTagName",
+          "lineNumber": 118
+        },
+        {
+          "caller": "_has_relationship",
+          "callee": "rel.getAttribute",
+          "lineNumber": 119
+        },
+        {
+          "caller": "_has_content_type",
+          "callee": "defusedxml.minidom.parseString",
+          "lineNumber": 126
+        },
+        {
+          "caller": "_has_content_type",
+          "callee": "ct_path.read_text",
+          "lineNumber": 126
+        },
+        {
+          "caller": "_has_content_type",
+          "callee": "dom.getElementsByTagName",
+          "lineNumber": 127
+        },
+        {
+          "caller": "_has_content_type",
+          "callee": "override.getAttribute",
+          "lineNumber": 128
+        },
+        {
+          "caller": "_ensure_comment_relationships",
+          "callee": "rels_path.exists",
+          "lineNumber": 136
+        },
+        {
+          "caller": "_ensure_comment_relationships",
+          "callee": "_has_relationship",
+          "lineNumber": 139
+        },
+        {
+          "caller": "_ensure_comment_relationships",
+          "callee": "defusedxml.minidom.parseString",
+          "lineNumber": 142
+        },
+        {
+          "caller": "_ensure_comment_relationships",
+          "callee": "rels_path.read_text",
+          "lineNumber": 142
+        },
+        {
+          "caller": "_ensure_comment_relationships",
+          "callee": "_get_next_rid",
+          "lineNumber": 144
+        },
+        {
+          "caller": "_ensure_comment_relationships",
+          "callee": "dom.createElement",
+          "lineNumber": 167
+        },
+        {
+          "caller": "_ensure_comment_relationships",
+          "callee": "rel.setAttribute",
+          "lineNumber": 168
+        },
+        {
+          "caller": "_ensure_comment_relationships",
+          "callee": "rel.setAttribute",
+          "lineNumber": 169
+        },
+        {
+          "caller": "_ensure_comment_relationships",
+          "callee": "rel.setAttribute",
+          "lineNumber": 170
+        },
+        {
+          "caller": "_ensure_comment_relationships",
+          "callee": "root.appendChild",
+          "lineNumber": 171
+        },
+        {
+          "caller": "_ensure_comment_relationships",
+          "callee": "rels_path.write_bytes",
+          "lineNumber": 174
+        },
+        {
+          "caller": "_ensure_comment_relationships",
+          "callee": "dom.toxml",
+          "lineNumber": 174
+        },
+        {
+          "caller": "_ensure_comment_content_types",
+          "callee": "ct_path.exists",
+          "lineNumber": 180
+        },
+        {
+          "caller": "_ensure_comment_content_types",
+          "callee": "_has_content_type",
+          "lineNumber": 183
+        },
+        {
+          "caller": "_ensure_comment_content_types",
+          "callee": "defusedxml.minidom.parseString",
+          "lineNumber": 186
+        },
+        {
+          "caller": "_ensure_comment_content_types",
+          "callee": "ct_path.read_text",
+          "lineNumber": 186
+        },
+        {
+          "caller": "_ensure_comment_content_types",
+          "callee": "dom.createElement",
+          "lineNumber": 210
+        },
+        {
+          "caller": "_ensure_comment_content_types",
+          "callee": "override.setAttribute",
+          "lineNumber": 211
+        },
+        {
+          "caller": "_ensure_comment_content_types",
+          "callee": "override.setAttribute",
+          "lineNumber": 212
+        },
+        {
+          "caller": "_ensure_comment_content_types",
+          "callee": "root.appendChild",
+          "lineNumber": 213
+        },
+        {
+          "caller": "_ensure_comment_content_types",
+          "callee": "ct_path.write_bytes",
+          "lineNumber": 215
+        },
+        {
+          "caller": "_ensure_comment_content_types",
+          "callee": "dom.toxml",
+          "lineNumber": 215
+        },
+        {
+          "caller": "add_comment",
+          "callee": "Path",
+          "lineNumber": 234
+        },
+        {
+          "caller": "add_comment",
+          "callee": "word.exists",
+          "lineNumber": 235
+        },
+        {
+          "caller": "add_comment",
+          "callee": "_generate_hex_id",
+          "lineNumber": 238
+        },
+        {
+          "caller": "add_comment",
+          "callee": "_generate_hex_id",
+          "lineNumber": 238
+        },
+        {
+          "caller": "add_comment",
+          "callee": "datetime.now(timezone.utc).strftime",
+          "lineNumber": 239
+        },
+        {
+          "caller": "add_comment",
+          "callee": "datetime.now",
+          "lineNumber": 239
+        },
+        {
+          "caller": "add_comment",
+          "callee": "comments.exists",
+          "lineNumber": 243
+        },
+        {
+          "caller": "add_comment",
+          "callee": "shutil.copy",
+          "lineNumber": 245
+        },
+        {
+          "caller": "add_comment",
+          "callee": "_ensure_comment_relationships",
+          "lineNumber": 247
+        },
+        {
+          "caller": "add_comment",
+          "callee": "Path",
+          "lineNumber": 247
+        },
+        {
+          "caller": "add_comment",
+          "callee": "_ensure_comment_content_types",
+          "lineNumber": 248
+        },
+        {
+          "caller": "add_comment",
+          "callee": "Path",
+          "lineNumber": 248
+        },
+        {
+          "caller": "add_comment",
+          "callee": "_append_xml",
+          "lineNumber": 249
+        },
+        {
+          "caller": "add_comment",
+          "callee": "COMMENT_XML.format",
+          "lineNumber": 252
+        },
+        {
+          "caller": "add_comment",
+          "callee": "ext.exists",
+          "lineNumber": 264
+        },
+        {
+          "caller": "add_comment",
+          "callee": "shutil.copy",
+          "lineNumber": 265
+        },
+        {
+          "caller": "add_comment",
+          "callee": "_find_para_id",
+          "lineNumber": 267
+        },
+        {
+          "caller": "add_comment",
+          "callee": "_append_xml",
+          "lineNumber": 270
+        },
+        {
+          "caller": "add_comment",
+          "callee": "_append_xml",
+          "lineNumber": 276
+        },
+        {
+          "caller": "add_comment",
+          "callee": "ids.exists",
+          "lineNumber": 284
+        },
+        {
+          "caller": "add_comment",
+          "callee": "shutil.copy",
+          "lineNumber": 285
+        },
+        {
+          "caller": "add_comment",
+          "callee": "_append_xml",
+          "lineNumber": 286
+        },
+        {
+          "caller": "add_comment",
+          "callee": "extensible.exists",
+          "lineNumber": 294
+        },
+        {
+          "caller": "add_comment",
+          "callee": "shutil.copy",
+          "lineNumber": 295
+        },
+        {
+          "caller": "add_comment",
+          "callee": "_append_xml",
+          "lineNumber": 296
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 10,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".claude/skills/docx/scripts/helpers/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".claude/skills/docx/scripts/helpers/merge_runs.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 176,
+      "nonEmptyLines": 135,
+      "functions": [
+        {
+          "name": "merge_runs",
+          "startLine": 15,
+          "endLine": 47,
+          "params": ["input_dir"]
+        },
+        {
+          "name": "_find_elements_by_tag",
+          "startLine": 50,
+          "endLine": 62,
+          "params": ["root", "tag"]
+        },
+        {
+          "name": "_matches_tag",
+          "startLine": 65,
+          "endLine": 68,
+          "params": ["node", "tag"]
+        },
+        {
+          "name": "_remove_proof_errors",
+          "startLine": 71,
+          "endLine": 75,
+          "params": ["root"]
+        },
+        {
+          "name": "_merge_adjacent_runs",
+          "startLine": 78,
+          "endLine": 107,
+          "params": ["paragraph"]
+        },
+        {
+          "name": "_can_merge_runs",
+          "startLine": 110,
+          "endLine": 124,
+          "params": ["run1", "run2"]
+        },
+        {
+          "name": "_get_rpr",
+          "startLine": 127,
+          "endLine": 132,
+          "params": ["run"]
+        },
+        {
+          "name": "_consolidate_text_elements",
+          "startLine": 135,
+          "endLine": 162,
+          "params": ["run"]
+        },
+        {
+          "name": "_are_adjacent",
+          "startLine": 165,
+          "endLine": 176,
+          "params": ["elem1", "elem2"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "merge_runs",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "_find_elements_by_tag",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "_matches_tag",
+          "line": 65,
+          "isDefault": false
+        },
+        {
+          "name": "_remove_proof_errors",
+          "line": 71,
+          "isDefault": false
+        },
+        {
+          "name": "_merge_adjacent_runs",
+          "line": 78,
+          "isDefault": false
+        },
+        {
+          "name": "_can_merge_runs",
+          "line": 110,
+          "isDefault": false
+        },
+        {
+          "name": "_get_rpr",
+          "line": 127,
+          "isDefault": false
+        },
+        {
+          "name": "_consolidate_text_elements",
+          "line": 135,
+          "isDefault": false
+        },
+        {
+          "name": "_are_adjacent",
+          "line": 165,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "merge_runs",
+          "callee": "Path",
+          "lineNumber": 24
+        },
+        {
+          "caller": "merge_runs",
+          "callee": "doc_xml.exists",
+          "lineNumber": 26
+        },
+        {
+          "caller": "merge_runs",
+          "callee": "defusedxml.minidom.parseString",
+          "lineNumber": 30
+        },
+        {
+          "caller": "merge_runs",
+          "callee": "doc_xml.read_text",
+          "lineNumber": 30
+        },
+        {
+          "caller": "merge_runs",
+          "callee": "_remove_proof_errors",
+          "lineNumber": 33
+        },
+        {
+          "caller": "merge_runs",
+          "callee": "_find_elements_by_tag",
+          "lineNumber": 37
+        },
+        {
+          "caller": "merge_runs",
+          "callee": "_merge_adjacent_runs",
+          "lineNumber": 38
+        },
+        {
+          "caller": "merge_runs",
+          "callee": "_find_elements_by_tag",
+          "lineNumber": 40
+        },
+        {
+          "caller": "merge_runs",
+          "callee": "_consolidate_text_elements",
+          "lineNumber": 41
+        },
+        {
+          "caller": "merge_runs",
+          "callee": "doc_xml.write_bytes",
+          "lineNumber": 43
+        },
+        {
+          "caller": "merge_runs",
+          "callee": "dom.toxml",
+          "lineNumber": 43
+        },
+        {
+          "caller": "traverse",
+          "callee": "_matches_tag",
+          "lineNumber": 56
+        },
+        {
+          "caller": "traverse",
+          "callee": "elements.append",
+          "lineNumber": 57
+        },
+        {
+          "caller": "traverse",
+          "callee": "traverse",
+          "lineNumber": 59
+        },
+        {
+          "caller": "_find_elements_by_tag",
+          "callee": "traverse",
+          "lineNumber": 61
+        },
+        {
+          "caller": "_matches_tag",
+          "callee": "local_name.endswith",
+          "lineNumber": 68
+        },
+        {
+          "caller": "_remove_proof_errors",
+          "callee": "_find_elements_by_tag",
+          "lineNumber": 73
+        },
+        {
+          "caller": "_remove_proof_errors",
+          "callee": "elem.parentNode.removeChild",
+          "lineNumber": 75
+        },
+        {
+          "caller": "_merge_adjacent_runs",
+          "callee": "len",
+          "lineNumber": 81
+        },
+        {
+          "caller": "_merge_adjacent_runs",
+          "callee": "len",
+          "lineNumber": 86
+        },
+        {
+          "caller": "_merge_adjacent_runs",
+          "callee": "_matches_tag",
+          "lineNumber": 91
+        },
+        {
+          "caller": "_merge_adjacent_runs",
+          "callee": "_matches_tag",
+          "lineNumber": 92
+        },
+        {
+          "caller": "_merge_adjacent_runs",
+          "callee": "_can_merge_runs",
+          "lineNumber": 93
+        },
+        {
+          "caller": "_merge_adjacent_runs",
+          "callee": "list",
+          "lineNumber": 96
+        },
+        {
+          "caller": "_merge_adjacent_runs",
+          "callee": "_matches_tag",
+          "lineNumber": 97
+        },
+        {
+          "caller": "_merge_adjacent_runs",
+          "callee": "current.appendChild",
+          "lineNumber": 100
+        },
+        {
+          "caller": "_merge_adjacent_runs",
+          "callee": "paragraph.removeChild",
+          "lineNumber": 101
+        },
+        {
+          "caller": "_merge_adjacent_runs",
+          "callee": "children.pop",
+          "lineNumber": 102
+        },
+        {
+          "caller": "_can_merge_runs",
+          "callee": "run1.getAttribute",
+          "lineNumber": 112
+        },
+        {
+          "caller": "_can_merge_runs",
+          "callee": "run1.getAttribute",
+          "lineNumber": 112
+        },
+        {
+          "caller": "_can_merge_runs",
+          "callee": "run2.getAttribute",
+          "lineNumber": 113
+        },
+        {
+          "caller": "_can_merge_runs",
+          "callee": "run2.getAttribute",
+          "lineNumber": 113
+        },
+        {
+          "caller": "_can_merge_runs",
+          "callee": "_get_rpr",
+          "lineNumber": 117
+        },
+        {
+          "caller": "_can_merge_runs",
+          "callee": "_get_rpr",
+          "lineNumber": 118
+        },
+        {
+          "caller": "_can_merge_runs",
+          "callee": "rpr1.toxml",
+          "lineNumber": 124
+        },
+        {
+          "caller": "_can_merge_runs",
+          "callee": "rpr2.toxml",
+          "lineNumber": 124
+        },
+        {
+          "caller": "_get_rpr",
+          "callee": "_matches_tag",
+          "lineNumber": 130
+        },
+        {
+          "caller": "_consolidate_text_elements",
+          "callee": "_matches_tag",
+          "lineNumber": 139
+        },
+        {
+          "caller": "_consolidate_text_elements",
+          "callee": "range",
+          "lineNumber": 142
+        },
+        {
+          "caller": "_consolidate_text_elements",
+          "callee": "len",
+          "lineNumber": 142
+        },
+        {
+          "caller": "_consolidate_text_elements",
+          "callee": "_are_adjacent",
+          "lineNumber": 145
+        },
+        {
+          "caller": "_consolidate_text_elements",
+          "callee": "prev.appendChild",
+          "lineNumber": 154
+        },
+        {
+          "caller": "_consolidate_text_elements",
+          "callee": "run.ownerDocument.createTextNode",
+          "lineNumber": 154
+        },
+        {
+          "caller": "_consolidate_text_elements",
+          "callee": "merged.startswith",
+          "lineNumber": 157
+        },
+        {
+          "caller": "_consolidate_text_elements",
+          "callee": "merged.endswith",
+          "lineNumber": 157
+        },
+        {
+          "caller": "_consolidate_text_elements",
+          "callee": "prev.setAttribute",
+          "lineNumber": 158
+        },
+        {
+          "caller": "_consolidate_text_elements",
+          "callee": "prev.hasAttribute",
+          "lineNumber": 159
+        },
+        {
+          "caller": "_consolidate_text_elements",
+          "callee": "prev.removeAttribute",
+          "lineNumber": 160
+        },
+        {
+          "caller": "_consolidate_text_elements",
+          "callee": "run.removeChild",
+          "lineNumber": 162
+        },
+        {
+          "caller": "_are_adjacent",
+          "callee": "node.data.strip",
+          "lineNumber": 173
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 9,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".claude/skills/docx/scripts/ooxml/schemas/mce/mc.xsd",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 75,
+      "nonEmptyLines": 66,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/skills/docx/scripts/ooxml/scripts/pack.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 159,
+      "nonEmptyLines": 132,
+      "functions": [
+        {
+          "name": "main",
+          "startLine": 19,
+          "endLine": 42,
+          "params": []
+        },
+        {
+          "name": "pack_document",
+          "startLine": 45,
+          "endLine": 87,
+          "params": ["input_dir", "output_file", "validate"]
+        },
+        {
+          "name": "validate_document",
+          "startLine": 90,
+          "endLine": 130,
+          "params": ["doc_path"]
+        },
+        {
+          "name": "condense_xml",
+          "startLine": 133,
+          "endLine": 155,
+          "params": ["xml_file"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "main",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "pack_document",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "validate_document",
+          "line": 90,
+          "isDefault": false
+        },
+        {
+          "name": "condense_xml",
+          "line": 133,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "main",
+          "callee": "argparse.ArgumentParser",
+          "lineNumber": 20
+        },
+        {
+          "caller": "main",
+          "callee": "parser.add_argument",
+          "lineNumber": 21
+        },
+        {
+          "caller": "main",
+          "callee": "parser.add_argument",
+          "lineNumber": 22
+        },
+        {
+          "caller": "main",
+          "callee": "parser.add_argument",
+          "lineNumber": 23
+        },
+        {
+          "caller": "main",
+          "callee": "parser.parse_args",
+          "lineNumber": 24
+        },
+        {
+          "caller": "main",
+          "callee": "pack_document",
+          "lineNumber": 27
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 33
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 36
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 37
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 38
+        },
+        {
+          "caller": "main",
+          "callee": "sys.exit",
+          "lineNumber": 39
+        },
+        {
+          "caller": "main",
+          "callee": "sys.exit",
+          "lineNumber": 42
+        },
+        {
+          "caller": "pack_document",
+          "callee": "Path",
+          "lineNumber": 56
+        },
+        {
+          "caller": "pack_document",
+          "callee": "Path",
+          "lineNumber": 57
+        },
+        {
+          "caller": "pack_document",
+          "callee": "input_dir.is_dir",
+          "lineNumber": 59
+        },
+        {
+          "caller": "pack_document",
+          "callee": "ValueError",
+          "lineNumber": 60
+        },
+        {
+          "caller": "pack_document",
+          "callee": "output_file.suffix.lower",
+          "lineNumber": 61
+        },
+        {
+          "caller": "pack_document",
+          "callee": "ValueError",
+          "lineNumber": 62
+        },
+        {
+          "caller": "pack_document",
+          "callee": "tempfile.TemporaryDirectory",
+          "lineNumber": 65
+        },
+        {
+          "caller": "pack_document",
+          "callee": "Path",
+          "lineNumber": 66
+        },
+        {
+          "caller": "pack_document",
+          "callee": "shutil.copytree",
+          "lineNumber": 67
+        },
+        {
+          "caller": "pack_document",
+          "callee": "temp_content_dir.rglob",
+          "lineNumber": 71
+        },
+        {
+          "caller": "pack_document",
+          "callee": "condense_xml",
+          "lineNumber": 72
+        },
+        {
+          "caller": "pack_document",
+          "callee": "output_file.parent.mkdir",
+          "lineNumber": 75
+        },
+        {
+          "caller": "pack_document",
+          "callee": "zipfile.ZipFile",
+          "lineNumber": 76
+        },
+        {
+          "caller": "pack_document",
+          "callee": "temp_content_dir.rglob",
+          "lineNumber": 77
+        },
+        {
+          "caller": "pack_document",
+          "callee": "f.is_file",
+          "lineNumber": 78
+        },
+        {
+          "caller": "pack_document",
+          "callee": "zf.write",
+          "lineNumber": 79
+        },
+        {
+          "caller": "pack_document",
+          "callee": "f.relative_to",
+          "lineNumber": 79
+        },
+        {
+          "caller": "pack_document",
+          "callee": "validate_document",
+          "lineNumber": 83
+        },
+        {
+          "caller": "pack_document",
+          "callee": "output_file.unlink",
+          "lineNumber": 84
+        },
+        {
+          "caller": "validate_document",
+          "callee": "doc_path.suffix.lower",
+          "lineNumber": 93
+        },
+        {
+          "caller": "validate_document",
+          "callee": "tempfile.TemporaryDirectory",
+          "lineNumber": 101
+        },
+        {
+          "caller": "validate_document",
+          "callee": "subprocess.run",
+          "lineNumber": 103
+        },
+        {
+          "caller": "validate_document",
+          "callee": "str",
+          "lineNumber": 111
+        },
+        {
+          "caller": "validate_document",
+          "callee": "(Path(temp_dir) / f\"{doc_path.stem}.html\").exists",
+          "lineNumber": 117
+        },
+        {
+          "caller": "validate_document",
+          "callee": "Path",
+          "lineNumber": 117
+        },
+        {
+          "caller": "validate_document",
+          "callee": "result.stderr.strip",
+          "lineNumber": 118
+        },
+        {
+          "caller": "validate_document",
+          "callee": "print",
+          "lineNumber": 119
+        },
+        {
+          "caller": "validate_document",
+          "callee": "print",
+          "lineNumber": 123
+        },
+        {
+          "caller": "validate_document",
+          "callee": "print",
+          "lineNumber": 126
+        },
+        {
+          "caller": "validate_document",
+          "callee": "print",
+          "lineNumber": 129
+        },
+        {
+          "caller": "condense_xml",
+          "callee": "open",
+          "lineNumber": 135
+        },
+        {
+          "caller": "condense_xml",
+          "callee": "defusedxml.minidom.parse",
+          "lineNumber": 136
+        },
+        {
+          "caller": "condense_xml",
+          "callee": "dom.getElementsByTagName",
+          "lineNumber": 139
+        },
+        {
+          "caller": "condense_xml",
+          "callee": "element.tagName.endswith",
+          "lineNumber": 141
+        },
+        {
+          "caller": "condense_xml",
+          "callee": "list",
+          "lineNumber": 145
+        },
+        {
+          "caller": "condense_xml",
+          "callee": "child.nodeValue.strip",
+          "lineNumber": 149
+        },
+        {
+          "caller": "condense_xml",
+          "callee": "element.removeChild",
+          "lineNumber": 151
+        },
+        {
+          "caller": "condense_xml",
+          "callee": "open",
+          "lineNumber": 154
+        },
+        {
+          "caller": "condense_xml",
+          "callee": "f.write",
+          "lineNumber": 155
+        },
+        {
+          "caller": "condense_xml",
+          "callee": "dom.toxml",
+          "lineNumber": 155
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".claude/skills/docx/scripts/ooxml/scripts/unpack.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 37,
+      "nonEmptyLines": 32,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".claude/skills/docx/scripts/unpack.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 119,
+      "nonEmptyLines": 92,
+      "functions": [
+        {
+          "name": "unpack",
+          "startLine": 29,
+          "endLine": 82,
+          "params": ["input_file", "output_directory", "merge_runs"]
+        },
+        {
+          "name": "_pretty_print_xml",
+          "startLine": 85,
+          "endLine": 89,
+          "params": ["xml_file"]
+        },
+        {
+          "name": "_escape_smart_quotes",
+          "startLine": 92,
+          "endLine": 97,
+          "params": ["xml_file"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "unpack",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "_pretty_print_xml",
+          "line": 85,
+          "isDefault": false
+        },
+        {
+          "name": "_escape_smart_quotes",
+          "line": 92,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "unpack",
+          "callee": "Path",
+          "lineNumber": 44
+        },
+        {
+          "caller": "unpack",
+          "callee": "Path",
+          "lineNumber": 45
+        },
+        {
+          "caller": "unpack",
+          "callee": "input_path.exists",
+          "lineNumber": 47
+        },
+        {
+          "caller": "unpack",
+          "callee": "input_path.suffix.lower",
+          "lineNumber": 50
+        },
+        {
+          "caller": "unpack",
+          "callee": "output_path.mkdir",
+          "lineNumber": 55
+        },
+        {
+          "caller": "unpack",
+          "callee": "zipfile.ZipFile",
+          "lineNumber": 58
+        },
+        {
+          "caller": "unpack",
+          "callee": "zf.extractall",
+          "lineNumber": 59
+        },
+        {
+          "caller": "unpack",
+          "callee": "list",
+          "lineNumber": 62
+        },
+        {
+          "caller": "unpack",
+          "callee": "output_path.rglob",
+          "lineNumber": 62
+        },
+        {
+          "caller": "unpack",
+          "callee": "list",
+          "lineNumber": 62
+        },
+        {
+          "caller": "unpack",
+          "callee": "output_path.rglob",
+          "lineNumber": 62
+        },
+        {
+          "caller": "unpack",
+          "callee": "_pretty_print_xml",
+          "lineNumber": 64
+        },
+        {
+          "caller": "unpack",
+          "callee": "len",
+          "lineNumber": 66
+        },
+        {
+          "caller": "unpack",
+          "callee": "do_merge_runs",
+          "lineNumber": 70
+        },
+        {
+          "caller": "unpack",
+          "callee": "str",
+          "lineNumber": 70
+        },
+        {
+          "caller": "unpack",
+          "callee": "_escape_smart_quotes",
+          "lineNumber": 75
+        },
+        {
+          "caller": "_pretty_print_xml",
+          "callee": "xml_file.read_text",
+          "lineNumber": 87
+        },
+        {
+          "caller": "_pretty_print_xml",
+          "callee": "defusedxml.minidom.parseString",
+          "lineNumber": 88
+        },
+        {
+          "caller": "_pretty_print_xml",
+          "callee": "xml_file.write_bytes",
+          "lineNumber": 89
+        },
+        {
+          "caller": "_pretty_print_xml",
+          "callee": "dom.toprettyxml",
+          "lineNumber": 89
+        },
+        {
+          "caller": "_escape_smart_quotes",
+          "callee": "xml_file.read_text",
+          "lineNumber": 94
+        },
+        {
+          "caller": "_escape_smart_quotes",
+          "callee": "SMART_QUOTE_REPLACEMENTS.items",
+          "lineNumber": 95
+        },
+        {
+          "caller": "_escape_smart_quotes",
+          "callee": "content.replace",
+          "lineNumber": 96
+        },
+        {
+          "caller": "_escape_smart_quotes",
+          "callee": "xml_file.write_text",
+          "lineNumber": 97
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".claude/skills/docx/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 421,
+      "nonEmptyLines": 342,
+      "sections": [
+        {
+          "heading": "DOCX creation, editing, and analysis",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "Overview",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Quick Reference",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Reading Content",
+          "level": 3,
+          "line": 21
+        },
+        {
+          "heading": "Converting to Images",
+          "level": 3,
+          "line": 31
+        },
+        {
+          "heading": "Creating New Documents",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Setup",
+          "level": 3,
+          "line": 44
+        },
+        {
+          "heading": "Page Size",
+          "level": 3,
+          "line": 55
+        },
+        {
+          "heading": "Styles (Override Built-in Headings)",
+          "level": 3,
+          "line": 81
+        },
+        {
+          "heading": "Lists (NEVER use unicode bullets)",
+          "level": 3,
+          "line": 107
+        },
+        {
+          "heading": "Tables",
+          "level": 3,
+          "line": 141
+        },
+        {
+          "heading": "Images",
+          "level": 3,
+          "line": 191
+        },
+        {
+          "heading": "Page Breaks",
+          "level": 3,
+          "line": 205
+        },
+        {
+          "heading": "Table of Contents",
+          "level": 3,
+          "line": 215
+        },
+        {
+          "heading": "Headers/Footers",
+          "level": 3,
+          "line": 222
+        },
+        {
+          "heading": "Critical Rules for docx-js",
+          "level": 3,
+          "line": 241
+        },
+        {
+          "heading": "Editing Existing Documents",
+          "level": 2,
+          "line": 259
+        },
+        {
+          "heading": "Step 1: Unpack",
+          "level": 3,
+          "line": 263
+        },
+        {
+          "heading": "Step 2: Edit XML",
+          "level": 3,
+          "line": 269
+        },
+        {
+          "heading": "Step 3: Pack",
+          "level": 3,
+          "line": 296
+        },
+        {
+          "heading": "Common Pitfalls",
+          "level": 3,
+          "line": 309
+        },
+        {
+          "heading": "XML Reference",
+          "level": 2,
+          "line": 316
+        },
+        {
+          "heading": "Schema Compliance",
+          "level": 3,
+          "line": 318
+        },
+        {
+          "heading": "Tracked Changes",
+          "level": 3,
+          "line": 324
+        },
+        {
+          "heading": "Comments",
+          "level": 3,
+          "line": 372
+        },
+        {
+          "heading": "Images",
+          "level": 3,
+          "line": 387
+        },
+        {
+          "heading": "Dependencies",
+          "level": 2,
+          "line": 416
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 27
+      }
+    },
+    {
+      "path": ".claude/skills/drawing/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 79,
+      "nonEmptyLines": 52,
+      "sections": [
+        {
+          "heading": "图纸数据集操作技能",
+          "level": 1,
+          "line": 10
+        },
+        {
+          "heading": "API 基础信息",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "支持的操作",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "1：分析图纸",
+          "level": 2,
+          "line": 29
+        },
+        {
+          "heading": "使用流程",
+          "level": 3,
+          "line": 35
+        },
+        {
+          "heading": "通用错误处理",
+          "level": 2,
+          "line": 54
+        },
+        {
+          "heading": "参数缺失时的处理",
+          "level": 2,
+          "line": 66
+        },
+        {
+          "heading": "安全要求",
+          "level": 2,
+          "line": 75
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".claude/skills/folder/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 102,
+      "nonEmptyLines": 70,
+      "sections": [
+        {
+          "heading": "文件夹操作技能",
+          "level": 1,
+          "line": 9
+        },
+        {
+          "heading": "功能说明",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "API 基础信息",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "前置条件",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "支持的操作",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "1. 创建文件夹（create）",
+          "level": 3,
+          "line": 28
+        },
+        {
+          "heading": "2. 删除文件夹（delete）",
+          "level": 3,
+          "line": 47
+        },
+        {
+          "heading": "3. 查询文件夹（query）",
+          "level": 3,
+          "line": 67
+        },
+        {
+          "heading": "使用流程",
+          "level": 1,
+          "line": 83
+        },
+        {
+          "heading": "错误处理",
+          "level": 1,
+          "line": 90
+        },
+        {
+          "heading": "参数缺失时的处理",
+          "level": 2,
+          "line": 96
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": ".claude/skills/item/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 117,
+      "nonEmptyLines": 78,
+      "sections": [
+        {
+          "heading": "零组件技能",
+          "level": 1,
+          "line": 9
+        },
+        {
+          "heading": "基础配置",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "操作说明",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "1. 创建零件",
+          "level": 3,
+          "line": 24
+        },
+        {
+          "heading": "2. 删除零件",
+          "level": 3,
+          "line": 45
+        },
+        {
+          "heading": "3. 查询零件详情",
+          "level": 3,
+          "line": 64
+        },
+        {
+          "heading": "4. 零件使用影响分析（Where Used）",
+          "level": 3,
+          "line": 83
+        },
+        {
+          "heading": "操作流程",
+          "level": 2,
+          "line": 102
+        },
+        {
+          "heading": "注意事项",
+          "level": 2,
+          "line": 113
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": ".claude/skills/open/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 43,
+      "nonEmptyLines": 29,
+      "sections": [
+        {
+          "heading": "打开技能",
+          "level": 1,
+          "line": 8
+        },
+        {
+          "heading": "功能说明",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "前置条件",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "执行步骤",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "第一步：调用发送接口",
+          "level": 3,
+          "line": 22
+        },
+        {
+          "heading": "第二步：处理返回结果",
+          "level": 3,
+          "line": 29
+        },
+        {
+          "heading": "安全要求",
+          "level": 2,
+          "line": 40
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": ".claude/skills/pdf/scripts/check_bounding_boxes.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 70,
+      "nonEmptyLines": 59,
+      "functions": [
+        {
+          "name": "get_bounding_box_messages",
+          "startLine": 18,
+          "endLine": 60,
+          "params": ["fields_json_stream"]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RectAndField",
+          "startLine": 11,
+          "endLine": 14,
+          "methods": [],
+          "properties": ["rect", "rect_type", "field"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RectAndField",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "get_bounding_box_messages",
+          "line": 18,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "get_bounding_box_messages",
+          "callee": "json.load",
+          "lineNumber": 20
+        },
+        {
+          "caller": "get_bounding_box_messages",
+          "callee": "messages.append",
+          "lineNumber": 21
+        },
+        {
+          "caller": "get_bounding_box_messages",
+          "callee": "len",
+          "lineNumber": 21
+        },
+        {
+          "caller": "get_bounding_box_messages",
+          "callee": "rects_and_fields.append",
+          "lineNumber": 30
+        },
+        {
+          "caller": "get_bounding_box_messages",
+          "callee": "RectAndField",
+          "lineNumber": 30
+        },
+        {
+          "caller": "get_bounding_box_messages",
+          "callee": "rects_and_fields.append",
+          "lineNumber": 31
+        },
+        {
+          "caller": "get_bounding_box_messages",
+          "callee": "RectAndField",
+          "lineNumber": 31
+        },
+        {
+          "caller": "get_bounding_box_messages",
+          "callee": "enumerate",
+          "lineNumber": 34
+        },
+        {
+          "caller": "get_bounding_box_messages",
+          "callee": "range",
+          "lineNumber": 36
+        },
+        {
+          "caller": "get_bounding_box_messages",
+          "callee": "len",
+          "lineNumber": 36
+        },
+        {
+          "caller": "get_bounding_box_messages",
+          "callee": "rects_intersect",
+          "lineNumber": 38
+        },
+        {
+          "caller": "get_bounding_box_messages",
+          "callee": "messages.append",
+          "lineNumber": 41
+        },
+        {
+          "caller": "get_bounding_box_messages",
+          "callee": "messages.append",
+          "lineNumber": 43
+        },
+        {
+          "caller": "get_bounding_box_messages",
+          "callee": "len",
+          "lineNumber": 44
+        },
+        {
+          "caller": "get_bounding_box_messages",
+          "callee": "messages.append",
+          "lineNumber": 45
+        },
+        {
+          "caller": "get_bounding_box_messages",
+          "callee": "ri.field[\"entry_text\"].get",
+          "lineNumber": 49
+        },
+        {
+          "caller": "get_bounding_box_messages",
+          "callee": "messages.append",
+          "lineNumber": 53
+        },
+        {
+          "caller": "get_bounding_box_messages",
+          "callee": "len",
+          "lineNumber": 54
+        },
+        {
+          "caller": "get_bounding_box_messages",
+          "callee": "messages.append",
+          "lineNumber": 55
+        },
+        {
+          "caller": "get_bounding_box_messages",
+          "callee": "messages.append",
+          "lineNumber": 59
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": ".claude/skills/pdf/scripts/check_fillable_fields.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 8,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".claude/skills/pdf/scripts/convert_pdf_to_images.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 25,
+      "functions": [
+        {
+          "name": "convert",
+          "startLine": 10,
+          "endLine": 26,
+          "params": ["pdf_path", "output_dir", "max_dim"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "convert",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "convert",
+          "callee": "convert_from_path",
+          "lineNumber": 11
+        },
+        {
+          "caller": "convert",
+          "callee": "enumerate",
+          "lineNumber": 13
+        },
+        {
+          "caller": "convert",
+          "callee": "min",
+          "lineNumber": 17
+        },
+        {
+          "caller": "convert",
+          "callee": "int",
+          "lineNumber": 18
+        },
+        {
+          "caller": "convert",
+          "callee": "int",
+          "lineNumber": 19
+        },
+        {
+          "caller": "convert",
+          "callee": "image.resize",
+          "lineNumber": 20
+        },
+        {
+          "caller": "convert",
+          "callee": "os.path.join",
+          "lineNumber": 22
+        },
+        {
+          "caller": "convert",
+          "callee": "image.save",
+          "lineNumber": 23
+        },
+        {
+          "caller": "convert",
+          "callee": "print",
+          "lineNumber": 24
+        },
+        {
+          "caller": "convert",
+          "callee": "print",
+          "lineNumber": 26
+        },
+        {
+          "caller": "convert",
+          "callee": "len",
+          "lineNumber": 26
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".claude/skills/pdf/scripts/create_validation_image.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 41,
+      "nonEmptyLines": 31,
+      "functions": [
+        {
+          "name": "create_validation_image",
+          "startLine": 11,
+          "endLine": 30,
+          "params": ["page_number", "fields_json_path", "input_path", "output_path"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "create_validation_image",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "create_validation_image",
+          "callee": "open",
+          "lineNumber": 13
+        },
+        {
+          "caller": "create_validation_image",
+          "callee": "json.load",
+          "lineNumber": 14
+        },
+        {
+          "caller": "create_validation_image",
+          "callee": "Image.open",
+          "lineNumber": 16
+        },
+        {
+          "caller": "create_validation_image",
+          "callee": "ImageDraw.Draw",
+          "lineNumber": 17
+        },
+        {
+          "caller": "create_validation_image",
+          "callee": "draw.rectangle",
+          "lineNumber": 25
+        },
+        {
+          "caller": "create_validation_image",
+          "callee": "draw.rectangle",
+          "lineNumber": 26
+        },
+        {
+          "caller": "create_validation_image",
+          "callee": "img.save",
+          "lineNumber": 29
+        },
+        {
+          "caller": "create_validation_image",
+          "callee": "print",
+          "lineNumber": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".claude/skills/pdf/scripts/extract_form_field_info.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 152,
+      "nonEmptyLines": 130,
+      "functions": [
+        {
+          "name": "get_full_annotation_field_id",
+          "startLine": 12,
+          "endLine": 19,
+          "params": ["annotation"]
+        },
+        {
+          "name": "make_field_dict",
+          "startLine": 22,
+          "endLine": 50,
+          "params": ["field", "field_id"]
+        },
+        {
+          "name": "get_field_info",
+          "startLine": 62,
+          "endLine": 137,
+          "params": ["reader"]
+        },
+        {
+          "name": "write_field_info",
+          "startLine": 140,
+          "endLine": 145,
+          "params": ["pdf_path", "json_output_path"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "get_full_annotation_field_id",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "make_field_dict",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "get_field_info",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "write_field_info",
+          "line": 140,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "get_full_annotation_field_id",
+          "callee": "annotation.get",
+          "lineNumber": 15
+        },
+        {
+          "caller": "get_full_annotation_field_id",
+          "callee": "components.append",
+          "lineNumber": 17
+        },
+        {
+          "caller": "get_full_annotation_field_id",
+          "callee": "annotation.get",
+          "lineNumber": 18
+        },
+        {
+          "caller": "get_full_annotation_field_id",
+          "callee": "\".\".join",
+          "lineNumber": 19
+        },
+        {
+          "caller": "get_full_annotation_field_id",
+          "callee": "reversed",
+          "lineNumber": 19
+        },
+        {
+          "caller": "make_field_dict",
+          "callee": "field.get",
+          "lineNumber": 24
+        },
+        {
+          "caller": "make_field_dict",
+          "callee": "field.get",
+          "lineNumber": 29
+        },
+        {
+          "caller": "make_field_dict",
+          "callee": "len",
+          "lineNumber": 30
+        },
+        {
+          "caller": "make_field_dict",
+          "callee": "print",
+          "lineNumber": 38
+        },
+        {
+          "caller": "make_field_dict",
+          "callee": "field.get",
+          "lineNumber": 43
+        },
+        {
+          "caller": "get_field_info",
+          "callee": "reader.get_fields",
+          "lineNumber": 63
+        },
+        {
+          "caller": "get_field_info",
+          "callee": "set",
+          "lineNumber": 66
+        },
+        {
+          "caller": "get_field_info",
+          "callee": "fields.items",
+          "lineNumber": 68
+        },
+        {
+          "caller": "get_field_info",
+          "callee": "field.get",
+          "lineNumber": 71
+        },
+        {
+          "caller": "get_field_info",
+          "callee": "field.get",
+          "lineNumber": 72
+        },
+        {
+          "caller": "get_field_info",
+          "callee": "possible_radio_names.add",
+          "lineNumber": 73
+        },
+        {
+          "caller": "get_field_info",
+          "callee": "make_field_dict",
+          "lineNumber": 75
+        },
+        {
+          "caller": "get_field_info",
+          "callee": "enumerate",
+          "lineNumber": 84
+        },
+        {
+          "caller": "get_field_info",
+          "callee": "page.get",
+          "lineNumber": 85
+        },
+        {
+          "caller": "get_field_info",
+          "callee": "get_full_annotation_field_id",
+          "lineNumber": 87
+        },
+        {
+          "caller": "get_field_info",
+          "callee": "ann.get",
+          "lineNumber": 90
+        },
+        {
+          "caller": "get_field_info",
+          "callee": "len",
+          "lineNumber": 98
+        },
+        {
+          "caller": "get_field_info",
+          "callee": "ann.get",
+          "lineNumber": 99
+        },
+        {
+          "caller": "get_field_info",
+          "callee": "radio_fields_by_id[field_id][\"radio_options\"].append",
+          "lineNumber": 111
+        },
+        {
+          "caller": "get_field_info",
+          "callee": "field_info_by_id.values",
+          "lineNumber": 119
+        },
+        {
+          "caller": "get_field_info",
+          "callee": "fields_with_location.append",
+          "lineNumber": 121
+        },
+        {
+          "caller": "get_field_info",
+          "callee": "print",
+          "lineNumber": 123
+        },
+        {
+          "caller": "get_field_info",
+          "callee": "field_info.get",
+          "lineNumber": 123
+        },
+        {
+          "caller": "sort_key",
+          "callee": "f.get",
+          "lineNumber": 130
+        },
+        {
+          "caller": "sort_key",
+          "callee": "f.get",
+          "lineNumber": 132
+        },
+        {
+          "caller": "get_field_info",
+          "callee": "list",
+          "lineNumber": 134
+        },
+        {
+          "caller": "get_field_info",
+          "callee": "radio_fields_by_id.values",
+          "lineNumber": 134
+        },
+        {
+          "caller": "get_field_info",
+          "callee": "sorted_fields.sort",
+          "lineNumber": 135
+        },
+        {
+          "caller": "write_field_info",
+          "callee": "PdfReader",
+          "lineNumber": 141
+        },
+        {
+          "caller": "write_field_info",
+          "callee": "get_field_info",
+          "lineNumber": 142
+        },
+        {
+          "caller": "write_field_info",
+          "callee": "open",
+          "lineNumber": 143
+        },
+        {
+          "caller": "write_field_info",
+          "callee": "json.dump",
+          "lineNumber": 144
+        },
+        {
+          "caller": "write_field_info",
+          "callee": "print",
+          "lineNumber": 145
+        },
+        {
+          "caller": "write_field_info",
+          "callee": "len",
+          "lineNumber": 145
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".claude/skills/pdf/scripts/fill_fillable_fields.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 117,
+      "nonEmptyLines": 96,
+      "functions": [
+        {
+          "name": "fill_pdf_fields",
+          "startLine": 15,
+          "endLine": 59,
+          "params": ["input_pdf_path", "fields_json_path", "output_pdf_path"]
+        },
+        {
+          "name": "validation_error_for_field_value",
+          "startLine": 62,
+          "endLine": 78,
+          "params": ["field_info", "field_value"]
+        },
+        {
+          "name": "monkeypatch_pydpf_method",
+          "startLine": 93,
+          "endLine": 106,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "fill_pdf_fields",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "validation_error_for_field_value",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "monkeypatch_pydpf_method",
+          "line": 93,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "fill_pdf_fields",
+          "callee": "open",
+          "lineNumber": 16
+        },
+        {
+          "caller": "fill_pdf_fields",
+          "callee": "json.load",
+          "lineNumber": 17
+        },
+        {
+          "caller": "fill_pdf_fields",
+          "callee": "PdfReader",
+          "lineNumber": 28
+        },
+        {
+          "caller": "fill_pdf_fields",
+          "callee": "get_field_info",
+          "lineNumber": 31
+        },
+        {
+          "caller": "fill_pdf_fields",
+          "callee": "fields_by_ids.get",
+          "lineNumber": 34
+        },
+        {
+          "caller": "fill_pdf_fields",
+          "callee": "print",
+          "lineNumber": 37
+        },
+        {
+          "caller": "fill_pdf_fields",
+          "callee": "print",
+          "lineNumber": 40
+        },
+        {
+          "caller": "fill_pdf_fields",
+          "callee": "validation_error_for_field_value",
+          "lineNumber": 43
+        },
+        {
+          "caller": "fill_pdf_fields",
+          "callee": "print",
+          "lineNumber": 45
+        },
+        {
+          "caller": "fill_pdf_fields",
+          "callee": "sys.exit",
+          "lineNumber": 48
+        },
+        {
+          "caller": "fill_pdf_fields",
+          "callee": "PdfWriter",
+          "lineNumber": 50
+        },
+        {
+          "caller": "fill_pdf_fields",
+          "callee": "fields_by_page.items",
+          "lineNumber": 51
+        },
+        {
+          "caller": "fill_pdf_fields",
+          "callee": "writer.update_page_form_field_values",
+          "lineNumber": 52
+        },
+        {
+          "caller": "fill_pdf_fields",
+          "callee": "writer.set_need_appearances_writer",
+          "lineNumber": 56
+        },
+        {
+          "caller": "fill_pdf_fields",
+          "callee": "open",
+          "lineNumber": 58
+        },
+        {
+          "caller": "fill_pdf_fields",
+          "callee": "writer.write",
+          "lineNumber": 59
+        },
+        {
+          "caller": "patched_get_inherited",
+          "callee": "original_get_inherited",
+          "lineNumber": 100
+        },
+        {
+          "caller": "patched_get_inherited",
+          "callee": "isinstance",
+          "lineNumber": 102
+        },
+        {
+          "caller": "patched_get_inherited",
+          "callee": "all",
+          "lineNumber": 102
+        },
+        {
+          "caller": "patched_get_inherited",
+          "callee": "isinstance",
+          "lineNumber": 102
+        },
+        {
+          "caller": "patched_get_inherited",
+          "callee": "len",
+          "lineNumber": 102
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".claude/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 108,
+      "nonEmptyLines": 83,
+      "functions": [
+        {
+          "name": "transform_coordinates",
+          "startLine": 11,
+          "endLine": 25,
+          "params": ["bbox", "image_width", "image_height", "pdf_width", "pdf_height"]
+        },
+        {
+          "name": "fill_pdf_form",
+          "startLine": 28,
+          "endLine": 97,
+          "params": ["input_pdf_path", "fields_json_path", "output_pdf_path"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "transform_coordinates",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "fill_pdf_form",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "fill_pdf_form",
+          "callee": "open",
+          "lineNumber": 32
+        },
+        {
+          "caller": "fill_pdf_form",
+          "callee": "json.load",
+          "lineNumber": 33
+        },
+        {
+          "caller": "fill_pdf_form",
+          "callee": "PdfReader",
+          "lineNumber": 36
+        },
+        {
+          "caller": "fill_pdf_form",
+          "callee": "PdfWriter",
+          "lineNumber": 37
+        },
+        {
+          "caller": "fill_pdf_form",
+          "callee": "writer.append",
+          "lineNumber": 40
+        },
+        {
+          "caller": "fill_pdf_form",
+          "callee": "enumerate",
+          "lineNumber": 44
+        },
+        {
+          "caller": "fill_pdf_form",
+          "callee": "next",
+          "lineNumber": 54
+        },
+        {
+          "caller": "fill_pdf_form",
+          "callee": "transform_coordinates",
+          "lineNumber": 59
+        },
+        {
+          "caller": "fill_pdf_form",
+          "callee": "entry_text.get",
+          "lineNumber": 73
+        },
+        {
+          "caller": "fill_pdf_form",
+          "callee": "str",
+          "lineNumber": 74
+        },
+        {
+          "caller": "fill_pdf_form",
+          "callee": "entry_text.get",
+          "lineNumber": 74
+        },
+        {
+          "caller": "fill_pdf_form",
+          "callee": "entry_text.get",
+          "lineNumber": 75
+        },
+        {
+          "caller": "fill_pdf_form",
+          "callee": "FreeText",
+          "lineNumber": 79
+        },
+        {
+          "caller": "fill_pdf_form",
+          "callee": "annotations.append",
+          "lineNumber": 88
+        },
+        {
+          "caller": "fill_pdf_form",
+          "callee": "writer.add_annotation",
+          "lineNumber": 90
+        },
+        {
+          "caller": "fill_pdf_form",
+          "callee": "open",
+          "lineNumber": 93
+        },
+        {
+          "caller": "fill_pdf_form",
+          "callee": "writer.write",
+          "lineNumber": 94
+        },
+        {
+          "caller": "fill_pdf_form",
+          "callee": "print",
+          "lineNumber": 96
+        },
+        {
+          "caller": "fill_pdf_form",
+          "callee": "print",
+          "lineNumber": 97
+        },
+        {
+          "caller": "fill_pdf_form",
+          "callee": "len",
+          "lineNumber": 97
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".claude/skills/pptx/html2pptx.tgz",
+      "language": "tgz",
+      "fileCategory": "code",
+      "totalLines": 70,
+      "nonEmptyLines": 70,
+      "metrics": {}
+    }
+  ]
+}

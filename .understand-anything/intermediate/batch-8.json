@@ -1,0 +1,1676 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/main/remote/channels/channel-base.ts",
+      "type": "file",
+      "name": "channel-base.ts",
+      "filePath": "src/main/remote/channels/channel-base.ts",
+      "summary": "源码模块 src/main/remote/channels/channel-base.ts，包含 1 个函数，约 201 行有效代码。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/remote/channels/channel-base.ts:withRetry",
+      "type": "function",
+      "name": "withRetry",
+      "filePath": "src/main/remote/channels/channel-base.ts",
+      "summary": "函数 withRetry，位于 src/main/remote/channels/channel-base.ts 第 190-232 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/remote/channels/feishu/feishu-api.ts",
+      "type": "file",
+      "name": "feishu-api.ts",
+      "filePath": "src/main/remote/channels/feishu/feishu-api.ts",
+      "summary": "TypeScript/JavaScript 模块 src/main/remote/channels/feishu/feishu-api.ts，导出 1 个类与 0 个函数，是应用逻辑的一部分。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/main/remote/channels/feishu/feishu-api.ts:FeishuAPI",
+      "type": "class",
+      "name": "FeishuAPI",
+      "filePath": "src/main/remote/channels/feishu/feishu-api.ts",
+      "summary": "类 FeishuAPI，含 13 个方法，位于 src/main/remote/channels/feishu/feishu-api.ts。",
+      "tags": ["module", "type-definition"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/remote/channels/feishu/feishu-channel.ts",
+      "type": "file",
+      "name": "feishu-channel.ts",
+      "filePath": "src/main/remote/channels/feishu/feishu-channel.ts",
+      "summary": "TypeScript/JavaScript 模块 src/main/remote/channels/feishu/feishu-channel.ts，导出 1 个类与 0 个函数，是应用逻辑的一部分。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/main/remote/channels/feishu/feishu-channel.ts:FeishuChannel",
+      "type": "class",
+      "name": "FeishuChannel",
+      "filePath": "src/main/remote/channels/feishu/feishu-channel.ts",
+      "summary": "类 FeishuChannel，含 16 个方法，位于 src/main/remote/channels/feishu/feishu-channel.ts。",
+      "tags": ["module", "type-definition"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/remote/channels/feishu/feishu-ws-client.ts",
+      "type": "file",
+      "name": "feishu-ws-client.ts",
+      "filePath": "src/main/remote/channels/feishu/feishu-ws-client.ts",
+      "summary": "TypeScript/JavaScript 模块 src/main/remote/channels/feishu/feishu-ws-client.ts，导出 1 个类与 0 个函数，是应用逻辑的一部分。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/main/remote/channels/feishu/feishu-ws-client.ts:FeishuWSClient",
+      "type": "class",
+      "name": "FeishuWSClient",
+      "filePath": "src/main/remote/channels/feishu/feishu-ws-client.ts",
+      "summary": "类 FeishuWSClient，含 10 个方法，位于 src/main/remote/channels/feishu/feishu-ws-client.ts。",
+      "tags": ["module", "type-definition"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/remote/channels/feishu/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/main/remote/channels/feishu/index.ts",
+      "summary": "源码模块 src/main/remote/channels/feishu/index.ts，体量 5 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["entry-point"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/remote/channels/slack/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/main/remote/channels/slack/index.ts",
+      "summary": "源码模块 src/main/remote/channels/slack/index.ts，体量 1 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["entry-point"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/remote/channels/slack/slack-channel.ts",
+      "type": "file",
+      "name": "slack-channel.ts",
+      "filePath": "src/main/remote/channels/slack/slack-channel.ts",
+      "summary": "TypeScript/JavaScript 模块 src/main/remote/channels/slack/slack-channel.ts，导出 1 个类与 0 个函数，是应用逻辑的一部分。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/main/remote/channels/slack/slack-channel.ts:SlackChannel",
+      "type": "class",
+      "name": "SlackChannel",
+      "filePath": "src/main/remote/channels/slack/slack-channel.ts",
+      "summary": "类 SlackChannel，含 7 个方法，位于 src/main/remote/channels/slack/slack-channel.ts。",
+      "tags": ["module", "type-definition"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/remote/gateway.ts",
+      "type": "file",
+      "name": "gateway.ts",
+      "filePath": "src/main/remote/gateway.ts",
+      "summary": "TypeScript/JavaScript 模块 src/main/remote/gateway.ts，导出 1 个类与 0 个函数，是应用逻辑的一部分。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/main/remote/gateway.ts:RemoteGateway",
+      "type": "class",
+      "name": "RemoteGateway",
+      "filePath": "src/main/remote/gateway.ts",
+      "summary": "类 RemoteGateway，含 34 个方法，位于 src/main/remote/gateway.ts。",
+      "tags": ["module", "type-definition"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/remote/message-router.ts",
+      "type": "file",
+      "name": "message-router.ts",
+      "filePath": "src/main/remote/message-router.ts",
+      "summary": "TypeScript/JavaScript 模块 src/main/remote/message-router.ts，导出 1 个类与 0 个函数，是应用逻辑的一部分。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/main/remote/message-router.ts:MessageRouter",
+      "type": "class",
+      "name": "MessageRouter",
+      "filePath": "src/main/remote/message-router.ts",
+      "summary": "类 MessageRouter，含 29 个方法，位于 src/main/remote/message-router.ts。",
+      "tags": ["module", "type-definition"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/remote/remote-config-store.ts",
+      "type": "file",
+      "name": "remote-config-store.ts",
+      "filePath": "src/main/remote/remote-config-store.ts",
+      "summary": "TypeScript/JavaScript 模块 src/main/remote/remote-config-store.ts，导出 1 个类与 0 个函数，是应用逻辑的一部分。",
+      "tags": ["state-management", "configuration"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/main/remote/remote-config-store.ts:RemoteConfigStore",
+      "type": "class",
+      "name": "RemoteConfigStore",
+      "filePath": "src/main/remote/remote-config-store.ts",
+      "summary": "类 RemoteConfigStore，含 26 个方法，位于 src/main/remote/remote-config-store.ts。",
+      "tags": ["state-management", "configuration", "type-definition"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/remote/remote-manager.ts",
+      "type": "file",
+      "name": "remote-manager.ts",
+      "filePath": "src/main/remote/remote-manager.ts",
+      "summary": "TypeScript/JavaScript 模块 src/main/remote/remote-manager.ts，导出 1 个类与 0 个函数，是应用逻辑的一部分。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/main/remote/remote-manager.ts:RemoteManager",
+      "type": "class",
+      "name": "RemoteManager",
+      "filePath": "src/main/remote/remote-manager.ts",
+      "summary": "类 RemoteManager，含 40 个方法，位于 src/main/remote/remote-manager.ts。",
+      "tags": ["module", "type-definition"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/remote/remote-title.ts",
+      "type": "file",
+      "name": "remote-title.ts",
+      "filePath": "src/main/remote/remote-title.ts",
+      "summary": "源码模块 src/main/remote/remote-title.ts，包含 1 个函数，约 27 行有效代码。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/remote/remote-title.ts:buildRemoteSessionTitle",
+      "type": "function",
+      "name": "buildRemoteSessionTitle",
+      "filePath": "src/main/remote/remote-title.ts",
+      "summary": "函数 buildRemoteSessionTitle，位于 src/main/remote/remote-title.ts 第 11-31 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/remote/tunnel-manager.ts",
+      "type": "file",
+      "name": "tunnel-manager.ts",
+      "filePath": "src/main/remote/tunnel-manager.ts",
+      "summary": "TypeScript/JavaScript 模块 src/main/remote/tunnel-manager.ts，导出 1 个类与 0 个函数，是应用逻辑的一部分。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/main/remote/tunnel-manager.ts:TunnelManager",
+      "type": "class",
+      "name": "TunnelManager",
+      "filePath": "src/main/remote/tunnel-manager.ts",
+      "summary": "类 TunnelManager，含 9 个方法，位于 src/main/remote/tunnel-manager.ts。",
+      "tags": ["module", "type-definition"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/remote/types.ts",
+      "type": "file",
+      "name": "types.ts",
+      "filePath": "src/main/remote/types.ts",
+      "summary": "源码模块 src/main/remote/types.ts，体量 441 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/utils/store-encryption.ts",
+      "type": "file",
+      "name": "store-encryption.ts",
+      "filePath": "src/main/utils/store-encryption.ts",
+      "summary": "源码模块 src/main/utils/store-encryption.ts，包含 14 个函数，约 200 行有效代码。",
+      "tags": ["state-management", "utility"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/store-encryption.ts:resolveStorePath",
+      "type": "function",
+      "name": "resolveStorePath",
+      "filePath": "src/main/utils/store-encryption.ts",
+      "summary": "函数 resolveStorePath，位于 src/main/utils/store-encryption.ts 第 87-109 行。",
+      "tags": ["state-management"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/store-encryption.ts:moveUnreadableStoreToBackup",
+      "type": "function",
+      "name": "moveUnreadableStoreToBackup",
+      "filePath": "src/main/utils/store-encryption.ts",
+      "summary": "函数 moveUnreadableStoreToBackup，位于 src/main/utils/store-encryption.ts 第 111-122 行。",
+      "tags": ["state-management"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/store-encryption.ts:getLegacyDerivedKeyHexes",
+      "type": "function",
+      "name": "getLegacyDerivedKeyHexes",
+      "filePath": "src/main/utils/store-encryption.ts",
+      "summary": "函数 getLegacyDerivedKeyHexes，位于 src/main/utils/store-encryption.ts 第 124-132 行。",
+      "tags": ["state-management"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/store-encryption.ts:getStableDerivedKeyBuffer",
+      "type": "function",
+      "name": "getStableDerivedKeyBuffer",
+      "filePath": "src/main/utils/store-encryption.ts",
+      "summary": "函数 getStableDerivedKeyBuffer，位于 src/main/utils/store-encryption.ts 第 134-136 行。",
+      "tags": ["state-management"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/store-encryption.ts:getLegacyDerivedKeyBuffers",
+      "type": "function",
+      "name": "getLegacyDerivedKeyBuffers",
+      "filePath": "src/main/utils/store-encryption.ts",
+      "summary": "函数 getLegacyDerivedKeyBuffers，位于 src/main/utils/store-encryption.ts 第 138-146 行。",
+      "tags": ["state-management"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/utils/store-encryption.ts:createEncryptedStoreWithKeyRotation",
+      "type": "function",
+      "name": "createEncryptedStoreWithKeyRotation",
+      "filePath": "src/main/utils/store-encryption.ts",
+      "summary": "函数 createEncryptedStoreWithKeyRotation，位于 src/main/utils/store-encryption.ts 第 148-235 行。",
+      "tags": ["state-management"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/renderer/utils/artifact-path.ts",
+      "type": "file",
+      "name": "artifact-path.ts",
+      "filePath": "src/renderer/utils/artifact-path.ts",
+      "summary": "源码模块 src/renderer/utils/artifact-path.ts，包含 1 个函数，约 4 行有效代码。",
+      "tags": ["component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/utils/artifact-path.ts:resolveArtifactPath",
+      "type": "function",
+      "name": "resolveArtifactPath",
+      "filePath": "src/renderer/utils/artifact-path.ts",
+      "summary": "函数 resolveArtifactPath，位于 src/renderer/utils/artifact-path.ts 第 3-5 行。",
+      "tags": ["component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/renderer/utils/markdown-local-link.ts",
+      "type": "file",
+      "name": "markdown-local-link.ts",
+      "filePath": "src/renderer/utils/markdown-local-link.ts",
+      "summary": "源码模块 src/renderer/utils/markdown-local-link.ts，包含 7 个函数，约 92 行有效代码。",
+      "tags": ["component", "ui", "utility"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/utils/markdown-local-link.ts:toFileUrl",
+      "type": "function",
+      "name": "toFileUrl",
+      "filePath": "src/renderer/utils/markdown-local-link.ts",
+      "summary": "函数 toFileUrl，位于 src/renderer/utils/markdown-local-link.ts 第 23-48 行。",
+      "tags": ["component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/utils/markdown-local-link.ts:normalizeLocalFileMarkdownLinks",
+      "type": "function",
+      "name": "normalizeLocalFileMarkdownLinks",
+      "filePath": "src/renderer/utils/markdown-local-link.ts",
+      "summary": "函数 normalizeLocalFileMarkdownLinks，位于 src/renderer/utils/markdown-local-link.ts 第 55-73 行。",
+      "tags": ["component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/utils/markdown-local-link.ts:extractLocalFilePathFromHref",
+      "type": "function",
+      "name": "extractLocalFilePathFromHref",
+      "filePath": "src/renderer/utils/markdown-local-link.ts",
+      "summary": "函数 extractLocalFilePathFromHref，位于 src/renderer/utils/markdown-local-link.ts 第 75-94 行。",
+      "tags": ["component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/utils/markdown-local-link.ts:resolveLocalFilePathFromHref",
+      "type": "function",
+      "name": "resolveLocalFilePathFromHref",
+      "filePath": "src/renderer/utils/markdown-local-link.ts",
+      "summary": "函数 resolveLocalFilePathFromHref，位于 src/renderer/utils/markdown-local-link.ts 第 96-116 行。",
+      "tags": ["component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/shared/workspace-path.ts",
+      "type": "file",
+      "name": "workspace-path.ts",
+      "filePath": "src/shared/workspace-path.ts",
+      "summary": "源码模块 src/shared/workspace-path.ts，包含 2 个函数，约 70 行有效代码。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/shared/workspace-path.ts:resolvePathAgainstWorkspace",
+      "type": "function",
+      "name": "resolvePathAgainstWorkspace",
+      "filePath": "src/shared/workspace-path.ts",
+      "summary": "函数 resolvePathAgainstWorkspace，位于 src/shared/workspace-path.ts 第 3-29 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/shared/workspace-path.ts:joinRelativePath",
+      "type": "function",
+      "name": "joinRelativePath",
+      "filePath": "src/shared/workspace-path.ts",
+      "summary": "函数 joinRelativePath，位于 src/shared/workspace-path.ts 第 35-82 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/tests/workspace-path.test.ts",
+      "type": "file",
+      "name": "workspace-path.test.ts",
+      "filePath": "src/tests/workspace-path.test.ts",
+      "summary": "源码模块 src/tests/workspace-path.test.ts，体量 50 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/artifact-path.test.ts",
+      "type": "file",
+      "name": "artifact-path.test.ts",
+      "filePath": "tests/artifact-path.test.ts",
+      "summary": "源码模块 tests/artifact-path.test.ts，体量 28 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/markdown-local-link.test.ts",
+      "type": "file",
+      "name": "markdown-local-link.test.ts",
+      "filePath": "tests/markdown-local-link.test.ts",
+      "summary": "源码模块 tests/markdown-local-link.test.ts，体量 73 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/remote-cwd-propagation.test.ts",
+      "type": "file",
+      "name": "remote-cwd-propagation.test.ts",
+      "filePath": "tests/remote-cwd-propagation.test.ts",
+      "summary": "源码模块 tests/remote-cwd-propagation.test.ts，包含 1 个函数，约 44 行有效代码。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/remote-cwd-propagation.test.ts:buildMessage",
+      "type": "function",
+      "name": "buildMessage",
+      "filePath": "tests/remote-cwd-propagation.test.ts",
+      "summary": "函数 buildMessage，位于 tests/remote-cwd-propagation.test.ts 第 14-25 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/remote-cwd-state.test.ts",
+      "type": "file",
+      "name": "remote-cwd-state.test.ts",
+      "filePath": "tests/remote-cwd-state.test.ts",
+      "summary": "源码模块 tests/remote-cwd-state.test.ts，包含 1 个函数，约 144 行有效代码。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/remote-cwd-state.test.ts:buildMessage",
+      "type": "function",
+      "name": "buildMessage",
+      "filePath": "tests/remote-cwd-state.test.ts",
+      "summary": "函数 buildMessage，位于 tests/remote-cwd-state.test.ts 第 14-25 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/remote-default-workdir.test.ts",
+      "type": "file",
+      "name": "remote-default-workdir.test.ts",
+      "filePath": "tests/remote-default-workdir.test.ts",
+      "summary": "源码模块 tests/remote-default-workdir.test.ts，包含 1 个函数，约 44 行有效代码。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/remote-default-workdir.test.ts:buildMessage",
+      "type": "function",
+      "name": "buildMessage",
+      "filePath": "tests/remote-default-workdir.test.ts",
+      "summary": "函数 buildMessage，位于 tests/remote-default-workdir.test.ts 第 20-29 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/remote-user-message-ui.test.ts",
+      "type": "file",
+      "name": "remote-user-message-ui.test.ts",
+      "filePath": "tests/remote-user-message-ui.test.ts",
+      "summary": "源码模块 tests/remote-user-message-ui.test.ts，包含 1 个函数，约 43 行有效代码。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/remote-user-message-ui.test.ts:buildMessage",
+      "type": "function",
+      "name": "buildMessage",
+      "filePath": "tests/remote-user-message-ui.test.ts",
+      "summary": "函数 buildMessage，位于 tests/remote-user-message-ui.test.ts 第 15-24 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/main/remote/channels/channel-base.ts",
+      "target": "file:src/main/remote/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/channels/channel-base.ts",
+      "target": "file:src/main/utils/logger.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/channels/channel-base.ts",
+      "target": "function:src/main/remote/channels/channel-base.ts:withRetry",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/remote/channels/channel-base.ts:withRetry",
+      "target": "function:src/main/remote/channels/channel-base.ts:operation",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/remote/channels/channel-base.ts:withRetry",
+      "target": "function:src/main/remote/channels/channel-base.ts:String",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/remote/channels/channel-base.ts:withRetry",
+      "target": "function:src/main/remote/channels/channel-base.ts:shouldRetry",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/remote/channels/channel-base.ts:withRetry",
+      "target": "function:src/main/remote/channels/channel-base.ts:onRetry",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/remote/channels/channel-base.ts:withRetry",
+      "target": "function:src/main/remote/channels/channel-base.ts:logWarn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/remote/channels/channel-base.ts:withRetry",
+      "target": "function:src/main/remote/channels/channel-base.ts:setTimeout",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/remote/channels/feishu/feishu-api.ts",
+      "target": "file:src/main/utils/logger.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/channels/feishu/feishu-api.ts",
+      "target": "class:src/main/remote/channels/feishu/feishu-api.ts:FeishuAPI",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/remote/channels/feishu/feishu-channel.ts",
+      "target": "file:src/main/remote/channels/channel-base.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/channels/feishu/feishu-channel.ts",
+      "target": "file:src/main/remote/channels/feishu/feishu-api.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/channels/feishu/feishu-channel.ts",
+      "target": "file:src/main/remote/channels/feishu/feishu-ws-client.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/channels/feishu/feishu-channel.ts",
+      "target": "file:src/main/remote/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/channels/feishu/feishu-channel.ts",
+      "target": "file:src/main/utils/logger.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/channels/feishu/feishu-channel.ts",
+      "target": "class:src/main/remote/channels/feishu/feishu-channel.ts:FeishuChannel",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/remote/channels/feishu/feishu-ws-client.ts",
+      "target": "file:src/main/utils/logger.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/channels/feishu/feishu-ws-client.ts",
+      "target": "class:src/main/remote/channels/feishu/feishu-ws-client.ts:FeishuWSClient",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/remote/channels/slack/slack-channel.ts",
+      "target": "file:src/main/remote/channels/channel-base.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/channels/slack/slack-channel.ts",
+      "target": "file:src/main/remote/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/channels/slack/slack-channel.ts",
+      "target": "file:src/main/utils/logger.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/channels/slack/slack-channel.ts",
+      "target": "class:src/main/remote/channels/slack/slack-channel.ts:SlackChannel",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/remote/gateway.ts",
+      "target": "file:src/main/remote/message-router.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/gateway.ts",
+      "target": "file:src/main/remote/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/gateway.ts",
+      "target": "file:src/main/utils/logger.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/gateway.ts",
+      "target": "class:src/main/remote/gateway.ts:RemoteGateway",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/remote/message-router.ts",
+      "target": "file:src/main/remote/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/message-router.ts",
+      "target": "file:src/main/utils/logger.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/message-router.ts",
+      "target": "file:src/renderer/types/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/message-router.ts",
+      "target": "file:src/shared/local-file-path.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/message-router.ts",
+      "target": "file:src/shared/workspace-path.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/message-router.ts",
+      "target": "class:src/main/remote/message-router.ts:MessageRouter",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/remote/remote-config-store.ts",
+      "target": "file:src/main/remote/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/remote-config-store.ts",
+      "target": "file:src/main/utils/logger.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/remote-config-store.ts",
+      "target": "file:src/main/utils/store-encryption.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/remote-config-store.ts",
+      "target": "class:src/main/remote/remote-config-store.ts:RemoteConfigStore",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/remote/remote-manager.ts",
+      "target": "file:src/main/remote/channels/feishu/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/remote-manager.ts",
+      "target": "file:src/main/remote/channels/slack/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/remote-manager.ts",
+      "target": "file:src/main/remote/gateway.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/remote-manager.ts",
+      "target": "file:src/main/remote/message-router.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/remote-manager.ts",
+      "target": "file:src/main/remote/remote-config-store.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/remote-manager.ts",
+      "target": "file:src/main/remote/remote-title.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/remote-manager.ts",
+      "target": "file:src/main/remote/tunnel-manager.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/remote-manager.ts",
+      "target": "file:src/main/remote/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/remote-manager.ts",
+      "target": "file:src/main/utils/logger.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/remote-manager.ts",
+      "target": "file:src/renderer/types/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/remote-manager.ts",
+      "target": "class:src/main/remote/remote-manager.ts:RemoteManager",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/remote/remote-title.ts",
+      "target": "function:src/main/remote/remote-title.ts:buildRemoteSessionTitle",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/remote/remote-title.ts:buildRemoteSessionTitle",
+      "target": "function:src/main/remote/remote-title.ts:prompt\n    .trim()\n    .replace(/\\s+/g, ' ')  // Normalize whitespace\n    .replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/remote/remote-title.ts:buildRemoteSessionTitle",
+      "target": "function:src/main/remote/remote-title.ts:prompt\n    .trim()\n    .replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/remote/remote-title.ts:buildRemoteSessionTitle",
+      "target": "function:src/main/remote/remote-title.ts:prompt\n    .trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/remote/remote-title.ts:buildRemoteSessionTitle",
+      "target": "function:src/main/remote/remote-title.ts:cleaned.match",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/remote/remote-title.ts:buildRemoteSessionTitle",
+      "target": "function:src/main/remote/remote-title.ts:cleaned.substring",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/remote/tunnel-manager.ts",
+      "target": "file:src/main/remote/remote-config-store.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/tunnel-manager.ts",
+      "target": "file:src/main/utils/logger.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/remote/tunnel-manager.ts",
+      "target": "class:src/main/remote/tunnel-manager.ts:TunnelManager",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/store-encryption.ts",
+      "target": "function:src/main/utils/store-encryption.ts:resolveStorePath",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/store-encryption.ts",
+      "target": "function:src/main/utils/store-encryption.ts:moveUnreadableStoreToBackup",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/store-encryption.ts",
+      "target": "function:src/main/utils/store-encryption.ts:getLegacyDerivedKeyHexes",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/store-encryption.ts",
+      "target": "function:src/main/utils/store-encryption.ts:getStableDerivedKeyBuffer",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/store-encryption.ts",
+      "target": "function:src/main/utils/store-encryption.ts:getLegacyDerivedKeyBuffers",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/utils/store-encryption.ts",
+      "target": "function:src/main/utils/store-encryption.ts:createEncryptedStoreWithKeyRotation",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:resolveStorePath",
+      "target": "function:src/main/utils/store-encryption.ts:resolveStoreName",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:resolveStorePath",
+      "target": "function:src/main/utils/store-encryption.ts:explicitCwd.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:resolveStorePath",
+      "target": "function:src/main/utils/store-encryption.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:resolveStorePath",
+      "target": "function:src/main/utils/store-encryption.ts:path.resolve",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:resolveStorePath",
+      "target": "function:src/main/utils/store-encryption.ts:app.getPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:resolveStorePath",
+      "target": "function:src/main/utils/store-encryption.ts:userDataPath?.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:resolveStorePath",
+      "target": "function:src/main/utils/store-encryption.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:moveUnreadableStoreToBackup",
+      "target": "function:src/main/utils/store-encryption.ts:buildBackupPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:moveUnreadableStoreToBackup",
+      "target": "function:src/main/utils/store-encryption.ts:fs.renameSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:moveUnreadableStoreToBackup",
+      "target": "function:src/main/utils/store-encryption.ts:fs.copyFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:moveUnreadableStoreToBackup",
+      "target": "function:src/main/utils/store-encryption.ts:fs.unlinkSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:getLegacyDerivedKeyHexes",
+      "target": "function:src/main/utils/store-encryption.ts:buildLegacyDirCandidates(options.moduleDirname).map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:getLegacyDerivedKeyHexes",
+      "target": "function:src/main/utils/store-encryption.ts:buildLegacyDirCandidates",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:getLegacyDerivedKeyHexes",
+      "target": "function:src/main/utils/store-encryption.ts:deriveKeyHex",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:getLegacyDerivedKeyHexes",
+      "target": "function:src/main/utils/store-encryption.ts:os.hostname",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:getStableDerivedKeyBuffer",
+      "target": "function:src/main/utils/store-encryption.ts:deriveKeyBuffer",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:getLegacyDerivedKeyBuffers",
+      "target": "function:src/main/utils/store-encryption.ts:buildLegacyDirCandidates(options.moduleDirname).map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:getLegacyDerivedKeyBuffers",
+      "target": "function:src/main/utils/store-encryption.ts:buildLegacyDirCandidates",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:getLegacyDerivedKeyBuffers",
+      "target": "function:src/main/utils/store-encryption.ts:deriveKeyBuffer",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:getLegacyDerivedKeyBuffers",
+      "target": "function:src/main/utils/store-encryption.ts:os.hostname",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:createEncryptedStoreWithKeyRotation",
+      "target": "function:src/main/utils/store-encryption.ts:uniqueValues",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:createEncryptedStoreWithKeyRotation",
+      "target": "function:src/main/utils/store-encryption.ts:isLikelyKeyMismatch",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:createEncryptedStoreWithKeyRotation",
+      "target": "function:src/main/utils/store-encryption.ts:String",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:createEncryptedStoreWithKeyRotation",
+      "target": "function:src/main/utils/store-encryption.ts:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:createEncryptedStoreWithKeyRotation",
+      "target": "function:src/main/utils/store-encryption.ts:buildBackupPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:createEncryptedStoreWithKeyRotation",
+      "target": "function:src/main/utils/store-encryption.ts:fs.renameSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:createEncryptedStoreWithKeyRotation",
+      "target": "function:src/main/utils/store-encryption.ts:fs.copyFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:createEncryptedStoreWithKeyRotation",
+      "target": "function:src/main/utils/store-encryption.ts:fs.unlinkSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:createEncryptedStoreWithKeyRotation",
+      "target": "function:src/main/utils/store-encryption.ts:options.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:createEncryptedStoreWithKeyRotation",
+      "target": "function:src/main/utils/store-encryption.ts:isLikelyKeyMismatch",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:createEncryptedStoreWithKeyRotation",
+      "target": "function:src/main/utils/store-encryption.ts:failedAttempts.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:createEncryptedStoreWithKeyRotation",
+      "target": "function:src/main/utils/store-encryption.ts:String",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:createEncryptedStoreWithKeyRotation",
+      "target": "function:src/main/utils/store-encryption.ts:resolveStorePath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:createEncryptedStoreWithKeyRotation",
+      "target": "function:src/main/utils/store-encryption.ts:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:createEncryptedStoreWithKeyRotation",
+      "target": "function:src/main/utils/store-encryption.ts:moveUnreadableStoreToBackup",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:createEncryptedStoreWithKeyRotation",
+      "target": "function:src/main/utils/store-encryption.ts:options.warn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:createEncryptedStoreWithKeyRotation",
+      "target": "function:src/main/utils/store-encryption.ts:failedAttempts.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/utils/store-encryption.ts:createEncryptedStoreWithKeyRotation",
+      "target": "function:src/main/utils/store-encryption.ts:options.warn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/utils/artifact-path.ts",
+      "target": "file:src/shared/workspace-path.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/utils/artifact-path.ts",
+      "target": "function:src/renderer/utils/artifact-path.ts:resolveArtifactPath",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/renderer/utils/artifact-path.ts:resolveArtifactPath",
+      "target": "function:src/renderer/utils/artifact-path.ts:resolvePathAgainstWorkspace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/utils/markdown-local-link.ts",
+      "target": "file:src/renderer/utils/artifact-path.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/utils/markdown-local-link.ts",
+      "target": "file:src/shared/local-file-path.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/utils/markdown-local-link.ts",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:toFileUrl",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/utils/markdown-local-link.ts",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:normalizeLocalFileMarkdownLinks",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/utils/markdown-local-link.ts",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:extractLocalFilePathFromHref",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/utils/markdown-local-link.ts",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:resolveLocalFilePathFromHref",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:toFileUrl",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:normalizePathCandidate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:toFileUrl",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:webLikeUrlPattern.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:toFileUrl",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:unixAbsolutePathPattern.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:toFileUrl",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:encodeFilePath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:toFileUrl",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:isWindowsDrivePath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:toFileUrl",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:normalizedPathValue.replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:toFileUrl",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:encodeFilePath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:toFileUrl",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:isUncPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:toFileUrl",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:normalizedPathValue.replace(/^\\\\\\\\+/, '').replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:toFileUrl",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:normalizedPathValue.replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:toFileUrl",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:encodeFilePath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:normalizeLocalFileMarkdownLinks",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:markdown.replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:normalizeLocalFileMarkdownLinks",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:rawHref.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:normalizeLocalFileMarkdownLinks",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:toFileUrl",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:normalizeLocalFileMarkdownLinks",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:escapeMarkdown",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:extractLocalFilePathFromHref",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:normalizePathCandidate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:extractLocalFilePathFromHref",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:httpLikeUrlPattern.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:extractLocalFilePathFromHref",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:trimmed.startsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:extractLocalFilePathFromHref",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:localPathFromFileUrl",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:extractLocalFilePathFromHref",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:unixAbsolutePathPattern.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:extractLocalFilePathFromHref",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:isWindowsDrivePath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:extractLocalFilePathFromHref",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:isUncPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:extractLocalFilePathFromHref",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:decodePathSafely",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:resolveLocalFilePathFromHref",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:normalizePathCandidate",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:resolveLocalFilePathFromHref",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:httpLikeUrlPattern.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:resolveLocalFilePathFromHref",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:extractLocalFilePathFromHref",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:resolveLocalFilePathFromHref",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:resolveArtifactPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:resolveLocalFilePathFromHref",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:explicitUrlSchemePattern.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:resolveLocalFilePathFromHref",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:resolveArtifactPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/utils/markdown-local-link.ts:resolveLocalFilePathFromHref",
+      "target": "function:src/renderer/utils/markdown-local-link.ts:decodePathSafely",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/shared/workspace-path.ts",
+      "target": "file:src/shared/local-file-path.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/workspace-path.ts",
+      "target": "function:src/shared/workspace-path.ts:resolvePathAgainstWorkspace",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/shared/workspace-path.ts",
+      "target": "function:src/shared/workspace-path.ts:joinRelativePath",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/shared/workspace-path.ts:resolvePathAgainstWorkspace",
+      "target": "function:src/shared/workspace-path.ts:isWindowsDrivePath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/workspace-path.ts:resolvePathAgainstWorkspace",
+      "target": "function:src/shared/workspace-path.ts:isUncPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/workspace-path.ts:resolvePathAgainstWorkspace",
+      "target": "function:src/shared/workspace-path.ts:pathValue.startsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/workspace-path.ts:resolvePathAgainstWorkspace",
+      "target": "function:src/shared/workspace-path.ts:pathValue.startsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/workspace-path.ts:resolvePathAgainstWorkspace",
+      "target": "function:src/shared/workspace-path.ts:joinRelativePath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/workspace-path.ts:resolvePathAgainstWorkspace",
+      "target": "function:src/shared/workspace-path.ts:pathValue.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/workspace-path.ts:resolvePathAgainstWorkspace",
+      "target": "function:src/shared/workspace-path.ts:/^[A-Za-z]:[/\\\\]workspace[/\\\\]/i.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/workspace-path.ts:resolvePathAgainstWorkspace",
+      "target": "function:src/shared/workspace-path.ts:pathValue.replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/workspace-path.ts:resolvePathAgainstWorkspace",
+      "target": "function:src/shared/workspace-path.ts:joinRelativePath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/workspace-path.ts:resolvePathAgainstWorkspace",
+      "target": "function:src/shared/workspace-path.ts:joinRelativePath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/workspace-path.ts:joinRelativePath",
+      "target": "function:src/shared/workspace-path.ts:isWindowsDrivePath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/workspace-path.ts:joinRelativePath",
+      "target": "function:src/shared/workspace-path.ts:isUncPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/workspace-path.ts:joinRelativePath",
+      "target": "function:src/shared/workspace-path.ts:basePath.replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/workspace-path.ts:joinRelativePath",
+      "target": "function:src/shared/workspace-path.ts:relativePath.replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/workspace-path.ts:joinRelativePath",
+      "target": "function:src/shared/workspace-path.ts:joined.replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/workspace-path.ts:joinRelativePath",
+      "target": "function:src/shared/workspace-path.ts:normalized.split",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/workspace-path.ts:joinRelativePath",
+      "target": "function:src/shared/workspace-path.ts:isUncPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/workspace-path.ts:joinRelativePath",
+      "target": "function:src/shared/workspace-path.ts:resolved.pop",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/workspace-path.ts:joinRelativePath",
+      "target": "function:src/shared/workspace-path.ts:resolved.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/workspace-path.ts:joinRelativePath",
+      "target": "function:src/shared/workspace-path.ts:resolved.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/workspace-path.ts:joinRelativePath",
+      "target": "function:src/shared/workspace-path.ts:isUncPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/workspace-path.ts:joinRelativePath",
+      "target": "function:src/shared/workspace-path.ts:parts.slice(0, 4).join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/workspace-path.ts:joinRelativePath",
+      "target": "function:src/shared/workspace-path.ts:parts.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/workspace-path.ts:joinRelativePath",
+      "target": "function:src/shared/workspace-path.ts:isWindowsDrivePath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/shared/workspace-path.ts:joinRelativePath",
+      "target": "function:src/shared/workspace-path.ts:result.startsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/tests/workspace-path.test.ts",
+      "target": "file:src/shared/workspace-path.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/artifact-path.test.ts",
+      "target": "file:src/renderer/utils/artifact-path.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/markdown-local-link.test.ts",
+      "target": "file:src/renderer/utils/markdown-local-link.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/remote-cwd-propagation.test.ts",
+      "target": "file:src/main/remote/remote-manager.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/remote-cwd-propagation.test.ts",
+      "target": "file:src/main/remote/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/remote-cwd-propagation.test.ts",
+      "target": "function:tests/remote-cwd-propagation.test.ts:buildMessage",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:tests/remote-cwd-propagation.test.ts:buildMessage",
+      "target": "function:tests/remote-cwd-propagation.test.ts:Math.random",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/remote-cwd-propagation.test.ts:buildMessage",
+      "target": "function:tests/remote-cwd-propagation.test.ts:Date.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/remote-cwd-state.test.ts",
+      "target": "file:src/main/remote/remote-manager.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/remote-cwd-state.test.ts",
+      "target": "file:src/main/remote/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/remote-cwd-state.test.ts",
+      "target": "function:tests/remote-cwd-state.test.ts:buildMessage",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:tests/remote-cwd-state.test.ts:buildMessage",
+      "target": "function:tests/remote-cwd-state.test.ts:Math.random",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/remote-cwd-state.test.ts:buildMessage",
+      "target": "function:tests/remote-cwd-state.test.ts:Date.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/remote-default-workdir.test.ts",
+      "target": "file:src/main/remote/remote-manager.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/remote-default-workdir.test.ts",
+      "target": "file:src/main/remote/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/remote-default-workdir.test.ts",
+      "target": "function:tests/remote-default-workdir.test.ts:buildMessage",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:tests/remote-default-workdir.test.ts:buildMessage",
+      "target": "function:tests/remote-default-workdir.test.ts:Date.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/remote-user-message-ui.test.ts",
+      "target": "file:src/main/remote/remote-manager.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/remote-user-message-ui.test.ts",
+      "target": "file:src/main/remote/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/remote-user-message-ui.test.ts",
+      "target": "file:src/renderer/types/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/remote-user-message-ui.test.ts",
+      "target": "function:tests/remote-user-message-ui.test.ts:buildMessage",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:tests/remote-user-message-ui.test.ts:buildMessage",
+      "target": "function:tests/remote-user-message-ui.test.ts:Date.now",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ]
+}

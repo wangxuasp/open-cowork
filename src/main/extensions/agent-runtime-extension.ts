@@ -14,6 +14,8 @@ export interface BeforeSessionRunContext {
 export interface BeforeSessionRunResult {
   promptPrefix?: string;
   customTools?: AgentRuntimeCustomTool[];
+  blocked?: boolean;
+  blockReason?: string;
 }
 
 export interface AfterSessionRunContext {

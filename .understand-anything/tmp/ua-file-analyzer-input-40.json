@@ -1,0 +1,157 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": ".claude/skills/visio/templates/style_profiles.json",
+      "language": "json",
+      "sizeLines": 998,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/visio/templates/visio_components.json",
+      "language": "json",
+      "sizeLines": 1241,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/visio/tests/test_public_release_smoke.py",
+      "language": "python",
+      "sizeLines": 345,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/xlsx/LICENSE.txt",
+      "language": "txt",
+      "sizeLines": 30,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/xlsx/recalc.py",
+      "language": "python",
+      "sizeLines": 247,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/xlsx/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 288,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".cursor/rules/codegraph.mdc",
+      "language": "mdc",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".cursor/rules/karpathy-guidelines.mdc",
+      "language": "mdc",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    { "path": ".gitattributes", "language": "unknown", "sizeLines": 27, "fileCategory": "code" },
+    {
+      "path": ".github/CODEOWNERS",
+      "language": "unknown",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+      "language": "yaml",
+      "sizeLines": 79,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.yml",
+      "language": "yaml",
+      "sizeLines": 66,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".github/prompts/codex-pr-review.md",
+      "language": "markdown",
+      "sizeLines": 161,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/prompts/issue-auto-response.md",
+      "language": "markdown",
+      "sizeLines": 93,
+      "fileCategory": "docs"
+    },
+    { "path": ".husky/commit-msg", "language": "unknown", "sizeLines": 2, "fileCategory": "code" },
+    { "path": ".husky/pre-commit", "language": "unknown", "sizeLines": 27, "fileCategory": "code" },
+    { "path": ".npmrc", "language": "unknown", "sizeLines": 14, "fileCategory": "code" },
+    { "path": ".nvmrc", "language": "unknown", "sizeLines": 1, "fileCategory": "code" },
+    {
+      "path": ".understand-anything/.understandignore",
+      "language": "unknown",
+      "sizeLines": 95,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".understand-anything/config.json",
+      "language": "json",
+      "sizeLines": 1,
+      "fileCategory": "config"
+    },
+    {
+      "path": "commitlint.config.cjs",
+      "language": "javascript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docs/memory-live-smoke-checklist.md",
+      "language": "markdown",
+      "sizeLines": 51,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "patches/@mariozechner+pi-ai+0.60.0.patch",
+      "language": "patch",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "postcss.config.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/entitlements.mac.plist",
+      "language": "xml",
+      "sizeLines": 23,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    ".claude/skills/visio/templates/style_profiles.json": [],
+    ".claude/skills/visio/templates/visio_components.json": [],
+    ".claude/skills/visio/tests/test_public_release_smoke.py": [],
+    ".claude/skills/xlsx/LICENSE.txt": [],
+    ".claude/skills/xlsx/recalc.py": [],
+    ".claude/skills/xlsx/SKILL.md": [],
+    ".cursor/rules/codegraph.mdc": [],
+    ".cursor/rules/karpathy-guidelines.mdc": [],
+    ".gitattributes": [],
+    ".github/CODEOWNERS": [],
+    ".github/ISSUE_TEMPLATE/bug_report.yml": [],
+    ".github/ISSUE_TEMPLATE/feature_request.yml": [],
+    ".github/prompts/codex-pr-review.md": [],
+    ".github/prompts/issue-auto-response.md": [],
+    ".husky/commit-msg": [],
+    ".husky/pre-commit": [],
+    ".npmrc": [],
+    ".nvmrc": [],
+    ".understand-anything/.understandignore": [],
+    ".understand-anything/config.json": [],
+    "commitlint.config.cjs": [],
+    "docs/memory-live-smoke-checklist.md": [],
+    "patches/@mariozechner+pi-ai+0.60.0.patch": [],
+    "postcss.config.js": [],
+    "resources/entitlements.mac.plist": []
+  }
+}

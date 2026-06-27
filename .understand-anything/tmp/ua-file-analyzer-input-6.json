@@ -1,0 +1,250 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": "src/renderer/components/message/ToolResultBlock.tsx",
+      "language": "typescript",
+      "sizeLines": 178,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/message/ToolUseBlock.tsx",
+      "language": "typescript",
+      "sizeLines": 245,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/message/toolHelpers.tsx",
+      "language": "typescript",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/message/types.ts",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/settings/SettingsAbout.tsx",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/settings/SettingsConnectors.tsx",
+      "language": "typescript",
+      "sizeLines": 911,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/settings/SettingsGeneral.tsx",
+      "language": "typescript",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/settings/SettingsKnowledgeBase.tsx",
+      "language": "typescript",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/settings/SettingsLogs.tsx",
+      "language": "typescript",
+      "sizeLines": 309,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/settings/SettingsMemory.tsx",
+      "language": "typescript",
+      "sizeLines": 1084,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/settings/SettingsSandbox.tsx",
+      "language": "typescript",
+      "sizeLines": 618,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/settings/SettingsSchedule.tsx",
+      "language": "typescript",
+      "sizeLines": 1121,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/settings/SettingsSkills.tsx",
+      "language": "typescript",
+      "sizeLines": 811,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/settings/SettingsTeamcenter.tsx",
+      "language": "typescript",
+      "sizeLines": 142,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/settings/shared.tsx",
+      "language": "typescript",
+      "sizeLines": 98,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/hooks/useIPC.ts",
+      "language": "typescript",
+      "sizeLines": 820,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/hooks/useWindowSize.ts",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/i18n/config.ts",
+      "language": "typescript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/main.tsx",
+      "language": "typescript",
+      "sizeLines": 83,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/store/index.ts",
+      "language": "typescript",
+      "sizeLines": 634,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/store/selectors.ts",
+      "language": "typescript",
+      "sizeLines": 297,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/types/index.ts",
+      "language": "typescript",
+      "sizeLines": 819,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/utils/artifact-steps.ts",
+      "language": "typescript",
+      "sizeLines": 203,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/utils/file-link.ts",
+      "language": "typescript",
+      "sizeLines": 134,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/utils/i18n-format.ts",
+      "language": "typescript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/utils/latex-delimiters.ts",
+      "language": "typescript",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/utils/renderer-diagnostics.ts",
+      "language": "typescript",
+      "sizeLines": 160,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/renderer/components/message/ToolResultBlock.tsx": [
+      "src/renderer/components/message/toolHelpers.tsx",
+      "src/renderer/store/index.ts",
+      "src/renderer/types/index.ts",
+      "src/renderer/utils/tool-result-summary.ts"
+    ],
+    "src/renderer/components/message/ToolUseBlock.tsx": [
+      "src/renderer/components/message/AskUserQuestionBlock.tsx",
+      "src/renderer/components/message/TodoWriteBlock.tsx",
+      "src/renderer/components/message/toolHelpers.tsx",
+      "src/renderer/store/index.ts",
+      "src/renderer/types/index.ts",
+      "src/renderer/utils/tool-result-summary.ts"
+    ],
+    "src/renderer/components/message/toolHelpers.tsx": [],
+    "src/renderer/components/message/types.ts": ["src/renderer/types/index.ts"],
+    "src/renderer/components/settings/SettingsAbout.tsx": [],
+    "src/renderer/components/settings/SettingsConnectors.tsx": [
+      "src/renderer/components/settings/shared.tsx"
+    ],
+    "src/renderer/components/settings/SettingsGeneral.tsx": ["src/renderer/store/index.ts"],
+    "src/renderer/components/settings/SettingsKnowledgeBase.tsx": ["src/renderer/store/index.ts"],
+    "src/renderer/components/settings/SettingsLogs.tsx": [
+      "src/renderer/components/settings/shared.tsx",
+      "src/renderer/utils/i18n-format.ts"
+    ],
+    "src/renderer/components/settings/SettingsMemory.tsx": [
+      "src/renderer/components/settings/shared.tsx",
+      "src/renderer/store/index.ts",
+      "src/renderer/types/index.ts"
+    ],
+    "src/renderer/components/settings/SettingsSandbox.tsx": [
+      "src/renderer/components/settings/shared.tsx"
+    ],
+    "src/renderer/components/settings/SettingsSchedule.tsx": [
+      "src/renderer/components/settings/shared.tsx",
+      "src/renderer/store/index.ts",
+      "src/renderer/types/index.ts",
+      "src/renderer/utils/i18n-format.ts"
+    ],
+    "src/renderer/components/settings/SettingsSkills.tsx": [
+      "src/renderer/components/settings/shared.tsx",
+      "src/renderer/store/index.ts",
+      "src/renderer/types/index.ts"
+    ],
+    "src/renderer/components/settings/SettingsTeamcenter.tsx": ["src/renderer/store/index.ts"],
+    "src/renderer/components/settings/shared.tsx": ["src/renderer/types/index.ts"],
+    "src/renderer/hooks/useIPC.ts": [
+      "src/renderer/i18n/config.ts",
+      "src/renderer/store/index.ts",
+      "src/renderer/types/index.ts"
+    ],
+    "src/renderer/hooks/useWindowSize.ts": [],
+    "src/renderer/i18n/config.ts": [
+      "src/renderer/i18n/locales/en.json",
+      "src/renderer/i18n/locales/zh.json"
+    ],
+    "src/renderer/main.tsx": [
+      "src/renderer/App.tsx",
+      "src/renderer/components/ErrorBoundary.tsx",
+      "src/renderer/i18n/config.ts",
+      "src/renderer/styles/globals.css",
+      "src/renderer/utils/renderer-diagnostics.ts"
+    ],
+    "src/renderer/store/index.ts": [
+      "src/renderer/types/index.ts",
+      "src/renderer/utils/session-update.ts"
+    ],
+    "src/renderer/store/selectors.ts": [
+      "src/renderer/store/index.ts",
+      "src/renderer/types/index.ts"
+    ],
+    "src/renderer/types/index.ts": [],
+    "src/renderer/utils/artifact-steps.ts": [
+      "src/renderer/types/index.ts",
+      "src/renderer/utils/tool-output-path.ts"
+    ],
+    "src/renderer/utils/file-link.ts": [],
+    "src/renderer/utils/i18n-format.ts": ["src/renderer/i18n/config.ts"],
+    "src/renderer/utils/latex-delimiters.ts": [],
+    "src/renderer/utils/renderer-diagnostics.ts": []
+  }
+}

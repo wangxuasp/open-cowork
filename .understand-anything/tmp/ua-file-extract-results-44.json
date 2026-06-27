@@ -1,0 +1,485 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "tests/remote-control-panel-links.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 13,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/remote-manager-port-conflict.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 100,
+      "nonEmptyLines": 88,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/sandbox-command-injection.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 207,
+      "nonEmptyLines": 176,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/sandbox-executor-containment.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 25,
+      "nonEmptyLines": 20,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/scheduled-task-session-title-entry.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 13,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/settings-panel-plugin-entry.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 58,
+      "nonEmptyLines": 50,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/settings-panel-schedule-entry.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 104,
+      "nonEmptyLines": 89,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/settings-sandbox-status.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 29,
+      "functions": [
+        {
+          "name": "readSettingsSandboxContent",
+          "startLine": 5,
+          "endLine": 15,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "readSettingsSandboxContent",
+          "callee": "path.resolve",
+          "lineNumber": 6
+        },
+        {
+          "caller": "readSettingsSandboxContent",
+          "callee": "process.cwd",
+          "lineNumber": 7
+        },
+        {
+          "caller": "readSettingsSandboxContent",
+          "callee": "fs.readFileSync",
+          "lineNumber": 11
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/store-encryption.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 147,
+      "nonEmptyLines": 126,
+      "functions": [
+        {
+          "name": "registerStoreMocks",
+          "startLine": 7,
+          "endLine": 77,
+          "params": ["userDataPath"]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "registerStoreMocks",
+          "callee": "vi.doMock",
+          "lineNumber": 8
+        },
+        {
+          "caller": "registerStoreMocks",
+          "callee": "vi.doMock",
+          "lineNumber": 19
+        },
+        {
+          "caller": "constructor",
+          "callee": "path.join",
+          "lineNumber": 32
+        },
+        {
+          "caller": "constructor",
+          "callee": "fs.existsSync",
+          "lineNumber": 36
+        },
+        {
+          "caller": "constructor",
+          "callee": "fs.readFileSync",
+          "lineNumber": 37
+        },
+        {
+          "caller": "constructor",
+          "callee": "JSON.parse",
+          "lineNumber": 38
+        },
+        {
+          "caller": "store",
+          "callee": "fs.writeFileSync",
+          "lineNumber": 63
+        },
+        {
+          "caller": "store",
+          "callee": "JSON.stringify",
+          "lineNumber": 65
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/teamcenter-settings-entry.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 143,
+      "nonEmptyLines": 124,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/theme-settings-persistence.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 44,
+      "nonEmptyLines": 37,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/use-ipc-config-modal-gate.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 29,
+      "nonEmptyLines": 24,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/use-ipc-session-start-error-handling.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 14,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/vite-config-watch-ignore.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 14,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/welcome-view-claude-layout.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 23,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/welcome-view-submit-guard.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 26,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/windows-legacy-uninstall-remediation.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 25,
+      "nonEmptyLines": 21,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "vite.config.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 93,
+      "nonEmptyLines": 91,
+      "callGraph": [
+        {
+          "caller": "onstart",
+          "callee": "args.startup",
+          "lineNumber": 25
+        },
+        {
+          "caller": "onstart",
+          "callee": "args.reload",
+          "lineNumber": 63
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "vitest.config.mts",
+      "language": "mts",
+      "fileCategory": "code",
+      "totalLines": 50,
+      "nonEmptyLines": 49,
+      "metrics": {}
+    },
+    {
+      "path": "website/.vitepress/config.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 225,
+      "nonEmptyLines": 214,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "website/.vitepress/theme/custom.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 178,
+      "nonEmptyLines": 144,
+      "metrics": {}
+    },
+    {
+      "path": "website/.vitepress/theme/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 4,
+      "nonEmptyLines": 3,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "website/index.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 198,
+      "nonEmptyLines": 156,
+      "sections": [
+        {
+          "heading": "How It Compares",
+          "level": 2,
+          "line": 122
+        },
+        {
+          "heading": "Quick Install",
+          "level": 2,
+          "line": 133
+        },
+        {
+          "heading": "Frequently Asked Questions",
+          "level": 2,
+          "line": 148
+        },
+        {
+          "heading": "What is Open Cowork?",
+          "level": 3,
+          "line": 152
+        },
+        {
+          "heading": "What AI models are supported?",
+          "level": 3,
+          "line": 160
+        },
+        {
+          "heading": "Is it free?",
+          "level": 3,
+          "line": 168
+        },
+        {
+          "heading": "How does sandbox isolation work?",
+          "level": 3,
+          "line": 176
+        },
+        {
+          "heading": "Is my data safe?",
+          "level": 3,
+          "line": 184
+        },
+        {
+          "heading": "Does it work on Linux?",
+          "level": 3,
+          "line": 192
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": "website/package.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 13,
+      "nonEmptyLines": 13,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "private",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "type",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "scripts",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "devDependencies",
+          "level": 1,
+          "line": 10
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": "website/postcss.config.cjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

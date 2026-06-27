@@ -1,0 +1,500 @@
+{
+  "nodes": [
+    {
+      "id": "file:scripts/build-windows-artifacts.js",
+      "type": "file",
+      "name": "build-windows-artifacts.js",
+      "filePath": "scripts/build-windows-artifacts.js",
+      "summary": "源码模块 scripts/build-windows-artifacts.js，包含 2 个函数，约 28 行有效代码。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/build-windows-artifacts.js:writeLegacyCleanupArtifacts",
+      "type": "function",
+      "name": "writeLegacyCleanupArtifacts",
+      "filePath": "scripts/build-windows-artifacts.js",
+      "summary": "函数 writeLegacyCleanupArtifacts，位于 scripts/build-windows-artifacts.js 第 19-28 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "file:scripts/build-windows.js",
+      "type": "file",
+      "name": "build-windows.js",
+      "filePath": "scripts/build-windows.js",
+      "summary": "源码模块 scripts/build-windows.js，包含 7 个函数，约 169 行有效代码。",
+      "tags": ["utility"],
+      "complexity": "moderate",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/build-windows.js:resolveNpmInvocation",
+      "type": "function",
+      "name": "resolveNpmInvocation",
+      "filePath": "scripts/build-windows.js",
+      "summary": "函数 resolveNpmInvocation，位于 scripts/build-windows.js 第 31-52 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/build-windows.js:isValidZipArchive",
+      "type": "function",
+      "name": "isValidZipArchive",
+      "filePath": "scripts/build-windows.js",
+      "summary": "函数 isValidZipArchive，位于 scripts/build-windows.js 第 68-90 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/build-windows.js:cleanInvalidElectronCache",
+      "type": "function",
+      "name": "cleanInvalidElectronCache",
+      "filePath": "scripts/build-windows.js",
+      "summary": "函数 cleanInvalidElectronCache，位于 scripts/build-windows.js 第 92-110 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "javascript"
+    },
+    {
+      "id": "function:scripts/build-windows.js:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scripts/build-windows.js",
+      "summary": "函数 main，位于 scripts/build-windows.js 第 112-193 行。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "javascript"
+    },
+    {
+      "id": "file:tests/build-windows-artifacts.test.ts",
+      "type": "file",
+      "name": "build-windows-artifacts.test.ts",
+      "filePath": "tests/build-windows-artifacts.test.ts",
+      "summary": "源码模块 tests/build-windows-artifacts.test.ts，体量 28 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:scripts/build-windows-artifacts.js",
+      "target": "function:scripts/build-windows-artifacts.js:writeLegacyCleanupArtifacts",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:scripts/build-windows-artifacts.js:writeLegacyCleanupArtifacts",
+      "target": "function:scripts/build-windows-artifacts.js:ensureDir",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows-artifacts.js:writeLegacyCleanupArtifacts",
+      "target": "function:scripts/build-windows-artifacts.js:LEGACY_CLEANUP_ARTIFACTS.map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows-artifacts.js:writeLegacyCleanupArtifacts",
+      "target": "function:scripts/build-windows-artifacts.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows-artifacts.js:writeLegacyCleanupArtifacts",
+      "target": "function:scripts/build-windows-artifacts.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows-artifacts.js:writeLegacyCleanupArtifacts",
+      "target": "function:scripts/build-windows-artifacts.js:fs.copyFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/build-windows.js",
+      "target": "file:scripts/build-windows-artifacts.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/build-windows.js",
+      "target": "function:scripts/build-windows.js:resolveNpmInvocation",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/build-windows.js",
+      "target": "function:scripts/build-windows.js:isValidZipArchive",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/build-windows.js",
+      "target": "function:scripts/build-windows.js:cleanInvalidElectronCache",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/build-windows.js",
+      "target": "function:scripts/build-windows.js:main",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:scripts/build-windows.js:resolveNpmInvocation",
+      "target": "function:scripts/build-windows.js:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:resolveNpmInvocation",
+      "target": "function:scripts/build-windows.js:/\\.cmd$/i.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:resolveNpmInvocation",
+      "target": "function:scripts/build-windows.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:resolveNpmInvocation",
+      "target": "function:scripts/build-windows.js:path.dirname",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:resolveNpmInvocation",
+      "target": "function:scripts/build-windows.js:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:isValidZipArchive",
+      "target": "function:scripts/build-windows.js:[\n    '$ErrorActionPreference = \"Stop\"',\n    'Add-Type -AssemblyName System.IO.Compression.FileSystem',\n    `$zip = ${toPowerShellLiteral(zipPath)}`,\n    `$requiredEntry = ${toPowerShellLiteral(requiredEntry)}`,\n    '$archive = [System.IO.Compression.ZipFile]::OpenRead($zip)',\n    'try {',\n    '  if ($archive.Entries.Count -le 0) { exit 2 }',\n    '  $match = $archive.Entries | Where-Object { $_.FullName -eq $requiredEntry } | Select-Object -First 1',\n    '  if (-not $match) { exit 3 }',\n    '} finally {',\n    '  $archive.Dispose()',\n    '}',\n  ].join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:isValidZipArchive",
+      "target": "function:scripts/build-windows.js:toPowerShellLiteral",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:isValidZipArchive",
+      "target": "function:scripts/build-windows.js:toPowerShellLiteral",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:isValidZipArchive",
+      "target": "function:scripts/build-windows.js:spawnSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:cleanInvalidElectronCache",
+      "target": "function:scripts/build-windows.js:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:cleanInvalidElectronCache",
+      "target": "function:scripts/build-windows.js:fs.readdirSync(electronCacheDir)\n    .filter((name) => /^electron-v.+-win32-.+\\.zip$/i.test(name))\n    .map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:cleanInvalidElectronCache",
+      "target": "function:scripts/build-windows.js:fs.readdirSync(electronCacheDir)\n    .filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:cleanInvalidElectronCache",
+      "target": "function:scripts/build-windows.js:fs.readdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:cleanInvalidElectronCache",
+      "target": "function:scripts/build-windows.js:/^electron-v.+-win32-.+\\.zip$/i.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:cleanInvalidElectronCache",
+      "target": "function:scripts/build-windows.js:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:cleanInvalidElectronCache",
+      "target": "function:scripts/build-windows.js:isValidZipArchive",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:cleanInvalidElectronCache",
+      "target": "function:scripts/build-windows.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:cleanInvalidElectronCache",
+      "target": "function:scripts/build-windows.js:console.warn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:cleanInvalidElectronCache",
+      "target": "function:scripts/build-windows.js:fs.rmSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:console.warn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:process.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:Object.values(DIRS).forEach",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:Object.values",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:process.argv.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:resolveElectronBuilderBinariesMirror",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:cleanInvalidElectronCache",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:builderArgs.some",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:arg.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:builderArgs.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:builderArgs.some",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:arg.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:builderArgs.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:resolveNpmInvocation",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:spawn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:child.on",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:console.error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:process.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:writeLegacyCleanupArtifacts",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:copiedPaths.forEach",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:console.log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:console.error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:process.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:process.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:child.on",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:console.error",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:scripts/build-windows.js:main",
+      "target": "function:scripts/build-windows.js:process.exit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/build-windows-artifacts.test.ts",
+      "target": "file:scripts/build-windows-artifacts.js",
+      "type": "imports",
+      "weight": 0.7
+    }
+  ]
+}

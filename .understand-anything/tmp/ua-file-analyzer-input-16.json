@@ -1,0 +1,28 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": ".github/scripts/deepseek-common.mjs",
+      "language": "javascript",
+      "sizeLines": 482,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".github/scripts/deepseek-issue-response.mjs",
+      "language": "javascript",
+      "sizeLines": 94,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".github/scripts/deepseek-pr-review.mjs",
+      "language": "javascript",
+      "sizeLines": 193,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    ".github/scripts/deepseek-common.mjs": [],
+    ".github/scripts/deepseek-issue-response.mjs": [".github/scripts/deepseek-common.mjs"],
+    ".github/scripts/deepseek-pr-review.mjs": [".github/scripts/deepseek-common.mjs"]
+  }
+}

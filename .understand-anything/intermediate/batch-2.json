@@ -1,0 +1,4628 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/main/claude/claude-sdk-one-shot.ts",
+      "type": "file",
+      "name": "claude-sdk-one-shot.ts",
+      "filePath": "src/main/claude/claude-sdk-one-shot.ts",
+      "summary": "源码模块 src/main/claude/claude-sdk-one-shot.ts，包含 8 个函数，约 351 行有效代码。",
+      "tags": ["utility"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/claude/claude-sdk-one-shot.ts:resolveProbeApiKey",
+      "type": "function",
+      "name": "resolveProbeApiKey",
+      "filePath": "src/main/claude/claude-sdk-one-shot.ts",
+      "summary": "函数 resolveProbeApiKey，位于 src/main/claude/claude-sdk-one-shot.ts 第 45-104 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/claude/claude-sdk-one-shot.ts:buildProbeConfig",
+      "type": "function",
+      "name": "buildProbeConfig",
+      "filePath": "src/main/claude/claude-sdk-one-shot.ts",
+      "summary": "函数 buildProbeConfig，位于 src/main/claude/claude-sdk-one-shot.ts 第 106-137 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/claude/claude-sdk-one-shot.ts:mapPiAiError",
+      "type": "function",
+      "name": "mapPiAiError",
+      "filePath": "src/main/claude/claude-sdk-one-shot.ts",
+      "summary": "函数 mapPiAiError，位于 src/main/claude/claude-sdk-one-shot.ts 第 139-159 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "type": "function",
+      "name": "runPiAiOneShot",
+      "filePath": "src/main/claude/claude-sdk-one-shot.ts",
+      "summary": "函数 runPiAiOneShot，位于 src/main/claude/claude-sdk-one-shot.ts 第 164-291 行。",
+      "tags": ["module"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/claude/claude-sdk-one-shot.ts:probeWithClaudeSdk",
+      "type": "function",
+      "name": "probeWithClaudeSdk",
+      "filePath": "src/main/claude/claude-sdk-one-shot.ts",
+      "summary": "函数 probeWithClaudeSdk，位于 src/main/claude/claude-sdk-one-shot.ts 第 303-359 行。",
+      "tags": ["module"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/claude/claude-sdk-one-shot.ts:generateTitleWithClaudeSdk",
+      "type": "function",
+      "name": "generateTitleWithClaudeSdk",
+      "filePath": "src/main/claude/claude-sdk-one-shot.ts",
+      "summary": "函数 generateTitleWithClaudeSdk，位于 src/main/claude/claude-sdk-one-shot.ts 第 361-380 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/claude/shared-auth.ts",
+      "type": "file",
+      "name": "shared-auth.ts",
+      "filePath": "src/main/claude/shared-auth.ts",
+      "summary": "源码模块 src/main/claude/shared-auth.ts，包含 1 个函数，约 11 行有效代码。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/claude/shared-auth.ts:getSharedAuthStorage",
+      "type": "function",
+      "name": "getSharedAuthStorage",
+      "filePath": "src/main/claude/shared-auth.ts",
+      "summary": "函数 getSharedAuthStorage，位于 src/main/claude/shared-auth.ts 第 7-12 行。",
+      "tags": ["module"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/config/config-store.ts",
+      "type": "file",
+      "name": "config-store.ts",
+      "filePath": "src/main/config/config-store.ts",
+      "summary": "TypeScript/JavaScript 模块 src/main/config/config-store.ts，导出 1 个类与 15 个函数，是应用逻辑的一部分。",
+      "tags": ["state-management", "configuration", "utility"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/config/config-store.ts:getPiAiModelPresets",
+      "type": "function",
+      "name": "getPiAiModelPresets",
+      "filePath": "src/main/config/config-store.ts",
+      "summary": "函数 getPiAiModelPresets，位于 src/main/config/config-store.ts 第 311-350 行。",
+      "tags": ["state-management", "configuration"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/config/config-store.ts:isProviderType",
+      "type": "function",
+      "name": "isProviderType",
+      "filePath": "src/main/config/config-store.ts",
+      "summary": "函数 isProviderType，位于 src/main/config/config-store.ts 第 364-373 行。",
+      "tags": ["state-management", "configuration"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/config/config-store.ts:normalizeMemoryModelRuntimeConfig",
+      "type": "function",
+      "name": "normalizeMemoryModelRuntimeConfig",
+      "filePath": "src/main/config/config-store.ts",
+      "summary": "函数 normalizeMemoryModelRuntimeConfig，位于 src/main/config/config-store.ts 第 391-410 行。",
+      "tags": ["state-management", "configuration"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/config/config-store.ts:normalizeMemoryRuntimeConfig",
+      "type": "function",
+      "name": "normalizeMemoryRuntimeConfig",
+      "filePath": "src/main/config/config-store.ts",
+      "summary": "函数 normalizeMemoryRuntimeConfig，位于 src/main/config/config-store.ts 第 412-452 行。",
+      "tags": ["state-management", "configuration"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/config/config-store.ts:profileKeyFromProvider",
+      "type": "function",
+      "name": "profileKeyFromProvider",
+      "filePath": "src/main/config/config-store.ts",
+      "summary": "函数 profileKeyFromProvider，位于 src/main/config/config-store.ts 第 454-468 行。",
+      "tags": ["state-management", "configuration"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/config/config-store.ts:profileKeyToProvider",
+      "type": "function",
+      "name": "profileKeyToProvider",
+      "filePath": "src/main/config/config-store.ts",
+      "summary": "函数 profileKeyToProvider，位于 src/main/config/config-store.ts 第 470-493 行。",
+      "tags": ["state-management", "configuration"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/main/config/config-store.ts:ConfigStore",
+      "type": "class",
+      "name": "ConfigStore",
+      "filePath": "src/main/config/config-store.ts",
+      "summary": "类 ConfigStore，含 36 个方法，位于 src/main/config/config-store.ts。",
+      "tags": ["state-management", "configuration", "type-definition"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/config/config-test-routing.ts",
+      "type": "file",
+      "name": "config-test-routing.ts",
+      "filePath": "src/main/config/config-test-routing.ts",
+      "summary": "源码模块 src/main/config/config-test-routing.ts，包含 1 个函数，约 9 行有效代码。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/config/config-test-routing.ts:runConfigApiTest",
+      "type": "function",
+      "name": "runConfigApiTest",
+      "filePath": "src/main/config/config-test-routing.ts",
+      "summary": "函数 runConfigApiTest，位于 src/main/config/config-test-routing.ts 第 5-10 行。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/memory/core-memory-extractor.ts",
+      "type": "file",
+      "name": "core-memory-extractor.ts",
+      "filePath": "src/main/memory/core-memory-extractor.ts",
+      "summary": "TypeScript/JavaScript 模块 src/main/memory/core-memory-extractor.ts，导出 1 个类与 0 个函数，是应用逻辑的一部分。",
+      "tags": ["service"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/main/memory/core-memory-extractor.ts:CoreMemoryExtractor",
+      "type": "class",
+      "name": "CoreMemoryExtractor",
+      "filePath": "src/main/memory/core-memory-extractor.ts",
+      "summary": "类 CoreMemoryExtractor，含 2 个方法，位于 src/main/memory/core-memory-extractor.ts。",
+      "tags": ["service", "type-definition"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/memory/core-memory-store.ts",
+      "type": "file",
+      "name": "core-memory-store.ts",
+      "filePath": "src/main/memory/core-memory-store.ts",
+      "summary": "TypeScript/JavaScript 模块 src/main/memory/core-memory-store.ts，导出 1 个类与 0 个函数，是应用逻辑的一部分。",
+      "tags": ["service", "state-management"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/main/memory/core-memory-store.ts:CoreMemoryStore",
+      "type": "class",
+      "name": "CoreMemoryStore",
+      "filePath": "src/main/memory/core-memory-store.ts",
+      "summary": "类 CoreMemoryStore，含 8 个方法，位于 src/main/memory/core-memory-store.ts。",
+      "tags": ["service", "state-management", "type-definition"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/memory/experience-memory-extractor.ts",
+      "type": "file",
+      "name": "experience-memory-extractor.ts",
+      "filePath": "src/main/memory/experience-memory-extractor.ts",
+      "summary": "TypeScript/JavaScript 模块 src/main/memory/experience-memory-extractor.ts，导出 1 个类与 0 个函数，是应用逻辑的一部分。",
+      "tags": ["service"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/main/memory/experience-memory-extractor.ts:ExperienceMemoryExtractor",
+      "type": "class",
+      "name": "ExperienceMemoryExtractor",
+      "filePath": "src/main/memory/experience-memory-extractor.ts",
+      "summary": "类 ExperienceMemoryExtractor，含 2 个方法，位于 src/main/memory/experience-memory-extractor.ts。",
+      "tags": ["service", "type-definition"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/memory/experience-memory-store.ts",
+      "type": "file",
+      "name": "experience-memory-store.ts",
+      "filePath": "src/main/memory/experience-memory-store.ts",
+      "summary": "TypeScript/JavaScript 模块 src/main/memory/experience-memory-store.ts，导出 1 个类与 9 个函数，是应用逻辑的一部分。",
+      "tags": ["service", "state-management", "utility"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/experience-memory-store.ts:normalizeChunk",
+      "type": "function",
+      "name": "normalizeChunk",
+      "filePath": "src/main/memory/experience-memory-store.ts",
+      "summary": "函数 normalizeChunk，位于 src/main/memory/experience-memory-store.ts 第 38-72 行。",
+      "tags": ["service", "state-management"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/experience-memory-store.ts:normalizeSession",
+      "type": "function",
+      "name": "normalizeSession",
+      "filePath": "src/main/memory/experience-memory-store.ts",
+      "summary": "函数 normalizeSession，位于 src/main/memory/experience-memory-store.ts 第 74-127 行。",
+      "tags": ["service", "state-management"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/experience-memory-store.ts:chunkToFileRecord",
+      "type": "function",
+      "name": "chunkToFileRecord",
+      "filePath": "src/main/memory/experience-memory-store.ts",
+      "summary": "函数 chunkToFileRecord，位于 src/main/memory/experience-memory-store.ts 第 129-148 行。",
+      "tags": ["service", "state-management"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/experience-memory-store.ts:sessionToFileRecord",
+      "type": "function",
+      "name": "sessionToFileRecord",
+      "filePath": "src/main/memory/experience-memory-store.ts",
+      "summary": "函数 sessionToFileRecord，位于 src/main/memory/experience-memory-store.ts 第 150-168 行。",
+      "tags": ["service", "state-management"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/experience-memory-store.ts:workspaceBoost",
+      "type": "function",
+      "name": "workspaceBoost",
+      "filePath": "src/main/memory/experience-memory-store.ts",
+      "summary": "函数 workspaceBoost，位于 src/main/memory/experience-memory-store.ts 第 170-181 行。",
+      "tags": ["service", "state-management"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/experience-memory-store.ts:recencyBoost",
+      "type": "function",
+      "name": "recencyBoost",
+      "filePath": "src/main/memory/experience-memory-store.ts",
+      "summary": "函数 recencyBoost，位于 src/main/memory/experience-memory-store.ts 第 183-199 行。",
+      "tags": ["service", "state-management"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/main/memory/experience-memory-store.ts:ExperienceMemoryStore",
+      "type": "class",
+      "name": "ExperienceMemoryStore",
+      "filePath": "src/main/memory/experience-memory-store.ts",
+      "summary": "类 ExperienceMemoryStore，含 13 个方法，位于 src/main/memory/experience-memory-store.ts。",
+      "tags": ["service", "state-management", "type-definition"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/memory/memory-eval-harness.ts",
+      "type": "file",
+      "name": "memory-eval-harness.ts",
+      "filePath": "src/main/memory/memory-eval-harness.ts",
+      "summary": "TypeScript/JavaScript 模块 src/main/memory/memory-eval-harness.ts，导出 1 个类与 2 个函数，是应用逻辑的一部分。",
+      "tags": ["service"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-eval-harness.ts:scorePromptPrefix",
+      "type": "function",
+      "name": "scorePromptPrefix",
+      "filePath": "src/main/memory/memory-eval-harness.ts",
+      "summary": "函数 scorePromptPrefix，位于 src/main/memory/memory-eval-harness.ts 第 135-160 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/main/memory/memory-eval-harness.ts:MemoryEvalHarness",
+      "type": "class",
+      "name": "MemoryEvalHarness",
+      "filePath": "src/main/memory/memory-eval-harness.ts",
+      "summary": "类 MemoryEvalHarness，含 3 个方法，位于 src/main/memory/memory-eval-harness.ts。",
+      "tags": ["service", "type-definition"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/memory/memory-ingestion-queue.ts",
+      "type": "file",
+      "name": "memory-ingestion-queue.ts",
+      "filePath": "src/main/memory/memory-ingestion-queue.ts",
+      "summary": "TypeScript/JavaScript 模块 src/main/memory/memory-ingestion-queue.ts，导出 1 个类与 0 个函数，是应用逻辑的一部分。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/memory/memory-llm-client.ts",
+      "type": "file",
+      "name": "memory-llm-client.ts",
+      "filePath": "src/main/memory/memory-llm-client.ts",
+      "summary": "TypeScript/JavaScript 模块 src/main/memory/memory-llm-client.ts，导出 1 个类与 2 个函数，是应用逻辑的一部分。",
+      "tags": ["service"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-llm-client.ts:normalizeModelConfig",
+      "type": "function",
+      "name": "normalizeModelConfig",
+      "filePath": "src/main/memory/memory-llm-client.ts",
+      "summary": "函数 normalizeModelConfig，位于 src/main/memory/memory-llm-client.ts 第 47-74 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-llm-client.ts:buildAppConfig",
+      "type": "function",
+      "name": "buildAppConfig",
+      "filePath": "src/main/memory/memory-llm-client.ts",
+      "summary": "函数 buildAppConfig，位于 src/main/memory/memory-llm-client.ts 第 76-85 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/main/memory/memory-llm-client.ts:MemoryLLMClient",
+      "type": "class",
+      "name": "MemoryLLMClient",
+      "filePath": "src/main/memory/memory-llm-client.ts",
+      "summary": "类 MemoryLLMClient，含 3 个方法，位于 src/main/memory/memory-llm-client.ts。",
+      "tags": ["service", "type-definition"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/memory/memory-navigator.ts",
+      "type": "file",
+      "name": "memory-navigator.ts",
+      "filePath": "src/main/memory/memory-navigator.ts",
+      "summary": "TypeScript/JavaScript 模块 src/main/memory/memory-navigator.ts，导出 1 个类与 0 个函数，是应用逻辑的一部分。",
+      "tags": ["service"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/main/memory/memory-navigator.ts:MemoryNavigator",
+      "type": "class",
+      "name": "MemoryNavigator",
+      "filePath": "src/main/memory/memory-navigator.ts",
+      "summary": "类 MemoryNavigator，含 2 个方法，位于 src/main/memory/memory-navigator.ts。",
+      "tags": ["service", "type-definition"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/memory/memory-prompt-optimizer.ts",
+      "type": "file",
+      "name": "memory-prompt-optimizer.ts",
+      "filePath": "src/main/memory/memory-prompt-optimizer.ts",
+      "summary": "TypeScript/JavaScript 模块 src/main/memory/memory-prompt-optimizer.ts，导出 1 个类与 0 个函数，是应用逻辑的一部分。",
+      "tags": ["service"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/main/memory/memory-prompt-optimizer.ts:MemoryPromptOptimizer",
+      "type": "class",
+      "name": "MemoryPromptOptimizer",
+      "filePath": "src/main/memory/memory-prompt-optimizer.ts",
+      "summary": "类 MemoryPromptOptimizer，含 3 个方法，位于 src/main/memory/memory-prompt-optimizer.ts。",
+      "tags": ["service", "type-definition"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/memory/memory-prompts.ts",
+      "type": "file",
+      "name": "memory-prompts.ts",
+      "filePath": "src/main/memory/memory-prompts.ts",
+      "summary": "源码模块 src/main/memory/memory-prompts.ts，体量 140 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["service"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/memory/memory-retriever.ts",
+      "type": "file",
+      "name": "memory-retriever.ts",
+      "filePath": "src/main/memory/memory-retriever.ts",
+      "summary": "TypeScript/JavaScript 模块 src/main/memory/memory-retriever.ts，导出 1 个类与 2 个函数，是应用逻辑的一部分。",
+      "tags": ["service"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-retriever.ts:parseSearchId",
+      "type": "function",
+      "name": "parseSearchId",
+      "filePath": "src/main/memory/memory-retriever.ts",
+      "summary": "函数 parseSearchId，位于 src/main/memory/memory-retriever.ts 第 15-24 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/main/memory/memory-retriever.ts:MemoryRetriever",
+      "type": "class",
+      "name": "MemoryRetriever",
+      "filePath": "src/main/memory/memory-retriever.ts",
+      "summary": "类 MemoryRetriever，含 7 个方法，位于 src/main/memory/memory-retriever.ts。",
+      "tags": ["service", "type-definition"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/memory/memory-service.ts",
+      "type": "file",
+      "name": "memory-service.ts",
+      "filePath": "src/main/memory/memory-service.ts",
+      "summary": "TypeScript/JavaScript 模块 src/main/memory/memory-service.ts，导出 1 个类与 4 个函数，是应用逻辑的一部分。",
+      "tags": ["service"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-service.ts:resolveMaterializedPath",
+      "type": "function",
+      "name": "resolveMaterializedPath",
+      "filePath": "src/main/memory/memory-service.ts",
+      "summary": "函数 resolveMaterializedPath，位于 src/main/memory/memory-service.ts 第 86-108 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-service.ts:assertSafeMemoryPaths",
+      "type": "function",
+      "name": "assertSafeMemoryPaths",
+      "filePath": "src/main/memory/memory-service.ts",
+      "summary": "函数 assertSafeMemoryPaths，位于 src/main/memory/memory-service.ts 第 110-136 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/main/memory/memory-service.ts:MemoryService",
+      "type": "class",
+      "name": "MemoryService",
+      "filePath": "src/main/memory/memory-service.ts",
+      "summary": "类 MemoryService，含 43 个方法，位于 src/main/memory/memory-service.ts。",
+      "tags": ["service", "type-definition"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/memory/memory-state-store.ts",
+      "type": "file",
+      "name": "memory-state-store.ts",
+      "filePath": "src/main/memory/memory-state-store.ts",
+      "summary": "TypeScript/JavaScript 模块 src/main/memory/memory-state-store.ts，导出 1 个类与 0 个函数，是应用逻辑的一部分。",
+      "tags": ["service", "state-management"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/main/memory/memory-state-store.ts:MemorySessionStateStore",
+      "type": "class",
+      "name": "MemorySessionStateStore",
+      "filePath": "src/main/memory/memory-state-store.ts",
+      "summary": "类 MemorySessionStateStore，含 9 个方法，位于 src/main/memory/memory-state-store.ts。",
+      "tags": ["service", "state-management", "type-definition"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/memory/memory-tools.ts",
+      "type": "file",
+      "name": "memory-tools.ts",
+      "filePath": "src/main/memory/memory-tools.ts",
+      "summary": "源码模块 src/main/memory/memory-tools.ts，包含 3 个函数，约 122 行有效代码。",
+      "tags": ["service"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-tools.ts:formatSearchResult",
+      "type": "function",
+      "name": "formatSearchResult",
+      "filePath": "src/main/memory/memory-tools.ts",
+      "summary": "函数 formatSearchResult，位于 src/main/memory/memory-tools.ts 第 5-22 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-tools.ts:formatReadResult",
+      "type": "function",
+      "name": "formatReadResult",
+      "filePath": "src/main/memory/memory-tools.ts",
+      "summary": "函数 formatReadResult，位于 src/main/memory/memory-tools.ts 第 24-53 行。",
+      "tags": ["service"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-tools.ts:createMemoryTools",
+      "type": "function",
+      "name": "createMemoryTools",
+      "filePath": "src/main/memory/memory-tools.ts",
+      "summary": "函数 createMemoryTools，位于 src/main/memory/memory-tools.ts 第 55-128 行。",
+      "tags": ["service"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/memory/memory-types.ts",
+      "type": "file",
+      "name": "memory-types.ts",
+      "filePath": "src/main/memory/memory-types.ts",
+      "summary": "源码模块 src/main/memory/memory-types.ts，体量 230 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["service"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/main/memory/memory-utils.ts",
+      "type": "file",
+      "name": "memory-utils.ts",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "源码模块 src/main/memory/memory-utils.ts，包含 27 个函数，约 352 行有效代码。",
+      "tags": ["service", "utility"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-utils.ts:normalizeWorkspaceKey",
+      "type": "function",
+      "name": "normalizeWorkspaceKey",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "函数 normalizeWorkspaceKey，位于 src/main/memory/memory-utils.ts 第 70-79 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-utils.ts:hashWorkspaceKey",
+      "type": "function",
+      "name": "hashWorkspaceKey",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "函数 hashWorkspaceKey，位于 src/main/memory/memory-utils.ts 第 81-83 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-utils.ts:ensureParentDir",
+      "type": "function",
+      "name": "ensureParentDir",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "函数 ensureParentDir，位于 src/main/memory/memory-utils.ts 第 85-87 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-utils.ts:loadJsonFile",
+      "type": "function",
+      "name": "loadJsonFile",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "函数 loadJsonFile，位于 src/main/memory/memory-utils.ts 第 89-102 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-utils.ts:saveJsonFile",
+      "type": "function",
+      "name": "saveJsonFile",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "函数 saveJsonFile，位于 src/main/memory/memory-utils.ts 第 104-109 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-utils.ts:safeRemoveFile",
+      "type": "function",
+      "name": "safeRemoveFile",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "函数 safeRemoveFile，位于 src/main/memory/memory-utils.ts 第 111-115 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-utils.ts:formatTimestamp",
+      "type": "function",
+      "name": "formatTimestamp",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "函数 formatTimestamp，位于 src/main/memory/memory-utils.ts 第 117-119 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-utils.ts:isoNow",
+      "type": "function",
+      "name": "isoNow",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "函数 isoNow，位于 src/main/memory/memory-utils.ts 第 121-123 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-utils.ts:extractJson",
+      "type": "function",
+      "name": "extractJson",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "函数 extractJson，位于 src/main/memory/memory-utils.ts 第 125-146 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-utils.ts:extractTextFromContent",
+      "type": "function",
+      "name": "extractTextFromContent",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "函数 extractTextFromContent，位于 src/main/memory/memory-utils.ts 第 148-171 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-utils.ts:messagesToTranscript",
+      "type": "function",
+      "name": "messagesToTranscript",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "函数 messagesToTranscript，位于 src/main/memory/memory-utils.ts 第 173-188 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-utils.ts:compactTranscript",
+      "type": "function",
+      "name": "compactTranscript",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "函数 compactTranscript，位于 src/main/memory/memory-utils.ts 第 190-192 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-utils.ts:summarizeText",
+      "type": "function",
+      "name": "summarizeText",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "函数 summarizeText，位于 src/main/memory/memory-utils.ts 第 194-203 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-utils.ts:tokenizeSearchQuery",
+      "type": "function",
+      "name": "tokenizeSearchQuery",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "函数 tokenizeSearchQuery，位于 src/main/memory/memory-utils.ts 第 205-207 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-utils.ts:simpleTokenize",
+      "type": "function",
+      "name": "simpleTokenize",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "函数 simpleTokenize，位于 src/main/memory/memory-utils.ts 第 209-213 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-utils.ts:lexicalScore",
+      "type": "function",
+      "name": "lexicalScore",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "函数 lexicalScore，位于 src/main/memory/memory-utils.ts 第 215-240 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-utils.ts:cosineSimilarity",
+      "type": "function",
+      "name": "cosineSimilarity",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "函数 cosineSimilarity，位于 src/main/memory/memory-utils.ts 第 242-258 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-utils.ts:extractKeywords",
+      "type": "function",
+      "name": "extractKeywords",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "函数 extractKeywords，位于 src/main/memory/memory-utils.ts 第 260-269 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-utils.ts:stripTrailingSlashes",
+      "type": "function",
+      "name": "stripTrailingSlashes",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "函数 stripTrailingSlashes，位于 src/main/memory/memory-utils.ts 第 271-273 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-utils.ts:resolveCoreCombinedKey",
+      "type": "function",
+      "name": "resolveCoreCombinedKey",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "函数 resolveCoreCombinedKey，位于 src/main/memory/memory-utils.ts 第 275-287 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-utils.ts:parseCoreCombinedKey",
+      "type": "function",
+      "name": "parseCoreCombinedKey",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "函数 parseCoreCombinedKey，位于 src/main/memory/memory-utils.ts 第 289-308 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-utils.ts:applyCoreMemoryActions",
+      "type": "function",
+      "name": "applyCoreMemoryActions",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "函数 applyCoreMemoryActions，位于 src/main/memory/memory-utils.ts 第 310-354 行。",
+      "tags": ["service"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-utils.ts:coreMemoryToPromptBlock",
+      "type": "function",
+      "name": "coreMemoryToPromptBlock",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "函数 coreMemoryToPromptBlock，位于 src/main/memory/memory-utils.ts 第 356-362 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-utils.ts:clampInt",
+      "type": "function",
+      "name": "clampInt",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "函数 clampInt，位于 src/main/memory/memory-utils.ts 第 364-366 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-utils.ts:getFileTimestampMs",
+      "type": "function",
+      "name": "getFileTimestampMs",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "函数 getFileTimestampMs，位于 src/main/memory/memory-utils.ts 第 368-374 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-utils.ts:getFileSizeBytes",
+      "type": "function",
+      "name": "getFileSizeBytes",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "函数 getFileSizeBytes，位于 src/main/memory/memory-utils.ts 第 376-382 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/main/memory/memory-utils.ts:isSubPath",
+      "type": "function",
+      "name": "isSubPath",
+      "filePath": "src/main/memory/memory-utils.ts",
+      "summary": "函数 isSubPath，位于 src/main/memory/memory-utils.ts 第 384-387 行。",
+      "tags": ["service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/tests/claude/claude-sdk-one-shot.test.ts",
+      "type": "file",
+      "name": "claude-sdk-one-shot.test.ts",
+      "filePath": "src/tests/claude/claude-sdk-one-shot.test.ts",
+      "summary": "源码模块 src/tests/claude/claude-sdk-one-shot.test.ts，包含 1 个函数，约 87 行有效代码。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/tests/claude/claude-sdk-one-shot.test.ts:makeConfig",
+      "type": "function",
+      "name": "makeConfig",
+      "filePath": "src/tests/claude/claude-sdk-one-shot.test.ts",
+      "summary": "函数 makeConfig，位于 src/tests/claude/claude-sdk-one-shot.test.ts 第 20-71 行。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/tests/memory/core-memory-store.test.ts",
+      "type": "file",
+      "name": "core-memory-store.test.ts",
+      "filePath": "src/tests/memory/core-memory-store.test.ts",
+      "summary": "源码模块 src/tests/memory/core-memory-store.test.ts，体量 29 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test", "service", "state-management"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/tests/memory/memory-eval-harness.test.ts",
+      "type": "file",
+      "name": "memory-eval-harness.test.ts",
+      "filePath": "src/tests/memory/memory-eval-harness.test.ts",
+      "summary": "TypeScript/JavaScript 模块 src/tests/memory/memory-eval-harness.test.ts，导出 1 个类与 2 个函数，是应用逻辑的一部分。",
+      "tags": ["test", "service"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/tests/memory/memory-eval-harness.test.ts:createSchema",
+      "type": "function",
+      "name": "createSchema",
+      "filePath": "src/tests/memory/memory-eval-harness.test.ts",
+      "summary": "函数 createSchema，位于 src/tests/memory/memory-eval-harness.test.ts 第 189-215 行。",
+      "tags": ["test", "service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "type": "function",
+      "name": "createDatabaseInstance",
+      "filePath": "src/tests/memory/memory-eval-harness.test.ts",
+      "summary": "函数 createDatabaseInstance，位于 src/tests/memory/memory-eval-harness.test.ts 第 217-264 行。",
+      "tags": ["test", "service"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/tests/memory/memory-eval-harness.test.ts:EvalMockLLM",
+      "type": "class",
+      "name": "EvalMockLLM",
+      "filePath": "src/tests/memory/memory-eval-harness.test.ts",
+      "summary": "类 EvalMockLLM，含 2 个方法，位于 src/tests/memory/memory-eval-harness.test.ts。",
+      "tags": ["test", "service", "type-definition"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/tests/memory/memory-llm-client.test.ts",
+      "type": "file",
+      "name": "memory-llm-client.test.ts",
+      "filePath": "src/tests/memory/memory-llm-client.test.ts",
+      "summary": "源码模块 src/tests/memory/memory-llm-client.test.ts，包含 1 个函数，约 92 行有效代码。",
+      "tags": ["test", "service"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/tests/memory/memory-llm-client.test.ts:makeConfig",
+      "type": "function",
+      "name": "makeConfig",
+      "filePath": "src/tests/memory/memory-llm-client.test.ts",
+      "summary": "函数 makeConfig，位于 src/tests/memory/memory-llm-client.test.ts 第 12-63 行。",
+      "tags": ["test", "service"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/tests/memory/memory-service.test.ts",
+      "type": "file",
+      "name": "memory-service.test.ts",
+      "filePath": "src/tests/memory/memory-service.test.ts",
+      "summary": "TypeScript/JavaScript 模块 src/tests/memory/memory-service.test.ts，导出 1 个类与 6 个函数，是应用逻辑的一部分。",
+      "tags": ["test", "service", "utility"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/tests/memory/memory-service.test.ts:createSchema",
+      "type": "function",
+      "name": "createSchema",
+      "filePath": "src/tests/memory/memory-service.test.ts",
+      "summary": "函数 createSchema，位于 src/tests/memory/memory-service.test.ts 第 177-204 行。",
+      "tags": ["test", "service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "type": "function",
+      "name": "createDatabaseInstance",
+      "filePath": "src/tests/memory/memory-service.test.ts",
+      "summary": "函数 createDatabaseInstance，位于 src/tests/memory/memory-service.test.ts 第 206-253 行。",
+      "tags": ["test", "service"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/tests/memory/memory-service.test.ts:insertSession",
+      "type": "function",
+      "name": "insertSession",
+      "filePath": "src/tests/memory/memory-service.test.ts",
+      "summary": "函数 insertSession，位于 src/tests/memory/memory-service.test.ts 第 255-274 行。",
+      "tags": ["test", "service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/tests/memory/memory-service.test.ts:insertMessage",
+      "type": "function",
+      "name": "insertMessage",
+      "filePath": "src/tests/memory/memory-service.test.ts",
+      "summary": "函数 insertMessage，位于 src/tests/memory/memory-service.test.ts 第 276-298 行。",
+      "tags": ["test", "service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/tests/memory/memory-service.test.ts:makeSession",
+      "type": "function",
+      "name": "makeSession",
+      "filePath": "src/tests/memory/memory-service.test.ts",
+      "summary": "函数 makeSession，位于 src/tests/memory/memory-service.test.ts 第 300-312 行。",
+      "tags": ["test", "service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/tests/memory/memory-service.test.ts:makeMessages",
+      "type": "function",
+      "name": "makeMessages",
+      "filePath": "src/tests/memory/memory-service.test.ts",
+      "summary": "函数 makeMessages，位于 src/tests/memory/memory-service.test.ts 第 314-325 行。",
+      "tags": ["test", "service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/tests/memory/memory-service.test.ts:MockMemoryLLMClient",
+      "type": "class",
+      "name": "MockMemoryLLMClient",
+      "filePath": "src/tests/memory/memory-service.test.ts",
+      "summary": "类 MockMemoryLLMClient，含 2 个方法，位于 src/tests/memory/memory-service.test.ts。",
+      "tags": ["test", "service", "type-definition"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/tests/memory/memory-smoke-harness.test.ts",
+      "type": "file",
+      "name": "memory-smoke-harness.test.ts",
+      "filePath": "src/tests/memory/memory-smoke-harness.test.ts",
+      "summary": "TypeScript/JavaScript 模块 src/tests/memory/memory-smoke-harness.test.ts，导出 1 个类与 3 个函数，是应用逻辑的一部分。",
+      "tags": ["test", "service"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/tests/memory/memory-smoke-harness.test.ts:createSchema",
+      "type": "function",
+      "name": "createSchema",
+      "filePath": "src/tests/memory/memory-smoke-harness.test.ts",
+      "summary": "函数 createSchema，位于 src/tests/memory/memory-smoke-harness.test.ts 第 145-171 行。",
+      "tags": ["test", "service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "type": "function",
+      "name": "createDatabaseInstance",
+      "filePath": "src/tests/memory/memory-smoke-harness.test.ts",
+      "summary": "函数 createDatabaseInstance，位于 src/tests/memory/memory-smoke-harness.test.ts 第 173-219 行。",
+      "tags": ["test", "service"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/tests/memory/memory-smoke-harness.test.ts:makeMessages",
+      "type": "function",
+      "name": "makeMessages",
+      "filePath": "src/tests/memory/memory-smoke-harness.test.ts",
+      "summary": "函数 makeMessages，位于 src/tests/memory/memory-smoke-harness.test.ts 第 221-232 行。",
+      "tags": ["test", "service"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "class:src/tests/memory/memory-smoke-harness.test.ts:SmokeMemoryLLM",
+      "type": "class",
+      "name": "SmokeMemoryLLM",
+      "filePath": "src/tests/memory/memory-smoke-harness.test.ts",
+      "summary": "类 SmokeMemoryLLM，含 2 个方法，位于 src/tests/memory/memory-smoke-harness.test.ts。",
+      "tags": ["test", "service", "type-definition"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/claude-sdk-one-shot.test.ts",
+      "type": "file",
+      "name": "claude-sdk-one-shot.test.ts",
+      "filePath": "tests/claude-sdk-one-shot.test.ts",
+      "summary": "源码模块 tests/claude-sdk-one-shot.test.ts，包含 1 个函数，约 484 行有效代码。",
+      "tags": ["test"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/claude-sdk-one-shot.test.ts:createConfig",
+      "type": "function",
+      "name": "createConfig",
+      "filePath": "tests/claude-sdk-one-shot.test.ts",
+      "summary": "函数 createConfig，位于 tests/claude-sdk-one-shot.test.ts 第 126-146 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/config-store-config-sets.test.ts",
+      "type": "file",
+      "name": "config-store-config-sets.test.ts",
+      "filePath": "tests/config-store-config-sets.test.ts",
+      "summary": "源码模块 tests/config-store-config-sets.test.ts，体量 175 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test", "state-management", "configuration"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/config-store-env.test.ts",
+      "type": "file",
+      "name": "config-store-env.test.ts",
+      "filePath": "tests/config-store-env.test.ts",
+      "summary": "源码模块 tests/config-store-env.test.ts，体量 155 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test", "state-management", "configuration"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/config-store-performance.test.ts",
+      "type": "file",
+      "name": "config-store-performance.test.ts",
+      "filePath": "tests/config-store-performance.test.ts",
+      "summary": "源码模块 tests/config-store-performance.test.ts，体量 75 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test", "state-management", "configuration"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/config-store-profiles.test.ts",
+      "type": "file",
+      "name": "config-store-profiles.test.ts",
+      "filePath": "tests/config-store-profiles.test.ts",
+      "summary": "源码模块 tests/config-store-profiles.test.ts，体量 238 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test", "state-management", "configuration"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/config-test-routing.test.ts",
+      "type": "file",
+      "name": "config-test-routing.test.ts",
+      "filePath": "tests/config-test-routing.test.ts",
+      "summary": "源码模块 tests/config-test-routing.test.ts，包含 1 个函数，约 149 行有效代码。",
+      "tags": ["test", "configuration"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/config-test-routing.test.ts:createConfig",
+      "type": "function",
+      "name": "createConfig",
+      "filePath": "tests/config-test-routing.test.ts",
+      "summary": "函数 createConfig，位于 tests/config-test-routing.test.ts 第 15-34 行。",
+      "tags": ["test", "configuration"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/session-manager-title-unified.test.ts",
+      "type": "file",
+      "name": "session-manager-title-unified.test.ts",
+      "filePath": "tests/session-manager-title-unified.test.ts",
+      "summary": "源码模块 tests/session-manager-title-unified.test.ts，体量 125 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/main/claude/claude-sdk-one-shot.ts",
+      "target": "file:src/main/claude/pi-model-resolution.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/claude/claude-sdk-one-shot.ts",
+      "target": "file:src/main/claude/shared-auth.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/claude/claude-sdk-one-shot.ts",
+      "target": "file:src/main/config/auth-utils.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/claude/claude-sdk-one-shot.ts",
+      "target": "file:src/main/config/config-store.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/claude/claude-sdk-one-shot.ts",
+      "target": "file:src/main/session/session-title-utils.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/claude/claude-sdk-one-shot.ts",
+      "target": "file:src/main/utils/logger.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/claude/claude-sdk-one-shot.ts",
+      "target": "file:src/renderer/types/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/claude/claude-sdk-one-shot.ts",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:resolveProbeApiKey",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/claude/claude-sdk-one-shot.ts",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:buildProbeConfig",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/claude/claude-sdk-one-shot.ts",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:mapPiAiError",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/claude/claude-sdk-one-shot.ts",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/claude/claude-sdk-one-shot.ts",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:probeWithClaudeSdk",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/claude/claude-sdk-one-shot.ts",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:generateTitleWithClaudeSdk",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:resolveProbeApiKey",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:config.apiKey?.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:resolveProbeApiKey",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:resolveOllamaCredentials",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:resolveProbeApiKey",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:resolveOpenAICredentials",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:resolveProbeApiKey",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:shouldAllowEmptyAnthropicApiKey",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:resolveProbeApiKey",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:shouldAllowEmptyGeminiApiKey",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:buildProbeConfig",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:resolveProbeBaseUrl",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:buildProbeConfig",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:input.apiKey.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:buildProbeConfig",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:resolvePiRouteProtocol",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:buildProbeConfig",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:normalizeOllamaBaseUrl",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:buildProbeConfig",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:normalizeOpenAICompatibleBaseUrl",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:buildProbeConfig",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:normalizeAnthropicBaseUrl",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:buildProbeConfig",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:resolveProbeApiKey",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:buildProbeConfig",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:input.model.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:mapPiAiError",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:errorText.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:mapPiAiError",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:details.toLowerCase",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:mapPiAiError",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:AUTH_ERROR_RE.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:mapPiAiError",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:RATE_LIMIT_RE.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:mapPiAiError",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:SERVER_ERROR_RE.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:mapPiAiError",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:/econnrefused/i.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:mapPiAiError",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:NETWORK_ERROR_RE.test",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:resolvePiModelString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:modelString.split",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:resolvePiRouteProtocol",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:config.baseUrl?.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:normalizeOpenAICompatibleBaseUrl",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:resolvePiRegistryModel",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:resolvePiRouteProtocol",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:inferPiApi",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:resolveSyntheticPiModelFallback",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:buildSyntheticPiModel",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:applyPiModelRuntimeOverrides",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:logWarn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:config.apiKey?.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:getSharedAuthStorage",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:authStorage.setRuntimeApiKey",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:authStorage.setRuntimeApiKey",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:Date.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:Date.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:completeSimple",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:logWarn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:response.content.filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:response.content.filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:textBlocks\n    .map((b) => (b as { text: string }).text)\n    .join('')\n    .trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:textBlocks\n    .map((b) => (b as { text: string }).text)\n    .join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:textBlocks\n    .map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:thinkingBlocks.some",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:(b as { thinking: string }).thinking?.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:text.substring",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:Date.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:probeWithClaudeSdk",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:buildProbeConfig",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:probeWithClaudeSdk",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:probeConfig.baseUrl?.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:probeWithClaudeSdk",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:probeConfig.model?.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:probeWithClaudeSdk",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:probeConfig.apiKey?.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:probeWithClaudeSdk",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:Date.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:probeWithClaudeSdk",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:probeWithClaudeSdk",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:log",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:probeWithClaudeSdk",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:normalizeProbeAck(result.text).includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:probeWithClaudeSdk",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:normalizeProbeAck",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:probeWithClaudeSdk",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:result.text.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:probeWithClaudeSdk",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:String",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:probeWithClaudeSdk",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:Date.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:probeWithClaudeSdk",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:mapPiAiError",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:generateTitleWithClaudeSdk",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:runPiAiOneShot",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:generateTitleWithClaudeSdk",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:normalizeGeneratedTitle",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:generateTitleWithClaudeSdk",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:logWarn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/claude/claude-sdk-one-shot.ts:generateTitleWithClaudeSdk",
+      "target": "function:src/main/claude/claude-sdk-one-shot.ts:logWarn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/claude/shared-auth.ts",
+      "target": "function:src/main/claude/shared-auth.ts:getSharedAuthStorage",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/claude/shared-auth.ts:getSharedAuthStorage",
+      "target": "function:src/main/claude/shared-auth.ts:AuthStorage.create",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/config/config-store.ts",
+      "target": "file:src/main/config/auth-utils.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/config/config-store.ts",
+      "target": "file:src/main/utils/logger.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/config/config-store.ts",
+      "target": "file:src/main/utils/store-encryption.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/config/config-store.ts",
+      "target": "file:src/shared/api-model-presets.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/config/config-store.ts",
+      "target": "function:src/main/config/config-store.ts:getPiAiModelPresets",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/config/config-store.ts",
+      "target": "function:src/main/config/config-store.ts:isProviderType",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/config/config-store.ts",
+      "target": "function:src/main/config/config-store.ts:normalizeMemoryModelRuntimeConfig",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/config/config-store.ts",
+      "target": "function:src/main/config/config-store.ts:normalizeMemoryRuntimeConfig",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/config/config-store.ts",
+      "target": "function:src/main/config/config-store.ts:profileKeyFromProvider",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/config/config-store.ts",
+      "target": "function:src/main/config/config-store.ts:profileKeyToProvider",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/config/config-store.ts",
+      "target": "class:src/main/config/config-store.ts:ConfigStore",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:getPiAiModelPresets",
+      "target": "function:src/main/config/config-store.ts:import",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:getPiAiModelPresets",
+      "target": "function:src/main/config/config-store.ts:Object.entries",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:getPiAiModelPresets",
+      "target": "function:src/main/config/config-store.ts:getModels",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:getPiAiModelPresets",
+      "target": "function:src/main/config/config-store.ts:registryModels.map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:getPiAiModelPresets",
+      "target": "function:src/main/config/config-store.ts:curated.pick\n        .filter((id) => registryIds.has(id))\n        .map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:getPiAiModelPresets",
+      "target": "function:src/main/config/config-store.ts:curated.pick\n        .filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:getPiAiModelPresets",
+      "target": "function:src/main/config/config-store.ts:registryIds.has",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:getPiAiModelPresets",
+      "target": "function:src/main/config/config-store.ts:registryModels.find",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:getPiAiModelPresets",
+      "target": "function:src/main/config/config-store.ts:logWarn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryModelRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:isMemoryModelRuntimeConfig",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryModelRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:toBoolean",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryModelRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:isProviderType",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryModelRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:isCustomProtocol",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryModelRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:Number.isFinite",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryModelRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:Math.max",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryModelRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:Math.round",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:normalizeMemoryModelRuntimeConfig",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:normalizeMemoryModelRuntimeConfig",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:toBoolean",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:Number.isFinite",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:Math.max",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:Math.min",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:Math.round",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:Number.isFinite",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:Math.max",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:Math.min",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:Math.round",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:toBoolean",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:Array.isArray",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:value.evalWorkspaces.filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:Number.isFinite",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:Math.max",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:Math.min",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:Math.round",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:Number.isFinite",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:Math.max",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:Math.min",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/config/config-store.ts:normalizeMemoryRuntimeConfig",
+      "target": "function:src/main/config/config-store.ts:Math.round",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/config/config-test-routing.ts",
+      "target": "file:src/main/claude/claude-sdk-one-shot.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/config/config-test-routing.ts",
+      "target": "file:src/main/config/config-store.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/config/config-test-routing.ts",
+      "target": "file:src/renderer/types/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/config/config-test-routing.ts",
+      "target": "function:src/main/config/config-test-routing.ts:runConfigApiTest",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/config/config-test-routing.ts:runConfigApiTest",
+      "target": "function:src/main/config/config-test-routing.ts:probeWithClaudeSdk",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/memory/core-memory-extractor.ts",
+      "target": "file:src/main/memory/memory-llm-client.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/core-memory-extractor.ts",
+      "target": "file:src/main/memory/memory-prompts.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/core-memory-extractor.ts",
+      "target": "file:src/main/memory/memory-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/core-memory-extractor.ts",
+      "target": "file:src/main/memory/memory-utils.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/core-memory-extractor.ts",
+      "target": "class:src/main/memory/core-memory-extractor.ts:CoreMemoryExtractor",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/core-memory-store.ts",
+      "target": "file:src/main/memory/memory-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/core-memory-store.ts",
+      "target": "file:src/main/memory/memory-utils.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/core-memory-store.ts",
+      "target": "class:src/main/memory/core-memory-store.ts:CoreMemoryStore",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/experience-memory-extractor.ts",
+      "target": "file:src/main/memory/memory-llm-client.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/experience-memory-extractor.ts",
+      "target": "file:src/main/memory/memory-prompts.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/experience-memory-extractor.ts",
+      "target": "file:src/main/memory/memory-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/experience-memory-extractor.ts",
+      "target": "file:src/main/memory/memory-utils.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/experience-memory-extractor.ts",
+      "target": "class:src/main/memory/experience-memory-extractor.ts:ExperienceMemoryExtractor",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/experience-memory-store.ts",
+      "target": "file:src/main/memory/memory-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/experience-memory-store.ts",
+      "target": "file:src/main/memory/memory-utils.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/experience-memory-store.ts",
+      "target": "function:src/main/memory/experience-memory-store.ts:normalizeChunk",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/experience-memory-store.ts",
+      "target": "function:src/main/memory/experience-memory-store.ts:normalizeSession",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/experience-memory-store.ts",
+      "target": "function:src/main/memory/experience-memory-store.ts:chunkToFileRecord",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/experience-memory-store.ts",
+      "target": "function:src/main/memory/experience-memory-store.ts:sessionToFileRecord",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/experience-memory-store.ts",
+      "target": "function:src/main/memory/experience-memory-store.ts:workspaceBoost",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/experience-memory-store.ts",
+      "target": "function:src/main/memory/experience-memory-store.ts:recencyBoost",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/experience-memory-store.ts",
+      "target": "class:src/main/memory/experience-memory-store.ts:ExperienceMemoryStore",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/memory/experience-memory-store.ts:normalizeChunk",
+      "target": "function:src/main/memory/experience-memory-store.ts:normalizeWorkspace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/experience-memory-store.ts:normalizeChunk",
+      "target": "function:src/main/memory/experience-memory-store.ts:toStringArray",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/experience-memory-store.ts:normalizeChunk",
+      "target": "function:src/main/memory/experience-memory-store.ts:Array.isArray",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/experience-memory-store.ts:normalizeChunk",
+      "target": "function:src/main/memory/experience-memory-store.ts:item.source_turns.filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/experience-memory-store.ts:normalizeChunk",
+      "target": "function:src/main/memory/experience-memory-store.ts:toNumberArray",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/experience-memory-store.ts:normalizeSession",
+      "target": "function:src/main/memory/experience-memory-store.ts:Array.isArray",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/experience-memory-store.ts:normalizeSession",
+      "target": "function:src/main/memory/experience-memory-store.ts:item.raw_session\n        .map((turn): MemoryTranscriptTurn | null => {\n          if (!turn || typeof turn !== 'object') {\n            return null;\n          }\n          const normalized: MemoryTranscriptTurn = {\n            role:\n              typeof (turn as { role?: unknown }).role === 'string'\n                ? (turn as { role: string }).role\n                : 'unknown',\n            content:\n              typeof (turn as { content?: unknown }).content === 'string'\n                ? (turn as { content: string }).content\n                : '',\n          };\n          if (typeof (turn as { messageId?: unknown }).messageId === 'string') {\n            normalized.messageId = (turn as { messageId: string }).messageId;\n          }\n          if (typeof (turn as { timestamp?: unknown }).timestamp === 'number') {\n            normalized.timestamp = (turn as { timestamp: number }).timestamp;\n          }\n          return normalized;\n        })\n        .filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/experience-memory-store.ts:normalizeSession",
+      "target": "function:src/main/memory/experience-memory-store.ts:item.raw_session\n        .map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/experience-memory-store.ts:normalizeSession",
+      "target": "function:src/main/memory/experience-memory-store.ts:Boolean",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/experience-memory-store.ts:normalizeSession",
+      "target": "function:src/main/memory/experience-memory-store.ts:normalizeWorkspace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/experience-memory-store.ts:normalizeSession",
+      "target": "function:src/main/memory/experience-memory-store.ts:toStringArray",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/experience-memory-store.ts:normalizeSession",
+      "target": "function:src/main/memory/experience-memory-store.ts:toStringArray",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/experience-memory-store.ts:normalizeSession",
+      "target": "function:src/main/memory/experience-memory-store.ts:toNumberArray",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/experience-memory-store.ts:recencyBoost",
+      "target": "function:src/main/memory/experience-memory-store.ts:Date.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/experience-memory-store.ts:recencyBoost",
+      "target": "function:src/main/memory/experience-memory-store.ts:Date.parse",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/experience-memory-store.ts:recencyBoost",
+      "target": "function:src/main/memory/experience-memory-store.ts:Number.isFinite",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/experience-memory-store.ts:recencyBoost",
+      "target": "function:src/main/memory/experience-memory-store.ts:Math.max",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/memory/memory-eval-harness.ts",
+      "target": "file:src/main/memory/memory-llm-client.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-eval-harness.ts",
+      "target": "file:src/main/memory/memory-service.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-eval-harness.ts",
+      "target": "file:src/main/memory/memory-utils.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-eval-harness.ts",
+      "target": "function:src/main/memory/memory-eval-harness.ts:scorePromptPrefix",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-eval-harness.ts",
+      "target": "class:src/main/memory/memory-eval-harness.ts:MemoryEvalHarness",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/memory/memory-eval-harness.ts:scorePromptPrefix",
+      "target": "function:src/main/memory/memory-eval-harness.ts:promptPrefix.toLowerCase",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-eval-harness.ts:scorePromptPrefix",
+      "target": "function:src/main/memory/memory-eval-harness.ts:expectedHits.filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-eval-harness.ts:scorePromptPrefix",
+      "target": "function:src/main/memory/memory-eval-harness.ts:normalized.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-eval-harness.ts:scorePromptPrefix",
+      "target": "function:src/main/memory/memory-eval-harness.ts:item.toLowerCase",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-eval-harness.ts:scorePromptPrefix",
+      "target": "function:src/main/memory/memory-eval-harness.ts:forbiddenHits.filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-eval-harness.ts:scorePromptPrefix",
+      "target": "function:src/main/memory/memory-eval-harness.ts:normalized.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-eval-harness.ts:scorePromptPrefix",
+      "target": "function:src/main/memory/memory-eval-harness.ts:item.toLowerCase",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-eval-harness.ts:scorePromptPrefix",
+      "target": "function:src/main/memory/memory-eval-harness.ts:Math.max",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/memory/memory-llm-client.ts",
+      "target": "file:src/main/claude/claude-sdk-one-shot.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-llm-client.ts",
+      "target": "file:src/main/config/auth-utils.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-llm-client.ts",
+      "target": "file:src/main/config/config-store.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-llm-client.ts",
+      "target": "file:src/main/utils/logger.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-llm-client.ts",
+      "target": "function:src/main/memory/memory-llm-client.ts:normalizeModelConfig",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-llm-client.ts",
+      "target": "function:src/main/memory/memory-llm-client.ts:buildAppConfig",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-llm-client.ts",
+      "target": "class:src/main/memory/memory-llm-client.ts:MemoryLLMClient",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/memory/memory-llm-client.ts:normalizeModelConfig",
+      "target": "function:src/main/memory/memory-llm-client.ts:(input?.model || (inherit ? activeModel : '') || fallbackModel).trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-llm-client.ts:normalizeModelConfig",
+      "target": "function:src/main/memory/memory-llm-client.ts:Math.max",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/memory/memory-navigator.ts",
+      "target": "file:src/main/memory/memory-llm-client.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-navigator.ts",
+      "target": "file:src/main/memory/memory-prompts.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-navigator.ts",
+      "target": "file:src/main/memory/memory-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-navigator.ts",
+      "target": "file:src/main/memory/memory-utils.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-navigator.ts",
+      "target": "class:src/main/memory/memory-navigator.ts:MemoryNavigator",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-prompt-optimizer.ts",
+      "target": "file:src/main/memory/memory-eval-harness.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-prompt-optimizer.ts",
+      "target": "file:src/main/memory/memory-llm-client.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-prompt-optimizer.ts",
+      "target": "file:src/main/memory/memory-prompts.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-prompt-optimizer.ts",
+      "target": "file:src/main/memory/memory-utils.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-prompt-optimizer.ts",
+      "target": "class:src/main/memory/memory-prompt-optimizer.ts:MemoryPromptOptimizer",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-retriever.ts",
+      "target": "file:src/main/memory/experience-memory-store.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-retriever.ts",
+      "target": "file:src/main/memory/memory-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-retriever.ts",
+      "target": "file:src/main/memory/memory-utils.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-retriever.ts",
+      "target": "function:src/main/memory/memory-retriever.ts:parseSearchId",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-retriever.ts",
+      "target": "class:src/main/memory/memory-retriever.ts:MemoryRetriever",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/memory/memory-retriever.ts:parseSearchId",
+      "target": "function:src/main/memory/memory-retriever.ts:id.indexOf",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-retriever.ts:parseSearchId",
+      "target": "function:src/main/memory/memory-retriever.ts:id.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-retriever.ts:parseSearchId",
+      "target": "function:src/main/memory/memory-retriever.ts:decodeURIComponent",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-retriever.ts:parseSearchId",
+      "target": "function:src/main/memory/memory-retriever.ts:id.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/memory/memory-service.ts",
+      "target": "file:src/main/config/config-store.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-service.ts",
+      "target": "file:src/main/db/database.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-service.ts",
+      "target": "file:src/main/memory/core-memory-extractor.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-service.ts",
+      "target": "file:src/main/memory/core-memory-store.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-service.ts",
+      "target": "file:src/main/memory/experience-memory-extractor.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-service.ts",
+      "target": "file:src/main/memory/experience-memory-store.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-service.ts",
+      "target": "file:src/main/memory/memory-ingestion-queue.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-service.ts",
+      "target": "file:src/main/memory/memory-llm-client.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-service.ts",
+      "target": "file:src/main/memory/memory-navigator.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-service.ts",
+      "target": "file:src/main/memory/memory-prompts.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-service.ts",
+      "target": "file:src/main/memory/memory-retriever.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-service.ts",
+      "target": "file:src/main/memory/memory-state-store.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-service.ts",
+      "target": "file:src/main/memory/memory-tools.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-service.ts",
+      "target": "file:src/main/memory/memory-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-service.ts",
+      "target": "file:src/main/memory/memory-utils.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-service.ts",
+      "target": "file:src/main/utils/logger.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-service.ts",
+      "target": "function:src/main/memory/memory-service.ts:resolveMaterializedPath",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-service.ts",
+      "target": "function:src/main/memory/memory-service.ts:assertSafeMemoryPaths",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-service.ts",
+      "target": "class:src/main/memory/memory-service.ts:MemoryService",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/memory/memory-service.ts:resolveMaterializedPath",
+      "target": "function:src/main/memory/memory-service.ts:path.resolve",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-service.ts:resolveMaterializedPath",
+      "target": "function:src/main/memory/memory-service.ts:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-service.ts:resolveMaterializedPath",
+      "target": "function:src/main/memory/memory-service.ts:fs.realpathSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-service.ts:resolveMaterializedPath",
+      "target": "function:src/main/memory/memory-service.ts:path.parse",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-service.ts:resolveMaterializedPath",
+      "target": "function:src/main/memory/memory-service.ts:path.relative(root, resolvedPath).split(path.sep).filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-service.ts:resolveMaterializedPath",
+      "target": "function:src/main/memory/memory-service.ts:path.relative(root, resolvedPath).split",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-service.ts:resolveMaterializedPath",
+      "target": "function:src/main/memory/memory-service.ts:path.relative",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-service.ts:resolveMaterializedPath",
+      "target": "function:src/main/memory/memory-service.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-service.ts:resolveMaterializedPath",
+      "target": "function:src/main/memory/memory-service.ts:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-service.ts:resolveMaterializedPath",
+      "target": "function:src/main/memory/memory-service.ts:fs.realpathSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-service.ts:resolveMaterializedPath",
+      "target": "function:src/main/memory/memory-service.ts:segments.slice(firstMissingIndex).join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-service.ts:resolveMaterializedPath",
+      "target": "function:src/main/memory/memory-service.ts:segments.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-service.ts:resolveMaterializedPath",
+      "target": "function:src/main/memory/memory-service.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-service.ts:assertSafeMemoryPaths",
+      "target": "function:src/main/memory/memory-service.ts:path.resolve",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-service.ts:assertSafeMemoryPaths",
+      "target": "function:src/main/memory/memory-service.ts:path.resolve",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-service.ts:assertSafeMemoryPaths",
+      "target": "function:src/main/memory/memory-service.ts:isFilesystemRootPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-service.ts:assertSafeMemoryPaths",
+      "target": "function:src/main/memory/memory-service.ts:isFilesystemRootPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-service.ts:assertSafeMemoryPaths",
+      "target": "function:src/main/memory/memory-service.ts:isSubPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-service.ts:assertSafeMemoryPaths",
+      "target": "function:src/main/memory/memory-service.ts:resolveMaterializedPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-service.ts:assertSafeMemoryPaths",
+      "target": "function:src/main/memory/memory-service.ts:resolveMaterializedPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-service.ts:assertSafeMemoryPaths",
+      "target": "function:src/main/memory/memory-service.ts:isFilesystemRootPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-service.ts:assertSafeMemoryPaths",
+      "target": "function:src/main/memory/memory-service.ts:isFilesystemRootPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-service.ts:assertSafeMemoryPaths",
+      "target": "function:src/main/memory/memory-service.ts:isSubPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/memory/memory-state-store.ts",
+      "target": "file:src/main/memory/memory-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-state-store.ts",
+      "target": "file:src/main/memory/memory-utils.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-state-store.ts",
+      "target": "class:src/main/memory/memory-state-store.ts:MemorySessionStateStore",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-tools.ts",
+      "target": "file:src/main/memory/memory-service.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-tools.ts",
+      "target": "file:src/main/memory/memory-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-tools.ts",
+      "target": "function:src/main/memory/memory-tools.ts:formatSearchResult",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-tools.ts",
+      "target": "function:src/main/memory/memory-tools.ts:formatReadResult",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-tools.ts",
+      "target": "function:src/main/memory/memory-tools.ts:createMemoryTools",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/memory/memory-tools.ts:formatSearchResult",
+      "target": "function:src/main/memory/memory-tools.ts:lines.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-tools.ts:formatSearchResult",
+      "target": "function:src/main/memory/memory-tools.ts:lines.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-tools.ts:formatSearchResult",
+      "target": "function:src/main/memory/memory-tools.ts:lines.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-tools.ts:formatSearchResult",
+      "target": "function:src/main/memory/memory-tools.ts:lines.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-tools.ts:formatReadResult",
+      "target": "function:src/main/memory/memory-tools.ts:lines.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-tools.ts:formatReadResult",
+      "target": "function:src/main/memory/memory-tools.ts:lines.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-tools.ts:formatReadResult",
+      "target": "function:src/main/memory/memory-tools.ts:lines.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-tools.ts:formatReadResult",
+      "target": "function:src/main/memory/memory-tools.ts:lines.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-tools.ts:formatReadResult",
+      "target": "function:src/main/memory/memory-tools.ts:lines.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-tools.ts:formatReadResult",
+      "target": "function:src/main/memory/memory-tools.ts:lines.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-tools.ts:formatReadResult",
+      "target": "function:src/main/memory/memory-tools.ts:JSON.stringify",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-tools.ts:formatReadResult",
+      "target": "function:src/main/memory/memory-tools.ts:lines.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-tools.ts:formatReadResult",
+      "target": "function:src/main/memory/memory-tools.ts:lines.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-tools.ts:createMemoryTools",
+      "target": "function:src/main/memory/memory-tools.ts:Type.Object",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-tools.ts:createMemoryTools",
+      "target": "function:src/main/memory/memory-tools.ts:Type.String",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-tools.ts:createMemoryTools",
+      "target": "function:src/main/memory/memory-tools.ts:Type.Optional",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-tools.ts:createMemoryTools",
+      "target": "function:src/main/memory/memory-tools.ts:Type.Union",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-tools.ts:createMemoryTools",
+      "target": "function:src/main/memory/memory-tools.ts:Type.Literal",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-tools.ts:createMemoryTools",
+      "target": "function:src/main/memory/memory-tools.ts:Type.Literal",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-tools.ts:createMemoryTools",
+      "target": "function:src/main/memory/memory-tools.ts:Type.Literal",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-tools.ts:createMemoryTools",
+      "target": "function:src/main/memory/memory-tools.ts:Type.Optional",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-tools.ts:createMemoryTools",
+      "target": "function:src/main/memory/memory-tools.ts:Type.String",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-tools.ts:createMemoryTools",
+      "target": "function:src/main/memory/memory-tools.ts:Type.Optional",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-tools.ts:createMemoryTools",
+      "target": "function:src/main/memory/memory-tools.ts:Type.Integer",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-tools.ts:createMemoryTools",
+      "target": "function:src/main/memory/memory-tools.ts:Type.Object",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-tools.ts:createMemoryTools",
+      "target": "function:src/main/memory/memory-tools.ts:Type.String",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/memory/memory-types.ts",
+      "target": "file:src/renderer/types/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "file:src/main/memory/memory-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "file:src/renderer/types/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "function:src/main/memory/memory-utils.ts:normalizeWorkspaceKey",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "function:src/main/memory/memory-utils.ts:hashWorkspaceKey",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "function:src/main/memory/memory-utils.ts:ensureParentDir",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "function:src/main/memory/memory-utils.ts:loadJsonFile",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "function:src/main/memory/memory-utils.ts:saveJsonFile",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "function:src/main/memory/memory-utils.ts:safeRemoveFile",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "function:src/main/memory/memory-utils.ts:formatTimestamp",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "function:src/main/memory/memory-utils.ts:isoNow",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "function:src/main/memory/memory-utils.ts:extractJson",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "function:src/main/memory/memory-utils.ts:extractTextFromContent",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "function:src/main/memory/memory-utils.ts:messagesToTranscript",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "function:src/main/memory/memory-utils.ts:compactTranscript",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "function:src/main/memory/memory-utils.ts:summarizeText",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "function:src/main/memory/memory-utils.ts:tokenizeSearchQuery",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "function:src/main/memory/memory-utils.ts:simpleTokenize",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "function:src/main/memory/memory-utils.ts:lexicalScore",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "function:src/main/memory/memory-utils.ts:cosineSimilarity",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "function:src/main/memory/memory-utils.ts:extractKeywords",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "function:src/main/memory/memory-utils.ts:stripTrailingSlashes",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "function:src/main/memory/memory-utils.ts:resolveCoreCombinedKey",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "function:src/main/memory/memory-utils.ts:parseCoreCombinedKey",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "function:src/main/memory/memory-utils.ts:applyCoreMemoryActions",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "function:src/main/memory/memory-utils.ts:coreMemoryToPromptBlock",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "function:src/main/memory/memory-utils.ts:clampInt",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "function:src/main/memory/memory-utils.ts:getFileTimestampMs",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "function:src/main/memory/memory-utils.ts:getFileSizeBytes",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/memory/memory-utils.ts",
+      "target": "function:src/main/memory/memory-utils.ts:isSubPath",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:normalizeWorkspaceKey",
+      "target": "function:src/main/memory/memory-utils.ts:path.resolve",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:hashWorkspaceKey",
+      "target": "function:src/main/memory/memory-utils.ts:crypto.createHash('sha1').update(workspaceKey).digest('hex').slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:hashWorkspaceKey",
+      "target": "function:src/main/memory/memory-utils.ts:crypto.createHash('sha1').update(workspaceKey).digest",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:hashWorkspaceKey",
+      "target": "function:src/main/memory/memory-utils.ts:crypto.createHash('sha1').update",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:hashWorkspaceKey",
+      "target": "function:src/main/memory/memory-utils.ts:crypto.createHash",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:ensureParentDir",
+      "target": "function:src/main/memory/memory-utils.ts:fs.mkdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:ensureParentDir",
+      "target": "function:src/main/memory/memory-utils.ts:path.dirname",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:ensureParentDir",
+      "target": "function:src/main/memory/memory-utils.ts:path.resolve",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:loadJsonFile",
+      "target": "function:src/main/memory/memory-utils.ts:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:loadJsonFile",
+      "target": "function:src/main/memory/memory-utils.ts:fs.readFileSync(filePath, 'utf8').trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:loadJsonFile",
+      "target": "function:src/main/memory/memory-utils.ts:fs.readFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:loadJsonFile",
+      "target": "function:src/main/memory/memory-utils.ts:JSON.parse",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:saveJsonFile",
+      "target": "function:src/main/memory/memory-utils.ts:ensureParentDir",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:saveJsonFile",
+      "target": "function:src/main/memory/memory-utils.ts:fs.writeFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:saveJsonFile",
+      "target": "function:src/main/memory/memory-utils.ts:JSON.stringify",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:saveJsonFile",
+      "target": "function:src/main/memory/memory-utils.ts:fs.renameSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:safeRemoveFile",
+      "target": "function:src/main/memory/memory-utils.ts:fs.existsSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:safeRemoveFile",
+      "target": "function:src/main/memory/memory-utils.ts:fs.rmSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:formatTimestamp",
+      "target": "function:src/main/memory/memory-utils.ts:new Date(timestamp).toISOString().slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:formatTimestamp",
+      "target": "function:src/main/memory/memory-utils.ts:new Date(timestamp).toISOString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:isoNow",
+      "target": "function:src/main/memory/memory-utils.ts:Date.now",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:isoNow",
+      "target": "function:src/main/memory/memory-utils.ts:new Date(now).toISOString().slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:isoNow",
+      "target": "function:src/main/memory/memory-utils.ts:new Date(now).toISOString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:extractJson",
+      "target": "function:src/main/memory/memory-utils.ts:rawText.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:extractJson",
+      "target": "function:src/main/memory/memory-utils.ts:text.match",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:extractJson",
+      "target": "function:src/main/memory/memory-utils.ts:fenced[1].trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:extractJson",
+      "target": "function:src/main/memory/memory-utils.ts:JSON.parse",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:extractJson",
+      "target": "function:src/main/memory/memory-utils.ts:candidate.match",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:extractJson",
+      "target": "function:src/main/memory/memory-utils.ts:JSON.parse",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:extractTextFromContent",
+      "target": "function:src/main/memory/memory-utils.ts:content\n    .map((block) => {\n      switch (block.type) {\n        case 'text':\n          return block.text;\n        case 'thinking':\n          return block.thinking;\n        case 'tool_result':\n          return block.content;\n        case 'tool_use':\n          return `${block.name} ${JSON.stringify(block.input)}`;\n        case 'file_attachment':\n          return `[file] ${block.filename}`;\n        case 'image':\n          return '[image]';\n        default:\n          return '';\n      }\n    })\n    .filter(Boolean)\n    .join('\\n')\n    .trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:extractTextFromContent",
+      "target": "function:src/main/memory/memory-utils.ts:content\n    .map((block) => {\n      switch (block.type) {\n        case 'text':\n          return block.text;\n        case 'thinking':\n          return block.thinking;\n        case 'tool_result':\n          return block.content;\n        case 'tool_use':\n          return `${block.name} ${JSON.stringify(block.input)}`;\n        case 'file_attachment':\n          return `[file] ${block.filename}`;\n        case 'image':\n          return '[image]';\n        default:\n          return '';\n      }\n    })\n    .filter(Boolean)\n    .join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:extractTextFromContent",
+      "target": "function:src/main/memory/memory-utils.ts:content\n    .map((block) => {\n      switch (block.type) {\n        case 'text':\n          return block.text;\n        case 'thinking':\n          return block.thinking;\n        case 'tool_result':\n          return block.content;\n        case 'tool_use':\n          return `${block.name} ${JSON.stringify(block.input)}`;\n        case 'file_attachment':\n          return `[file] ${block.filename}`;\n        case 'image':\n          return '[image]';\n        default:\n          return '';\n      }\n    })\n    .filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:extractTextFromContent",
+      "target": "function:src/main/memory/memory-utils.ts:content\n    .map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:extractTextFromContent",
+      "target": "function:src/main/memory/memory-utils.ts:JSON.stringify",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:messagesToTranscript",
+      "target": "function:src/main/memory/memory-utils.ts:messages\n    .map((message): MemoryTranscriptTurn | null => {\n      const content = extractTextFromContent(message.content);\n      if (!content) {\n        return null;\n      }\n      return {\n        role: message.role,\n        content,\n        messageId: message.id,\n        timestamp: message.timestamp,\n      };\n    })\n    .filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:messagesToTranscript",
+      "target": "function:src/main/memory/memory-utils.ts:messages\n    .map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:messagesToTranscript",
+      "target": "function:src/main/memory/memory-utils.ts:extractTextFromContent",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:messagesToTranscript",
+      "target": "function:src/main/memory/memory-utils.ts:Boolean",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:compactTranscript",
+      "target": "function:src/main/memory/memory-utils.ts:turns.map((turn) => `${turn.role}: ${turn.content.trim()}`).join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:compactTranscript",
+      "target": "function:src/main/memory/memory-utils.ts:turns.map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:compactTranscript",
+      "target": "function:src/main/memory/memory-utils.ts:turn.content.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:summarizeText",
+      "target": "function:src/main/memory/memory-utils.ts:text.replace(/\\s+/g, ' ').trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:summarizeText",
+      "target": "function:src/main/memory/memory-utils.ts:text.replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:summarizeText",
+      "target": "function:src/main/memory/memory-utils.ts:normalized.slice(0, Math.max(0, maxLength - 1)).trimEnd",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:summarizeText",
+      "target": "function:src/main/memory/memory-utils.ts:normalized.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:summarizeText",
+      "target": "function:src/main/memory/memory-utils.ts:Math.max",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:tokenizeSearchQuery",
+      "target": "function:src/main/memory/memory-utils.ts:Array.from(new Set(simpleTokenize(query))).slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:tokenizeSearchQuery",
+      "target": "function:src/main/memory/memory-utils.ts:Array.from",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:tokenizeSearchQuery",
+      "target": "function:src/main/memory/memory-utils.ts:simpleTokenize",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:simpleTokenize",
+      "target": "function:src/main/memory/memory-utils.ts:(text.toLowerCase().match(/[a-z0-9][a-z0-9_-]{1,}|[\\u4e00-\\u9fff]{2,}/g) || []).filter",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:simpleTokenize",
+      "target": "function:src/main/memory/memory-utils.ts:text.toLowerCase().match",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:simpleTokenize",
+      "target": "function:src/main/memory/memory-utils.ts:text.toLowerCase",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:simpleTokenize",
+      "target": "function:src/main/memory/memory-utils.ts:EN_STOP_WORDS.has",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:simpleTokenize",
+      "target": "function:src/main/memory/memory-utils.ts:ZH_STOP_WORDS.includes",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:lexicalScore",
+      "target": "function:src/main/memory/memory-utils.ts:simpleTokenize",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:lexicalScore",
+      "target": "function:src/main/memory/memory-utils.ts:queryTerms.set",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:lexicalScore",
+      "target": "function:src/main/memory/memory-utils.ts:queryTerms.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:lexicalScore",
+      "target": "function:src/main/memory/memory-utils.ts:simpleTokenize",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:lexicalScore",
+      "target": "function:src/main/memory/memory-utils.ts:itemTerms.set",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:lexicalScore",
+      "target": "function:src/main/memory/memory-utils.ts:itemTerms.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:lexicalScore",
+      "target": "function:src/main/memory/memory-utils.ts:queryTerms.values",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:lexicalScore",
+      "target": "function:src/main/memory/memory-utils.ts:itemTerms.values",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:lexicalScore",
+      "target": "function:src/main/memory/memory-utils.ts:queryTerms.entries",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:lexicalScore",
+      "target": "function:src/main/memory/memory-utils.ts:Math.min",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:lexicalScore",
+      "target": "function:src/main/memory/memory-utils.ts:itemTerms.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:lexicalScore",
+      "target": "function:src/main/memory/memory-utils.ts:Math.sqrt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:lexicalScore",
+      "target": "function:src/main/memory/memory-utils.ts:Math.max",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:cosineSimilarity",
+      "target": "function:src/main/memory/memory-utils.ts:Math.sqrt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:cosineSimilarity",
+      "target": "function:src/main/memory/memory-utils.ts:Math.sqrt",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:extractKeywords",
+      "target": "function:src/main/memory/memory-utils.ts:simpleTokenize",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:extractKeywords",
+      "target": "function:src/main/memory/memory-utils.ts:counts.set",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:extractKeywords",
+      "target": "function:src/main/memory/memory-utils.ts:counts.get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:extractKeywords",
+      "target": "function:src/main/memory/memory-utils.ts:[...counts.entries()]\n    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))\n    .slice(0, limit)\n    .map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:extractKeywords",
+      "target": "function:src/main/memory/memory-utils.ts:[...counts.entries()]\n    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))\n    .slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:extractKeywords",
+      "target": "function:src/main/memory/memory-utils.ts:[...counts.entries()]\n    .sort",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:extractKeywords",
+      "target": "function:src/main/memory/memory-utils.ts:counts.entries",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:extractKeywords",
+      "target": "function:src/main/memory/memory-utils.ts:a[0].localeCompare",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:stripTrailingSlashes",
+      "target": "function:src/main/memory/memory-utils.ts:value?.trim().replace",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:stripTrailingSlashes",
+      "target": "function:src/main/memory/memory-utils.ts:value?.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:resolveCoreCombinedKey",
+      "target": "function:src/main/memory/memory-utils.ts:key.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:resolveCoreCombinedKey",
+      "target": "function:src/main/memory/memory-utils.ts:CORE_CATEGORIES.has",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:parseCoreCombinedKey",
+      "target": "function:src/main/memory/memory-utils.ts:combinedKey.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:parseCoreCombinedKey",
+      "target": "function:src/main/memory/memory-utils.ts:trimmed.indexOf",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:parseCoreCombinedKey",
+      "target": "function:src/main/memory/memory-utils.ts:trimmed.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:parseCoreCombinedKey",
+      "target": "function:src/main/memory/memory-utils.ts:CORE_CATEGORIES.has",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:parseCoreCombinedKey",
+      "target": "function:src/main/memory/memory-utils.ts:trimmed.slice",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:applyCoreMemoryActions",
+      "target": "function:src/main/memory/memory-utils.ts:resolveCoreCombinedKey",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:applyCoreMemoryActions",
+      "target": "function:src/main/memory/memory-utils.ts:applied.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:applyCoreMemoryActions",
+      "target": "function:src/main/memory/memory-utils.ts:action.value.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:applyCoreMemoryActions",
+      "target": "function:src/main/memory/memory-utils.ts:applied.push",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:coreMemoryToPromptBlock",
+      "target": "function:src/main/memory/memory-utils.ts:Object.entries",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:coreMemoryToPromptBlock",
+      "target": "function:src/main/memory/memory-utils.ts:entries.map(([key, value]) => `- ${key}: ${value}`).join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:coreMemoryToPromptBlock",
+      "target": "function:src/main/memory/memory-utils.ts:entries.map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:clampInt",
+      "target": "function:src/main/memory/memory-utils.ts:Math.max",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:clampInt",
+      "target": "function:src/main/memory/memory-utils.ts:Math.min",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:clampInt",
+      "target": "function:src/main/memory/memory-utils.ts:Math.round",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:getFileTimestampMs",
+      "target": "function:src/main/memory/memory-utils.ts:fs.statSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:getFileSizeBytes",
+      "target": "function:src/main/memory/memory-utils.ts:fs.statSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:isSubPath",
+      "target": "function:src/main/memory/memory-utils.ts:path.relative",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:isSubPath",
+      "target": "function:src/main/memory/memory-utils.ts:path.resolve",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:isSubPath",
+      "target": "function:src/main/memory/memory-utils.ts:path.resolve",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:isSubPath",
+      "target": "function:src/main/memory/memory-utils.ts:relative.startsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/memory/memory-utils.ts:isSubPath",
+      "target": "function:src/main/memory/memory-utils.ts:path.isAbsolute",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/tests/claude/claude-sdk-one-shot.test.ts",
+      "target": "file:src/main/claude/claude-sdk-one-shot.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/claude/claude-sdk-one-shot.test.ts",
+      "target": "file:src/main/config/config-store.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/claude/claude-sdk-one-shot.test.ts",
+      "target": "function:src/tests/claude/claude-sdk-one-shot.test.ts:makeConfig",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/tests/memory/core-memory-store.test.ts",
+      "target": "file:src/main/memory/core-memory-store.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/memory/memory-eval-harness.test.ts",
+      "target": "file:src/main/config/config-store.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/memory/memory-eval-harness.test.ts",
+      "target": "file:src/main/db/database.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/memory/memory-eval-harness.test.ts",
+      "target": "file:src/main/memory/memory-eval-harness.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/memory/memory-eval-harness.test.ts",
+      "target": "file:src/main/memory/memory-llm-client.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/memory/memory-eval-harness.test.ts",
+      "target": "file:src/main/memory/memory-prompt-optimizer.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/memory/memory-eval-harness.test.ts",
+      "target": "file:src/main/memory/memory-service.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/memory/memory-eval-harness.test.ts",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:createSchema",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/tests/memory/memory-eval-harness.test.ts",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/tests/memory/memory-eval-harness.test.ts",
+      "target": "class:src/tests/memory/memory-eval-harness.test.ts:EvalMockLLM",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createSchema",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:db.exec",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:db.prepare('SELECT * FROM sessions WHERE id = ? LIMIT 1').get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:db.prepare",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:db.prepare('SELECT * FROM sessions ORDER BY created_at ASC').all",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:db.prepare",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:db\n            .prepare('SELECT * FROM messages WHERE session_id = ? ORDER BY timestamp ASC')\n            .all",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:db\n            .prepare",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:db.prepare",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:db.exec",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:db.pragma",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-eval-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-eval-harness.test.ts:db.close",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/tests/memory/memory-llm-client.test.ts",
+      "target": "file:src/main/config/config-store.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/memory/memory-llm-client.test.ts",
+      "target": "file:src/main/memory/memory-llm-client.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/memory/memory-llm-client.test.ts",
+      "target": "function:src/tests/memory/memory-llm-client.test.ts:makeConfig",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/tests/memory/memory-service.test.ts",
+      "target": "file:src/main/config/config-store.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/memory/memory-service.test.ts",
+      "target": "file:src/main/db/database.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/memory/memory-service.test.ts",
+      "target": "file:src/main/memory/memory-llm-client.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/memory/memory-service.test.ts",
+      "target": "file:src/main/memory/memory-service.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/memory/memory-service.test.ts",
+      "target": "function:src/tests/memory/memory-service.test.ts:createSchema",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/tests/memory/memory-service.test.ts",
+      "target": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/tests/memory/memory-service.test.ts",
+      "target": "function:src/tests/memory/memory-service.test.ts:insertSession",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/tests/memory/memory-service.test.ts",
+      "target": "function:src/tests/memory/memory-service.test.ts:insertMessage",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/tests/memory/memory-service.test.ts",
+      "target": "function:src/tests/memory/memory-service.test.ts:makeSession",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/tests/memory/memory-service.test.ts",
+      "target": "function:src/tests/memory/memory-service.test.ts:makeMessages",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/tests/memory/memory-service.test.ts",
+      "target": "class:src/tests/memory/memory-service.test.ts:MockMemoryLLMClient",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createSchema",
+      "target": "function:src/tests/memory/memory-service.test.ts:db.exec",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:db.prepare('SELECT * FROM sessions WHERE id = ? LIMIT 1').get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:db.prepare",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:db.prepare('SELECT * FROM sessions ORDER BY created_at ASC').all",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:db.prepare",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:db\n            .prepare('SELECT * FROM messages WHERE session_id = ? ORDER BY timestamp ASC')\n            .all",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:db\n            .prepare",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:db.prepare",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:db.exec",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:db.pragma",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-service.test.ts:db.close",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:insertSession",
+      "target": "function:src/tests/memory/memory-service.test.ts:db.prepare(\n    `\n      INSERT INTO sessions (\n        id, title, claude_session_id, openai_thread_id, status, cwd, mounted_paths, allowed_tools,\n        memory_enabled, model, created_at, updated_at\n      ) VALUES (?, ?, NULL, NULL, 'idle', ?, '[]', '[]', ?, NULL, ?, ?)\n    `\n  ).run",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:insertSession",
+      "target": "function:src/tests/memory/memory-service.test.ts:db.prepare",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:insertMessage",
+      "target": "function:src/tests/memory/memory-service.test.ts:db.prepare(\n    `\n      INSERT INTO messages (id, session_id, role, content, timestamp, token_usage, execution_time_ms)\n      VALUES (?, ?, ?, ?, ?, NULL, NULL)\n    `\n  ).run",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:insertMessage",
+      "target": "function:src/tests/memory/memory-service.test.ts:db.prepare",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:insertMessage",
+      "target": "function:src/tests/memory/memory-service.test.ts:JSON.stringify",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-service.test.ts:makeMessages",
+      "target": "function:src/tests/memory/memory-service.test.ts:items.map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/tests/memory/memory-smoke-harness.test.ts",
+      "target": "file:src/main/config/config-store.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/memory/memory-smoke-harness.test.ts",
+      "target": "file:src/main/db/database.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/memory/memory-smoke-harness.test.ts",
+      "target": "file:src/main/memory/memory-llm-client.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/memory/memory-smoke-harness.test.ts",
+      "target": "file:src/main/memory/memory-service.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/memory/memory-smoke-harness.test.ts",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:createSchema",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/tests/memory/memory-smoke-harness.test.ts",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/tests/memory/memory-smoke-harness.test.ts",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:makeMessages",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/tests/memory/memory-smoke-harness.test.ts",
+      "target": "class:src/tests/memory/memory-smoke-harness.test.ts:SmokeMemoryLLM",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createSchema",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:db.exec",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:db.prepare('SELECT * FROM sessions WHERE id = ? LIMIT 1').get",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:db.prepare",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:db.prepare('SELECT * FROM sessions ORDER BY created_at ASC').all",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:db.prepare",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:db.prepare('SELECT * FROM messages WHERE session_id = ? ORDER BY timestamp ASC').all",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:db.prepare",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:vi.fn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:db.prepare",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:db.exec",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:db.pragma",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:createDatabaseInstance",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:db.close",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/memory/memory-smoke-harness.test.ts:makeMessages",
+      "target": "function:src/tests/memory/memory-smoke-harness.test.ts:items.map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/claude-sdk-one-shot.test.ts",
+      "target": "file:src/main/claude/claude-sdk-one-shot.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/claude-sdk-one-shot.test.ts",
+      "target": "file:src/main/config/config-store.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/claude-sdk-one-shot.test.ts",
+      "target": "function:tests/claude-sdk-one-shot.test.ts:createConfig",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/config-store-config-sets.test.ts",
+      "target": "file:src/main/config/config-store.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/config-store-env.test.ts",
+      "target": "file:src/main/config/config-store.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/config-store-performance.test.ts",
+      "target": "file:src/main/config/config-store.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/config-store-profiles.test.ts",
+      "target": "file:src/main/config/config-store.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/config-test-routing.test.ts",
+      "target": "file:src/main/config/config-store.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/config-test-routing.test.ts",
+      "target": "file:src/main/config/config-test-routing.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/config-test-routing.test.ts",
+      "target": "file:src/renderer/types/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/config-test-routing.test.ts",
+      "target": "function:tests/config-test-routing.test.ts:createConfig",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/session-manager-title-unified.test.ts",
+      "target": "file:src/main/claude/claude-sdk-one-shot.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/session-manager-title-unified.test.ts",
+      "target": "file:src/main/config/config-store.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/session-manager-title-unified.test.ts",
+      "target": "file:src/main/session/session-manager.ts",
+      "type": "imports",
+      "weight": 0.7
+    }
+  ]
+}

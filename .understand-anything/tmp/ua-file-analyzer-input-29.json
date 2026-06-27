@@ -1,0 +1,35 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
+      "language": "xml",
+      "sizeLines": 42,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+      "language": "xml",
+      "sizeLines": 50,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ecma/fouth-edition/opc-digSig.xsd",
+      "language": "xml",
+      "sizeLines": 49,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/ecma/fouth-edition/opc-relationships.xsd",
+      "language": "xml",
+      "sizeLines": 33,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    ".claude/skills/pptx/ooxml/schemas/ecma/fouth-edition/opc-contentTypes.xsd": [],
+    ".claude/skills/pptx/ooxml/schemas/ecma/fouth-edition/opc-coreProperties.xsd": [],
+    ".claude/skills/pptx/ooxml/schemas/ecma/fouth-edition/opc-digSig.xsd": [],
+    ".claude/skills/pptx/ooxml/schemas/ecma/fouth-edition/opc-relationships.xsd": []
+  }
+}

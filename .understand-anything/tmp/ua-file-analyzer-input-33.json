@@ -1,0 +1,84 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": ".claude/skills/visio/templates/examples/audit_region.scene.json",
+      "language": "json",
+      "sizeLines": 93,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/visio/templates/examples/basic_flow.scene.json",
+      "language": "json",
+      "sizeLines": 93,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/visio/templates/examples/feature_map_grid.scene.json",
+      "language": "json",
+      "sizeLines": 95,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/visio/templates/examples/gan_loop_feedback.scene.json",
+      "language": "json",
+      "sizeLines": 296,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/visio/templates/examples/gan_tfr_full.scene.json",
+      "language": "json",
+      "sizeLines": 431,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/visio/templates/examples/lane_math_vector.scene.json",
+      "language": "json",
+      "sizeLines": 158,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/visio/templates/examples/multimodal_paper_components.scene.json",
+      "language": "json",
+      "sizeLines": 159,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/visio/templates/examples/operator_boundary_lane.scene.json",
+      "language": "json",
+      "sizeLines": 144,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/visio/templates/examples/paper_module_components.scene.json",
+      "language": "json",
+      "sizeLines": 177,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/visio/templates/examples/rounded_orthogonal_connector.scene.json",
+      "language": "json",
+      "sizeLines": 220,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/visio/templates/examples/vertical_classifier.scene.json",
+      "language": "json",
+      "sizeLines": 98,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    ".claude/skills/visio/templates/examples/audit_region.scene.json": [],
+    ".claude/skills/visio/templates/examples/basic_flow.scene.json": [],
+    ".claude/skills/visio/templates/examples/feature_map_grid.scene.json": [],
+    ".claude/skills/visio/templates/examples/gan_loop_feedback.scene.json": [],
+    ".claude/skills/visio/templates/examples/gan_tfr_full.scene.json": [],
+    ".claude/skills/visio/templates/examples/lane_math_vector.scene.json": [],
+    ".claude/skills/visio/templates/examples/multimodal_paper_components.scene.json": [],
+    ".claude/skills/visio/templates/examples/operator_boundary_lane.scene.json": [],
+    ".claude/skills/visio/templates/examples/paper_module_components.scene.json": [],
+    ".claude/skills/visio/templates/examples/rounded_orthogonal_connector.scene.json": [],
+    ".claude/skills/visio/templates/examples/vertical_classifier.scene.json": []
+  }
+}

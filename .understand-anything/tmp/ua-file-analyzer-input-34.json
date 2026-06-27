@@ -1,0 +1,28 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": ".claude/skills/visio/templates/examples/paper_figures/attention_mechanism.scene.json",
+      "language": "json",
+      "sizeLines": 312,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/visio/templates/examples/paper_figures/cross_fused_features.scene.json",
+      "language": "json",
+      "sizeLines": 1150,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/visio/templates/examples/paper_figures/mask_res_block.scene.json",
+      "language": "json",
+      "sizeLines": 918,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    ".claude/skills/visio/templates/examples/paper_figures/attention_mechanism.scene.json": [],
+    ".claude/skills/visio/templates/examples/paper_figures/cross_fused_features.scene.json": [],
+    ".claude/skills/visio/templates/examples/paper_figures/mask_res_block.scene.json": []
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".claude/skills/visio/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 282,
+      "nonEmptyLines": 207,
+      "sections": [
+        {
+          "heading": "Visiomaster",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "能做什么",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "本次版本重点",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "效果示例",
+          "level": 2,
+          "line": 53
+        },
+        {
+          "heading": "不想配置环境？",
+          "level": 2,
+          "line": 65
+        },
+        {
+          "heading": "环境要求",
+          "level": 2,
+          "line": 73
+        },
+        {
+          "heading": "使用方式",
+          "level": 2,
+          "line": 96
+        },
+        {
+          "heading": "作为 Codex Skill 安装",
+          "level": 2,
+          "line": 105
+        },
+        {
+          "heading": "快速开始",
+          "level": 2,
+          "line": 125
+        },
+        {
+          "heading": "严格复刻流程",
+          "level": 2,
+          "line": 154
+        },
+        {
+          "heading": "工作流程",
+          "level": 2,
+          "line": 179
+        },
+        {
+          "heading": "Scene 模型",
+          "level": 2,
+          "line": 185
+        },
+        {
+          "heading": "组件策略",
+          "level": 2,
+          "line": 201
+        },
+        {
+          "heading": "仓库结构",
+          "level": 2,
+          "line": 221
+        },
+        {
+          "heading": "当前限制",
+          "level": 2,
+          "line": 268
+        },
+        {
+          "heading": "兼容性说明",
+          "level": 2,
+          "line": 276
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 16
+      }
+    },
+    {
+      "path": ".claude/skills/visio/RELEASE_NOTES.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 47,
+      "nonEmptyLines": 33,
+      "sections": [
+        {
+          "heading": "Visiomaster v0.3.1 更新说明",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "核心更新",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "适用场景",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "相比 v0.3.0",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "注意事项",
+          "level": 2,
+          "line": 37
+        },
+        {
+          "heading": "验证情况",
+          "level": 2,
+          "line": 43
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".claude/skills/visio/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 675,
+      "nonEmptyLines": 505,
+      "sections": [
+        {
+          "heading": "Visiomaster",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "Overview",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Core Positioning",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "Environment",
+          "level": 2,
+          "line": 48
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 61
+        },
+        {
+          "heading": "1. Confirm scope",
+          "level": 3,
+          "line": 63
+        },
+        {
+          "heading": "2. Build or refine `scene.json`",
+          "level": 3,
+          "line": 154
+        },
+        {
+          "heading": "3. Validate scene data",
+          "level": 3,
+          "line": 206
+        },
+        {
+          "heading": "4. Render into Visio",
+          "level": 3,
+          "line": 285
+        },
+        {
+          "heading": "Component Strategy",
+          "level": 2,
+          "line": 477
+        },
+        {
+          "heading": "Execution Rules",
+          "level": 2,
+          "line": 548
+        },
+        {
+          "heading": "References",
+          "level": 2,
+          "line": 650
+        },
+        {
+          "heading": "Current Boundaries",
+          "level": 2,
+          "line": 667
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    },
+    {
+      "path": ".claude/skills/visio/requirements.txt",
+      "language": "txt",
+      "fileCategory": "docs",
+      "totalLines": 2,
+      "nonEmptyLines": 2,
+      "metrics": {}
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 1,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "website/zh/index.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 235,
+      "nonEmptyLines": 188,
+      "sections": [
+        {
+          "heading": "功能对比",
+          "level": 2,
+          "line": 145
+        },
+        {
+          "heading": "支持的 AI 模型",
+          "level": 2,
+          "line": 156
+        },
+        {
+          "heading": "快速安装",
+          "level": 2,
+          "line": 170
+        },
+        {
+          "heading": "常见问题",
+          "level": 2,
+          "line": 185
+        },
+        {
+          "heading": "Open Cowork 是什么？",
+          "level": 3,
+          "line": 189
+        },
+        {
+          "heading": "支持哪些 AI 模型？",
+          "level": 3,
+          "line": 197
+        },
+        {
+          "heading": "免费吗？",
+          "level": 3,
+          "line": 205
+        },
+        {
+          "heading": "沙盒隔离是怎么工作的？",
+          "level": 3,
+          "line": 213
+        },
+        {
+          "heading": "数据安全吗？",
+          "level": 3,
+          "line": 221
+        },
+        {
+          "heading": "支持 Linux 吗？",
+          "level": 3,
+          "line": 229
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    }
+  ]
+}

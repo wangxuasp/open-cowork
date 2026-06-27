@@ -1,0 +1,2580 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".claude/skills/pptx/scripts/inventory.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 1020,
+      "nonEmptyLines": 837,
+      "functions": [
+        {
+          "name": "main",
+          "startLine": 50,
+          "endLine": 125,
+          "params": []
+        },
+        {
+          "name": "is_valid_shape",
+          "startLine": 742,
+          "endLine": 763,
+          "params": ["shape"]
+        },
+        {
+          "name": "collect_shapes_with_absolute_positions",
+          "startLine": 766,
+          "endLine": 816,
+          "params": ["shape", "parent_left", "parent_top"]
+        },
+        {
+          "name": "sort_shapes_by_position",
+          "startLine": 819,
+          "endLine": 846,
+          "params": ["shapes"]
+        },
+        {
+          "name": "calculate_overlap",
+          "startLine": 849,
+          "endLine": 879,
+          "params": ["rect1", "rect2", "tolerance"]
+        },
+        {
+          "name": "detect_overlaps",
+          "startLine": 882,
+          "endLine": 911,
+          "params": ["shapes"]
+        },
+        {
+          "name": "extract_text_inventory",
+          "startLine": 914,
+          "endLine": 974,
+          "params": ["pptx_path", "prs", "issues_only"]
+        },
+        {
+          "name": "get_inventory_as_dict",
+          "startLine": 977,
+          "endLine": 1000,
+          "params": ["pptx_path", "issues_only"]
+        },
+        {
+          "name": "save_inventory",
+          "startLine": 1003,
+          "endLine": 1016,
+          "params": ["inventory", "output_path"]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ShapeWithPosition",
+          "startLine": 129,
+          "endLine": 134,
+          "methods": [],
+          "properties": ["shape", "absolute_left", "absolute_top"]
+        },
+        {
+          "name": "ParagraphData",
+          "startLine": 137,
+          "endLine": 263,
+          "methods": ["__init__", "to_dict"],
+          "properties": []
+        },
+        {
+          "name": "ShapeData",
+          "startLine": 266,
+          "endLine": 739,
+          "methods": [
+            "emu_to_inches",
+            "inches_to_pixels",
+            "get_font_path",
+            "get_slide_dimensions",
+            "get_default_font_size",
+            "__init__",
+            "paragraphs",
+            "_get_default_font_size",
+            "_get_usable_dimensions",
+            "_wrap_text_line",
+            "_estimate_frame_overflow",
+            "_calculate_slide_overflow",
+            "_detect_bullet_issues",
+            "has_any_issues",
+            "to_dict"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "main",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "ShapeWithPosition",
+          "line": 128,
+          "isDefault": false
+        },
+        {
+          "name": "ParagraphData",
+          "line": 137,
+          "isDefault": false
+        },
+        {
+          "name": "ShapeData",
+          "line": 266,
+          "isDefault": false
+        },
+        {
+          "name": "is_valid_shape",
+          "line": 742,
+          "isDefault": false
+        },
+        {
+          "name": "collect_shapes_with_absolute_positions",
+          "line": 766,
+          "isDefault": false
+        },
+        {
+          "name": "sort_shapes_by_position",
+          "line": 819,
+          "isDefault": false
+        },
+        {
+          "name": "calculate_overlap",
+          "line": 849,
+          "isDefault": false
+        },
+        {
+          "name": "detect_overlaps",
+          "line": 882,
+          "isDefault": false
+        },
+        {
+          "name": "extract_text_inventory",
+          "line": 914,
+          "isDefault": false
+        },
+        {
+          "name": "get_inventory_as_dict",
+          "line": 977,
+          "isDefault": false
+        },
+        {
+          "name": "save_inventory",
+          "line": 1003,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "main",
+          "callee": "argparse.ArgumentParser",
+          "lineNumber": 52
+        },
+        {
+          "caller": "main",
+          "callee": "parser.add_argument",
+          "lineNumber": 72
+        },
+        {
+          "caller": "main",
+          "callee": "parser.add_argument",
+          "lineNumber": 73
+        },
+        {
+          "caller": "main",
+          "callee": "parser.add_argument",
+          "lineNumber": 74
+        },
+        {
+          "caller": "main",
+          "callee": "parser.parse_args",
+          "lineNumber": 80
+        },
+        {
+          "caller": "main",
+          "callee": "Path",
+          "lineNumber": 82
+        },
+        {
+          "caller": "main",
+          "callee": "input_path.exists",
+          "lineNumber": 83
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 84
+        },
+        {
+          "caller": "main",
+          "callee": "sys.exit",
+          "lineNumber": 85
+        },
+        {
+          "caller": "main",
+          "callee": "input_path.suffix.lower",
+          "lineNumber": 87
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 88
+        },
+        {
+          "caller": "main",
+          "callee": "sys.exit",
+          "lineNumber": 89
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 92
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 94
+        },
+        {
+          "caller": "main",
+          "callee": "extract_text_inventory",
+          "lineNumber": 97
+        },
+        {
+          "caller": "main",
+          "callee": "Path",
+          "lineNumber": 99
+        },
+        {
+          "caller": "main",
+          "callee": "output_path.parent.mkdir",
+          "lineNumber": 100
+        },
+        {
+          "caller": "main",
+          "callee": "save_inventory",
+          "lineNumber": 101
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 103
+        },
+        {
+          "caller": "main",
+          "callee": "len",
+          "lineNumber": 106
+        },
+        {
+          "caller": "main",
+          "callee": "sum",
+          "lineNumber": 107
+        },
+        {
+          "caller": "main",
+          "callee": "len",
+          "lineNumber": 107
+        },
+        {
+          "caller": "main",
+          "callee": "inventory.values",
+          "lineNumber": 107
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 110
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 114
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 116
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 121
+        },
+        {
+          "caller": "main",
+          "callee": "traceback.print_exc",
+          "lineNumber": 124
+        },
+        {
+          "caller": "main",
+          "callee": "sys.exit",
+          "lineNumber": 125
+        },
+        {
+          "caller": "__init__",
+          "callee": "paragraph.text.strip",
+          "lineNumber": 146
+        },
+        {
+          "caller": "__init__",
+          "callee": "hasattr",
+          "lineNumber": 163
+        },
+        {
+          "caller": "__init__",
+          "callee": "pPr.find",
+          "lineNumber": 170
+        },
+        {
+          "caller": "__init__",
+          "callee": "pPr.find",
+          "lineNumber": 171
+        },
+        {
+          "caller": "__init__",
+          "callee": "hasattr",
+          "lineNumber": 174
+        },
+        {
+          "caller": "__init__",
+          "callee": "hasattr",
+          "lineNumber": 178
+        },
+        {
+          "caller": "__init__",
+          "callee": "hasattr",
+          "lineNumber": 188
+        },
+        {
+          "caller": "__init__",
+          "callee": "hasattr",
+          "lineNumber": 190
+        },
+        {
+          "caller": "__init__",
+          "callee": "hasattr",
+          "lineNumber": 196
+        },
+        {
+          "caller": "__init__",
+          "callee": "str",
+          "lineNumber": 213
+        },
+        {
+          "caller": "__init__",
+          "callee": "hasattr",
+          "lineNumber": 223
+        },
+        {
+          "caller": "__init__",
+          "callee": "hasattr",
+          "lineNumber": 224
+        },
+        {
+          "caller": "__init__",
+          "callee": "round",
+          "lineNumber": 225
+        },
+        {
+          "caller": "__init__",
+          "callee": "round",
+          "lineNumber": 229
+        },
+        {
+          "caller": "inches_to_pixels",
+          "callee": "int",
+          "lineNumber": 277
+        },
+        {
+          "caller": "get_font_path",
+          "callee": "platform.system",
+          "lineNumber": 289
+        },
+        {
+          "caller": "get_font_path",
+          "callee": "font_name.lower",
+          "lineNumber": 294
+        },
+        {
+          "caller": "get_font_path",
+          "callee": "font_name.replace",
+          "lineNumber": 295
+        },
+        {
+          "caller": "get_font_path",
+          "callee": "font_name.replace",
+          "lineNumber": 296
+        },
+        {
+          "caller": "get_font_path",
+          "callee": "Path(font_dir).expanduser",
+          "lineNumber": 319
+        },
+        {
+          "caller": "get_font_path",
+          "callee": "Path",
+          "lineNumber": 319
+        },
+        {
+          "caller": "get_font_path",
+          "callee": "font_dir_path.exists",
+          "lineNumber": 320
+        },
+        {
+          "caller": "get_font_path",
+          "callee": "font_path.exists",
+          "lineNumber": 327
+        },
+        {
+          "caller": "get_font_path",
+          "callee": "str",
+          "lineNumber": 328
+        },
+        {
+          "caller": "get_font_path",
+          "callee": "font_dir_path.iterdir",
+          "lineNumber": 332
+        },
+        {
+          "caller": "get_font_path",
+          "callee": "file_path.is_file",
+          "lineNumber": 333
+        },
+        {
+          "caller": "get_font_path",
+          "callee": "file_path.name.lower",
+          "lineNumber": 334
+        },
+        {
+          "caller": "get_font_path",
+          "callee": "font_name.lower().replace",
+          "lineNumber": 335
+        },
+        {
+          "caller": "get_font_path",
+          "callee": "font_name.lower",
+          "lineNumber": 335
+        },
+        {
+          "caller": "get_font_path",
+          "callee": "any",
+          "lineNumber": 336
+        },
+        {
+          "caller": "get_font_path",
+          "callee": "file_name_lower.endswith",
+          "lineNumber": 337
+        },
+        {
+          "caller": "get_font_path",
+          "callee": "str",
+          "lineNumber": 339
+        },
+        {
+          "caller": "get_default_font_size",
+          "callee": "hasattr",
+          "lineNumber": 373
+        },
+        {
+          "caller": "get_default_font_size",
+          "callee": "layout_placeholder.element.iter",
+          "lineNumber": 380
+        },
+        {
+          "caller": "get_default_font_size",
+          "callee": "elem.get",
+          "lineNumber": 381
+        },
+        {
+          "caller": "get_default_font_size",
+          "callee": "float",
+          "lineNumber": 382
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.get_slide_dimensions",
+          "lineNumber": 408
+        },
+        {
+          "caller": "__init__",
+          "callee": "hasattr",
+          "lineNumber": 414
+        },
+        {
+          "caller": "__init__",
+          "callee": "str(shape.placeholder_format.type).split(\".\")[-1].split",
+          "lineNumber": 417
+        },
+        {
+          "caller": "__init__",
+          "callee": "str(shape.placeholder_format.type).split",
+          "lineNumber": 417
+        },
+        {
+          "caller": "__init__",
+          "callee": "str",
+          "lineNumber": 417
+        },
+        {
+          "caller": "__init__",
+          "callee": "hasattr",
+          "lineNumber": 421
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.get_default_font_size",
+          "lineNumber": 422
+        },
+        {
+          "caller": "__init__",
+          "callee": "hasattr",
+          "lineNumber": 431
+        },
+        {
+          "caller": "__init__",
+          "callee": "hasattr",
+          "lineNumber": 436
+        },
+        {
+          "caller": "__init__",
+          "callee": "round",
+          "lineNumber": 439
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.emu_to_inches",
+          "lineNumber": 439
+        },
+        {
+          "caller": "__init__",
+          "callee": "round",
+          "lineNumber": 440
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.emu_to_inches",
+          "lineNumber": 440
+        },
+        {
+          "caller": "__init__",
+          "callee": "round",
+          "lineNumber": 441
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.emu_to_inches",
+          "lineNumber": 442
+        },
+        {
+          "caller": "__init__",
+          "callee": "hasattr",
+          "lineNumber": 442
+        },
+        {
+          "caller": "__init__",
+          "callee": "round",
+          "lineNumber": 445
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.emu_to_inches",
+          "lineNumber": 446
+        },
+        {
+          "caller": "__init__",
+          "callee": "hasattr",
+          "lineNumber": 446
+        },
+        {
+          "caller": "__init__",
+          "callee": "hasattr",
+          "lineNumber": 453
+        },
+        {
+          "caller": "__init__",
+          "callee": "hasattr",
+          "lineNumber": 454
+        },
+        {
+          "caller": "__init__",
+          "callee": "self._estimate_frame_overflow",
+          "lineNumber": 464
+        },
+        {
+          "caller": "__init__",
+          "callee": "self._calculate_slide_overflow",
+          "lineNumber": 465
+        },
+        {
+          "caller": "__init__",
+          "callee": "self._detect_bullet_issues",
+          "lineNumber": 466
+        },
+        {
+          "caller": "paragraphs",
+          "callee": "hasattr",
+          "lineNumber": 471
+        },
+        {
+          "caller": "paragraphs",
+          "callee": "paragraph.text.strip",
+          "lineNumber": 476
+        },
+        {
+          "caller": "paragraphs",
+          "callee": "paragraphs.append",
+          "lineNumber": 477
+        },
+        {
+          "caller": "paragraphs",
+          "callee": "ParagraphData",
+          "lineNumber": 477
+        },
+        {
+          "caller": "_get_default_font_size",
+          "callee": "hasattr",
+          "lineNumber": 484
+        },
+        {
+          "caller": "_get_default_font_size",
+          "callee": "hasattr",
+          "lineNumber": 484
+        },
+        {
+          "caller": "_get_default_font_size",
+          "callee": "hasattr",
+          "lineNumber": 489
+        },
+        {
+          "caller": "_get_default_font_size",
+          "callee": "slide_master.element.iter",
+          "lineNumber": 498
+        },
+        {
+          "caller": "_get_default_font_size",
+          "callee": "child.tag.split",
+          "lineNumber": 499
+        },
+        {
+          "caller": "_get_default_font_size",
+          "callee": "child.iter",
+          "lineNumber": 501
+        },
+        {
+          "caller": "_get_default_font_size",
+          "callee": "int",
+          "lineNumber": 503
+        },
+        {
+          "caller": "_get_usable_dimensions",
+          "callee": "hasattr",
+          "lineNumber": 515
+        },
+        {
+          "caller": "_get_usable_dimensions",
+          "callee": "self.emu_to_inches",
+          "lineNumber": 516
+        },
+        {
+          "caller": "_get_usable_dimensions",
+          "callee": "hasattr",
+          "lineNumber": 517
+        },
+        {
+          "caller": "_get_usable_dimensions",
+          "callee": "self.emu_to_inches",
+          "lineNumber": 518
+        },
+        {
+          "caller": "_get_usable_dimensions",
+          "callee": "hasattr",
+          "lineNumber": 519
+        },
+        {
+          "caller": "_get_usable_dimensions",
+          "callee": "self.emu_to_inches",
+          "lineNumber": 520
+        },
+        {
+          "caller": "_get_usable_dimensions",
+          "callee": "hasattr",
+          "lineNumber": 521
+        },
+        {
+          "caller": "_get_usable_dimensions",
+          "callee": "self.emu_to_inches",
+          "lineNumber": 522
+        },
+        {
+          "caller": "_get_usable_dimensions",
+          "callee": "self.inches_to_pixels",
+          "lineNumber": 530
+        },
+        {
+          "caller": "_get_usable_dimensions",
+          "callee": "self.inches_to_pixels",
+          "lineNumber": 531
+        },
+        {
+          "caller": "_wrap_text_line",
+          "callee": "draw.textlength",
+          "lineNumber": 540
+        },
+        {
+          "caller": "_wrap_text_line",
+          "callee": "line.split",
+          "lineNumber": 545
+        },
+        {
+          "caller": "_wrap_text_line",
+          "callee": "draw.textlength",
+          "lineNumber": 550
+        },
+        {
+          "caller": "_wrap_text_line",
+          "callee": "wrapped.append",
+          "lineNumber": 554
+        },
+        {
+          "caller": "_wrap_text_line",
+          "callee": "wrapped.append",
+          "lineNumber": 558
+        },
+        {
+          "caller": "_estimate_frame_overflow",
+          "callee": "hasattr",
+          "lineNumber": 564
+        },
+        {
+          "caller": "_estimate_frame_overflow",
+          "callee": "self._get_usable_dimensions",
+          "lineNumber": 572
+        },
+        {
+          "caller": "_estimate_frame_overflow",
+          "callee": "Image.new",
+          "lineNumber": 577
+        },
+        {
+          "caller": "_estimate_frame_overflow",
+          "callee": "ImageDraw.Draw",
+          "lineNumber": 578
+        },
+        {
+          "caller": "_estimate_frame_overflow",
+          "callee": "self._get_default_font_size",
+          "lineNumber": 581
+        },
+        {
+          "caller": "_estimate_frame_overflow",
+          "callee": "enumerate",
+          "lineNumber": 586
+        },
+        {
+          "caller": "_estimate_frame_overflow",
+          "callee": "paragraph.text.strip",
+          "lineNumber": 587
+        },
+        {
+          "caller": "_estimate_frame_overflow",
+          "callee": "ParagraphData",
+          "lineNumber": 590
+        },
+        {
+          "caller": "_estimate_frame_overflow",
+          "callee": "int",
+          "lineNumber": 594
+        },
+        {
+          "caller": "_estimate_frame_overflow",
+          "callee": "self.get_font_path",
+          "lineNumber": 597
+        },
+        {
+          "caller": "_estimate_frame_overflow",
+          "callee": "ImageFont.truetype",
+          "lineNumber": 600
+        },
+        {
+          "caller": "_estimate_frame_overflow",
+          "callee": "ImageFont.load_default",
+          "lineNumber": 602
+        },
+        {
+          "caller": "_estimate_frame_overflow",
+          "callee": "ImageFont.load_default",
+          "lineNumber": 604
+        },
+        {
+          "caller": "_estimate_frame_overflow",
+          "callee": "paragraph.text.split",
+          "lineNumber": 608
+        },
+        {
+          "caller": "_estimate_frame_overflow",
+          "callee": "self._wrap_text_line",
+          "lineNumber": 609
+        },
+        {
+          "caller": "_estimate_frame_overflow",
+          "callee": "all_wrapped_lines.extend",
+          "lineNumber": 610
+        },
+        {
+          "caller": "_estimate_frame_overflow",
+          "callee": "len",
+          "lineNumber": 626
+        },
+        {
+          "caller": "_estimate_frame_overflow",
+          "callee": "round",
+          "lineNumber": 635
+        },
+        {
+          "caller": "_calculate_slide_overflow",
+          "callee": "round",
+          "lineNumber": 648
+        },
+        {
+          "caller": "_calculate_slide_overflow",
+          "callee": "self.emu_to_inches",
+          "lineNumber": 648
+        },
+        {
+          "caller": "_calculate_slide_overflow",
+          "callee": "round",
+          "lineNumber": 656
+        },
+        {
+          "caller": "_calculate_slide_overflow",
+          "callee": "self.emu_to_inches",
+          "lineNumber": 656
+        },
+        {
+          "caller": "_detect_bullet_issues",
+          "callee": "hasattr",
+          "lineNumber": 662
+        },
+        {
+          "caller": "_detect_bullet_issues",
+          "callee": "paragraph.text.strip",
+          "lineNumber": 673
+        },
+        {
+          "caller": "_detect_bullet_issues",
+          "callee": "any",
+          "lineNumber": 675
+        },
+        {
+          "caller": "_detect_bullet_issues",
+          "callee": "text.startswith",
+          "lineNumber": 675
+        },
+        {
+          "caller": "_detect_bullet_issues",
+          "callee": "self.warnings.append",
+          "lineNumber": 676
+        },
+        {
+          "caller": "has_any_issues",
+          "callee": "len",
+          "lineNumber": 688
+        },
+        {
+          "caller": "has_any_issues",
+          "callee": "len",
+          "lineNumber": 689
+        },
+        {
+          "caller": "to_dict",
+          "callee": "para.to_dict",
+          "lineNumber": 737
+        },
+        {
+          "caller": "is_valid_shape",
+          "callee": "hasattr",
+          "lineNumber": 745
+        },
+        {
+          "caller": "is_valid_shape",
+          "callee": "shape.text_frame.text.strip",
+          "lineNumber": 748
+        },
+        {
+          "caller": "is_valid_shape",
+          "callee": "hasattr",
+          "lineNumber": 753
+        },
+        {
+          "caller": "is_valid_shape",
+          "callee": "str(shape.placeholder_format.type).split(\".\")[-1].split",
+          "lineNumber": 756
+        },
+        {
+          "caller": "is_valid_shape",
+          "callee": "str(shape.placeholder_format.type).split",
+          "lineNumber": 756
+        },
+        {
+          "caller": "is_valid_shape",
+          "callee": "str",
+          "lineNumber": 756
+        },
+        {
+          "caller": "is_valid_shape",
+          "callee": "text.isdigit",
+          "lineNumber": 760
+        },
+        {
+          "caller": "collect_shapes_with_absolute_positions",
+          "callee": "hasattr",
+          "lineNumber": 783
+        },
+        {
+          "caller": "collect_shapes_with_absolute_positions",
+          "callee": "hasattr",
+          "lineNumber": 786
+        },
+        {
+          "caller": "collect_shapes_with_absolute_positions",
+          "callee": "hasattr",
+          "lineNumber": 787
+        },
+        {
+          "caller": "collect_shapes_with_absolute_positions",
+          "callee": "result.extend",
+          "lineNumber": 795
+        },
+        {
+          "caller": "collect_shapes_with_absolute_positions",
+          "callee": "collect_shapes_with_absolute_positions",
+          "lineNumber": 796
+        },
+        {
+          "caller": "collect_shapes_with_absolute_positions",
+          "callee": "is_valid_shape",
+          "lineNumber": 803
+        },
+        {
+          "caller": "collect_shapes_with_absolute_positions",
+          "callee": "hasattr",
+          "lineNumber": 805
+        },
+        {
+          "caller": "collect_shapes_with_absolute_positions",
+          "callee": "hasattr",
+          "lineNumber": 806
+        },
+        {
+          "caller": "collect_shapes_with_absolute_positions",
+          "callee": "ShapeWithPosition",
+          "lineNumber": 809
+        },
+        {
+          "caller": "sort_shapes_by_position",
+          "callee": "sorted",
+          "lineNumber": 828
+        },
+        {
+          "caller": "sort_shapes_by_position",
+          "callee": "abs",
+          "lineNumber": 836
+        },
+        {
+          "caller": "sort_shapes_by_position",
+          "callee": "row.append",
+          "lineNumber": 837
+        },
+        {
+          "caller": "sort_shapes_by_position",
+          "callee": "result.extend",
+          "lineNumber": 840
+        },
+        {
+          "caller": "sort_shapes_by_position",
+          "callee": "sorted",
+          "lineNumber": 840
+        },
+        {
+          "caller": "sort_shapes_by_position",
+          "callee": "result.extend",
+          "lineNumber": 845
+        },
+        {
+          "caller": "sort_shapes_by_position",
+          "callee": "sorted",
+          "lineNumber": 845
+        },
+        {
+          "caller": "calculate_overlap",
+          "callee": "min",
+          "lineNumber": 870
+        },
+        {
+          "caller": "calculate_overlap",
+          "callee": "max",
+          "lineNumber": 870
+        },
+        {
+          "caller": "calculate_overlap",
+          "callee": "min",
+          "lineNumber": 871
+        },
+        {
+          "caller": "calculate_overlap",
+          "callee": "max",
+          "lineNumber": 871
+        },
+        {
+          "caller": "calculate_overlap",
+          "callee": "round",
+          "lineNumber": 877
+        },
+        {
+          "caller": "detect_overlaps",
+          "callee": "len",
+          "lineNumber": 891
+        },
+        {
+          "caller": "detect_overlaps",
+          "callee": "range",
+          "lineNumber": 894
+        },
+        {
+          "caller": "detect_overlaps",
+          "callee": "range",
+          "lineNumber": 895
+        },
+        {
+          "caller": "detect_overlaps",
+          "callee": "calculate_overlap",
+          "lineNumber": 906
+        },
+        {
+          "caller": "extract_text_inventory",
+          "callee": "Presentation",
+          "lineNumber": 930
+        },
+        {
+          "caller": "extract_text_inventory",
+          "callee": "str",
+          "lineNumber": 930
+        },
+        {
+          "caller": "extract_text_inventory",
+          "callee": "enumerate",
+          "lineNumber": 933
+        },
+        {
+          "caller": "extract_text_inventory",
+          "callee": "shapes_with_positions.extend",
+          "lineNumber": 937
+        },
+        {
+          "caller": "extract_text_inventory",
+          "callee": "collect_shapes_with_absolute_positions",
+          "lineNumber": 937
+        },
+        {
+          "caller": "extract_text_inventory",
+          "callee": "ShapeData",
+          "lineNumber": 944
+        },
+        {
+          "caller": "extract_text_inventory",
+          "callee": "sort_shapes_by_position",
+          "lineNumber": 954
+        },
+        {
+          "caller": "extract_text_inventory",
+          "callee": "enumerate",
+          "lineNumber": 955
+        },
+        {
+          "caller": "extract_text_inventory",
+          "callee": "len",
+          "lineNumber": 959
+        },
+        {
+          "caller": "extract_text_inventory",
+          "callee": "detect_overlaps",
+          "lineNumber": 960
+        },
+        {
+          "caller": "get_inventory_as_dict",
+          "callee": "extract_text_inventory",
+          "lineNumber": 991
+        },
+        {
+          "caller": "get_inventory_as_dict",
+          "callee": "inventory.items",
+          "lineNumber": 995
+        },
+        {
+          "caller": "get_inventory_as_dict",
+          "callee": "shape_data.to_dict",
+          "lineNumber": 997
+        },
+        {
+          "caller": "get_inventory_as_dict",
+          "callee": "shapes.items",
+          "lineNumber": 997
+        },
+        {
+          "caller": "save_inventory",
+          "callee": "inventory.items",
+          "lineNumber": 1010
+        },
+        {
+          "caller": "save_inventory",
+          "callee": "shape_data.to_dict",
+          "lineNumber": 1012
+        },
+        {
+          "caller": "save_inventory",
+          "callee": "shapes.items",
+          "lineNumber": 1012
+        },
+        {
+          "caller": "save_inventory",
+          "callee": "open",
+          "lineNumber": 1015
+        },
+        {
+          "caller": "save_inventory",
+          "callee": "json.dump",
+          "lineNumber": 1016
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 12,
+        "functionCount": 9,
+        "classCount": 3
+      }
+    },
+    {
+      "path": ".claude/skills/pptx/scripts/replace.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 388,
+      "nonEmptyLines": 311,
+      "functions": [
+        {
+          "name": "clear_paragraph_bullets",
+          "startLine": 29,
+          "endLine": 43,
+          "params": ["paragraph"]
+        },
+        {
+          "name": "apply_paragraph_properties",
+          "startLine": 46,
+          "endLine": 113,
+          "params": ["paragraph", "para_data"]
+        },
+        {
+          "name": "apply_font_properties",
+          "startLine": 116,
+          "endLine": 143,
+          "params": ["run", "para_data"]
+        },
+        {
+          "name": "detect_frame_overflow",
+          "startLine": 146,
+          "endLine": 162,
+          "params": ["inventory"]
+        },
+        {
+          "name": "validate_replacements",
+          "startLine": 165,
+          "endLine": 204,
+          "params": ["inventory", "replacements"]
+        },
+        {
+          "name": "check_duplicate_keys",
+          "startLine": 207,
+          "endLine": 214,
+          "params": ["pairs"]
+        },
+        {
+          "name": "apply_replacements",
+          "startLine": 217,
+          "endLine": 356,
+          "params": ["pptx_file", "json_file", "output_file"]
+        },
+        {
+          "name": "main",
+          "startLine": 359,
+          "endLine": 384,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "clear_paragraph_bullets",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "apply_paragraph_properties",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "apply_font_properties",
+          "line": 116,
+          "isDefault": false
+        },
+        {
+          "name": "detect_frame_overflow",
+          "line": 146,
+          "isDefault": false
+        },
+        {
+          "name": "validate_replacements",
+          "line": 165,
+          "isDefault": false
+        },
+        {
+          "name": "check_duplicate_keys",
+          "line": 207,
+          "isDefault": false
+        },
+        {
+          "name": "apply_replacements",
+          "line": 217,
+          "isDefault": false
+        },
+        {
+          "name": "main",
+          "line": 359,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "clear_paragraph_bullets",
+          "callee": "paragraph._element.get_or_add_pPr",
+          "lineNumber": 31
+        },
+        {
+          "caller": "clear_paragraph_bullets",
+          "callee": "list",
+          "lineNumber": 34
+        },
+        {
+          "caller": "clear_paragraph_bullets",
+          "callee": "child.tag.endswith",
+          "lineNumber": 36
+        },
+        {
+          "caller": "clear_paragraph_bullets",
+          "callee": "child.tag.endswith",
+          "lineNumber": 37
+        },
+        {
+          "caller": "clear_paragraph_bullets",
+          "callee": "child.tag.endswith",
+          "lineNumber": 38
+        },
+        {
+          "caller": "clear_paragraph_bullets",
+          "callee": "child.tag.endswith",
+          "lineNumber": 39
+        },
+        {
+          "caller": "clear_paragraph_bullets",
+          "callee": "pPr.remove",
+          "lineNumber": 41
+        },
+        {
+          "caller": "apply_paragraph_properties",
+          "callee": "para_data.get",
+          "lineNumber": 49
+        },
+        {
+          "caller": "apply_paragraph_properties",
+          "callee": "clear_paragraph_bullets",
+          "lineNumber": 52
+        },
+        {
+          "caller": "apply_paragraph_properties",
+          "callee": "para_data.get",
+          "lineNumber": 55
+        },
+        {
+          "caller": "apply_paragraph_properties",
+          "callee": "para_data.get",
+          "lineNumber": 56
+        },
+        {
+          "caller": "apply_paragraph_properties",
+          "callee": "para_data.get",
+          "lineNumber": 60
+        },
+        {
+          "caller": "apply_paragraph_properties",
+          "callee": "int",
+          "lineNumber": 61
+        },
+        {
+          "caller": "apply_paragraph_properties",
+          "callee": "int",
+          "lineNumber": 62
+        },
+        {
+          "caller": "apply_paragraph_properties",
+          "callee": "str",
+          "lineNumber": 65
+        },
+        {
+          "caller": "apply_paragraph_properties",
+          "callee": "str",
+          "lineNumber": 66
+        },
+        {
+          "caller": "apply_paragraph_properties",
+          "callee": "OxmlElement",
+          "lineNumber": 69
+        },
+        {
+          "caller": "apply_paragraph_properties",
+          "callee": "buChar.set",
+          "lineNumber": 70
+        },
+        {
+          "caller": "apply_paragraph_properties",
+          "callee": "pPr.append",
+          "lineNumber": 71
+        },
+        {
+          "caller": "apply_paragraph_properties",
+          "callee": "OxmlElement",
+          "lineNumber": 82
+        },
+        {
+          "caller": "apply_paragraph_properties",
+          "callee": "pPr.insert",
+          "lineNumber": 83
+        },
+        {
+          "caller": "apply_paragraph_properties",
+          "callee": "Pt",
+          "lineNumber": 98
+        },
+        {
+          "caller": "apply_paragraph_properties",
+          "callee": "Pt",
+          "lineNumber": 100
+        },
+        {
+          "caller": "apply_paragraph_properties",
+          "callee": "Pt",
+          "lineNumber": 102
+        },
+        {
+          "caller": "apply_paragraph_properties",
+          "callee": "paragraph.add_run",
+          "lineNumber": 106
+        },
+        {
+          "caller": "apply_paragraph_properties",
+          "callee": "apply_font_properties",
+          "lineNumber": 113
+        },
+        {
+          "caller": "apply_font_properties",
+          "callee": "Pt",
+          "lineNumber": 125
+        },
+        {
+          "caller": "apply_font_properties",
+          "callee": "para_data[\"color\"].lstrip",
+          "lineNumber": 131
+        },
+        {
+          "caller": "apply_font_properties",
+          "callee": "len",
+          "lineNumber": 132
+        },
+        {
+          "caller": "apply_font_properties",
+          "callee": "int",
+          "lineNumber": 133
+        },
+        {
+          "caller": "apply_font_properties",
+          "callee": "int",
+          "lineNumber": 134
+        },
+        {
+          "caller": "apply_font_properties",
+          "callee": "int",
+          "lineNumber": 135
+        },
+        {
+          "caller": "apply_font_properties",
+          "callee": "RGBColor",
+          "lineNumber": 136
+        },
+        {
+          "caller": "apply_font_properties",
+          "callee": "getattr",
+          "lineNumber": 141
+        },
+        {
+          "caller": "apply_font_properties",
+          "callee": "print",
+          "lineNumber": 143
+        },
+        {
+          "caller": "detect_frame_overflow",
+          "callee": "inventory.items",
+          "lineNumber": 154
+        },
+        {
+          "caller": "detect_frame_overflow",
+          "callee": "shapes_dict.items",
+          "lineNumber": 155
+        },
+        {
+          "caller": "validate_replacements",
+          "callee": "replacements.items",
+          "lineNumber": 172
+        },
+        {
+          "caller": "validate_replacements",
+          "callee": "slide_key.startswith",
+          "lineNumber": 173
+        },
+        {
+          "caller": "validate_replacements",
+          "callee": "errors.append",
+          "lineNumber": 178
+        },
+        {
+          "caller": "validate_replacements",
+          "callee": "shapes_data.keys",
+          "lineNumber": 182
+        },
+        {
+          "caller": "validate_replacements",
+          "callee": "inventory[slide_key].keys",
+          "lineNumber": 186
+        },
+        {
+          "caller": "validate_replacements",
+          "callee": "len",
+          "lineNumber": 193
+        },
+        {
+          "caller": "validate_replacements",
+          "callee": "unused_with_content.append",
+          "lineNumber": 195
+        },
+        {
+          "caller": "validate_replacements",
+          "callee": "unused_with_content.append",
+          "lineNumber": 197
+        },
+        {
+          "caller": "validate_replacements",
+          "callee": "errors.append",
+          "lineNumber": 199
+        },
+        {
+          "caller": "validate_replacements",
+          "callee": "', '.join",
+          "lineNumber": 201
+        },
+        {
+          "caller": "validate_replacements",
+          "callee": "sorted",
+          "lineNumber": 201
+        },
+        {
+          "caller": "check_duplicate_keys",
+          "callee": "ValueError",
+          "lineNumber": 212
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "Presentation",
+          "lineNumber": 221
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "extract_text_inventory",
+          "lineNumber": 225
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "Path",
+          "lineNumber": 225
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "detect_frame_overflow",
+          "lineNumber": 228
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "open",
+          "lineNumber": 231
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "json.load",
+          "lineNumber": 232
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "validate_replacements",
+          "lineNumber": 235
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "print",
+          "lineNumber": 237
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "print",
+          "lineNumber": 239
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "print",
+          "lineNumber": 240
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "print",
+          "lineNumber": 241
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "ValueError",
+          "lineNumber": 244
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "len",
+          "lineNumber": 244
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "inventory.items",
+          "lineNumber": 252
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "slide_key.startswith",
+          "lineNumber": 253
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "int",
+          "lineNumber": 256
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "slide_key.split",
+          "lineNumber": 256
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "len",
+          "lineNumber": 258
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "print",
+          "lineNumber": 259
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "shapes_dict.items",
+          "lineNumber": 263
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "print",
+          "lineNumber": 269
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "text_frame.clear",
+          "lineNumber": 275
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "replacements.get(slide_key, {}).get",
+          "lineNumber": 279
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "replacements.get",
+          "lineNumber": 279
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "enumerate",
+          "lineNumber": 286
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "text_frame.add_paragraph",
+          "lineNumber": 290
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "apply_paragraph_properties",
+          "lineNumber": 292
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "tempfile.NamedTemporaryFile",
+          "lineNumber": 299
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "Path",
+          "lineNumber": 300
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "prs.save",
+          "lineNumber": 301
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "str",
+          "lineNumber": 301
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "extract_text_inventory",
+          "lineNumber": 304
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "detect_frame_overflow",
+          "lineNumber": 305
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "tmp_path.unlink",
+          "lineNumber": 307
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "updated_overflow.items",
+          "lineNumber": 311
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "shape_overflows.items",
+          "lineNumber": 312
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "original_overflow.get(slide_key, {}).get",
+          "lineNumber": 314
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "original_overflow.get",
+          "lineNumber": 314
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "overflow_errors.append",
+          "lineNumber": 319
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "updated_inventory.items",
+          "lineNumber": 326
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "shapes_dict.items",
+          "lineNumber": 327
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "warnings.append",
+          "lineNumber": 330
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "print",
+          "lineNumber": 334
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "print",
+          "lineNumber": 336
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "print",
+          "lineNumber": 338
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "print",
+          "lineNumber": 340
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "print",
+          "lineNumber": 342
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "print",
+          "lineNumber": 343
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "ValueError",
+          "lineNumber": 344
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "len",
+          "lineNumber": 345
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "len",
+          "lineNumber": 345
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "prs.save",
+          "lineNumber": 349
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "print",
+          "lineNumber": 352
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "print",
+          "lineNumber": 353
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "len",
+          "lineNumber": 353
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "print",
+          "lineNumber": 354
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "print",
+          "lineNumber": 355
+        },
+        {
+          "caller": "apply_replacements",
+          "callee": "print",
+          "lineNumber": 356
+        },
+        {
+          "caller": "main",
+          "callee": "len",
+          "lineNumber": 361
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 362
+        },
+        {
+          "caller": "main",
+          "callee": "sys.exit",
+          "lineNumber": 363
+        },
+        {
+          "caller": "main",
+          "callee": "Path",
+          "lineNumber": 365
+        },
+        {
+          "caller": "main",
+          "callee": "Path",
+          "lineNumber": 366
+        },
+        {
+          "caller": "main",
+          "callee": "Path",
+          "lineNumber": 367
+        },
+        {
+          "caller": "main",
+          "callee": "input_pptx.exists",
+          "lineNumber": 369
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 370
+        },
+        {
+          "caller": "main",
+          "callee": "sys.exit",
+          "lineNumber": 371
+        },
+        {
+          "caller": "main",
+          "callee": "replacements_json.exists",
+          "lineNumber": 373
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 374
+        },
+        {
+          "caller": "main",
+          "callee": "sys.exit",
+          "lineNumber": 375
+        },
+        {
+          "caller": "main",
+          "callee": "apply_replacements",
+          "lineNumber": 378
+        },
+        {
+          "caller": "main",
+          "callee": "str",
+          "lineNumber": 378
+        },
+        {
+          "caller": "main",
+          "callee": "str",
+          "lineNumber": 378
+        },
+        {
+          "caller": "main",
+          "callee": "str",
+          "lineNumber": 378
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 380
+        },
+        {
+          "caller": "main",
+          "callee": "traceback.print_exc",
+          "lineNumber": 383
+        },
+        {
+          "caller": "main",
+          "callee": "sys.exit",
+          "lineNumber": 384
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 8,
+        "functionCount": 8,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".claude/skills/pptx/scripts/thumbnail.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 453,
+      "nonEmptyLines": 374,
+      "functions": [
+        {
+          "name": "main",
+          "startLine": 70,
+          "endLine": 149,
+          "params": []
+        },
+        {
+          "name": "create_hidden_slide_placeholder",
+          "startLine": 152,
+          "endLine": 159,
+          "params": ["size"]
+        },
+        {
+          "name": "get_placeholder_regions",
+          "startLine": 162,
+          "endLine": 197,
+          "params": ["pptx_path"]
+        },
+        {
+          "name": "convert_to_images",
+          "startLine": 200,
+          "endLine": 274,
+          "params": ["pptx_path", "temp_dir", "dpi"]
+        },
+        {
+          "name": "create_grids",
+          "startLine": 277,
+          "endLine": 321,
+          "params": [
+            "image_paths",
+            "cols",
+            "width",
+            "output_path",
+            "placeholder_regions",
+            "slide_dimensions"
+          ]
+        },
+        {
+          "name": "create_grid",
+          "startLine": 324,
+          "endLine": 449,
+          "params": [
+            "image_paths",
+            "cols",
+            "width",
+            "start_slide_num",
+            "placeholder_regions",
+            "slide_dimensions"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "main",
+          "line": 70,
+          "isDefault": false
+        },
+        {
+          "name": "create_hidden_slide_placeholder",
+          "line": 152,
+          "isDefault": false
+        },
+        {
+          "name": "get_placeholder_regions",
+          "line": 162,
+          "isDefault": false
+        },
+        {
+          "name": "convert_to_images",
+          "line": 200,
+          "isDefault": false
+        },
+        {
+          "name": "create_grids",
+          "line": 277,
+          "isDefault": false
+        },
+        {
+          "name": "create_grid",
+          "line": 324,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "main",
+          "callee": "argparse.ArgumentParser",
+          "lineNumber": 71
+        },
+        {
+          "caller": "main",
+          "callee": "parser.add_argument",
+          "lineNumber": 74
+        },
+        {
+          "caller": "main",
+          "callee": "parser.add_argument",
+          "lineNumber": 75
+        },
+        {
+          "caller": "main",
+          "callee": "parser.add_argument",
+          "lineNumber": 81
+        },
+        {
+          "caller": "main",
+          "callee": "parser.add_argument",
+          "lineNumber": 87
+        },
+        {
+          "caller": "main",
+          "callee": "parser.parse_args",
+          "lineNumber": 93
+        },
+        {
+          "caller": "main",
+          "callee": "min",
+          "lineNumber": 96
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 98
+        },
+        {
+          "caller": "main",
+          "callee": "Path",
+          "lineNumber": 101
+        },
+        {
+          "caller": "main",
+          "callee": "input_path.exists",
+          "lineNumber": 102
+        },
+        {
+          "caller": "main",
+          "callee": "input_path.suffix.lower",
+          "lineNumber": 102
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 103
+        },
+        {
+          "caller": "main",
+          "callee": "sys.exit",
+          "lineNumber": 104
+        },
+        {
+          "caller": "main",
+          "callee": "Path",
+          "lineNumber": 107
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 109
+        },
+        {
+          "caller": "main",
+          "callee": "tempfile.TemporaryDirectory",
+          "lineNumber": 112
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 117
+        },
+        {
+          "caller": "main",
+          "callee": "get_placeholder_regions",
+          "lineNumber": 118
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 122
+        },
+        {
+          "caller": "main",
+          "callee": "len",
+          "lineNumber": 122
+        },
+        {
+          "caller": "main",
+          "callee": "convert_to_images",
+          "lineNumber": 125
+        },
+        {
+          "caller": "main",
+          "callee": "Path",
+          "lineNumber": 125
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 127
+        },
+        {
+          "caller": "main",
+          "callee": "sys.exit",
+          "lineNumber": 128
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 130
+        },
+        {
+          "caller": "main",
+          "callee": "len",
+          "lineNumber": 130
+        },
+        {
+          "caller": "main",
+          "callee": "create_grids",
+          "lineNumber": 133
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 143
+        },
+        {
+          "caller": "main",
+          "callee": "len",
+          "lineNumber": 143
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 145
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 148
+        },
+        {
+          "caller": "main",
+          "callee": "sys.exit",
+          "lineNumber": 149
+        },
+        {
+          "caller": "create_hidden_slide_placeholder",
+          "callee": "Image.new",
+          "lineNumber": 154
+        },
+        {
+          "caller": "create_hidden_slide_placeholder",
+          "callee": "ImageDraw.Draw",
+          "lineNumber": 155
+        },
+        {
+          "caller": "create_hidden_slide_placeholder",
+          "callee": "max",
+          "lineNumber": 156
+        },
+        {
+          "caller": "create_hidden_slide_placeholder",
+          "callee": "min",
+          "lineNumber": 156
+        },
+        {
+          "caller": "create_hidden_slide_placeholder",
+          "callee": "draw.line",
+          "lineNumber": 157
+        },
+        {
+          "caller": "create_hidden_slide_placeholder",
+          "callee": "draw.line",
+          "lineNumber": 158
+        },
+        {
+          "caller": "get_placeholder_regions",
+          "callee": "Presentation",
+          "lineNumber": 170
+        },
+        {
+          "caller": "get_placeholder_regions",
+          "callee": "str",
+          "lineNumber": 170
+        },
+        {
+          "caller": "get_placeholder_regions",
+          "callee": "extract_text_inventory",
+          "lineNumber": 171
+        },
+        {
+          "caller": "get_placeholder_regions",
+          "callee": "inventory.items",
+          "lineNumber": 178
+        },
+        {
+          "caller": "get_placeholder_regions",
+          "callee": "int",
+          "lineNumber": 180
+        },
+        {
+          "caller": "get_placeholder_regions",
+          "callee": "slide_key.split",
+          "lineNumber": 180
+        },
+        {
+          "caller": "get_placeholder_regions",
+          "callee": "shapes.items",
+          "lineNumber": 183
+        },
+        {
+          "caller": "get_placeholder_regions",
+          "callee": "regions.append",
+          "lineNumber": 185
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "print",
+          "lineNumber": 203
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "Presentation",
+          "lineNumber": 204
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "str",
+          "lineNumber": 204
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "len",
+          "lineNumber": 205
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "enumerate",
+          "lineNumber": 210
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "slide.element.get",
+          "lineNumber": 211
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "print",
+          "lineNumber": 214
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "print",
+          "lineNumber": 216
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "sorted",
+          "lineNumber": 216
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "print",
+          "lineNumber": 221
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "subprocess.run",
+          "lineNumber": 222
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "str",
+          "lineNumber": 229
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "str",
+          "lineNumber": 230
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "pdf_path.exists",
+          "lineNumber": 235
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "RuntimeError",
+          "lineNumber": 236
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "print",
+          "lineNumber": 239
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "subprocess.run",
+          "lineNumber": 240
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "str",
+          "lineNumber": 241
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "str",
+          "lineNumber": 241
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "str",
+          "lineNumber": 241
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "RuntimeError",
+          "lineNumber": 246
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "sorted",
+          "lineNumber": 248
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "temp_dir.glob",
+          "lineNumber": 248
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "Image.open",
+          "lineNumber": 256
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "range",
+          "lineNumber": 261
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "create_hidden_slide_placeholder",
+          "lineNumber": 265
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "placeholder_img.save",
+          "lineNumber": 266
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "all_images.append",
+          "lineNumber": 267
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "len",
+          "lineNumber": 270
+        },
+        {
+          "caller": "convert_to_images",
+          "callee": "all_images.append",
+          "lineNumber": 271
+        },
+        {
+          "caller": "create_grids",
+          "callee": "print",
+          "lineNumber": 290
+        },
+        {
+          "caller": "create_grids",
+          "callee": "enumerate",
+          "lineNumber": 295
+        },
+        {
+          "caller": "create_grids",
+          "callee": "range",
+          "lineNumber": 296
+        },
+        {
+          "caller": "create_grids",
+          "callee": "len",
+          "lineNumber": 296
+        },
+        {
+          "caller": "create_grids",
+          "callee": "min",
+          "lineNumber": 298
+        },
+        {
+          "caller": "create_grids",
+          "callee": "len",
+          "lineNumber": 298
+        },
+        {
+          "caller": "create_grids",
+          "callee": "create_grid",
+          "lineNumber": 302
+        },
+        {
+          "caller": "create_grids",
+          "callee": "len",
+          "lineNumber": 307
+        },
+        {
+          "caller": "create_grids",
+          "callee": "grid_filename.parent.mkdir",
+          "lineNumber": 317
+        },
+        {
+          "caller": "create_grids",
+          "callee": "grid.save",
+          "lineNumber": 318
+        },
+        {
+          "caller": "create_grids",
+          "callee": "str",
+          "lineNumber": 318
+        },
+        {
+          "caller": "create_grids",
+          "callee": "grid_files.append",
+          "lineNumber": 319
+        },
+        {
+          "caller": "create_grids",
+          "callee": "str",
+          "lineNumber": 319
+        },
+        {
+          "caller": "create_grid",
+          "callee": "int",
+          "lineNumber": 333
+        },
+        {
+          "caller": "create_grid",
+          "callee": "int",
+          "lineNumber": 334
+        },
+        {
+          "caller": "create_grid",
+          "callee": "Image.open",
+          "lineNumber": 337
+        },
+        {
+          "caller": "create_grid",
+          "callee": "int",
+          "lineNumber": 339
+        },
+        {
+          "caller": "create_grid",
+          "callee": "len",
+          "lineNumber": 342
+        },
+        {
+          "caller": "create_grid",
+          "callee": "Image.new",
+          "lineNumber": 347
+        },
+        {
+          "caller": "create_grid",
+          "callee": "ImageDraw.Draw",
+          "lineNumber": 348
+        },
+        {
+          "caller": "create_grid",
+          "callee": "ImageFont.load_default",
+          "lineNumber": 353
+        },
+        {
+          "caller": "create_grid",
+          "callee": "ImageFont.load_default",
+          "lineNumber": 356
+        },
+        {
+          "caller": "create_grid",
+          "callee": "enumerate",
+          "lineNumber": 359
+        },
+        {
+          "caller": "create_grid",
+          "callee": "draw.textbbox",
+          "lineNumber": 368
+        },
+        {
+          "caller": "create_grid",
+          "callee": "draw.text",
+          "lineNumber": 370
+        },
+        {
+          "caller": "create_grid",
+          "callee": "Image.open",
+          "lineNumber": 380
+        },
+        {
+          "caller": "create_grid",
+          "callee": "img.convert",
+          "lineNumber": 388
+        },
+        {
+          "caller": "create_grid",
+          "callee": "Image.new",
+          "lineNumber": 405
+        },
+        {
+          "caller": "create_grid",
+          "callee": "ImageDraw.Draw",
+          "lineNumber": 406
+        },
+        {
+          "caller": "create_grid",
+          "callee": "int",
+          "lineNumber": 411
+        },
+        {
+          "caller": "create_grid",
+          "callee": "int",
+          "lineNumber": 412
+        },
+        {
+          "caller": "create_grid",
+          "callee": "int",
+          "lineNumber": 413
+        },
+        {
+          "caller": "create_grid",
+          "callee": "int",
+          "lineNumber": 414
+        },
+        {
+          "caller": "create_grid",
+          "callee": "max",
+          "lineNumber": 418
+        },
+        {
+          "caller": "create_grid",
+          "callee": "min",
+          "lineNumber": 419
+        },
+        {
+          "caller": "create_grid",
+          "callee": "overlay_draw.rectangle",
+          "lineNumber": 421
+        },
+        {
+          "caller": "create_grid",
+          "callee": "Image.alpha_composite",
+          "lineNumber": 428
+        },
+        {
+          "caller": "create_grid",
+          "callee": "img.convert",
+          "lineNumber": 430
+        },
+        {
+          "caller": "create_grid",
+          "callee": "img.thumbnail",
+          "lineNumber": 432
+        },
+        {
+          "caller": "create_grid",
+          "callee": "grid.paste",
+          "lineNumber": 436
+        },
+        {
+          "caller": "create_grid",
+          "callee": "draw.rectangle",
+          "lineNumber": 440
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 6,
+        "functionCount": 6,
+        "classCount": 0
+      }
+    }
+  ]
+}

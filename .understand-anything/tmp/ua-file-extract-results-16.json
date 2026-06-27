@@ -1,0 +1,1340 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".github/scripts/deepseek-common.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 482,
+      "nonEmptyLines": 435,
+      "functions": [
+        {
+          "name": "requireEnv",
+          "startLine": 37,
+          "endLine": 43,
+          "params": ["name"]
+        },
+        {
+          "name": "loadEventPayload",
+          "startLine": 45,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "readTextFileIfExists",
+          "startLine": 50,
+          "endLine": 56,
+          "params": ["relativePath"]
+        },
+        {
+          "name": "truncate",
+          "startLine": 58,
+          "endLine": 66,
+          "params": ["text", "maxChars"]
+        },
+        {
+          "name": "formatCommandError",
+          "startLine": 68,
+          "endLine": 73,
+          "params": ["command", "args", "error"]
+        },
+        {
+          "name": "isMissingExecutable",
+          "startLine": 75,
+          "endLine": 77,
+          "params": ["error"]
+        },
+        {
+          "name": "runGh",
+          "startLine": 79,
+          "endLine": 91,
+          "params": ["args"]
+        },
+        {
+          "name": "buildGitGrepArgsFromRgArgs",
+          "startLine": 93,
+          "endLine": 141,
+          "params": ["args"]
+        },
+        {
+          "name": "runGitGrepFallback",
+          "startLine": 143,
+          "endLine": 162,
+          "params": ["rgArgs"]
+        },
+        {
+          "name": "runRg",
+          "startLine": 164,
+          "endLine": 181,
+          "params": ["args"]
+        },
+        {
+          "name": "normalizeApiBaseUrl",
+          "startLine": 183,
+          "endLine": 192,
+          "params": ["baseUrl"]
+        },
+        {
+          "name": "buildDeepSeekChatUrl",
+          "startLine": 194,
+          "endLine": 196,
+          "params": ["baseUrl"]
+        },
+        {
+          "name": "mapReasoningEffort",
+          "startLine": 198,
+          "endLine": 204,
+          "params": ["effort"]
+        },
+        {
+          "name": "resolveThinkingConfig",
+          "startLine": 206,
+          "endLine": 212,
+          "params": ["model"]
+        },
+        {
+          "name": "parseJsonObject",
+          "startLine": 214,
+          "endLine": 231,
+          "params": ["text"]
+        },
+        {
+          "name": "callDeepSeekJson",
+          "startLine": 233,
+          "endLine": 292,
+          "params": []
+        },
+        {
+          "name": "isRetryableDeepSeekOutputError",
+          "startLine": 294,
+          "endLine": 301,
+          "params": ["error"]
+        },
+        {
+          "name": "assertNonEmptyParsedString",
+          "startLine": 303,
+          "endLine": 318,
+          "params": ["parsed"]
+        },
+        {
+          "name": "callDeepSeekJsonWithRetries",
+          "startLine": 320,
+          "endLine": 358,
+          "params": ["options"]
+        },
+        {
+          "name": "ensureBotSignature",
+          "startLine": 359,
+          "endLine": 368,
+          "params": ["body"]
+        },
+        {
+          "name": "writeTempJson",
+          "startLine": 370,
+          "endLine": 377,
+          "params": ["prefix", "value"]
+        },
+        {
+          "name": "printUsage",
+          "startLine": 379,
+          "endLine": 385,
+          "params": ["label", "usage"]
+        },
+        {
+          "name": "loadRepoDocs",
+          "startLine": 387,
+          "endLine": 400,
+          "params": ["relativePaths"]
+        },
+        {
+          "name": "listPullRequestFiles",
+          "startLine": 402,
+          "endLine": 405,
+          "params": ["repo", "prNumber"]
+        },
+        {
+          "name": "loadPullRequestFileExcerpts",
+          "startLine": 407,
+          "endLine": 426,
+          "params": ["prNumber", "filePaths"]
+        },
+        {
+          "name": "extractKeywords",
+          "startLine": 428,
+          "endLine": 449,
+          "params": ["text"]
+        },
+        {
+          "name": "searchRepoSnippets",
+          "startLine": 451,
+          "endLine": 482,
+          "params": ["seedText"]
+        }
+      ],
+      "exports": [
+        {
+          "name": "requireEnv",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "loadEventPayload",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "readTextFileIfExists",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "truncate",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "runGh",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "runRg",
+          "line": 164,
+          "isDefault": false
+        },
+        {
+          "name": "normalizeApiBaseUrl",
+          "line": 183,
+          "isDefault": false
+        },
+        {
+          "name": "buildDeepSeekChatUrl",
+          "line": 194,
+          "isDefault": false
+        },
+        {
+          "name": "mapReasoningEffort",
+          "line": 198,
+          "isDefault": false
+        },
+        {
+          "name": "resolveThinkingConfig",
+          "line": 206,
+          "isDefault": false
+        },
+        {
+          "name": "parseJsonObject",
+          "line": 214,
+          "isDefault": false
+        },
+        {
+          "name": "callDeepSeekJson",
+          "line": 233,
+          "isDefault": false
+        },
+        {
+          "name": "assertNonEmptyParsedString",
+          "line": 303,
+          "isDefault": false
+        },
+        {
+          "name": "callDeepSeekJsonWithRetries",
+          "line": 320,
+          "isDefault": false
+        },
+        {
+          "name": "ensureBotSignature",
+          "line": 359,
+          "isDefault": false
+        },
+        {
+          "name": "writeTempJson",
+          "line": 370,
+          "isDefault": false
+        },
+        {
+          "name": "printUsage",
+          "line": 379,
+          "isDefault": false
+        },
+        {
+          "name": "loadRepoDocs",
+          "line": 387,
+          "isDefault": false
+        },
+        {
+          "name": "listPullRequestFiles",
+          "line": 402,
+          "isDefault": false
+        },
+        {
+          "name": "loadPullRequestFileExcerpts",
+          "line": 407,
+          "isDefault": false
+        },
+        {
+          "name": "extractKeywords",
+          "line": 428,
+          "isDefault": false
+        },
+        {
+          "name": "searchRepoSnippets",
+          "line": 451,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "requireEnv",
+          "callee": "process.env[name]?.trim",
+          "lineNumber": 38
+        },
+        {
+          "caller": "loadEventPayload",
+          "callee": "requireEnv",
+          "lineNumber": 46
+        },
+        {
+          "caller": "loadEventPayload",
+          "callee": "JSON.parse",
+          "lineNumber": 47
+        },
+        {
+          "caller": "loadEventPayload",
+          "callee": "fs.readFileSync",
+          "lineNumber": 47
+        },
+        {
+          "caller": "readTextFileIfExists",
+          "callee": "path.resolve",
+          "lineNumber": 51
+        },
+        {
+          "caller": "readTextFileIfExists",
+          "callee": "process.cwd",
+          "lineNumber": 51
+        },
+        {
+          "caller": "readTextFileIfExists",
+          "callee": "fs.existsSync",
+          "lineNumber": 52
+        },
+        {
+          "caller": "readTextFileIfExists",
+          "callee": "fs.readFileSync",
+          "lineNumber": 55
+        },
+        {
+          "caller": "truncate",
+          "callee": "text.slice",
+          "lineNumber": 65
+        },
+        {
+          "caller": "formatCommandError",
+          "callee": "error.stderr?.toString",
+          "lineNumber": 69
+        },
+        {
+          "caller": "formatCommandError",
+          "callee": "error.stdout?.toString",
+          "lineNumber": 70
+        },
+        {
+          "caller": "formatCommandError",
+          "callee": "`${command} ${args.join(' ')} failed: ${details}`.trim",
+          "lineNumber": 72
+        },
+        {
+          "caller": "formatCommandError",
+          "callee": "args.join",
+          "lineNumber": 72
+        },
+        {
+          "caller": "isMissingExecutable",
+          "callee": "String(error?.message || '').includes",
+          "lineNumber": 76
+        },
+        {
+          "caller": "isMissingExecutable",
+          "callee": "String",
+          "lineNumber": 76
+        },
+        {
+          "caller": "runGh",
+          "callee": "execFileSync('gh', args, {\n      cwd: process.cwd(),\n      encoding: 'utf8',\n      input: options.input,\n      maxBuffer: 20 * 1024 * 1024,\n      stdio: ['pipe', 'pipe', 'pipe'],\n    }).trim",
+          "lineNumber": 81
+        },
+        {
+          "caller": "runGh",
+          "callee": "execFileSync",
+          "lineNumber": 81
+        },
+        {
+          "caller": "runGh",
+          "callee": "process.cwd",
+          "lineNumber": 82
+        },
+        {
+          "caller": "runGh",
+          "callee": "formatCommandError",
+          "lineNumber": 89
+        },
+        {
+          "caller": "buildGitGrepArgsFromRgArgs",
+          "callee": "gitArgs.push",
+          "lineNumber": 105
+        },
+        {
+          "caller": "buildGitGrepArgsFromRgArgs",
+          "callee": "gitArgs.push",
+          "lineNumber": 109
+        },
+        {
+          "caller": "buildGitGrepArgsFromRgArgs",
+          "callee": "gitArgs.push",
+          "lineNumber": 115
+        },
+        {
+          "caller": "buildGitGrepArgsFromRgArgs",
+          "callee": "pathspecs.push",
+          "lineNumber": 123
+        },
+        {
+          "caller": "buildGitGrepArgsFromRgArgs",
+          "callee": "glob.startsWith",
+          "lineNumber": 123
+        },
+        {
+          "caller": "buildGitGrepArgsFromRgArgs",
+          "callee": "glob.slice",
+          "lineNumber": 123
+        },
+        {
+          "caller": "buildGitGrepArgsFromRgArgs",
+          "callee": "arg.startsWith",
+          "lineNumber": 129
+        },
+        {
+          "caller": "buildGitGrepArgsFromRgArgs",
+          "callee": "pathspecs.push",
+          "lineNumber": 130
+        },
+        {
+          "caller": "runGitGrepFallback",
+          "callee": "buildGitGrepArgsFromRgArgs",
+          "lineNumber": 144
+        },
+        {
+          "caller": "runGitGrepFallback",
+          "callee": "execFileSync('git', gitArgs, {\n      cwd: process.cwd(),\n      encoding: 'utf8',\n      maxBuffer: 10 * 1024 * 1024,\n      stdio: ['pipe', 'pipe', 'pipe'],\n    }).trim",
+          "lineNumber": 150
+        },
+        {
+          "caller": "runGitGrepFallback",
+          "callee": "execFileSync",
+          "lineNumber": 150
+        },
+        {
+          "caller": "runGitGrepFallback",
+          "callee": "process.cwd",
+          "lineNumber": 151
+        },
+        {
+          "caller": "runGitGrepFallback",
+          "callee": "isMissingExecutable",
+          "lineNumber": 157
+        },
+        {
+          "caller": "runGitGrepFallback",
+          "callee": "formatCommandError",
+          "lineNumber": 160
+        },
+        {
+          "caller": "runRg",
+          "callee": "execFileSync('rg', args, {\n      cwd: process.cwd(),\n      encoding: 'utf8',\n      maxBuffer: 10 * 1024 * 1024,\n      stdio: ['pipe', 'pipe', 'pipe'],\n    }).trim",
+          "lineNumber": 166
+        },
+        {
+          "caller": "runRg",
+          "callee": "execFileSync",
+          "lineNumber": 166
+        },
+        {
+          "caller": "runRg",
+          "callee": "process.cwd",
+          "lineNumber": 167
+        },
+        {
+          "caller": "runRg",
+          "callee": "isMissingExecutable",
+          "lineNumber": 176
+        },
+        {
+          "caller": "runRg",
+          "callee": "runGitGrepFallback",
+          "lineNumber": 177
+        },
+        {
+          "caller": "runRg",
+          "callee": "formatCommandError",
+          "lineNumber": 179
+        },
+        {
+          "caller": "normalizeApiBaseUrl",
+          "callee": "baseUrl\n    .trim()\n    .replace(/\\/+$/, '')\n    .replace(/\\/v1\\/responses$/, '')\n    .replace(/\\/responses$/, '')\n    .replace(/\\/v1\\/chat\\/completions$/, '')\n    .replace(/\\/chat\\/completions$/, '')\n    .replace",
+          "lineNumber": 184
+        },
+        {
+          "caller": "normalizeApiBaseUrl",
+          "callee": "baseUrl\n    .trim()\n    .replace(/\\/+$/, '')\n    .replace(/\\/v1\\/responses$/, '')\n    .replace(/\\/responses$/, '')\n    .replace(/\\/v1\\/chat\\/completions$/, '')\n    .replace",
+          "lineNumber": 184
+        },
+        {
+          "caller": "normalizeApiBaseUrl",
+          "callee": "baseUrl\n    .trim()\n    .replace(/\\/+$/, '')\n    .replace(/\\/v1\\/responses$/, '')\n    .replace(/\\/responses$/, '')\n    .replace",
+          "lineNumber": 184
+        },
+        {
+          "caller": "normalizeApiBaseUrl",
+          "callee": "baseUrl\n    .trim()\n    .replace(/\\/+$/, '')\n    .replace(/\\/v1\\/responses$/, '')\n    .replace",
+          "lineNumber": 184
+        },
+        {
+          "caller": "normalizeApiBaseUrl",
+          "callee": "baseUrl\n    .trim()\n    .replace(/\\/+$/, '')\n    .replace",
+          "lineNumber": 184
+        },
+        {
+          "caller": "normalizeApiBaseUrl",
+          "callee": "baseUrl\n    .trim()\n    .replace",
+          "lineNumber": 184
+        },
+        {
+          "caller": "normalizeApiBaseUrl",
+          "callee": "baseUrl\n    .trim",
+          "lineNumber": 184
+        },
+        {
+          "caller": "buildDeepSeekChatUrl",
+          "callee": "normalizeApiBaseUrl",
+          "lineNumber": 195
+        },
+        {
+          "caller": "mapReasoningEffort",
+          "callee": "(effort || 'high').toLowerCase",
+          "lineNumber": 199
+        },
+        {
+          "caller": "resolveThinkingConfig",
+          "callee": "(model || '').toLowerCase",
+          "lineNumber": 207
+        },
+        {
+          "caller": "resolveThinkingConfig",
+          "callee": "normalized.startsWith",
+          "lineNumber": 208
+        },
+        {
+          "caller": "parseJsonObject",
+          "callee": "JSON.parse",
+          "lineNumber": 219
+        },
+        {
+          "caller": "parseJsonObject",
+          "callee": "text.match",
+          "lineNumber": 222
+        },
+        {
+          "caller": "parseJsonObject",
+          "callee": "JSON.parse",
+          "lineNumber": 227
+        },
+        {
+          "caller": "callDeepSeekJson",
+          "callee": "mapReasoningEffort",
+          "lineNumber": 248
+        },
+        {
+          "caller": "callDeepSeekJson",
+          "callee": "resolveThinkingConfig",
+          "lineNumber": 254
+        },
+        {
+          "caller": "callDeepSeekJson",
+          "callee": "fetch",
+          "lineNumber": 259
+        },
+        {
+          "caller": "callDeepSeekJson",
+          "callee": "buildDeepSeekChatUrl",
+          "lineNumber": 259
+        },
+        {
+          "caller": "callDeepSeekJson",
+          "callee": "JSON.stringify",
+          "lineNumber": 265
+        },
+        {
+          "caller": "callDeepSeekJson",
+          "callee": "AbortSignal.timeout",
+          "lineNumber": 266
+        },
+        {
+          "caller": "callDeepSeekJson",
+          "callee": "response.text",
+          "lineNumber": 269
+        },
+        {
+          "caller": "callDeepSeekJson",
+          "callee": "truncate",
+          "lineNumber": 272
+        },
+        {
+          "caller": "callDeepSeekJson",
+          "callee": "JSON.parse",
+          "lineNumber": 276
+        },
+        {
+          "caller": "callDeepSeekJson",
+          "callee": "content.trim",
+          "lineNumber": 278
+        },
+        {
+          "caller": "callDeepSeekJson",
+          "callee": "truncate",
+          "lineNumber": 279
+        },
+        {
+          "caller": "callDeepSeekJson",
+          "callee": "parseJsonObject",
+          "lineNumber": 282
+        },
+        {
+          "caller": "callDeepSeekJson",
+          "callee": "truncate",
+          "lineNumber": 284
+        },
+        {
+          "caller": "isRetryableDeepSeekOutputError",
+          "callee": "String",
+          "lineNumber": 295
+        },
+        {
+          "caller": "isRetryableDeepSeekOutputError",
+          "callee": "message.includes",
+          "lineNumber": 297
+        },
+        {
+          "caller": "isRetryableDeepSeekOutputError",
+          "callee": "message.includes",
+          "lineNumber": 298
+        },
+        {
+          "caller": "isRetryableDeepSeekOutputError",
+          "callee": "message.includes",
+          "lineNumber": 299
+        },
+        {
+          "caller": "assertNonEmptyParsedString",
+          "callee": "value.trim",
+          "lineNumber": 305
+        },
+        {
+          "caller": "assertNonEmptyParsedString",
+          "callee": "value.trim",
+          "lineNumber": 306
+        },
+        {
+          "caller": "assertNonEmptyParsedString",
+          "callee": "JSON.stringify",
+          "lineNumber": 311
+        },
+        {
+          "caller": "assertNonEmptyParsedString",
+          "callee": "String",
+          "lineNumber": 313
+        },
+        {
+          "caller": "assertNonEmptyParsedString",
+          "callee": "truncate",
+          "lineNumber": 316
+        },
+        {
+          "caller": "callDeepSeekJsonWithRetries",
+          "callee": "[\n            userPrompt,\n            '',\n            'AUTOMATION RETRY NOTE:',\n            '- Your previous response was invalid for automation.',\n            '- Return ONLY valid JSON.',\n            `- The JSON MUST include a non-empty string field named \"${fieldName}\".`,\n            '- Do not wrap the JSON in code fences.',\n            `- Do not return an empty, null, or missing \"${fieldName}\" field.`,\n          ].join",
+          "lineNumber": 328
+        },
+        {
+          "caller": "callDeepSeekJsonWithRetries",
+          "callee": "callDeepSeekJson",
+          "lineNumber": 340
+        },
+        {
+          "caller": "callDeepSeekJsonWithRetries",
+          "callee": "assertNonEmptyParsedString",
+          "lineNumber": 344
+        },
+        {
+          "caller": "callDeepSeekJsonWithRetries",
+          "callee": "isRetryableDeepSeekOutputError",
+          "lineNumber": 348
+        },
+        {
+          "caller": "callDeepSeekJsonWithRetries",
+          "callee": "console.warn",
+          "lineNumber": 351
+        },
+        {
+          "caller": "ensureBotSignature",
+          "callee": "body.trim",
+          "lineNumber": 360
+        },
+        {
+          "caller": "ensureBotSignature",
+          "callee": "trimmed.includes",
+          "lineNumber": 364
+        },
+        {
+          "caller": "writeTempJson",
+          "callee": "path.join",
+          "lineNumber": 371
+        },
+        {
+          "caller": "writeTempJson",
+          "callee": "os.tmpdir",
+          "lineNumber": 372
+        },
+        {
+          "caller": "writeTempJson",
+          "callee": "Date.now",
+          "lineNumber": 373
+        },
+        {
+          "caller": "writeTempJson",
+          "callee": "Math.random().toString(16).slice",
+          "lineNumber": 373
+        },
+        {
+          "caller": "writeTempJson",
+          "callee": "Math.random().toString",
+          "lineNumber": 373
+        },
+        {
+          "caller": "writeTempJson",
+          "callee": "Math.random",
+          "lineNumber": 373
+        },
+        {
+          "caller": "writeTempJson",
+          "callee": "fs.writeFileSync",
+          "lineNumber": 375
+        },
+        {
+          "caller": "writeTempJson",
+          "callee": "JSON.stringify",
+          "lineNumber": 375
+        },
+        {
+          "caller": "printUsage",
+          "callee": "console.log",
+          "lineNumber": 383
+        },
+        {
+          "caller": "printUsage",
+          "callee": "console.log",
+          "lineNumber": 384
+        },
+        {
+          "caller": "printUsage",
+          "callee": "JSON.stringify",
+          "lineNumber": 384
+        },
+        {
+          "caller": "loadRepoDocs",
+          "callee": "relativePaths\n    .map((relativePath) => {\n      const content = readTextFileIfExists(relativePath);\n      if (!content) {\n        return null;\n      }\n      return {\n        path: relativePath,\n        content: truncate(content, maxChars, relativePath),\n      };\n    })\n    .filter",
+          "lineNumber": 388
+        },
+        {
+          "caller": "loadRepoDocs",
+          "callee": "relativePaths\n    .map",
+          "lineNumber": 388
+        },
+        {
+          "caller": "loadRepoDocs",
+          "callee": "readTextFileIfExists",
+          "lineNumber": 390
+        },
+        {
+          "caller": "loadRepoDocs",
+          "callee": "truncate",
+          "lineNumber": 396
+        },
+        {
+          "caller": "listPullRequestFiles",
+          "callee": "runGh",
+          "lineNumber": 403
+        },
+        {
+          "caller": "listPullRequestFiles",
+          "callee": "JSON.parse",
+          "lineNumber": 404
+        },
+        {
+          "caller": "loadPullRequestFileExcerpts",
+          "callee": "[...new Set(filePaths)].slice",
+          "lineNumber": 409
+        },
+        {
+          "caller": "loadPullRequestFileExcerpts",
+          "callee": "execFileSync",
+          "lineNumber": 411
+        },
+        {
+          "caller": "loadPullRequestFileExcerpts",
+          "callee": "process.cwd",
+          "lineNumber": 412
+        },
+        {
+          "caller": "loadPullRequestFileExcerpts",
+          "callee": "excerpts.push",
+          "lineNumber": 417
+        },
+        {
+          "caller": "loadPullRequestFileExcerpts",
+          "callee": "truncate",
+          "lineNumber": 419
+        },
+        {
+          "caller": "pushKeyword",
+          "callee": "value.trim().toLowerCase",
+          "lineNumber": 433
+        },
+        {
+          "caller": "pushKeyword",
+          "callee": "value.trim",
+          "lineNumber": 433
+        },
+        {
+          "caller": "pushKeyword",
+          "callee": "seen.has",
+          "lineNumber": 434
+        },
+        {
+          "caller": "pushKeyword",
+          "callee": "STOP_WORDS.has",
+          "lineNumber": 434
+        },
+        {
+          "caller": "pushKeyword",
+          "callee": "seen.add",
+          "lineNumber": 437
+        },
+        {
+          "caller": "pushKeyword",
+          "callee": "keywords.push",
+          "lineNumber": 438
+        },
+        {
+          "caller": "pushKeyword",
+          "callee": "value.trim",
+          "lineNumber": 438
+        },
+        {
+          "caller": "extractKeywords",
+          "callee": "text.matchAll",
+          "lineNumber": 441
+        },
+        {
+          "caller": "extractKeywords",
+          "callee": "pushKeyword",
+          "lineNumber": 442
+        },
+        {
+          "caller": "extractKeywords",
+          "callee": "text.matchAll",
+          "lineNumber": 444
+        },
+        {
+          "caller": "extractKeywords",
+          "callee": "pushKeyword",
+          "lineNumber": 445
+        },
+        {
+          "caller": "extractKeywords",
+          "callee": "keywords.slice",
+          "lineNumber": 448
+        },
+        {
+          "caller": "searchRepoSnippets",
+          "callee": "extractKeywords",
+          "lineNumber": 452
+        },
+        {
+          "caller": "searchRepoSnippets",
+          "callee": "args.push",
+          "lineNumber": 459
+        },
+        {
+          "caller": "searchRepoSnippets",
+          "callee": "args.push",
+          "lineNumber": 461
+        },
+        {
+          "caller": "searchRepoSnippets",
+          "callee": "runRg(args)\n    .split('\\n')\n    .map((line) => line.trim())\n    .filter(Boolean)\n    .slice",
+          "lineNumber": 477
+        },
+        {
+          "caller": "searchRepoSnippets",
+          "callee": "runRg(args)\n    .split('\\n')\n    .map((line) => line.trim())\n    .filter",
+          "lineNumber": 477
+        },
+        {
+          "caller": "searchRepoSnippets",
+          "callee": "runRg(args)\n    .split('\\n')\n    .map",
+          "lineNumber": 477
+        },
+        {
+          "caller": "searchRepoSnippets",
+          "callee": "runRg(args)\n    .split",
+          "lineNumber": 477
+        },
+        {
+          "caller": "searchRepoSnippets",
+          "callee": "runRg",
+          "lineNumber": 477
+        },
+        {
+          "caller": "searchRepoSnippets",
+          "callee": "line.trim",
+          "lineNumber": 479
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 22,
+        "functionCount": 27,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".github/scripts/deepseek-issue-response.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 94,
+      "nonEmptyLines": 84,
+      "functions": [
+        {
+          "name": "buildSystemPrompt",
+          "startLine": 15,
+          "endLine": 23,
+          "params": ["basePrompt"]
+        },
+        {
+          "name": "serializeDocs",
+          "startLine": 25,
+          "endLine": 32,
+          "params": ["docs"]
+        },
+        {
+          "name": "main",
+          "startLine": 34,
+          "endLine": 89,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "serializeDocs",
+          "callee": "docs\n    .map((doc) => `## ${doc.path}\\n${doc.content}`)\n    .join",
+          "lineNumber": 29
+        },
+        {
+          "caller": "serializeDocs",
+          "callee": "docs\n    .map",
+          "lineNumber": 29
+        },
+        {
+          "caller": "main",
+          "callee": "requireEnv",
+          "lineNumber": 35
+        },
+        {
+          "caller": "main",
+          "callee": "requireEnv",
+          "lineNumber": 36
+        },
+        {
+          "caller": "main",
+          "callee": "requireEnv",
+          "lineNumber": 37
+        },
+        {
+          "caller": "main",
+          "callee": "loadEventPayload",
+          "lineNumber": 39
+        },
+        {
+          "caller": "main",
+          "callee": "String",
+          "lineNumber": 40
+        },
+        {
+          "caller": "main",
+          "callee": "readTextFileIfExists",
+          "lineNumber": 43
+        },
+        {
+          "caller": "main",
+          "callee": "JSON.parse",
+          "lineNumber": 48
+        },
+        {
+          "caller": "main",
+          "callee": "runGh",
+          "lineNumber": 49
+        },
+        {
+          "caller": "main",
+          "callee": "loadRepoDocs",
+          "lineNumber": 59
+        },
+        {
+          "caller": "main",
+          "callee": "searchRepoSnippets",
+          "lineNumber": 60
+        },
+        {
+          "caller": "main",
+          "callee": "[\n    `Repo: ${repo}`,\n    `Issue number: ${issueNumber}`,\n    '',\n    'Issue metadata:',\n    JSON.stringify(issue, null, 2),\n    '',\n    'Repository docs:',\n    serializeDocs(docs),\n    '',\n    'Repository search snippets:',\n    searchSnippets.length > 0 ? searchSnippets.join('\\n') : 'No relevant repo snippets found.',\n  ].join",
+          "lineNumber": 62
+        },
+        {
+          "caller": "main",
+          "callee": "JSON.stringify",
+          "lineNumber": 67
+        },
+        {
+          "caller": "main",
+          "callee": "serializeDocs",
+          "lineNumber": 70
+        },
+        {
+          "caller": "main",
+          "callee": "searchSnippets.join",
+          "lineNumber": 73
+        },
+        {
+          "caller": "main",
+          "callee": "callDeepSeekJsonWithRetries",
+          "lineNumber": 76
+        },
+        {
+          "caller": "main",
+          "callee": "buildSystemPrompt",
+          "lineNumber": 81
+        },
+        {
+          "caller": "main",
+          "callee": "ensureBotSignature",
+          "lineNumber": 85
+        },
+        {
+          "caller": "main",
+          "callee": "assertNonEmptyParsedString",
+          "lineNumber": 85
+        },
+        {
+          "caller": "main",
+          "callee": "writeTempJson",
+          "lineNumber": 86
+        },
+        {
+          "caller": "main",
+          "callee": "runGh",
+          "lineNumber": 87
+        },
+        {
+          "caller": "main",
+          "callee": "printUsage",
+          "lineNumber": 88
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".github/scripts/deepseek-pr-review.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 193,
+      "nonEmptyLines": 178,
+      "functions": [
+        {
+          "name": "buildSystemPrompt",
+          "startLine": 17,
+          "endLine": 26,
+          "params": ["basePrompt"]
+        },
+        {
+          "name": "serializeDocs",
+          "startLine": 28,
+          "endLine": 35,
+          "params": ["docs"]
+        },
+        {
+          "name": "serializeFiles",
+          "startLine": 37,
+          "endLine": 52,
+          "params": ["files"]
+        },
+        {
+          "name": "serializeExcerpts",
+          "startLine": 54,
+          "endLine": 61,
+          "params": ["excerpts"]
+        },
+        {
+          "name": "main",
+          "startLine": 63,
+          "endLine": 188,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "serializeDocs",
+          "callee": "docs\n    .map((doc) => `## ${doc.path}\\n${doc.content}`)\n    .join",
+          "lineNumber": 32
+        },
+        {
+          "caller": "serializeDocs",
+          "callee": "docs\n    .map",
+          "lineNumber": 32
+        },
+        {
+          "caller": "serializeFiles",
+          "callee": "files\n    .map((file) =>\n      [\n        `### ${file.filename}`,\n        `status: ${file.status}`,\n        `additions: ${file.additions}`,\n        `deletions: ${file.deletions}`,\n        file.patch ? truncate(file.patch, 5000, `${file.filename} patch`) : '[no patch available]',\n      ].join('\\n')\n    )\n    .join",
+          "lineNumber": 41
+        },
+        {
+          "caller": "serializeFiles",
+          "callee": "files\n    .map",
+          "lineNumber": 41
+        },
+        {
+          "caller": "serializeFiles",
+          "callee": "[\n        `### ${file.filename}`,\n        `status: ${file.status}`,\n        `additions: ${file.additions}`,\n        `deletions: ${file.deletions}`,\n        file.patch ? truncate(file.patch, 5000, `${file.filename} patch`) : '[no patch available]',\n      ].join",
+          "lineNumber": 43
+        },
+        {
+          "caller": "serializeFiles",
+          "callee": "truncate",
+          "lineNumber": 48
+        },
+        {
+          "caller": "serializeExcerpts",
+          "callee": "excerpts\n    .map((entry) => `## ${entry.path}\\n${entry.content}`)\n    .join",
+          "lineNumber": 58
+        },
+        {
+          "caller": "serializeExcerpts",
+          "callee": "excerpts\n    .map",
+          "lineNumber": 58
+        },
+        {
+          "caller": "main",
+          "callee": "requireEnv",
+          "lineNumber": 64
+        },
+        {
+          "caller": "main",
+          "callee": "requireEnv",
+          "lineNumber": 65
+        },
+        {
+          "caller": "main",
+          "callee": "requireEnv",
+          "lineNumber": 66
+        },
+        {
+          "caller": "main",
+          "callee": "loadEventPayload",
+          "lineNumber": 68
+        },
+        {
+          "caller": "main",
+          "callee": "String",
+          "lineNumber": 69
+        },
+        {
+          "caller": "main",
+          "callee": "readTextFileIfExists",
+          "lineNumber": 76
+        },
+        {
+          "caller": "main",
+          "callee": "JSON.parse",
+          "lineNumber": 81
+        },
+        {
+          "caller": "main",
+          "callee": "runGh",
+          "lineNumber": 82
+        },
+        {
+          "caller": "main",
+          "callee": "runGh",
+          "lineNumber": 92
+        },
+        {
+          "caller": "main",
+          "callee": "listPullRequestFiles",
+          "lineNumber": 93
+        },
+        {
+          "caller": "main",
+          "callee": "loadRepoDocs",
+          "lineNumber": 94
+        },
+        {
+          "caller": "main",
+          "callee": "loadPullRequestFileExcerpts",
+          "lineNumber": 95
+        },
+        {
+          "caller": "main",
+          "callee": "files.map",
+          "lineNumber": 97
+        },
+        {
+          "caller": "main",
+          "callee": "runGh",
+          "lineNumber": 104
+        },
+        {
+          "caller": "main",
+          "callee": "runGh",
+          "lineNumber": 105
+        },
+        {
+          "caller": "main",
+          "callee": "runGh",
+          "lineNumber": 111
+        },
+        {
+          "caller": "main",
+          "callee": "[\n      'Previous bot review:',\n      truncate(review, 8000, 'previous review'),\n      'Previous bot review comments:',\n      truncate(reviewComments, 8000, 'previous review comments'),\n      compareDiff ? `Compare diff since previous review:\\n${truncate(compareDiff, 20000, 'compare diff')}` : '',\n    ]\n      .filter(Boolean)\n      .join",
+          "lineNumber": 118
+        },
+        {
+          "caller": "main",
+          "callee": "[\n      'Previous bot review:',\n      truncate(review, 8000, 'previous review'),\n      'Previous bot review comments:',\n      truncate(reviewComments, 8000, 'previous review comments'),\n      compareDiff ? `Compare diff since previous review:\\n${truncate(compareDiff, 20000, 'compare diff')}` : '',\n    ]\n      .filter",
+          "lineNumber": 118
+        },
+        {
+          "caller": "main",
+          "callee": "truncate",
+          "lineNumber": 120
+        },
+        {
+          "caller": "main",
+          "callee": "truncate",
+          "lineNumber": 122
+        },
+        {
+          "caller": "main",
+          "callee": "truncate",
+          "lineNumber": 123
+        },
+        {
+          "caller": "main",
+          "callee": "[\n    `Repo: ${repo}`,\n    `PR number: ${prNumber}`,\n    `Current head SHA: ${currentHeadSha}`,\n    `Review mode hint: ${isFollowUpReview ? 'follow-up after new commits' : 'initial'}`,\n    '',\n    'PR metadata:',\n    JSON.stringify(prMeta, null, 2),\n    '',\n    'Repository docs:',\n    serializeDocs(docs),\n    '',\n    'Changed files and patches:',\n    serializeFiles(files),\n    '',\n    'PR head file excerpts:',\n    serializeExcerpts(excerpts),\n    '',\n    'Unified diff:',\n    truncate(diff, 120000, 'PR diff'),\n    '',\n    'Follow-up context:',\n    followUpContext,\n  ].join",
+          "lineNumber": 129
+        },
+        {
+          "caller": "main",
+          "callee": "JSON.stringify",
+          "lineNumber": 136
+        },
+        {
+          "caller": "main",
+          "callee": "serializeDocs",
+          "lineNumber": 139
+        },
+        {
+          "caller": "main",
+          "callee": "serializeFiles",
+          "lineNumber": 142
+        },
+        {
+          "caller": "main",
+          "callee": "serializeExcerpts",
+          "lineNumber": 145
+        },
+        {
+          "caller": "main",
+          "callee": "truncate",
+          "lineNumber": 148
+        },
+        {
+          "caller": "main",
+          "callee": "callDeepSeekJsonWithRetries",
+          "lineNumber": 154
+        },
+        {
+          "caller": "main",
+          "callee": "buildSystemPrompt",
+          "lineNumber": 159
+        },
+        {
+          "caller": "main",
+          "callee": "ensureBotSignature",
+          "lineNumber": 163
+        },
+        {
+          "caller": "main",
+          "callee": "assertNonEmptyParsedString",
+          "lineNumber": 163
+        },
+        {
+          "caller": "main",
+          "callee": "runGh",
+          "lineNumber": 164
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 176
+        },
+        {
+          "caller": "main",
+          "callee": "writeTempJson",
+          "lineNumber": 180
+        },
+        {
+          "caller": "main",
+          "callee": "runGh",
+          "lineNumber": 186
+        },
+        {
+          "caller": "main",
+          "callee": "printUsage",
+          "lineNumber": 187
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    }
+  ]
+}

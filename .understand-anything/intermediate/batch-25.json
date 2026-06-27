@@ -1,0 +1,45 @@
+{
+  "nodes": [
+    {
+      "id": "document:.claude/skills/pdf/FORMS.md",
+      "type": "document",
+      "name": "FORMS.md",
+      "filePath": ".claude/skills/pdf/FORMS.md",
+      "summary": "文档文件 FORMS.md，共约 186 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "moderate",
+      "language": "markdown"
+    },
+    {
+      "id": "document:.claude/skills/pdf/LICENSE.txt",
+      "type": "document",
+      "name": "LICENSE.txt",
+      "filePath": ".claude/skills/pdf/LICENSE.txt",
+      "summary": "文档文件 LICENSE.txt，共约 25 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "simple",
+      "language": "txt"
+    },
+    {
+      "id": "document:.claude/skills/pdf/REFERENCE.md",
+      "type": "document",
+      "name": "REFERENCE.md",
+      "filePath": ".claude/skills/pdf/REFERENCE.md",
+      "summary": "文档文件 REFERENCE.md，共约 479 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "complex",
+      "language": "markdown"
+    },
+    {
+      "id": "document:.claude/skills/pdf/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": ".claude/skills/pdf/SKILL.md",
+      "summary": "文档文件 SKILL.md，共约 226 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "complex",
+      "language": "markdown"
+    }
+  ],
+  "edges": []
+}

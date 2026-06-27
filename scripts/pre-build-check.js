@@ -11,6 +11,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { validateTrialExpiration } = require('./trial-expiration-utils');
 
 // ANSI color codes
 const GREEN = '\x1b[32m';
@@ -183,6 +184,21 @@ function runChecks(rootDir, platform, arch) {
 function main() {
   const PROJECT_ROOT = path.join(__dirname, '..');
 
+  const trialValidation = validateTrialExpiration(process.env.AGENT_TRIAL_EXPIRATION);
+  if (!trialValidation.valid) {
+    console.log(`\n${RED}[fail]${RESET} ${trialValidation.reason}`);
+    console.log(
+      `\n${RED}Build aborted. Set AGENT_TRIAL_EXPIRATION to YYYY-MM-DD or leave it unset.${RESET}\n`
+    );
+    process.exit(1);
+  }
+
+  if (trialValidation.normalized) {
+    console.log(
+      `\n${GREEN}[pass]${RESET} Trial expiration enabled: ${trialValidation.normalized}\n`
+    );
+  }
+
   console.log('\nRunning pre-build checks...\n');
 
   const { passed, warnings, failed, hasFatal } = runChecks(PROJECT_ROOT, process.platform);
@@ -202,7 +218,7 @@ function main() {
   process.exit(0);
 }
 
-module.exports = { runChecks, buildCheckList };
+module.exports = { runChecks, buildCheckList, validateTrialExpiration };
 
 if (require.main === module) {
   main();

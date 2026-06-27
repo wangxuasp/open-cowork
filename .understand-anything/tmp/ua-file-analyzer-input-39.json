@@ -1,0 +1,184 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": ".claude/skills/pptx/ooxml/schemas/mce/mc.xsd",
+      "language": "xml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/scripts/pack.py",
+      "language": "python",
+      "sizeLines": 159,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/pptx/ooxml/scripts/unpack.py",
+      "language": "python",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/pptx/scripts/rearrange.py",
+      "language": "python",
+      "sizeLines": 231,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/process-chat/references/query_rag.py",
+      "language": "python",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/process-chat/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 86,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/skill-creator/LICENSE.txt",
+      "language": "txt",
+      "sizeLines": 201,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/skill-creator/references/output-patterns.md",
+      "language": "markdown",
+      "sizeLines": 82,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/skill-creator/references/workflows.md",
+      "language": "markdown",
+      "sizeLines": 27,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/skill-creator/scripts/init_skill.py",
+      "language": "python",
+      "sizeLines": 303,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/skill-creator/scripts/package_skill.py",
+      "language": "python",
+      "sizeLines": 110,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/skill-creator/scripts/quick_validate.py",
+      "language": "python",
+      "sizeLines": 102,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/skill-creator/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 357,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/system-chat/references/query_rag.py",
+      "language": "python",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/system-chat/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 86,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/visio/.gitattributes",
+      "language": "unknown",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/visio/agents/openai.yaml",
+      "language": "yaml",
+      "sizeLines": 7,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/visio/scripts/check_visio_env.py",
+      "language": "python",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/visio/scripts/enumerate_visio_masters.py",
+      "language": "python",
+      "sizeLines": 120,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/visio/scripts/image_to_scene.py",
+      "language": "python",
+      "sizeLines": 230,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/visio/scripts/prepare_regeneration_packet.py",
+      "language": "python",
+      "sizeLines": 364,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/visio/scripts/review_checklist_gate.py",
+      "language": "python",
+      "sizeLines": 168,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/visio/scripts/round_noop_gate.py",
+      "language": "python",
+      "sizeLines": 356,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/visio/scripts/stage_source_image.py",
+      "language": "python",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/visio/sync_to_skill.py",
+      "language": "python",
+      "sizeLines": 136,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    ".claude/skills/pptx/ooxml/schemas/mce/mc.xsd": [],
+    ".claude/skills/pptx/ooxml/scripts/pack.py": [],
+    ".claude/skills/pptx/ooxml/scripts/unpack.py": [],
+    ".claude/skills/pptx/scripts/rearrange.py": [],
+    ".claude/skills/process-chat/references/query_rag.py": [],
+    ".claude/skills/process-chat/SKILL.md": [],
+    ".claude/skills/skill-creator/LICENSE.txt": [],
+    ".claude/skills/skill-creator/references/output-patterns.md": [],
+    ".claude/skills/skill-creator/references/workflows.md": [],
+    ".claude/skills/skill-creator/scripts/init_skill.py": [],
+    ".claude/skills/skill-creator/scripts/package_skill.py": [
+      ".claude/skills/skill-creator/scripts/quick_validate.py"
+    ],
+    ".claude/skills/skill-creator/scripts/quick_validate.py": [],
+    ".claude/skills/skill-creator/SKILL.md": [],
+    ".claude/skills/system-chat/references/query_rag.py": [],
+    ".claude/skills/system-chat/SKILL.md": [],
+    ".claude/skills/visio/.gitattributes": [],
+    ".claude/skills/visio/agents/openai.yaml": [],
+    ".claude/skills/visio/scripts/check_visio_env.py": [],
+    ".claude/skills/visio/scripts/enumerate_visio_masters.py": [],
+    ".claude/skills/visio/scripts/image_to_scene.py": [],
+    ".claude/skills/visio/scripts/prepare_regeneration_packet.py": [],
+    ".claude/skills/visio/scripts/review_checklist_gate.py": [],
+    ".claude/skills/visio/scripts/round_noop_gate.py": [],
+    ".claude/skills/visio/scripts/stage_source_image.py": [],
+    ".claude/skills/visio/sync_to_skill.py": []
+  }
+}

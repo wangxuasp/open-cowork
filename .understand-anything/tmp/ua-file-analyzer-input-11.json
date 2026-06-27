@@ -1,0 +1,90 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": ".claude/skills/visio/scripts/font_inventory.py",
+      "language": "python",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/visio/scripts/font_utils.py",
+      "language": "python",
+      "sizeLines": 392,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/visio/scripts/make_review_assets.py",
+      "language": "python",
+      "sizeLines": 513,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/visio/scripts/review_findings_to_repair_plan.py",
+      "language": "python",
+      "sizeLines": 416,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/visio/scripts/scene_audit.py",
+      "language": "python",
+      "sizeLines": 1360,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/visio/scripts/scene_autofix.py",
+      "language": "python",
+      "sizeLines": 694,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/visio/scripts/scene_complexity.py",
+      "language": "python",
+      "sizeLines": 260,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/visio/scripts/scene_to_visio.py",
+      "language": "python",
+      "sizeLines": 6198,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/visio/scripts/scene_validate.py",
+      "language": "python",
+      "sizeLines": 4157,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    ".claude/skills/visio/scripts/font_inventory.py": [
+      ".claude/skills/visio/scripts/font_utils.py"
+    ],
+    ".claude/skills/visio/scripts/font_utils.py": [],
+    ".claude/skills/visio/scripts/make_review_assets.py": [
+      ".claude/skills/visio/scripts/scene_validate.py"
+    ],
+    ".claude/skills/visio/scripts/review_findings_to_repair_plan.py": [
+      ".claude/skills/visio/scripts/scene_validate.py"
+    ],
+    ".claude/skills/visio/scripts/scene_audit.py": [
+      ".claude/skills/visio/scripts/font_utils.py",
+      ".claude/skills/visio/scripts/scene_to_visio.py",
+      ".claude/skills/visio/scripts/scene_validate.py"
+    ],
+    ".claude/skills/visio/scripts/scene_autofix.py": [
+      ".claude/skills/visio/scripts/scene_validate.py"
+    ],
+    ".claude/skills/visio/scripts/scene_complexity.py": [
+      ".claude/skills/visio/scripts/scene_to_visio.py",
+      ".claude/skills/visio/scripts/scene_validate.py"
+    ],
+    ".claude/skills/visio/scripts/scene_to_visio.py": [
+      ".claude/skills/visio/scripts/font_utils.py"
+    ],
+    ".claude/skills/visio/scripts/scene_validate.py": [
+      ".claude/skills/visio/scripts/font_utils.py",
+      ".claude/skills/visio/scripts/scene_to_visio.py"
+    ]
+  }
+}

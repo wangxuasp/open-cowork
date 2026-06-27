@@ -1,0 +1,117 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": "src/main/schedule/scheduled-task-manager.ts",
+      "language": "typescript",
+      "sizeLines": 556,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/schedule/scheduled-task-store.ts",
+      "language": "typescript",
+      "sizeLines": 102,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/session/session-title-flow.ts",
+      "language": "typescript",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/session/session-title-utils.ts",
+      "language": "typescript",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/schedule/task-title.ts",
+      "language": "typescript",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/schedule-task-title.test.ts",
+      "language": "typescript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/scheduled-task-edge-cases.test.ts",
+      "language": "typescript",
+      "sizeLines": 208,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/scheduled-task-manager.test.ts",
+      "language": "typescript",
+      "sizeLines": 583,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/session-manager-scheduled-title.test.ts",
+      "language": "typescript",
+      "sizeLines": 86,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/session-title-flow-abort.test.ts",
+      "language": "typescript",
+      "sizeLines": 134,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/session-title-flow.test.ts",
+      "language": "typescript",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/session-title-utils.test.ts",
+      "language": "typescript",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/support/session-title-harness.ts",
+      "language": "typescript",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/main/schedule/scheduled-task-manager.ts": [
+      "src/main/utils/logger.ts",
+      "src/shared/schedule/task-title.ts"
+    ],
+    "src/main/schedule/scheduled-task-store.ts": [
+      "src/main/db/database.ts",
+      "src/main/schedule/scheduled-task-manager.ts"
+    ],
+    "src/main/session/session-title-flow.ts": ["src/main/session/session-title-utils.ts"],
+    "src/main/session/session-title-utils.ts": ["src/shared/session-title.ts"],
+    "src/shared/schedule/task-title.ts": [],
+    "tests/schedule-task-title.test.ts": ["src/shared/schedule/task-title.ts"],
+    "tests/scheduled-task-edge-cases.test.ts": ["src/main/schedule/scheduled-task-manager.ts"],
+    "tests/scheduled-task-manager.test.ts": [
+      "src/main/schedule/scheduled-task-manager.ts",
+      "src/shared/schedule/task-title.ts"
+    ],
+    "tests/session-manager-scheduled-title.test.ts": [
+      "src/main/session/session-manager.ts",
+      "src/main/session/session-title-utils.ts",
+      "src/shared/schedule/task-title.ts"
+    ],
+    "tests/session-title-flow-abort.test.ts": [
+      "src/main/session/session-title-flow.ts",
+      "src/main/session/session-title-utils.ts"
+    ],
+    "tests/session-title-flow.test.ts": ["tests/support/session-title-harness.ts"],
+    "tests/session-title-utils.test.ts": ["src/main/session/session-title-utils.ts"],
+    "tests/support/session-title-harness.ts": [
+      "src/main/session/session-title-flow.ts",
+      "src/main/session/session-title-utils.ts"
+    ]
+  }
+}

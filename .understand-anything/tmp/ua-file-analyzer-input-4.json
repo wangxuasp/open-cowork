@@ -1,0 +1,244 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": "src/main/claude/pi-model-resolution.ts",
+      "language": "typescript",
+      "sizeLines": 371,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/config/api-diagnostics.ts",
+      "language": "typescript",
+      "sizeLines": 730,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/config/auth-utils.ts",
+      "language": "typescript",
+      "sizeLines": 257,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/config/ollama-api.ts",
+      "language": "typescript",
+      "sizeLines": 298,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/ApiConfigSetManager.tsx",
+      "language": "typescript",
+      "sizeLines": 255,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/ApiDiagnosticsPanel.tsx",
+      "language": "typescript",
+      "sizeLines": 306,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/ConfigModal.tsx",
+      "language": "typescript",
+      "sizeLines": 494,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/ProviderGuidance.tsx",
+      "language": "typescript",
+      "sizeLines": 118,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/components/settings/SettingsAPI.tsx",
+      "language": "typescript",
+      "sizeLines": 465,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/hooks/useApiConfigState.ts",
+      "language": "typescript",
+      "sizeLines": 2117,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/api-model-presets.ts",
+      "language": "typescript",
+      "sizeLines": 228,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/api-provider-guidance.ts",
+      "language": "typescript",
+      "sizeLines": 289,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/network/loopback.ts",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/ollama-base-url.ts",
+      "language": "typescript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/tests/claude/pi-model-resolution.test.ts",
+      "language": "typescript",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/tests/config/api-diagnostics.test.ts",
+      "language": "typescript",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/tests/config/auth-utils.test.ts",
+      "language": "typescript",
+      "sizeLines": 188,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/api-config-state-config-sets.test.ts",
+      "language": "typescript",
+      "sizeLines": 219,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/api-config-state.test.ts",
+      "language": "typescript",
+      "sizeLines": 307,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/api-diagnostics.test.ts",
+      "language": "typescript",
+      "sizeLines": 412,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/auth-utils.test.ts",
+      "language": "typescript",
+      "sizeLines": 319,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/loopback-url.test.ts",
+      "language": "typescript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/ollama-api.test.ts",
+      "language": "typescript",
+      "sizeLines": 206,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/ollama-base-url.test.ts",
+      "language": "typescript",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/ollama-discovery.test.ts",
+      "language": "typescript",
+      "sizeLines": 131,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/pi-model-resolution.test.ts",
+      "language": "typescript",
+      "sizeLines": 521,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/provider-guidance.test.ts",
+      "language": "typescript",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/main/claude/pi-model-resolution.ts": ["src/main/config/auth-utils.ts"],
+    "src/main/config/api-diagnostics.ts": [
+      "src/main/claude/claude-sdk-one-shot.ts",
+      "src/main/config/auth-utils.ts",
+      "src/main/config/config-store.ts",
+      "src/main/config/ollama-api.ts",
+      "src/main/utils/logger.ts",
+      "src/renderer/types/index.ts",
+      "src/shared/network/loopback.ts",
+      "src/shared/ollama-base-url.ts"
+    ],
+    "src/main/config/auth-utils.ts": [
+      "src/main/config/config-store.ts",
+      "src/shared/network/loopback.ts",
+      "src/shared/ollama-base-url.ts"
+    ],
+    "src/main/config/ollama-api.ts": [
+      "src/main/config/auth-utils.ts",
+      "src/renderer/types/index.ts",
+      "src/shared/network/loopback.ts",
+      "src/shared/ollama-base-url.ts"
+    ],
+    "src/renderer/components/ApiConfigSetManager.tsx": ["src/renderer/types/index.ts"],
+    "src/renderer/components/ApiDiagnosticsPanel.tsx": ["src/renderer/types/index.ts"],
+    "src/renderer/components/ConfigModal.tsx": [
+      "src/renderer/components/ApiConfigSetManager.tsx",
+      "src/renderer/components/ProviderGuidance.tsx",
+      "src/renderer/hooks/useApiConfigState.ts",
+      "src/renderer/types/index.ts"
+    ],
+    "src/renderer/components/ProviderGuidance.tsx": [],
+    "src/renderer/components/settings/SettingsAPI.tsx": [
+      "src/renderer/components/ApiConfigSetManager.tsx",
+      "src/renderer/components/ApiDiagnosticsPanel.tsx",
+      "src/renderer/components/ProviderGuidance.tsx",
+      "src/renderer/hooks/useApiConfigState.ts"
+    ],
+    "src/renderer/hooks/useApiConfigState.ts": [
+      "src/renderer/store/index.ts",
+      "src/renderer/types/index.ts",
+      "src/shared/api-model-presets.ts",
+      "src/shared/api-provider-guidance.ts",
+      "src/shared/network/loopback.ts",
+      "src/shared/ollama-base-url.ts"
+    ],
+    "src/shared/api-model-presets.ts": [],
+    "src/shared/api-provider-guidance.ts": ["src/shared/api-model-presets.ts"],
+    "src/shared/network/loopback.ts": [],
+    "src/shared/ollama-base-url.ts": [],
+    "src/tests/claude/pi-model-resolution.test.ts": ["src/main/claude/pi-model-resolution.ts"],
+    "src/tests/config/api-diagnostics.test.ts": ["src/main/config/api-diagnostics.ts"],
+    "src/tests/config/auth-utils.test.ts": ["src/main/config/auth-utils.ts"],
+    "tests/api-config-state-config-sets.test.ts": [
+      "src/renderer/hooks/useApiConfigState.ts",
+      "src/renderer/types/index.ts"
+    ],
+    "tests/api-config-state.test.ts": [
+      "src/renderer/hooks/useApiConfigState.ts",
+      "src/renderer/types/index.ts",
+      "src/shared/ollama-base-url.ts"
+    ],
+    "tests/api-diagnostics.test.ts": [
+      "src/main/config/api-diagnostics.ts",
+      "src/main/config/ollama-api.ts"
+    ],
+    "tests/auth-utils.test.ts": ["src/main/config/auth-utils.ts"],
+    "tests/loopback-url.test.ts": ["src/shared/network/loopback.ts"],
+    "tests/ollama-api.test.ts": ["src/main/config/ollama-api.ts"],
+    "tests/ollama-base-url.test.ts": ["src/shared/ollama-base-url.ts"],
+    "tests/ollama-discovery.test.ts": [
+      "src/main/config/api-diagnostics.ts",
+      "src/main/config/ollama-api.ts"
+    ],
+    "tests/pi-model-resolution.test.ts": ["src/main/claude/pi-model-resolution.ts"],
+    "tests/provider-guidance.test.ts": ["src/shared/api-provider-guidance.ts"]
+  }
+}

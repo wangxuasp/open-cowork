@@ -1,0 +1,205 @@
+{
+  "nodes": [
+    {
+      "id": "config:.claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
+      "type": "config",
+      "name": "dml-chart.xsd",
+      "filePath": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
+      "summary": "配置文件 dml-chart.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "complex",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd",
+      "type": "config",
+      "name": "dml-chartDrawing.xsd",
+      "filePath": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd",
+      "summary": "配置文件 dml-chartDrawing.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "moderate",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd",
+      "type": "config",
+      "name": "dml-diagram.xsd",
+      "filePath": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd",
+      "summary": "配置文件 dml-diagram.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "complex",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd",
+      "type": "config",
+      "name": "dml-lockedCanvas.xsd",
+      "filePath": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd",
+      "summary": "配置文件 dml-lockedCanvas.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/dml-main.xsd",
+      "type": "config",
+      "name": "dml-main.xsd",
+      "filePath": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/dml-main.xsd",
+      "summary": "配置文件 dml-main.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "complex",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/dml-picture.xsd",
+      "type": "config",
+      "name": "dml-picture.xsd",
+      "filePath": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/dml-picture.xsd",
+      "summary": "配置文件 dml-picture.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd",
+      "type": "config",
+      "name": "dml-spreadsheetDrawing.xsd",
+      "filePath": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd",
+      "summary": "配置文件 dml-spreadsheetDrawing.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "moderate",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd",
+      "type": "config",
+      "name": "dml-wordprocessingDrawing.xsd",
+      "filePath": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd",
+      "summary": "配置文件 dml-wordprocessingDrawing.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "complex",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/pml.xsd",
+      "type": "config",
+      "name": "pml.xsd",
+      "filePath": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/pml.xsd",
+      "summary": "配置文件 pml.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "complex",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd",
+      "type": "config",
+      "name": "shared-additionalCharacteristics.xsd",
+      "filePath": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd",
+      "summary": "配置文件 shared-additionalCharacteristics.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd",
+      "type": "config",
+      "name": "shared-bibliography.xsd",
+      "filePath": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd",
+      "summary": "配置文件 shared-bibliography.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "moderate",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd",
+      "type": "config",
+      "name": "shared-commonSimpleTypes.xsd",
+      "filePath": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd",
+      "summary": "配置文件 shared-commonSimpleTypes.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "moderate",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd",
+      "type": "config",
+      "name": "shared-customXmlDataProperties.xsd",
+      "filePath": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd",
+      "summary": "配置文件 shared-customXmlDataProperties.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd",
+      "type": "config",
+      "name": "shared-customXmlSchemaProperties.xsd",
+      "filePath": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd",
+      "summary": "配置文件 shared-customXmlSchemaProperties.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd",
+      "type": "config",
+      "name": "shared-documentPropertiesCustom.xsd",
+      "filePath": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd",
+      "summary": "配置文件 shared-documentPropertiesCustom.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "moderate",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd",
+      "type": "config",
+      "name": "shared-documentPropertiesExtended.xsd",
+      "filePath": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd",
+      "summary": "配置文件 shared-documentPropertiesExtended.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "moderate",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd",
+      "type": "config",
+      "name": "shared-documentPropertiesVariantTypes.xsd",
+      "filePath": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd",
+      "summary": "配置文件 shared-documentPropertiesVariantTypes.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "moderate",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-math.xsd",
+      "type": "config",
+      "name": "shared-math.xsd",
+      "filePath": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-math.xsd",
+      "summary": "配置文件 shared-math.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "complex",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd",
+      "type": "config",
+      "name": "shared-relationshipReference.xsd",
+      "filePath": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd",
+      "summary": "配置文件 shared-relationshipReference.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "xml"
+    },
+    {
+      "id": "config:.claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/sml.xsd",
+      "type": "config",
+      "name": "sml.xsd",
+      "filePath": ".claude/skills/pptx/ooxml/schemas/ISO-IEC29500-4_2016/sml.xsd",
+      "summary": "配置文件 sml.xsd，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "complex",
+      "language": "xml"
+    }
+  ],
+  "edges": []
+}

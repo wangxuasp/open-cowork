@@ -1,0 +1,28 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": "scripts/build-windows-artifacts.js",
+      "language": "javascript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/build-windows.js",
+      "language": "javascript",
+      "sizeLines": 195,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/build-windows-artifacts.test.ts",
+      "language": "typescript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "scripts/build-windows-artifacts.js": [],
+    "scripts/build-windows.js": ["scripts/build-windows-artifacts.js"],
+    "tests/build-windows-artifacts.test.ts": ["scripts/build-windows-artifacts.js"]
+  }
+}

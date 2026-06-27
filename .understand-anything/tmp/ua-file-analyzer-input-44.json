@@ -1,0 +1,172 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": "tests/remote-control-panel-links.test.ts",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/remote-manager-port-conflict.test.ts",
+      "language": "typescript",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/sandbox-command-injection.test.ts",
+      "language": "typescript",
+      "sizeLines": 207,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/sandbox-executor-containment.test.ts",
+      "language": "typescript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/scheduled-task-session-title-entry.test.ts",
+      "language": "typescript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/settings-panel-plugin-entry.test.ts",
+      "language": "typescript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/settings-panel-schedule-entry.test.ts",
+      "language": "typescript",
+      "sizeLines": 104,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/settings-sandbox-status.test.ts",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/store-encryption.test.ts",
+      "language": "typescript",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/teamcenter-settings-entry.test.ts",
+      "language": "typescript",
+      "sizeLines": 143,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/theme-settings-persistence.test.ts",
+      "language": "typescript",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/use-ipc-config-modal-gate.test.ts",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/use-ipc-session-start-error-handling.test.ts",
+      "language": "typescript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/vite-config-watch-ignore.test.ts",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/welcome-view-claude-layout.test.ts",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/welcome-view-submit-guard.test.ts",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/windows-legacy-uninstall-remediation.test.ts",
+      "language": "typescript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    { "path": "vite.config.ts", "language": "typescript", "sizeLines": 93, "fileCategory": "code" },
+    { "path": "vitest.config.mts", "language": "mts", "sizeLines": 50, "fileCategory": "code" },
+    {
+      "path": "website/.vitepress/config.ts",
+      "language": "typescript",
+      "sizeLines": 225,
+      "fileCategory": "code"
+    },
+    {
+      "path": "website/.vitepress/theme/custom.css",
+      "language": "css",
+      "sizeLines": 178,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "website/.vitepress/theme/index.ts",
+      "language": "typescript",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "website/index.md",
+      "language": "markdown",
+      "sizeLines": 198,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "website/package.json",
+      "language": "json",
+      "sizeLines": 13,
+      "fileCategory": "config"
+    },
+    {
+      "path": "website/postcss.config.cjs",
+      "language": "javascript",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "tests/remote-control-panel-links.test.ts": [],
+    "tests/remote-manager-port-conflict.test.ts": [],
+    "tests/sandbox-command-injection.test.ts": [],
+    "tests/sandbox-executor-containment.test.ts": [],
+    "tests/scheduled-task-session-title-entry.test.ts": [],
+    "tests/settings-panel-plugin-entry.test.ts": [],
+    "tests/settings-panel-schedule-entry.test.ts": [],
+    "tests/settings-sandbox-status.test.ts": [],
+    "tests/store-encryption.test.ts": [],
+    "tests/teamcenter-settings-entry.test.ts": [],
+    "tests/theme-settings-persistence.test.ts": [],
+    "tests/use-ipc-config-modal-gate.test.ts": [],
+    "tests/use-ipc-session-start-error-handling.test.ts": [],
+    "tests/vite-config-watch-ignore.test.ts": [],
+    "tests/welcome-view-claude-layout.test.ts": [],
+    "tests/welcome-view-submit-guard.test.ts": [],
+    "tests/windows-legacy-uninstall-remediation.test.ts": [],
+    "vite.config.ts": [],
+    "vitest.config.mts": [],
+    "website/.vitepress/config.ts": [],
+    "website/.vitepress/theme/custom.css": [],
+    "website/.vitepress/theme/index.ts": ["website/.vitepress/theme/custom.css"],
+    "website/index.md": [],
+    "website/package.json": [],
+    "website/postcss.config.cjs": []
+  }
+}

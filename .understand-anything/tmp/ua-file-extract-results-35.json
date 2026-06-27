@@ -1,0 +1,958 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 14,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".env.example",
+      "language": "config",
+      "fileCategory": "config",
+      "totalLines": 13,
+      "nonEmptyLines": 10,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 0
+      }
+    },
+    {
+      "path": "CHANGELOG.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 133,
+      "nonEmptyLines": 89,
+      "sections": [
+        {
+          "heading": "Changelog",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "[Unreleased]",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "[3.3.0] - 2026-04-18",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Added",
+          "level": 3,
+          "line": 14
+        },
+        {
+          "heading": "Fixed",
+          "level": 3,
+          "line": 25
+        },
+        {
+          "heading": "Changed",
+          "level": 3,
+          "line": 38
+        },
+        {
+          "heading": "Removed",
+          "level": 3,
+          "line": 44
+        },
+        {
+          "heading": "Contributors",
+          "level": 3,
+          "line": 48
+        },
+        {
+          "heading": "[3.3.0-beta.8] - 2026-03-29",
+          "level": 2,
+          "line": 55
+        },
+        {
+          "heading": "Added",
+          "level": 3,
+          "line": 57
+        },
+        {
+          "heading": "Fixed",
+          "level": 3,
+          "line": 62
+        },
+        {
+          "heading": "[3.2.0] - 2026-03-02",
+          "level": 2,
+          "line": 73
+        },
+        {
+          "heading": "Added",
+          "level": 3,
+          "line": 75
+        },
+        {
+          "heading": "Changed",
+          "level": 3,
+          "line": 80
+        },
+        {
+          "heading": "Fixed",
+          "level": 3,
+          "line": 85
+        },
+        {
+          "heading": "[3.1.0] - 2026-02-13",
+          "level": 2,
+          "line": 89
+        },
+        {
+          "heading": "Added",
+          "level": 3,
+          "line": 91
+        },
+        {
+          "heading": "Fixed",
+          "level": 3,
+          "line": 96
+        },
+        {
+          "heading": "[3.0.0] - 2026-02-08",
+          "level": 2,
+          "line": 104
+        },
+        {
+          "heading": "Changed",
+          "level": 3,
+          "line": 106
+        },
+        {
+          "heading": "Fixed",
+          "level": 3,
+          "line": 111
+        },
+        {
+          "heading": "[2.0.0] - 2026-01-25",
+          "level": 2,
+          "line": 115
+        },
+        {
+          "heading": "Changed",
+          "level": 3,
+          "line": 117
+        },
+        {
+          "heading": "[1.0.0] - 2025-12-01",
+          "level": 2,
+          "line": 121
+        },
+        {
+          "heading": "Added",
+          "level": 3,
+          "line": 123
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 25
+      }
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 73,
+      "nonEmptyLines": 41,
+      "sections": [
+        {
+          "heading": "Contributor Covenant Code of Conduct",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Our Pledge",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Our Standards",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Enforcement Responsibilities",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "Scope",
+          "level": 2,
+          "line": 33
+        },
+        {
+          "heading": "Enforcement",
+          "level": 2,
+          "line": 37
+        },
+        {
+          "heading": "Enforcement Guidelines",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "1. Correction",
+          "level": 3,
+          "line": 47
+        },
+        {
+          "heading": "2. Warning",
+          "level": 3,
+          "line": 53
+        },
+        {
+          "heading": "3. Temporary Ban",
+          "level": 3,
+          "line": 59
+        },
+        {
+          "heading": "4. Permanent Ban",
+          "level": 3,
+          "line": 65
+        },
+        {
+          "heading": "Attribution",
+          "level": 2,
+          "line": 71
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 221,
+      "nonEmptyLines": 155,
+      "sections": [
+        {
+          "heading": "Contributing to Open Cowork",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Development Setup",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Project Structure",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Code Style",
+          "level": 2,
+          "line": 63
+        },
+        {
+          "heading": "Git Workflow",
+          "level": 2,
+          "line": 73
+        },
+        {
+          "heading": "Pull Request Guidelines",
+          "level": 2,
+          "line": 107
+        },
+        {
+          "heading": "Dependency Management",
+          "level": 2,
+          "line": 118
+        },
+        {
+          "heading": "Tiers",
+          "level": 3,
+          "line": 122
+        },
+        {
+          "heading": "Critical dependencies (always manual review)",
+          "level": 3,
+          "line": 132
+        },
+        {
+          "heading": "Weekly workflow",
+          "level": 3,
+          "line": 141
+        },
+        {
+          "heading": "Adding new dependencies",
+          "level": 3,
+          "line": 148
+        },
+        {
+          "heading": "Testing",
+          "level": 2,
+          "line": 160
+        },
+        {
+          "heading": "i18n",
+          "level": 2,
+          "line": 187
+        },
+        {
+          "heading": "Reporting Issues",
+          "level": 2,
+          "line": 205
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    },
+    {
+      "path": "README_zh.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 343,
+      "nonEmptyLines": 247,
+      "sections": [
+        {
+          "heading": "📖 简介",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "✨ 核心特性",
+          "level": 2,
+          "line": 47
+        },
+        {
+          "heading": "🎬 演示",
+          "level": 2,
+          "line": 70
+        },
+        {
+          "heading": "1. 文件夹收纳整理 📂",
+          "level": 3,
+          "line": 74
+        },
+        {
+          "heading": "2. 从文件生成 PPT 📊",
+          "level": 3,
+          "line": 78
+        },
+        {
+          "heading": "3. 从文件生成 XLSX 表格 📉",
+          "level": 3,
+          "line": 82
+        },
+        {
+          "heading": "📦 下载与安装",
+          "level": 2,
+          "line": 90
+        },
+        {
+          "heading": "方式一：Homebrew（macOS，推荐）",
+          "level": 3,
+          "line": 92
+        },
+        {
+          "heading": "方式二：下载安装包",
+          "level": 3,
+          "line": 101
+        },
+        {
+          "heading": "方式三：源码编译",
+          "level": 3,
+          "line": 110
+        },
+        {
+          "heading": "安全配置：🔒 沙盒支持",
+          "level": 3,
+          "line": 124
+        },
+        {
+          "heading": "🚀 快速开始",
+          "level": 2,
+          "line": 154
+        },
+        {
+          "heading": "1. 获取 API Key",
+          "level": 3,
+          "line": 156
+        },
+        {
+          "heading": "2. 配置应用",
+          "level": 3,
+          "line": 168
+        },
+        {
+          "heading": "3. 开始协作",
+          "level": 3,
+          "line": 175
+        },
+        {
+          "heading": "📝 重要提示",
+          "level": 3,
+          "line": 181
+        },
+        {
+          "heading": "🧰 技能库",
+          "level": 2,
+          "line": 193
+        },
+        {
+          "heading": "🏗️ 架构概览",
+          "level": 2,
+          "line": 205
+        },
+        {
+          "heading": "🗺️ 路线图",
+          "level": 2,
+          "line": 268
+        },
+        {
+          "heading": "❓ 常见问题",
+          "level": 2,
+          "line": 278
+        },
+        {
+          "heading": "🛠️ 贡献指南",
+          "level": 2,
+          "line": 312
+        },
+        {
+          "heading": "💬 加入社群",
+          "level": 2,
+          "line": 322
+        },
+        {
+          "heading": "📄 许可证",
+          "level": 2,
+          "line": 335
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 23
+      }
+    },
+    {
+      "path": "ROADMAP.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 55,
+      "nonEmptyLines": 41,
+      "sections": [
+        {
+          "heading": "🗺️ Open Cowork Roadmap",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "✅ Completed",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "🚧 In Progress",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "📋 Planned",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "Near-term (v3.4.0)",
+          "level": 3,
+          "line": 27
+        },
+        {
+          "heading": "Mid-term (v3.5.0+)",
+          "level": 3,
+          "line": 40
+        },
+        {
+          "heading": "Long-term",
+          "level": 3,
+          "line": 46
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": "SECURITY.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 46,
+      "nonEmptyLines": 32,
+      "sections": [
+        {
+          "heading": "Security Policy",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Supported Versions",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Reporting a Vulnerability",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "What to expect",
+          "level": 3,
+          "line": 21
+        },
+        {
+          "heading": "Scope",
+          "level": 2,
+          "line": 29
+        },
+        {
+          "heading": "Security Best Practices for Users",
+          "level": 2,
+          "line": 42
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": "electron-builder.yml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 177,
+      "nonEmptyLines": 164,
+      "sections": [
+        {
+          "heading": "appId",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "productName",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "copyright",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "directories",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "npmRebuild",
+          "level": 1,
+          "line": 9
+        },
+        {
+          "heading": "afterPack",
+          "level": 1,
+          "line": 10
+        },
+        {
+          "heading": "afterAllArtifactBuild",
+          "level": 1,
+          "line": 11
+        },
+        {
+          "heading": "files",
+          "level": 1,
+          "line": 13
+        },
+        {
+          "heading": "asarUnpack",
+          "level": 1,
+          "line": 54
+        },
+        {
+          "heading": "win",
+          "level": 1,
+          "line": 63
+        },
+        {
+          "heading": "mac",
+          "level": 1,
+          "line": 89
+        },
+        {
+          "heading": "linux",
+          "level": 1,
+          "line": 123
+        },
+        {
+          "heading": "nsis",
+          "level": 1,
+          "line": 142
+        },
+        {
+          "heading": "dmg",
+          "level": 1,
+          "line": 153
+        },
+        {
+          "heading": "extraMetadata",
+          "level": 1,
+          "line": 171
+        },
+        {
+          "heading": "publish",
+          "level": 1,
+          "line": 174
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 16
+      }
+    },
+    {
+      "path": "index.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 15,
+      "nonEmptyLines": 14,
+      "metrics": {}
+    },
+    {
+      "path": "llms.txt",
+      "language": "txt",
+      "fileCategory": "docs",
+      "totalLines": 81,
+      "nonEmptyLines": 58,
+      "metrics": {}
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 147,
+      "nonEmptyLines": 147,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "description",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "keywords",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "homepage",
+          "level": 1,
+          "line": 27
+        },
+        {
+          "heading": "repository",
+          "level": 1,
+          "line": 28
+        },
+        {
+          "heading": "bugs",
+          "level": 1,
+          "line": 32
+        },
+        {
+          "heading": "engines",
+          "level": 1,
+          "line": 35
+        },
+        {
+          "heading": "main",
+          "level": 1,
+          "line": 38
+        },
+        {
+          "heading": "scripts",
+          "level": 1,
+          "line": 39
+        },
+        {
+          "heading": "dependencies",
+          "level": 1,
+          "line": 67
+        },
+        {
+          "heading": "devDependencies",
+          "level": 1,
+          "line": 103
+        },
+        {
+          "heading": "overrides",
+          "level": 1,
+          "line": 132
+        },
+        {
+          "heading": "author",
+          "level": 1,
+          "line": 136
+        },
+        {
+          "heading": "license",
+          "level": 1,
+          "line": 137
+        },
+        {
+          "heading": "lint-staged",
+          "level": 1,
+          "line": 123
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 16
+      }
+    },
+    {
+      "path": "readme.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 352,
+      "nonEmptyLines": 251,
+      "sections": [
+        {
+          "heading": "📖 Introduction",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "✨ Key Features",
+          "level": 2,
+          "line": 47
+        },
+        {
+          "heading": "🎬 Demo",
+          "level": 2,
+          "line": 70
+        },
+        {
+          "heading": "1. Folder Organization & Cleanup 📂",
+          "level": 3,
+          "line": 74
+        },
+        {
+          "heading": "2. Generate PPT from Files 📊",
+          "level": 3,
+          "line": 78
+        },
+        {
+          "heading": "3. Generate XLSX Spreadsheets 📉",
+          "level": 3,
+          "line": 82
+        },
+        {
+          "heading": "4. GUI Operation🖥",
+          "level": 3,
+          "line": 86
+        },
+        {
+          "heading": "5. Remote control with Feishu(Lark) 🤖",
+          "level": 3,
+          "line": 90
+        },
+        {
+          "heading": "📦 Installation",
+          "level": 2,
+          "line": 98
+        },
+        {
+          "heading": "Option 1: Homebrew (macOS, Recommended)",
+          "level": 3,
+          "line": 100
+        },
+        {
+          "heading": "Option 2: Download Installer",
+          "level": 3,
+          "line": 109
+        },
+        {
+          "heading": "Option 3: Build from Source",
+          "level": 3,
+          "line": 118
+        },
+        {
+          "heading": "Security Configuration: 🔒 Sandbox Support",
+          "level": 3,
+          "line": 132
+        },
+        {
+          "heading": "🚀 Quick Start Guide",
+          "level": 2,
+          "line": 162
+        },
+        {
+          "heading": "1. Get an API Key",
+          "level": 3,
+          "line": 164
+        },
+        {
+          "heading": "2. Configure",
+          "level": 3,
+          "line": 176
+        },
+        {
+          "heading": "3. Start Coworking",
+          "level": 3,
+          "line": 183
+        },
+        {
+          "heading": "📝 Important Notes",
+          "level": 3,
+          "line": 189
+        },
+        {
+          "heading": "🧰 Skills Library",
+          "level": 2,
+          "line": 202
+        },
+        {
+          "heading": "🏗️ Architecture",
+          "level": 2,
+          "line": 214
+        },
+        {
+          "heading": "🗺️ Roadmap",
+          "level": 2,
+          "line": 277
+        },
+        {
+          "heading": "❓ FAQ",
+          "level": 2,
+          "line": 287
+        },
+        {
+          "heading": "🛠️ Contributing",
+          "level": 2,
+          "line": 321
+        },
+        {
+          "heading": "💬 Community",
+          "level": 2,
+          "line": 331
+        },
+        {
+          "heading": "📄 License",
+          "level": 2,
+          "line": 344
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 25
+      }
+    },
+    {
+      "path": "tsconfig.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 31,
+      "nonEmptyLines": 30,
+      "sections": [
+        {
+          "heading": "compilerOptions",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "include",
+          "level": 1,
+          "line": 28
+        },
+        {
+          "heading": "references",
+          "level": 1,
+          "line": 29
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "tsconfig.node.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 15,
+      "nonEmptyLines": 14,
+      "sections": [
+        {
+          "heading": "compilerOptions",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "include",
+          "level": 1,
+          "line": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    }
+  ]
+}

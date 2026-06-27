@@ -1,0 +1,324 @@
+{
+  "nodes": [
+    {
+      "id": "file:tests/remote-control-panel-links.test.ts",
+      "type": "file",
+      "name": "remote-control-panel-links.test.ts",
+      "filePath": "tests/remote-control-panel-links.test.ts",
+      "summary": "源码模块 tests/remote-control-panel-links.test.ts，体量 13 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/remote-manager-port-conflict.test.ts",
+      "type": "file",
+      "name": "remote-manager-port-conflict.test.ts",
+      "filePath": "tests/remote-manager-port-conflict.test.ts",
+      "summary": "源码模块 tests/remote-manager-port-conflict.test.ts，体量 88 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/sandbox-command-injection.test.ts",
+      "type": "file",
+      "name": "sandbox-command-injection.test.ts",
+      "filePath": "tests/sandbox-command-injection.test.ts",
+      "summary": "源码模块 tests/sandbox-command-injection.test.ts，体量 176 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test", "infrastructure", "security"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/sandbox-executor-containment.test.ts",
+      "type": "file",
+      "name": "sandbox-executor-containment.test.ts",
+      "filePath": "tests/sandbox-executor-containment.test.ts",
+      "summary": "源码模块 tests/sandbox-executor-containment.test.ts，体量 20 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test", "infrastructure", "security"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/scheduled-task-session-title-entry.test.ts",
+      "type": "file",
+      "name": "scheduled-task-session-title-entry.test.ts",
+      "filePath": "tests/scheduled-task-session-title-entry.test.ts",
+      "summary": "源码模块 tests/scheduled-task-session-title-entry.test.ts，体量 13 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/settings-panel-plugin-entry.test.ts",
+      "type": "file",
+      "name": "settings-panel-plugin-entry.test.ts",
+      "filePath": "tests/settings-panel-plugin-entry.test.ts",
+      "summary": "源码模块 tests/settings-panel-plugin-entry.test.ts，体量 50 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/settings-panel-schedule-entry.test.ts",
+      "type": "file",
+      "name": "settings-panel-schedule-entry.test.ts",
+      "filePath": "tests/settings-panel-schedule-entry.test.ts",
+      "summary": "源码模块 tests/settings-panel-schedule-entry.test.ts，体量 89 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/settings-sandbox-status.test.ts",
+      "type": "file",
+      "name": "settings-sandbox-status.test.ts",
+      "filePath": "tests/settings-sandbox-status.test.ts",
+      "summary": "源码模块 tests/settings-sandbox-status.test.ts，包含 1 个函数，约 29 行有效代码。",
+      "tags": ["test", "infrastructure", "security"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/settings-sandbox-status.test.ts:readSettingsSandboxContent",
+      "type": "function",
+      "name": "readSettingsSandboxContent",
+      "filePath": "tests/settings-sandbox-status.test.ts",
+      "summary": "函数 readSettingsSandboxContent，位于 tests/settings-sandbox-status.test.ts 第 5-15 行。",
+      "tags": ["test", "infrastructure", "security"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/store-encryption.test.ts",
+      "type": "file",
+      "name": "store-encryption.test.ts",
+      "filePath": "tests/store-encryption.test.ts",
+      "summary": "源码模块 tests/store-encryption.test.ts，包含 1 个函数，约 126 行有效代码。",
+      "tags": ["test", "state-management"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:tests/store-encryption.test.ts:registerStoreMocks",
+      "type": "function",
+      "name": "registerStoreMocks",
+      "filePath": "tests/store-encryption.test.ts",
+      "summary": "函数 registerStoreMocks，位于 tests/store-encryption.test.ts 第 7-77 行。",
+      "tags": ["test", "state-management"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/teamcenter-settings-entry.test.ts",
+      "type": "file",
+      "name": "teamcenter-settings-entry.test.ts",
+      "filePath": "tests/teamcenter-settings-entry.test.ts",
+      "summary": "源码模块 tests/teamcenter-settings-entry.test.ts，体量 124 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/theme-settings-persistence.test.ts",
+      "type": "file",
+      "name": "theme-settings-persistence.test.ts",
+      "filePath": "tests/theme-settings-persistence.test.ts",
+      "summary": "源码模块 tests/theme-settings-persistence.test.ts，体量 37 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/use-ipc-config-modal-gate.test.ts",
+      "type": "file",
+      "name": "use-ipc-config-modal-gate.test.ts",
+      "filePath": "tests/use-ipc-config-modal-gate.test.ts",
+      "summary": "源码模块 tests/use-ipc-config-modal-gate.test.ts，体量 24 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test", "configuration"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/use-ipc-session-start-error-handling.test.ts",
+      "type": "file",
+      "name": "use-ipc-session-start-error-handling.test.ts",
+      "filePath": "tests/use-ipc-session-start-error-handling.test.ts",
+      "summary": "源码模块 tests/use-ipc-session-start-error-handling.test.ts，体量 14 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/vite-config-watch-ignore.test.ts",
+      "type": "file",
+      "name": "vite-config-watch-ignore.test.ts",
+      "filePath": "tests/vite-config-watch-ignore.test.ts",
+      "summary": "源码模块 tests/vite-config-watch-ignore.test.ts，体量 14 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test", "configuration"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/welcome-view-claude-layout.test.ts",
+      "type": "file",
+      "name": "welcome-view-claude-layout.test.ts",
+      "filePath": "tests/welcome-view-claude-layout.test.ts",
+      "summary": "源码模块 tests/welcome-view-claude-layout.test.ts，体量 23 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/welcome-view-submit-guard.test.ts",
+      "type": "file",
+      "name": "welcome-view-submit-guard.test.ts",
+      "filePath": "tests/welcome-view-submit-guard.test.ts",
+      "summary": "源码模块 tests/welcome-view-submit-guard.test.ts，体量 26 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/windows-legacy-uninstall-remediation.test.ts",
+      "type": "file",
+      "name": "windows-legacy-uninstall-remediation.test.ts",
+      "filePath": "tests/windows-legacy-uninstall-remediation.test.ts",
+      "summary": "源码模块 tests/windows-legacy-uninstall-remediation.test.ts，体量 21 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:vite.config.ts",
+      "type": "file",
+      "name": "vite.config.ts",
+      "filePath": "vite.config.ts",
+      "summary": "源码模块 vite.config.ts，体量 91 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["configuration"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:vitest.config.mts",
+      "type": "file",
+      "name": "vitest.config.mts",
+      "filePath": "vitest.config.mts",
+      "summary": "源码模块 vitest.config.mts，体量 49 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "mts"
+    },
+    {
+      "id": "file:website/.vitepress/config.ts",
+      "type": "file",
+      "name": "config.ts",
+      "filePath": "website/.vitepress/config.ts",
+      "summary": "源码模块 website/.vitepress/config.ts，体量 214 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["configuration"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "file:website/.vitepress/theme/custom.css",
+      "type": "file",
+      "name": "custom.css",
+      "filePath": "website/.vitepress/theme/custom.css",
+      "summary": "源码模块 website/.vitepress/theme/custom.css，体量 144 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["markup"],
+      "complexity": "moderate",
+      "language": "css"
+    },
+    {
+      "id": "file:website/.vitepress/theme/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "website/.vitepress/theme/index.ts",
+      "summary": "源码模块 website/.vitepress/theme/index.ts，体量 3 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["entry-point"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "document:website/index.md",
+      "type": "document",
+      "name": "index.md",
+      "filePath": "website/index.md",
+      "summary": "文档文件 index.md，共约 156 行有效内容。",
+      "tags": ["documentation"],
+      "complexity": "moderate",
+      "language": "markdown"
+    },
+    {
+      "id": "config:website/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "website/package.json",
+      "summary": "配置文件 package.json，定义项目或运行时的关键参数与依赖。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "json"
+    },
+    {
+      "id": "file:website/postcss.config.cjs",
+      "type": "file",
+      "name": "postcss.config.cjs",
+      "filePath": "website/postcss.config.cjs",
+      "summary": "源码模块 website/postcss.config.cjs，体量 3 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["configuration"],
+      "complexity": "simple",
+      "language": "javascript"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:tests/settings-sandbox-status.test.ts",
+      "target": "function:tests/settings-sandbox-status.test.ts:readSettingsSandboxContent",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:tests/settings-sandbox-status.test.ts:readSettingsSandboxContent",
+      "target": "function:tests/settings-sandbox-status.test.ts:path.resolve",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/settings-sandbox-status.test.ts:readSettingsSandboxContent",
+      "target": "function:tests/settings-sandbox-status.test.ts:process.cwd",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/settings-sandbox-status.test.ts:readSettingsSandboxContent",
+      "target": "function:tests/settings-sandbox-status.test.ts:fs.readFileSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/store-encryption.test.ts",
+      "target": "function:tests/store-encryption.test.ts:registerStoreMocks",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:tests/store-encryption.test.ts:registerStoreMocks",
+      "target": "function:tests/store-encryption.test.ts:vi.doMock",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:tests/store-encryption.test.ts:registerStoreMocks",
+      "target": "function:tests/store-encryption.test.ts:vi.doMock",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:website/.vitepress/theme/index.ts",
+      "target": "file:website/.vitepress/theme/custom.css",
+      "type": "imports",
+      "weight": 0.7
+    }
+  ]
+}

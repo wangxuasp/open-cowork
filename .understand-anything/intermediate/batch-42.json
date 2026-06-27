@@ -1,0 +1,794 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/renderer/components/MessageMarkdown.tsx",
+      "type": "file",
+      "name": "MessageMarkdown.tsx",
+      "filePath": "src/renderer/components/MessageMarkdown.tsx",
+      "summary": "源码模块 src/renderer/components/MessageMarkdown.tsx，体量 55 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["component", "ui"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/renderer/components/remote/SlackConfigStep.tsx",
+      "type": "file",
+      "name": "SlackConfigStep.tsx",
+      "filePath": "src/renderer/components/remote/SlackConfigStep.tsx",
+      "summary": "源码模块 src/renderer/components/remote/SlackConfigStep.tsx，包含 1 个函数，约 118 行有效代码。",
+      "tags": ["component", "ui", "configuration"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/renderer/components/remote/SlackConfigStep.tsx:SlackConfigStep",
+      "type": "function",
+      "name": "SlackConfigStep",
+      "filePath": "src/renderer/components/remote/SlackConfigStep.tsx",
+      "summary": "函数 SlackConfigStep，位于 src/renderer/components/remote/SlackConfigStep.tsx 第 19-128 行。",
+      "tags": ["component", "ui", "configuration"],
+      "complexity": "complex",
+      "language": "typescript"
+    },
+    {
+      "id": "config:src/renderer/i18n/locales/en.json",
+      "type": "config",
+      "name": "en.json",
+      "filePath": "src/renderer/i18n/locales/en.json",
+      "summary": "配置文件 en.json，定义项目或运行时的关键参数与依赖。",
+      "tags": ["component", "ui", "configuration"],
+      "complexity": "complex",
+      "language": "json"
+    },
+    {
+      "id": "config:src/renderer/i18n/locales/zh.json",
+      "type": "config",
+      "name": "zh.json",
+      "filePath": "src/renderer/i18n/locales/zh.json",
+      "summary": "配置文件 zh.json，定义项目或运行时的关键参数与依赖。",
+      "tags": ["component", "ui", "configuration"],
+      "complexity": "complex",
+      "language": "json"
+    },
+    {
+      "id": "document:src/renderer/i18n/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "src/renderer/i18n/README.md",
+      "summary": "文档文件 README.md，共约 85 行有效内容。",
+      "tags": ["component", "ui", "documentation"],
+      "complexity": "moderate",
+      "language": "markdown"
+    },
+    {
+      "id": "file:src/renderer/styles/globals.css",
+      "type": "file",
+      "name": "globals.css",
+      "filePath": "src/renderer/styles/globals.css",
+      "summary": "源码模块 src/renderer/styles/globals.css，体量 284 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["component", "ui"],
+      "complexity": "complex",
+      "language": "css"
+    },
+    {
+      "id": "file:src/renderer/vite-env.d.ts",
+      "type": "file",
+      "name": "vite-env.d.ts",
+      "filePath": "src/renderer/vite-env.d.ts",
+      "summary": "源码模块 src/renderer/vite-env.d.ts，体量 13 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/tests/memory/memory-integration-files.test.ts",
+      "type": "file",
+      "name": "memory-integration-files.test.ts",
+      "filePath": "src/tests/memory/memory-integration-files.test.ts",
+      "summary": "源码模块 src/tests/memory/memory-integration-files.test.ts，包含 1 个函数，约 55 行有效代码。",
+      "tags": ["test", "service"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/tests/pre-build-check.test.ts",
+      "type": "file",
+      "name": "pre-build-check.test.ts",
+      "filePath": "src/tests/pre-build-check.test.ts",
+      "summary": "源码模块 src/tests/pre-build-check.test.ts，包含 5 个函数，约 178 行有效代码。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/tests/pre-build-check.test.ts:populateDarwinArtifacts",
+      "type": "function",
+      "name": "populateDarwinArtifacts",
+      "filePath": "src/tests/pre-build-check.test.ts",
+      "summary": "函数 populateDarwinArtifacts，位于 src/tests/pre-build-check.test.ts 第 31-42 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/tests/preflight.test.ts",
+      "type": "file",
+      "name": "preflight.test.ts",
+      "filePath": "src/tests/preflight.test.ts",
+      "summary": "源码模块 src/tests/preflight.test.ts，包含 2 个函数，约 164 行有效代码。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/tests/renderer-crash-safety.test.ts",
+      "type": "file",
+      "name": "renderer-crash-safety.test.ts",
+      "filePath": "src/tests/renderer-crash-safety.test.ts",
+      "summary": "源码模块 src/tests/renderer-crash-safety.test.ts，包含 4 个函数，约 168 行有效代码。",
+      "tags": ["test", "component", "ui"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/tests/renderer-crash-safety.test.ts:getMcpToolDisplayName",
+      "type": "function",
+      "name": "getMcpToolDisplayName",
+      "filePath": "src/tests/renderer-crash-safety.test.ts",
+      "summary": "函数 getMcpToolDisplayName，位于 src/tests/renderer-crash-safety.test.ts 第 20-29 行。",
+      "tags": ["test", "component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/tests/renderer-crash-safety.test.ts:getToolLabel",
+      "type": "function",
+      "name": "getToolLabel",
+      "filePath": "src/tests/renderer-crash-safety.test.ts",
+      "summary": "函数 getToolLabel，位于 src/tests/renderer-crash-safety.test.ts 第 32-66 行。",
+      "tags": ["test", "component", "ui"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/tests/renderer-crash-safety.test.ts:getSummary",
+      "type": "function",
+      "name": "getSummary",
+      "filePath": "src/tests/renderer-crash-safety.test.ts",
+      "summary": "函数 getSummary，位于 src/tests/renderer-crash-safety.test.ts 第 69-82 行。",
+      "tags": ["test", "component", "ui"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:src/tests/skills/dangling-symlink.test.ts",
+      "type": "file",
+      "name": "dangling-symlink.test.ts",
+      "filePath": "src/tests/skills/dangling-symlink.test.ts",
+      "summary": "源码模块 src/tests/skills/dangling-symlink.test.ts，包含 2 个函数，约 132 行有效代码。",
+      "tags": ["test"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/tests/skills/dangling-symlink.test.ts:isDanglingSymlink",
+      "type": "function",
+      "name": "isDanglingSymlink",
+      "filePath": "src/tests/skills/dangling-symlink.test.ts",
+      "summary": "函数 isDanglingSymlink，位于 src/tests/skills/dangling-symlink.test.ts 第 8-21 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "function:src/tests/skills/dangling-symlink.test.ts:supportsDirectorySymlinks",
+      "type": "function",
+      "name": "supportsDirectorySymlinks",
+      "filePath": "src/tests/skills/dangling-symlink.test.ts",
+      "summary": "函数 supportsDirectorySymlinks，位于 src/tests/skills/dangling-symlink.test.ts 第 23-37 行。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tailwind.config.js",
+      "type": "file",
+      "name": "tailwind.config.js",
+      "filePath": "tailwind.config.js",
+      "summary": "源码模块 tailwind.config.js，体量 85 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["configuration"],
+      "complexity": "moderate",
+      "language": "javascript"
+    },
+    {
+      "id": "file:tests/about-settings-entry.test.ts",
+      "type": "file",
+      "name": "about-settings-entry.test.ts",
+      "filePath": "tests/about-settings-entry.test.ts",
+      "summary": "源码模块 tests/about-settings-entry.test.ts，体量 39 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/agent-runner-loop-guard-abort.test.ts",
+      "type": "file",
+      "name": "agent-runner-loop-guard-abort.test.ts",
+      "filePath": "tests/agent-runner-loop-guard-abort.test.ts",
+      "summary": "源码模块 tests/agent-runner-loop-guard-abort.test.ts，体量 103 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test", "entry-point", "service"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/agent-runner-pi.test.ts",
+      "type": "file",
+      "name": "agent-runner-pi.test.ts",
+      "filePath": "tests/agent-runner-pi.test.ts",
+      "summary": "源码模块 tests/agent-runner-pi.test.ts，体量 175 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test", "entry-point", "service"],
+      "complexity": "moderate",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/app-layout-scroll-lock.test.ts",
+      "type": "file",
+      "name": "app-layout-scroll-lock.test.ts",
+      "filePath": "tests/app-layout-scroll-lock.test.ts",
+      "summary": "源码模块 tests/app-layout-scroll-lock.test.ts，体量 20 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/app-startup-lazy-load.test.ts",
+      "type": "file",
+      "name": "app-startup-lazy-load.test.ts",
+      "filePath": "tests/app-startup-lazy-load.test.ts",
+      "summary": "源码模块 tests/app-startup-lazy-load.test.ts，体量 21 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/build-windows-script.test.ts",
+      "type": "file",
+      "name": "build-windows-script.test.ts",
+      "filePath": "tests/build-windows-script.test.ts",
+      "summary": "源码模块 tests/build-windows-script.test.ts，体量 39 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/bundle-mcp-script.test.ts",
+      "type": "file",
+      "name": "bundle-mcp-script.test.ts",
+      "filePath": "tests/bundle-mcp-script.test.ts",
+      "summary": "源码模块 tests/bundle-mcp-script.test.ts，体量 49 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test", "service", "integration"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/chat-view-claude-layout.test.ts",
+      "type": "file",
+      "name": "chat-view-claude-layout.test.ts",
+      "filePath": "tests/chat-view-claude-layout.test.ts",
+      "summary": "源码模块 tests/chat-view-claude-layout.test.ts，包含 1 个函数，约 24 行有效代码。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/chat-view-stop-entry.test.ts",
+      "type": "file",
+      "name": "chat-view-stop-entry.test.ts",
+      "filePath": "tests/chat-view-stop-entry.test.ts",
+      "summary": "源码模块 tests/chat-view-stop-entry.test.ts，体量 15 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/chat-view-width-layout.test.ts",
+      "type": "file",
+      "name": "chat-view-width-layout.test.ts",
+      "filePath": "tests/chat-view-width-layout.test.ts",
+      "summary": "源码模块 tests/chat-view-width-layout.test.ts，包含 1 个函数，约 19 行有效代码。",
+      "tags": ["test"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/config-modal-claude-layout.test.ts",
+      "type": "file",
+      "name": "config-modal-claude-layout.test.ts",
+      "filePath": "tests/config-modal-claude-layout.test.ts",
+      "summary": "源码模块 tests/config-modal-claude-layout.test.ts，体量 17 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test", "configuration"],
+      "complexity": "simple",
+      "language": "typescript"
+    },
+    {
+      "id": "file:tests/context-panel-recent-files.test.ts",
+      "type": "file",
+      "name": "context-panel-recent-files.test.ts",
+      "filePath": "tests/context-panel-recent-files.test.ts",
+      "summary": "源码模块 tests/context-panel-recent-files.test.ts，体量 16 行，承担项目中的辅助或声明性逻辑。",
+      "tags": ["test", "service"],
+      "complexity": "simple",
+      "language": "typescript"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/renderer/components/remote/SlackConfigStep.tsx",
+      "target": "function:src/renderer/components/remote/SlackConfigStep.tsx:SlackConfigStep",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/renderer/components/remote/SlackConfigStep.tsx:SlackConfigStep",
+      "target": "function:src/renderer/components/remote/SlackConfigStep.tsx:useTranslation",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/SlackConfigStep.tsx:SlackConfigStep",
+      "target": "function:src/renderer/components/remote/SlackConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/SlackConfigStep.tsx:SlackConfigStep",
+      "target": "function:src/renderer/components/remote/SlackConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/SlackConfigStep.tsx:SlackConfigStep",
+      "target": "function:src/renderer/components/remote/SlackConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/SlackConfigStep.tsx:SlackConfigStep",
+      "target": "function:src/renderer/components/remote/SlackConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/SlackConfigStep.tsx:SlackConfigStep",
+      "target": "function:src/renderer/components/remote/SlackConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/SlackConfigStep.tsx:SlackConfigStep",
+      "target": "function:src/renderer/components/remote/SlackConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/SlackConfigStep.tsx:SlackConfigStep",
+      "target": "function:src/renderer/components/remote/SlackConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/SlackConfigStep.tsx:SlackConfigStep",
+      "target": "function:src/renderer/components/remote/SlackConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/SlackConfigStep.tsx:SlackConfigStep",
+      "target": "function:src/renderer/components/remote/SlackConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/SlackConfigStep.tsx:SlackConfigStep",
+      "target": "function:src/renderer/components/remote/SlackConfigStep.tsx:onBotTokenChange",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/SlackConfigStep.tsx:SlackConfigStep",
+      "target": "function:src/renderer/components/remote/SlackConfigStep.tsx:onSocketModeChange",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/SlackConfigStep.tsx:SlackConfigStep",
+      "target": "function:src/renderer/components/remote/SlackConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/SlackConfigStep.tsx:SlackConfigStep",
+      "target": "function:src/renderer/components/remote/SlackConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/SlackConfigStep.tsx:SlackConfigStep",
+      "target": "function:src/renderer/components/remote/SlackConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/SlackConfigStep.tsx:SlackConfigStep",
+      "target": "function:src/renderer/components/remote/SlackConfigStep.tsx:onAppTokenChange",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/SlackConfigStep.tsx:SlackConfigStep",
+      "target": "function:src/renderer/components/remote/SlackConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/SlackConfigStep.tsx:SlackConfigStep",
+      "target": "function:src/renderer/components/remote/SlackConfigStep.tsx:dmPolicies.map",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/SlackConfigStep.tsx:SlackConfigStep",
+      "target": "function:src/renderer/components/remote/SlackConfigStep.tsx:onDmPolicyChange",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/remote/SlackConfigStep.tsx:SlackConfigStep",
+      "target": "function:src/renderer/components/remote/SlackConfigStep.tsx:t",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/tests/pre-build-check.test.ts",
+      "target": "file:scripts/pre-build-check.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/tests/pre-build-check.test.ts",
+      "target": "function:src/tests/pre-build-check.test.ts:populateDarwinArtifacts",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/tests/pre-build-check.test.ts:populateDarwinArtifacts",
+      "target": "function:src/tests/pre-build-check.test.ts:makeFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/pre-build-check.test.ts:populateDarwinArtifacts",
+      "target": "function:src/tests/pre-build-check.test.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/pre-build-check.test.ts:populateDarwinArtifacts",
+      "target": "function:src/tests/pre-build-check.test.ts:makeFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/pre-build-check.test.ts:populateDarwinArtifacts",
+      "target": "function:src/tests/pre-build-check.test.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/pre-build-check.test.ts:populateDarwinArtifacts",
+      "target": "function:src/tests/pre-build-check.test.ts:makeDir",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/pre-build-check.test.ts:populateDarwinArtifacts",
+      "target": "function:src/tests/pre-build-check.test.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/pre-build-check.test.ts:populateDarwinArtifacts",
+      "target": "function:src/tests/pre-build-check.test.ts:makeDir",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/pre-build-check.test.ts:populateDarwinArtifacts",
+      "target": "function:src/tests/pre-build-check.test.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/pre-build-check.test.ts:populateDarwinArtifacts",
+      "target": "function:src/tests/pre-build-check.test.ts:makeDir",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/pre-build-check.test.ts:populateDarwinArtifacts",
+      "target": "function:src/tests/pre-build-check.test.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/pre-build-check.test.ts:populateDarwinArtifacts",
+      "target": "function:src/tests/pre-build-check.test.ts:makeFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/pre-build-check.test.ts:populateDarwinArtifacts",
+      "target": "function:src/tests/pre-build-check.test.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/pre-build-check.test.ts:populateDarwinArtifacts",
+      "target": "function:src/tests/pre-build-check.test.ts:makeFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/pre-build-check.test.ts:populateDarwinArtifacts",
+      "target": "function:src/tests/pre-build-check.test.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/tests/renderer-crash-safety.test.ts",
+      "target": "function:src/tests/renderer-crash-safety.test.ts:getMcpToolDisplayName",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/tests/renderer-crash-safety.test.ts",
+      "target": "function:src/tests/renderer-crash-safety.test.ts:getToolLabel",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/tests/renderer-crash-safety.test.ts",
+      "target": "function:src/tests/renderer-crash-safety.test.ts:getSummary",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/tests/renderer-crash-safety.test.ts:getMcpToolDisplayName",
+      "target": "function:src/tests/renderer-crash-safety.test.ts:displayName.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/renderer-crash-safety.test.ts:getMcpToolDisplayName",
+      "target": "function:src/tests/renderer-crash-safety.test.ts:name.startsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/renderer-crash-safety.test.ts:getMcpToolDisplayName",
+      "target": "function:src/tests/renderer-crash-safety.test.ts:name.match",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/renderer-crash-safety.test.ts:getToolLabel",
+      "target": "function:src/tests/renderer-crash-safety.test.ts:name.startsWith",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/renderer-crash-safety.test.ts:getToolLabel",
+      "target": "function:src/tests/renderer-crash-safety.test.ts:getMcpToolDisplayName",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/renderer-crash-safety.test.ts:getToolLabel",
+      "target": "function:src/tests/renderer-crash-safety.test.ts:name.toLowerCase",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/renderer-crash-safety.test.ts:getToolLabel",
+      "target": "function:src/tests/renderer-crash-safety.test.ts:String",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/renderer-crash-safety.test.ts:getToolLabel",
+      "target": "function:src/tests/renderer-crash-safety.test.ts:shortenPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/renderer-crash-safety.test.ts:getToolLabel",
+      "target": "function:src/tests/renderer-crash-safety.test.ts:String",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/renderer-crash-safety.test.ts:getToolLabel",
+      "target": "function:src/tests/renderer-crash-safety.test.ts:shortenPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/renderer-crash-safety.test.ts:getToolLabel",
+      "target": "function:src/tests/renderer-crash-safety.test.ts:String",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/renderer-crash-safety.test.ts:getToolLabel",
+      "target": "function:src/tests/renderer-crash-safety.test.ts:shortenPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/renderer-crash-safety.test.ts:getToolLabel",
+      "target": "function:src/tests/renderer-crash-safety.test.ts:String",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/renderer-crash-safety.test.ts:getToolLabel",
+      "target": "function:src/tests/renderer-crash-safety.test.ts:cmd.substring",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/renderer-crash-safety.test.ts:getToolLabel",
+      "target": "function:src/tests/renderer-crash-safety.test.ts:String",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/renderer-crash-safety.test.ts:getToolLabel",
+      "target": "function:src/tests/renderer-crash-safety.test.ts:String",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/renderer-crash-safety.test.ts:getToolLabel",
+      "target": "function:src/tests/renderer-crash-safety.test.ts:String",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/renderer-crash-safety.test.ts:getToolLabel",
+      "target": "function:src/tests/renderer-crash-safety.test.ts:String",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/renderer-crash-safety.test.ts:getToolLabel",
+      "target": "function:src/tests/renderer-crash-safety.test.ts:url.substring",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/renderer-crash-safety.test.ts:getSummary",
+      "target": "function:src/tests/renderer-crash-safety.test.ts:content.split",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/renderer-crash-safety.test.ts:getSummary",
+      "target": "function:src/tests/renderer-crash-safety.test.ts:firstLine.substring",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/renderer-crash-safety.test.ts:getSummary",
+      "target": "function:src/tests/renderer-crash-safety.test.ts:content.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/renderer-crash-safety.test.ts:getSummary",
+      "target": "function:src/tests/renderer-crash-safety.test.ts:content.trim().split",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/renderer-crash-safety.test.ts:getSummary",
+      "target": "function:src/tests/renderer-crash-safety.test.ts:content.trim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/tests/skills/dangling-symlink.test.ts",
+      "target": "function:src/tests/skills/dangling-symlink.test.ts:isDanglingSymlink",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/tests/skills/dangling-symlink.test.ts",
+      "target": "function:src/tests/skills/dangling-symlink.test.ts:supportsDirectorySymlinks",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "function:src/tests/skills/dangling-symlink.test.ts:isDanglingSymlink",
+      "target": "function:src/tests/skills/dangling-symlink.test.ts:fs.lstatSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/skills/dangling-symlink.test.ts:isDanglingSymlink",
+      "target": "function:src/tests/skills/dangling-symlink.test.ts:lstat.isSymbolicLink",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/skills/dangling-symlink.test.ts:isDanglingSymlink",
+      "target": "function:src/tests/skills/dangling-symlink.test.ts:fs.statSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/skills/dangling-symlink.test.ts:supportsDirectorySymlinks",
+      "target": "function:src/tests/skills/dangling-symlink.test.ts:fs.mkdtempSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/skills/dangling-symlink.test.ts:supportsDirectorySymlinks",
+      "target": "function:src/tests/skills/dangling-symlink.test.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/skills/dangling-symlink.test.ts:supportsDirectorySymlinks",
+      "target": "function:src/tests/skills/dangling-symlink.test.ts:os.tmpdir",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/skills/dangling-symlink.test.ts:supportsDirectorySymlinks",
+      "target": "function:src/tests/skills/dangling-symlink.test.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/skills/dangling-symlink.test.ts:supportsDirectorySymlinks",
+      "target": "function:src/tests/skills/dangling-symlink.test.ts:path.join",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/skills/dangling-symlink.test.ts:supportsDirectorySymlinks",
+      "target": "function:src/tests/skills/dangling-symlink.test.ts:fs.mkdirSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/skills/dangling-symlink.test.ts:supportsDirectorySymlinks",
+      "target": "function:src/tests/skills/dangling-symlink.test.ts:fs.symlinkSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/tests/skills/dangling-symlink.test.ts:supportsDirectorySymlinks",
+      "target": "function:src/tests/skills/dangling-symlink.test.ts:fs.rmSync",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/bundle-mcp-script.test.ts",
+      "target": "file:scripts/bundle-mcp.js",
+      "type": "imports",
+      "weight": 0.7
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "projectRoot": "c:/My Projects/Codes/open-cowork",
+  "batchFiles": [
+    {
+      "path": "website/public/llms-full.txt",
+      "language": "txt",
+      "sizeLines": 143,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "website/public/llms.txt",
+      "language": "txt",
+      "sizeLines": 39,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "website/public/project.json",
+      "language": "json",
+      "sizeLines": 100,
+      "fileCategory": "config"
+    },
+    {
+      "path": "website/public/robots.txt",
+      "language": "txt",
+      "sizeLines": 39,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    "website/public/llms-full.txt": [],
+    "website/public/llms.txt": [],
+    "website/public/project.json": [],
+    "website/public/robots.txt": []
+  }
+}
