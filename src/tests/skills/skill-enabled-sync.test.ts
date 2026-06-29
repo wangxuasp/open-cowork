@@ -35,14 +35,17 @@ function createDbMock(): DatabaseInstance {
     messages: {} as DatabaseInstance['messages'],
     traceSteps: {} as DatabaseInstance['traceSteps'],
     scheduledTasks: {} as DatabaseInstance['scheduledTasks'],
-    prepare: vi.fn((sql: string) => ({
-      run: (...args: unknown[]) => {
-        if (sql.includes('INSERT OR REPLACE INTO skills')) {
-          skills.set(args[0] as string, { enabled: args[4] as number });
-        }
-      },
-      get: (id: string) => skills.get(id),
-    })),
+    prepare: vi.fn(
+      (sql: string) =>
+        ({
+          run: (...args: unknown[]) => {
+            if (sql.includes('INSERT OR REPLACE INTO skills')) {
+              skills.set(args[0] as string, { enabled: args[4] as number });
+            }
+          },
+          get: (id: string) => skills.get(id),
+        }) as unknown as ReturnType<DatabaseInstance['prepare']>
+    ),
     exec: vi.fn(),
     pragma: vi.fn(),
     close: vi.fn(),
