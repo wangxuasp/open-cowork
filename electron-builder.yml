@@ -76,10 +76,10 @@ win:
       to: node
     - from: resources/node/win32-x64/node_modules/npm
       to: node/node_modules/npm
-    - from: resources/node/win32-x64/node_modules/npm/node_modules
-      to: node/node_modules/npm/node_modules
-    - from: resources/node/win32-x64/node_modules/corepack
-      to: node/node_modules/corepack
+    # - from: resources/node/win32-x64/node_modules/npm/node_modules
+    #   to: node/node_modules/npm/node_modules
+    # - from: resources/node/win32-x64/node_modules/corepack
+    #   to: node/node_modules/corepack
 
     - from: dist-wsl-agent
       to: wsl-agent
