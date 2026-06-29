@@ -165,6 +165,7 @@ export class SkillsManager {
             createdAt: Date.now(),
           };
 
+          this.mergeEnabledFromDb(skill);
           this.loadedSkills.set(skill.id, skill);
           log(`Loaded built-in skill: ${skill.name}`);
         }
@@ -624,6 +625,7 @@ export class SkillsManager {
               createdAt: Date.now(),
             };
 
+            this.mergeEnabledFromDb(skill);
             skills.push(skill);
             this.loadedSkills.set(skill.id, skill);
           }
@@ -644,6 +646,7 @@ export class SkillsManager {
               createdAt: Date.now(),
             };
 
+            this.mergeEnabledFromDb(skill);
             skills.push(skill);
             this.loadedSkills.set(skill.id, skill);
           } catch (error) {
@@ -757,11 +760,73 @@ export class SkillsManager {
     const skill = this.loadedSkills.get(skillId);
     if (skill) {
       skill.enabled = enabled;
+      this.saveSkill(skill);
 
       // Stop server if disabling an MCP skill
       if (!enabled && skill.type === 'mcp') {
         this.stopMcpServer(skillId);
       }
+    }
+  }
+
+  /**
+   * Sorted list of enabled skill ids for Agent session signatures.
+   */
+  getEnabledSkillIds(): string[] {
+    return Array.from(this.loadedSkills.values())
+      .filter((skill) => skill.enabled)
+      .map((skill) => skill.id)
+      .sort();
+  }
+
+  /**
+   * Whether a skill directory should be exposed to the Agent runtime.
+   */
+  isSkillEnabledByDirectory(
+    source: 'builtin' | 'user' | 'configured',
+    directoryName: string
+  ): boolean {
+    for (const skillId of this.getCandidateSkillIds(source, directoryName)) {
+      const skill = this.loadedSkills.get(skillId);
+      if (skill) {
+        return skill.enabled;
+      }
+    }
+    return true;
+  }
+
+  private loadSkillEnabledFromDb(skillId: string): boolean | undefined {
+    const stmt = this.db.prepare('SELECT enabled FROM skills WHERE id = ?');
+    const row = stmt.get(skillId) as { enabled: number } | undefined;
+    if (row === undefined) {
+      return undefined;
+    }
+    return row.enabled === 1;
+  }
+
+  private mergeEnabledFromDb(skill: Skill): void {
+    const storedEnabled = this.loadSkillEnabledFromDb(skill.id);
+    if (storedEnabled !== undefined) {
+      skill.enabled = storedEnabled;
+      return;
+    }
+    skill.enabled = skill.enabled !== false;
+    this.saveSkill(skill);
+  }
+
+  private getCandidateSkillIds(
+    source: 'builtin' | 'user' | 'configured',
+    directoryName: string
+  ): string[] {
+    switch (source) {
+      case 'builtin':
+        return [`builtin-${directoryName}`];
+      case 'user':
+        return [`global-${directoryName}`, `user-${directoryName}`];
+      case 'configured':
+        return [`global-${directoryName}`];
+      default:
+        return [];
     }
   }
 

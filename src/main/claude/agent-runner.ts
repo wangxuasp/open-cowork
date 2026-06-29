@@ -51,7 +51,7 @@ import { extractArtifactsFromText, buildArtifactTraceSteps } from '../utils/arti
 import { getDefaultShell } from '../utils/shell-resolver';
 import { safeReaddirSync } from '../utils/safe-fs';
 import { PluginRuntimeService } from '../skills/plugin-runtime-service';
-import type { SkillsAdapter } from '../skills/skills-adapter';
+import type { SkillsAdapter, SkillSource } from '../skills/skills-adapter';
 import { applyTeamcenterBaseUrlToSkillDescriptions } from '../skills/teamcenter-skill-runtime';
 import {
   cleanDanglingSymlinksInDir,
@@ -666,11 +666,7 @@ ${hints.join('\n')}
     sessionId?: string,
     runtimeSkillsDir?: string
   ): Promise<string[]> {
-    const basePaths = runtimeSkillsDir
-      ? [runtimeSkillsDir]
-      : this._skillsAdapter
-        ? this._skillsAdapter.getSkillPaths()
-        : this.legacySkillPaths();
+    const basePaths = runtimeSkillsDir ? [runtimeSkillsDir] : this.legacySkillPaths();
     const mergedPaths = new Set(
       basePaths.filter((item): item is string => Boolean(item && fs.existsSync(item)))
     );
@@ -847,6 +843,79 @@ ${hints.join('\n')}
     }
   }
 
+  private isRuntimeSkillEnabled(source: SkillSource, directoryName: string): boolean {
+    return this._skillsAdapter?.isSkillEnabled(source, directoryName) ?? true;
+  }
+
+  private handleDisabledRuntimeSkill(
+    appSkillsDir: string,
+    skillName: string,
+    source: SkillSource
+  ): boolean {
+    if (this.isRuntimeSkillEnabled(source, skillName)) {
+      return false;
+    }
+
+    const runtimeSkillPath = path.join(appSkillsDir, skillName);
+    if (fs.existsSync(runtimeSkillPath)) {
+      try {
+        this.removePathEntryIfPresent(runtimeSkillPath);
+        log(`[ClaudeAgentRunner] Removed disabled ${source} skill from runtime: ${skillName}`);
+      } catch (err) {
+        logWarn('[ClaudeAgentRunner] Failed to remove disabled runtime skill:', skillName, err);
+      }
+    }
+    return true;
+  }
+
+  private pruneDisabledSkillsFromRuntimeDir(appSkillsDir: string): void {
+    if (!this._skillsAdapter || !fs.existsSync(appSkillsDir)) {
+      return;
+    }
+
+    const pruneSource = (source: SkillSource, sourceDir: string | null): void => {
+      if (!sourceDir || !fs.existsSync(sourceDir)) {
+        return;
+      }
+
+      for (const entry of fs.readdirSync(sourceDir)) {
+        const entryPath = path.join(sourceDir, entry);
+        let stat: fs.Stats;
+        try {
+          stat = fs.statSync(entryPath);
+        } catch {
+          continue;
+        }
+        if (!stat.isDirectory()) {
+          continue;
+        }
+        if (this.isRuntimeSkillEnabled(source, entry)) {
+          continue;
+        }
+        const runtimeSkillPath = path.join(appSkillsDir, entry);
+        if (!fs.existsSync(runtimeSkillPath)) {
+          continue;
+        }
+        try {
+          this.removePathEntryIfPresent(runtimeSkillPath);
+          log(`[ClaudeAgentRunner] Pruned disabled ${source} skill from runtime: ${entry}`);
+        } catch (err) {
+          logWarn('[ClaudeAgentRunner] Failed to prune disabled runtime skill:', entry, err);
+        }
+      }
+    };
+
+    pruneSource('builtin', this.getBuiltinSkillsPath() || null);
+    pruneSource(
+      'user',
+      fs.existsSync(this.getUserClaudeSkillsDir()) ? this.getUserClaudeSkillsDir() : null
+    );
+    const configuredSkillsDir = this.getConfiguredGlobalSkillsDir();
+    if (configuredSkillsDir !== appSkillsDir) {
+      pruneSource('configured', configuredSkillsDir);
+    }
+  }
+
   private syncBuiltinSkillsToRuntimeDir(appSkillsDir: string): void {
     const builtinSkillsPath = this.getBuiltinSkillsPath();
     if (!builtinSkillsPath || !fs.existsSync(builtinSkillsPath)) {
@@ -862,6 +931,9 @@ ${hints.join('\n')}
       const builtinSkillPath = path.join(builtinSkillsPath, skillName);
       const runtimeSkillPath = path.join(appSkillsDir, skillName);
       if (!fs.statSync(builtinSkillPath).isDirectory()) {
+        continue;
+      }
+      if (this.handleDisabledRuntimeSkill(appSkillsDir, skillName, 'builtin')) {
         continue;
       }
       if (!shouldRefreshRuntimeSkillEntry(builtinSkillPath, runtimeSkillPath)) {
@@ -906,6 +978,9 @@ ${hints.join('\n')}
     });
     for (const entry of entries) {
       if (!entry.isDirectory()) continue;
+      if (this.handleDisabledRuntimeSkill(appSkillsDir, entry.name, 'user')) {
+        continue;
+      }
       const sourcePath = entry.entryPath;
       const targetPath = path.join(appSkillsDir, entry.name);
 
@@ -949,6 +1024,9 @@ ${hints.join('\n')}
     });
     for (const entry of entries) {
       if (!entry.isDirectory()) continue;
+      if (this.handleDisabledRuntimeSkill(runtimeSkillsDir, entry.name, 'configured')) {
+        continue;
+      }
       const sourcePath = entry.entryPath;
       const targetPath = path.join(runtimeSkillsDir, entry.name);
 
@@ -1862,6 +1940,7 @@ ${hints.join('\n')}
       this.syncBuiltinSkillsToRuntimeDir(appSkillsDir);
       this.syncUserSkillsToAppDir(appSkillsDir);
       this.syncConfiguredSkillsToRuntimeDir(appSkillsDir);
+      this.pruneDisabledSkillsFromRuntimeDir(appSkillsDir);
 
       const teamcenterRichClientMicroserviceUrl = (
         runtimeConfig.teamcenterRichClientMicroserviceUrl || ''
@@ -1907,9 +1986,11 @@ ${hints.join('\n')}
       });
       const skillPaths = await this.resolveSkillPaths(session.id, appSkillsDir);
       const runtimeSkillsContentSignature = this.computeRuntimeSkillsContentSignature(appSkillsDir);
+      const enabledSignature = this._skillsAdapter?.getEnabledSkillSignature() ?? '[]';
       const skillsSignature = JSON.stringify({
         skillPaths,
         runtimeSkillsContentSignature,
+        enabledSignature,
         teamcenterRichClientMicroserviceUrl,
         teamcenterWebTierUrl,
         knowledgeBaseHttpUrl,

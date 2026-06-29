@@ -93,6 +93,7 @@ describe('ClaudeAgentRunner Open Cowork SDK integration', () => {
     expect(agentRunnerContent).toContain('const skillsSignature = JSON.stringify({');
     expect(agentRunnerContent).toContain('skillPaths,');
     expect(agentRunnerContent).toContain('runtimeSkillsContentSignature,');
+    expect(agentRunnerContent).toContain('enabledSignature,');
     expect(agentRunnerContent).toContain('teamcenterRichClientMicroserviceUrl,');
     expect(agentRunnerContent).toContain('teamcenterWebTierUrl,');
     expect(agentRunnerContent).toContain('knowledgeBaseHttpUrl,');
@@ -106,6 +107,7 @@ describe('ClaudeAgentRunner Open Cowork SDK integration', () => {
     expect(agentRunnerContent).toContain('this.syncBuiltinSkillsToRuntimeDir(appSkillsDir);');
     expect(agentRunnerContent).toContain('this.syncUserSkillsToAppDir(appSkillsDir);');
     expect(agentRunnerContent).toContain('this.syncConfiguredSkillsToRuntimeDir(appSkillsDir);');
+    expect(agentRunnerContent).toContain('this.pruneDisabledSkillsFromRuntimeDir(appSkillsDir);');
     expect(agentRunnerContent).toContain(
       'const teamcenterSkillUpdate = applyTeamcenterBaseUrlToSkillDescriptions'
     );

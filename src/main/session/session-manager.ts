@@ -38,6 +38,8 @@ import { configStore } from '../config/config-store';
 import { MCPManager } from '../mcp/mcp-manager';
 import { mcpConfigStore } from '../mcp/mcp-config-store';
 import { PluginRuntimeService } from '../skills/plugin-runtime-service';
+import type { SkillsManager } from '../skills/skills-manager';
+import { createSkillsAdapter } from '../skills/skills-adapter';
 import { AgentRuntimeExtensionManager } from '../extensions/agent-runtime-extension-manager';
 import { forgetSessionPermissions } from '../config/permission-rules-store';
 import {
@@ -77,6 +79,7 @@ export class SessionManager {
   private mcpManager: MCPManager;
   private pluginRuntimeService?: PluginRuntimeService;
   private extensionManager?: AgentRuntimeExtensionManager;
+  private skillsManager?: SkillsManager;
   private activeSessions: Map<string, AbortController> = new Map();
   private promptQueues: Map<string, Array<{ prompt: string; content?: ContentBlock[] }>> =
     new Map();
@@ -95,7 +98,8 @@ export class SessionManager {
     db: DatabaseInstance,
     sendToRenderer: (event: ServerEvent) => void,
     pluginRuntimeService?: PluginRuntimeService,
-    extensionManager?: AgentRuntimeExtensionManager
+    extensionManager?: AgentRuntimeExtensionManager,
+    skillsManager?: SkillsManager
   ) {
     this.db = db;
     this.sendToRenderer = (event) => {
@@ -111,6 +115,7 @@ export class SessionManager {
     this.sandboxAdapter = getSandboxAdapter();
     this.pluginRuntimeService = pluginRuntimeService;
     this.extensionManager = extensionManager;
+    this.skillsManager = skillsManager;
 
     // Initialize MCP Manager
     this.mcpManager = new MCPManager();
@@ -132,6 +137,7 @@ export class SessionManager {
   }
 
   private createClaudeAgentRunner(): ClaudeAgentRunner {
+    const skillsAdapter = this.skillsManager ? createSkillsAdapter(this.skillsManager) : undefined;
     return new ClaudeAgentRunner(
       {
         sendToRenderer: this.sendToRenderer,
@@ -148,7 +154,7 @@ export class SessionManager {
       this.pathResolver,
       this.mcpManager,
       this.pluginRuntimeService,
-      undefined,
+      skillsAdapter,
       this.extensionManager
     );
   }
