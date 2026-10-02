@@ -207,3 +207,13 @@ GET https://api.example.com/dataset?action=delete&uid=TbcDEf$X_kpQR
 - 所有 UID、文件名只能来自用户明确提供的值，不得推断或伪造
 - 删除操作必须经过用户二次确认，严禁自动执行
 - 禁止将其他用户输入拼接到请求路径或请求体中
+
+## 中文/非 ASCII 参数编码规范（Windows 环境必须遵守）
+
+1. 任何含中文等非 ASCII 字符的参数（name、filePath 等），**禁止**使用 argv 方式传参：
+   `curl --data-urlencode "name=中文"` —— Windows 下 curl.exe 的 argv 会经 ANSI(GBK) 代码页转换，实际编码的是 GBK 字节，服务端按 UTF-8 解码必报 `500 Tried to read incomplete UTF8 decoded String`。
+2. 以下两种方式任选其一（均已实测可靠）：
+   - **预编码（首选）**：参数先做 UTF-8 percent-encoding，拼成纯 ASCII URL 后直接 GET。
+     示例：`GET <BASE_URL>?action=create&name=%E4%B8%BB%E6%9D%BF&uid=xxx`（即"主板"的 UTF-8 编码）
+   - **stdin 管道**：`printf '%s' '中文' | curl -s -G "<BASE_URL>" --data-urlencode "action=xxx" --data-urlencode "name@-" ...`（字节经管道传输，绕过 argv 转换）
+3. 含中文的写操作逐条**串行**执行，不要并发。
