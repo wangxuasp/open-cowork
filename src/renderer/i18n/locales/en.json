@@ -924,6 +924,7 @@
     "deny": "Deny",
     "allow": "Allow",
     "alwaysAllow": "Always allow this tool",
+    "alwaysAllowConfirm": "Are you sure you want to always allow \"{{toolName}}\"? This tool can modify your system.",
     "useTool": "Use the {{toolName}} tool",
     "toolDescriptions": {
       "write": "Write to files on your system",

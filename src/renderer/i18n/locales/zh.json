@@ -924,6 +924,7 @@
     "deny": "拒绝",
     "allow": "允许",
     "alwaysAllow": "始终允许此工具",
+    "alwaysAllowConfirm": "确定要始终允许“{{toolName}}”吗？此工具可以修改您的系统。",
     "useTool": "使用 {{toolName}} 工具",
     "toolDescriptions": {
       "write": "写入系统文件",
