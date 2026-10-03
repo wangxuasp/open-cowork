@@ -8,8 +8,8 @@ try:
     response = requests.post(
         'http://localhost:8099/api/chat',
         json={
-            "question": "工艺问题",
-            "keywords": ["关键字1", "关键字2"],
+            "question": "内防护系统装配有哪些内容",
+            "keywords": ["内防护"],
             "includeDebug": True
         },
         timeout=60

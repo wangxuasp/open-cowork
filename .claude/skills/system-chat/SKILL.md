@@ -1,13 +1,15 @@
 ---
 name: system-chat
-description: 当用户需要通过知识库进行问答、检索问答、RAG 问答、chat 查询，或提到询问Teamcenter，TC，NX软件使用功能问题时、知识库聊天、向量库问答时使用此技能。
+description: 仅用于 Teamcenter、TC、NX 等软件使用与功能问答，请求 /api/qdrant/chat。工艺、工序、工装、设备、工时、辅料、工艺路线、MBOM 不要使用本技能，改用 process-chat 的 /api/chat。
 ---
 
 # Qdrant Chat 问答技能
 
 ## 功能说明
 
-通过配置的知识库 HTTP API 发送用户问题，并将接口返回的回答整理后展示给用户。
+通过配置的知识库 HTTP API 发送软件使用问题，并将接口返回的回答整理后展示给用户。
+
+工艺、工序、工装、设备、工时、辅料、工艺路线、MBOM、装入件不属于本技能。遇到这类问题停止执行，改用 process-chat，请求 `/api/chat`。
 
 ## 接口配置
 
@@ -72,13 +74,13 @@ description: 当用户需要通过知识库进行问答、检索问答、RAG 问
 
 ## 示例
 
-用户：`帮我问知识库：设备点检流程是什么？`
+用户：`Teamcenter 里如何创建零组件？`
 
 请求体：
 
 ```json
 {
-  "question": "设备点检流程是什么？",
+  "question": "Teamcenter 里如何创建零组件？",
   "stream": true
 }
 ```
